@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ōzakura">
+<meta name="theme-color" content="#10131f">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>[hidden]{display:none!important}img{max-width:100%}</style>
+<title>Ōzakura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: one full-viewport stage — background cover-fit, sprites bottom-anchored, dialogue panel docked low. Single dark "night ink" world by design. */
+:root{
+  --ink:#10131f;          /* stage + panels */
+  --ink-2:#1b2034;        /* raised panel */
+  --paper:#f3ecdf;        /* body text, washi white */
+  --paper-dim:#bdb6a8;    /* secondary text */
+  --sakura:#e8a7b5;       /* accent: blossom pink */
+  --gilt:#c9a46a;         /* hairlines, chapter ornaments */
+  --veil:rgba(12,14,24,.82);
+  --f-display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  color-scheme:dark;
+}
+html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow:hidden;
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+#app{position:fixed;inset:0;overflow:hidden;font-family:var(--f-body);touch-action:manipulation}
+.layer{position:absolute;inset:0}
+.bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+.bgimg.on{opacity:1}
+#bgSolid{background:#000;transition:background .6s}
+#sprites{pointer-events:none}
+.spr{position:absolute;bottom:0;transform:translateX(-50%);transition:opacity .35s ease,filter .3s ease,left .45s ease;opacity:0;will-change:opacity}
+.spr.on{opacity:1}
+.spr.dim{filter:brightness(.78) saturate(.9)}
+#cg .bgimg{transition:opacity 1s ease}
+#tint{pointer-events:none;opacity:0;transition:opacity .8s;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(20,10,30,.45) 100%)}
+#tint.on{opacity:1}
+#flash{pointer-events:none;background:#fff;opacity:0}
+#flash.go{animation:flash .7s ease-out}
+@keyframes flash{0%{opacity:.95}100%{opacity:0}}
+.shake{animation:shake .38s cubic-bezier(.36,.07,.19,.97)}
+@keyframes shake{10%,90%{transform:translate(-2px,1px)}20%,80%{transform:translate(5px,-2px)}30%,50%,70%{transform:translate(-9px,3px)}40%,60%{transform:translate(9px,-3px)}}
+
+/* dialogue panel */
+#box{position:absolute;left:50%;transform:translateX(-50%);bottom:max(14px,env(safe-area-inset-bottom,0px));
+  width:min(1180px,calc(100% - 32px));min-height:clamp(104px,19vh,176px);box-sizing:border-box;
+  background:linear-gradient(180deg,rgba(16,19,31,.80),rgba(16,19,31,.92));
+  border-top:1px solid rgba(201,164,106,.55);border-radius:4px;
+  box-shadow:0 10px 40px rgba(0,0,0,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  padding:clamp(20px,2.8vh,30px) clamp(18px,3vw,40px) clamp(38px,5vh,46px);transition:opacity .25s}
+#box.hidden{opacity:0;pointer-events:none}
+#name{position:absolute;top:0;left:clamp(14px,2.4vw,34px);transform:translateY(-62%);
+  font-family:var(--f-display);font-weight:700;font-size:clamp(16px,2.4vh,23px);letter-spacing:.06em;
+  padding:.28em 1.05em .32em;background:var(--ink-2);border:1px solid rgba(201,164,106,.5);border-radius:3px;
+  color:var(--paper);min-width:4em;text-align:center}
+#name:empty{display:none}
+#name .bar{display:block;height:2px;margin-top:4px;border-radius:2px;background:var(--nc,var(--sakura))}
+#text{font-size:clamp(17px,2.55vh,27px);line-height:1.62;max-width:62em;min-height:3.2em;white-space:pre-wrap;
+  text-wrap:pretty;color:var(--paper)}
+#text.narr{color:#ebe3d4}
+#text.interlude{font-style:normal;color:#e9dccb}
+#text .cur{display:inline-block;width:.5em;color:var(--sakura);animation:blink 1.1s infinite;margin-left:.15em}
+@keyframes blink{0%,60%{opacity:1}61%,100%{opacity:0}}
+#ilabel{position:absolute;top:max(16px,env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);
+  font-family:var(--f-display);letter-spacing:.3em;font-size:clamp(12px,1.7vh,16px);color:var(--paper);
+  padding:.45em 1.4em;background:rgba(16,19,31,.7);border:1px solid rgba(201,164,106,.4);border-radius:2px;
+  opacity:0;transition:opacity .6s;pointer-events:none}
+#ilabel.on{opacity:1}
+#ctrl{position:absolute;right:clamp(12px,2vw,26px);bottom:clamp(8px,1.2vh,12px);display:flex;gap:2px}
+.cb{appearance:none;border:0;background:transparent;color:var(--paper-dim);font:500 clamp(11px,1.45vh,14px)/1 var(--f-body);
+  letter-spacing:.12em;text-transform:uppercase;padding:.75em .8em;border-radius:3px;cursor:pointer}
+.cb:hover,.cb:focus-visible{color:var(--paper);background:rgba(255,255,255,.07);outline:none}
+.cb.on{color:var(--sakura)}
+
+/* phone */
+#phone{position:absolute;right:clamp(16px,6vw,90px);top:clamp(16px,5vh,60px);width:min(360px,calc(100% - 32px));
+  max-height:58vh;overflow:hidden;display:flex;flex-direction:column;gap:8px;padding:16px 14px;
+  background:rgba(240,236,228,.95);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.5);
+  opacity:0;transform:translateY(12px);transition:opacity .35s,transform .35s;pointer-events:none;color:#1b1d26}
+#phone.on{opacity:1;transform:none}
+#phone .ph{font:700 13px/1 var(--f-body);color:#5b5f70;text-align:center;padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,.08);letter-spacing:.04em}
+.msg{max-width:82%;padding:8px 12px;border-radius:16px;font-size:clamp(14px,1.9vh,17px);line-height:1.4;animation:pop .25s ease-out}
+.msg.me{align-self:flex-end;background:#e98fa4;color:#fff;border-bottom-right-radius:5px}
+.msg.them{align-self:flex-start;background:#fff;border-bottom-left-radius:5px}
+@keyframes pop{from{transform:scale(.9);opacity:0}}
+
+/* full-screen cards */
+.card{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  background:var(--ink);opacity:0;pointer-events:none;transition:opacity .8s;text-align:center;padding:0 24px}
+.card.on{opacity:1;pointer-events:auto}
+.ch-num{font-family:var(--f-display);color:var(--gilt);letter-spacing:.5em;font-size:clamp(13px,2vh,18px)}
+.ch-title{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,7vh,70px);letter-spacing:.04em;text-wrap:balance}
+.ch-rule{width:72px;height:1px;background:var(--gilt);opacity:.7}
+.ch-kanji{font-family:var(--f-display);color:var(--paper-dim);font-size:clamp(14px,2.2vh,20px);letter-spacing:.4em}
+#dateCard{background:transparent}
+#dateCard .d{font-family:var(--f-display);font-size:clamp(22px,4.2vh,40px);letter-spacing:.12em;padding:.5em 1.6em;
+  background:rgba(16,19,31,.72);border-top:1px solid var(--gilt);border-bottom:1px solid var(--gilt)}
+
+/* title */
+#title{position:absolute;inset:0;z-index:20;background:var(--ink)}
+#title img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#title .shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(14,16,26,.86) 0%,rgba(14,16,26,.55) 34%,rgba(14,16,26,0) 62%)}
+#title .brand{position:absolute;left:clamp(24px,7vw,110px);top:50%;transform:translateY(-52%);display:flex;gap:clamp(16px,2.4vw,34px);align-items:flex-start}
+.tate{writing-mode:vertical-rl;font-family:var(--f-display);font-weight:800;font-size:clamp(46px,11vh,110px);letter-spacing:.12em;
+  color:var(--paper);text-shadow:0 2px 24px rgba(0,0,0,.5);line-height:1}
+.brand .stack{display:flex;flex-direction:column;gap:clamp(14px,2.6vh,26px);padding-top:.4em}
+.brand h1{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(30px,6vh,58px);letter-spacing:.08em;line-height:1}
+.brand .sub{font-size:clamp(12px,1.7vh,15px);color:var(--paper-dim);letter-spacing:.22em;text-transform:uppercase}
+.menu{display:flex;flex-direction:column;gap:4px;margin-top:6px}
+.mi{appearance:none;border:0;background:transparent;color:var(--paper);text-align:left;cursor:pointer;
+  font:500 clamp(16px,2.5vh,22px)/1.2 var(--f-display);letter-spacing:.14em;padding:.5em 0 .5em .9em;border-left:2px solid transparent;transition:border-color .2s,color .2s,padding .2s}
+.mi:hover,.mi:focus-visible{border-left-color:var(--sakura);color:#fff;padding-left:1.2em;outline:none}
+.mi[disabled]{opacity:.35;cursor:default}
+#tapStart{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:9vh;z-index:21;
+  font-family:var(--f-display);letter-spacing:.4em;font-size:clamp(14px,2.2vh,19px);color:var(--paper);
+  background:rgba(10,12,20,.25);cursor:pointer}
+#tapStart span{animation:breathe 2.4s ease-in-out infinite;padding:.6em 1.4em;background:rgba(16,19,31,.55);border-radius:2px}
+@keyframes breathe{50%{opacity:.45}}
+
+/* panels: log, save, settings, chapters */
+.panel{position:absolute;inset:0;z-index:30;background:rgba(10,12,20,.92);display:none;flex-direction:column;
+  padding:max(18px,env(safe-area-inset-top,0px)) 16px max(18px,env(safe-area-inset-bottom,0px))}
+.panel.on{display:flex}
+.panel header{display:flex;align-items:center;justify-content:space-between;width:min(980px,100%);margin:0 auto 12px;gap:12px}
+.panel h2{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(20px,3.2vh,30px);letter-spacing:.14em}
+.panel .body{flex:1;overflow-y:auto;width:min(980px,100%);margin:0 auto;-webkit-overflow-scrolling:touch;min-height:0}
+.x{appearance:none;border:1px solid rgba(201,164,106,.5);background:transparent;color:var(--paper);border-radius:3px;
+  font:500 14px var(--f-body);letter-spacing:.12em;padding:.6em 1.1em;cursor:pointer}
+.x:hover,.x:focus-visible{background:rgba(255,255,255,.06);outline:none}
+.log-row{display:grid;grid-template-columns:7.5em 1fr 2.4em;gap:12px;padding:12px 4px;border-bottom:1px solid rgba(255,255,255,.07);align-items:start}
+.log-row .who{font-family:var(--f-display);font-weight:700;color:var(--sakura);text-align:right;padding-top:.15em}
+.log-row .t{line-height:1.6;min-width:0}
+.log-row .ja{font-family:var(--f-display);font-size:.88em;color:var(--paper-dim);margin-top:.2em;letter-spacing:.04em}
+.log-row .vb{appearance:none;border:0;background:transparent;color:var(--gilt);font-size:17px;cursor:pointer;padding:0}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.slot{appearance:none;text-align:left;border:1px solid rgba(255,255,255,.12);background:var(--ink-2);color:var(--paper);border-radius:4px;
+  padding:0;cursor:pointer;overflow:hidden;display:flex;flex-direction:column;font:inherit}
+.slot:hover,.slot:focus-visible{border-color:var(--sakura);outline:none}
+.slot .th{aspect-ratio:16/9;width:100%;background:#000 center/cover no-repeat;max-width:100%}
+.slot .meta{padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.slot .n{font:700 13px var(--f-body);letter-spacing:.16em;color:var(--gilt)}
+.slot .s{font-size:14px;color:var(--paper-dim);line-height:1.4}
+.set{display:grid;grid-template-columns:minmax(120px,14em) 1fr;gap:14px 20px;align-items:center;padding:8px 4px}
+.set label{color:var(--paper-dim);letter-spacing:.06em}
+.set input[type=range]{width:100%;accent-color:var(--sakura)}
+.voices{display:flex;flex-wrap:wrap;gap:8px}
+.chip{appearance:none;border:1px solid rgba(255,255,255,.18);background:transparent;color:var(--paper);border-radius:999px;padding:.45em .95em;font:500 14px var(--f-body);cursor:pointer}
+.chip.off{opacity:.4;text-decoration:line-through}
+.chap{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.chap button{appearance:none;border:1px solid rgba(255,255,255,.12);background:var(--ink-2);color:var(--paper);border-radius:4px;padding:0;cursor:pointer;overflow:hidden;text-align:left;font:inherit}
+.chap button:hover,.chap button:focus-visible{border-color:var(--sakura);outline:none}
+.chap .th{aspect-ratio:16/9;background:#000 center/cover no-repeat}
+.chap .meta{padding:10px 12px}
+.chap .k{font-family:var(--f-display);color:var(--gilt);letter-spacing:.2em;font-size:13px}
+.chap .tt{font-family:var(--f-display);font-weight:700;font-size:18px;margin-top:4px}
+#toast{position:absolute;left:50%;top:16px;transform:translateX(-50%);z-index:40;background:var(--ink-2);border:1px solid var(--gilt);
+  padding:.6em 1.2em;border-radius:3px;font-size:14px;letter-spacing:.08em;opacity:0;transition:opacity .3s;pointer-events:none}
+#toast.on{opacity:1}
+#err{position:absolute;left:12px;bottom:12px;z-index:50;max-width:min(560px,calc(100% - 24px));background:#3a1820;color:var(--paper);
+  border:1px solid var(--sakura);border-radius:3px;padding:.7em 1em;font-size:13px;line-height:1.45;cursor:pointer}
+#endCard .thanks{color:var(--paper-dim);max-width:34em;line-height:1.7;font-size:clamp(14px,2vh,17px)}
+#endCard .x{margin-top:18px}
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media (max-aspect-ratio: 1/1){ #box{min-height:22vh} .spr{max-width:none} }
+</style>
+</head>
+<body>
+
+
+<div id="app" aria-label="Ōzakura visual novel">
+  <div id="bgSolid" class="layer"></div>
+  <div id="bg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""></div>
+  <div id="sprites" class="layer"></div>
+  <div id="cg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""></div>
+  <div id="tint" class="layer"></div>
+  <div id="ilabel"></div>
+  <div id="phone"><div class="ph">Chie</div></div>
+  <div id="box" class="hidden" role="region" aria-live="polite">
+    <div id="name"></div>
+    <div id="text"></div>
+    <div id="ctrl">
+      <button class="cb" id="bAuto" type="button">Auto</button>
+      <button class="cb" id="bSkip" type="button">Skip</button>
+      <button class="cb" id="bLog" type="button">Log</button>
+      <button class="cb" id="bSave" type="button">Save</button>
+      <button class="cb" id="bLoad" type="button">Load</button>
+      <button class="cb" id="bMenu" type="button">Menu</button>
+    </div>
+  </div>
+  <div id="dateCard" class="card"><div class="d"></div></div>
+  <div id="chapterCard" class="card"><div class="ch-num"></div><div class="ch-rule"></div><div class="ch-title"></div><div class="ch-kanji"></div></div>
+  <div id="flash" class="layer"></div>
+  <div id="endCard" class="card">
+    <div class="ch-num">END OF PILOT</div><div class="ch-rule"></div>
+    <div class="ch-title">To be continued</div>
+    <p class="thanks">Thank you for reading the first week. Kōhei, Nanoha and Natsuki's spring is only beginning.</p>
+    <button class="x" id="endBack" type="button">Return to title</button>
+  </div>
+
+  <div id="title">
+    <img src="img/bg/cg_title.webp" alt="Kōhei, Nanoha and Natsuki beneath the great cherry tree">
+    <div class="shade"></div>
+    <div class="brand">
+      <div class="tate" aria-hidden="true">大桜</div>
+      <div class="stack">
+        <h1>Ōzakura</h1>
+        <div class="sub">Pilot · The First Week</div>
+        <nav class="menu">
+          <button class="mi" id="mStart" type="button">Begin</button>
+          <button class="mi" id="mCont" type="button">Continue</button>
+          <button class="mi" id="mChap" type="button">Chapters</button>
+          <button class="mi" id="mLoad" type="button">Load</button>
+          <button class="mi" id="mSet" type="button">Settings</button>
+        </nav>
+      </div>
+    </div>
+    <div id="tapStart"><span>TAP TO BEGIN</span></div>
+  </div>
+
+  <section class="panel" id="logP"><header><h2>Backlog</h2><button class="x" data-close type="button">Close</button></header><div class="body" id="logBody"></div></section>
+  <section class="panel" id="saveP"><header><h2 id="saveH">Save</h2><button class="x" data-close type="button">Close</button></header><div class="body"><div class="slots" id="slots"></div></div></section>
+  <section class="panel" id="chapP"><header><h2>Chapters</h2><button class="x" data-close type="button">Close</button></header><div class="body"><div class="chap" id="chapList"></div></div></section>
+  <section class="panel" id="setP"><header><h2>Settings</h2><button class="x" data-close type="button">Close</button></header>
+    <div class="body">
+      <div class="set"><label for="sText">Text speed</label><input id="sText" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sAuto">Auto-advance delay</label><input id="sAuto" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sBgm">Music volume</label><input id="sBgm" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sVoice">Voice volume</label><input id="sVoice" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sSfx">Sound effects</label><input id="sSfx" type="range" min="0" max="100"></div>
+      <div class="set"><label>Character voices</label><div class="voices" id="vChips"></div></div>
+      <div class="set"><label>Navigation</label><div class="voices"><button class="x" id="toTitle" type="button">Return to title</button></div></div>
+    </div>
+  </section>
+  <div id="toast"></div>
+  <div id="err" role="alert" hidden></div>
+</div>
+
+<script>
+(()=>{
+'use strict';
+/* ---------- config ---------- */
+const CHAR = { // height in inches, visible fraction of body in sprite, name colour
+  kohei:{h:69,v:.57,c:'#7da4d6'}, nanoha:{h:60,v:.57,c:'#e8a7b5'}, natsuki:{h:63,v:.57,c:'#e8965a'},
+  akane:{h:61,v:.62,c:'#a9a3c9'}, ryosuke:{h:68,v:.57,c:'#8fb8a8'}, rika:{h:62,v:.57,c:'#f0c95a'},
+  yuzu:{h:61,v:.57,c:'#e07c7c'}, kirishima:{h:66,v:.57,c:'#b7c3d6'}, takatsuki:{h:70,v:.57,c:'#8a96c9'},
+  sota:{h:47,v:.72,c:'#9fd18b'}, emi:{h:61,v:.57,c:'#e6b17a'},
+  teacher:{c:'#c9c2b0'}, manager:{c:'#c9c2b0'}, past_natsuki:{c:'#d9b08c'}
+};
+const POSX_W = {l:20, lc:34, c:50, rc:66, r:80}, POSX_N = {l:27, lc:38, c:50, rc:62, r:73};
+const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?POSX_N:POSX_W)[k]});
+const SCALE = .95/(69*.57); // Kōhei fills 95% of stage height
+const CHAPTERS = [
+  {k:'PROLOGUE', t:'The Dream', start:'prologue', th:'cg_hands_strap'},
+  {k:'CHAPTER 1', t:'The House Next Door', start:'c1_morning', th:'cg_natsuki_intro'},
+  {k:'CHAPTER 2', t:'Kendo', start:'c2_tuesday', th:'cg_jigeiko'},
+  {k:'CHAPTER 3', t:'Windows', start:'c3_shift', th:'cg_window_night'},
+];
+const KANJI = ['','第一話','第二話','第三話','第四話'];
+const store = {
+  get(k,d){try{const v=localStorage.getItem('ozk.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem('ozk.'+k,JSON.stringify(v))}catch(e){}}
+};
+const prefs = Object.assign({text:62, auto:45, bgm:62, voice:90, sfx:70, mute:{}}, store.get('prefs',{}));
+
+/* ---------- dom ---------- */
+const $ = s=>document.querySelector(s);
+const app=$('#app'), box=$('#box'), nameEl=$('#name'), textEl=$('#text');
+const bgImgs=[...document.querySelectorAll('#bg .bgimg')], cgImgs=[...document.querySelectorAll('#cg .bgimg')];
+let bgFront=0, cgFront=0;
+
+/* ---------- audio (Web Audio so volume works on iPad) ---------- */
+let ac=null, gBgm, gVoice, gSfx;
+const bufCache=new Map();
+function audioInit(){
+  if(ac) { if(ac.state==='suspended') ac.resume(); return; }
+  const AC=window.AudioContext||window.webkitAudioContext; if(!AC) return;
+  ac=new AC(); gBgm=ac.createGain(); gVoice=ac.createGain(); gSfx=ac.createGain();
+  [gBgm,gVoice,gSfx].forEach(g=>g.connect(ac.destination)); applyVol();
+  const b=ac.createBuffer(1,1,22050), s=ac.createBufferSource(); s.buffer=b; s.connect(ac.destination); s.start(0);
+}
+function applyVol(){ if(!ac) return; gBgm.gain.cancelScheduledValues(ac.currentTime); gBgm.gain.value=(prefs.bgm/100)**1.6*(vNode?0.55:1); gVoice.gain.value=(prefs.voice/100)**1.3; gSfx.gain.value=(prefs.sfx/100)**1.5; }
+async function loadBuf(url){
+  if(bufCache.has(url)) return bufCache.get(url);
+  const p=fetch(url).then(r=>{if(!r.ok) throw 0; return r.arrayBuffer()}).then(ab=>new Promise((res,rej)=>ac.decodeAudioData(ab,res,rej))).catch(()=>null);
+  bufCache.set(url,p); return p;
+}
+let bgmName=null, bgmGain=null, bgmTok=0, bgmSrcs=[], bgmTimer=null;
+/* music loops by crossfading the end of the track into a fresh start, so long scenes never hear a hard seam */
+function bgmIter(buf, g, when, first, tok){
+  const XF=Math.min(2.5, buf.duration/8), s=ac.createBufferSource(), sg=ac.createGain(); s.buffer=buf; s.connect(sg); sg.connect(g);
+  if(first) sg.gain.setValueAtTime(1, when); else { sg.gain.setValueAtTime(0, when); sg.gain.linearRampToValueAtTime(1, when+XF); }
+  const end=when+buf.duration; sg.gain.setValueAtTime(1, end-XF); sg.gain.linearRampToValueAtTime(0, end);
+  s.start(when); s.stop(end+0.05); bgmSrcs.push(s); s.onended=()=>{ bgmSrcs=bgmSrcs.filter(x=>x!==s); };
+  const next=end-XF;
+  bgmTimer=setTimeout(()=>{ if(tok===bgmTok) bgmIter(buf,g,next,false,tok); }, Math.max(0,(next-ac.currentTime-4)*1000));
+}
+async function playBgm(name){
+  if(name===bgmName) return; bgmName=name;
+  if(!ac) return;
+  const tok=++bgmTok; clearTimeout(bgmTimer);
+  const oldG=bgmGain, oldSrcs=bgmSrcs; bgmGain=null; bgmSrcs=[];
+  if(oldG){ const t=ac.currentTime; oldG.gain.cancelScheduledValues(t); oldG.gain.setValueAtTime(oldG.gain.value,t); oldG.gain.linearRampToValueAtTime(0,t+1.4); setTimeout(()=>{ oldSrcs.forEach(x=>{try{x.stop()}catch(e){}}); try{oldG.disconnect()}catch(e){} },1600); }
+  if(!name) return;
+  const buf=await loadBuf(`audio/bgm/${name}.mp3`); if(!buf||tok!==bgmTok) return;
+  const g=ac.createGain(); g.connect(gBgm); const t=ac.currentTime+0.05; g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(1,t+1.6);
+  bgmGain=g; bgmIter(buf, g, t, true, tok);
+}
+/* voice packs: voice/index.json -> {id:[pack,offset,length]} */
+let vIndex=null, vPacks=new Map(), vNode=null, vNodeOnEnd=null;
+fetch('voice/index.json').then(r=>r.ok?r.json():null).then(j=>{vIndex=j}).catch(()=>{});
+async function voiceBuf(id){
+  if(!vIndex||!vIndex[id]||!ac) return null;
+  const [pack,off,len]=vIndex[id]; const key='v:'+id;
+  if(bufCache.has(key)) return bufCache.get(key);
+  const p=(async()=>{
+    if(!vPacks.has(pack)) vPacks.set(pack, fetch('voice/'+pack).then(r=>r.arrayBuffer()));
+    const ab=await vPacks.get(pack); const slice=ab.slice(off,off+len);
+    return await new Promise((res)=>ac.decodeAudioData(slice,res,()=>res(null)));
+  })().catch(()=>null);
+  bufCache.set(key,p); return p;
+}
+let vTok=0, jaText=null;
+fetch('voice/ja.json').then(r=>r.ok?r.json():null).then(j=>{jaText=j}).catch(()=>{});
+function duck(on){ if(!ac) return; const t=ac.currentTime, g=gBgm.gain, base=(prefs.bgm/100)**1.6; g.cancelScheduledValues(t); g.setValueAtTime(g.value,t); g.linearRampToValueAtTime(on?base*0.55:base, t+(on?0.15:0.6)); }
+function stopVoice(){ vTok++; if(vNode){ vNode.onended=null; try{vNode.stop()}catch(e){} vNode=null; duck(false); } }
+async function playVoice(id, who, onEnd){
+  stopVoice(); const tok=vTok; if(prefs.mute[who]) return false;
+  const buf=await voiceBuf(id); if(!buf||tok!==vTok) return false;   // the player moved on while it loaded
+  const s=ac.createBufferSource(); s.buffer=buf; s.connect(gVoice);
+  s.onended=()=>{ if(vNode===s){ vNode=null; duck(false); onEnd&&onEnd(); } }; s.start(); vNode=s; duck(true); return true;
+}
+async function playSfx(name){ if(!ac) return; const b=await loadBuf(`audio/sfx/${name}.mp3`); if(!b) return; const s=ac.createBufferSource(); s.buffer=b; s.connect(gSfx); s.start(); }
+
+/* ---------- state ---------- */
+let S=null, SP={}, SPK={}; const preloaded=new Set();
+const state={i:0,bg:'black',cg:null,spr:{},bgm:null,mode:'normal',ilabel:'',read:{}};
+let busy=false, typing=false, typeTimer=null, fullText='', autoOn=false, skipOn=false, waitTimer=null, autoTimer=null, curLine=null, running=false;
+const log=[];
+
+function sprImg(who){
+  let el=document.querySelector(`.spr[data-who="${who}"]`);
+  if(!el){ el=document.createElement('img'); el.className='spr'; el.dataset.who=who; el.alt=''; $('#sprites').appendChild(el); }
+  return el;
+}
+function stageH(){ const w=app.clientWidth,h=app.clientHeight; return Math.min(h, w*0.92); }
+function layoutSprites(){
+  const H=stageH();
+  document.querySelectorAll('.spr').forEach(el=>{
+    const c=CHAR[el.dataset.who]||{h:64,v:.57}; el.style.height=Math.round(H*SCALE*c.h*c.v)+'px';
+  });
+}
+setBg.tok=0; setCg.tok=0;
+function setBg(name, tr){
+  state.bg=name;
+  if(name==='black'||name==='white'){ setBg.tok++; $('#bgSolid').style.background=name==='white'?'#fff':'#000'; bgImgs.forEach(i=>i.classList.remove('on')); return; }
+  const next=bgImgs[1-bgFront], cur=bgImgs[bgFront];
+  const dur = tr==='cut'?0: tr==='slow'?1.8: .9;
+  next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
+  const tok=++setBg.tok; next.onload=()=>{ if(tok!==setBg.tok) return; next.classList.add('on'); cur.classList.remove('on'); };
+  next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload();
+  bgFront=1-bgFront;
+  if(tr==='flash') flash();
+}
+function setCg(name, tr){
+  state.cg=name;
+  if(!name){ setCg.tok++; cgImgs.forEach(i=>i.classList.remove('on')); return; }
+  const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
+  next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
+  const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); cur.classList.remove('on'); };
+  next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload(); cgFront=1-cgFront;
+}
+function showSpr(who, spr, pos){
+  const el=sprImg(who); const prev=state.spr[who];
+  pos = pos || (prev&&prev.pos) || 'c';
+  state.spr[who]={spr,pos};
+  const c=CHAR[who]||{h:64,v:.57}; el.style.height=Math.round(stageH()*SCALE*c.h*c.v)+'px';
+  el.style.left=POSX[pos]+'%';
+  const url=`img/ch/${spr}.webp`;
+  if(!el.src.endsWith(url)){ const pre=new Image(); pre.onload=()=>{el.src=url; el.classList.add('on');}; pre.src=url; }
+  else el.classList.add('on');
+}
+function hideSpr(who){ delete state.spr[who]; const el=document.querySelector(`.spr[data-who="${who}"]`); if(el) el.classList.remove('on'); }
+function hideAll(){ Object.keys(state.spr).forEach(hideSpr); }
+function dimFor(speaker){ document.querySelectorAll('.spr').forEach(el=>el.classList.toggle('dim', !!speaker && speaker!=='kohei' && el.dataset.who!==speaker && Object.keys(state.spr).includes(speaker))); }
+function flash(){ const f=$('#flash'); f.classList.remove('go'); void f.offsetWidth; f.classList.add('go'); }
+function shake(){ app.classList.remove('shake'); void app.offsetWidth; app.classList.add('shake'); }
+function setMode(m,label){ state.mode=m; state.ilabel=label||''; $('#tint').classList.toggle('on',m==='interlude'); const il=$('#ilabel'); il.textContent=label?`— ${label} —`:''; il.classList.toggle('on',m==='interlude'); textEl.classList.toggle('interlude',m==='interlude'); }
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('on'); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove('on'),1600); }
+
+/* ---------- phone ---------- */
+function phoneMsg(who,text){ const p=$('#phone'); p.classList.add('on'); const m=document.createElement('div'); m.className='msg '+(who==='me'?'me':'them'); m.textContent=text; p.appendChild(m);
+  while(p.scrollHeight>p.clientHeight && p.children.length>2) p.children[1].remove(); }
+function phoneClear(){ const p=$('#phone'); p.classList.remove('on'); setTimeout(()=>{ if(!p.classList.contains('on')) [...p.querySelectorAll('.msg')].forEach(m=>m.remove()); },400); }
+
+/* ---------- text ---------- */
+function cps(){ return prefs.text>=100?1e9: 18+prefs.text*1.1; }
+function typeOut(t, cls){
+  fullText=t; textEl.className=cls+(state.mode==='interlude'?' interlude':''); textEl.textContent='';
+  if(skipOn||cps()>1e8){ textEl.textContent=t; typing=false; addCur(); return; }
+  typing=true; let n=0; const step=Math.max(1,Math.round(cps()/60));
+  clearInterval(typeTimer); typeTimer=setInterval(()=>{ n+=step; textEl.textContent=t.slice(0,n); if(n>=t.length){ clearInterval(typeTimer); typing=false; addCur(); scheduleAuto(); } },1000/60);
+}
+function addCur(){ const c=document.createElement('span'); c.className='cur'; c.textContent='▾'; textEl.appendChild(c); }
+function finishType(){ clearInterval(typeTimer); typing=false; textEl.textContent=fullText; addCur(); scheduleAuto(); }
+
+/* ---------- runner ---------- */
+function scheduleAuto(){
+  clearTimeout(autoTimer); if(!autoOn||skipOn) return;
+  const base=900+fullText.length*28*(1.6-prefs.auto/100);
+  const go=()=>{ if(autoOn&&!typing&&!overlayOpen()) advance(); };
+  if(vNode){ vNodeOnEnd=()=>{ autoTimer=setTimeout(go,500+ (100-prefs.auto)*12); }; }
+  else autoTimer=setTimeout(go, base);
+}
+function overlayOpen(){ return !!document.querySelector('.panel.on') || !$('#title').hidden; }
+
+function run(){
+  if(running) return; running=true;
+  try{
+    while(state.i<S.length){
+      const c=S[state.i++];
+      if(c.t!=='phone' && c.t!=='say' && c.t!=='nar') {/* fallthrough */}
+      switch(c.t){
+        case 'scene': state.scene=c.id; store.set('cont',snap()); break;
+        case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
+        case 'cg': setCg(c.name,c.tr); if(c.name) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break;
+        case 'bgm': playBgm(c.name); state.bgm=c.name; break;
+        case 'sfx': if(!skipOn) playSfx(c.name); break;
+        case 'show': showSpr(c.who,c.spr,c.pos); break;
+        case 'hide': hideSpr(c.who); break;
+        case 'hideall': hideAll(); break;
+        case 'mode': setMode(c.mode,c.label); break;
+        case 'flash': if(!skipOn) flash(); break;
+        case 'shake': if(!skipOn) shake(); break;
+        case 'wait': return pause(skipOn?40:c.s*1000);
+        case 'card': return dateCard(c.text);
+        case 'chapter': return chapterCard(c);
+        case 'endchapter': return pause(200);
+        case 'endpilot': store.set('cont',null); return endPilot();
+        case 'video': break; // future cutscenes: falls back to continuing
+        case 'phone': if(!skipOn) playSfx('notif'); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); return waitTap(skipOn?60:0);
+        case 'say': case 'nar': return line(c);
+      }
+    }
+  } finally { running=false; }
+}
+function pause(ms, keepHidden){ running=false; clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(!keepHidden) {} run(); }, ms); }
+function waitTap(ms){ running=false; if(ms){ clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(skipOn) advance(); },ms);} }
+function line(c){
+  running=false; curLine=c; stopVoice(); vNodeOnEnd=null;
+  if(c.t==='say'||c.t==='nar'){ if(!$('#phone').classList.contains('on')) {} }
+  box.classList.remove('hidden');
+  const who=c.t==='say'?c.who:null;
+  if(who){ const nm=(SPK[who]||who); nameEl.innerHTML=''; nameEl.append(nm); const b=document.createElement('span'); b.className='bar'; nameEl.appendChild(b); nameEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--sakura)'); }
+  else nameEl.textContent='';
+  dimFor(who);
+  typeOut(c.text, c.t==='nar'?'narr':'');
+  log.push({who: who? SPK[who]: '', t:c.text, id:c.t==='say'?c.id:null, w:who});
+  if(log.length>400) log.shift();
+  state.read[c.id]=1;
+  if(c.t==='say' && !skipOn && ac){ playVoice(c.id,who,()=>{ if(vNodeOnEnd) {const f=vNodeOnEnd; vNodeOnEnd=null; f();} }); }
+  if(skipOn){ clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(skipOn) advance(); },45); }
+}
+function advance(){
+  if(overlayOpen()) return;
+  if(typing){ finishType(); return; }
+  if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
+  clearTimeout(autoTimer); clearTimeout(waitTimer);
+  if(curLine && curLine.t!=='phone' && S[state.i] && S[state.i].t!=='phone') phoneClear();
+  curLine=null; run();
+}
+/* every timed continuation goes through one timer (waitTimer) so a tap can never leave a card on screen or fire a stray run() */
+let cardFinish=null, cardT=0;
+function later(ms, fn){ clearTimeout(waitTimer); waitTimer=setTimeout(fn, ms); }
+function finishCard(){ if(cardFinish){ const f=cardFinish; cardFinish=null; f(); } }
+function dateCard(text){
+  running=false; const d=$('#dateCard'); d.querySelector('.d').textContent=text; box.classList.add('hidden'); d.classList.add('on');
+  cardFinish=()=>d.classList.remove('on'); cardT=Date.now();
+  later(skipOn?200:1900, ()=>{ finishCard(); later(skipOn?50:500, run); });
+}
+function chapterCard(c){
+  running=false; const d=$('#chapterCard'); box.classList.add('hidden');
+  d.querySelector('.ch-num').textContent='CHAPTER '+c.n; d.querySelector('.ch-title').textContent=c.title; d.querySelector('.ch-kanji').textContent=KANJI[c.n]||'';
+  d.classList.add('on'); cardFinish=()=>d.classList.remove('on'); cardT=Date.now();
+  later(skipOn?400:3200, ()=>{ finishCard(); later(700, run); });
+}
+function endPilot(){ running=false; box.classList.add('hidden'); setSkip(false); setAuto(false); $('#endCard').classList.add('on'); playBgm('title'); }
+
+/* ---------- save/load ---------- */
+function snap(){ // state at current command index (rewind to the line being shown)
+  const i = curLine? S.indexOf(curLine) : state.i;
+  return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene};
+}
+function restore(s){
+  cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
+  ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear();
+  document.querySelectorAll('.spr').forEach(e=>e.remove()); state.spr={};
+  setBg(s.bg||'black','cut'); setCg(s.cg||null,'cut');
+  Object.entries(s.spr||{}).forEach(([w,v])=>showSpr(w,v.spr,v.pos));
+  playBgm(s.bgm||null); state.bgm=s.bgm||null; setMode(s.mode||'normal',s.ilabel); state.scene=s.scene;
+  state.i=s.i; if(s.cg) box.classList.add('hidden'); run();
+}
+function sceneStart(id){ return S.findIndex(c=>c.t==='scene'&&c.id===id); }
+function startAt(idx){
+  hideTitle();
+  // rebuild visual state by scanning back to most recent bg
+  const s={i:idx,bg:'black',cg:null,spr:{},bgm:null,mode:'normal'};
+  for(let k=0;k<idx;k++){ const c=S[k];
+    if(c.t==='bg'){s.bg=c.name;s.spr={};s.cg=null;} else if(c.t==='cg'){s.cg=c.name;} else if(c.t==='bgm'){s.bgm=c.name;}
+    else if(c.t==='show'){ s.spr[c.who]={spr:c.spr,pos:c.pos||(s.spr[c.who]&&s.spr[c.who].pos)||'c'}; } else if(c.t==='hide'){ delete s.spr[c.who]; }
+    else if(c.t==='hideall'){s.spr={};} else if(c.t==='mode'){ s.mode=c.mode; s.ilabel=c.label; } }
+  restore(s);
+}
+function openSave(mode){
+  $('#saveH').textContent = mode==='save'?'Save':'Load';
+  const wrap=$('#slots'); wrap.innerHTML='';
+  for(let n=1;n<=9;n++){
+    const d=store.get('slot'+n,null); const b=document.createElement('button'); b.className='slot'; b.type='button';
+    const th=document.createElement('div'); th.className='th'; if(d) th.style.backgroundImage=`url(img/bg/${d.cg||(['black','white'].includes(d.bg)?'cg_title':d.bg)}.webp)`;
+    const meta=document.createElement('div'); meta.className='meta';
+    const nn=document.createElement('div'); nn.className='n'; nn.textContent='SLOT '+n;
+    const ss=document.createElement('div'); ss.className='s';
+    if(d){ const c=S[d.i]; const txt=c&&c.text?c.text.replace(/^"|"$/g,''):''; ss.textContent=`${new Date(d.t).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})} · ${txt.slice(0,64)}${txt.length>64?'…':''}`; }
+    else ss.textContent= mode==='save'?'Empty — tap to save here':'Empty';
+    meta.append(nn,ss); b.append(th,meta);
+    b.onclick=()=>{ if(mode==='save'){ store.set('slot'+n,snap()); toast('Saved to slot '+n); openSave('save'); } else if(d){ closePanels(); hideTitle(); restore(d); } };
+    if(mode==='load'&&!d) b.disabled=true;
+    wrap.appendChild(b);
+  }
+  $('#saveP').classList.add('on');
+}
+function openLog(){
+  const body=$('#logBody'); body.innerHTML='';
+  log.forEach(e=>{ const r=document.createElement('div'); r.className='log-row';
+    const w=document.createElement('div'); w.className='who'; w.textContent=e.who||'';
+    const t=document.createElement('div'); t.className='t'; t.textContent=e.t; if(e.id&&jaText&&jaText[e.id]){ const j=document.createElement('div'); j.className='ja'; j.lang='ja'; j.textContent=jaText[e.id]; t.appendChild(j); }
+    const v=document.createElement('div');
+    if(e.id&&vIndex&&vIndex[e.id]){ const b=document.createElement('button'); b.className='vb'; b.type='button'; b.textContent='♪'; b.setAttribute('aria-label','Replay voice'); b.onclick=()=>playVoice(e.id,e.w); v.appendChild(b); }
+    r.append(w,t,v); body.appendChild(r); });
+  $('#logP').classList.add('on'); body.scrollTop=body.scrollHeight;
+}
+function openChapters(){
+  const wrap=$('#chapList'); wrap.innerHTML='';
+  CHAPTERS.forEach(ch=>{ const b=document.createElement('button'); b.type='button';
+    b.innerHTML=`<div class="th" style="background-image:url(img/bg/${ch.th}.webp)"></div><div class="meta"><div class="k"></div><div class="tt"></div></div>`;
+    b.querySelector('.k').textContent=ch.k; b.querySelector('.tt').textContent=ch.t;
+    b.onclick=()=>{ closePanels(); startAt(sceneStart(ch.start)); }; wrap.appendChild(b); });
+  $('#chapP').classList.add('on');
+}
+function openSettings(){
+  const bind=(id,key)=>{ const el=$(id); el.value=prefs[key]; el.oninput=()=>{ prefs[key]=+el.value; applyVol(); store.set('prefs',prefs); }; };
+  bind('#sText','text'); bind('#sAuto','auto'); bind('#sBgm','bgm'); bind('#sVoice','voice'); bind('#sSfx','sfx');
+  const vc=$('#vChips'); vc.innerHTML='';
+  ['kohei','nanoha','natsuki','akane','rika','ryosuke','yuzu','kirishima','takatsuki','emi','sota'].forEach(w=>{ const b=document.createElement('button'); b.type='button'; b.className='chip'+(prefs.mute[w]?' off':''); b.textContent=SPK[w]||w; b.setAttribute('aria-pressed',String(!prefs.mute[w]));
+    b.onclick=()=>{ prefs.mute[w]=!prefs.mute[w]; store.set('prefs',prefs); openSettings(); }; vc.appendChild(b); });
+  $('#toTitle').onclick=()=>{ closePanels(); toTitle(); };
+  $('#setP').classList.add('on');
+}
+function closePanels(){ document.querySelectorAll('.panel.on').forEach(p=>p.classList.remove('on')); if(curLine&&!typing) scheduleAuto(); }
+function setAuto(v){ autoOn=v; $('#bAuto').classList.toggle('on',v); if(v){ setSkip(false); if(!typing) scheduleAuto(); } else clearTimeout(autoTimer); }
+function setSkip(v){ skipOn=v; $('#bSkip').classList.toggle('on',v); if(v){ autoOn=false; $('#bAuto').classList.remove('on'); stopVoice(); advance(); } }
+
+/* ---------- title ---------- */
+function hideTitle(){ $('#title').hidden=true; }
+function toTitle(){
+  cardFinish=null; setSkip(false); setAuto(false); stopVoice(); clearTimeout(waitTimer); box.classList.add('hidden');
+  ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); setCg(null); setMode('normal');
+  $('#title').hidden=false; $('#tapStart').hidden=true; $('#mCont').disabled=!store.get('cont',null); playBgm('title');
+}
+
+/* ---------- input ---------- */
+app.addEventListener('click',e=>{
+  if(e.target.closest('button,.panel,#title,input')) return;
+  if($('#endCard').classList.contains('on')) return;
+  if(skipOn){ setSkip(false); return; }
+  advance();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){ if(!overlayOpen()&&!e.target.closest('button,input')){ e.preventDefault(); if(skipOn) setSkip(false); else advance(); } }
+  if(e.key==='Escape') closePanels();
+});
+$('#bAuto').onclick=()=>setAuto(!autoOn);
+$('#bSkip').onclick=()=>setSkip(!skipOn);
+$('#bLog').onclick=()=>{ setAuto(false); setSkip(false); openLog(); };
+$('#bSave').onclick=()=>{ setAuto(false); openSave('save'); };
+$('#bLoad').onclick=()=>{ setAuto(false); openSave('load'); };
+$('#bMenu').onclick=()=>{ setAuto(false); setSkip(false); openSettings(); };
+document.querySelectorAll('[data-close]').forEach(b=>b.onclick=closePanels);
+// every menu action waits for the script to be loaded, so a slow or late boot can never strand the player on a black stage
+function whenLoaded(fn){ return ()=>{ audioInit(); if(S){ fn(); return; } toast('Loading…'); loadScript().then(fn).catch(showErr); }; }
+$('#tapStart').onclick=()=>{ audioInit(); $('#tapStart').hidden=true; playBgm('title'); };
+$('#mStart').onclick=whenLoaded(()=>startAt(0));
+$('#mCont').onclick=whenLoaded(()=>{ const c=store.get('cont',null); if(c){ hideTitle(); restore(c);} });
+$('#mChap').onclick=whenLoaded(openChapters);
+$('#mLoad').onclick=whenLoaded(()=>openSave('load'));
+$('#mSet').onclick=()=>{ audioInit(); openSettings(); };
+$('#endBack').onclick=()=>toTitle();
+window.addEventListener('resize',()=>{ layoutSprites(); Object.entries(state.spr).forEach(([w,v])=>{ const el=document.querySelector(`.spr[data-who="${w}"]`); if(el) el.style.left=POSX[v.pos]+'%'; }); });
+document.addEventListener('visibilitychange',()=>{ if(!ac) return; if(document.hidden) ac.suspend(); else ac.resume(); });
+
+/* ---------- boot ---------- */
+/* errors surface on screen (small, bottom-left) so a failure is never just a black stage */
+function showErr(e){ const m=(e&&(e.message||e.reason&&e.reason.message||e.reason))||String(e); const el=$('#err'); el.textContent='Something went wrong: '+m+' — tap to dismiss'; el.hidden=false; }
+window.addEventListener('error',e=>showErr(e.error||e.message));
+window.addEventListener('unhandledrejection',e=>showErr(e.reason||e));
+$('#err').onclick=()=>{ $('#err').hidden=true; };
+let scriptP=null;
+function loadScript(){
+  if(!scriptP) scriptP=fetch('script.json').then(r=>{ if(!r.ok) throw new Error('could not load the story (script.json '+r.status+')'); return r.json(); })
+    .then(j=>{ S=j.script; SPK=j.speakers; $('#mCont').disabled=!store.get('cont',null); return j; })
+    .catch(e=>{ scriptP=null; throw e; });
+  return scriptP;
+}
+loadScript().catch(showErr);   // load immediately, independent of the viewer's hot-reload hook
+// warm the image cache for the first scenes
+['bg_kohei_room_day','bg_fujisawa_kitchen','cg_hands_strap'].forEach(n=>{const i=new Image(); i.src=`img/bg/${n}.webp`;});
+let restoredHot=false;
+function start(data){
+  if(!data||!data.snap||restoredHot) return;
+  restoredHot=true;
+  loadScript().then(()=>{ if(!$('#title').hidden && !$('#tapStart').hidden){ $('#tapStart').hidden=true; hideTitle(); restore(data.snap); } }).catch(showErr);
+}
+if(location.hash==='#qa') window.__vn={startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, check:()=>({i:state.i, cur:curLine&&curLine.t, id:curLine&&curLine.id, typing, box:!box.classList.contains('hidden'), cards:[...document.querySelectorAll('.card.on')].map(e=>e.id), title:!$('#title').hidden, text:textEl.textContent.length, phone:$('#phone').classList.contains('on'), cg:state.cg, bg:state.bg})};
+try{
+  const hot=window.claude&&window.claude.hot;
+  if(hot&&hot.snapshot) hot.snapshot(()=>({snap: $('#title').hidden ? snap() : null}));
+  if(hot&&hot.ready) hot.ready(start); else start(hot&&hot.data||{});
+}catch(e){ /* the hook is optional */ }
+// look-ahead preloading of upcoming art
+setInterval(()=>{ if(!S) return; for(let k=state.i;k<Math.min(S.length,state.i+40);k++){ const c=S[k];
+  if((c.t==='bg'||c.t==='cg')&&c.name&&!['black','white'].includes(c.name)){ const u=`img/bg/${c.name}.webp`; if(!preloaded.has(u)){preloaded.add(u); const i=new Image(); i.src=u;} }
+  if(c.t==='show'){ const u=`img/ch/${c.spr}.webp`; if(!preloaded.has(u)){preloaded.add(u); const i=new Image(); i.src=u;} }
+  if(c.t==='say'&&ac) voiceBuf(c.id); } },1500);
+})();
+</script>
+
+</body>
+</html>
