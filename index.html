@@ -164,6 +164,8 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 #toast{position:absolute;left:50%;top:16px;transform:translateX(-50%);z-index:40;background:var(--ink-2);border:1px solid var(--gilt);
   padding:.6em 1.2em;border-radius:3px;font-size:14px;letter-spacing:.08em;opacity:0;transition:opacity .3s;pointer-events:none}
 #toast.on{opacity:1}
+.sndout{white-space:pre-wrap;font:13px/1.55 ui-monospace,Menlo,monospace;color:var(--paper-dim);margin:.7em 0 0;min-height:0}
+.sndout:empty{display:none}
 #err{position:absolute;left:12px;bottom:12px;z-index:50;max-width:min(560px,calc(100% - 24px));background:#3a1820;color:var(--paper);
   border:1px solid var(--sakura);border-radius:3px;padding:.7em 1em;font-size:13px;line-height:1.45;cursor:pointer}
 #endCard .thanks{color:var(--paper-dim);max-width:34em;line-height:1.7;font-size:clamp(14px,2vh,17px)}
@@ -236,6 +238,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
       <div class="set"><label for="sVoice">Voice volume</label><input id="sVoice" type="range" min="0" max="100"></div>
       <div class="set"><label for="sSfx">Sound effects</label><input id="sSfx" type="range" min="0" max="100"></div>
       <div class="set"><label>Character voices</label><div class="voices" id="vChips"></div></div>
+      <div class="set"><label>Sound</label><div><button class="x" id="sndBtn" type="button">Sound check</button><pre id="sndOut" class="sndout"></pre></div></div>
       <div class="set"><label>Navigation</label><div class="voices"><button class="x" id="toTitle" type="button">Return to title</button></div></div>
     </div>
   </section>
@@ -277,20 +280,47 @@ const bgImgs=[...document.querySelectorAll('#bg .bgimg')], cgImgs=[...document.q
 let bgFront=0, cgFront=0;
 
 /* ---------- audio (Web Audio so volume works on iPad) ---------- */
-let ac=null, gBgm, gVoice, gSfx;
+let ac=null, gBgm, gVoice, gSfx, bgmWanted=null, silentEl=null;
 const bufCache=new Map();
+/* decoded audio is large (a 2-minute stereo track is ~50 MB as PCM), so keep only recent music and voice in memory */
+function cachePut(key, p){ bufCache.delete(key); bufCache.set(key, p);
+  const lim = key.startsWith('v:') ? 60 : key.includes('/bgm/') ? 3 : 1e9, pre = key.startsWith('v:') ? 'v:' : key.includes('/bgm/') ? 'audio/bgm/' : null;
+  if(!pre) return; const keys=[...bufCache.keys()].filter(k=>k.startsWith(pre));
+  for(let k=0;k<keys.length-lim;k++) if(keys[k]!==key && !(bgmWanted && keys[k].endsWith('/'+bgmWanted+'.mp3'))) bufCache.delete(keys[k]); }
+const diag={errors:[], decodeOk:0, decodeFail:0, unlocked:false};
+function note(kind, e){ const m=kind+': '+((e&&(e.name?e.name+' ':'')+(e.message||''))||String(e)); diag.errors.push(m); if(diag.errors.length>40) diag.errors.shift(); }
+/* decodeAudioData has both a callback and a promise form; WebKit rejects the promise even when callbacks are given, so handle both */
+function decode(ab){ return new Promise(res=>{ let done=false;
+  const ok=b=>{ if(done) return; done=true; diag.decodeOk++; res(b); }, bad=e=>{ if(done) return; done=true; diag.decodeFail++; note('decode',e); res(null); };
+  try{ const p=ac.decodeAudioData(ab, ok, bad); if(p&&p.then) p.then(ok,bad); }catch(e){ bad(e); } }); }
+function silentWavURL(){ const sr=22050, n=sr/2, bytes=n*2, buf=new ArrayBuffer(44+bytes), v=new DataView(buf), w=(o,t)=>{ for(let i=0;i<t.length;i++) v.setUint8(o+i,t.charCodeAt(i)); };
+  w(0,'RIFF'); v.setUint32(4,36+bytes,true); w(8,'WAVE'); w(12,'fmt '); v.setUint32(16,16,true); v.setUint16(20,1,true); v.setUint16(22,1,true); v.setUint32(24,sr,true); v.setUint32(28,sr*2,true); v.setUint16(32,2,true); v.setUint16(34,16,true); w(36,'data'); v.setUint32(40,bytes,true);
+  return URL.createObjectURL(new Blob([buf],{type:'audio/wav'})); }
+/* iPhone/iPad Silent Mode mutes Web Audio unless the page's audio session is "playback":
+   use the Audio Session API where available, and a silent looping media element as the fallback */
+function unlockIOS(){
+  try{ if(navigator.audioSession && navigator.audioSession.type!=='playback') navigator.audioSession.type='playback'; }catch(e){ note('audioSession',e); }
+  try{ if(!silentEl){ silentEl=document.createElement('audio'); silentEl.setAttribute('playsinline',''); silentEl.setAttribute('x-webkit-airplay','deny'); silentEl.loop=true; silentEl.preload='auto'; silentEl.src=silentWavURL(); }
+    const p=silentEl.play(); if(p&&p.then) p.then(()=>{diag.unlocked=true;},e=>note('unlock',e)); }catch(e){ note('unlock',e); }
+}
+function resumeAudio(){ if(ac && ac.state!=='running'){ try{ const p=ac.resume(); if(p&&p.catch) p.catch(e=>note('resume',e)); }catch(e){ note('resume',e); } } }
 function audioInit(){
-  if(ac) { if(ac.state==='suspended') ac.resume(); return; }
-  const AC=window.AudioContext||window.webkitAudioContext; if(!AC) return;
-  ac=new AC(); gBgm=ac.createGain(); gVoice=ac.createGain(); gSfx=ac.createGain();
-  [gBgm,gVoice,gSfx].forEach(g=>g.connect(ac.destination)); applyVol();
-  const b=ac.createBuffer(1,1,22050), s=ac.createBufferSource(); s.buffer=b; s.connect(ac.destination); s.start(0);
+  unlockIOS();
+  if(ac){ resumeAudio(); return; }
+  const AC=window.AudioContext||window.webkitAudioContext; if(!AC){ note('init','Web Audio not available'); return; }
+  try{
+    ac=new AC(); gBgm=ac.createGain(); gVoice=ac.createGain(); gSfx=ac.createGain();
+    [gBgm,gVoice,gSfx].forEach(g=>g.connect(ac.destination)); applyVol();
+    const b=ac.createBuffer(1,1,ac.sampleRate), s=ac.createBufferSource(); s.buffer=b; s.connect(ac.destination); s.start(0);
+    resumeAudio();
+    if(bgmWanted){ const w=bgmWanted; bgmName=null; playBgm(w); }
+  }catch(e){ note('init',e); }
 }
 function applyVol(){ if(!ac) return; gBgm.gain.cancelScheduledValues(ac.currentTime); gBgm.gain.value=(prefs.bgm/100)**1.6*(vNode?0.55:1); gVoice.gain.value=(prefs.voice/100)**1.3; gSfx.gain.value=(prefs.sfx/100)**1.5; }
 async function loadBuf(url){
-  if(bufCache.has(url)) return bufCache.get(url);
-  const p=fetch(url).then(r=>{if(!r.ok) throw 0; return r.arrayBuffer()}).then(ab=>new Promise((res,rej)=>ac.decodeAudioData(ab,res,rej))).catch(()=>null);
-  bufCache.set(url,p); return p;
+  if(bufCache.has(url)){ const p=bufCache.get(url); cachePut(url,p); return p; }
+  const p=fetch(url).then(r=>{ if(!r.ok) throw new Error(url+' '+r.status); return r.arrayBuffer(); }).then(decode).catch(e=>{ note('load',e); bufCache.delete(url); return null; });
+  cachePut(url,p); return p;
 }
 let bgmName=null, bgmGain=null, bgmTok=0, bgmSrcs=[], bgmTimer=null;
 /* music loops by crossfading the end of the track into a fresh start, so long scenes never hear a hard seam */
@@ -303,8 +333,9 @@ function bgmIter(buf, g, when, first, tok){
   bgmTimer=setTimeout(()=>{ if(tok===bgmTok) bgmIter(buf,g,next,false,tok); }, Math.max(0,(next-ac.currentTime-4)*1000));
 }
 async function playBgm(name){
-  if(name===bgmName) return; bgmName=name;
+  bgmWanted=name;
   if(!ac) return;
+  if(name===bgmName) return; bgmName=name;
   const tok=++bgmTok; clearTimeout(bgmTimer);
   const oldG=bgmGain, oldSrcs=bgmSrcs; bgmGain=null; bgmSrcs=[];
   if(oldG){ const t=ac.currentTime; oldG.gain.cancelScheduledValues(t); oldG.gain.setValueAtTime(oldG.gain.value,t); oldG.gain.linearRampToValueAtTime(0,t+1.4); setTimeout(()=>{ oldSrcs.forEach(x=>{try{x.stop()}catch(e){}}); try{oldG.disconnect()}catch(e){} },1600); }
@@ -319,13 +350,14 @@ fetch('voice/index.json').then(r=>r.ok?r.json():null).then(j=>{vIndex=j}).catch(
 async function voiceBuf(id){
   if(!vIndex||!vIndex[id]||!ac) return null;
   const [pack,off,len]=vIndex[id]; const key='v:'+id;
-  if(bufCache.has(key)) return bufCache.get(key);
+  if(bufCache.has(key)){ const p=bufCache.get(key); cachePut(key,p); return p; }
   const p=(async()=>{
-    if(!vPacks.has(pack)) vPacks.set(pack, fetch('voice/'+pack).then(r=>r.arrayBuffer()));
+    if(vPacks.size>6 && !vPacks.has(pack)) vPacks.delete(vPacks.keys().next().value);
+    if(!vPacks.has(pack)) vPacks.set(pack, fetch('voice/'+pack).then(r=>{ if(!r.ok) throw new Error('voice/'+pack+' '+r.status); return r.arrayBuffer(); }).catch(e=>{ vPacks.delete(pack); throw e; }));
     const ab=await vPacks.get(pack); const slice=ab.slice(off,off+len);
-    return await new Promise((res)=>ac.decodeAudioData(slice,res,()=>res(null)));
-  })().catch(()=>null);
-  bufCache.set(key,p); return p;
+    return await decode(slice);
+  })().catch(e=>{ note('voice',e); bufCache.delete(key); return null; });
+  cachePut(key,p); return p;
 }
 let vTok=0, jaText=null;
 fetch('voice/ja.json').then(r=>r.ok?r.json():null).then(j=>{jaText=j}).catch(()=>{});
@@ -445,14 +477,14 @@ function run(){
         case 'endchapter': return pause(200);
         case 'endpilot': store.set('cont',null); return endPilot();
         case 'video': break; // future cutscenes: falls back to continuing
-        case 'phone': if(!skipOn) playSfx('notif'); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); return waitTap(skipOn?60:0);
+        case 'phone': if(!skipOn) playSfx('notif'); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); return waitTap(0);
         case 'say': case 'nar': return line(c);
       }
     }
   } finally { running=false; }
 }
 function pause(ms, keepHidden){ running=false; clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(!keepHidden) {} run(); }, ms); }
-function waitTap(ms){ running=false; if(ms){ clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(skipOn) advance(); },ms);} }
+function waitTap(ms){ running=false; }
 function line(c){
   running=false; curLine=c; stopVoice(); vNodeOnEnd=null;
   if(c.t==='say'||c.t==='nar'){ if(!$('#phone').classList.contains('on')) {} }
@@ -466,7 +498,6 @@ function line(c){
   if(log.length>400) log.shift();
   state.read[c.id]=1;
   if(c.t==='say' && !skipOn && ac){ playVoice(c.id,who,()=>{ if(vNodeOnEnd) {const f=vNodeOnEnd; vNodeOnEnd=null; f();} }); }
-  if(skipOn){ clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(skipOn) advance(); },45); }
 }
 function advance(){
   if(overlayOpen()) return;
@@ -563,9 +594,28 @@ function openSettings(){
   $('#toTitle').onclick=()=>{ closePanels(); toTitle(); };
   $('#setP').classList.add('on');
 }
+async function soundCheck(){
+  audioInit();
+  const out=$('#sndOut'); out.textContent='Checking…'; const L=[];
+  L.push('Audio engine: '+(ac?ac.state+', '+ac.sampleRate+' Hz':'not available'));
+  L.push('Silent Mode override: '+(navigator.audioSession?'audio session "'+navigator.audioSession.type+'"':(diag.unlocked?'active':'not active'))+(diag.unlocked?' (media unlock on)':''));
+  if(ac){ try{ const t=ac.currentTime, o=ac.createOscillator(), g=ac.createGain(); o.frequency.value=660; g.gain.setValueAtTime(0.0001,t); g.gain.exponentialRampToValueAtTime(0.3,t+0.03); g.gain.exponentialRampToValueAtTime(0.0001,t+0.6); o.connect(g); g.connect(gSfx); o.start(t); o.stop(t+0.65); }catch(e){ note('tone',e); } }
+  const m=await loadBuf('audio/bgm/title.mp3'); L.push('Music file: '+(m?'ok ('+Math.round(m.duration)+' s)':'FAILED'));
+  const v=await voiceBuf('c1_0013'); L.push('Voice file: '+(v?'ok':'FAILED'));
+  if(v&&ac){ try{ const s=ac.createBufferSource(); s.buffer=v; s.connect(gVoice); s.start(ac.currentTime+0.8); }catch(e){ note('voice test',e); } }
+  L.push('Volumes: music '+prefs.bgm+' · voice '+prefs.voice+' · effects '+prefs.sfx);
+  L.push('Decoded '+diag.decodeOk+' ok / '+diag.decodeFail+' failed');
+  L.push('Problems logged: '+(diag.errors.length?'\n  '+diag.errors.slice(-8).join('\n  '):'none'));
+  L.push('You should hear a chime, then Kōhei saying "Ohayō". If you hear nothing, check the volume buttons and Silent Mode.');
+  out.textContent=L.join('\n');
+}
 function closePanels(){ document.querySelectorAll('.panel.on').forEach(p=>p.classList.remove('on')); if(curLine&&!typing) scheduleAuto(); }
 function setAuto(v){ autoOn=v; $('#bAuto').classList.toggle('on',v); if(v){ setSkip(false); if(!typing) scheduleAuto(); } else clearTimeout(autoTimer); }
-function setSkip(v){ skipOn=v; $('#bSkip').classList.toggle('on',v); if(v){ autoOn=false; $('#bAuto').classList.remove('on'); stopVoice(); advance(); } }
+/* skip runs on its own clock: whenever a line or text message is waiting, move on (cards and pauses shorten themselves while skipping) */
+let skipTimer=null;
+function setSkip(v){ skipOn=v; $('#bSkip').classList.toggle('on',v); clearInterval(skipTimer);
+  if(v){ autoOn=false; $('#bAuto').classList.remove('on'); stopVoice();
+    skipTimer=setInterval(()=>{ if(!skipOn){ clearInterval(skipTimer); return; } if(overlayOpen()||running) return; if(typing){ finishType(); return; } if(curLine) advance(); }, 55); } }
 
 /* ---------- title ---------- */
 function hideTitle(){ $('#title').hidden=true; }
@@ -577,13 +627,14 @@ function toTitle(){
 
 /* ---------- input ---------- */
 app.addEventListener('click',e=>{
-  if(e.target.closest('button,.panel,#title,input')) return;
+  resumeAudio();
+  if(e.target&&e.target.closest&&e.target.closest('button,.panel,#title,input')) return;
   if($('#endCard').classList.contains('on')) return;
   if(skipOn){ setSkip(false); return; }
   advance();
 });
 document.addEventListener('keydown',e=>{
-  if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){ if(!overlayOpen()&&!e.target.closest('button,input')){ e.preventDefault(); if(skipOn) setSkip(false); else advance(); } }
+  if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){ if(!overlayOpen()&&!(e.target&&e.target.closest&&e.target.closest('button,input'))){ e.preventDefault(); if(skipOn) setSkip(false); else advance(); } }
   if(e.key==='Escape') closePanels();
 });
 $('#bAuto').onclick=()=>setAuto(!autoOn);
@@ -602,12 +653,13 @@ $('#mChap').onclick=whenLoaded(openChapters);
 $('#mLoad').onclick=whenLoaded(()=>openSave('load'));
 $('#mSet').onclick=()=>{ audioInit(); openSettings(); };
 $('#endBack').onclick=()=>toTitle();
+$('#sndBtn').onclick=soundCheck;
 window.addEventListener('resize',()=>{ layoutSprites(); Object.entries(state.spr).forEach(([w,v])=>{ const el=document.querySelector(`.spr[data-who="${w}"]`); if(el) el.style.left=POSX[v.pos]+'%'; }); });
-document.addEventListener('visibilitychange',()=>{ if(!ac) return; if(document.hidden) ac.suspend(); else ac.resume(); });
+document.addEventListener('visibilitychange',()=>{ if(!ac) return; try{ if(document.hidden){ const p=ac.suspend(); if(p&&p.catch) p.catch(e=>note('suspend',e)); if(silentEl) silentEl.pause(); } else { resumeAudio(); if(silentEl){ const q=silentEl.play(); if(q&&q.catch) q.catch(()=>{}); } } }catch(e){ note('visibility',e); } });
 
 /* ---------- boot ---------- */
 /* errors surface on screen (small, bottom-left) so a failure is never just a black stage */
-function showErr(e){ const m=(e&&(e.message||e.reason&&e.reason.message||e.reason))||String(e); const el=$('#err'); el.textContent='Something went wrong: '+m+' — tap to dismiss'; el.hidden=false; }
+function showErr(e){ const m=(e&&(e.message||e.reason&&e.reason.message||e.reason))||String(e); note('error',m); const el=$('#err'); el.textContent='Something went wrong: '+m+' (tap to dismiss; Settings → Sound check has details)'; el.hidden=false; }
 window.addEventListener('error',e=>showErr(e.error||e.message));
 window.addEventListener('unhandledrejection',e=>showErr(e.reason||e));
 $('#err').onclick=()=>{ $('#err').hidden=true; };
@@ -627,7 +679,7 @@ function start(data){
   restoredHot=true;
   loadScript().then(()=>{ if(!$('#title').hidden && !$('#tapStart').hidden){ $('#tapStart').hidden=true; hideTitle(); restore(data.snap); } }).catch(showErr);
 }
-if(location.hash==='#qa') window.__vn={startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, check:()=>({i:state.i, cur:curLine&&curLine.t, id:curLine&&curLine.id, typing, box:!box.classList.contains('hidden'), cards:[...document.querySelectorAll('.card.on')].map(e=>e.id), title:!$('#title').hidden, text:textEl.textContent.length, phone:$('#phone').classList.contains('on'), cg:state.cg, bg:state.bg})};
+if(location.hash==='#qa') window.__vn={startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, diag, soundCheck, check:()=>({i:state.i, cur:curLine&&curLine.t, id:curLine&&curLine.id, typing, box:!box.classList.contains('hidden'), cards:[...document.querySelectorAll('.card.on')].map(e=>e.id), title:!$('#title').hidden, text:textEl.textContent.length, phone:$('#phone').classList.contains('on'), cg:state.cg, bg:state.bg})};
 try{
   const hot=window.claude&&window.claude.hot;
   if(hot&&hot.snapshot) hot.snapshot(()=>({snap: $('#title').hidden ? snap() : null}));
