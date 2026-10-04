@@ -170,6 +170,68 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
   border:1px solid var(--sakura);border-radius:3px;padding:.7em 1em;font-size:13px;line-height:1.45;cursor:pointer}
 #endCard .thanks{color:var(--paper-dim);max-width:34em;line-height:1.7;font-size:clamp(14px,2vh,17px)}
 #endCard .x{margin-top:18px}
+/* developer mode: scene chart + line stepper (shown only when developer mode is on) */
+#app:not(.dev) .dev-only{display:none!important}
+input{-webkit-user-select:text;user-select:text}
+.mi.devmi{text-shadow:0 1px 10px rgba(0,0,0,.65)}
+.mi.devmi::after{content:"DEV";font:700 10px/1 var(--f-body);letter-spacing:.16em;color:#1b1d26;background:var(--gilt);padding:3px 5px;border-radius:2px;margin-left:.8em;vertical-align:.35em;text-shadow:none}
+#chartP{background:var(--ink)}
+#devbar{position:absolute;z-index:25;display:flex;align-items:center;gap:1px;padding:2px 3px 2px 4px;
+  right:calc((100% - min(1180px,calc(100% - 32px)))/2 + clamp(14px,2.4vw,34px));
+  bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 12px);
+  background:rgba(27,32,52,.92);border:1px solid rgba(201,164,106,.5);border-radius:3px;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+#title:not([hidden]) ~ #devbar{display:none}
+#devbar .did{appearance:none;border:0;background:transparent;color:var(--gilt);font:600 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.03em;padding:10px 8px;cursor:pointer;border-radius:3px}
+#devbar .dsc{color:var(--paper-dim);font:500 12px/1 var(--f-body);letter-spacing:.06em;padding:0 8px 0 2px;white-space:nowrap}
+#devbar .db{appearance:none;border:0;background:transparent;color:var(--paper);width:40px;height:36px;border-radius:3px;display:grid;place-items:center;cursor:pointer;padding:0}
+#devbar .db svg{width:15px;height:15px;fill:currentColor}
+#devbar .did:hover,#devbar .db:hover,#devbar .did:focus-visible,#devbar .db:focus-visible{background:rgba(255,255,255,.08);outline:none}
+#devbar .dchart{width:auto;padding:0 12px;font:600 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--sakura);border-left:1px solid rgba(255,255,255,.1);border-radius:0 3px 3px 0}
+#chartP header{flex-wrap:wrap}
+.chart-h,.chart-r{display:flex;align-items:center;gap:12px;min-width:0}
+.chart-r{flex:1;justify-content:flex-end}
+#chartQ{flex:1;min-width:0;max-width:340px;appearance:none;-webkit-appearance:none;background:var(--ink-2);border:1px solid rgba(255,255,255,.16);border-radius:3px;color:var(--paper);font:400 16px var(--f-body);padding:.5em .8em}
+#chartQ:focus{outline:none;border-color:var(--sakura)}
+.cch{display:flex;align-items:baseline;gap:14px;margin:26px 2px 12px;padding-bottom:8px;border-bottom:1px solid rgba(201,164,106,.35)}
+.cch:first-child{margin-top:4px}
+.cch .k{font-family:var(--f-display);color:var(--gilt);letter-spacing:.3em;font-size:13px}
+.cch .tt{font-family:var(--f-display);font-weight:700;font-size:20px;letter-spacing:.04em}
+.scg{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px}
+.sc{appearance:none;border:1px solid rgba(255,255,255,.12);background:var(--ink-2);color:var(--paper);border-radius:4px;padding:0;cursor:pointer;overflow:hidden;text-align:left;font:inherit;display:flex;flex-direction:column;position:relative}
+.sc:hover,.sc:focus-visible{border-color:var(--sakura);outline:none}
+.sc.now{border-color:var(--sakura);box-shadow:0 0 0 1px var(--sakura)}
+.sc img,.sd-head img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.sc .meta{padding:9px 11px 12px;display:flex;flex-direction:column;gap:5px}
+.sc .n,.sd-head .n{font:600 12px ui-monospace,Menlo,monospace;color:var(--gilt);letter-spacing:.05em}
+.sc .tt{font-family:var(--f-display);font-weight:700;font-size:16px;line-height:1.25}
+.sc .s{font-size:12px;color:var(--paper-dim);line-height:1.4}
+.sc .tag{position:absolute;top:8px;left:8px;background:var(--sakura);color:#1b1d26;font:700 10px/1 var(--f-body);letter-spacing:.16em;padding:4px 7px;border-radius:2px}
+.wd{display:flex;flex-wrap:wrap;gap:3px 10px;font-size:12px;color:var(--paper-dim)}
+.wd i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.sd-head{display:flex;gap:18px;align-items:flex-start;margin:2px 0 16px;flex-wrap:wrap}
+.sd-head img{width:min(280px,42%);border-radius:3px}
+.sd-head .info{flex:1;min-width:230px;display:flex;flex-direction:column;gap:8px}
+.sd-head .tt{font-family:var(--f-display);font-weight:700;font-size:clamp(20px,3vh,26px);letter-spacing:.03em}
+.sd-head .s{font-size:13px;color:var(--paper-dim);line-height:1.5}
+.sd-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.ln-row{display:grid;grid-template-columns:1fr 2.6em;align-items:start;border-bottom:1px solid rgba(255,255,255,.06)}
+.ln-row.now{background:rgba(232,167,181,.11);box-shadow:inset 3px 0 0 var(--sakura)}
+.ln{appearance:none;border:0;background:transparent;color:var(--paper);font:inherit;text-align:left;cursor:pointer;display:grid;grid-template-columns:5.4em 6.6em 1fr;gap:12px;padding:11px 6px;align-items:start;min-width:0}
+.ln:hover,.ln:focus-visible{background:rgba(255,255,255,.05);outline:none}
+.ln .lid{font:12px/1.95 ui-monospace,Menlo,monospace;color:var(--paper-dim)}
+.ln .lw{font-family:var(--f-display);font-weight:700;color:var(--nc,var(--paper-dim));text-align:right;line-height:1.6}
+.ln .lt{line-height:1.6;min-width:0}
+.ln.nar .lt{color:#d6cebf}
+.ln .ja{display:block;font-family:var(--f-display);font-size:.88em;color:var(--paper-dim);margin-top:.15em;letter-spacing:.03em}
+.ln .scl{display:block;font-size:12px;color:var(--gilt);letter-spacing:.05em;margin-bottom:.2em}
+.ln-row .vb{appearance:none;border:0;background:transparent;color:var(--gilt);font-size:17px;cursor:pointer;padding:11px 0;min-height:44px}
+.mk{appearance:none;border:0;border-bottom:1px solid rgba(255,255,255,.06);background:transparent;width:100%;text-align:left;cursor:pointer;
+  font:600 11px/1.4 var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);padding:10px 6px 10px calc(12em + 30px)}
+.mk.minor{color:rgba(189,182,168,.6)}
+.mk:hover,.mk:focus-visible{background:rgba(255,255,255,.05);outline:none}
+.mk.now{background:rgba(232,167,181,.11)}
+.chart-note{color:var(--paper-dim);font-size:13px;letter-spacing:.04em;margin:2px 4px 10px}
+@media (max-width:700px){ .ln{grid-template-columns:1fr;gap:2px} .ln .lw{text-align:left} .mk{padding-left:6px} #devbar .dsc{display:none} }
 @media (prefers-reduced-motion: reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 @media (max-aspect-ratio: 1/1){ #box{min-height:22vh} .spr{max-width:none} }
 </style>
@@ -221,15 +283,28 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
           <button class="mi" id="mChap" type="button">Chapters</button>
           <button class="mi" id="mLoad" type="button">Load</button>
           <button class="mi" id="mSet" type="button">Settings</button>
+          <button class="mi devmi dev-only" id="mChart" type="button">Scene Chart</button>
         </nav>
       </div>
     </div>
     <div id="tapStart"><span>TAP TO BEGIN</span></div>
   </div>
+  <div id="devbar" class="dev-only" role="toolbar" aria-label="Developer controls">
+    <button class="did" id="devId" type="button" title="Copy line ID">—</button>
+    <span class="dsc" id="devSc"></span>
+    <button class="db" id="dPrevS" type="button" aria-label="Previous scene" title="Previous scene (Page Up)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h2.2v12H2zM14 2v12L5.4 8z"/></svg></button>
+    <button class="db" id="dPrevL" type="button" aria-label="Previous line" title="Previous line (Left arrow)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12.5 2v12L3.5 8z"/></svg></button>
+    <button class="db" id="dNextL" type="button" aria-label="Next line" title="Next line"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2v12l9-6z"/></svg></button>
+    <button class="db" id="dNextS" type="button" aria-label="Next scene" title="Next scene (Page Down)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2v12l8.6-6zM11.8 2H14v12h-2.2z"/></svg></button>
+    <button class="db dchart" id="dChart" type="button">Chart</button>
+  </div>
 
   <section class="panel" id="logP"><header><h2>Backlog</h2><button class="x" data-close type="button">Close</button></header><div class="body" id="logBody"></div></section>
   <section class="panel" id="saveP"><header><h2 id="saveH">Save</h2><button class="x" data-close type="button">Close</button></header><div class="body"><div class="slots" id="slots"></div></div></section>
   <section class="panel" id="chapP"><header><h2>Chapters</h2><button class="x" data-close type="button">Close</button></header><div class="body"><div class="chap" id="chapList"></div></div></section>
+  <section class="panel" id="chartP"><header><div class="chart-h"><button class="x" id="chartBack" type="button" hidden>‹ All scenes</button><h2 id="chartH">Scene Chart</h2></div>
+    <div class="chart-r"><input id="chartQ" type="search" placeholder="Search lines, names, IDs" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Search the script"><button class="x" data-close type="button">Close</button></div></header>
+    <div class="body" id="chartBody"></div></section>
   <section class="panel" id="setP"><header><h2>Settings</h2><button class="x" data-close type="button">Close</button></header>
     <div class="body">
       <div class="set"><label for="sText">Text speed</label><input id="sText" type="range" min="0" max="100"></div>
@@ -240,6 +315,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
       <div class="set"><label>Character voices</label><div class="voices" id="vChips"></div></div>
       <div class="set"><label>Sound</label><div><button class="x" id="sndBtn" type="button">Sound check</button><pre id="sndOut" class="sndout"></pre></div></div>
       <div class="set"><label>Navigation</label><div class="voices"><button class="x" id="toTitle" type="button">Return to title</button></div></div>
+      <div class="set dev-only"><label>Developer</label><div class="voices"><button class="x" id="setChart" type="button">Scene Chart</button><button class="x" id="devOff" type="button">Turn off developer mode</button></div></div>
     </div>
   </section>
   <div id="toast"></div>
@@ -477,7 +553,7 @@ function run(){
         case 'endchapter': return pause(200);
         case 'endpilot': store.set('cont',null); return endPilot();
         case 'video': break; // future cutscenes: falls back to continuing
-        case 'phone': if(!skipOn) playSfx('notif'); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); return waitTap(0);
+        case 'phone': if(!skipOn) playSfx('notif'); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); devUpdate(); return waitTap(0);
         case 'say': case 'nar': return line(c);
       }
     }
@@ -496,7 +572,7 @@ function line(c){
   typeOut(c.text, c.t==='nar'?'narr':'');
   log.push({who: who? SPK[who]: '', t:c.text, id:c.t==='say'?c.id:null, w:who});
   if(log.length>400) log.shift();
-  state.read[c.id]=1;
+  state.read[c.id]=1; devUpdate();
   if(c.t==='say' && !skipOn && ac){ playVoice(c.id,who,()=>{ if(vNodeOnEnd) {const f=vNodeOnEnd; vNodeOnEnd=null; f();} }); }
 }
 function advance(){
@@ -527,14 +603,19 @@ function endPilot(){ running=false; box.classList.add('hidden'); setSkip(false);
 /* ---------- save/load ---------- */
 function snap(){ // state at current command index (rewind to the line being shown)
   const i = curLine? S.indexOf(curLine) : state.i;
-  return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene};
+  // text messages already on the phone (minus the one being shown, which replays on load)
+  const phone = $('#phone').classList.contains('on') ? [...document.querySelectorAll('#phone .msg')].map(m=>({who:m.classList.contains('me')?'me':'them', text:m.textContent})) : [];
+  if(curLine && curLine.t==='phone') phone.pop();
+  return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene, phone};
 }
 function restore(s){
   cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
-  ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear();
-  document.querySelectorAll('.spr').forEach(e=>e.remove()); state.spr={};
+  ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
+  // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes
+  const keep=s.spr||{}; document.querySelectorAll('.spr').forEach(e=>{ if(!keep[e.dataset.who]) e.remove(); }); state.spr={};
   setBg(s.bg||'black','cut'); setCg(s.cg||null,'cut');
-  Object.entries(s.spr||{}).forEach(([w,v])=>showSpr(w,v.spr,v.pos));
+  Object.entries(keep).forEach(([w,v])=>showSpr(w,v.spr,v.pos));
+  (s.phone||[]).forEach(m=>phoneMsg(m.who,m.text));
   playBgm(s.bgm||null); state.bgm=s.bgm||null; setMode(s.mode||'normal',s.ilabel); state.scene=s.scene;
   state.i=s.i; if(s.cg) box.classList.add('hidden'); run();
 }
@@ -542,11 +623,13 @@ function sceneStart(id){ return S.findIndex(c=>c.t==='scene'&&c.id===id); }
 function startAt(idx){
   hideTitle();
   // rebuild visual state by scanning back to most recent bg
-  const s={i:idx,bg:'black',cg:null,spr:{},bgm:null,mode:'normal'};
+  const s={i:idx,bg:'black',cg:null,spr:{},bgm:null,mode:'normal',phone:[],scene:undefined};
   for(let k=0;k<idx;k++){ const c=S[k];
-    if(c.t==='bg'){s.bg=c.name;s.spr={};s.cg=null;} else if(c.t==='cg'){s.cg=c.name;} else if(c.t==='bgm'){s.bgm=c.name;}
+    if(c.t==='bg'){s.bg=c.name;s.spr={};s.cg=null;s.phone=[];} else if(c.t==='cg'){s.cg=c.name;} else if(c.t==='bgm'){s.bgm=c.name;}
     else if(c.t==='show'){ s.spr[c.who]={spr:c.spr,pos:c.pos||(s.spr[c.who]&&s.spr[c.who].pos)||'c'}; } else if(c.t==='hide'){ delete s.spr[c.who]; }
-    else if(c.t==='hideall'){s.spr={};} else if(c.t==='mode'){ s.mode=c.mode; s.ilabel=c.label; } }
+    else if(c.t==='hideall'){s.spr={};} else if(c.t==='mode'){ s.mode=c.mode; s.ilabel=c.label; } else if(c.t==='scene'){ s.scene=c.id; }
+    // the phone stays up through one line after the last text, then clears (same rule as advance())
+    else if(c.t==='phone'){ s.phone.push({who:c.who,text:c.text}); } else if((c.t==='say'||c.t==='nar') && !(S[k+1]&&S[k+1].t==='phone')){ s.phone=[]; } }
   restore(s);
 }
 function openSave(mode){
@@ -609,6 +692,136 @@ async function soundCheck(){
   L.push('You should hear a chime, then Kōhei saying "Ohayō". If you hear nothing, check the volume buttons and Silent Mode.');
   out.textContent=L.join('\n');
 }
+/* ---------- developer mode: scene chart and line stepper ---------- */
+const SCENE_T = {prologue:'The Dream', c1_morning:'Mornings at the Fujisawas', c1_river:'The river walk', c1_entrance:'The class lists',
+  c1_intro:'The transfer student', c1_lunch:'Lunch with Mizuno', c1_interlude:'Nanoha: the tour', c1_night:'Wrong day for the trash',
+  c2_tuesday:'A Tuesday shift', c2_dojo:'The dojo', c2_jigeiko:'Jigeiko', c2_after:'After the match', c2_mop:'The catch',
+  c2_bridge:'The bridge', c2_interlude:'Natsuki: texting Chie', c3_shift:'Training Yuzu', c3_home:'Home late', c3_window:'Windows',
+  c3_saturday:'Best of five', c3_shrine:'The Great Cherry', c3_lunch:'Tea at the shrine', c3_end:'Lunch at the Tachibanas’'};
+const HASH = new Set(location.hash.slice(1).split(/[&+,]/).filter(Boolean));
+let devOn = !!store.get('dev', false);
+if(HASH.has('dev')) devOn=true; if(HASH.has('nodev')) devOn=false;
+function setDev(v){ devOn=!!v; store.set('dev',devOn); app.classList.toggle('dev',devOn); devUpdate(); }
+const isLine = c => c && (c.t==='say'||c.t==='nar'||c.t==='phone');
+let DX=null;
+function devIndex(){
+  if(DX) return DX;
+  const scenes=[], at=new Array(S.length).fill(0); let cur=null, ch=0, chT=CHAPTERS[0].t, bg='black', perCh=0;
+  S.forEach((c,i)=>{
+    if(c.t==='chapter'){ ch=c.n; chT=c.title; perCh=0; }
+    if(c.t==='scene'){ perCh++; cur={id:c.id, i, ch, chT, no: ch? ch+'.'+perCh : 'P', date:'', lines:[], who:[], cgs:[], bgFirst:null, inh:bg}; scenes.push(cur); }
+    if(cur) at[i]=scenes.length-1; if(!cur) return;
+    if(c.t==='card' && !cur.date) cur.date=c.text;
+    if(c.t==='bg'){ bg=c.name; if(!cur.bgFirst && c.name!=='black' && c.name!=='white') cur.bgFirst=c.name; }
+    if(c.t==='cg' && c.name) cur.cgs.push(c.name);
+    if(isLine(c)){ cur.lines.push(i); if(c.t==='say' && !cur.who.includes(c.who)) cur.who.push(c.who); }
+  });
+  let d=''; scenes.forEach((s,k)=>{ if(s.date) d=s.date; else s.date=d; s.end=k<scenes.length-1?scenes[k+1].i:S.length;
+    s.thumb = s.cgs[0] || s.bgFirst || (s.inh==='black'||s.inh==='white' ? 'cg_title' : s.inh); });
+  DX={scenes, at}; return DX;
+}
+function curIdx(){ return curLine ? S.indexOf(curLine) : Math.max(0, state.i-1); }
+function devUpdate(){
+  if(!devOn || !S) return;
+  const X=devIndex(), ci=curIdx(), s=X.scenes[X.at[ci]], c=S[ci];
+  $('#devId').textContent = isLine(c) ? c.id : '—';
+  $('#devSc').textContent = s ? `${s.no} · ${Math.max(1, s.lines.filter(j=>j<=ci).length)}/${s.lines.length}` : '';
+}
+/* jump straight to any command: rebuilds the stage (background, CG, characters, music, phone) as it would be at that point */
+function devJump(j){
+  closePanels(); setSkip(false); setAuto(false); $('#tapStart').hidden=true; audioInit(); startAt(j); devUpdate();
+}
+function stepLine(d){ if(!S) return; let j=curIdx()+d; while(j>=0 && j<S.length && !isLine(S[j])) j+=d; if(j>=0 && j<S.length) devJump(j); }
+function stepScene(d){ if(!S) return; const X=devIndex(), ci=curIdx(), k=X.at[ci], s=X.scenes[k];
+  if(d<0){ if(s.lines.length && ci>s.lines[0]) devJump(s.i); else if(k>0) devJump(X.scenes[k-1].i); }
+  else if(k<X.scenes.length-1) devJump(X.scenes[k+1].i); }
+function copyId(){ const id=$('#devId').textContent; if(!id||id==='—') return;
+  const done=()=>toast('Copied '+id);
+  try{ navigator.clipboard.writeText(id).then(done, ()=>toast(id)); }catch(e){ toast(id); } }
+function nice(n){ return String(n).replace(/^(bg|cg)_/,'').replace(/_/g,' ').replace(/^./,m=>m.toUpperCase()); }
+function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+let chartLast={mode:'grid'};
+function openChart(view){
+  const X=devIndex(), body=$('#chartBody'), inGame=$('#title').hidden, ci=inGame?curIdx():-1, csk=inGame?X.at[ci]:-1, q=$('#chartQ');
+  if(!view){ q.value=''; view = csk>=0 ? {mode:'scene', k:csk} : {mode:'grid'}; }
+  if(view.mode!=='search') chartLast=view;
+  body.innerHTML=''; $('#chartBack').hidden = view.mode==='grid';
+  $('#chartH').textContent = view.mode==='scene' ? 'Scene '+X.scenes[view.k].no : 'Scene Chart';
+  if(view.mode==='grid') chartGrid(body, X, csk);
+  else if(view.mode==='scene') chartScene(body, X, view.k, ci);
+  else chartSearch(body, X, view.q, ci);
+  $('#chartP').classList.add('on');
+  const now=body.querySelector('.now'); if(now && view.mode!=='search') now.scrollIntoView({block:'center'}); else body.scrollTop=0;
+}
+function whoDots(list){ const w=el('div','wd'); list.forEach(x=>{ const s=el('span'); const i=el('i'); i.style.background=(CHAR[x]||{}).c||'var(--paper-dim)'; s.append(i, SPK[x]||x); w.appendChild(s); }); return w; }
+function thumb(name){ const im=el('img'); im.alt=''; im.loading='lazy'; im.decoding='async'; im.src=`img/th/${name}.webp`; return im; }
+function chartGrid(body, X, csk){
+  let lastCh=-1, grid=null;
+  X.scenes.forEach((s,k)=>{
+    if(s.ch!==lastCh){ lastCh=s.ch; const h=el('div','cch'); h.append(el('span','k', s.ch?'CHAPTER '+s.ch:'PROLOGUE'), el('span','tt', s.ch?s.chT:CHAPTERS[0].t)); grid=el('div','scg'); body.append(h,grid); }
+    const b=el('button','sc'+(k===csk?' now':'')); b.type='button'; b.dataset.scene=s.id;
+    const m=el('div','meta'); m.append(el('div','n', s.no+'  '+s.id), el('div','tt', SCENE_T[s.id]||s.id), el('div','s', (s.date?s.date+' · ':'')+s.lines.length+' lines'));
+    if(s.who.length) m.append(whoDots(s.who));
+    b.append(thumb(s.thumb), m); if(k===csk) b.append(el('span','tag','NOW'));
+    b.onclick=()=>openChart({mode:'scene', k}); grid.appendChild(b);
+  });
+}
+function lineRow(j, ci, withScene){
+  const c=S[j], row=el('div','ln-row'+(j===ci?' now':'')), b=el('button','ln'+(c.t==='say'?'':' nar')); b.type='button'; b.dataset.i=j;
+  const who = c.t==='say' ? (SPK[c.who]||c.who) : c.t==='phone' ? (c.who==='me'?'Natsuki':'Chie')+' ✉' : '';
+  const lw=el('span','lw', who); if(c.t==='say') lw.style.setProperty('--nc', (CHAR[c.who]||{}).c||'var(--sakura)');
+  const lt=el('span','lt');
+  if(withScene){ const X=devIndex(), s=X.scenes[X.at[j]]; lt.appendChild(el('span','scl', s.no+' · '+(SCENE_T[s.id]||s.id))); }
+  lt.append(c.text); if(c.t==='say' && jaText && jaText[c.id]){ const ja=el('span','ja', jaText[c.id]); ja.lang='ja'; lt.appendChild(ja); }
+  b.append(el('span','lid', c.id||''), lw, lt); b.onclick=()=>devJump(j);
+  const v=el('div'); if(c.t==='say' && vIndex && vIndex[c.id]){ const p=el('button','vb','♪'); p.type='button'; p.setAttribute('aria-label','Play voice'); p.onclick=()=>{ audioInit(); playVoice(c.id, null); }; v.appendChild(p); }
+  row.append(b, v); return row;
+}
+function chartScene(body, X, k, ci){
+  const s=X.scenes[k], head=el('div','sd-head'), info=el('div','info');
+  const voiced=s.lines.filter(j=>S[j].t==='say' && vIndex && vIndex[S[j].id]).length;
+  info.append(el('div','n', `${s.no} · ${s.ch?'Chapter '+s.ch+', '+s.chT:'Prologue'}${s.date?' · '+s.date:''} · ${s.id}`), el('div','tt', SCENE_T[s.id]||s.id),
+    el('div','s', `${s.lines.length} lines · ${voiced} voiced${s.who.length?' · '+s.who.map(w=>SPK[w]||w).join(', '):''}`));
+  const acts=el('div','sd-acts'); const btn=(t,f,dis)=>{ const b=el('button','x',t); b.type='button'; b.onclick=f; if(dis) b.disabled=true; acts.appendChild(b); };
+  btn('▶ Play from scene start', ()=>devJump(s.i));
+  btn('‹ Previous scene', ()=>openChart({mode:'scene',k:k-1}), k===0);
+  btn('Next scene ›', ()=>openChart({mode:'scene',k:k+1}), k===X.scenes.length-1);
+  info.appendChild(acts); head.append(thumb(s.thumb), info); body.appendChild(head);
+  for(let j=s.i+1;j<s.end;j++){ const c=S[j];
+    if(isLine(c)){ body.appendChild(lineRow(j, ci, false)); continue; }
+    let label=null, minor=false;
+    if(c.t==='bg') label = c.name==='black' ? 'Fade to black' : c.name==='white' ? 'Flash to white' : 'Background · '+nice(c.name);
+    else if(c.t==='cg') label = c.name ? 'CG · '+nice(c.name) : 'CG ends';
+    else if(c.t==='card') label = 'Date card · '+c.text;
+    else if(c.t==='mode' && c.mode==='interlude') label = 'Interlude · '+c.label;
+    else if(c.t==='bgm'){ label = c.name ? 'Music · '+c.name : 'Music stops'; minor=true; }
+    else if(c.t==='endpilot') label = 'End of pilot';
+    if(!label) continue;
+    const m=el('button','mk'+(minor?' minor':'')+(j===ci?' now':''), label); m.type='button'; m.dataset.i=j; m.onclick=()=>devJump(j); body.appendChild(m);
+  }
+}
+function chartSearch(body, X, q, ci){
+  const ql=q.toLowerCase(), hits=[];
+  for(let j=0;j<S.length;j++){ const c=S[j]; if(!isLine(c)) continue;
+    const hay=(c.text+' '+(c.id||'')+' '+(c.t==='say'?(SPK[c.who]||c.who):c.t==='phone'?'text phone '+c.who:'')+' '+((jaText&&jaText[c.id])||'')).toLowerCase();
+    if(hay.includes(ql)) hits.push(j); }
+  body.appendChild(el('div','chart-note', hits.length ? `${hits.length} matching line${hits.length===1?'':'s'}${hits.length>200?' · showing the first 200':''}` : 'No lines match.'));
+  hits.slice(0,200).forEach(j=>body.appendChild(lineRow(j, ci, true)));
+}
+$('#chartQ').addEventListener('input', e=>{ const q=e.target.value.trim(); if(q.length>=2) openChart({mode:'search', q}); else if(!q) openChart(chartLast); });
+$('#chartBack').onclick=()=>{ $('#chartQ').value=''; openChart({mode:'grid'}); };
+$('#devId').onclick=copyId;
+$('#dPrevS').onclick=()=>stepScene(-1); $('#dNextS').onclick=()=>stepScene(1);
+$('#dPrevL').onclick=()=>stepLine(-1); $('#dNextL').onclick=()=>stepLine(1);
+$('#dChart').onclick=()=>{ if(!S) return; setAuto(false); setSkip(false); openChart(); };
+$('#setChart').onclick=()=>{ closePanels(); if(S) openChart(); };
+$('#devOff').onclick=()=>{ setDev(false); closePanels(); toast('Developer mode off'); };
+// hidden switch that also works from a home-screen icon: tap 大桜 on the title five times
+{ let n=0, t=0; $('.tate').addEventListener('click', ()=>{ const now=Date.now(); n = now-t<800 ? n+1 : 1; t=now; if(n>=5){ n=0; setDev(!devOn); toast(devOn?'Developer mode on':'Developer mode off'); } }); }
+// keep the developer strip just above the dialogue box, whatever its height
+try{ new ResizeObserver(()=>app.style.setProperty('--boxh', box.offsetHeight+'px')).observe(box); }catch(e){}
+app.classList.toggle('dev', devOn); store.set('dev', devOn);
+
 function closePanels(){ document.querySelectorAll('.panel.on').forEach(p=>p.classList.remove('on')); if(curLine&&!typing) scheduleAuto(); }
 function setAuto(v){ autoOn=v; $('#bAuto').classList.toggle('on',v); if(v){ setSkip(false); if(!typing) scheduleAuto(); } else clearTimeout(autoTimer); }
 /* skip runs on its own clock: whenever a line or text message is waiting, move on (cards and pauses shorten themselves while skipping) */
@@ -628,7 +841,7 @@ function toTitle(){
 /* ---------- input ---------- */
 app.addEventListener('click',e=>{
   resumeAudio();
-  if(e.target&&e.target.closest&&e.target.closest('button,.panel,#title,input')) return;
+  if(e.target&&e.target.closest&&e.target.closest('button,.panel,#title,input,#devbar')) return;
   if($('#endCard').classList.contains('on')) return;
   if(skipOn){ setSkip(false); return; }
   advance();
@@ -636,6 +849,7 @@ app.addEventListener('click',e=>{
 document.addEventListener('keydown',e=>{
   if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){ if(!overlayOpen()&&!(e.target&&e.target.closest&&e.target.closest('button,input'))){ e.preventDefault(); if(skipOn) setSkip(false); else advance(); } }
   if(e.key==='Escape') closePanels();
+  if(devOn && S && $('#title').hidden && !overlayOpen()){ if(e.key==='ArrowLeft'){ e.preventDefault(); stepLine(-1); } else if(e.key==='PageUp'){ e.preventDefault(); stepScene(-1); } else if(e.key==='PageDown'){ e.preventDefault(); stepScene(1); } }
 });
 $('#bAuto').onclick=()=>setAuto(!autoOn);
 $('#bSkip').onclick=()=>setSkip(!skipOn);
@@ -652,6 +866,7 @@ $('#mCont').onclick=whenLoaded(()=>{ const c=store.get('cont',null); if(c){ hide
 $('#mChap').onclick=whenLoaded(openChapters);
 $('#mLoad').onclick=whenLoaded(()=>openSave('load'));
 $('#mSet').onclick=()=>{ audioInit(); openSettings(); };
+$('#mChart').onclick=whenLoaded(()=>openChart());
 $('#endBack').onclick=()=>toTitle();
 $('#sndBtn').onclick=soundCheck;
 window.addEventListener('resize',()=>{ layoutSprites(); Object.entries(state.spr).forEach(([w,v])=>{ const el=document.querySelector(`.spr[data-who="${w}"]`); if(el) el.style.left=POSX[v.pos]+'%'; }); });
@@ -679,7 +894,7 @@ function start(data){
   restoredHot=true;
   loadScript().then(()=>{ if(!$('#title').hidden && !$('#tapStart').hidden){ $('#tapStart').hidden=true; hideTitle(); restore(data.snap); } }).catch(showErr);
 }
-if(location.hash==='#qa') window.__vn={startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, diag, soundCheck,
+if(HASH.has('qa')) window.__vn={get devOn(){return devOn}, setDev, devJump, stepLine, stepScene, openChart, curIdx, get DX(){return devIndex()}, startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, diag, soundCheck,
   meter:()=>{ if(!ac) return null; const mk=g=>{ if(!g._an){ g._an=ac.createAnalyser(); g._an.fftSize=2048; g.connect(g._an); } const d=new Float32Array(2048); g._an.getFloatTimeDomainData(d); let s=0; for(const x of d) s+=x*x; return Math.sqrt(s/d.length); };
     return {state:ac.state, bgm:mk(gBgm), voice:mk(gVoice), sfx:mk(gSfx)}; }, check:()=>({i:state.i, cur:curLine&&curLine.t, id:curLine&&curLine.id, typing, box:!box.classList.contains('hidden'), cards:[...document.querySelectorAll('.card.on')].map(e=>e.id), title:!$('#title').hidden, text:textEl.textContent.length, phone:$('#phone').classList.contains('on'), cg:state.cg, bg:state.bg})};
 try{
