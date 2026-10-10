@@ -98,6 +98,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |
 | Designs and voice auditions | **approval pending** | — | Estimated $1–3 together |
+| Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 
 **Cumulative fal spend:** about $65–70. fal's dashboard has the exact figure.
 
@@ -141,7 +142,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
     - **The real constraints:** identity drift between shots; clips of 10–15 s each; content filters, likely strictest on the kiss (teen characters) and on blood or the beast; and no usable lip sync. Keep dialogue as voiceover over shots, as anime often does.
     - **Method:** animate from approved CGs as first and last frames, so each shot starts and ends on-model.
     - **Candidates:** an opening movie (the classic VN spot for animation), the New Year bloom, the past-life walk and the trade, the climax lunge and save, and the epilogue. Pair the kiss with its song only if the filters allow.
-    - **Test:** one 5–10 s clip from an existing CG (e.g. `cg_catch` or petals at the tree). Under $5; needs approval.
+    - **Test done Oct 10** (`production/cutscene-test/`): `cg_catch` animated for 8 s on MiniMax H3 Max and on Kling v3 Pro, about $1.36 total. **Both held the art style, faces and outfits with no visible morphing.** H3 Max pushed in hard to a close two-shot (more cinematic, crops her body). Kling stayed wide and restrained, closer to the prompt. **Awaiting the author's verdict** on quality and model.
 
 **After that:**
 - **One revision pass on the pilot.** That covers:
