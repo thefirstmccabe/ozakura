@@ -1,0 +1,227 @@
+<title>Ōzakura Voice Auditions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: one reading column of casting cards, grouped by part of the story; a fixed tally bar at the bottom. */
+:root{
+  --paper:#f4f5f7; --sheet:#ffffff; --ink:#1d2130; --muted:#5d6475; --line:#dde0e8;
+  --accent:#34407a; --accent-ink:#ffffff; --pick:#e8ebf7; --warn:#a2531c; --warn-bg:#fbeee3;
+  --display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#12141b; --sheet:#1b1e28; --ink:#e7e9f0; --muted:#9aa1b3; --line:#2c3040;
+  --accent:#9aa8ec; --accent-ink:#12141b; --pick:#262c46; --warn:#f0a874; --warn-bg:#3a2a1e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12141b; --sheet:#1b1e28; --ink:#e7e9f0; --muted:#9aa1b3; --line:#2c3040;
+  --accent:#9aa8ec; --accent-ink:#12141b; --pick:#262c46; --warn:#f0a874; --warn-bg:#3a2a1e; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding-inline:16px;padding-block:28px 120px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,6vw,40px);line-height:1.15;margin:0 0 8px;text-wrap:balance}
+.lede{color:var(--muted);max-width:62ch;margin:0}
+.how{display:flex;flex-wrap:wrap;gap:8px 18px;margin:16px 0 0;padding:0;list-style:none;color:var(--muted);font-size:14px}
+.how b{color:var(--ink)}
+.approved{margin-top:18px;font-size:14px;color:var(--muted)}
+.approved span{display:inline-block;margin:4px 6px 0 0;padding:2px 10px;border:1px solid var(--line);border-radius:999px;color:var(--ink);background:var(--sheet)}
+h2{font-family:var(--display);font-weight:600;font-size:22px;margin:40px 0 4px;text-wrap:balance}
+.gnote{color:var(--muted);font-size:14px;margin:0 0 14px}
+.char{background:var(--sheet);border:1px solid var(--line);border-radius:10px;padding:18px;margin-top:14px}
+.head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.tag{font-weight:700;font-size:16px;padding:2px 12px;border-radius:6px;color:#fff;background:var(--c,#5d6475)}
+.dir{color:var(--muted);font-size:13.5px;flex:1 1 260px;min-width:0}
+.lines{margin:12px 0 4px;display:grid;gap:8px}
+.line{min-width:0}
+.ja{font-size:16px;letter-spacing:.02em}
+.en{color:var(--muted);font-size:13.5px}
+.cands{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:12px}
+.cand{display:flex;flex-direction:column;gap:6px;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--sheet)}
+.cand.on{border-color:var(--accent);background:var(--pick)}
+.cand .top{display:flex;align-items:baseline;justify-content:space-between;gap:6px}
+.num{font-family:var(--display);font-weight:800;font-size:20px}
+.vname{font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.row{display:flex;gap:6px;flex-wrap:wrap}
+button{font:inherit;cursor:pointer;border-radius:6px}
+.play{border:1px solid var(--line);background:transparent;color:var(--ink);padding:4px 10px;font-size:13.5px}
+.play.playing{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.choose{border:1px solid var(--accent);background:transparent;color:var(--accent);padding:4px 10px;font-size:13.5px;font-weight:700}
+.cand.on .choose{background:var(--accent);color:var(--accent-ink)}
+.none{margin-top:10px;border:1px dashed var(--line);background:transparent;color:var(--muted);padding:4px 12px;font-size:13px}
+.none.on{border-style:solid;border-color:var(--warn);color:var(--warn);background:var(--warn-bg)}
+.clash{display:none;margin-top:10px;font-size:13px;color:var(--warn);background:var(--warn-bg);padding:6px 10px;border-radius:6px}
+.clash.show{display:block}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--sheet);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px))}
+.bar .in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tally{font-variant-numeric:tabular-nums;font-weight:500;flex:1 1 auto}
+.copy{background:var(--accent);color:var(--accent-ink);border:0;padding:8px 16px;font-weight:700}
+#out{display:none;width:100%;margin-top:8px;font:13px/1.5 var(--body);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px;min-height:70px}
+#out.show{display:block}
+.foot{color:var(--muted);font-size:13px;margin-top:36px}
+</style>
+
+<div class="wrap">
+  <h1>Ōzakura Voice Auditions</h1>
+  <p class="lede">Every voice you haven't approved yet: 20 characters, 3 to 6 candidates each. Every candidate for a character reads the same two lines, so you're comparing voices, not scripts.</p>
+  <ul class="how">
+    <li><b>Play</b> a few candidates</li>
+    <li><b>Pick</b> one per character, or “None of these”</li>
+    <li><b>Copy picks</b> and paste them back to Claude</li>
+  </ul>
+  <div class="approved">Already approved, not on this sheet: <span>Kōhei · Puck</span><span>Natsuki · Zephyr</span><span>Emi · Achernar</span><span>Takatsuki · Fenrir</span></div>
+  <div id="groups"></div>
+  <p class="foot">Gemini 3.8 Flash TTS, Japanese. “+2” plays the same take pitched up two semitones, a post-processing step that can make a voice read younger; if you pick it, every line for that character gets the same treatment. The name-tag colors are the planned dialogue colors.</p>
+</div>
+
+<div class="bar"><div class="in">
+  <div class="tally" id="tally">0 of 20 picked</div>
+  <button class="copy" id="copy" type="button">Copy picks</button>
+  <textarea id="out" readonly aria-label="Your picks"></textarea>
+</div></div>
+
+<script>
+const G=[
+ {g:"The re-casts",n:"Nanoha and Akane sounded too old in the pilot; Kirishima is now male. Nanoha's takes use a stronger “sounds 16” direction.",cs:[
+  {id:"nanoha",name:"Nanoha",c:"#6f9fd0",dir:"16. Soft, relaxed, quiet deadpan with a hidden smile. Must sound 16.",
+   l:[["……うさぎさんは反省中です。何をしたかは、本人が一番よくわかってるから。","…Usagi-san is in time-out. He knows best what he did."],["こうへい、ネクタイ曲がってる。……はい、直った。","Kōhei, your tie's crooked. …There. Fixed."]],
+   v:[["nanoha-v2-1-Erinome","Erinome",1],["nanoha-v2-2-Callirrhoe","Callirrhoe",1],["nanoha-v2-3-Despina","Despina",1],["nanoha-v2-4-Kore","Kore",1],["nanoha-v2-5-Leda","Leda",1],["nanoha-v2-6-Autonoe","Autonoe",1]]},
+  {id:"akane",name:"Akane",c:"#9a7fc8",dir:"14. Sweet, soft, playful little sister, a little frail. Must sound 14.",
+   l:[["お兄ちゃん、また心配しすぎ。私、ちゃんと一人で行けるってば。","Onii-chan, you're worrying too much again. I can go by myself, okay?"],["えへへ……なのはちゃん、またお弁当作ってくれたんだって。よかったね、お兄ちゃん？","Ehehe… Nanoha-chan made you lunch again, huh? Lucky you, Onii-chan?"]],
+   v:[["akane-1-Leda","Leda",1],["akane-2-Autonoe","Autonoe",1],["akane-3-Aoede","Aoede",1],["akane-5-Laomedeia","Laomedeia",1]]},
+  {id:"kirishima",name:"Kirishima",c:"#4b5ba8",dir:"18, the kendo captain. Calm, low, quiet authority; bone-dry jokes.",
+   l:[["今、半秒止まったな。止まるな。","You stopped for half a second. Don't."],["……今のは冗談だ。笑っていいぞ。","…That was a joke. You can laugh."]],
+   v:[["kirishima-1-Charon","Charon"],["kirishima-2-Orus","Orus"],["kirishima-3-Alnilam","Alnilam"],["kirishima-4-Algenib","Algenib"]]}]},
+ {g:"School and town",cs:[
+  {id:"ryosuke",name:"Ryōsuke",c:"#2f8f8b",dir:"16, Kōhei's best friend. Precise, a little smug, dry.",
+   l:[["藤沢、論理的に考えろ。ホットドッグはサンドイッチだ。異論は認めない。","Fujisawa, think logically. A hot dog is a sandwich. No objections."],["……まあ、俺の計算だと、お前の勝率は三割ってとこだな。","…Well, by my math your odds are about thirty percent."]],
+   v:[["ryosuke-1-Achird","Achird"],["ryosuke-2-Iapetus","Iapetus"],["ryosuke-3-Sadaltager","Sadaltager"]]},
+  {id:"rika",name:"Rika",c:"#d9638a",dir:"16, Nanoha's best friend. Genki, loud, no indoor voice.",
+   l:[["なのちゃーん！おっはよー！ねえねえ、聞いて聞いて！","Nano-chaaan! Mornin'! Hey hey, listen, listen!"],["えっ、まだ付き合ってないの！？うそでしょ！？","Wait, you're still not dating?! No way!"]],
+   v:[["rika-1-Laomedeia","Laomedeia"],["rika-2-Pulcherrima","Pulcherrima"],["rika-3-Autonoe","Autonoe"]]},
+  {id:"yuzu",name:"Yuzu",c:"#c8384f",dir:"15, the work kōhai. Cheeky and sly; flustered by sincerity.",
+   l:[["藤沢先輩、またお客さんに笑顔忘れてますよー。椎名に一ポイント！","Fujisawa-senpai, you forgot to smile at customers again. Point to Shiina!"],["……べ、別に先輩のために残ったわけじゃないですから。","…I-it's not like I stayed late for you, senpai."]],
+   v:[["yuzu-1-Autonoe","Autonoe"],["yuzu-2-Leda","Leda"],["yuzu-3-Callirrhoe","Callirrhoe"]]},
+  {id:"sota",name:"Sōta",c:"#4f9a55",dir:"7, Nanoha's brother. A fighting-game gremlin. (Anime boys this age are usually voiced by women.)",
+   l:[["こうにい！もう一回！今度は絶対勝つから！","Kō-nii! One more! This time I'm totally gonna win!"],["えー、ずるい！今のなし！なしだってば！","Nooo, no fair! That one doesn't count!"]],
+   v:[["sota-1-Aoede","Aoede"],["sota-2-Leda","Leda"],["sota-3-Laomedeia","Laomedeia"]]},
+  {id:"ono",name:"Ōno-sensei",dir:"Homeroom teacher, 40s. Tired, droopy, long-suffering.",
+   l:[["はい、静かに……。今日は枕草子の続きからいきます。","Okay, quiet down… We'll pick up The Pillow Book where we left off."],["藤沢、寝るなら授業が終わってからにしなさい。","Fujisawa, if you're going to sleep, wait until class is over."]],
+   v:[["ono-1-Schedar","Schedar"],["ono-2-Umbriel","Umbriel"],["ono-3-Zubenelgenubi","Zubenelgenubi"]]},
+  {id:"manager",name:"Manager",dir:"Family-restaurant manager. Harried, upbeat, kind.",
+   l:[["藤沢くん、助かったよ！ほんと命の恩人！","Fujisawa-kun, you saved me! A real lifesaver!"],["三番テーブル、お冷やお願い！あと、ハンバーグ二つ、急ぎで！","Water for table three! And two hamburg steaks, rush!"]],
+   v:[["manager-1-Sadachbia","Sadachbia"],["manager-2-Rasalgethi","Rasalgethi"],["manager-3-Enceladus","Enceladus"]]},
+  {id:"adviser",name:"Club adviser",dir:"Kendo club adviser, 50s. Stern but fair.",
+   l:[["話は聞いた。……二人で来たことは、評価する。","I heard what happened. …I respect that you came together."],["剣道は、相手を打ち負かすためだけのものじゃない。わかるな、藤沢。","Kendo isn't only about beating your opponent. You understand, Fujisawa."]],
+   v:[["adviser-1-Iapetus","Iapetus"],["adviser-2-Sadaltager","Sadaltager"],["adviser-3-Schedar","Schedar"]]}]},
+ {g:"The families",cs:[
+  {id:"kazuo",name:"Kazuo",sub:"Nanoha's dad",dir:"Mid-40s, the mentor. Big, quiet, few words, gentle firmness.",
+   l:[["……殴りたくなる気持ちは、わかる。俺もそうだった。","…I know the urge to hit someone. I was the same."],["お前の親父さんはな、お前に頼みすぎたって、後悔してたんだ。","Your dad… he regretted asking too much of you."]],
+   v:[["kazuo-1-Charon","Charon"],["kazuo-2-Algenib","Algenib"],["kazuo-3-Alnilam","Alnilam"]]},
+  {id:"genji",name:"Genji",sub:"Nanoha's grandfather",dir:"Late 70s, shrine caretaker. Creaky, warm, twinkly.",
+   l:[["いやあ、花びらの日はどうも腰が痛くてのう。","Ah, on petal days my back just aches, you see."],["あの木はな、ずうっと昔から、ここを見守っとるんじゃよ。","That tree has watched over this place since long, long ago."]],
+   v:[["genji-1-Algenib","Algenib"],["genji-2-Rasalgethi","Rasalgethi"],["genji-3-Enceladus","Enceladus"]]},
+  {id:"mom",name:"Mom",sub:"Kōhei's mother",dir:"Early 40s, coming back from grief. Quiet, fragile, tender.",
+   l:[["……ごめんね、こうへい。お母さん、ずっと何もできなくて。","…I'm sorry, Kōhei. I haven't been able to do anything all this time."],["今日はね、肉じゃが、作ったの。……お父さんの好きだった味。","I made nikujaga today. …The way your father liked it."]],
+   v:[["mom-1-Vindemiatrix","Vindemiatrix"],["mom-2-Sulafat","Sulafat"],["mom-3-Gacrux","Gacrux"]]},
+  {id:"dad",name:"Dad",sub:"Kōhei's father, flashbacks",dir:"Early 40s. Kind and good-humored; line 1 from a hospital bed.",
+   l:[["こうへい……お母さんを、助けてやってくれ。あかねのこと、頼んだぞ。","Kōhei… help your mother out. Look after Akane for me."],["おっ、また背が伸びたな。父さんが抜かれるのも時間の問題か。","Oh, you've grown again. Won't be long before you pass your old man."]],
+   v:[["dad-1-Iapetus","Iapetus"],["dad-2-Umbriel","Umbriel"],["dad-3-Orus","Orus"]]}]},
+ {g:"The past life",n:"Same-voice options keep the link between lives audible; the in-game echo is added later.",cs:[
+  {id:"past-natsuki",name:"Natsuki",sub:"past life",c:"#b8954a",dir:"A young Edo-era wife, in memory. Softer and warmer than today's Natsuki. Option 1 is her present-day voice.",
+   l:[["遅いですよ。……また怪我して。手、見せてください。","You're late. …Hurt again. Show me your hand."],["必ず、見つけます。だから……。","I'll find you. I promise. So…"]],
+   v:[["past-natsuki-1-Zephyr","Zephyr"],["past-natsuki-2-Sulafat","Sulafat"],["past-natsuki-3-Callirrhoe","Callirrhoe"]]},
+  {id:"ronin",name:"Rōnin",sub:"past-life Kōhei",dir:"Twenties. Low and calm; line 2 is his last words. Option 1 is Kōhei's voice.",
+   l:[["心配するな。すぐ戻る。","Don't worry. I'll be right back."],["……生きろ。お前は、笑ってろ。それでいい。","…Live. Keep smiling. That's enough."]],
+   v:[["ronin-1-Puck","Puck"],["ronin-2-Orus","Orus"],["ronin-3-Iapetus","Iapetus"]]},
+  {id:"past-father",name:"Her father",sub:"past life",dir:"Edo-era landholder, 50s. Grave, formal, proud.",
+   l:[["この家には跡継ぎが要る。……娘を、頼んだぞ。","This house needs an heir. …I'm trusting you with my daughter."],["浪人風情が、と言う者もおろう。だが儂は、お前を見込んだ。","Some will say “a mere rōnin.” But I saw something in you."]],
+   v:[["past-father-1-Charon","Charon"],["past-father-2-Alnilam","Alnilam"],["past-father-3-Rasalgethi","Rasalgethi"]]}]},
+ {g:"Antagonists and the fairy",cs:[
+  {id:"thug",name:"Thug",sub:"the street fight",dir:"About 20. Sneering, aggressive, rough.",
+   l:[["あ？なんだお前。ヒーロー気取りかよ。","Huh? Who the hell are you? Playing hero?"],["女連れでいきがってんじゃねえぞ。","Don't get cocky just 'cause you've got girls with you."]],
+   v:[["thug-1-Algenib","Algenib"],["thug-2-Zubenelgenubi","Zubenelgenubi"],["thug-3-Alnilam","Alnilam"]]},
+  {id:"opponent",name:"Opponent",sub:"the kendo meet",dir:"17. Cocky, mocking, casually cruel.",
+   l:[["あの子、お前の妹？フラフラじゃん。大丈夫かよ、ははっ。","That's your sister? She's wobbling all over. She okay? Haha."],["はいはい、怖い怖い。剣道でマジになるなって。","Okay, okay, so scary. Don't get serious over kendo."]],
+   v:[["opponent-1-Sadachbia","Sadachbia"],["opponent-2-Zubenelgenubi","Zubenelgenubi"],["opponent-3-Umbriel","Umbriel"]]},
+  {id:"fairy",name:"The fairy",dir:"Ancient but sounds like a small girl: airy, curious, a little vain.",
+   l:[["……あなたたち。また、会えたのね。","…You two. We meet again."],["ねえ、クッキーは？今日はクッキー、ないの？","Hey, where are the cookies? No cookies today?"]],
+   v:[["fairy-1-Leda","Leda"],["fairy-2-Erinome","Erinome"],["fairy-4-Aoede","Aoede"]]}]}
+];
+const ALL=G.flatMap(g=>g.cs);
+// Voices that must stay distinct from the approved cast and from each other among principals.
+const TAKEN={Puck:"Kōhei",Zephyr:"Natsuki",Achernar:"Emi",Fenrir:"Takatsuki"};
+const SAME_OK={ronin:"Puck","past-natsuki":"Zephyr"};
+let picks={};
+try{picks=JSON.parse(localStorage.getItem("ozk-voice-picks")||"{}")||{}}catch(e){picks={}}
+function save(){try{localStorage.setItem("ozk-voice-picks",JSON.stringify(picks))}catch(e){}}
+const audio=new Audio(); let playingBtn=null;
+function play(btn,file){
+  if(playingBtn===btn&&!audio.paused){audio.pause();btn.classList.remove("playing");btn.textContent=btn.dataset.label;playingBtn=null;return}
+  if(playingBtn){playingBtn.classList.remove("playing");playingBtn.textContent=playingBtn.dataset.label}
+  audio.src="a/"+file+".mp3"; audio.play().catch(()=>{});
+  btn.classList.add("playing"); btn.textContent="■ Stop"; playingBtn=btn;
+}
+audio.addEventListener("ended",()=>{if(playingBtn){playingBtn.classList.remove("playing");playingBtn.textContent=playingBtn.dataset.label;playingBtn=null}});
+function el(t,cls,txt){const e=document.createElement(t);if(cls)e.className=cls;if(txt!=null)e.textContent=txt;return e}
+function render(){
+  const root=document.getElementById("groups");
+  G.forEach(g=>{
+    root.append(el("h2",null,g.g)); if(g.n) root.append(el("p","gnote",g.n));
+    g.cs.forEach(c=>{
+      const card=el("section","char"); card.id="c-"+c.id;
+      const head=el("div","head"); const tag=el("span","tag",c.name); if(c.c) tag.style.setProperty("--c",c.c); head.append(tag);
+      head.append(el("span","dir",(c.sub?c.sub+". ":"")+c.dir)); card.append(head);
+      const lines=el("div","lines"); c.l.forEach(([ja,en])=>{const d=el("div","line");d.append(el("div","ja",ja),el("div","en",en));lines.append(d)}); card.append(lines);
+      const grid=el("div","cands");
+      c.v.forEach(([file,voice,up],i)=>{
+        const n=i+1, box=el("div","cand"); box.dataset.key=c.id+"|"+n;
+        const top=el("div","top"); top.append(el("span","num",String(n)),el("span","vname",voice)); box.append(top);
+        const row=el("div","row");
+        const p=el("button","play","▶ Play"); p.type="button"; p.dataset.label="▶ Play"; p.setAttribute("aria-label",`Play ${c.name} option ${n}, ${voice}`); p.onclick=()=>play(p,file); row.append(p);
+        if(up){const p2=el("button","play","▶ +2"); p2.type="button"; p2.dataset.label="▶ +2"; p2.setAttribute("aria-label",`Play ${c.name} option ${n} pitched up two semitones`); p2.onclick=()=>play(p2,file+"-up2"); row.append(p2)}
+        box.append(row);
+        const row2=el("div","row");
+        const ch=el("button","choose","Pick "+n); ch.type="button"; ch.onclick=()=>{picks[c.id]={n,voice,up:false};save();update()}; row2.append(ch);
+        if(up){const ch2=el("button","choose","Pick "+n+" +2"); ch2.type="button"; ch2.onclick=()=>{picks[c.id]={n,voice,up:true};save();update()}; row2.append(ch2)}
+        box.append(row2); grid.append(box);
+      });
+      card.append(grid);
+      const none=el("button","none","None of these, try again"); none.type="button"; none.dataset.id=c.id;
+      none.onclick=()=>{picks[c.id]={n:0};save();update()}; card.append(none);
+      card.append(el("div","clash"));
+      root.append(card);
+    });
+  });
+}
+function update(){
+  const used={};
+  ALL.forEach(c=>{const p=picks[c.id]; if(p&&p.n){(used[p.voice]=used[p.voice]||[]).push(c)}});
+  let count=0;
+  ALL.forEach(c=>{
+    const card=document.getElementById("c-"+c.id), p=picks[c.id];
+    if(p) count++;
+    card.querySelectorAll(".cand").forEach(b=>{b.classList.toggle("on",!!(p&&p.n&&b.dataset.key===c.id+"|"+p.n))});
+    card.querySelectorAll(".choose").forEach(b=>{const on=p&&p.n&&b.textContent===("Pick "+p.n+(p.up?" +2":"")); b.setAttribute("aria-pressed",on?"true":"false"); b.style.outline=on?"2px solid var(--accent)":""});
+    card.querySelector(".none").classList.toggle("on",!!(p&&p.n===0));
+    const cl=card.querySelector(".clash"); let msg="";
+    if(p&&p.n){
+      if(TAKEN[p.voice]&&SAME_OK[c.id]!==p.voice) msg=`${p.voice} is already ${TAKEN[p.voice]}'s voice.`;
+      const others=(used[p.voice]||[]).filter(o=>o.id!==c.id);
+      if(others.length) msg+=(msg?" ":"")+`You also picked ${p.voice} for ${others.map(o=>o.name).join(", ")}. Fine for characters who never share a scene; otherwise pick another.`;
+    }
+    cl.textContent=msg; cl.classList.toggle("show",!!msg);
+  });
+  document.getElementById("tally").textContent=`${count} of ${ALL.length} picked`;
+}
+document.getElementById("copy").onclick=async()=>{
+  const lines=ALL.map(c=>{const p=picks[c.id]; const nm=c.name+(c.sub&&c.sub.includes("past")?" (past)":"");
+    if(!p) return `${nm}: —`; if(p.n===0) return `${nm}: none, redo`; return `${nm}: ${p.n} (${p.voice}${p.up?", +2 semitones":""})`});
+  const text="Voice picks\n"+lines.join("\n");
+  const out=document.getElementById("out"); out.value=text; out.classList.add("show");
+  const btn=document.getElementById("copy");
+  try{await navigator.clipboard.writeText(text); btn.textContent="Copied"}catch(e){out.focus(); out.select(); btn.textContent="Select and copy below"}
+  setTimeout(()=>btn.textContent="Copy picks",2500);
+};
+render(); update();
+</script>

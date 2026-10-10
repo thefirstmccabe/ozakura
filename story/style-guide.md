@@ -228,6 +228,8 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 
 **Voice:** Japanese, Gemini 3.8 Flash TTS. Narration is unvoiced. **The author picks voices by ear** from audition sheets: the same 2–3 in-character lines per candidate, numbered.
 
+**Oct 10 audition:** every voice not yet approved (20 characters, including the new families, past life, antagonists and the fairy), 3–6 candidates each, on an audition page (artifact "Ōzakura Voice Auditions"; source and clips in `production/voice-auditions/oct10/`, spec in `oct10-spec.py`). Nanoha and Akane also offer a "+2 semitones" post-processed variant; if picked, apply it to every line for that character. The table below updates when the author picks.
+
 | Character | Voice | Direction | Status |
 |---|---|---|---|
 | Kōhei | Puck | calm, grounded, a little tired, dry; let warmth through | OK (author) |
@@ -239,9 +241,9 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Rika | Laomedeia | genki, loud | Not reviewed |
 | Kirishima | Despina | cool, quiet authority | Not reviewed |
 | Sōta | Aoede | 7-year-old boy | Not reviewed |
-| Emi | Achernar | warm, bubbly mother | Not reviewed |
+| Emi | Achernar | warm, bubbly mother | OK (author, Oct 8) |
 | Ryōsuke | Achird | precise, smug | Not reviewed |
-| Takatsuki | Fenrir | **precise, reserved, dry** (was "curt, abrasive") | Re-check after the redesign |
+| Takatsuki | Fenrir | **precise, reserved, dry** (was "curt, abrasive") | OK (author, Oct 8) |
 | Ōno-sensei | Schedar | tired teacher | Not reviewed |
 | Manager | Sadachbia | upbeat, harried | Not reviewed |
 

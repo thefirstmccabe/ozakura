@@ -99,6 +99,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Visual inventory delivered for review** (style guide §1b), all self-reviewed and fixed before delivery: scale lineups for the whole cast; families, school adults, past life and antagonists; full color for the supporting cast (grayscale drafts replaced); seasonal outfits and kendo armor; the fairy's four forms; the beast's ethereal tweak; turnarounds for eight animation principals; key locations (the houses about three feet apart and both window views, Nanoha's room, the tree in four seasons plus the New Year bloom, the past-era site, path and village). Boards: `production/refs/lineup/` and the review sheets sent in the Story thread. Supporting heights and a few picks are [P]. |
 | 10-10 | **Inventory review (author):** everything approved except these changes, all made the same day: **no metric units anywhere** (docs, lineups, prompts); the beast a little taller (about 4′3″ to the ears, back at a man's belt); **Kazuo version B**; **the past-life death is in winter** (canon §5), so the past-era backgrounds are now winter; the tournament opponent has **bleached-blonde hair**; one of Kōhei's friend or rival gets a slightly unusual hair color for readability (Claude picked **Takatsuki: deep slate blue** [P]); the rōnin wears **two swords** (version B kept). Also [P]: the street-fight thug's hair changed from blonde to a black undercut so the opponent's blonde stays distinctive. Nanoha's skin reads too pale in some images: fix in the final sprite pass, no redo now. |
 | 10-10 | **Kiss song: an original vocal song**, made for the scene in the feel of the author's reference. The rights question is dropped. Vocal language and lyrics Open. (Music thread.) |
+| 10-10 | **Voice auditions widened:** audition every voice the author hasn't explicitly approved (approved: Kōhei, Natsuki, Emi, Takatsuki). 20 characters, 71 takes plus +2-semitone variants for Nanoha and Akane; audition page published. About $0.55. Waiting on picks. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -108,7 +109,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |
 | Design pass (Oct 10) | $10 | about $4.50 (≈55 NB2 images; failed jobs uncharged) | Kōhei + face set, male Kirishima, Natsuki casual, Akane check, fairy, beast concepts, swatches |
 | Visual inventory (Oct 10) | $20 | about $9 (≈90 images, NB2 1K/2K and NB Pro 2K, incl. review fixes; failed jobs uncharged) | see decision log and style guide §1b |
-| Voice auditions | approval pending | — | Estimated under $1 |
+| Voice auditions (Oct 10) | approved with the scope (author: audition all unapproved voices) | about $0.55 | Gemini 3.8 Flash TTS, 71 takes |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 
 **Cumulative fal spend:** about $74–79. fal's dashboard has the exact figure.

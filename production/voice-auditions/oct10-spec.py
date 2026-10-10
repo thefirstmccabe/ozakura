@@ -1,0 +1,78 @@
+"""Voice audition spec, Oct 10. Gemini 3.8 Flash TTS (google/gemini-3.8-flash-tts).
+Every character the author hasn't explicitly approved. Approved: Kōhei (Puck), Natsuki (Zephyr),
+Emi (Achernar), Takatsuki (Fenrir). Same lines for every candidate of a character."""
+import json
+GAP = "　……　"
+C = [
+ # id, name, [line1, line2], style, candidates
+ ("nanoha", "Nanoha", ["……うさぎさんは反省中です。何をしたかは、本人が一番よくわかってるから。", "こうへい、ネクタイ曲がってる。……はい、直った。"],
+  "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile. Must sound like a teenager, never a grown woman.",
+  ["Erinome", "Callirrhoe", "Despina", "Kore"]),
+ ("akane", "Akane", ["お兄ちゃん、また心配しすぎ。私、ちゃんと一人で行けるってば。", "えへへ……なのはちゃん、またお弁当作ってくれたんだって。よかったね、お兄ちゃん？"],
+  "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman.",
+  ["Leda", "Autonoe", "Aoede", "Pulcherrima"]),
+ ("kirishima", "Kirishima", ["今、半秒止まったな。止まるな。", "……今のは冗談だ。笑っていいぞ。"],
+  "An 18-year-old male kendo club captain. Calm, low, quiet authority; bone-dry deadpan humor that no one gets.",
+  ["Charon", "Orus", "Alnilam", "Algenib"]),
+ ("ryosuke", "Ryōsuke", ["藤沢、論理的に考えろ。ホットドッグはサンドイッチだ。異論は認めない。", "……まあ、俺の計算だと、お前の勝率は三割ってとこだな。"],
+  "A 16-year-old male high-school student, Kōhei's best friend. Precise, a little smug, dry and amused, glasses-pushing know-it-all.",
+  ["Achird", "Iapetus", "Sadaltager"]),
+ ("rika", "Rika", ["なのちゃーん！おっはよー！ねえねえ、聞いて聞いて！", "えっ、まだ付き合ってないの！？うそでしょ！？"],
+  "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright.",
+  ["Laomedeia", "Pulcherrima", "Autonoe"]),
+ ("yuzu", "Yuzu", ["藤沢先輩、またお客さんに笑顔忘れてますよー。椎名に一ポイント！", "……べ、別に先輩のために残ったわけじゃないですから。"],
+  "A 15-year-old first-year high-school girl who works part-time. Cheeky, sly, teasing kōhai; gets flustered when someone is sincere.",
+  ["Autonoe", "Leda", "Callirrhoe"]),
+ ("sota", "Sōta", ["こうにい！もう一回！今度は絶対勝つから！", "えー、ずるい！今のなし！なしだってば！"],
+  "A 7-year-old boy, energetic little gremlin who loves fighting games. Childlike, high, excited (an anime child voice).",
+  ["Aoede", "Leda", "Laomedeia"]),
+ ("ono", "Ōno-sensei", ["はい、静かに……。今日は枕草子の続きからいきます。", "藤沢、寝るなら授業が終わってからにしなさい。"],
+  "A tired male homeroom teacher in his 40s, tall and thin, droopy, mild and long-suffering.",
+  ["Schedar", "Umbriel", "Zubenelgenubi"]),
+ ("manager", "Manager", ["藤沢くん、助かったよ！ほんと命の恩人！", "三番テーブル、お冷やお願い！あと、ハンバーグ二つ、急ぎで！"],
+  "A harried but upbeat middle-aged male family-restaurant manager, slightly frantic, kind.",
+  ["Sadachbia", "Rasalgethi", "Enceladus"]),
+ ("adviser", "Club adviser", ["話は聞いた。……二人で来たことは、評価する。", "剣道は、相手を打ち負かすためだけのものじゃない。わかるな、藤沢。"],
+  "A male kendo club adviser in his 50s. Steady, stern but fair and understanding; measured.",
+  ["Iapetus", "Sadaltager", "Schedar"]),
+ ("kazuo", "Kazuo (Nanoha's dad)", ["……殴りたくなる気持ちは、わかる。俺もそうだった。", "お前の親父さんはな、お前に頼みすぎたって、後悔してたんだ。"],
+  "A big, quiet man in his mid-40s, Nanoha's father and Kōhei's mentor. Deep, warm, few words, gentle firmness.",
+  ["Charon", "Algenib", "Alnilam"]),
+ ("genji", "Genji (grandfather)", ["いやあ、花びらの日はどうも腰が痛くてのう。", "あの木はな、ずうっと昔から、ここを見守っとるんじゃよ。"],
+  "An elderly man in his late 70s, shrine caretaker. Warm, a little creaky, twinkly sense of humor.",
+  ["Algenib", "Rasalgethi", "Enceladus"]),
+ ("mom", "Kōhei's mom", ["……ごめんね、こうへい。お母さん、ずっと何もできなくて。", "今日はね、肉じゃが、作ったの。……お父さんの好きだった味。"],
+  "A woman in her early 40s recovering from grief. Quiet, fragile, tender, with a small brave warmth.",
+  ["Vindemiatrix", "Sulafat", "Gacrux"]),
+ ("dad", "Kōhei's dad", ["こうへい……お母さんを、助けてやってくれ。あかねのこと、頼んだぞ。", "おっ、また背が伸びたな。父さんが抜かれるのも時間の問題か。"],
+  "A kind, good-humored man in his early 40s (heard in flashbacks: once ill in a hospital bed, once healthy and joking).",
+  ["Iapetus", "Umbriel", "Orus"]),
+ ("thug", "Street-fight thug", ["あ？なんだお前。ヒーロー気取りかよ。", "女連れでいきがってんじゃねえぞ。"],
+  "A menacing young man around 20, a genuinely unpleasant street tough. Sneering, aggressive, rough.",
+  ["Algenib", "Zubenelgenubi", "Alnilam"]),
+ ("opponent", "Tournament opponent", ["あの子、お前の妹？フラフラじゃん。大丈夫かよ、ははっ。", "はいはい、怖い怖い。剣道でマジになるなって。"],
+  "A cocky 17-year-old male kendo opponent. Mocking, smirking, casually cruel.",
+  ["Sadachbia", "Zubenelgenubi", "Umbriel"]),
+ ("fairy", "The fairy", ["……あなたたち。また、会えたのね。", "ねえ、クッキーは？今日はクッキー、ないの？"],
+  "A tiny, ancient cherry-tree spirit who sounds like a small girl: light, airy, curious and a little vain, with an old, faraway gentleness.",
+  ["Leda", "Erinome", "Pulcherrima"]),
+ ("past-natsuki", "Natsuki (past life)", ["遅いですよ。……また怪我して。手、見せてください。", "必ず、見つけます。だから……。"],
+  "A young married woman in Edo-era Japan, in a dream or memory. Softer, warmer and a little more mature than a teenager; tender, scolding with love; the second line through tears.",
+  ["Zephyr", "Sulafat", "Callirrhoe"]),
+ ("ronin", "Rōnin (past life)", ["心配するな。すぐ戻る。", "……生きろ。お前は、笑ってろ。それでいい。"],
+  "A masterless samurai in his twenties, in memory. Low, calm, gentle with his wife; the second line is his last words, quiet and certain.",
+  ["Puck", "Orus", "Iapetus"]),
+ ("past-father", "Her father (past life)", ["この家には跡継ぎが要る。……娘を、頼んだぞ。", "浪人風情が、と言う者もおろう。だが儂は、お前を見込んだ。"],
+  "A dignified Edo-era landholder in his 50s. Grave, formal, proud, with hidden warmth.",
+  ["Charon", "Alnilam", "Rasalgethi"]),
+]
+jobs = []
+for cid, name, lines, style, voices in C:
+    for n, v in enumerate(voices, 1):
+        jobs.append({"key": f"{cid}-{n}-{v}", "character": name, "number": n, "voice": v,
+                     "input": {"prompt": lines[0] + GAP + lines[1], "voice": v, "style_instructions": style}})
+if __name__ == "__main__":
+    json.dump({"endpoint_id": "google/gemini-3.8-flash-tts", "jobs": jobs,
+               "characters": [{"id": c[0], "name": c[1], "lines": c[2], "style": c[3], "voices": c[4]} for c in C]},
+              open("production/voice-auditions/oct10-jobs.json", "w"), ensure_ascii=False, indent=1)
+    print(len(jobs), "jobs,", sum(len(j["input"]["prompt"]) + len(j["input"]["style_instructions"]) for j in jobs), "chars")

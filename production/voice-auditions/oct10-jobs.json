@@ -1,0 +1,983 @@
+{
+ "endpoint_id": "google/gemini-3.8-flash-tts",
+ "jobs": [
+  {
+   "key": "nanoha-1-Erinome",
+   "character": "Nanoha",
+   "number": 1,
+   "voice": "Erinome",
+   "input": {
+    "prompt": "……うさぎさんは反省中です。何をしたかは、本人が一番よくわかってるから。　……　こうへい、ネクタイ曲がってる。……はい、直った。",
+    "voice": "Erinome",
+    "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile. Must sound like a teenager, never a grown woman."
+   }
+  },
+  {
+   "key": "nanoha-2-Callirrhoe",
+   "character": "Nanoha",
+   "number": 2,
+   "voice": "Callirrhoe",
+   "input": {
+    "prompt": "……うさぎさんは反省中です。何をしたかは、本人が一番よくわかってるから。　……　こうへい、ネクタイ曲がってる。……はい、直った。",
+    "voice": "Callirrhoe",
+    "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile. Must sound like a teenager, never a grown woman."
+   }
+  },
+  {
+   "key": "nanoha-3-Despina",
+   "character": "Nanoha",
+   "number": 3,
+   "voice": "Despina",
+   "input": {
+    "prompt": "……うさぎさんは反省中です。何をしたかは、本人が一番よくわかってるから。　……　こうへい、ネクタイ曲がってる。……はい、直った。",
+    "voice": "Despina",
+    "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile. Must sound like a teenager, never a grown woman."
+   }
+  },
+  {
+   "key": "nanoha-4-Kore",
+   "character": "Nanoha",
+   "number": 4,
+   "voice": "Kore",
+   "input": {
+    "prompt": "……うさぎさんは反省中です。何をしたかは、本人が一番よくわかってるから。　……　こうへい、ネクタイ曲がってる。……はい、直った。",
+    "voice": "Kore",
+    "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile. Must sound like a teenager, never a grown woman."
+   }
+  },
+  {
+   "key": "akane-1-Leda",
+   "character": "Akane",
+   "number": 1,
+   "voice": "Leda",
+   "input": {
+    "prompt": "お兄ちゃん、また心配しすぎ。私、ちゃんと一人で行けるってば。　……　えへへ……なのはちゃん、またお弁当作ってくれたんだって。よかったね、お兄ちゃん？",
+    "voice": "Leda",
+    "style_instructions": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman."
+   }
+  },
+  {
+   "key": "akane-2-Autonoe",
+   "character": "Akane",
+   "number": 2,
+   "voice": "Autonoe",
+   "input": {
+    "prompt": "お兄ちゃん、また心配しすぎ。私、ちゃんと一人で行けるってば。　……　えへへ……なのはちゃん、またお弁当作ってくれたんだって。よかったね、お兄ちゃん？",
+    "voice": "Autonoe",
+    "style_instructions": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman."
+   }
+  },
+  {
+   "key": "akane-3-Aoede",
+   "character": "Akane",
+   "number": 3,
+   "voice": "Aoede",
+   "input": {
+    "prompt": "お兄ちゃん、また心配しすぎ。私、ちゃんと一人で行けるってば。　……　えへへ……なのはちゃん、またお弁当作ってくれたんだって。よかったね、お兄ちゃん？",
+    "voice": "Aoede",
+    "style_instructions": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman."
+   }
+  },
+  {
+   "key": "akane-4-Pulcherrima",
+   "character": "Akane",
+   "number": 4,
+   "voice": "Pulcherrima",
+   "input": {
+    "prompt": "お兄ちゃん、また心配しすぎ。私、ちゃんと一人で行けるってば。　……　えへへ……なのはちゃん、またお弁当作ってくれたんだって。よかったね、お兄ちゃん？",
+    "voice": "Pulcherrima",
+    "style_instructions": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman."
+   }
+  },
+  {
+   "key": "kirishima-1-Charon",
+   "character": "Kirishima",
+   "number": 1,
+   "voice": "Charon",
+   "input": {
+    "prompt": "今、半秒止まったな。止まるな。　……　……今のは冗談だ。笑っていいぞ。",
+    "voice": "Charon",
+    "style_instructions": "An 18-year-old male kendo club captain. Calm, low, quiet authority; bone-dry deadpan humor that no one gets."
+   }
+  },
+  {
+   "key": "kirishima-2-Orus",
+   "character": "Kirishima",
+   "number": 2,
+   "voice": "Orus",
+   "input": {
+    "prompt": "今、半秒止まったな。止まるな。　……　……今のは冗談だ。笑っていいぞ。",
+    "voice": "Orus",
+    "style_instructions": "An 18-year-old male kendo club captain. Calm, low, quiet authority; bone-dry deadpan humor that no one gets."
+   }
+  },
+  {
+   "key": "kirishima-3-Alnilam",
+   "character": "Kirishima",
+   "number": 3,
+   "voice": "Alnilam",
+   "input": {
+    "prompt": "今、半秒止まったな。止まるな。　……　……今のは冗談だ。笑っていいぞ。",
+    "voice": "Alnilam",
+    "style_instructions": "An 18-year-old male kendo club captain. Calm, low, quiet authority; bone-dry deadpan humor that no one gets."
+   }
+  },
+  {
+   "key": "kirishima-4-Algenib",
+   "character": "Kirishima",
+   "number": 4,
+   "voice": "Algenib",
+   "input": {
+    "prompt": "今、半秒止まったな。止まるな。　……　……今のは冗談だ。笑っていいぞ。",
+    "voice": "Algenib",
+    "style_instructions": "An 18-year-old male kendo club captain. Calm, low, quiet authority; bone-dry deadpan humor that no one gets."
+   }
+  },
+  {
+   "key": "ryosuke-1-Achird",
+   "character": "Ryōsuke",
+   "number": 1,
+   "voice": "Achird",
+   "input": {
+    "prompt": "藤沢、論理的に考えろ。ホットドッグはサンドイッチだ。異論は認めない。　……　……まあ、俺の計算だと、お前の勝率は三割ってとこだな。",
+    "voice": "Achird",
+    "style_instructions": "A 16-year-old male high-school student, Kōhei's best friend. Precise, a little smug, dry and amused, glasses-pushing know-it-all."
+   }
+  },
+  {
+   "key": "ryosuke-2-Iapetus",
+   "character": "Ryōsuke",
+   "number": 2,
+   "voice": "Iapetus",
+   "input": {
+    "prompt": "藤沢、論理的に考えろ。ホットドッグはサンドイッチだ。異論は認めない。　……　……まあ、俺の計算だと、お前の勝率は三割ってとこだな。",
+    "voice": "Iapetus",
+    "style_instructions": "A 16-year-old male high-school student, Kōhei's best friend. Precise, a little smug, dry and amused, glasses-pushing know-it-all."
+   }
+  },
+  {
+   "key": "ryosuke-3-Sadaltager",
+   "character": "Ryōsuke",
+   "number": 3,
+   "voice": "Sadaltager",
+   "input": {
+    "prompt": "藤沢、論理的に考えろ。ホットドッグはサンドイッチだ。異論は認めない。　……　……まあ、俺の計算だと、お前の勝率は三割ってとこだな。",
+    "voice": "Sadaltager",
+    "style_instructions": "A 16-year-old male high-school student, Kōhei's best friend. Precise, a little smug, dry and amused, glasses-pushing know-it-all."
+   }
+  },
+  {
+   "key": "rika-1-Laomedeia",
+   "character": "Rika",
+   "number": 1,
+   "voice": "Laomedeia",
+   "input": {
+    "prompt": "なのちゃーん！おっはよー！ねえねえ、聞いて聞いて！　……　えっ、まだ付き合ってないの！？うそでしょ！？",
+    "voice": "Laomedeia",
+    "style_instructions": "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright."
+   }
+  },
+  {
+   "key": "rika-2-Pulcherrima",
+   "character": "Rika",
+   "number": 2,
+   "voice": "Pulcherrima",
+   "input": {
+    "prompt": "なのちゃーん！おっはよー！ねえねえ、聞いて聞いて！　……　えっ、まだ付き合ってないの！？うそでしょ！？",
+    "voice": "Pulcherrima",
+    "style_instructions": "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright."
+   }
+  },
+  {
+   "key": "rika-3-Autonoe",
+   "character": "Rika",
+   "number": 3,
+   "voice": "Autonoe",
+   "input": {
+    "prompt": "なのちゃーん！おっはよー！ねえねえ、聞いて聞いて！　……　えっ、まだ付き合ってないの！？うそでしょ！？",
+    "voice": "Autonoe",
+    "style_instructions": "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright."
+   }
+  },
+  {
+   "key": "yuzu-1-Autonoe",
+   "character": "Yuzu",
+   "number": 1,
+   "voice": "Autonoe",
+   "input": {
+    "prompt": "藤沢先輩、またお客さんに笑顔忘れてますよー。椎名に一ポイント！　……　……べ、別に先輩のために残ったわけじゃないですから。",
+    "voice": "Autonoe",
+    "style_instructions": "A 15-year-old first-year high-school girl who works part-time. Cheeky, sly, teasing kōhai; gets flustered when someone is sincere."
+   }
+  },
+  {
+   "key": "yuzu-2-Leda",
+   "character": "Yuzu",
+   "number": 2,
+   "voice": "Leda",
+   "input": {
+    "prompt": "藤沢先輩、またお客さんに笑顔忘れてますよー。椎名に一ポイント！　……　……べ、別に先輩のために残ったわけじゃないですから。",
+    "voice": "Leda",
+    "style_instructions": "A 15-year-old first-year high-school girl who works part-time. Cheeky, sly, teasing kōhai; gets flustered when someone is sincere."
+   }
+  },
+  {
+   "key": "yuzu-3-Callirrhoe",
+   "character": "Yuzu",
+   "number": 3,
+   "voice": "Callirrhoe",
+   "input": {
+    "prompt": "藤沢先輩、またお客さんに笑顔忘れてますよー。椎名に一ポイント！　……　……べ、別に先輩のために残ったわけじゃないですから。",
+    "voice": "Callirrhoe",
+    "style_instructions": "A 15-year-old first-year high-school girl who works part-time. Cheeky, sly, teasing kōhai; gets flustered when someone is sincere."
+   }
+  },
+  {
+   "key": "sota-1-Aoede",
+   "character": "Sōta",
+   "number": 1,
+   "voice": "Aoede",
+   "input": {
+    "prompt": "こうにい！もう一回！今度は絶対勝つから！　……　えー、ずるい！今のなし！なしだってば！",
+    "voice": "Aoede",
+    "style_instructions": "A 7-year-old boy, energetic little gremlin who loves fighting games. Childlike, high, excited (an anime child voice)."
+   }
+  },
+  {
+   "key": "sota-2-Leda",
+   "character": "Sōta",
+   "number": 2,
+   "voice": "Leda",
+   "input": {
+    "prompt": "こうにい！もう一回！今度は絶対勝つから！　……　えー、ずるい！今のなし！なしだってば！",
+    "voice": "Leda",
+    "style_instructions": "A 7-year-old boy, energetic little gremlin who loves fighting games. Childlike, high, excited (an anime child voice)."
+   }
+  },
+  {
+   "key": "sota-3-Laomedeia",
+   "character": "Sōta",
+   "number": 3,
+   "voice": "Laomedeia",
+   "input": {
+    "prompt": "こうにい！もう一回！今度は絶対勝つから！　……　えー、ずるい！今のなし！なしだってば！",
+    "voice": "Laomedeia",
+    "style_instructions": "A 7-year-old boy, energetic little gremlin who loves fighting games. Childlike, high, excited (an anime child voice)."
+   }
+  },
+  {
+   "key": "ono-1-Schedar",
+   "character": "Ōno-sensei",
+   "number": 1,
+   "voice": "Schedar",
+   "input": {
+    "prompt": "はい、静かに……。今日は枕草子の続きからいきます。　……　藤沢、寝るなら授業が終わってからにしなさい。",
+    "voice": "Schedar",
+    "style_instructions": "A tired male homeroom teacher in his 40s, tall and thin, droopy, mild and long-suffering."
+   }
+  },
+  {
+   "key": "ono-2-Umbriel",
+   "character": "Ōno-sensei",
+   "number": 2,
+   "voice": "Umbriel",
+   "input": {
+    "prompt": "はい、静かに……。今日は枕草子の続きからいきます。　……　藤沢、寝るなら授業が終わってからにしなさい。",
+    "voice": "Umbriel",
+    "style_instructions": "A tired male homeroom teacher in his 40s, tall and thin, droopy, mild and long-suffering."
+   }
+  },
+  {
+   "key": "ono-3-Zubenelgenubi",
+   "character": "Ōno-sensei",
+   "number": 3,
+   "voice": "Zubenelgenubi",
+   "input": {
+    "prompt": "はい、静かに……。今日は枕草子の続きからいきます。　……　藤沢、寝るなら授業が終わってからにしなさい。",
+    "voice": "Zubenelgenubi",
+    "style_instructions": "A tired male homeroom teacher in his 40s, tall and thin, droopy, mild and long-suffering."
+   }
+  },
+  {
+   "key": "manager-1-Sadachbia",
+   "character": "Manager",
+   "number": 1,
+   "voice": "Sadachbia",
+   "input": {
+    "prompt": "藤沢くん、助かったよ！ほんと命の恩人！　……　三番テーブル、お冷やお願い！あと、ハンバーグ二つ、急ぎで！",
+    "voice": "Sadachbia",
+    "style_instructions": "A harried but upbeat middle-aged male family-restaurant manager, slightly frantic, kind."
+   }
+  },
+  {
+   "key": "manager-2-Rasalgethi",
+   "character": "Manager",
+   "number": 2,
+   "voice": "Rasalgethi",
+   "input": {
+    "prompt": "藤沢くん、助かったよ！ほんと命の恩人！　……　三番テーブル、お冷やお願い！あと、ハンバーグ二つ、急ぎで！",
+    "voice": "Rasalgethi",
+    "style_instructions": "A harried but upbeat middle-aged male family-restaurant manager, slightly frantic, kind."
+   }
+  },
+  {
+   "key": "manager-3-Enceladus",
+   "character": "Manager",
+   "number": 3,
+   "voice": "Enceladus",
+   "input": {
+    "prompt": "藤沢くん、助かったよ！ほんと命の恩人！　……　三番テーブル、お冷やお願い！あと、ハンバーグ二つ、急ぎで！",
+    "voice": "Enceladus",
+    "style_instructions": "A harried but upbeat middle-aged male family-restaurant manager, slightly frantic, kind."
+   }
+  },
+  {
+   "key": "adviser-1-Iapetus",
+   "character": "Club adviser",
+   "number": 1,
+   "voice": "Iapetus",
+   "input": {
+    "prompt": "話は聞いた。……二人で来たことは、評価する。　……　剣道は、相手を打ち負かすためだけのものじゃない。わかるな、藤沢。",
+    "voice": "Iapetus",
+    "style_instructions": "A male kendo club adviser in his 50s. Steady, stern but fair and understanding; measured."
+   }
+  },
+  {
+   "key": "adviser-2-Sadaltager",
+   "character": "Club adviser",
+   "number": 2,
+   "voice": "Sadaltager",
+   "input": {
+    "prompt": "話は聞いた。……二人で来たことは、評価する。　……　剣道は、相手を打ち負かすためだけのものじゃない。わかるな、藤沢。",
+    "voice": "Sadaltager",
+    "style_instructions": "A male kendo club adviser in his 50s. Steady, stern but fair and understanding; measured."
+   }
+  },
+  {
+   "key": "adviser-3-Schedar",
+   "character": "Club adviser",
+   "number": 3,
+   "voice": "Schedar",
+   "input": {
+    "prompt": "話は聞いた。……二人で来たことは、評価する。　……　剣道は、相手を打ち負かすためだけのものじゃない。わかるな、藤沢。",
+    "voice": "Schedar",
+    "style_instructions": "A male kendo club adviser in his 50s. Steady, stern but fair and understanding; measured."
+   }
+  },
+  {
+   "key": "kazuo-1-Charon",
+   "character": "Kazuo (Nanoha's dad)",
+   "number": 1,
+   "voice": "Charon",
+   "input": {
+    "prompt": "……殴りたくなる気持ちは、わかる。俺もそうだった。　……　お前の親父さんはな、お前に頼みすぎたって、後悔してたんだ。",
+    "voice": "Charon",
+    "style_instructions": "A big, quiet man in his mid-40s, Nanoha's father and Kōhei's mentor. Deep, warm, few words, gentle firmness."
+   }
+  },
+  {
+   "key": "kazuo-2-Algenib",
+   "character": "Kazuo (Nanoha's dad)",
+   "number": 2,
+   "voice": "Algenib",
+   "input": {
+    "prompt": "……殴りたくなる気持ちは、わかる。俺もそうだった。　……　お前の親父さんはな、お前に頼みすぎたって、後悔してたんだ。",
+    "voice": "Algenib",
+    "style_instructions": "A big, quiet man in his mid-40s, Nanoha's father and Kōhei's mentor. Deep, warm, few words, gentle firmness."
+   }
+  },
+  {
+   "key": "kazuo-3-Alnilam",
+   "character": "Kazuo (Nanoha's dad)",
+   "number": 3,
+   "voice": "Alnilam",
+   "input": {
+    "prompt": "……殴りたくなる気持ちは、わかる。俺もそうだった。　……　お前の親父さんはな、お前に頼みすぎたって、後悔してたんだ。",
+    "voice": "Alnilam",
+    "style_instructions": "A big, quiet man in his mid-40s, Nanoha's father and Kōhei's mentor. Deep, warm, few words, gentle firmness."
+   }
+  },
+  {
+   "key": "genji-1-Algenib",
+   "character": "Genji (grandfather)",
+   "number": 1,
+   "voice": "Algenib",
+   "input": {
+    "prompt": "いやあ、花びらの日はどうも腰が痛くてのう。　……　あの木はな、ずうっと昔から、ここを見守っとるんじゃよ。",
+    "voice": "Algenib",
+    "style_instructions": "An elderly man in his late 70s, shrine caretaker. Warm, a little creaky, twinkly sense of humor."
+   }
+  },
+  {
+   "key": "genji-2-Rasalgethi",
+   "character": "Genji (grandfather)",
+   "number": 2,
+   "voice": "Rasalgethi",
+   "input": {
+    "prompt": "いやあ、花びらの日はどうも腰が痛くてのう。　……　あの木はな、ずうっと昔から、ここを見守っとるんじゃよ。",
+    "voice": "Rasalgethi",
+    "style_instructions": "An elderly man in his late 70s, shrine caretaker. Warm, a little creaky, twinkly sense of humor."
+   }
+  },
+  {
+   "key": "genji-3-Enceladus",
+   "character": "Genji (grandfather)",
+   "number": 3,
+   "voice": "Enceladus",
+   "input": {
+    "prompt": "いやあ、花びらの日はどうも腰が痛くてのう。　……　あの木はな、ずうっと昔から、ここを見守っとるんじゃよ。",
+    "voice": "Enceladus",
+    "style_instructions": "An elderly man in his late 70s, shrine caretaker. Warm, a little creaky, twinkly sense of humor."
+   }
+  },
+  {
+   "key": "mom-1-Vindemiatrix",
+   "character": "Kōhei's mom",
+   "number": 1,
+   "voice": "Vindemiatrix",
+   "input": {
+    "prompt": "……ごめんね、こうへい。お母さん、ずっと何もできなくて。　……　今日はね、肉じゃが、作ったの。……お父さんの好きだった味。",
+    "voice": "Vindemiatrix",
+    "style_instructions": "A woman in her early 40s recovering from grief. Quiet, fragile, tender, with a small brave warmth."
+   }
+  },
+  {
+   "key": "mom-2-Sulafat",
+   "character": "Kōhei's mom",
+   "number": 2,
+   "voice": "Sulafat",
+   "input": {
+    "prompt": "……ごめんね、こうへい。お母さん、ずっと何もできなくて。　……　今日はね、肉じゃが、作ったの。……お父さんの好きだった味。",
+    "voice": "Sulafat",
+    "style_instructions": "A woman in her early 40s recovering from grief. Quiet, fragile, tender, with a small brave warmth."
+   }
+  },
+  {
+   "key": "mom-3-Gacrux",
+   "character": "Kōhei's mom",
+   "number": 3,
+   "voice": "Gacrux",
+   "input": {
+    "prompt": "……ごめんね、こうへい。お母さん、ずっと何もできなくて。　……　今日はね、肉じゃが、作ったの。……お父さんの好きだった味。",
+    "voice": "Gacrux",
+    "style_instructions": "A woman in her early 40s recovering from grief. Quiet, fragile, tender, with a small brave warmth."
+   }
+  },
+  {
+   "key": "dad-1-Iapetus",
+   "character": "Kōhei's dad",
+   "number": 1,
+   "voice": "Iapetus",
+   "input": {
+    "prompt": "こうへい……お母さんを、助けてやってくれ。あかねのこと、頼んだぞ。　……　おっ、また背が伸びたな。父さんが抜かれるのも時間の問題か。",
+    "voice": "Iapetus",
+    "style_instructions": "A kind, good-humored man in his early 40s (heard in flashbacks: once ill in a hospital bed, once healthy and joking)."
+   }
+  },
+  {
+   "key": "dad-2-Umbriel",
+   "character": "Kōhei's dad",
+   "number": 2,
+   "voice": "Umbriel",
+   "input": {
+    "prompt": "こうへい……お母さんを、助けてやってくれ。あかねのこと、頼んだぞ。　……　おっ、また背が伸びたな。父さんが抜かれるのも時間の問題か。",
+    "voice": "Umbriel",
+    "style_instructions": "A kind, good-humored man in his early 40s (heard in flashbacks: once ill in a hospital bed, once healthy and joking)."
+   }
+  },
+  {
+   "key": "dad-3-Orus",
+   "character": "Kōhei's dad",
+   "number": 3,
+   "voice": "Orus",
+   "input": {
+    "prompt": "こうへい……お母さんを、助けてやってくれ。あかねのこと、頼んだぞ。　……　おっ、また背が伸びたな。父さんが抜かれるのも時間の問題か。",
+    "voice": "Orus",
+    "style_instructions": "A kind, good-humored man in his early 40s (heard in flashbacks: once ill in a hospital bed, once healthy and joking)."
+   }
+  },
+  {
+   "key": "thug-1-Algenib",
+   "character": "Street-fight thug",
+   "number": 1,
+   "voice": "Algenib",
+   "input": {
+    "prompt": "あ？なんだお前。ヒーロー気取りかよ。　……　女連れでいきがってんじゃねえぞ。",
+    "voice": "Algenib",
+    "style_instructions": "A menacing young man around 20, a genuinely unpleasant street tough. Sneering, aggressive, rough."
+   }
+  },
+  {
+   "key": "thug-2-Zubenelgenubi",
+   "character": "Street-fight thug",
+   "number": 2,
+   "voice": "Zubenelgenubi",
+   "input": {
+    "prompt": "あ？なんだお前。ヒーロー気取りかよ。　……　女連れでいきがってんじゃねえぞ。",
+    "voice": "Zubenelgenubi",
+    "style_instructions": "A menacing young man around 20, a genuinely unpleasant street tough. Sneering, aggressive, rough."
+   }
+  },
+  {
+   "key": "thug-3-Alnilam",
+   "character": "Street-fight thug",
+   "number": 3,
+   "voice": "Alnilam",
+   "input": {
+    "prompt": "あ？なんだお前。ヒーロー気取りかよ。　……　女連れでいきがってんじゃねえぞ。",
+    "voice": "Alnilam",
+    "style_instructions": "A menacing young man around 20, a genuinely unpleasant street tough. Sneering, aggressive, rough."
+   }
+  },
+  {
+   "key": "opponent-1-Sadachbia",
+   "character": "Tournament opponent",
+   "number": 1,
+   "voice": "Sadachbia",
+   "input": {
+    "prompt": "あの子、お前の妹？フラフラじゃん。大丈夫かよ、ははっ。　……　はいはい、怖い怖い。剣道でマジになるなって。",
+    "voice": "Sadachbia",
+    "style_instructions": "A cocky 17-year-old male kendo opponent. Mocking, smirking, casually cruel."
+   }
+  },
+  {
+   "key": "opponent-2-Zubenelgenubi",
+   "character": "Tournament opponent",
+   "number": 2,
+   "voice": "Zubenelgenubi",
+   "input": {
+    "prompt": "あの子、お前の妹？フラフラじゃん。大丈夫かよ、ははっ。　……　はいはい、怖い怖い。剣道でマジになるなって。",
+    "voice": "Zubenelgenubi",
+    "style_instructions": "A cocky 17-year-old male kendo opponent. Mocking, smirking, casually cruel."
+   }
+  },
+  {
+   "key": "opponent-3-Umbriel",
+   "character": "Tournament opponent",
+   "number": 3,
+   "voice": "Umbriel",
+   "input": {
+    "prompt": "あの子、お前の妹？フラフラじゃん。大丈夫かよ、ははっ。　……　はいはい、怖い怖い。剣道でマジになるなって。",
+    "voice": "Umbriel",
+    "style_instructions": "A cocky 17-year-old male kendo opponent. Mocking, smirking, casually cruel."
+   }
+  },
+  {
+   "key": "fairy-1-Leda",
+   "character": "The fairy",
+   "number": 1,
+   "voice": "Leda",
+   "input": {
+    "prompt": "……あなたたち。また、会えたのね。　……　ねえ、クッキーは？今日はクッキー、ないの？",
+    "voice": "Leda",
+    "style_instructions": "A tiny, ancient cherry-tree spirit who sounds like a small girl: light, airy, curious and a little vain, with an old, faraway gentleness."
+   }
+  },
+  {
+   "key": "fairy-2-Erinome",
+   "character": "The fairy",
+   "number": 2,
+   "voice": "Erinome",
+   "input": {
+    "prompt": "……あなたたち。また、会えたのね。　……　ねえ、クッキーは？今日はクッキー、ないの？",
+    "voice": "Erinome",
+    "style_instructions": "A tiny, ancient cherry-tree spirit who sounds like a small girl: light, airy, curious and a little vain, with an old, faraway gentleness."
+   }
+  },
+  {
+   "key": "fairy-3-Pulcherrima",
+   "character": "The fairy",
+   "number": 3,
+   "voice": "Pulcherrima",
+   "input": {
+    "prompt": "……あなたたち。また、会えたのね。　……　ねえ、クッキーは？今日はクッキー、ないの？",
+    "voice": "Pulcherrima",
+    "style_instructions": "A tiny, ancient cherry-tree spirit who sounds like a small girl: light, airy, curious and a little vain, with an old, faraway gentleness."
+   }
+  },
+  {
+   "key": "past-natsuki-1-Zephyr",
+   "character": "Natsuki (past life)",
+   "number": 1,
+   "voice": "Zephyr",
+   "input": {
+    "prompt": "遅いですよ。……また怪我して。手、見せてください。　……　必ず、見つけます。だから……。",
+    "voice": "Zephyr",
+    "style_instructions": "A young married woman in Edo-era Japan, in a dream or memory. Softer, warmer and a little more mature than a teenager; tender, scolding with love; the second line through tears."
+   }
+  },
+  {
+   "key": "past-natsuki-2-Sulafat",
+   "character": "Natsuki (past life)",
+   "number": 2,
+   "voice": "Sulafat",
+   "input": {
+    "prompt": "遅いですよ。……また怪我して。手、見せてください。　……　必ず、見つけます。だから……。",
+    "voice": "Sulafat",
+    "style_instructions": "A young married woman in Edo-era Japan, in a dream or memory. Softer, warmer and a little more mature than a teenager; tender, scolding with love; the second line through tears."
+   }
+  },
+  {
+   "key": "past-natsuki-3-Callirrhoe",
+   "character": "Natsuki (past life)",
+   "number": 3,
+   "voice": "Callirrhoe",
+   "input": {
+    "prompt": "遅いですよ。……また怪我して。手、見せてください。　……　必ず、見つけます。だから……。",
+    "voice": "Callirrhoe",
+    "style_instructions": "A young married woman in Edo-era Japan, in a dream or memory. Softer, warmer and a little more mature than a teenager; tender, scolding with love; the second line through tears."
+   }
+  },
+  {
+   "key": "ronin-1-Puck",
+   "character": "Rōnin (past life)",
+   "number": 1,
+   "voice": "Puck",
+   "input": {
+    "prompt": "心配するな。すぐ戻る。　……　……生きろ。お前は、笑ってろ。それでいい。",
+    "voice": "Puck",
+    "style_instructions": "A masterless samurai in his twenties, in memory. Low, calm, gentle with his wife; the second line is his last words, quiet and certain."
+   }
+  },
+  {
+   "key": "ronin-2-Orus",
+   "character": "Rōnin (past life)",
+   "number": 2,
+   "voice": "Orus",
+   "input": {
+    "prompt": "心配するな。すぐ戻る。　……　……生きろ。お前は、笑ってろ。それでいい。",
+    "voice": "Orus",
+    "style_instructions": "A masterless samurai in his twenties, in memory. Low, calm, gentle with his wife; the second line is his last words, quiet and certain."
+   }
+  },
+  {
+   "key": "ronin-3-Iapetus",
+   "character": "Rōnin (past life)",
+   "number": 3,
+   "voice": "Iapetus",
+   "input": {
+    "prompt": "心配するな。すぐ戻る。　……　……生きろ。お前は、笑ってろ。それでいい。",
+    "voice": "Iapetus",
+    "style_instructions": "A masterless samurai in his twenties, in memory. Low, calm, gentle with his wife; the second line is his last words, quiet and certain."
+   }
+  },
+  {
+   "key": "past-father-1-Charon",
+   "character": "Her father (past life)",
+   "number": 1,
+   "voice": "Charon",
+   "input": {
+    "prompt": "この家には跡継ぎが要る。……娘を、頼んだぞ。　……　浪人風情が、と言う者もおろう。だが儂は、お前を見込んだ。",
+    "voice": "Charon",
+    "style_instructions": "A dignified Edo-era landholder in his 50s. Grave, formal, proud, with hidden warmth."
+   }
+  },
+  {
+   "key": "past-father-2-Alnilam",
+   "character": "Her father (past life)",
+   "number": 2,
+   "voice": "Alnilam",
+   "input": {
+    "prompt": "この家には跡継ぎが要る。……娘を、頼んだぞ。　……　浪人風情が、と言う者もおろう。だが儂は、お前を見込んだ。",
+    "voice": "Alnilam",
+    "style_instructions": "A dignified Edo-era landholder in his 50s. Grave, formal, proud, with hidden warmth."
+   }
+  },
+  {
+   "key": "past-father-3-Rasalgethi",
+   "character": "Her father (past life)",
+   "number": 3,
+   "voice": "Rasalgethi",
+   "input": {
+    "prompt": "この家には跡継ぎが要る。……娘を、頼んだぞ。　……　浪人風情が、と言う者もおろう。だが儂は、お前を見込んだ。",
+    "voice": "Rasalgethi",
+    "style_instructions": "A dignified Edo-era landholder in his 50s. Grave, formal, proud, with hidden warmth."
+   }
+  }
+ ],
+ "characters": [
+  {
+   "id": "nanoha",
+   "name": "Nanoha",
+   "lines": [
+    "……うさぎさんは反省中です。何をしたかは、本人が一番よくわかってるから。",
+    "こうへい、ネクタイ曲がってる。……はい、直った。"
+   ],
+   "style": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile. Must sound like a teenager, never a grown woman.",
+   "voices": [
+    "Erinome",
+    "Callirrhoe",
+    "Despina",
+    "Kore"
+   ]
+  },
+  {
+   "id": "akane",
+   "name": "Akane",
+   "lines": [
+    "お兄ちゃん、また心配しすぎ。私、ちゃんと一人で行けるってば。",
+    "えへへ……なのはちゃん、またお弁当作ってくれたんだって。よかったね、お兄ちゃん？"
+   ],
+   "style": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman.",
+   "voices": [
+    "Leda",
+    "Autonoe",
+    "Aoede",
+    "Pulcherrima"
+   ]
+  },
+  {
+   "id": "kirishima",
+   "name": "Kirishima",
+   "lines": [
+    "今、半秒止まったな。止まるな。",
+    "……今のは冗談だ。笑っていいぞ。"
+   ],
+   "style": "An 18-year-old male kendo club captain. Calm, low, quiet authority; bone-dry deadpan humor that no one gets.",
+   "voices": [
+    "Charon",
+    "Orus",
+    "Alnilam",
+    "Algenib"
+   ]
+  },
+  {
+   "id": "ryosuke",
+   "name": "Ryōsuke",
+   "lines": [
+    "藤沢、論理的に考えろ。ホットドッグはサンドイッチだ。異論は認めない。",
+    "……まあ、俺の計算だと、お前の勝率は三割ってとこだな。"
+   ],
+   "style": "A 16-year-old male high-school student, Kōhei's best friend. Precise, a little smug, dry and amused, glasses-pushing know-it-all.",
+   "voices": [
+    "Achird",
+    "Iapetus",
+    "Sadaltager"
+   ]
+  },
+  {
+   "id": "rika",
+   "name": "Rika",
+   "lines": [
+    "なのちゃーん！おっはよー！ねえねえ、聞いて聞いて！",
+    "えっ、まだ付き合ってないの！？うそでしょ！？"
+   ],
+   "style": "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright.",
+   "voices": [
+    "Laomedeia",
+    "Pulcherrima",
+    "Autonoe"
+   ]
+  },
+  {
+   "id": "yuzu",
+   "name": "Yuzu",
+   "lines": [
+    "藤沢先輩、またお客さんに笑顔忘れてますよー。椎名に一ポイント！",
+    "……べ、別に先輩のために残ったわけじゃないですから。"
+   ],
+   "style": "A 15-year-old first-year high-school girl who works part-time. Cheeky, sly, teasing kōhai; gets flustered when someone is sincere.",
+   "voices": [
+    "Autonoe",
+    "Leda",
+    "Callirrhoe"
+   ]
+  },
+  {
+   "id": "sota",
+   "name": "Sōta",
+   "lines": [
+    "こうにい！もう一回！今度は絶対勝つから！",
+    "えー、ずるい！今のなし！なしだってば！"
+   ],
+   "style": "A 7-year-old boy, energetic little gremlin who loves fighting games. Childlike, high, excited (an anime child voice).",
+   "voices": [
+    "Aoede",
+    "Leda",
+    "Laomedeia"
+   ]
+  },
+  {
+   "id": "ono",
+   "name": "Ōno-sensei",
+   "lines": [
+    "はい、静かに……。今日は枕草子の続きからいきます。",
+    "藤沢、寝るなら授業が終わってからにしなさい。"
+   ],
+   "style": "A tired male homeroom teacher in his 40s, tall and thin, droopy, mild and long-suffering.",
+   "voices": [
+    "Schedar",
+    "Umbriel",
+    "Zubenelgenubi"
+   ]
+  },
+  {
+   "id": "manager",
+   "name": "Manager",
+   "lines": [
+    "藤沢くん、助かったよ！ほんと命の恩人！",
+    "三番テーブル、お冷やお願い！あと、ハンバーグ二つ、急ぎで！"
+   ],
+   "style": "A harried but upbeat middle-aged male family-restaurant manager, slightly frantic, kind.",
+   "voices": [
+    "Sadachbia",
+    "Rasalgethi",
+    "Enceladus"
+   ]
+  },
+  {
+   "id": "adviser",
+   "name": "Club adviser",
+   "lines": [
+    "話は聞いた。……二人で来たことは、評価する。",
+    "剣道は、相手を打ち負かすためだけのものじゃない。わかるな、藤沢。"
+   ],
+   "style": "A male kendo club adviser in his 50s. Steady, stern but fair and understanding; measured.",
+   "voices": [
+    "Iapetus",
+    "Sadaltager",
+    "Schedar"
+   ]
+  },
+  {
+   "id": "kazuo",
+   "name": "Kazuo (Nanoha's dad)",
+   "lines": [
+    "……殴りたくなる気持ちは、わかる。俺もそうだった。",
+    "お前の親父さんはな、お前に頼みすぎたって、後悔してたんだ。"
+   ],
+   "style": "A big, quiet man in his mid-40s, Nanoha's father and Kōhei's mentor. Deep, warm, few words, gentle firmness.",
+   "voices": [
+    "Charon",
+    "Algenib",
+    "Alnilam"
+   ]
+  },
+  {
+   "id": "genji",
+   "name": "Genji (grandfather)",
+   "lines": [
+    "いやあ、花びらの日はどうも腰が痛くてのう。",
+    "あの木はな、ずうっと昔から、ここを見守っとるんじゃよ。"
+   ],
+   "style": "An elderly man in his late 70s, shrine caretaker. Warm, a little creaky, twinkly sense of humor.",
+   "voices": [
+    "Algenib",
+    "Rasalgethi",
+    "Enceladus"
+   ]
+  },
+  {
+   "id": "mom",
+   "name": "Kōhei's mom",
+   "lines": [
+    "……ごめんね、こうへい。お母さん、ずっと何もできなくて。",
+    "今日はね、肉じゃが、作ったの。……お父さんの好きだった味。"
+   ],
+   "style": "A woman in her early 40s recovering from grief. Quiet, fragile, tender, with a small brave warmth.",
+   "voices": [
+    "Vindemiatrix",
+    "Sulafat",
+    "Gacrux"
+   ]
+  },
+  {
+   "id": "dad",
+   "name": "Kōhei's dad",
+   "lines": [
+    "こうへい……お母さんを、助けてやってくれ。あかねのこと、頼んだぞ。",
+    "おっ、また背が伸びたな。父さんが抜かれるのも時間の問題か。"
+   ],
+   "style": "A kind, good-humored man in his early 40s (heard in flashbacks: once ill in a hospital bed, once healthy and joking).",
+   "voices": [
+    "Iapetus",
+    "Umbriel",
+    "Orus"
+   ]
+  },
+  {
+   "id": "thug",
+   "name": "Street-fight thug",
+   "lines": [
+    "あ？なんだお前。ヒーロー気取りかよ。",
+    "女連れでいきがってんじゃねえぞ。"
+   ],
+   "style": "A menacing young man around 20, a genuinely unpleasant street tough. Sneering, aggressive, rough.",
+   "voices": [
+    "Algenib",
+    "Zubenelgenubi",
+    "Alnilam"
+   ]
+  },
+  {
+   "id": "opponent",
+   "name": "Tournament opponent",
+   "lines": [
+    "あの子、お前の妹？フラフラじゃん。大丈夫かよ、ははっ。",
+    "はいはい、怖い怖い。剣道でマジになるなって。"
+   ],
+   "style": "A cocky 17-year-old male kendo opponent. Mocking, smirking, casually cruel.",
+   "voices": [
+    "Sadachbia",
+    "Zubenelgenubi",
+    "Umbriel"
+   ]
+  },
+  {
+   "id": "fairy",
+   "name": "The fairy",
+   "lines": [
+    "……あなたたち。また、会えたのね。",
+    "ねえ、クッキーは？今日はクッキー、ないの？"
+   ],
+   "style": "A tiny, ancient cherry-tree spirit who sounds like a small girl: light, airy, curious and a little vain, with an old, faraway gentleness.",
+   "voices": [
+    "Leda",
+    "Erinome",
+    "Pulcherrima"
+   ]
+  },
+  {
+   "id": "past-natsuki",
+   "name": "Natsuki (past life)",
+   "lines": [
+    "遅いですよ。……また怪我して。手、見せてください。",
+    "必ず、見つけます。だから……。"
+   ],
+   "style": "A young married woman in Edo-era Japan, in a dream or memory. Softer, warmer and a little more mature than a teenager; tender, scolding with love; the second line through tears.",
+   "voices": [
+    "Zephyr",
+    "Sulafat",
+    "Callirrhoe"
+   ]
+  },
+  {
+   "id": "ronin",
+   "name": "Rōnin (past life)",
+   "lines": [
+    "心配するな。すぐ戻る。",
+    "……生きろ。お前は、笑ってろ。それでいい。"
+   ],
+   "style": "A masterless samurai in his twenties, in memory. Low, calm, gentle with his wife; the second line is his last words, quiet and certain.",
+   "voices": [
+    "Puck",
+    "Orus",
+    "Iapetus"
+   ]
+  },
+  {
+   "id": "past-father",
+   "name": "Her father (past life)",
+   "lines": [
+    "この家には跡継ぎが要る。……娘を、頼んだぞ。",
+    "浪人風情が、と言う者もおろう。だが儂は、お前を見込んだ。"
+   ],
+   "style": "A dignified Edo-era landholder in his 50s. Grave, formal, proud, with hidden warmth.",
+   "voices": [
+    "Charon",
+    "Alnilam",
+    "Rasalgethi"
+   ]
+  }
+ ]
+}
