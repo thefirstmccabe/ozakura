@@ -581,6 +581,7 @@ Select and adapt; this is not a checklist.
 24. **Optional coda:** past Natsuki at the tree after his death.
 
 **Climax:**
+24a. **The night before the battle (accepted Oct 10):** Kōhei and Nanoha sit up together at the open windows, or on the boulder under the tree. They talk about *after*: spring, third year, next summer. One of them says "I love you" plainly for the first time. They fall asleep leaning on each other, then walk into the fight in the morning. Blue Box restraint: the closeness carries the weight.
 25. **Armor before battle:** Natsuki helps Kōhei into his armor (armor as an heirloom is provisional), knowing how from the past life. An intimate framing widens to reveal Nanoha in the room, annoyed ("You guys, I'm right here"). The joke reveals their feelings without undercutting the danger.
 26. **Pre-battle respect:** Kōhei to the Rival, something like "I'm trusting you with the women I love." The Rival: "And I'm trusting you to let me handle my part, keep your cool, and not fuck it up and die." The wording is Open, and "both of them" is an optional alternative.
 27. **Rival cooperation:** a task Kōhei must actually trust him with. No redundant helper Kōhei secretly plans to rescue.
