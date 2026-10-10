@@ -89,6 +89,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Face windows and dialogue colors locked** (style guide §3a). Kōhei gets a window on every spoken line; others only when their sprite isn't on screen. A ~10-expression face set is needed for Kōhei. Name tags in full color, dialogue in pale tints, narration neutral; test screen first. |
 | 10-10 | **Rival arc mapped** (canon §8): the two halves of the sword. Friction (Apr–Jul) → he witnesses the fight and offers to go to the adviser *with* Kōhei so Kōhei can own up (Decided) → they learn from each other (Oct–Dec) → caught in the path distortion himself in January (accepted) → the anchor in the battle (Proposal). Akane's perceptiveness about the romance reconfirmed. |
 | 10-10 | **The bloom in both eras:** in the present the beast is already active at a low level before the bloom (rumors, people lost, maybe injured, possibly one disappearance), and the bloom marks it ramping up. In the past there are rumors but no bloom; he goes armed and she teases him; after he kills the beast and they promise, the tree blooms, the distortion falls away, and there's the CG of her cradling him under falling blossoms. Proposals: they'd been circling the tree all along; the modern bloom triggers the memory flood. Canon §5, §6, §9. |
+| 10-10 | **Cutscene test passed** ("not bad"; ~$1.36). **Three-tier video plan (Working):** living-still loops on many CGs, 5–10 s animated beats at emotional peaks, and a handful of full cutscenes plus an opening movie. Model chosen per shot. No video before the design lock. Canon §2; details in §6. |
 | 10-10 | **Fairy timeline and function decided** (canon §8): visibility tracks the danger (a light Apr–Aug, plus small item displacements in Nanoha's room; a half-form in autumn; full and speaking at the bloom, recognizing Kōhei and Natsuki; visible to all Jan–Mar; a real goodbye to Nanoha at the end). Female (Working). Look and personality are proposals for the design step. |
 | 10-10 | **The beast:** wolf-like, physical but mainly spiritual, leaves no corpse. Folklore source is the okuri-ōkami (the escorting wolf). Canon §6. |
 | 10-10 | **Design pass approved, cap $10.** |
@@ -146,7 +147,17 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
     - **The real constraints:** identity drift between shots; clips of 10–15 s each; content filters, likely strictest on the kiss (teen characters) and on blood or the beast; and no usable lip sync. Keep dialogue as voiceover over shots, as anime often does.
     - **Method:** animate from approved CGs as first and last frames, so each shot starts and ends on-model.
     - **Candidates:** an opening movie (the classic VN spot for animation), the New Year bloom, the past-life walk and the trade, the climax lunge and save, and the epilogue. Pair the kiss with its song only if the filters allow.
-    - **Test done Oct 10** (`production/cutscene-test/`): `cg_catch` animated for 8 s on MiniMax H3 Max and on Kling v3 Pro, about $1.36 total. **Both held the art style, faces and outfits with no visible morphing.** H3 Max pushed in hard to a close two-shot (more cinematic, crops her body). Kling stayed wide and restrained, closer to the prompt. **Awaiting the author's verdict** on quality and model.
+    - **Test done Oct 10** (`production/cutscene-test/`): `cg_catch` animated for 8 s on MiniMax H3 Max and on Kling v3 Pro, about $1.36 total. **Both held the art style, faces and outfits with no visible morphing.** H3 Max pushed in hard to a close two-shot (more cinematic, crops her body). Kling stayed wide and restrained, closer to the prompt. **Author's verdict: "not bad."** At this cost, more video than first planned.
+    - **Three-tier video plan (Working, Oct 10):**
+      1. **Living stills (many):** subtle 2–4 s loops on most CGs and some backgrounds (hair, petals, breathing, the river). About $0.10–0.20 each; low risk.
+      2. **Animated beats (dozens):** 5–10 s at emotional peaks, like the catch test.
+      3. **Full cutscenes (a handful):** an opening movie plus about 4–6 pivotal moments, 30–60 s each.
+    - **Choose the model per shot:** Kling for held, restrained moments; H3 Max for dramatic push-ins.
+    - **Limits:**
+      - **No video before the design lock.** The test already shows superseded designs.
+      - **Use motion as punctuation,** so the static scenes don't feel dead.
+      - **Review time is now the bottleneck,** not cost.
+    - **Next tests, after the design lock:** a fast-action shot (could animation replace some manga action pages?) and a two-shot cut for identity continuity.
 
 **After that:**
 - **One revision pass on the pilot.** That covers:

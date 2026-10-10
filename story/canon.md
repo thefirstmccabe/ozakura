@@ -73,7 +73,11 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Format (Working, the author's leaning):** VN-primary, with frequent interludes, CGs and occasional manga pages for scenes that only work as manga. The author thinks the story works best as manga, but full manga production is too costly and inconsistent at his quality bar.
   - **Inserts are full color** (Decided Oct 10), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone.
   - **Proposal:** past-life scenes get a distinct treatment *within* color (a desaturated or warm-faded palette, softer edges) to mark the era at a glance. To decide when the first flashback is made.
-  - **Anime cutscenes (Working, Oct 10):** the author is willing to pay for short animated cutscenes at a handful of truly pivotal moments. Which moments, how many, and the method are Open, pending a test clip.
+  - **Animation (Working, Oct 10):** after a successful test, video comes in three tiers:
+    - subtle looping "living stills" on many CGs and some backgrounds;
+    - short animated beats (5–10 s) at emotional peaks;
+    - a handful of full cutscenes for the truly pivotal moments, plus an opening movie.
+    - **Rules:** motion is punctuation, not the default. Dialogue plays as voiceover, with no lip sync. Which moments get which tier is Open.
 - **The feel:** a Japanese manga translated into English. Aim for manga plausibility rather than exhaustive realism.
 - **Language:**
   - Keep honorifics and meaningful forms of address in natural English: -san, -kun, -chan, senpai, and sibling terms like onii-chan.
@@ -748,3 +752,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Mom's recovery:** Emi confronts her, they cook the favorite dish, and she takes back some of the weight. Partial, with setbacks, this year. Supersedes "no substantial recovery arc."
   - **Manga inserts are full color** in the VN style (§2); past-life color treatment is a proposal.
   - **Anime cutscenes (Working):** the author is willing to pay for a few at pivotal moments (§2).
+  - **Animation:** the cutscene test passed; three-tier video plan (living stills, animated beats, a few full cutscenes plus an opening) is Working (§2).
