@@ -31,8 +31,8 @@ How Ōzakura looks and sounds, and how to generate it. Read this before any art,
 - **Appeal:** comes from personality, expression, styling and presence. **Never design or frame the school-age cast for figure or sex appeal.**
 - **Hair color:** a medium convention, never commented on in-world.
 
-## 1a. Design lock, Oct 10 (candidates, pending author approval)
-All files are in `production/refs/design-oct10/`. Once approved, these outrank every older image for these characters.
+## 1a. Design lock, Oct 10 (humans APPROVED by the author; the beast is approved for scale, with an ethereal tweak pending)
+All files are in `production/refs/design-oct10/`. They outrank every older image for these characters.
 
 | Who | Reference | Notes |
 |---|---|---|

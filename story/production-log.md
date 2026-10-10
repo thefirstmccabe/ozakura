@@ -94,6 +94,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **The beast:** wolf-like, physical but mainly spiritual, leaves no corpse. Folklore source is the okuri-ōkami (the escorting wolf). Canon §6. |
 | 10-10 | **Design pass approved, cap $10.** |
 | 10-10 | **Design pass delivered for approval** (style guide §1a): shorter-haired Kōhei plus a 10-face set, teen-proportioned Akane, Natsuki's casual outfits, a masculine Kirishima, the fairy at scale, and the beast at big-dog size with a size reference. Draft color swatches. |
+| 10-10 | **Design lock: all humans approved** (Kōhei and his face set, Akane, Natsuki's casual outfits, the male Kirishima). Beast scale approved; the author wants it slightly more ethereal and multicolored. Next: complete the visual inventory before voices, planning for more animation (three-tier video plan). |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
