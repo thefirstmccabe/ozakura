@@ -286,9 +286,9 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Emi confronts her** in the week after the fight: "I know you're hurting, but your son is falling apart."
 - **Mom's shame:** she's ashamed of not being a better mother. **Emi:** "Your kids just want their mom back." That matters more than the shame.
 - **Emi helps her cook the family's favorite dish.** Kōhei and Akane come home together to the smell of it, the food she used to make. Happy beat; strong CG.
-- **Mom takes back some of the weight,** for example part-time bookkeeping.
+- **Mom takes back some of the weight:** part-time bookkeeping she does from home (Decided Oct 10).
 - **Within this year her recovery is partial, with setbacks.** She still has bad days. Kōhei doesn't trust it at first and has to *let* her take things back.
-- **Open:** the dish itself, and the details of her work.
+- **The dish (Working, Claude's pick):** her nikujaga, the classic "mother's cooking" stew, made the way the family liked it, a little sweeter than Emi's. It was Dad's favorite too, which is why no one has made it since. Open: the details of her bookkeeping work.
 
 ### Mentor
 - After the fight, Kōhei finally accepts help from **Nanoha's father** (the accepted working direction), who has offered an ear before.
