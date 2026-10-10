@@ -338,7 +338,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **The beast:**
   - It need not be the same beast as before.
   - **Nature (Decided Oct 10):** a supernatural **wolf-like** creature. It has a physical form and can be wounded, but it is mainly spiritual, and it **leaves no corpse** when killed.
-  - **Folklore source (Proposal): the okuri-ōkami / okuri-inu,** the "escorting wolf" of mountain-path legend, known from Kantō to Kinki.
+  - **Folklore source (Decided Oct 10): the okuri-ōkami / okuri-inu,** the "escorting wolf" of mountain-path legend, known from Kantō to Kinki.
     - **The legend:** it follows travelers at night. If they stumble and fall, it attacks. If they keep their footing, or pretend they're only resting, they're safe, and some versions say it even escorts them home. Saying goodbye or thanks at the end of the road, or leaving it a gift such as a single sandal, ends the escort. In some regions people distinguish the protective okuri-inu from the attacking mukae-inu.
     - **Why it fits:** walkers on familiar paths, circling (the beast as the thing walking behind you while the path won't end), and a protector turned predator. That mirrors Kōhei, the protector who hits a man who has already fallen.
     - **Folk rules as plot tools:** don't fall, "I'm only resting," thanks at the end of the road. Nanoha's grandfather or elderly locals know the customs (canon's elderly help); the methodical Takatsuki notices the pattern.

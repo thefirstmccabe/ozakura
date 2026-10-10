@@ -90,6 +90,8 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Rival arc mapped** (canon §8): the two halves of the sword. Friction (Apr–Jul) → he witnesses the fight and offers to go to the adviser *with* Kōhei so Kōhei can own up (Decided) → they learn from each other (Oct–Dec) → caught in the path distortion himself in January (accepted) → the anchor in the battle (Proposal). Akane's perceptiveness about the romance reconfirmed. |
 | 10-10 | **The bloom in both eras:** in the present the beast is already active at a low level before the bloom (rumors, people lost, maybe injured, possibly one disappearance), and the bloom marks it ramping up. In the past there are rumors but no bloom; he goes armed and she teases him; after he kills the beast and they promise, the tree blooms, the distortion falls away, and there's the CG of her cradling him under falling blossoms. Proposals: they'd been circling the tree all along; the modern bloom triggers the memory flood. Canon §5, §6, §9. |
 | 10-10 | **Fairy timeline and function decided** (canon §8): visibility tracks the danger (a light Apr–Aug, plus small item displacements in Nanoha's room; a half-form in autumn; full and speaking at the bloom, recognizing Kōhei and Natsuki; visible to all Jan–Mar; a real goodbye to Nanoha at the end). Female (Working). Look and personality are proposals for the design step. |
+| 10-10 | **The beast:** wolf-like, physical but mainly spiritual, leaves no corpse. Folklore source is the okuri-ōkami (the escorting wolf). Canon §6. |
+| 10-10 | **Design pass approved, cap $10.** |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -97,7 +99,8 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | VN pilot | $100 | about $30–35 | |
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |
-| Designs and voice auditions | **approval pending** | — | Estimated $1–3 together |
+| Design pass (Oct 10) | $10 | — | Kōhei + face set, male Kirishima, Natsuki casual, Akane check, fairy, beast concepts, swatches |
+| Voice auditions | approval pending | — | Estimated under $1 |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 
 **Cumulative fal spend:** about $65–70. fal's dashboard has the exact figure.
