@@ -83,6 +83,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-08 (eve) | **Plan before the revision pass:** lock the character designs → finalize the voices → map the first chapters. |
 | 10-10 | **Story docs go in the public repo** (`story/`) for version history. The author is fine with the story being public. The repo stays public, and GitHub Pages keeps serving the pilot. |
 | 10-10 | Format details (insert style, presentation, the jigeiko test) restored to §6 after the Oct 8 rewrite dropped them. |
+| 10-10 | **Family spine:** the family putting itself back together after Dad's death is a main arc. A September flashback to Dad's death (the hospital request, his private request to Nanoha's father, the bills scene). Dad's regret is revealed through Nanoha's father, who apologizes for not pressing his help. Mom's recovery starts when Emi confronts her and they cook the favorite dish; it stays partial, with setbacks, this year. Canon §1, §6. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |

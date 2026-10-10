@@ -6,7 +6,7 @@
 
 Every decision through Oct 8, 2026 is folded in. When the author decides something, edit this document in place, add a line to the revision record at the bottom, and log it in the production log.
 
-Last updated 2026-10-10.
+Last updated 2026-10-10 (family spine added).
 
 **Related docs:**
 - `ozakura/pilot-notes.md`: what the shipped pilot invented (marked [P]), and the agreed fixes waiting on the revision hold.
@@ -45,6 +45,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - Accepting help, and the limits of protection.
 - The difference between being wanted and being known.
 - Meaningful survival after heartbreak.
+- **A family putting itself back together after a father's death** (Oct 10). This is one of the story's main spines, not background; see §6 "The Fujisawa family".
 - Masculinity, strength and honor exercised responsibly.
 
 **Tone:**
@@ -135,7 +136,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 |---|---|
 | Apr–Aug | Natsuki arrives. Slow burn and fragments; Nanoha's jealousy; anger warning signs. Rainy-season umbrella scene and the girls' pact (June–July, working). Summer festival, beach, horror movie. |
 | **Late Aug** (end of summer break) | Karaoke, street fight, wound care, the kiss. |
-| **Within about a week** | Natsuki tells Nanoha. Kōhei owns his half. The fallout runs into September, when the mentor arc with Nanoha's father begins. |
+| **Within about a week** | Natsuki tells Nanoha. Kōhei owns his half. The fallout runs into September: the mentor arc with Nanoha's father begins, the flashback to Dad's death, and Emi's confrontation that starts Mom's recovery. |
 | **Oct** | Kōhei and Nanoha start dating. **Proposal:** the cultural festival hosts it. |
 | Oct–Dec | Visible couple time, including Christmas. Fragments intensify. Nanoha senses something about the past life (degree and timing Open). |
 | **New Year** | The out-of-season bloom. The memories flood in. |
@@ -257,11 +258,44 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **Natsuki is the one who names Nanoha's feelings to Kōhei:** "She's in love with you. You really don't see it?" That ends his avoidance and feeds into the October dating.
   - "Why didn't you tell me yourself?" / "She asked me to let her." True, and still not good enough.
 
+### The Fujisawa family: putting it back together (Decided Oct 10)
+The family's recovery from Dad's death runs alongside the romance all year. The fight is where Kōhei's way of holding everything together fails, and its aftermath starts the repair.
+
+| When | Family beats |
+|---|---|
+| Apr–Aug | **Holding it together.** Kōhei carries everything; Mom stays behind the fusuma; Akane and Emi quietly hold pieces of it. |
+| Sep (fight aftermath) | **The break and first repair:** the flashback to Dad's death, Emi's confrontation, Mom's first step, the mentor. |
+| Oct–Dec | **Rebuilding.** Mom's partial return with setbacks; Kōhei learns to let her carry some of it. |
+| New Year | **The family's first New Year together again** (Working), on the same night as the bloom. |
+| End | **The family is mended, not restored.** |
+
+**Why it matters to the main arc:** Kōhei's flaw is taking on more than he should, because his father asked him to. The family healing lets him stop, and the climax pays it off: he survives because he lets others carry part of the load.
+
+**Flashback: Dad's death (September, in the fight's aftermath).**
+- **Hospital:** Dad tells Kōhei, "Help your mother out. Look after your sister."
+- **His request to Nanoha's father:** Dad privately asks him to watch over Kōhei. Decided; this replaces the earlier optional proposal.
+- **The bills:** after the funeral, Mom isn't functioning. Kōhei sits at the kitchen table with the bills, working out how much he has to work so that Dad's pension and their savings can carry the family. Research the Japanese survivor's pension and child medical subsidies when writing it.
+
+**Dad's regret (Decided Oct 10):**
+- Dad came to regret the request, fearing Kōhei would take too much on himself.
+- **It is revealed through Nanoha's father,** as part of the mentoring ("He told me he was afraid he'd asked too much of you"), so it arrives when Kōhei can hear it and releases him.
+- **Proposal:** show that hospital-room conversation later as a payoff, once Kōhei knows.
+- **Nanoha's father apologizes to Kōhei:** he always offered help but didn't press it the way he should have. He takes his own share of responsibility while still holding Kōhei responsible for the violence; the mentor models what he asks of Kōhei.
+
+**Mom's recovery (Decided Oct 10; supersedes "no substantial recovery arc"):**
+- **Emi confronts her** in the week after the fight: "I know you're hurting, but your son is falling apart."
+- **Mom's shame:** she's ashamed of not being a better mother. **Emi:** "Your kids just want their mom back." That matters more than the shame.
+- **Emi helps her cook the family's favorite dish.** Kōhei and Akane come home together to the smell of it, the food she used to make. Happy beat; strong CG.
+- **Mom takes back some of the weight,** for example part-time bookkeeping.
+- **Within this year her recovery is partial, with setbacks.** She still has bad days. Kōhei doesn't trust it at first and has to *let* her take things back.
+- **Open:** the dish itself, and the details of her work.
+
 ### Mentor
 - After the fight, Kōhei finally accepts help from **Nanoha's father** (the accepted working direction), who has offered an ear before.
 - **The father:** has relevant experience with anger, violence or combat sports. Former karate club membership and an anger incident that shamed his club are possible details. He has an ordinary job; neither police nor priest.
 - **The mentorship continues** beyond one speech. He understands anger and still holds Kōhei responsible.
 - **Proposal:** Kōhei apologizes and admits he isn't sure he would have stopped without Nanoha.
+- **Decided Oct 10:** he passes on Dad's regret, and apologizes for not pressing his offers of help (see "The Fujisawa family" above).
 - **The tree image:** be more like the tree (steadiness and shelter, not perpetual readiness to fight) while knowing when to ask for help. How explicitly he ties it to Kōhei's late father is Open.
 - **What he knows:** the father needn't know the supernatural truth.
 - **Before all this:** Nanoha's father already does informal karate-style exercise with Kōhei for fun and fitness, possibly with a punching bag. There is no dojo and no serious sparring program. The exact discipline is Open.
@@ -351,10 +385,11 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **He and Natsuki are experienced, ordinary mixed-gender training partners** who increasingly seek each other out: partner drills, free sparring, footwork, conditioning.
   - **The balance:** no invented gender handicap. He generally has the edge; she can land strikes, exploit his mistakes and contribute observations. She's a strong athlete without needing superhuman physical equality. Particular strengths and ranks are Open.
 - **Family and money:** de facto head of household. His father died after several months of illness around Kōhei's entry into high school, having asked him, "Help your mother out. Look after your sister." Kōhei took that as responsibility for everything, which his father didn't intend.
-  - His mother hasn't recovered enough to be dependable; she stays largely off-page, with at most modest improvement by the ending. Earlier suggestions of an alcohol problem or teen motherhood are **not established**. The family's specific income sources are Open.
+  - **His mother:** through August she hasn't recovered enough to be dependable and stays largely off-page. **From September she begins a partial recovery, with setbacks** (Oct 10; see §6 "The Fujisawa family"). Earlier suggestions of an alcohol problem or teen motherhood are **not established**.
+  - **Money:** Dad's pension and savings plus Kōhei's work. The details are Open.
   - Both families are poor, and the father's death made the Fujisawas' position dire. The Tachibanas can help in practical ways but can't fix it.
   - Don't assume American-style medical costs.
-  - **Proposal:** his father asked Nanoha's father to look out for Kōhei. Compatible, but not a compulsory deathbed secret.
+  - **Decided Oct 10:** his father asked Nanoha's father to look out for Kōhei, and later regretted burdening Kōhei (see §6).
 - **Schedule (accepted starting model):**
   - A serious club with an understanding adviser, and **school-authorized part-time work**, not a secret-job subplot. A family restaurant is the leading job setting.
   - This weekly schedule is a fictional synthesis, not a universal school rule.
@@ -647,3 +682,8 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - The wrist motif becomes binding a cut on his wrist (from the pilot playthrough feedback; see pilot-notes §1b).
   - Writing rules added to §1 (openings show rather than tell; no name-tag intros; no manga self-reference; subtle strangeness). The kendo senior is male.
   - Docs consolidated: this canon replaces the Oct 1 bible and the working bible.
+- **Oct 10:**
+  - **The family's recovery from Dad's death becomes a main spine** (§1 themes; §6 "The Fujisawa family").
+  - **September flashback to Dad's death:** the hospital request, his private request to Nanoha's father, and the bills scene.
+  - **Dad's regret** is revealed through Nanoha's father, who also apologizes for not pressing his offers of help.
+  - **Mom's recovery:** Emi confronts her, they cook the favorite dish, and she takes back some of the weight. Partial, with setbacks, this year. Supersedes "no substantial recovery arc."
