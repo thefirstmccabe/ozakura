@@ -81,6 +81,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Romance and intimacy:** honest about attraction, but not an ecchi story. Nothing explicit involving the school-age cast; intimate beats stay non-explicit, and none belong in the early chapters.
   - **Agreed Oct 6:** the school-age cast's appeal comes through personality, styling and presence, never figure-focused design or framing.
   - **Agreed Oct 6:** violence can be drawn at manga intensity (blood, wounds, death). Gore for its own sake is out.
+  - **Oct 10 (Claude's boundary):** no sexual activity is depicted or implied for the school-age cast, however obliquely, and no sexual humor centered on them. Kissing, hand-holding and emotional closeness are fine. The past-life couple were married adults, so their intimacy can be implied non-explicitly.
 - **Keep the romcom fun.** Don't attach moral disclaimers to every trope. Photography, horror movies and friendship keep their ordinary pleasure rather than all becoming supernatural devices.
 - **Expressive close-ups** inspired by *The Fragrant Flower Blooms with Dignity*, especially in nonverbal scenes.
 - **POV: Open.** The pilot uses Kōhei in first-person present tense plus third-person interludes from the girls' side.
@@ -544,7 +545,10 @@ Select and adapt; this is not a checklist.
 2. **Plushie lawyer:** Natsuki places another plushie beside it so it needn't face questioning without counsel. Nanoha tries not to laugh.
 3. **Familiar home:** Natsuki notices Nanoha knows where his cups go and which window sticks. "Have you been coming here forever?"
 4. **Cat nightmare:** Nanoha dreams she's the pet cat of a married Kōhei and Natsuki. She wakes upset and asks Kōhei to sleep on her floor without explaining. Ordinary jealousy, not prophecy; the logistics need establishing.
-5. **Manga misunderstanding:** she finds an "I can't date my childhood friend"-type manga in his room. Brief and character-revealing.
+5. **Manga misunderstanding (staging accepted Oct 10):** summer, windows open. Kōhei has left out a romcom in which the childhood friend loses. Nanoha reads the whole thing and gets more and more personally offended on the heroine's behalf.
+   - She lectures him across the windows: "She waited *nine volumes*. Nine. And he picks the transfer student."
+   - She keeps going ("Do you have any idea how that feels for the childhood friend—"), hears herself, freezes, and slams the window. Usagi-san goes back into time-out.
+   - Use a fictional title, and keep the manga a plain romcom, not ecchi.
 6. **The nickname:** a comfortable nickname suddenly hurts, because she hears romantic exclusion in it. Choose the actual form with this payoff in mind.
 7. **Catch and tears:** Kōhei catches Natsuki when she falls, and tears come unexplained. The past-life meaning comes later.
 8. **Early recognition, sparingly:** familiarity in practice (now one-sided: she anticipates him), teasing that turns intimate too quickly, inexplicable relief when he turns toward her.
