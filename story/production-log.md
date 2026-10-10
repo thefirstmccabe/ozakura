@@ -16,6 +16,8 @@ Current state, decisions, budget, open issues and what's next. Update it at the 
 
 The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents now live in canon.md and pilot-notes.md.
 
+**Since Oct 10 the four living docs are also in the public repo under `story/`, with git history.** Edit them there, commit, then upload to the Project (the repo's `CLAUDE.md` has the steps).
+
 ## 1. What exists
 | Deliverable | Where | Status |
 |---|---|---|
@@ -79,6 +81,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-08 (eve) | **Yuzu's introduction moves to around May–June**, near the girls' pact. Ch3's shift scene keeps the manager and the job and drops her. |
 | 10-08 (eve) | **Window-scene bug (3.3):** Nanoha appears in Kōhei's room. Redraw it Muv-Luv style, viewed from his room into her window; folded into the house fix. Tea at the shrine (3.6) and lunch at the Tachibanas' (3.7) are fine. |
 | 10-08 (eve) | **Plan before the revision pass:** lock the character designs → finalize the voices → map the first chapters. |
+| 10-10 | **Story docs go in the public repo** (`story/`) for version history. The author is fine with the story being public. The repo stays public, and GitHub Pages keeps serving the pilot. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -106,9 +109,9 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 ## 5. Infrastructure risks
 - **Storage:** text canon lives in the Project; every file lives in the repo. Its `CLAUDE.md` holds the working rules.
 - **The Vol. 1 manga pipeline code is lost.** Rebuild it in `production/pipeline/` and commit as you go.
-- **The repo is public.** Never commit canon text or spoilers.
+- **The repo is public, story included** (author's call, Oct 10). Never commit credentials or anything personal.
 - **Archived bible:** the Oct 1 snapshot is still in the Project and could confuse a search. It's marked archived in the project instructions; delete it if the author prefers.
-- **Parallel threads:** two threads editing the same doc can overwrite each other, since writes replace the whole doc. Re-read a doc right before writing it.
+- **Parallel threads:** Project writes replace the whole doc, so two threads can overwrite each other. Edit through the repo copy (`story/`), which has history, and fetch before editing.
 
 ## 6. Next up
 **Agreed order (Oct 8):**
