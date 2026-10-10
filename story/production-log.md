@@ -96,6 +96,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Design pass delivered for approval** (style guide §1a): shorter-haired Kōhei plus a 10-face set, teen-proportioned Akane, Natsuki's casual outfits, a masculine Kirishima, the fairy at scale, and the beast at big-dog size with a size reference. Draft color swatches. |
 | 10-10 | **Design lock: all humans approved** (Kōhei and his face set, Akane, Natsuki's casual outfits, the male Kirishima). Beast scale approved; the author wants it slightly more ethereal and multicolored. Next: complete the visual inventory before voices, planning for more animation (three-tier video plan). |
 | 10-10 | **Visual inventory phase approved, cap $20:** new characters (families, adviser, past life, one-scene antagonists), a supporting-cast check, a cast scale lineup, seasonal outfits, the fairy's season forms, turnarounds for the animation principals, and key locations (houses, shrine/tree in both eras, past village). Ordinary backgrounds and event CGs stay per chapter. |
+| 10-10 | **Visual inventory delivered for review** (style guide §1b), all self-reviewed and fixed before delivery: scale lineups for the whole cast; families, school adults, past life and antagonists; full color for the supporting cast (grayscale drafts replaced); seasonal outfits and kendo armor; the fairy's four forms; the beast's ethereal tweak; turnarounds for eight animation principals; key locations (the houses at about 1 m and both window views, Nanoha's room, the tree in four seasons plus the New Year bloom, the past-era site, path and village). Boards: `production/refs/lineup/` and the review sheets sent in the Story thread. Supporting heights and a few picks are [P]. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -104,11 +105,11 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |
 | Design pass (Oct 10) | $10 | about $4.50 (≈55 NB2 images; failed jobs uncharged) | Kōhei + face set, male Kirishima, Natsuki casual, Akane check, fairy, beast concepts, swatches |
-| Visual inventory (Oct 10) | $20 | — | see decision log |
+| Visual inventory (Oct 10) | $20 | about $8 (≈80 images, NB2 1K/2K and NB Pro 2K; failed jobs uncharged) | see decision log and style guide §1b |
 | Voice auditions | approval pending | — | Estimated under $1 |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 
-**Cumulative fal spend:** about $65–70. fal's dashboard has the exact figure.
+**Cumulative fal spend:** about $73–78. fal's dashboard has the exact figure.
 
 ## 4. Known issues
 **Manga Vol. 1, worst first:**
@@ -132,7 +133,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 
 ## 6. Next up
 **Agreed order (Oct 8):**
-1. **Lock the character designs.** Kōhei (no approved image yet), the male Kirishima, a redo of Natsuki's casual outfit, final checks on Akane, and a consistency pass on the supporting cast. **Also lock a color swatch per character** (hair, eyes, skin, key outfit colors) in the style guide; color inserts make palette drift the main consistency risk.
+1. **Lock the character designs.** *(Done Oct 10: humans approved; visual inventory delivered, awaiting review.)* Kōhei (no approved image yet), the male Kirishima, a redo of Natsuki's casual outfit, final checks on Akane, and a consistency pass on the supporting cast. **Also lock a color swatch per character** (hair, eyes, skin, key outfit colors) in the style guide; color inserts make palette drift the main consistency risk.
 2. **Finalize the voices.** An audition sheet for Nanoha, Akane and the male Kirishima; the author approves the cast he hasn't reviewed yet (Ryōsuke, Rika, Yuzu, Sōta, Kirishima, Ōno-sensei, the manager). He picks by ear.
 3. **Map the first chapters.** The revised Ch1–3 plus the next few (late April into May) against canon §4, with the fix list applied. Place Yuzu's introduction and the build toward the June umbrella scene and the girls' pact.
 

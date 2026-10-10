@@ -56,6 +56,30 @@ All files are in `production/refs/design-oct10/`. They outrank every older image
 | Fairy | #252330 | pale | dark | robes pale pink and white, faint warm glow |
 | Beast | fur #1f1f21 (light #565452) | — | glowing gold | mask #d2cbbe, mist #aca59a |
 
+## 1b. Visual inventory, Oct 10 (self-reviewed by Claude; awaiting the author's review)
+Everything is in `production/refs/`. Review boards are listed in the production log. **[P]** marks a choice Claude made that the author hasn't confirmed.
+
+**Scale lineups** (`lineup/lineup-1-school.png`, `lineup/lineup-2-family-past.png`): composited in code from the full-body references, bottom-aligned on a 10 cm grid. Heights: Kōhei 175, Nanoha 150, Natsuki 160 and Akane 153 are set; all others are **[P]**: Ryōsuke 170, Rika 156, Takatsuki 173, Kirishima 180, Yuzu 154, Ōno 183, adviser 168, manager 165, Kazuo 182, Emi 158, Sōta 122, Genji 157 (stooped), Kōhei's mom 157, his dad 173, the rōnin 175, past Natsuki 158, her father 165, thug 178, tournament opponent 172. Beast: 90 cm at the shoulder.
+
+| Group | Files (`inventory/` unless noted) | Notes |
+|---|---|---|
+| Nanoha's family | `kazuo-B.png` (preferred [P]), `kazuo-A.png`, `full-emi.png`, `full-sota.png`, `genji.png` | Kazuo B is the off-duty mentor (training mitts); A is the work look. |
+| Kōhei's parents | `kohei-mom-grief.png`, `kohei-mom-recover.png`, `kohei-dad-healthy.png`, `kohei-dad-ill.png` | Mom's two states track her recovery arc. Dad appears only in flashbacks. |
+| School adults | `adviser.png`, `full-ono.png`, `full-manager.png` | |
+| Supporting cast, full body | `full-kohei`, `full-nanoha`, `full-akane`, `full-kirishima`, `full-takatsuki`, `full-ryosuke`, `full-rika`, `full-yuzu` | Natsuki's full-body reference stays `natsuki-v2/01-restyle-uniform.png`. |
+| Past life | `ronin-B.png` (preferred), `ronin-A.png`, `past-natsuki-B.png` (outing: shawl, green kimono), `past-natsuki-A.png` (everyday), `past-father.png` | |
+| One-scene antagonists | `thug.png`, `opponent.png` | |
+| Seasonal outfits | `out-{kohei,nanoha,natsuki,akane}-{summer,yukata,winter}.png` | Natsuki's hair runs long in these; keep it shoulder-length in sprites (§2). |
+| Kendo armor | `bogu-kohei.png`, `bogu-natsuki.png`, `bogu-takatsuki.png` | |
+| Fairy seasons | `fairy-summer.png`, `fairy-autumn.png`, `fairy-winter.png`, `fairy-bloom.png` | Each shown over a hand for scale (§1a method). |
+| Beast, ethereal tweak | `beast-ethereal-size.png` (reads best), `beast-ethereal-town.png` | Same size rule as §1a; ink-black fur with a faint shifting multicolor sheen. **Pending the author's OK.** |
+| Turnarounds (animation) | `turnarounds/{kohei,nanoha,natsuki,akane,ronin,past-natsuki,beast,fairy}.png` | Front, side, back at one scale; the beast sheet adds mask and paw details. Known nit: Akane's bag is on the wrong side in her side view. |
+| Locations | `locations/houses-street.png`, `window-night-from-kohei.png`, `window-day-from-nanoha.png`, `nanoha-room-day.png` | The houses at about 1 m with no path between them, and the facing windows both ways (fixes 18 and 31). Built from layout sketches in `locations/sketches/` (code: `production/pipeline/layout/house_sketches.py`). |
+| The Great Cherry | `locations/tree-{summer,autumn,winter}.png`, `tree-newyear-bloom.png` | Season edits of `img/bg/bg_shrine_tree_day.webp` (the spring view), so the site stays identical. New Year: snow, out-of-season bloom, lanterns. |
+| Past era | `locations/past-tree-site.png`, `past-tree-bloom.png`, `past-mist-path.png`, `past-village.png` | Same tree and boulder, no shrine buildings, shimenawa and a stone marker, thatched village below. **Late autumn for the past-life death is [P]**; the season is Open in canon. |
+
+**Not made yet (per chapter, when needed):** ordinary backgrounds, event CGs, the old grave or memorial (canon: Open), the Tachibana and Fujisawa interiors beyond what's shipped, the town map.
+
 ## 2. Character visual sheet
 | Character | Hair | Eyes / face | Height | Outfits | B&W rendering |
 |---|---|---|---|---|---|
@@ -67,7 +91,7 @@ All files are in `production/refs/design-oct10/`. They outrank every older image
 | Rika | Black, two low pigtails, novelty clips (strawberry, star, frog with a crown) | Big and expressive | — | Uniform with a cream cardigan under the blazer | — |
 | Ryōsuke | Neat black | Rectangular glasses; composed, smug | — | Uniform, striped tie | — |
 | Yuzu | Light honey-brown, shoulder length, red clip | Cheeky grin | — | White blouse with name badge, burgundy waist apron, black skirt | — |
-| Kirishima | Sleek black, low ponytail | Calm, unreadable | — | White keikogi, navy hakama | — |
+| Kirishima | **Male (Oct 10):** black crew cut, square jaw, broad shoulders | Calm, unreadable, deadpan | 180 cm [P] | White keikogi, navy hakama | — |
 | Takatsuki | Swept-back black | Sharp; **precise and composed, not sneering** (redesign) | — | Navy keikogi and hakama | — (prone to drift; always pass his sprite) |
 | Emi | Dark hair, low bun | Warm | — | Light-blue shirt, mustard-yellow apron | — |
 | Sōta | Messy dark hair, bandage on his cheek | Gap-toothed grin | Age 7 | Green dinosaur T-shirt, navy shorts, game controller | — |
@@ -79,7 +103,7 @@ All files are in `production/refs/design-oct10/`. They outrank every older image
 
 **The two houses:**
 - Built almost touching, **about a meter between the walls**. Upstairs bedroom windows face each other within arm's reach (Muv-Luv Extra). No alley or stairs between them.
-- The current `bg_street_houses` and `cg_window_night` are wrong; see pilot-notes fix 18.
+- The shipped `bg_street_houses` and `cg_window_night` are wrong (pilot-notes fix 18). Replacements: `production/refs/locations/houses-street.png` and the two window views (§1b).
 - **Method for layout-critical backgrounds:** see §6.
 
 ## 3. VN art (color)
@@ -175,6 +199,8 @@ All files are in `production/refs/design-oct10/`. They outrank every older image
 - **Side characters drift** (Takatsuki most): always pass the sprite.
 - **Continuity slips in chibi panels:** state the outfit explicitly.
 - **The model won't hold specific geometry from text** (Oct 6). Four attempts at "houses about a meter apart" either kept the alley or produced nonsense, and editing the old background anchored the old layout. **Fix:** draw a simple layout sketch in code (blocking shapes for the walls, the gap and the windows in perspective) and pass it as the structure reference, with the style anchor for rendering.
+- **Refs must be pushed before submitting a job** (Oct 10, twice): a raw GitHub URL that isn't on `main` yet fails the job with a 422 (uncharged). Push, check the raw URL returns 200, then submit.
+- **Grayscale drift** (Oct 10): NB2 sometimes returns monochrome from color refs. Every prompt says "FULL NATURAL COLOR … absolutely not grayscale".
 - **Age drift:** prompts for a 14-year-old came back looking 16–17 (Akane, first pass). Spell out the age cues in §3, and check against `akane-v2/02-sailor-uniform.png`.
 - **Concept-art proportions leak in** (long legs): always state "natural realistic proportions for a {height} teen" and name what to correct.
 - **Content filter:** if a panel is refused (heavy blood, or teens kissing), reframe with silhouettes, a cropped close-up, implied impact or heavier ink, or try another model. Tell the author rather than quietly watering the scene down.
