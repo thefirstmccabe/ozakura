@@ -542,6 +542,16 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Open:** its appearance, name, gender and exact tie to the deity. Limits on its hours, visibility or power have been considered but not decided; a limited companion needn't carry every plot function.
   - It ends with a fade or farewell, not a required death.
   - **Optional detail:** it remembers a childhood biscuit trial.
+  - **Timeline and function (Decided Oct 10).** Her visibility tracks the danger, so she doubles as the story's barometer.
+    - **Apr–Aug:** a drifting point of light, rare (about once a month); only Nanoha notices, and she tells no one. Also small displacements in Nanoha's room: a plushie moved, things not where she left them. Same subtlety and rarity.
+    - **Autumn (low-level beast activity):** more frequent; a small half-form at the edge of Nanoha's vision; fragments of speech at most; agitated near places where people got lost. An alarm only Nanoha registers.
+    - **New Year bloom:** fully visible to Nanoha and speaking. Kōhei and Natsuki can see her as their memories flood in. **She recognizes them ("You two. Again.")**; she was there at the old bloom.
+    - **Jan–Mar:** visible to the whole group, Takatsuki included after his trap. Exposition with limits: the distortion, what the tree can and can't do. She doesn't know everything about the beast, so the friends still have to work it out.
+    - **After:** she fades, with **a real goodbye to Nanoha.** As a child, Nanoha's friend vanished without one; this time she gets to say goodbye.
+  - **Proposal: Usagi-san.** Sometimes it isn't Kōhei who turns the time-out rabbit back around (scene bank #1). Nanoha blames him; he's innocent; much later she realizes who has been pardoning it.
+  - **Personality (Proposal):** old but childlike. Curious, a little vain, food-motivated (cookies; the biscuit trial), mischievous with Nanoha. She remembers what she cared about, not what would be useful, so her limited knowledge reads as character.
+  - **Gender (Working, Oct 10):** female (the author refers to her as "her").
+  - **Look (Proposals for the design step):** small, palm-sized (about 10–15 cm). A tiny girl in layered petal-like robes with an old-fashioned cut. No butterfly wings: she drifts like a falling petal, which matches her early appearance as a point of light. Her outfit follows the tree's season (green in summer, red-gold in autumn, bare and twiggy in early winter) until she's in full blossom at the New Year bloom. Avoid resembling well-known tree spirits.
 
 ## 9. Supernatural principles
 - **The tree:** the cherry tree is a local good deity, or its embodied presence. It protects homes and community and counterbalances nearby evil. Its exact nature is Open.
