@@ -337,6 +337,8 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **The deaths:** unexplained deaths occur in town. The cause is a supernatural beast that **distorts familiar paths, trapping and separating people**. When it dies, the distortion ends.
 - **The beast:**
   - It need not be the same beast as before.
+  - **Size (Decided Oct 10):** a really big dog, not a giant: its shoulder is at a man's belt line (about 90 cm), its head reaches his chest. The fight is sword's reach, not stabbing at paws.
+  - **Look (candidate, Oct 10):** an ink-black wolf with brushstroke-edged fur and a pale, smooth carved-mask face with narrow glowing eyes; its legs and tail fray into mist (style guide §1a).
   - **Nature (Decided Oct 10):** a supernatural **wolf-like** creature. It has a physical form and can be wounded, but it is mainly spiritual, and it **leaves no corpse** when killed.
   - **Folklore source (Decided Oct 10): the okuri-ōkami / okuri-inu,** the "escorting wolf" of mountain-path legend, known from Kantō to Kinki.
     - **The legend:** it follows travelers at night. If they stumble and fall, it attacks. If they keep their footing, or pretend they're only resting, they're safe, and some versions say it even escorts them home. Saying goodbye or thanks at the end of the road, or leaving it a gift such as a single sandal, ends the escort. In some regions people distinguish the protective okuri-inu from the attacking mukae-inu.
@@ -558,6 +560,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Proposal: Usagi-san.** Sometimes it isn't Kōhei who turns the time-out rabbit back around (scene bank #1). Nanoha blames him; he's innocent; much later she realizes who has been pardoning it.
   - **Personality (Proposal):** old but childlike. Curious, a little vain, food-motivated (cookies; the biscuit trial), mischievous with Nanoha. She remembers what she cared about, not what would be useful, so her limited knowledge reads as character.
   - **Gender (Working, Oct 10):** female (the author refers to her as "her").
+  - **Look (candidate, Oct 10; style guide §1a):** palm-sized, long dark hair with blossoms, layered pale-pink petal robes, rounded ears, no wings, a faint glow.
   - **Look (Proposals for the design step):** small, palm-sized (about 10–15 cm). A tiny girl in layered petal-like robes with an old-fashioned cut. No butterfly wings: she drifts like a falling petal, which matches her early appearance as a point of light. Her outfit follows the tree's season (green in summer, red-gold in autumn, bare and twiggy in early winter) until she's in full blossom at the New Year bloom. Avoid resembling well-known tree spirits.
 
 ## 9. Supernatural principles

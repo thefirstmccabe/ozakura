@@ -31,6 +31,31 @@ How Ōzakura looks and sounds, and how to generate it. Read this before any art,
 - **Appeal:** comes from personality, expression, styling and presence. **Never design or frame the school-age cast for figure or sex appeal.**
 - **Hair color:** a medium convention, never commented on in-world.
 
+## 1a. Design lock, Oct 10 (candidates, pending author approval)
+All files are in `production/refs/design-oct10/`. Once approved, these outrank every older image for these characters.
+
+| Who | Reference | Notes |
+|---|---|---|
+| Kōhei | `r3/kohei-short-A.png` | Shorter, slightly unruly dark-brown hair, fringe above the brows, warm. |
+| Kōhei face set | `r4/faces/01–10` | Warm smile, neutral, grin, deadpan, surprised, flustered, annoyed, serious, the stillness (shadow over the eyes), sad. Used for his face window on every spoken line. |
+| Akane | `r3/akane-teen-uniform.png`, `r3/akane-teen-home.png` | Teen proportions. **Method:** the pilot sprite `img/ch/akane_home_smile.webp` is the face, age and proportion anchor, with lavender-silver hair and a sweet expression on top. Earlier `akane-v2` images read too young; use them only for hair color. |
+| Akane with Kōhei | `r4/akane-kohei-height-2.png` | Scale check: her head reaches about his shoulder, and her head is smaller than his. |
+| Natsuki casual | `natsuki-casual-A.png` (main), `natsuki-casual-B.png` | Hair runs slightly past the shoulders in both; correct to shoulder length in the sprites. School look: `natsuki-v2/01-restyle-uniform.png`. |
+| Kirishima (male) | `r3/kirishima-masc-A.png` | Crew cut, square jaw, broad shoulders, deadpan. Replaces the female sprite set. |
+| Fairy | `r3/fairy-shoulder.png`, `r3/fairy-desk.png` | **Scale method:** always show her next to a person or a known object (shoulder, pencil, mug); alone, the model draws her full-size. Rounded ears, no wings, petal robes. |
+| Beast | `r4/beast-size-reference.png`, `r4/beast-scene-town.png` | **Size rule:** shoulder at a man's belt line (about 90 cm), head reaching his chest. A really big dog, not a giant. The model inflates its size; pass `beast-size-reference.png` as image 1 in every beast prompt, and fix in post if needed. `beast-scene-past-2.png` is a mood concept only; the wolf is still too large. |
+
+**Draft color swatches** (sampled from the references above; verify in the sprite pass):
+| Character | Hair | Skin | Eyes | Key colors |
+|---|---|---|---|---|
+| Kōhei | #3d3232 (highlight #5b4747) | #efccbb | warm brown | blazer #3f4050, tie burgundy |
+| Nanoha | #51423d (highlight #6d615e) | #eddace | brown | same uniform; ribbon burgundy |
+| Natsuki | #b55e36 (shadow #6c3c2f) | #f5dbca | amber-brown | same uniform |
+| Akane | #d0c2d5 (shadow #a89cb0) | #f7ebe6 | gray-violet | sailor navy #454c64, scarf red, cardigan cream #f1e6d4 |
+| Kirishima | #08080a | #d7c1b4 | dark | keikogi #e5ded8, hakama #242632 |
+| Fairy | #252330 | pale | dark | robes pale pink and white, faint warm glow |
+| Beast | fur #1f1f21 (light #565452) | — | glowing gold | mask #d2cbbe, mist #aca59a |
+
 ## 2. Character visual sheet
 | Character | Hair | Eyes / face | Height | Outfits | B&W rendering |
 |---|---|---|---|---|---|

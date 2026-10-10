@@ -92,6 +92,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Fairy timeline and function decided** (canon §8): visibility tracks the danger (a light Apr–Aug, plus small item displacements in Nanoha's room; a half-form in autumn; full and speaking at the bloom, recognizing Kōhei and Natsuki; visible to all Jan–Mar; a real goodbye to Nanoha at the end). Female (Working). Look and personality are proposals for the design step. |
 | 10-10 | **The beast:** wolf-like, physical but mainly spiritual, leaves no corpse. Folklore source is the okuri-ōkami (the escorting wolf). Canon §6. |
 | 10-10 | **Design pass approved, cap $10.** |
+| 10-10 | **Design pass delivered for approval** (style guide §1a): shorter-haired Kōhei plus a 10-face set, teen-proportioned Akane, Natsuki's casual outfits, a masculine Kirishima, the fairy at scale, and the beast at big-dog size with a size reference. Draft color swatches. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -99,7 +100,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | VN pilot | $100 | about $30–35 | |
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |
-| Design pass (Oct 10) | $10 | — | Kōhei + face set, male Kirishima, Natsuki casual, Akane check, fairy, beast concepts, swatches |
+| Design pass (Oct 10) | $10 | about $4.50 (≈55 NB2 images; failed jobs uncharged) | Kōhei + face set, male Kirishima, Natsuki casual, Akane check, fairy, beast concepts, swatches |
 | Voice auditions | approval pending | — | Estimated under $1 |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 
