@@ -215,7 +215,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **The girls' pact (Decided Oct 7):**
   - The two girls come to recognize that they're both into him, and talk about it openly. They agree, at least tacitly, to compete fairly.
   - **This is part of why the kiss is a betrayal:** it breaks their agreement.
-  - **Working placement:** the umbrella scene (June) is where both realize it; the open talk follows shortly after (June–July).
+  - **Working placement (Oct 10):** the umbrella scene (June) is where both realize it. The pact itself happens when **Nanoha brings food to a sick Natsuki** (scene bank 13a).
 - **Proposal:** the romcom rivalry runs through summer. The festival, the beach and outings get a competitive edge, and the girls' friendship stays sincere.
 - **The triangle isn't symmetrical.** Natsuki loves him. His affection, attraction and confusion toward her do not amount to equivalent present romantic love. Later, the memories can disturb him without reopening a girlfriend competition.
 
@@ -563,6 +563,16 @@ Select and adapt; this is not a checklist.
       - The rainy season (June).
       - Natsuki's sabotage shown live in an interlude from her POV, then Nanoha's own umbrella revealed at the very end (say, it slips from her bag and she quietly zips the bag shut), so neither girl knows the other cheated.
       - It doubles as the moment both girls realize they're rivals.
+13a. **Natsuki sick; Nanoha brings food: the pact scene (requested Oct 10).** An interlude without Kōhei.
+    - **Setup:** Natsuki's parents are away and she's alone and sick in the apartment. Nanoha notices and comes, because she remembers and follows up.
+    - **The pact:** feverish and vulnerable, Natsuki admits she likes Kōhei. Nanoha says she already knows. They agree to stay friends and compete fairly.
+    - **Proposal:** Natsuki caught the cold soaking herself in the umbrella scene, so the comic scheme leads straight into the sincere scene.
+13b. **Kōhei sick at home; both girls bring food (requested Oct 10).** Classic romcom, and it serves his arc, because he's bad at being cared for.
+    - **Proposals:**
+      - He works himself sick, around May, before Mom's recovery, so the girls fill a real gap.
+      - **Kitchen comedy:** Nanoha comes in through the kitchen, knows where everything is, and is already making rice porridge. Natsuki arrives with her own (store-bought, or ambitious and slightly burnt) and can't find a bowl. This plays scene bank #3 for laughs.
+      - He's fed two porridges in competition and keeps trying to get up for work; Akane referees.
+      - **The quiet beat:** he loses the fight to stay up and lets them care for him.
 14. **Beach reassurance:** Nanoha hesitates to take off her cover-up, self-conscious about her small bust next to Natsuki. With Kōhei absent, his wise friend says something like, "I'm just talking to myself here, but [Kōhei] told me he doesn't care about that. He just wants a girl who loves him back." She's mortified and thanks him. **Rule:** her feelings carry the scene, with no visual scrutiny of bodies; non-explicit.
 15. **Friends find out they're not dating:** his quick denial hurts Nanoha.
 16. **The confession:** Natsuki nearly accepts an unwanted confession just to feel chosen.
