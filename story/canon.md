@@ -185,7 +185,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **Her role:** she is **helpless throughout**. She survives and stays with him.
 - **After (Decided Oct 10):** once he has killed the beast and they've made the promise, **the tree blooms out of season.** The distortion falls away.
   - **The CG:** her cradling his broken body, blood everywhere, cherry blossoms falling all around her.
-  - **Proposal:** they were near the tree the whole time, walking in circles around it (the repeating-landmark motif), so she's kneeling beneath it when it blooms.
+  - **Decided Oct 10:** they were near the tree the whole time, walking in circles around it (the repeating-landmark motif), so she's kneeling beneath it when it blooms.
 - **The promise:** they promise to find one another again.
   - **Proposal:** the promise has two halves. She promises "I'll find you"; his last word to her is "Live."
   - **Staging preference:** the promise comes before the deity's assurance, so they make it without certainty. **The out-of-season bloom is that assurance** (Oct 10).
@@ -333,7 +333,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 
 ### The threat and the climax
 - **Before the bloom (Decided Oct 10):** the beast is already active at a low level. There are rumors and reports of people getting lost, maybe injured, and possibly one disappearance. The bloom signals that it's ramping up, not that it has just begun.
-  - **Proposal:** autumn background noise that reads as ordinary bad news: a hiker lost on a familiar trail who turns up dazed, an injury nobody can explain, and one disappearance with posters at the station. The missing person is found dead in January, the first death of the escalation.
+  - **Decided Oct 10:** autumn background noise that reads as ordinary bad news: a hiker lost on a familiar trail who turns up dazed, an injury nobody can explain, and one disappearance with posters at the station. The missing person is found dead in January, the first death of the escalation.
 - **The deaths:** unexplained deaths occur in town. The cause is a supernatural beast that **distorts familiar paths, trapping and separating people**. When it dies, the distortion ends.
 - **The beast:**
   - It need not be the same beast as before.
@@ -550,7 +550,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **It means something different in each era (Oct 10):**
     - **Past:** the bloom comes *after* his death and the promise. It is the tree's answer to the promise.
     - **Present:** the bloom comes as the beast's activity ramps up. It is a warning, and a sign that the reunion has a purpose.
-  - **Proposal:** the modern bloom triggers the memory flood. The last time either of them saw the tree bloom out of season, he was dying beneath it.
+  - **Decided Oct 10:** the modern bloom triggers the memory flood. The last time either of them saw the tree bloom out of season, he was dying beneath it.
 - **Nanoha and the fairy:** the fairy grows more prominent and Nanoha's connection develops.
   - Power doesn't track moral purity.
   - Negative emotions don't automatically collapse protection.
