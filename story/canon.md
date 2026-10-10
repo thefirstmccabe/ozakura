@@ -106,7 +106,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Proposal:** Natsuki lives nearer the station.
 
 ### The two houses (updated Oct 6)
-- Kōhei's and Nanoha's houses stand side by side near the wooded edge, **built almost touching, with about a meter between their walls.**
+- Kōhei's and Nanoha's houses stand side by side near the wooded edge, **built almost touching, with about three feet between their walls.**
 - Their upstairs bedroom windows face each other close enough to reach across and pass a book. **Reference: the houses in Muv-Luv Extra.**
 - **No alley, path or stairway runs between them.** The way up to the shrine starts somewhere else along the street.
 - Window conversations, lights on while studying, and silly distractions are optional recurring scenes.
@@ -182,6 +182,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **They never sparred together.** **She watched him train** for years.
 - **The death:**
   - **Setting:** a walk together; a misty morning is the author's working image.
+  - **Season (Decided Oct 10): winter.** So the out-of-season bloom comes at about the same time of year in both eras: past = after his death in winter; present = New Year.
   - **Before (Decided Oct 10):** there have been a rumor or two, but the tree hasn't bloomed. He goes armed; she teases him a little about it and thinks it's nothing. Then they're trapped.
   - **The trap:** a beast that distorts familiar paths traps them, so she cannot go for help.
   - **The fight:** long. He realizes he is losing a battle of attrition, and that if it goes on they will both die.
@@ -341,7 +342,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **The deaths:** unexplained deaths occur in town. The cause is a supernatural beast that **distorts familiar paths, trapping and separating people**. When it dies, the distortion ends.
 - **The beast:**
   - It need not be the same beast as before.
-  - **Size (Decided Oct 10):** a really big dog, not a giant: its shoulder is at a man's belt line (about 90 cm), its head reaches his chest. The fight is sword's reach, not stabbing at paws.
+  - **Size (Decided Oct 10):** a really big dog, not a giant: its back is at a man's belt line (about 3′4″ at the shoulder), and its head reaches his chest (about 4′3″ to the ear tips). **Raised Oct 10** from about 3′ at the shoulder. The fight is sword's reach, not stabbing at paws.
   - **Look (candidate, Oct 10):** an ink-black wolf with brushstroke-edged fur and a pale, smooth carved-mask face with narrow glowing eyes; its legs and tail fray into mist (style guide §1a).
   - **Nature (Decided Oct 10):** a supernatural **wolf-like** creature. It has a physical form and can be wounded, but it is mainly spiritual, and it **leaves no corpse** when killed.
   - **Folklore source (Decided Oct 10): the okuri-ōkami / okuri-inu,** the "escorting wolf" of mountain-path legend, known from Kantō to Kinki.
@@ -398,7 +399,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 
 ## 8. Characters
 ### Fujisawa Kōhei
-- **Basics:** second year, 16, about **175 cm**. Dark-brown, somewhat unruly hair with an uneven fringe; expressive brown eyes and brows; a youthful, handsome face; lean athletic build.
+- **Basics:** second year, 16, about **5′9″**. Dark-brown, somewhat unruly hair with an uneven fringe; expressive brown eyes and brows; a youthful, handsome face; lean athletic build.
 - **Look and manner:** warm, slightly rough-edged, capable of easy smiles, with a frightening stillness when angry. No permanent scowl, no signature scar, no constant exhaustion marks. Simple, affordable clothes (Working). He's admirable, relatable and sometimes frightening, **never a habitual sadist**.
 - **Socially:** functional, not a loner. Romantically inexperienced but neither sexless nor hopelessly obtuse. Competitive; likes winning and admiration, including Natsuki's. Comfortable with banter, less so with admitting needs.
 - **Humor:** playful teasing and mock seriousness with the people close to him. Sincere flirtation flusters him.
@@ -456,7 +457,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Retired:** her dying rather than merging with the tree.
 
 ### Mizuno Natsuki
-- **Basics:** second year, 16, transfers in at the start of April. **160 cm.**
+- **Basics:** second year, 16, transfers in at the start of April. **5′3″.**
 - **Look:**
   - **Hair:** bright burnished copper in a **shoulder-length**, layered cut with a side-swept fringe.
   - **Face:** amber-brown eyes, expressive brows.
@@ -565,7 +566,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Personality (Proposal):** old but childlike. Curious, a little vain, food-motivated (cookies; the biscuit trial), mischievous with Nanoha. She remembers what she cared about, not what would be useful, so her limited knowledge reads as character.
   - **Gender (Working, Oct 10):** female (the author refers to her as "her").
   - **Look (candidate, Oct 10; style guide §1a):** palm-sized, long dark hair with blossoms, layered pale-pink petal robes, rounded ears, no wings, a faint glow.
-  - **Look (Proposals for the design step):** small, palm-sized (about 10–15 cm). A tiny girl in layered petal-like robes with an old-fashioned cut. No butterfly wings: she drifts like a falling petal, which matches her early appearance as a point of light. Her outfit follows the tree's season (green in summer, red-gold in autumn, bare and twiggy in early winter) until she's in full blossom at the New Year bloom. Avoid resembling well-known tree spirits.
+  - **Look (Proposals for the design step):** small, palm-sized (about 4–6 inches). A tiny girl in layered petal-like robes with an old-fashioned cut. No butterfly wings: she drifts like a falling petal, which matches her early appearance as a point of light. Her outfit follows the tree's season (green in summer, red-gold in autumn, bare and twiggy in early winter) until she's in full blossom at the New Year bloom. Avoid resembling well-known tree spirits.
 
 ## 9. Supernatural principles
 - **The tree:** the cherry tree is a local good deity, or its embodied presence. It protects homes and community and counterbalances nearby evil. Its exact nature is Open.
@@ -719,7 +720,7 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
 ## Revision record
 - **Sept 27–29:** smaller local story adopted. Cast, names, family, setting, shrine and the street-fight sequence established (see the archived Oct 1 bible for the detail).
 - **Oct 1:** author's consolidated bible.
-- **Oct 5:** Natsuki 160 cm and shoulder-length hair; Kōhei 175 cm with dark-brown hair; charcoal plaid skirt.
+- **Oct 5:** Natsuki 5′3″ and shoulder-length hair; Kōhei 5′9″ with dark-brown hair; charcoal plaid skirt.
 - **Oct 6:**
   - Kendo becomes setting, not sports manga.
   - Full-year calendar (late-Aug kiss, Oct dating).
@@ -729,7 +730,7 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - Akane redesigned.
   - Hair-color convention.
   - Natsuki restyled.
-  - Houses about a meter apart, no alley.
+  - Houses about three feet apart, no alley.
 - **Oct 7:**
   - Past life rewritten: rōnin, arranged marriage for an heir, she an ordinary, helpless woman, the deliberate trade, never sparred.
   - Its consequences: one-sided recognition; the climax recast as instinct, not choice.
@@ -753,3 +754,6 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Manga inserts are full color** in the VN style (§2); past-life color treatment is a proposal.
   - **Anime cutscenes (Working):** the author is willing to pay for a few at pivotal moments (§2).
   - **Animation:** the cutscene test passed; three-tier video plan (living stills, animated beats, a few full cutscenes plus an opening) is Working (§2).
+  - **The past-life death is in winter** (§5), so the tree blooms out of season at about the same time of year in both eras.
+  - **The beast is a little taller** (§6): about 4′3″ to the ear tips, back at a man's belt.
+  - **Units:** imperial only in all docs and art notes (author's rule).

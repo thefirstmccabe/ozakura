@@ -44,7 +44,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-05 | Manga test: B&W with screentone, NB Pro 2K, lettered in code, right to left, B6. The reader defaults to single page. |
 | 10-05 | Project organization: standing docs plus Planning, Story/Bible, and per-deliverable Production threads. |
 | 10-05 | Storage: text canon in the Project; all files in the repo. |
-| 10-05 | Natsuki 160 cm with shoulder-length hair; Kōhei about 175 cm with dark-brown hair; charcoal plaid skirt. |
+| 10-05 | Natsuki 5′3″ with shoulder-length hair; Kōhei about 5′9″ with dark-brown hair; charcoal plaid skirt. |
 | 10-05 | **Hold on revising the shipped VN and manga** while the process is re-examined. |
 | 10-06 | **Project working hours:** no Ōzakura work on weekdays 9–5, and nothing after 8 pm any day (America/New_York). |
 | 10-06 | **Kendo is setting and practice, not a sports manga.** Competitions are rare; no tournament arcs. |
@@ -56,7 +56,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-06 | **Akane redesigned:** cute, frail, sweet and playful; "Onii-chan"; lavender-silver hair (option A); sailor uniform on school days; cute outfits; a plushie-filled room. |
 | 10-06 | **Hair color is a medium convention,** never commented on in-world. |
 | 10-06 | **Natsuki restyled:** more feminine and self-assured, still shoulder-length. The school image locks the direction. Her appeal comes through personality and styling, never figure-focused design (Claude's boundary for the school-age cast). |
-| 10-06 | **Houses about a meter apart, no alley** (the Muv-Luv Extra model). The art fix needs a layout-sketch method. |
+| 10-06 | **Houses about three feet apart, no alley** (the Muv-Luv Extra model). The art fix needs a layout-sketch method. |
 | 10-06 | **Pilot critique accepted:** scale back the Ch3 flash, thin out the week-one supernatural beats, pull back Nanoha's near-confession, warm up Kōhei, casual sparring, hide the invented kanji, fix the calendar line. |
 | 10-07 | **Past life rewritten:** Kōhei a rōnin, Natsuki an ordinary woman in a traditional role from a modestly propertied family; an arranged marriage for her father's heir; deeply in love; a misty morning walk; a long fight lost to attrition, so he deliberately takes a fatal wound to kill the beast; she helpless; they never sparred. |
 | 10-07 | **Consequences:** her kendo means she isn't helpless now; recognition in sparring is one-sided (she watched him train). In the climax, Kōhei's old instinct pulls him toward the same opening without his choosing it, and Natsuki recognizes it and stops it. |
@@ -96,7 +96,8 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Design pass delivered for approval** (style guide §1a): shorter-haired Kōhei plus a 10-face set, teen-proportioned Akane, Natsuki's casual outfits, a masculine Kirishima, the fairy at scale, and the beast at big-dog size with a size reference. Draft color swatches. |
 | 10-10 | **Design lock: all humans approved** (Kōhei and his face set, Akane, Natsuki's casual outfits, the male Kirishima). Beast scale approved; the author wants it slightly more ethereal and multicolored. Next: complete the visual inventory before voices, planning for more animation (three-tier video plan). |
 | 10-10 | **Visual inventory phase approved, cap $20:** new characters (families, adviser, past life, one-scene antagonists), a supporting-cast check, a cast scale lineup, seasonal outfits, the fairy's season forms, turnarounds for the animation principals, and key locations (houses, shrine/tree in both eras, past village). Ordinary backgrounds and event CGs stay per chapter. |
-| 10-10 | **Visual inventory delivered for review** (style guide §1b), all self-reviewed and fixed before delivery: scale lineups for the whole cast; families, school adults, past life and antagonists; full color for the supporting cast (grayscale drafts replaced); seasonal outfits and kendo armor; the fairy's four forms; the beast's ethereal tweak; turnarounds for eight animation principals; key locations (the houses at about 1 m and both window views, Nanoha's room, the tree in four seasons plus the New Year bloom, the past-era site, path and village). Boards: `production/refs/lineup/` and the review sheets sent in the Story thread. Supporting heights and a few picks are [P]. |
+| 10-10 | **Visual inventory delivered for review** (style guide §1b), all self-reviewed and fixed before delivery: scale lineups for the whole cast; families, school adults, past life and antagonists; full color for the supporting cast (grayscale drafts replaced); seasonal outfits and kendo armor; the fairy's four forms; the beast's ethereal tweak; turnarounds for eight animation principals; key locations (the houses about three feet apart and both window views, Nanoha's room, the tree in four seasons plus the New Year bloom, the past-era site, path and village). Boards: `production/refs/lineup/` and the review sheets sent in the Story thread. Supporting heights and a few picks are [P]. |
+| 10-10 | **Inventory review (author):** everything approved except these changes, all made the same day: **no metric units anywhere** (docs, lineups, prompts); the beast a little taller (about 4′3″ to the ears, back at a man's belt); **Kazuo version B**; **the past-life death is in winter** (canon §5), so the past-era backgrounds are now winter; the tournament opponent has **bleached-blonde hair**; one of Kōhei's friend or rival gets a slightly unusual hair color for readability (Claude picked **Takatsuki: deep slate blue** [P]); the rōnin wears **two swords** (version B kept). Also [P]: the street-fight thug's hair changed from blonde to a black undercut so the opponent's blonde stays distinctive. Nanoha's skin reads too pale in some images: fix in the final sprite pass, no redo now. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -105,11 +106,11 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |
 | Design pass (Oct 10) | $10 | about $4.50 (≈55 NB2 images; failed jobs uncharged) | Kōhei + face set, male Kirishima, Natsuki casual, Akane check, fairy, beast concepts, swatches |
-| Visual inventory (Oct 10) | $20 | about $8 (≈80 images, NB2 1K/2K and NB Pro 2K; failed jobs uncharged) | see decision log and style guide §1b |
+| Visual inventory (Oct 10) | $20 | about $9 (≈90 images, NB2 1K/2K and NB Pro 2K, incl. review fixes; failed jobs uncharged) | see decision log and style guide §1b |
 | Voice auditions | approval pending | — | Estimated under $1 |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 
-**Cumulative fal spend:** about $73–78. fal's dashboard has the exact figure.
+**Cumulative fal spend:** about $74–79. fal's dashboard has the exact figure.
 
 ## 4. Known issues
 **Manga Vol. 1, worst first:**

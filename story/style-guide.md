@@ -12,7 +12,7 @@ How Ōzakura looks and sounds, and how to generate it. Read this before any art,
      - `02-sailor-uniform.png`: **the age and proportion target**, and her school-day uniform.
      - `03-bedroom-plushies.png`: her room and at-home clothes. She reads slightly too young here, and her hair drifted gray.
      - `x-rejected-*`: the color options that weren't chosen.
-   - **Natsuki:** `production/refs/natsuki-v2/01-restyle-uniform.png` **locks the direction.** Her hair should end at the shoulders (it runs slightly long in this image), and her legs are still a bit long for 160 cm.
+   - **Natsuki:** `production/refs/natsuki-v2/01-restyle-uniform.png` **locks the direction.** Her hair should end at the shoulders (it runs slightly long in this image), and her legs are still a bit long for 5′3″.
      - `02-restyle-casual.png`: the styling idea only. **Do not use** its outfit, which reads as a twenty-something.
 3. **The author's concept references** (`production/refs/handoff/`):
    - **Nanoha:**
@@ -43,7 +43,7 @@ All files are in `production/refs/design-oct10/`. They outrank every older image
 | Natsuki casual | `natsuki-casual-A.png` (main), `natsuki-casual-B.png` | Hair runs slightly past the shoulders in both; correct to shoulder length in the sprites. School look: `natsuki-v2/01-restyle-uniform.png`. |
 | Kirishima (male) | `r3/kirishima-masc-A.png` | Crew cut, square jaw, broad shoulders, deadpan. Replaces the female sprite set. |
 | Fairy | `r3/fairy-shoulder.png`, `r3/fairy-desk.png` | **Scale method:** always show her next to a person or a known object (shoulder, pencil, mug); alone, the model draws her full-size. Rounded ears, no wings, petal robes. |
-| Beast | `r4/beast-size-reference.png`, `r4/beast-scene-town.png` | **Size rule:** shoulder at a man's belt line (about 90 cm), head reaching his chest. A really big dog, not a giant. The model inflates its size; pass `beast-size-reference.png` as image 1 in every beast prompt, and fix in post if needed. `beast-scene-past-2.png` is a mood concept only; the wolf is still too large. |
+| Beast | `inventory/beast-size-reference-v2.png` (**current, Oct 10**), `inventory/beast-ethereal-town.png` | **Size rule (raised Oct 10):** back at a man's belt line (about 3′4″ at the shoulder), ear tips at his chest (about 4′3″). A really big dog, not a giant. The model gets size wrong; pass `beast-size-reference-v2.png` as image 1 in every beast prompt, and fix in post if needed. The older `r4/beast-size-reference.png` is superseded. `beast-scene-past-2.png` is a mood concept only; the wolf is still too large. |
 
 **Draft color swatches** (sampled from the references above; verify in the sprite pass):
 | Character | Hair | Skin | Eyes | Key colors |
@@ -59,40 +59,42 @@ All files are in `production/refs/design-oct10/`. They outrank every older image
 ## 1b. Visual inventory, Oct 10 (self-reviewed by Claude; awaiting the author's review)
 Everything is in `production/refs/`. Review boards are listed in the production log. **[P]** marks a choice Claude made that the author hasn't confirmed.
 
-**Scale lineups** (`lineup/lineup-1-school.png`, `lineup/lineup-2-family-past.png`): composited in code from the full-body references, bottom-aligned on a 10 cm grid. Heights: Kōhei 175, Nanoha 150, Natsuki 160 and Akane 153 are set; all others are **[P]**: Ryōsuke 170, Rika 156, Takatsuki 173, Kirishima 180, Yuzu 154, Ōno 183, adviser 168, manager 165, Kazuo 182, Emi 158, Sōta 122, Genji 157 (stooped), Kōhei's mom 157, his dad 173, the rōnin 175, past Natsuki 158, her father 165, thug 178, tournament opponent 172. Beast: 90 cm at the shoulder.
+**Scale lineups** (`lineup/lineup-1-school.png`, `lineup/lineup-2-family-past.png`): composited in code from the full-body references, bottom-aligned on a 6-inch grid (code: `production/pipeline/layout/lineup.py`). **Units: imperial only** (author's rule, Oct 10). Heights: Kōhei 5′9″, Nanoha 4′11″, Natsuki 5′3″ and Akane 5′0″ are set; all others are **[P]**: Ryōsuke 5′7″, Rika 5′1″, Takatsuki 5′8″, Kirishima 5′11″, Yuzu 5′1″, Ōno 6′0″, adviser 5′6″, manager 5′5″, Kazuo 6′0″, Emi 5′2″, Sōta 4′0″, Genji 5′2″ (stooped), Kōhei's mom 5′2″, his dad 5′8″, the rōnin 5′9″, past Natsuki 5′2″, her father 5′5″, thug 5′10″, tournament opponent 5′8″. Beast: 4′3″ to the ear tips.
 
 | Group | Files (`inventory/` unless noted) | Notes |
 |---|---|---|
-| Nanoha's family | `kazuo-B.png` (preferred [P]), `kazuo-A.png`, `full-emi.png`, `full-sota.png`, `genji.png` | Kazuo B is the off-duty mentor (training mitts); A is the work look. |
+| Nanoha's family | `kazuo-B.png` (**chosen Oct 10**), `kazuo-A.png` (alternate), `full-emi.png`, `full-sota.png`, `genji.png` | Kazuo B is the off-duty mentor (training mitts); A is the work look. |
 | Kōhei's parents | `kohei-mom-grief.png`, `kohei-mom-recover.png`, `kohei-dad-healthy.png`, `kohei-dad-ill.png` | Mom's two states track her recovery arc. Dad appears only in flashbacks. |
 | School adults | `adviser.png`, `full-ono.png`, `full-manager.png` | |
 | Supporting cast, full body | `full-kohei`, `full-nanoha`, `full-akane`, `full-kirishima`, `full-takatsuki`, `full-ryosuke`, `full-rika`, `full-yuzu` | Natsuki's full-body reference stays `natsuki-v2/01-restyle-uniform.png`. |
-| Past life | `ronin-B.png` (preferred), `ronin-A.png`, `past-natsuki-B.png` (outing: shawl, green kimono), `past-natsuki-A.png` (everyday), `past-father.png` | |
-| One-scene antagonists | `thug.png`, `opponent.png` | |
+| Past life | `ronin-B.png` (chosen; **wears two swords**, katana and wakizashi, Oct 10), `ronin-A.png`, `past-natsuki-B.png` (outing: shawl, green kimono), `past-natsuki-A.png` (everyday), `past-father.png` | |
+| One-scene antagonists | `thug.png`, `opponent.png` | Opponent: **bleached-blonde hair** (author, Oct 10). Thug: black undercut [P], changed from blonde so the opponent's hair stays distinctive. |
 | Seasonal outfits | `out-{kohei,nanoha,natsuki,akane}-{summer,yukata,winter}.png` | Natsuki's hair runs long in these; keep it shoulder-length in sprites (§2). |
 | Kendo armor | `bogu-kohei.png`, `bogu-natsuki.png`, `bogu-takatsuki.png` | |
 | Fairy seasons | `fairy-summer.png`, `fairy-autumn.png`, `fairy-winter.png`, `fairy-bloom.png` | Each shown over a hand for scale (§1a method). |
-| Beast, ethereal tweak | `beast-ethereal-size.png` (reads best), `beast-ethereal-town.png` | Same size rule as §1a; ink-black fur with a faint shifting multicolor sheen. **Pending the author's OK.** |
-| Turnarounds (animation) | `turnarounds/{kohei,nanoha,natsuki,akane,ronin,past-natsuki,beast,fairy}.png` | Front, side, back at one scale; the beast sheet adds mask and paw details. Known nit: Akane's bag is on the wrong side in her side view. |
-| Locations | `locations/houses-street.png`, `window-night-from-kohei.png`, `window-day-from-nanoha.png`, `nanoha-room-day.png` | The houses at about 1 m with no path between them, and the facing windows both ways (fixes 18 and 31). Built from layout sketches in `locations/sketches/` (code: `production/pipeline/layout/house_sketches.py`). |
+| Beast, ethereal tweak | `beast-size-reference-v2.png`, `beast-ethereal-town.png` | **Approved Oct 10.** Ink-black fur with a faint shifting multicolor sheen, at the raised size (§1a). `beast-ethereal-size.png` shows the old, smaller scale; don't use it for size. |
+| Turnarounds (animation) | `turnarounds/{kohei,nanoha,natsuki,akane,ronin,past-natsuki,beast,fairy}.png` | Front, side, back at one scale; the beast sheet adds mask and paw details. Known nit: Akane's bag is on the wrong side in her side view. The rōnin sheet shows both swords. |
+| Locations | `locations/houses-street.png`, `window-night-from-kohei.png`, `window-day-from-nanoha.png`, `nanoha-room-day.png` | The houses about three feet apart with no path between them, and the facing windows both ways (fixes 18 and 31). Built from layout sketches in `locations/sketches/` (code: `production/pipeline/layout/house_sketches.py`). |
 | The Great Cherry | `locations/tree-{summer,autumn,winter}.png`, `tree-newyear-bloom.png` | Season edits of `img/bg/bg_shrine_tree_day.webp` (the spring view), so the site stays identical. New Year: snow, out-of-season bloom, lanterns. |
-| Past era | `locations/past-tree-site.png`, `past-tree-bloom.png`, `past-mist-path.png`, `past-village.png` | Same tree and boulder, no shrine buildings, shimenawa and a stone marker, thatched village below. **Late autumn for the past-life death is [P]**; the season is Open in canon. |
+| Past era | `locations/past-tree-site.png`, `past-tree-bloom.png`, `past-mist-path.png`, `past-village.png` | Same tree and boulder, no shrine buildings, shimenawa and a stone marker, thatched village below. **Winter** (canon §5, Oct 10): light snow, frost and mist, so the bloom plate shows blossoms falling on snow. The village is an autumn establishing shot. |
+
+**Known issue for the final sprite pass:** Nanoha's skin renders too pale or gray in some images (lineup, turnaround). Check every Nanoha sprite against her skin swatch (§1a); the author doesn't need these redone now.
 
 **Not made yet (per chapter, when needed):** ordinary backgrounds, event CGs, the old grave or memorial (canon: Open), the Tachibana and Fujisawa interiors beyond what's shipped, the town map.
 
 ## 2. Character visual sheet
 | Character | Hair | Eyes / face | Height | Outfits | B&W rendering |
 |---|---|---|---|---|---|
-| Kōhei | **Dark brown**, somewhat unruly, uneven fringe leaving the eyes visible. Black or spiky hair is drift | Brown, expressive; youthful, handsome; warm, easy smiles, no permanent scowl | **175 cm** | Navy blazer (gold buttons, open), white shirt, burgundy striped tie loosened, charcoal trousers. Kendo: navy keikogi and hakama. Work: white shirt, dark waist apron | Solid black with white highlights |
-| Nanoha | Natural dark brown, below the shoulder blades when down. **School/outings:** loose side braid. **Home:** long and loose. **Bed:** loose bun on *top* of her head with a BIG SOFT scrunchie | Brown eyes, soft oval face; deadpan is her key expression | Petite, about 150 cm; head reaches Kōhei's chin | Navy blazer, white shirt, burgundy ribbon, **charcoal plaid pleated skirt**, dark socks, brown loafers. Pale-blue pajamas with a small cat detail | Dark tone (nearly black), glossy highlights |
-| Natsuki | Bright burnished copper. **Shoulder-length** layered cut, side-swept fringe, **styled soft and neat** (tucked behind an ear, glossy, not tousled). **Athletics:** short ponytail | Amber-brown with expressive brows; **warm, quietly confident, slightly knowing smile**; poised posture. Not a tomboy grin | **160 cm**, athletic; exact build Open | Same uniform as Nanoha, worn neatly. Kendo: faded, much-washed indigo keikogi. Casual: put-together and fashionable but **age-appropriate** (short cardigan, casual skirt or jeans, sneakers), camera on a strap. Athletic: navy track shirt and dark sweats | Medium-gray tone, clearly lighter than the dark-haired cast, bright highlights |
+| Kōhei | **Dark brown**, somewhat unruly, uneven fringe leaving the eyes visible. Black or spiky hair is drift | Brown, expressive; youthful, handsome; warm, easy smiles, no permanent scowl | **5′9″** | Navy blazer (gold buttons, open), white shirt, burgundy striped tie loosened, charcoal trousers. Kendo: navy keikogi and hakama. Work: white shirt, dark waist apron | Solid black with white highlights |
+| Nanoha | Natural dark brown, below the shoulder blades when down. **School/outings:** loose side braid. **Home:** long and loose. **Bed:** loose bun on *top* of her head with a BIG SOFT scrunchie | Brown eyes, soft oval face; deadpan is her key expression | Petite, about 4′11″; head reaches Kōhei's chin | Navy blazer, white shirt, burgundy ribbon, **charcoal plaid pleated skirt**, dark socks, brown loafers. Pale-blue pajamas with a small cat detail | Dark tone (nearly black), glossy highlights |
+| Natsuki | Bright burnished copper. **Shoulder-length** layered cut, side-swept fringe, **styled soft and neat** (tucked behind an ear, glossy, not tousled). **Athletics:** short ponytail | Amber-brown with expressive brows; **warm, quietly confident, slightly knowing smile**; poised posture. Not a tomboy grin | **5′3″**, athletic; exact build Open | Same uniform as Nanoha, worn neatly. Kendo: faded, much-washed indigo keikogi. Casual: put-together and fashionable but **age-appropriate** (short cardigan, casual skirt or jeans, sneakers), camera on a strap. Athletic: navy track shirt and dark sweats | Medium-gray tone, clearly lighter than the dark-haired cast, bright highlights |
 | Akane | **Pale lavender-silver**, soft and wispy, shoulder length, small side clip | **Gray-violet**, big and soft; round, soft face with fuller cheeks; slightly pale with a faint blush; sweet expressions. Clearly younger than the high-schoolers | Small and slight, compact (about 14) | **School:** sailor uniform (navy collar with white stripes, white body, red scarf, navy pleated skirt below the knee, white socks, loafers; plush-rabbit bag charm). **Home:** cute and youthful (cream cardigan, pink bunny-ear hoodie, lavender lounge pants, fuzzy socks). Room full of plushies | Light tone (pale hair) with soft highlights |
 | Past-life Natsuki | Copper, tied back with a plain cord | **Face hidden in the manga** | — | **A real kimono, simple and everyday**, as worn by a modestly propertied family. Not elaborate, not peasant work clothes | Medium-gray tone |
 | Rika | Black, two low pigtails, novelty clips (strawberry, star, frog with a crown) | Big and expressive | — | Uniform with a cream cardigan under the blazer | — |
 | Ryōsuke | Neat black | Rectangular glasses; composed, smug | — | Uniform, striped tie | — |
 | Yuzu | Light honey-brown, shoulder length, red clip | Cheeky grin | — | White blouse with name badge, burgundy waist apron, black skirt | — |
-| Kirishima | **Male (Oct 10):** black crew cut, square jaw, broad shoulders | Calm, unreadable, deadpan | 180 cm [P] | White keikogi, navy hakama | — |
-| Takatsuki | Swept-back black | Sharp; **precise and composed, not sneering** (redesign) | — | Navy keikogi and hakama | — (prone to drift; always pass his sprite) |
+| Kirishima | **Male (Oct 10):** black crew cut, square jaw, broad shoulders | Calm, unreadable, deadpan | 5′11″ [P] | White keikogi, navy hakama | — |
+| Takatsuki | Swept-back, **deep slate blue** (blue-black with steel-blue highlights) [P], Oct 10, for readability against the dark-haired cast | Sharp; **precise and composed, not sneering** (redesign) | — | Navy keikogi and hakama | — (prone to drift; always pass his sprite) |
 | Emi | Dark hair, low bun | Warm | — | Light-blue shirt, mustard-yellow apron | — |
 | Sōta | Messy dark hair, bandage on his cheek | Gap-toothed grin | Age 7 | Green dinosaur T-shirt, navy shorts, game controller | — |
 | Ōno-sensei | Slightly messy | Droopy and tired; 40s, tall and thin | — | Knit cardigan over shirt and tie | — |
@@ -102,7 +104,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 **High-school uniform** (proposed, not a settled school identity; no invented insignia): navy blazer with gold buttons, white shirt, burgundy ribbon or tie, charcoal **plaid** pleated skirt (trousers for boys), dark socks, brown loafers.
 
 **The two houses:**
-- Built almost touching, **about a meter between the walls**. Upstairs bedroom windows face each other within arm's reach (Muv-Luv Extra). No alley or stairs between them.
+- Built almost touching, **about three feet between the walls**. Upstairs bedroom windows face each other within arm's reach (Muv-Luv Extra). No alley or stairs between them.
 - The shipped `bg_street_houses` and `cg_window_night` are wrong (pilot-notes fix 18). Replacements: `production/refs/locations/houses-street.png` and the two window views (§1b).
 - **Method for layout-critical backgrounds:** see §6.
 
@@ -198,7 +200,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 - **Garbled kanji on props:** avoid legible text in the art, or cover it with lettering.
 - **Side characters drift** (Takatsuki most): always pass the sprite.
 - **Continuity slips in chibi panels:** state the outfit explicitly.
-- **The model won't hold specific geometry from text** (Oct 6). Four attempts at "houses about a meter apart" either kept the alley or produced nonsense, and editing the old background anchored the old layout. **Fix:** draw a simple layout sketch in code (blocking shapes for the walls, the gap and the windows in perspective) and pass it as the structure reference, with the style anchor for rendering.
+- **The model won't hold specific geometry from text** (Oct 6). Four text-only attempts at the close spacing either kept the alley or produced nonsense, and editing the old background anchored the old layout. **Fix:** draw a simple layout sketch in code (blocking shapes for the walls, the gap and the windows in perspective) and pass it as the structure reference, with the style anchor for rendering.
 - **Refs must be pushed before submitting a job** (Oct 10, twice): a raw GitHub URL that isn't on `main` yet fails the job with a 422 (uncharged). Push, check the raw URL returns 200, then submit.
 - **Grayscale drift** (Oct 10): NB2 sometimes returns monochrome from color refs. Every prompt says "FULL NATURAL COLOR … absolutely not grayscale".
 - **Age drift:** prompts for a 14-year-old came back looking 16–17 (Akane, first pass). Spell out the age cues in §3, and check against `akane-v2/02-sailor-uniform.png`.

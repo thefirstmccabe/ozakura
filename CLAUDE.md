@@ -29,6 +29,7 @@ If someone edited the Project copy directly, `project_read` it first and fold th
 - `production/<deliverable>/`: per-deliverable sources (scripts, manifests, editable lettering, masters).
 
 ## Habits
+- **Imperial units only** (feet and inches) in docs, art notes, lineups and prompts. The author doesn't want metric anywhere.
 - Commit at checkpoints, not only at the end. Keep large intermediate renders out unless they're needed to rebuild.
 - Before pushing, run `git fetch origin main` and rebase. The clone is shallow.
 - Raw URLs (`https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/...`) work directly as fal `image_urls`.

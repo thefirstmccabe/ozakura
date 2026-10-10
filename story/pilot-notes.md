@@ -35,7 +35,7 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 7. **[Fix] Takatsuki:** remove the needling about Kōhei's missed practices. Rewrite him as the technically perfect kendoka baffled by Kōhei's instinctive swordsmanship (canon §8).
 8. **[Fix] Natsuki's voice:** "loud" becomes warm, confident and charismatic, in line with her restyle.
 9. **[Fix] Akane's lines** move from sardonic to sweet and playful, and she calls him "Onii-chan" instead of "Onii." This includes the Ch2 Tuesday recap ("none of my business").
-10. **[Fix] Fix the house distance.** Two lines say "three meters apart"; change them to about a meter, an arm's length.
+10. **[Fix] Fix the house distance.** Two lines say "three meters apart"; change them to about three feet, an arm's length (and use imperial units in the script).
 11. **[Fix] Fix Dad's calendar line.** "From a long time ago" overstates one year; change to "from last spring" or similar.
 12. **[Fix] The past-life girl** wears a simple real kimono, not a "peasant kimono." Her family is modestly propertied. **This means redrawing the prologue CG** (`cg_hands_strap`), where she's in a faded work kimono.
 13. **[Fix] Show more and tell less** throughout. **Sharpened Oct 8:**
@@ -50,9 +50,9 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 **Art:**
 
 15. **[Fix] Akane:** a full redesign (lavender-silver hair, sailor uniform, cute outfits, younger look). New sprites are needed. Refs: `production/refs/akane-v2/`.
-16. **[Fix] Natsuki:** shoulder-length hair restyled per `production/refs/natsuki-v2/01-restyle-uniform.png`, at 160 cm with corrected proportions. **Added Oct 8:** her CGs show long hair too and need redrawing (`cg_natsuki_intro`, `cg_catch`, `cg_jigeiko` where visible, `cg_shrine_meeting`, `cg_pastlife`, and the title art).
-17. **[Fix] Kōhei:** dark-brown hair at about 175 cm. The manga's black, spiky hair at 178 cm is drift.
-18. **[Fix] Houses:** `bg_street_houses` (the alley and stairs between the houses) and `cg_window_night` (the wide gap). Redraw both with the houses about a meter apart, Muv-Luv Extra style. Text prompts failed four times; build a layout sketch for the model to paint over. **This also fixes the window-scene bug (fix 31).**
+16. **[Fix] Natsuki:** shoulder-length hair restyled per `production/refs/natsuki-v2/01-restyle-uniform.png`, at 5′3″ with corrected proportions. **Added Oct 8:** her CGs show long hair too and need redrawing (`cg_natsuki_intro`, `cg_catch`, `cg_jigeiko` where visible, `cg_shrine_meeting`, `cg_pastlife`, and the title art).
+17. **[Fix] Kōhei:** dark-brown hair at about 5′9″. The manga's black, spiky hair at 5′10″ is drift.
+18. **[Fix] Houses:** `bg_street_houses` (the alley and stairs between the houses) and `cg_window_night` (the wide gap). Redraw both with the houses about three feet apart, Muv-Luv Extra style. **Replacements made Oct 10** (style guide §1b). Text prompts failed four times; build a layout sketch for the model to paint over. **This also fixes the window-scene bug (fix 31).**
 
 **Voice:**
 
