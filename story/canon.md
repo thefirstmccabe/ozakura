@@ -250,7 +250,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 
 ### Telling Nanoha (Decided Oct 6; sharpened by the pact Oct 7)
 - **Natsuki tells Nanoha within about a week.** Telling her is about honor as much as kindness, because she broke their agreement.
-- **Kōhei owns his half:** when Nanoha faces him, he says plainly that he kissed Natsuki back.
+- **Kōhei owns his half:** he has no duty to tell her first, since they aren't dating, and Natsuki is the one who tells her. When Nanoha then faces him, he says plainly that he kissed Natsuki back. He has some inkling she won't be happy; dense, not an idiot. Natsuki *knows* she'll be really unhappy.
 - **Nanoha's hurt** is "we said we'd do this fairly," not just "you kissed him."
 - **Nanoha dates him knowing about the kiss.**
 - **Proposals:**
@@ -513,12 +513,12 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **His arc with Kōhei (Oct 10):**
     - **Core idea:** they hold the two halves of the sword. Kōhei's is a rōnin's instinct, a killing art tied to his anger. Takatsuki's is form, rules and restraint. Takatsuki embodies the restraint Kōhei must learn; Kōhei has the adaptability Takatsuki will need. Their friction is the masculinity-and-honor theme in miniature.
     - **Apr–Jul, friction:** "That shouldn't have worked." Kōhei finds him rigid. The real chip is on Kōhei's shoulder: Takatsuki has time to be perfect, and Kōhei has shifts. Takatsuki never mentions it. He notices that Natsuki reads Kōhei better than he does. At the meet where Akane is mocked, he's the one who says it plainly: "That wasn't kendo."
-    - **Late Aug–Sep, the low point:** he witnesses the street fight and takes Nanoha home. **Decided:** he tells Kōhei he has to report it to the club adviser, but would rather they go together, which gives Kōhei the chance to own up instead of being reported. The consequence (for example, a suspension of a few weeks) is a Proposal. It lands in the same week Kōhei owns his half of the kiss to Nanoha, a week of owning up. **Proposal:** "You scared her. You scared me too."
+    - **Late Aug–Sep, the low point:** he witnesses the street fight and takes Nanoha home. **Decided:** he tells Kōhei he has to report it to the club adviser, but would rather they go together, which gives Kōhei the chance to own up instead of being reported. The consequence (for example, a suspension of a few weeks) is a Proposal. It lands the same week Nanoha, having heard about the kiss from Natsuki, faces Kōhei, and he doesn't minimize it. He doesn't initiate either confession; both times he has to own up when it comes to him. **Proposal:** "You scared her. You scared me too."
     - **Oct–Dec, learning from each other:** Kōhei comes back chastened, admits Takatsuki was right, and starts learning form. Takatsuki starts learning to improvise. They spar as near-equals and enjoy it, and the styles begin to mesh.
     - **Jan, how he's drawn in (accepted Oct 10):** he's caught in the beast's path distortion himself (a walk home that keeps looping) and is found or freed by the group. He believes because he lived it; it nearly got him; and he's the methodical one who noticed how the loop works, which feeds the plan.
     - **The battle (Proposal):** when the distortion throws everyone into chaos, his discipline lets him hold position and execute the planned strike exactly. He's the anchor instinct can't provide. Then the respect exchange (scene bank 26).
     - **After:** friends; "Next Saturday?" as a callback.
-    - **Romance (Proposal):** none. He stays out of the triangle; at most Kōhei briefly suspects something after Takatsuki takes Nanoha home.
+    - **Romance (Decided Oct 10):** none. He stays out of the triangle; at most Kōhei briefly suspects something after Takatsuki takes Nanoha home.
 - **The work kōhai:** a cute, troublesome girl at the restaurant with a light, genuine crush who flirts and adds comic pressure.
   - **Not** a serious contender and **not** connected to the past life.
   - Bolder verbally than when she's sincerely noticed; occasionally competent and gets the last word.
