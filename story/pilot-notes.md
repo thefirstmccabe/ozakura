@@ -68,7 +68,12 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 24. **[Keep] The river walk and class lists** are basically fine; they get only the global fixes.
 25. **[Fix] Writing rule: no telegraphic name-tag intros or trait lists.** "Hoshikawa Rika. Nanoha's best friend since middle school, art club…", "Tokiwa Ryōsuke. Go club. Glasses.", "Tachibana Nanoha. The house next door.", "Kirishima Aoi, third-year, club captain.", "Takatsuki Shō, second year." read as trying to be edgy. Let people arrive through what they do and say (Rika's "Nano-chaaaan!" tackle already does it). Narration uses complete sentences by default.
 26. **[Fix] Writing rule: no manga self-reference.** Cut Natsuki's "Like in manga" and Nanoha's echo in the Ch1 Nanoha interlude. Characters never compare their own situation to manga. Kōhei owning manga, Nanoha reading them (Ch3) and the scene-bank childhood-friend manga stay.
-27. **[Fix] Speaker portrait:** a face window to the left of the dialogue for whoever is speaking, Baldr Sky style, Kōhei included. Crop from the sprites (no new art spend); Akane and Natsuki use their redesigned sprites. Speakers with no sprite (Ōno-sensei, the manager, "???") get none.
+27. **[Fix] Face windows and dialogue colors (rules locked Oct 10; full spec in style-guide §3a).**
+    - **Kōhei:** a window on every spoken line.
+    - **Others:** a window only when they speak and their sprite isn't on screen.
+    - **Never:** for texts, sprite-less speakers or "???".
+    - **Art needed:** a ~10-expression face set for Kōhei; everyone else is cropped from their sprites.
+    - **Colors:** name tags in full character color, dialogue in a pale tint of it, narration neutral. Test screen first.
 28. **[Fix] The kendo captain becomes male.** Kirishima keeps his role and deadpan humor. "Aoi" works as a boy's name, so the name can stay (still [P]). Needs pronoun edits, three new sprites and a new voice.
 29. **[Keep] The catch and the tear** (the author leans toward keeping them; Claude agrees). See fix 2 for the narration cut around them.
 30. **[Keep] Ch2's Chie texts and the Natsuki interlude** ("great").

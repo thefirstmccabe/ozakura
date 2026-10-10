@@ -67,6 +67,41 @@ How Ōzakura looks and sounds, and how to generate it. Read this before any art,
 
 **Current inventory:** 72 sprites (14 outfit sets), 16 backgrounds, 9 CGs (title, hands and strap, Natsuki intro, jigeiko, the catch, Yuzu at the counter, window night, shrine meeting, past life).
 
+## 3a. VN presentation: face windows and dialogue colors (locked Oct 10)
+**Face windows** (bottom left, beside the text box, Baldr Sky style). A face window stands in for a sprite that isn't on screen.
+1. **Kōhei: a window on every spoken line,** with the expression matching the line. He's the POV and never on stage. Narration and inner thoughts get no window.
+2. **Everyone else: a window only when they speak and their sprite isn't on screen** (offscreen voice, next room, behind him, a crowded scene, or a CG that doesn't show them). If the sprite is on stage, no window.
+3. **Interludes:** the same rule. If Kōhei appears in an interlude, he's on stage like anyone else.
+4. **Never:** phone texts (chat UI), speakers with no sprite (Ōno-sensei, the manager), "???", or past-life scenes (her face stays hidden).
+
+**Assets:**
+- **Kōhei:** a dedicated face set of about 10 expressions: neutral, warm smile, grin, deadpan, surprised, flustered, annoyed, serious, the frightening stillness, sad.
+- **Everyone else:** windows are crops of their existing sprite expressions, at no art cost. Akane, Natsuki and the male Kirishima get theirs from their new sprites.
+
+**Dialogue colors:**
+- **Name tags** in the full character color.
+- **Dialogue text** in a pale tint of the same hue, almost white at a glance.
+- **Narration** stays neutral off-white.
+- **The backlog** uses the same colors.
+- **Why:** it separates Kōhei's spoken lines from his first-person narration, and it makes fast banter easy to follow.
+- **Readability:** every tint must pass a contrast check on the text box. Build a test screen and approve it on iPad before rollout.
+
+| Character | Hue |
+|---|---|
+| Kōhei | warm light brown |
+| Nanoha | soft pale blue |
+| Natsuki | copper / amber |
+| Akane | lavender |
+| Ryōsuke | teal |
+| Rika | strawberry pink |
+| Takatsuki | steel blue-gray |
+| Kirishima | indigo |
+| Yuzu | cherry red |
+| Emi | mustard yellow |
+| Sōta | dinosaur green |
+| Past-life Natsuki ("???") | faded gold |
+| Others | neutral (no tint) |
+
 ## 4. Manga art (black and white)
 **Engine:** `fal-ai/nano-banana-pro/edit` at `resolution: '2K'`. Pro gave real screentone; NB2 gave a gray wash. Use `fal-ai/nano-banana-pro` (no `/edit`) for panels with no characters.
 
