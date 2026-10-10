@@ -145,7 +145,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 | Oct–Dec | Visible couple time, including Christmas. Fragments intensify. Nanoha senses something about the past life (degree and timing Open). |
 | **New Year** | The out-of-season bloom. The memories flood in. |
 | **Early Jan** | Kōhei and Natsuki compare memories. He tells Nanoha about the past life and reaffirms his choice. The girls talk. |
-| Mid-Jan → late Feb/early Mar | The deaths begin and escalate toward the battle. |
+| Mid-Jan → late Feb/early Mar | The deaths begin and escalate toward the battle. (Low-level activity — people lost, maybe injured, possibly one disappearance — starts earlier, in autumn background.) |
 | Mar–Apr | Aftermath, graduation, the ordinary spring bloom. The main story ends. |
 | Much later | Epilogue: Natsuki, old, at the tree. |
 
@@ -178,13 +178,17 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **They never sparred together.** **She watched him train** for years.
 - **The death:**
   - **Setting:** a walk together; a misty morning is the author's working image.
+  - **Before (Decided Oct 10):** there have been a rumor or two, but the tree hasn't bloomed. He goes armed; she teases him a little about it and thinks it's nothing. Then they're trapped.
   - **The trap:** a beast that distorts familiar paths traps them, so she cannot go for help.
   - **The fight:** long. He realizes he is losing a battle of attrition, and that if it goes on they will both die.
   - **The trade:** **he deliberately opens himself to a fatal wound so he can get close enough to kill it**. The beast and Kōhei kill each other.
   - **Her role:** she is **helpless throughout**. She survives and stays with him.
+- **After (Decided Oct 10):** once he has killed the beast and they've made the promise, **the tree blooms out of season.** The distortion falls away.
+  - **The CG:** her cradling his broken body, blood everywhere, cherry blossoms falling all around her.
+  - **Proposal:** they were near the tree the whole time, walking in circles around it (the repeating-landmark motif), so she's kneeling beneath it when it blooms.
 - **The promise:** they promise to find one another again.
   - **Proposal:** the promise has two halves. She promises "I'll find you"; his last word to her is "Live."
-  - **Staging preference:** the promise comes before the deity's assurance, so they make it without certainty.
+  - **Staging preference:** the promise comes before the deity's assurance, so they make it without certainty. **The out-of-season bloom is that assurance** (Oct 10).
   - The tree deity grants a reunion "in some form": reunion only, with no guarantee of recognition, simultaneous memory or a romantic claim.
   - The exact wording is unwritten. "Beyond the western sea" was a tonal reference only.
 - **Optional coda:** her life afterward. Her widowhood leaves the household without an heir again, which is a poignant possibility. This is separate from the modern epilogue.
@@ -328,6 +332,8 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **What Natsuki needs:** a sustainable place in the friendships and something she wants for herself. A future romance is possible, not required.
 
 ### The threat and the climax
+- **Before the bloom (Decided Oct 10):** the beast is already active at a low level. There are rumors and reports of people getting lost, maybe injured, and possibly one disappearance. The bloom signals that it's ramping up, not that it has just begun.
+  - **Proposal:** autumn background noise that reads as ordinary bad news: a hiker lost on a familiar trail who turns up dazed, an injury nobody can explain, and one disappearance with posters at the station. The missing person is found dead in January, the first death of the escalation.
 - **The deaths:** unexplained deaths occur in town. The cause is a supernatural beast that **distorts familiar paths, trapping and separating people**. When it dies, the distortion ends.
 - **The beast:**
   - It need not be the same beast as before.
@@ -541,6 +547,10 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **The tree:** the cherry tree is a local good deity, or its embodied presence. It protects homes and community and counterbalances nearby evil. Its exact nature is Open.
 - **Its limits:** no continental root network and no countrywide system.
 - **The bloom:** the out-of-season bloom signals the awakening and that the tree's help is needed.
+  - **It means something different in each era (Oct 10):**
+    - **Past:** the bloom comes *after* his death and the promise. It is the tree's answer to the promise.
+    - **Present:** the bloom comes as the beast's activity ramps up. It is a warning, and a sign that the reunion has a purpose.
+  - **Proposal:** the modern bloom triggers the memory flood. The last time either of them saw the tree bloom out of season, he was dying beneath it.
 - **Nanoha and the fairy:** the fairy grows more prominent and Nanoha's connection develops.
   - Power doesn't track moral purity.
   - Negative emotions don't automatically collapse protection.
@@ -711,6 +721,7 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - Writing rules added to §1 (openings show rather than tell; no name-tag intros; no manga self-reference; subtle strangeness). The kendo senior is male.
   - Docs consolidated: this canon replaces the Oct 1 bible and the working bible.
 - **Oct 10:**
+  - **The bloom's timing in both eras:** past = after his death and the promise (the assurance; the blossoms-and-blood CG); present = the beast ramping up after earlier low-level activity (rumors, people lost, a possible disappearance).
   - **The family's recovery from Dad's death becomes a main spine** (§1 themes; §6 "The Fujisawa family").
   - **September flashback to Dad's death:** the hospital request, his private request to Nanoha's father, and the bills scene.
   - **Dad's regret** is revealed through Nanoha's father, who also apologizes for not pressing his offers of help.
