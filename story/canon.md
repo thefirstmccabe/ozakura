@@ -71,6 +71,8 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 
 ## 2. Format and presentation
 - **Format (Working, the author's leaning):** VN-primary, with frequent interludes, CGs and occasional manga pages for scenes that only work as manga. The author thinks the story works best as manga, but full manga production is too costly and inconsistent at his quality bar.
+  - **Inserts are full color** (Decided Oct 10), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone.
+  - **Proposal:** past-life scenes get a distinct treatment *within* color (a desaturated or warm-faded palette, softer edges) to mark the era at a glance. To decide when the first flashback is made.
 - **The feel:** a Japanese manga translated into English. Aim for manga plausibility rather than exhaustive realism.
 - **Language:**
   - Keep honorifics and meaningful forms of address in natural English: -san, -kun, -chan, senpai, and sibling terms like onii-chan.
@@ -712,3 +714,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **September flashback to Dad's death:** the hospital request, his private request to Nanoha's father, and the bills scene.
   - **Dad's regret** is revealed through Nanoha's father, who also apologizes for not pressing his offers of help.
   - **Mom's recovery:** Emi confronts her, they cook the favorite dish, and she takes back some of the weight. Partial, with setbacks, this year. Supersedes "no substantial recovery arc."
+  - **Manga inserts are full color** in the VN style (§2); past-life color treatment is a proposal.

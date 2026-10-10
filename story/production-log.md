@@ -83,6 +83,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-08 (eve) | **Plan before the revision pass:** lock the character designs → finalize the voices → map the first chapters. |
 | 10-10 | **Story docs go in the public repo** (`story/`) for version history. The author is fine with the story being public. The repo stays public, and GitHub Pages keeps serving the pilot. |
 | 10-10 | Format details (insert style, presentation, the jigeiko test) restored to §6 after the Oct 8 rewrite dropped them. |
+| 10-10 | **Manga inserts are full color** in the VN art style; no B&W. Sprites and backgrounds serve directly as references. Per-character color swatches added to the design lock. Proposal: a distinct past-life treatment within color. Canon §2. |
 | 10-10 | **Family spine:** the family putting itself back together after Dad's death is a main arc. A September flashback to Dad's death (the hospital request, his private request to Nanoha's father, the bills scene). Dad's regret is revealed through Nanoha's father, who apologizes for not pressing his help. Mom's recovery starts when Emi confronts her and they cook the favorite dish; it stays partial, with setbacks, this year. Canon §1, §6. |
 | 10-10 | **Face windows and dialogue colors locked** (style guide §3a). Kōhei gets a window on every spoken line; others only when their sprite isn't on screen. A ~10-expression face set is needed for Kōhei. Name tags in full color, dialogue in pale tints, narration neutral; test screen first. |
 | 10-10 | **Rival arc mapped** (canon §8): the two halves of the sword. Friction (Apr–Jul) → he witnesses the fight and offers to go to the adviser *with* Kōhei so Kōhei can own up (Decided) → they learn from each other (Oct–Dec) → caught in the path distortion himself in January (accepted) → the anchor in the battle (Proposal). Akane's perceptiveness about the romance reconfirmed. |
@@ -119,7 +120,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 
 ## 6. Next up
 **Agreed order (Oct 8):**
-1. **Lock the character designs.** Kōhei (no approved image yet), the male Kirishima, a redo of Natsuki's casual outfit, final checks on Akane, and a consistency pass on the supporting cast.
+1. **Lock the character designs.** Kōhei (no approved image yet), the male Kirishima, a redo of Natsuki's casual outfit, final checks on Akane, and a consistency pass on the supporting cast. **Also lock a color swatch per character** (hair, eyes, skin, key outfit colors) in the style guide; color inserts make palette drift the main consistency risk.
 2. **Finalize the voices.** An audition sheet for Nanoha, Akane and the male Kirishima; the author approves the cast he hasn't reviewed yet (Ryōsuke, Rika, Yuzu, Sōta, Kirishima, Ōno-sensei, the manager). He picks by ear.
 3. **Map the first chapters.** The revised Ch1–3 plus the next few (late April into May) against canon §4, with the fix list applied. Place Yuzu's introduction and the build toward the June umbrella scene and the girls' pact.
 
@@ -128,8 +129,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 - **Confirm the kiss song** title and artist.
 - **Pending approvals:** pilot names, address guide, kanji, POV (pilot-notes §1).
 - **Music style:** he may spend time defining it; the `kendo` track needs replacing.
-- **Format details** (Planning thread; canon §2 has the leaning: VN-primary with manga inserts). **Settle insert style before step 1 locks the designs,** since B&W needs per-character tone rules.
-  - **Insert style:** full color to match the VN, or B&W screentone? B&W could carry meaning, e.g. flashbacks and other characters' POV.
+- **Format details** (Planning thread; canon §2 has the leaning: VN-primary with manga inserts). Insert style is settled: **full color** (Oct 10).
   - **Presentation:** manga pages are portrait and the VN is landscape. Claude recommends a panel-by-panel reveal inside the VN frame rather than full pages.
   - **Which scenes get manga (working rule of thumb):** sequence-dependent beats go to manga (sparring, the street fight, the beast, the near-wordless kiss, montages, the full-page Nanoha moment); dialogue stays with sprites; emotional peaks get CGs.
   - **Test:** turn the Ch2 jigeiko into a 2–3 page insert inside the existing VN. It costs a few dollars, answers the questions above, and needs a spend cap.
