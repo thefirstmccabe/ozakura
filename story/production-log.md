@@ -84,6 +84,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Story docs go in the public repo** (`story/`) for version history. The author is fine with the story being public. The repo stays public, and GitHub Pages keeps serving the pilot. |
 | 10-10 | Format details (insert style, presentation, the jigeiko test) restored to §6 after the Oct 8 rewrite dropped them. |
 | 10-10 | **Manga inserts are full color** in the VN art style; no B&W. Sprites and backgrounds serve directly as references. Per-character color swatches added to the design lock. Proposal: a distinct past-life treatment within color. Canon §2. |
+| 10-10 | **Anime cutscenes (Working):** the author is willing to pay for short animated cutscenes at a few pivotal moments. Which moments and the method are Open; a test clip is proposed (§6). Canon §2. |
 | 10-10 | **Family spine:** the family putting itself back together after Dad's death is a main arc. A September flashback to Dad's death (the hospital request, his private request to Nanoha's father, the bills scene). Dad's regret is revealed through Nanoha's father, who apologizes for not pressing his help. Mom's recovery starts when Emi confronts her and they cook the favorite dish; it stays partial, with setbacks, this year. Canon §1, §6. |
 | 10-10 | **Face windows and dialogue colors locked** (style guide §3a). Kōhei gets a window on every spoken line; others only when their sprite isn't on screen. A ~10-expression face set is needed for Kōhei. Name tags in full color, dialogue in pale tints, narration neutral; test screen first. |
 | 10-10 | **Rival arc mapped** (canon §8): the two halves of the sword. Friction (Apr–Jul) → he witnesses the fight and offers to go to the adviser *with* Kōhei so Kōhei can own up (Decided) → they learn from each other (Oct–Dec) → caught in the path distortion himself in January (accepted) → the anchor in the battle (Proposal). Akane's perceptiveness about the romance reconfirmed. |
@@ -133,6 +134,12 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
   - **Presentation:** manga pages are portrait and the VN is landscape. Claude recommends a panel-by-panel reveal inside the VN frame rather than full pages.
   - **Which scenes get manga (working rule of thumb):** sequence-dependent beats go to manga (sparring, the street fight, the beast, the near-wordless kiss, montages, the full-page Nanoha moment); dialogue stays with sprites; emotional peaks get CGs.
   - **Test:** turn the Ch2 jigeiko into a 2–3 page insert inside the existing VN. It costs a few dollars, answers the questions above, and needs a spend cap.
+  - **Anime cutscenes** (Working; canon §2). Claude's notes:
+    - **Cost isn't the constraint.** Image-to-video on fal runs about $0.03/s (MiniMax H3 Max) to $0.14/s (Kling v3 Pro), checked Oct 10. A 30–60 s cutscene of 5–10 s shots with 3–5 takes each is roughly $5–40.
+    - **The real constraints:** identity drift between shots; clips of 10–15 s each; content filters, likely strictest on the kiss (teen characters) and on blood or the beast; and no usable lip sync. Keep dialogue as voiceover over shots, as anime often does.
+    - **Method:** animate from approved CGs as first and last frames, so each shot starts and ends on-model.
+    - **Candidates:** an opening movie (the classic VN spot for animation), the New Year bloom, the past-life walk and the trade, the climax lunge and save, and the epilogue. Pair the kiss with its song only if the filters allow.
+    - **Test:** one 5–10 s clip from an existing CG (e.g. `cg_catch` or petals at the tree). Under $5; needs approval.
 
 **After that:**
 - **One revision pass on the pilot.** That covers:
