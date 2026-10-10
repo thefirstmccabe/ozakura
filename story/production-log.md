@@ -85,6 +85,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | Format details (insert style, presentation, the jigeiko test) restored to §6 after the Oct 8 rewrite dropped them. |
 | 10-10 | **Family spine:** the family putting itself back together after Dad's death is a main arc. A September flashback to Dad's death (the hospital request, his private request to Nanoha's father, the bills scene). Dad's regret is revealed through Nanoha's father, who apologizes for not pressing his help. Mom's recovery starts when Emi confronts her and they cook the favorite dish; it stays partial, with setbacks, this year. Canon §1, §6. |
 | 10-10 | **Face windows and dialogue colors locked** (style guide §3a). Kōhei gets a window on every spoken line; others only when their sprite isn't on screen. A ~10-expression face set is needed for Kōhei. Name tags in full color, dialogue in pale tints, narration neutral; test screen first. |
+| 10-10 | **Rival arc mapped** (canon §8): the two halves of the sword. Friction (Apr–Jul) → he witnesses the fight and offers to go to the adviser *with* Kōhei so Kōhei can own up (Decided) → they learn from each other (Oct–Dec) → caught in the path distortion himself in January (accepted) → the anchor in the battle (Proposal). Akane's perceptiveness about the romance reconfirmed. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |

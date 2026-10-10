@@ -493,7 +493,8 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - He accompanies her to appointments sometimes, and worries about being unavailable. Much of the burden is the uncertainty.
   - His overprotection adds unnecessary work: monitoring her, cancelling plans, taking over what she or Nanoha already has covered.
   - **Optional scenes:** answering invitations for her, collecting her early against their agreement, asking Nanoha for excessive updates, finishing a gift she wanted to make, "I told you so." A counterexample to use: he collects her, asks whether she had fun, and accepts her answer.
-- **With others:** friends with Nanoha; a plausible romantic confidante and helper, and more perceptive about the leads than Kōhei is. She has her own pleasures, privacy and flaws.
+- **With others:** friends with Nanoha; a plausible romantic confidante and helper, and **understands Kōhei's romantic situation much better than he does** (reconfirmed Oct 10). She has her own pleasures, privacy and flaws.
+  - **Proposal:** she's quietly but openly Team Nanoha ("Nanoha-chan made you lunch *again*, Onii-chan") while staying kind to Natsuki. Her teasing shows the reader what Kōhei can't see.
 - **She survives** the main story.
 - **Open:** birthday and independent interests.
 
@@ -508,7 +509,16 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Clashing temperaments:** Takatsuki finds it maddening, and Kōhei finds him rigid. There's genuine competitive pleasure, and respect underneath.
   - **Not a bad guy.** He knows Kōhei's family situation and **never mocks his missed practices.** He isn't Kōhei's moral instructor, and he isn't the street-fight victim.
   - **His functions:** witnessing the street fight (which brings the club trouble), taking Nanoha home, and his indispensable contribution in the battle.
-  - **Open:** his past-life participation and memories.
+  - **Open:** his past-life participation and memories. (Claude recommends none; it would crowd the reincarnation story.)
+  - **His arc with Kōhei (Oct 10):**
+    - **Core idea:** they hold the two halves of the sword. Kōhei's is a rōnin's instinct, a killing art tied to his anger. Takatsuki's is form, rules and restraint. Takatsuki embodies the restraint Kōhei must learn; Kōhei has the adaptability Takatsuki will need. Their friction is the masculinity-and-honor theme in miniature.
+    - **Apr–Jul, friction:** "That shouldn't have worked." Kōhei finds him rigid. The real chip is on Kōhei's shoulder: Takatsuki has time to be perfect, and Kōhei has shifts. Takatsuki never mentions it. He notices that Natsuki reads Kōhei better than he does. At the meet where Akane is mocked, he's the one who says it plainly: "That wasn't kendo."
+    - **Late Aug–Sep, the low point:** he witnesses the street fight and takes Nanoha home. **Decided:** he tells Kōhei he has to report it to the club adviser, but would rather they go together, which gives Kōhei the chance to own up instead of being reported. The consequence (for example, a suspension of a few weeks) is a Proposal. It lands in the same week Kōhei owns his half of the kiss to Nanoha, a week of owning up. **Proposal:** "You scared her. You scared me too."
+    - **Oct–Dec, learning from each other:** Kōhei comes back chastened, admits Takatsuki was right, and starts learning form. Takatsuki starts learning to improvise. They spar as near-equals and enjoy it, and the styles begin to mesh.
+    - **Jan, how he's drawn in (accepted Oct 10):** he's caught in the beast's path distortion himself (a walk home that keeps looping) and is found or freed by the group. He believes because he lived it; it nearly got him; and he's the methodical one who noticed how the loop works, which feeds the plan.
+    - **The battle (Proposal):** when the distortion throws everyone into chaos, his discipline lets him hold position and execute the planned strike exactly. He's the anchor instinct can't provide. Then the respect exchange (scene bank 26).
+    - **After:** friends; "Next Saturday?" as a callback.
+    - **Romance (Proposal):** none. He stays out of the triangle; at most Kōhei briefly suspects something after Takatsuki takes Nanoha home.
 - **The work kōhai:** a cute, troublesome girl at the restaurant with a light, genuine crush who flirts and adds comic pressure.
   - **Not** a serious contender and **not** connected to the past life.
   - Bolder verbally than when she's sincerely noticed; occasionally competent and gets the last word.
