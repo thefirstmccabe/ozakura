@@ -98,6 +98,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Visual inventory phase approved, cap $20:** new characters (families, adviser, past life, one-scene antagonists), a supporting-cast check, a cast scale lineup, seasonal outfits, the fairy's season forms, turnarounds for the animation principals, and key locations (houses, shrine/tree in both eras, past village). Ordinary backgrounds and event CGs stay per chapter. |
 | 10-10 | **Visual inventory delivered for review** (style guide §1b), all self-reviewed and fixed before delivery: scale lineups for the whole cast; families, school adults, past life and antagonists; full color for the supporting cast (grayscale drafts replaced); seasonal outfits and kendo armor; the fairy's four forms; the beast's ethereal tweak; turnarounds for eight animation principals; key locations (the houses about three feet apart and both window views, Nanoha's room, the tree in four seasons plus the New Year bloom, the past-era site, path and village). Boards: `production/refs/lineup/` and the review sheets sent in the Story thread. Supporting heights and a few picks are [P]. |
 | 10-10 | **Inventory review (author):** everything approved except these changes, all made the same day: **no metric units anywhere** (docs, lineups, prompts); the beast a little taller (about 4′3″ to the ears, back at a man's belt); **Kazuo version B**; **the past-life death is in winter** (canon §5), so the past-era backgrounds are now winter; the tournament opponent has **bleached-blonde hair**; one of Kōhei's friend or rival gets a slightly unusual hair color for readability (Claude picked **Takatsuki: deep slate blue** [P]); the rōnin wears **two swords** (version B kept). Also [P]: the street-fight thug's hair changed from blonde to a black undercut so the opponent's blonde stays distinctive. Nanoha's skin reads too pale in some images: fix in the final sprite pass, no redo now. |
+| 10-10 | **Kiss song: an original vocal song**, made for the scene in the feel of the author's reference. The rights question is dropped. Vocal language and lyrics Open. (Music thread.) |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -140,7 +141,6 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 
 **Waiting on the author:**
 - **Spend approval** for steps 1–2 (about $1–3).
-- **Confirm the kiss song** title and artist.
 - **Pending approvals:** pilot names, address guide, kanji, POV (pilot-notes §1).
 - **Music style:** he may spend time defining it; the `kendo` track needs replacing.
 - **Format details** (Planning thread; canon §2 has the leaning: VN-primary with manga inserts). Insert style is settled: **full color** (Oct 10).

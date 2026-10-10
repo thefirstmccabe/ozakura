@@ -92,7 +92,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Keep the romcom fun.** Don't attach moral disclaimers to every trope. Photography, horror movies and friendship keep their ordinary pleasure rather than all becoming supernatural devices.
 - **Expressive close-ups** inspired by *The Fragrant Flower Blooms with Dignity*, especially in nonverbal scenes.
 - **POV: Open.** The pilot uses Kōhei in first-person present tense plus third-person interludes from the girls' side.
-- **Music wanted:** the author wants a specific song for the kiss scene. The title and artist he gave ("Carolina Lies," All the Damn Vampires) are unverified. Using the actual recording in the public build needs the rights holder's permission. Fallbacks are an original track in the same feel, or an out-link cue.
+- **Kiss-scene song (Decided Oct 10):** an **original song** made for the scene, vocals allowed. The author's reference ("Carolina Lies," All the Damn Vampires; unverified) sets the feel only, and the licensing question is dropped. Vocal language and lyrics are Open.
 
 ## 3. Setting
 ### The town
@@ -673,7 +673,7 @@ Select and adapt; this is not a checklist.
 - School trip.
 - The address guide.
 - Kanji.
-- The kiss song's identity and rights.
+- The kiss song's vocal language and lyrics.
 
 ## 12. Retired — do not import
 These come from the old `Worldbuilding-Bible.md` era:
@@ -757,3 +757,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **The past-life death is in winter** (§5), so the tree blooms out of season at about the same time of year in both eras.
   - **The beast is a little taller** (§6): about 4′3″ to the ear tips, back at a man's belt.
   - **Units:** imperial only in all docs and art notes (author's rule).
+  - **Kiss song:** an original song with vocals allowed; the reference sets the feel only, and the rights question is dropped (§2).

@@ -209,7 +209,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 - **QA cost:** review cropped or downscaled previews; open full size only where something looks wrong.
 
 ## 7. Audio
-**Music:** MiniMax Music 3, with extensions from ElevenLabs Music v2.5. All instrumental, looping with a crossfade.
+**Music:** MiniMax Music 3, with extensions from ElevenLabs Music v2.5. All eight pilot BGM tracks were prompted instrumental-only and loop with a crossfade (`memory` has a wordless choir pad by design). Both models can also sing: MiniMax takes lyrics, and ElevenLabs drops vocals only with `force_instrumental`.
 
 | Track | Used for |
 |---|---|
@@ -222,7 +222,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | memory | Dream and past-life |
 | comedy | Hoshino Kitchen |
 
-**Wanted:** a specific song for the kiss scene. The title is unverified and the rights are unresolved (canon §2).
+**Wanted:** an original vocal song for the kiss scene, in the feel of the author's reference (canon §2). The first BGM thread to use vocals.
 
 **SFX:** door_slide, notif, slip, steps.
 
