@@ -82,6 +82,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-08 (eve) | **Window-scene bug (3.3):** Nanoha appears in Kōhei's room. Redraw it Muv-Luv style, viewed from his room into her window; folded into the house fix. Tea at the shrine (3.6) and lunch at the Tachibanas' (3.7) are fine. |
 | 10-08 (eve) | **Plan before the revision pass:** lock the character designs → finalize the voices → map the first chapters. |
 | 10-10 | **Story docs go in the public repo** (`story/`) for version history. The author is fine with the story being public. The repo stays public, and GitHub Pages keeps serving the pilot. |
+| 10-10 | Format details (insert style, presentation, the jigeiko test) restored to §6 after the Oct 8 rewrite dropped them. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -124,6 +125,11 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 - **Confirm the kiss song** title and artist.
 - **Pending approvals:** pilot names, address guide, kanji, POV (pilot-notes §1).
 - **Music style:** he may spend time defining it; the `kendo` track needs replacing.
+- **Format details** (Planning thread; canon §2 has the leaning: VN-primary with manga inserts). **Settle insert style before step 1 locks the designs,** since B&W needs per-character tone rules.
+  - **Insert style:** full color to match the VN, or B&W screentone? B&W could carry meaning, e.g. flashbacks and other characters' POV.
+  - **Presentation:** manga pages are portrait and the VN is landscape. Claude recommends a panel-by-panel reveal inside the VN frame rather than full pages.
+  - **Which scenes get manga (working rule of thumb):** sequence-dependent beats go to manga (sparring, the street fight, the beast, the near-wordless kiss, montages, the full-page Nanoha moment); dialogue stays with sprites; emotional peaks get CGs.
+  - **Test:** turn the Ch2 jigeiko into a 2–3 page insert inside the existing VN. It costs a few dollars, answers the questions above, and needs a spend cap.
 
 **After that:**
 - **One revision pass on the pilot.** That covers:
@@ -133,4 +139,4 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
   - The house backgrounds and window scene via a layout sketch.
   - Speaker portraits and the re-cast voices.
 - **Rebuild the manga pipeline** before Ch3 or any manga fixes.
-- **The 8-page color manga test** (`source/manga-pilot-handoff-brief.md`). It needs a spend cap.
+- **The 8-page color manga test** (`source/manga-pilot-handoff-brief.md`). It needs a spend cap. It **may be superseded** by the jigeiko insert test, now that full manga isn't the primary format.
