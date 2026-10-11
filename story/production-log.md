@@ -103,6 +103,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-11 | **Voice picks, round one** (style guide §7 table): 16 characters cast, including Nanoha (Erinome +2) and Akane (Aoede +2). Rika, Yuzu, Sōta and the fairy sent back (not high enough); a callback page offers each take as recorded, +2 and +4 semitones. |
 | 10-11 | **Voice cast complete:** Rika Laomedeia +4, Yuzu Autonoe +2, Sōta Leda +2, the fairy Leda +4. Every speaking character now has an approved voice (style guide §7). |
 | 10-11 | **Pilot music review** (review page `production/music/review-oct11/`): keep `title`, `nanoha`, `night` (extend it); maybe `daily` (his wife likes it), `natsuki` (too generic and upbeat; possibly the Persona-style direction) and `memory`; replace `comedy` (feel of the Muv-Luv main theme) and `kendo`. Style guide §7. |
+| 10-11 | **Music test round 1:** all three comedy takes rejected; Natsuki C and F (both ElevenLabs) and memory C (ElevenLabs, built on the current track) are maybes. **ElevenLabs only from now on.** Next directions: Natsuki in the feel of P4's "Heartbeat, Heartbreak"; memory as ethereal with twin lead guitars. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |

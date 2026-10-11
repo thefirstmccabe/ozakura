@@ -209,7 +209,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 - **QA cost:** review cropped or downscaled previews; open full size only where something looks wrong.
 
 ## 7. Audio
-**Music:** MiniMax Music 3, with extensions from ElevenLabs Music v2.5. All eight pilot BGM tracks were prompted instrumental-only and loop with a crossfade (`memory` has a wordless choir pad by design). Both models can also sing: MiniMax takes lyrics, and ElevenLabs drops vocals only with `force_instrumental`.
+**Music:** **ElevenLabs Music v2.5 only from Oct 11 (author's preference).** The pilot tracks were MiniMax Music 3 with ElevenLabs extensions. All eight pilot BGM tracks were prompted instrumental-only and loop with a crossfade (`memory` has a wordless choir pad by design). Both models can also sing: MiniMax takes lyrics, and ElevenLabs drops vocals only with `force_instrumental`.
 
 | Track | Used for | Author review (Oct 11) |
 |---|---|---|
