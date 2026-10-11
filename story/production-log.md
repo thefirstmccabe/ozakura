@@ -114,6 +114,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Visual inventory (Oct 10) | $20 | about $9 (≈90 images, NB2 1K/2K and NB Pro 2K, incl. review fixes; failed jobs uncharged) | see decision log and style guide §1b |
 | Voice auditions (Oct 10) | approved with the scope (author: audition all unapproved voices) | about $0.55 | Gemini 3.8 Flash TTS, 71 takes |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
+| Music style test, Oct 11 | $5 (approved) | about $4.30 (8 MiniMax takes, 492 s; 4 ElevenLabs takes, 330 s) | Natsuki (Persona-style), comedy (Muv-Luv feel), memory variations; `production/music/oct11-test/` |
 
 **Cumulative fal spend:** about $74–79. fal's dashboard has the exact figure.
 
