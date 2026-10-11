@@ -313,6 +313,20 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **What he knows:** the father needn't know the supernatural truth.
 - **Before all this:** Nanoha's father already does informal karate-style exercise with Kōhei for fun and fitness, possibly with a punching bag. There is no dojo and no serious sparring program. The exact discipline is Open.
 
+### Kōhei and Nanoha: flashbacks to their shared past (Decided Oct 11)
+**Decided:** short flashbacks to Kōhei and Nanoha as children and as middle-schoolers, showing times they were really there for each other. They build the case that this is the love story of this life (§5 "The real risk is Nanoha"). They also mirror Natsuki's past-life flashbacks: Natsuki has a past life with him, and Nanoha has *this* life with him.
+
+**Proposals (Claude, Oct 11):**
+- **Rules:** short (one scene each), about one per seasonal arc, each triggered by something in the present (the cups, the window latch, the collar, Usagi-san). Every one shows something being *done* for the other, not explained. A visual treatment distinct from the past-life flashbacks so the eras never blur.
+- **Candidate scenes:**
+  1. **The fairy leaves (childhood, about 7):** Nanoha's "imaginary" friend vanishes without a goodbye. Kōhei is the one who believes her, searches the shrine grounds with her and leaves cookies out with her for weeks. Sets up the fairy's real goodbye at the end (§8).
+  2. **Usagi-san (childhood):** Kōhei saves up and buys her the white rabbit plush to cheer her up, maybe after the fairy is gone. Explains why that rabbit, of all her plushies, gets the time-outs.
+  3. **The windows begin (childhood or early middle school):** a thunderstorm; she's scared, and he talks to her across the gap until she falls asleep. The origin of the window conversations; pays off in the horror-movie night (scene bank 11) and the night before the battle (24a).
+  4. **Akane's first scare (Kōhei about 10–11):** little Akane is rushed to the hospital; Nanoha sits with Kōhei in the waiting room and holds his hand without saying anything. Her being there for him.
+  5. **Middle school, her turn to be stuck (about 13–14):** she freezes during a speech or a class presentation, and he gets her through it quietly, no confrontation. Him being there for her, and a counterweight to his anger.
+  6. **After the funeral (about 15):** the night Kōhei sits at the kitchen table with the bills (§6, the September flashback), Nanoha comes in through the kitchen without knocking for the first time, sets down food and does her homework across the table until he's done. The origin of her bringing food over and walking in without knocking (pilot-notes fix 20).
+- **Art needed:** child (about 7–8) and middle-school (about 13–14) versions of both. Proposal: reuse Akane's sailor uniform for middle-school Nanoha and a plain black gakuran for Kōhei (same local middle school). Placement goes in the chapter map.
+
 ### Dating
 - Kōhei sincerely chooses Nanoha, knowing he felt real attraction to Natsuki.
 - **Their dating life is shown, not announced**, roughly October to December, including Christmas.
@@ -758,3 +772,5 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **The beast is a little taller** (§6): about 4′3″ to the ear tips, back at a man's belt.
   - **Units:** imperial only in all docs and art notes (author's rule).
   - **Kiss song:** an original song with vocals allowed; the reference sets the feel only, and the rights question is dropped (§2).
+- **Oct 11:**
+  - **Shared-past flashbacks for Kōhei and Nanoha** (§6): childhood and middle-school scenes of them being there for each other. Candidate scenes are proposals.
