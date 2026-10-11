@@ -104,7 +104,6 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-11 | **Voice cast complete:** Rika Laomedeia +4, Yuzu Autonoe +2, Sōta Leda +2, the fairy Leda +4. Every speaking character now has an approved voice (style guide §7). |
 | 10-11 | **Pilot music review** (review page `production/music/review-oct11/`): keep `title`, `nanoha`, `night` (extend it); maybe `daily` (his wife likes it), `natsuki` (too generic and upbeat; possibly the Persona-style direction) and `memory`; replace `comedy` (feel of the Muv-Luv main theme) and `kendo`. Style guide §7. |
 | 10-11 | **Music test round 1:** all three comedy takes rejected; Natsuki C and F (both ElevenLabs) and memory C (ElevenLabs, built on the current track) are maybes. **ElevenLabs only from now on.** Next directions: Natsuki in the feel of P4's "Heartbeat, Heartbreak"; memory as ethereal with twin lead guitars. |
-| 10-11 | **Music direction (Working):** no lyrics under voiced scenes; vocals only for the opening, ending and kiss song. A cohesive house palette with recurring melodies, as in Muv-Luv; the anime cutscenes may use a totally different style, which is fine. Baldr Sky is not a music reference. Claude researched VN scoring and proposed `title` as the main theme and approved tracks as style references (style guide §7 to follow once agreed). |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
