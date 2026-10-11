@@ -230,22 +230,35 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 
 **Oct 10 audition:** every voice not yet approved (20 characters, including the new families, past life, antagonists and the fairy), 3–6 candidates each, on an audition page (artifact "Ōzakura Voice Auditions"; source and clips in `production/voice-auditions/oct10/`, spec in `oct10-spec.py`). Nanoha and Akane also offer a "+2 semitones" post-processed variant; if picked, apply it to every line for that character. The table below updates when the author picks.
 
-| Character | Voice | Direction | Status |
+| Character | Voice | Direction (style instruction in `production/voice-auditions/oct10-spec.py`) | Status |
 |---|---|---|---|
 | Kōhei | Puck | calm, grounded, a little tired, dry; let warmth through | OK (author) |
-| Nanoha | ~~Vindemiatrix~~ | soft, relaxed, deadpan; **must sound 16** | **Re-cast:** sounded much older |
+| Nanoha | **Erinome, +2 semitones** | 16; soft, relaxed, deadpan; "anime heroine" youth direction | **Picked Oct 11** |
 | Natsuki | Zephyr | bright, warm, confident (no longer "tomboyish") | OK (author) |
-| Past-life Natsuki | Zephyr + echo | softer, warmer, dream | — |
-| Akane | ~~Leda~~ | **sweet, soft, a little playful; must sound 14** | **Re-cast:** sounded much older |
-| Yuzu | Autonoe | cheeky, sly kōhai | Not reviewed |
-| Rika | Laomedeia | genki, loud | Not reviewed |
-| Kirishima | Despina | cool, quiet authority | Not reviewed |
-| Sōta | Aoede | 7-year-old boy | Not reviewed |
+| Natsuki (past life) | Zephyr (+ echo in game) | young Edo-era wife; softer, warmer | **Picked Oct 11** |
+| Akane | **Aoede, +2 semitones** | 14; sweet, soft, playful, a little frail | **Picked Oct 11** |
+| Kirishima (male) | Charon | calm, low, quiet authority; bone-dry jokes | **Picked Oct 11** |
+| Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |
+| Rika | — | genki, loud | Round two (callbacks with +2/+4) |
+| Yuzu | — | cheeky, sly kōhai | Round two (callbacks with +2/+4) |
+| Sōta | — | 7-year-old boy | Round two (callbacks with +2/+4) |
+| The fairy | — | small-girl voice, airy, ancient | Round two (callbacks with +2/+4) |
 | Emi | Achernar | warm, bubbly mother | OK (author, Oct 8) |
-| Ryōsuke | Achird | precise, smug | Not reviewed |
 | Takatsuki | Fenrir | **precise, reserved, dry** (was "curt, abrasive") | OK (author, Oct 8) |
-| Ōno-sensei | Schedar | tired teacher | Not reviewed |
-| Manager | Sadachbia | upbeat, harried | Not reviewed |
+| Ōno-sensei | Schedar | tired teacher | **Picked Oct 11** |
+| Manager | Enceladus | harried, upbeat, kind | **Picked Oct 11** |
+| Club adviser | Iapetus | steady, stern but fair | **Picked Oct 11** |
+| Kazuo | Charon | big, quiet, few words | **Picked Oct 11** |
+| Genji | Algenib | creaky, warm, twinkly | **Picked Oct 11** |
+| Kōhei's mom | Sulafat | quiet, fragile, tender | **Picked Oct 11** |
+| Kōhei's dad | Umbriel | kind, good-humored | **Picked Oct 11** |
+| Rōnin (past life) | Orus | low, calm, gentle | **Picked Oct 11** |
+| Her father (past life) | Alnilam | grave, formal, proud | **Picked Oct 11** |
+| Thug | Algenib | sneering, rough | **Picked Oct 11** |
+| Tournament opponent | Zubenelgenubi | cocky, mocking | **Picked Oct 11** |
+
+**Pitch shift:** "+2 semitones" means every generated line is post-processed with `ffmpeg -af "asetrate=24000*1.1225,aresample=24000,atempo=0.8909"` (raises pitch and formants, keeps timing); "+4" uses 1.2599 / 0.7937.
+**Shared voices:** Charon (Kirishima, Kazuo) and Algenib (Genji, the thug) are each used twice. Those pairs rarely share a scene; if they do, add a slight pitch offset to one of them.
 
 ## 8. fal workflow notes
 **Uploads:**
