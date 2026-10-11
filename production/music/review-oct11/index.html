@@ -1,0 +1,223 @@
+<title>Ōzakura Music Review</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: a single column of track sheets, like a cue sheet clipped to a board; verdict chips sit on each sheet's top line. */
+:root{
+  --bg:#f3f1f5; --sheet:#ffffff; --ink:#22202b; --muted:#6b6676; --rule:#e2dee8;
+  --accent:#b8456b; --accent-soft:#f6e3ea; --track:#d9d4e0;
+  --yes:#2f7d57; --yes-soft:#e0f1e8; --maybe:#a8741a; --maybe-soft:#f7ecd6; --no:#b23a3a; --no-soft:#f6e1e1;
+  --f-display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#17151d; --sheet:#211e29; --ink:#ece8f2; --muted:#a39dae; --rule:#34303d;
+  --accent:#e98aa9; --accent-soft:#3a2430; --track:#3b3646;
+  --yes:#6fcf9b; --yes-soft:#1f3a2c; --maybe:#e3b35c; --maybe-soft:#3b301b; --no:#ec8585; --no-soft:#3d2323; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17151d; --sheet:#211e29; --ink:#ece8f2; --muted:#a39dae; --rule:#34303d;
+  --accent:#e98aa9; --accent-soft:#3a2430; --track:#3b3646;
+  --yes:#6fcf9b; --yes-soft:#1f3a2c; --maybe:#e3b35c; --maybe-soft:#3b301b; --no:#ec8585; --no-soft:#3d2323; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.6}
+.wrap{max-width:680px;margin:0 auto;padding-inline:16px;padding-block:28px 64px;display:flex;flex-direction:column;gap:18px}
+header h1{font-family:var(--f-display);font-size:30px;line-height:1.2;margin:0;text-wrap:balance}
+header p{margin:6px 0 0;color:var(--muted);max-width:60ch}
+.tally{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:13px}
+.tally span{padding:3px 10px;border-radius:99px;background:var(--sheet);border:1px solid var(--rule);font-variant-numeric:tabular-nums}
+.status{font-size:13px;color:var(--muted)}
+.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 16px}
+.name{font-family:var(--f-display);font-size:22px;margin:0}
+.name small{font-family:var(--f-body);font-size:13px;color:var(--muted);font-weight:400;margin-left:8px;font-variant-numeric:tabular-nums}
+.verdict{display:flex;gap:6px}
+.verdict button{font:500 14px var(--f-body);padding:7px 14px;border-radius:99px;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer;min-width:62px}
+.verdict button:focus-visible,.play:focus-visible,.bar:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.verdict button[aria-pressed="true"][data-v="yes"]{background:var(--yes-soft);border-color:var(--yes);color:var(--yes)}
+.verdict button[aria-pressed="true"][data-v="maybe"]{background:var(--maybe-soft);border-color:var(--maybe);color:var(--maybe)}
+.verdict button[aria-pressed="true"][data-v="no"]{background:var(--no-soft);border-color:var(--no);color:var(--no)}
+.player{display:flex;align-items:center;gap:12px}
+.play{flex:none;width:44px;height:44px;border-radius:50%;border:none;background:var(--accent);color:#fff;cursor:pointer;display:grid;place-items:center;font-size:15px}
+.play[disabled]{opacity:.6;cursor:wait}
+.bar{flex:1;min-width:0;height:28px;display:flex;align-items:center;cursor:pointer}
+.bar i{display:block;height:6px;width:100%;border-radius:3px;background:var(--track);position:relative;overflow:hidden}
+.bar b{position:absolute;inset:0 auto 0 0;width:0;background:var(--accent)}
+.time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:86px;text-align:right}
+h3{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 4px;font-weight:700}
+.sec p,.sec ul{margin:0}
+.sec ul{padding-left:18px}
+.flag{background:var(--accent-soft);border-radius:6px;padding:8px 10px;font-size:14px}
+textarea{width:100%;box-sizing:border-box;min-height:44px;resize:vertical;font:14px var(--f-body);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:8px}
+.out{opacity:.75}
+.foot{font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Ōzakura Music Review</h1>
+    <p>The seven pilot tracks still in play. For each one, tap <strong>Yes</strong> (keep), <strong>Maybe</strong>, or <strong>No</strong> (replace), and add a note if you like. Your answers save automatically and come straight back to Claude. Tracks play on loop so you can hear the seam.</p>
+    <div class="tally" id="tally"></div>
+    <div class="status" id="status">Connecting…</div>
+  </header>
+  <div id="list"></div>
+  <section class="sheet out" aria-label="kendo">
+    <div class="top"><h2 class="name">kendo <small>0:56 · already out</small></h2></div>
+    <div class="sec"><h3>Pilot</h3><p>Ch2 dojo and jigeiko; Ch3 Saturday practice.</p></div>
+    <div class="sec"><h3>Plan</h3><p>Replacement comes after you pick a direction. It will cover club practice, sparring with Natsuki and Takatsuki, and Kōhei's solo practice at the tree.</p></div>
+  </section>
+  <p class="foot">"Plan" is where Claude intends to use each track across the full story. Items marked [P] are Claude's proposals, not decisions. New cues the story will also need (beast/danger, battle, the kiss song, an opening) come after this review.</p>
+</div>
+
+<script>
+const TRACKS=[
+ {id:"title",len:"1:08",feel:"Piano ballad with koto and strings; nostalgic and bittersweet.",
+  pilot:"Title screen, and the end of Ch3 as Kōhei stands in the lane between the two houses.",
+  plan:["Title screen and menus.","Quiet arc endings: the last beat of a chapter that closes on feeling rather than a cliffhanger.","The finale and the ordinary spring bloom that ends the main story.","The epilogue with old Natsuki at the tree [P]."],
+  flag:"This is the game's main theme. If we commission an opening song later, its melody could be built from this one [P]."},
+ {id:"daily",len:"0:59",feel:"Light acoustic: fingerpicked guitar, glockenspiel, pizzicato, flute.",
+  pilot:"The most-used cue: Ch1 morning, entrance hall and lunch; Ch2 Tuesday shift and after the jigeiko; Ch3 shift start and the Tachibanas' front door.",
+  plan:["The default everyday cue for April to August: mornings, the walk to school, classroom and hallway scenes, lunch with the core five.","Starts of shifts at the restaurant, before comedy takes over.","Ordinary group outings that aren't romance beats (shopping, the station, after school).","It would play more than any other track in the game."],
+  flag:"Only a 59-second loop under long scenes, so it repeats a lot. If kept, it gets extended. This is the track the \"Want to Be Close\" idea would replace."},
+ {id:"nanoha",len:"2:12",feel:"Soft felt piano, warm strings, flute and glockenspiel; tender and nostalgic.",
+  pilot:"Ch1 river walk to school; the Ch1 interlude; Ch3 walk up to the shrine; tea and lunch at the Tachibanas'.",
+  plan:["Nanoha's character theme: scenes centered on her and Kōhei by day.","The Tachibana household: meals, Emi, Sōta, shrine chores with her grandfather.","Her private oddness: Usagi-san in time-out, plushie arrangements, her deadpan teasing.","Her POV interludes, and the October to December dating scenes, possibly in a warmer variation [P].","The kitchen half of the sick-day scene, when she already knows where everything is [P]."],
+  flag:""},
+ {id:"natsuki",len:"2:00",feel:"Bright acoustic and electric guitar, piano, upbeat drums; a softer piano middle.",
+  pilot:"Ch1 her introduction to the class; Ch2 the bridge walk (\"You're on, Fujisawa\"); Ch3 her arrival at the shrine in her track shirt.",
+  plan:["Natsuki's character theme: her entrances, her banter and competitive challenges with Kōhei.","Walks toward the station, photography outings, horror-movie night.","Her side of the umbrella scheme in June [P].","A slower arrangement for the sick-day pact scene and the January grief at the tree [P]."],
+  flag:""},
+ {id:"night",len:"0:43",feel:"Sparse soft piano and a faint pad; hushed and a little lonely.",
+  pilot:"Ch1 garbage run; Ch2 Natsuki's walk-home interlude; Ch3 home late from the shift; all of the Ch3 window scene.",
+  plan:["Tender nights only: window conversations, late studying with the lights on across the gap.","The horror-movie night when Nanoha keeps him talking across the windows.","Late returns home and Kōhei alone at the kitchen table (the bills scene could use a darker take) [P].","The night before the battle, the two of them at the windows [P].","Not the beast. Night danger gets its own new cue so this one stays soft."],
+  flag:"The shortest loop in the game, and it carries the main romance scenes. If kept, it needs extending."},
+ {id:"memory",len:"0:55",feel:"Shakuhachi, koto, string drones, bell tones, a wordless choir pad.",
+  pilot:"Prologue dream; Ch1 flash at Natsuki's intro; Ch1 dream return; Ch2 the catch; Ch3 under the tree.",
+  plan:["The prologue dream and the tree.","Past-life fragments through the year (kept rare, per the subtlety rule).","The New Year bloom and the memory flood.","Happy past-life scenes (her watching him train, domestic teasing), possibly in a lighter arrangement [P].","The misty walk and his death would get a darker cue of their own [P]."],
+  flag:"Three of its five pilot cues go away under agreed fixes (the intro flash, the dream return, and probably the catch). It's the only track with vocal-like sound (the choir pad)."},
+ {id:"comedy",len:"1:49",feel:"Bassoon, clarinet, pizzicato, glockenspiel; cheeky and bouncy.",
+  pilot:"Ch3 only: Yuzu's arrival at the restaurant and her \"Ta-da.\"",
+  plan:["No scene in the revised Ch1 to Ch3, but plenty from May on.","Hoshino Kitchen once Yuzu arrives (May to June): her teasing, the manager, rush-hour chaos.","Rika's antics; Akane teasing \"Onii-chan\"; the plushie lawyer.","The two-porridge sick-day competition with Akane refereeing [P]."],
+  flag:""}
+];
+const $=s=>document.querySelector(s);
+const state={}; let db=null;
+const listEl=$("#list");
+
+function render(){
+  listEl.innerHTML="";
+  const frag=document.createDocumentFragment();
+  for(const t of TRACKS){
+    const s=document.createElement("section"); s.className="sheet"; s.setAttribute("aria-label",t.id);
+    s.innerHTML=`
+      <div class="top"><h2 class="name">${t.id} <small>${t.len}</small></h2>
+        <div class="verdict" role="group" aria-label="Keep ${t.id}?">
+          <button id="v-${t.id}-yes" data-v="yes" aria-pressed="false">Yes</button>
+          <button id="v-${t.id}-maybe" data-v="maybe" aria-pressed="false">Maybe</button>
+          <button id="v-${t.id}-no" data-v="no" aria-pressed="false">No</button>
+        </div></div>
+      <div class="player">
+        <button class="play" id="p-${t.id}" aria-label="Play ${t.id}">▶</button>
+        <div class="bar" id="b-${t.id}" role="slider" tabindex="0" aria-label="Seek ${t.id}"><i><b></b></i></div>
+        <span class="time" id="t-${t.id}">0:00 / ${t.len}</span>
+      </div>
+      <div class="sec"><h3>Sound</h3><p>${t.feel}</p></div>
+      <div class="sec"><h3>Pilot</h3><p>${t.pilot}</p></div>
+      <div class="sec"><h3>Plan</h3><ul>${t.plan.map(x=>`<li>${x}</li>`).join("")}</ul></div>
+      ${t.flag?`<p class="flag">${t.flag}</p>`:""}
+      <textarea id="n-${t.id}" placeholder="Note (optional): what you'd change"></textarea>`;
+    frag.appendChild(s);
+  }
+  listEl.appendChild(frag);
+  for(const t of TRACKS){
+    for(const v of ["yes","maybe","no"]) $(`#v-${t.id}-${v}`).addEventListener("click",()=>setVerdict(t.id,v));
+    const n=$(`#n-${t.id}`); let timer;
+    n.addEventListener("input",()=>{clearTimeout(timer);timer=setTimeout(()=>save(t.id,{note:n.value}),900)});
+    $(`#p-${t.id}`).addEventListener("click",()=>toggle(t.id));
+    const bar=$(`#b-${t.id}`);
+    bar.addEventListener("click",e=>{const r=bar.getBoundingClientRect();seek(t.id,(e.clientX-r.left)/r.width)});
+    bar.addEventListener("keydown",e=>{if(e.key==="ArrowRight")seekBy(t.id,5);if(e.key==="ArrowLeft")seekBy(t.id,-5)});
+  }
+}
+function paint(id){
+  const v=state[id]?.verdict;
+  for(const k of ["yes","maybe","no"]) $(`#v-${id}-${k}`).setAttribute("aria-pressed",String(v===k));
+  const n=$(`#n-${id}`); if(document.activeElement!==n) n.value=state[id]?.note||"";
+  tally();
+}
+function tally(){
+  const c={yes:0,maybe:0,no:0}; let done=0;
+  for(const t of TRACKS){const v=state[t.id]?.verdict; if(v){c[v]++;done++}}
+  $("#tally").innerHTML=`<span>${done} of ${TRACKS.length} reviewed</span><span>Yes ${c.yes}</span><span>Maybe ${c.maybe}</span><span>No ${c.no}</span>`;
+}
+function setVerdict(id,v){
+  const cur=state[id]?.verdict; const nv=cur===v?null:v;
+  state[id]={...(state[id]||{}),verdict:nv}; paint(id); save(id,{verdict:nv});
+}
+const writing={};
+async function save(id,patch){
+  state[id]={...(state[id]||{}),...patch};
+  if(!db){$("#status").textContent="Not saved: this view can't reach the review store. Open the page while signed in to claude.ai.";return}
+  while(writing[id]) await writing[id];
+  const body={verdict:state[id].verdict??null,note:state[id].note||"",updatedAt:new Date().toISOString()};
+  writing[id]=db.doc("reviews/"+id).set(body).then(()=>{$("#status").textContent="Saved."}).catch(e=>{$("#status").textContent="Couldn't save ("+(e&&e.code||"error")+"). Try again in a moment."}).finally(()=>{writing[id]=null});
+  await writing[id];
+}
+
+/* Audio: Web Audio from the published files (the viewer frame blocks plain <audio>). */
+let ctx=null; const buf={}; let cur=null; // {id,src,startedAt,offset}
+const fmt=s=>{s=Math.max(0,Math.floor(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+async function load(id){
+  if(buf[id]) return buf[id];
+  const r=await fetch("a/"+id+".mp3"); if(!r.ok) throw new Error("HTTP "+r.status);
+  const ab=await r.arrayBuffer();
+  buf[id]=await new Promise((ok,bad)=>{const p=ctx.decodeAudioData(ab,ok,bad); if(p&&p.then)p.then(ok,bad)});
+  return buf[id];
+}
+function pos(){ if(!cur) return 0; const d=buf[cur.id].duration; return (cur.offset+ctx.currentTime-cur.startedAt)%d }
+function stop(keep){
+  if(!cur) return; const id=cur.id, at=pos();
+  try{cur.src.stop()}catch(e){} cur.src.disconnect();
+  $(`#p-${id}`).textContent="▶"; $(`#p-${id}`).setAttribute("aria-label","Play "+id);
+  buf[id].paused=keep?at:0; cur=null;
+}
+async function start(id,offset){
+  const b=await load(id);
+  const src=ctx.createBufferSource(); src.buffer=b; src.loop=true; src.connect(ctx.destination);
+  src.start(0,offset); cur={id,src,startedAt:ctx.currentTime,offset};
+  $(`#p-${id}`).textContent="❚❚"; $(`#p-${id}`).setAttribute("aria-label","Pause "+id);
+}
+async function toggle(id){
+  if(!ctx){const AC=window.AudioContext||window.webkitAudioContext; ctx=new AC()}
+  if(ctx.state==="suspended") await ctx.resume();
+  if(cur&&cur.id===id){stop(true);return}
+  if(cur) stop(true);
+  const btn=$(`#p-${id}`); btn.disabled=true; btn.textContent="…";
+  try{ await start(id,(buf[id]&&buf[id].paused)||0) }
+  catch(e){ btn.textContent="▶"; $("#status").textContent="Couldn't load "+id+". Check your connection and tap play again." }
+  finally{ btn.disabled=false }
+}
+async function seek(id,frac){
+  frac=Math.min(Math.max(frac,0),0.999);
+  if(!ctx){await toggle(id); if(!cur) return}
+  const b=await load(id); const at=frac*b.duration;
+  if(cur&&cur.id===id){ try{cur.src.stop()}catch(e){} cur.src.disconnect(); cur=null; await start(id,at) }
+  else { if(cur) stop(true); b.paused=at; await start(id,at) }
+}
+function seekBy(id,sec){ if(!buf[id]) return; const d=buf[id].duration; const p=(cur&&cur.id===id)?pos():(buf[id].paused||0); seek(id,((p+sec+d)%d)/d) }
+function tick(){
+  if(cur){ const d=buf[cur.id].duration, p=pos();
+    $(`#b-${cur.id} b`).style.width=(p/d*100)+"%"; $(`#t-${cur.id}`).textContent=fmt(p)+" / "+fmt(d) }
+  requestAnimationFrame(tick);
+}
+
+render(); tally(); requestAnimationFrame(tick);
+(async()=>{
+  try{ db=window.claude?.use ? await window.claude.use("db") : null }catch(e){ db=null }
+  if(!db){ $("#status").textContent="Answers won't save in this view. Open the page while signed in to claude.ai."; return }
+  $("#status").textContent="Answers save automatically.";
+  db.collection("reviews").onSnapshot(snap=>{
+    for(const d of snap.docs){ const x=d.data()||{}; if(!TRACKS.find(t=>t.id===d.id)) continue;
+      state[d.id]={verdict:x.verdict??null,note:x.note||""}; paint(d.id) }
+  },e=>{ $("#status").textContent="Lost the connection to the review store. Reload the page." });
+})();
+</script>
