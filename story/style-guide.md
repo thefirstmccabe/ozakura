@@ -222,6 +222,14 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | memory | Dream and past-life | Maybe |
 | comedy | Hoshino Kitchen | **Replace**, in the feel of the Muv-Luv main theme |
 
+**Music plan (approved Oct 11):**
+- **House sound:** piano-led with strings, soft and warm. Every cue keeps piano or a string section at its core (the link between `title`, `nanoha`, `night` and the author's reference, Steins;Gate's "Gate of Steiner"). Each cue changes the mood and adds one color, never the whole band.
+- **Colors by story area:** everyday and romance add flute, glockenspiel and light acoustic guitar. Energy cues (Natsuki, practice, comedy) add light live drums and bass, acoustic, no synths. Sad and emotional cues strip back to solo piano and slow strings. The tree and the past life add koto (Japanese zither), shakuhachi (bamboo flute) and a wordless voice. Strangeness, then danger, add Steins;Gate-style electronic textures and pulses, plus Japanese drums for the beast, over the same piano and strings.
+- **Vocals:** no lyrics under voiced scenes. Vocal songs only for the opening, the kiss and the ending cutscenes, which may use a different style.
+- **Generation:** ElevenLabs v2.5, with Google Lyria 3.5 takes alongside while the author compares. Every ElevenLabs cue uses an approved track as its style reference (`nanoha` for daily cues, `title` for emotional ones). Lyria takes no audio reference, so it relies on the prompt alone.
+- **Finishing:** every track leveled to −19 LUFS, extended to 2–3 minutes, looped with a clean seam.
+- **First-chapters cue list:** keep `title`, `nanoha`, `night` (extend). `daily` stays unless a referenced version beats it. New, one cue at a time: Natsuki, comedy, practice (replaces `kendo`), sad, memory. About $2 per cue (two takes).
+
 **Wanted:** an original vocal song for the kiss scene, in the feel of the author's reference (canon §2). The first BGM thread to use vocals.
 
 **SFX:** door_slide, notif, slip, steps.
