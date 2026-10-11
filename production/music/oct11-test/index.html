@@ -37,6 +37,9 @@ h2{font-family:var(--f-display);font-size:22px;margin:18px 0 0}
 .bar i{display:block;height:6px;width:100%;border-radius:3px;background:var(--track);position:relative;overflow:hidden}
 .bar b{position:absolute;inset:0 auto 0 0;width:0;background:var(--accent)}
 .time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:84px;text-align:right}
+.scenes{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:10px 14px;margin-top:10px;font-size:14px}
+.scenes strong{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.scenes ul{margin:0;padding-left:18px}
 .desc{margin:0;font-size:14px;color:var(--muted)}
 textarea{width:100%;box-sizing:border-box;min-height:40px;resize:vertical;font:14px var(--f-body);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:8px}
 button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -54,7 +57,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 </div>
 <script>
 const GROUPS=[
- {title:"Natsuki's theme",note:"Laid-back breakbeat with Rhodes and piano, poised and quietly confident, in the \"Want to Be Close\" mood. Takes A–C are instrumental; D–F add airy wordless vocals.",takes:[
+ {title:"Natsuki's theme",scenes:["Her entrances: the class introduction, arriving somewhere the group already is.","Banter and competitive challenges with Kōhei (\"You're on, Fujisawa\").","Walks toward the station and the bridge; photography outings; horror-movie night.","Her POV interludes, and her side of the June umbrella scheme [P].","A slower arrangement later for the sick-day pact and the January grief at the tree [P]."],note:"Laid-back breakbeat with Rhodes and piano, poised and quietly confident, in the \"Want to Be Close\" mood. Takes A–C are instrumental; D–F add airy wordless vocals.",takes:[
   {id:"natsuki-current",label:"Current track",d:"For comparison: the pilot version.",ref:true},
   {id:"natsuki-i-mm1",label:"A · instrumental",d:"MiniMax. Short (36 s); would be extended."},
   {id:"natsuki-i-mm2",label:"B · instrumental",d:"MiniMax. Short (33 s); would be extended."},
@@ -62,11 +65,11 @@ const GROUPS=[
   {id:"natsuki-v-mm1",label:"D · airy vocals",d:"MiniMax, 51 s. The raw take clipped in places; listen for harshness."},
   {id:"natsuki-v-mm2",label:"E · airy vocals",d:"MiniMax, 78 s."},
   {id:"natsuki-v-el",label:"F · airy vocals",d:"ElevenLabs, 90 s."}]},
- {title:"Comedy",note:"Bright, bouncy early-2000s school-life synth-pop, aiming at the Muv-Luv at-school feel. That's my guess at the feel from your description.",takes:[
+ {title:"Comedy",scenes:["Hoshino Kitchen from May–June on: Yuzu's teasing, the manager, rush-hour chaos.","Rika's antics and the friend group goofing off.","Akane teasing \"Onii-chan\"; Nanoha's plushie discipline and the plushie lawyer.","The two-porridge sick-day competition with Akane refereeing [P]."],note:"Bright, bouncy early-2000s school-life synth-pop, aiming at the Muv-Luv at-school feel. That's my guess at the feel from your description.",takes:[
   {id:"comedy-mm1",label:"A",d:"MiniMax, 47 s. Some clipping in the raw take."},
   {id:"comedy-mm2",label:"B",d:"MiniMax, 67 s."},
   {id:"comedy-el",label:"C",d:"ElevenLabs, 90 s."}]},
- {title:"Memory",note:"Kept the vocals; aimed sadder and more ethereal, with a wordless soprano carrying the melody.",takes:[
+ {title:"Memory",scenes:["The prologue dream, and moments at the great cherry tree.","Rare past-life fragments through the year.","The New Year bloom and the memory flood.","Happy past-life scenes (her watching him train, domestic teasing), possibly in a lighter arrangement [P].","The misty walk and his death would get their own darker cue [P]."],note:"Kept the vocals; aimed sadder and more ethereal, with a wordless soprano carrying the melody.",takes:[
   {id:"memory-current",label:"Current track",d:"For comparison: the pilot version.",ref:true},
   {id:"memory-mm1",label:"A",d:"MiniMax, 90 s. Ends abruptly; the loop would need trimming."},
   {id:"memory-mm2",label:"B",d:"MiniMax, 90 s."},
@@ -81,6 +84,7 @@ const list=$("#list");
 for(const g of GROUPS){
   const h=document.createElement("h2"); h.textContent=g.title; list.appendChild(h);
   const p=document.createElement("p"); p.className="gnote"; p.textContent=g.note; list.appendChild(p);
+  const sc=document.createElement("div"); sc.className="scenes"; sc.innerHTML="<strong>Where it plays</strong><ul>"+g.scenes.map(x=>"<li>"+x+"</li>").join("")+"</ul>"; list.appendChild(sc);
   for(const t of g.takes){
     const s=document.createElement("section"); s.className="take"+(t.ref?" ref":""); s.style.marginTop="12px";
     s.innerHTML=`<div class="top"><span class="name">${t.label}</span>${t.ref?"":`<div class="verdict" role="group" aria-label="${g.title} ${t.label}">
