@@ -116,6 +116,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Voice auditions (Oct 10) | approved with the scope (author: audition all unapproved voices) | about $0.55 | Gemini 3.8 Flash TTS, 71 takes |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 | Music style test, Oct 11 | $5 (approved) | about $4.30 (8 MiniMax takes, 492 s; 4 ElevenLabs takes, 330 s) | Natsuki (Persona-style), comedy (Muv-Luv feel), memory variations; `production/music/oct11-test/` |
+| Music test round 2, Oct 11 | $5 (approved) | about $5.20: 6 ElevenLabs takes × 80 s ($4.80) + 4 Lyria ($0.40). **About $0.20 over cap**; Claude underestimated the ElevenLabs cost | Natsuki, memory, comedy; ElevenLabs vs Lyria; `production/music/oct11-test2/` |
 
 **Cumulative fal spend:** about $74–79. fal's dashboard has the exact figure.
 
