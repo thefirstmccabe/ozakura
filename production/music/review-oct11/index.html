@@ -1,3 +1,7 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}</style>
 <title>Ōzakura Music Review</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
@@ -46,6 +50,8 @@ h3{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute
 .sec p,.sec ul{margin:0}
 .sec ul{padding-left:18px}
 .flag{background:var(--accent-soft);border-radius:6px;padding:8px 10px;font-size:14px}
+.copy{align-self:flex-start;margin-top:10px;font:500 14px var(--f-body);padding:8px 16px;border-radius:99px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 textarea{width:100%;box-sizing:border-box;min-height:44px;resize:vertical;font:14px var(--f-body);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:8px}
 .out{opacity:.75}
 .foot{font-size:13px;color:var(--muted)}
@@ -55,9 +61,10 @@ textarea{width:100%;box-sizing:border-box;min-height:44px;resize:vertical;font:1
 <div class="wrap">
   <header>
     <h1>Ōzakura Music Review</h1>
-    <p>The seven pilot tracks still in play. For each one, tap <strong>Yes</strong> (keep), <strong>Maybe</strong>, or <strong>No</strong> (replace), and add a note if you like. Your answers save automatically and come straight back to Claude. Tracks play on loop so you can hear the seam.</p>
+    <p>The seven pilot tracks still in play. For each one, tap <strong>Yes</strong> (keep), <strong>Maybe</strong>, or <strong>No</strong> (replace), and add a note if you like. Tracks play on loop so you can hear the seam. When you're done, tap <strong>Copy results</strong> and paste them into the chat.</p>
     <div class="tally" id="tally"></div>
     <div class="status" id="status">Connecting…</div>
+    <button class="copy" id="copy">Copy results</button>
   </header>
   <div id="list"></div>
   <section class="sheet out" aria-label="kendo">
@@ -156,14 +163,25 @@ function setVerdict(id,v){
 const writing={};
 async function save(id,patch){
   state[id]={...(state[id]||{}),...patch};
-  if(!db){$("#status").textContent="Not saved: this view can't reach the review store. Open the page while signed in to claude.ai.";return}
+  if(!db){try{localStorage.setItem("ozk-music-review",JSON.stringify(state))}catch(e){} $("#status").textContent="Saved on this device.";return}
   while(writing[id]) await writing[id];
   const body={verdict:state[id].verdict??null,note:state[id].note||"",updatedAt:new Date().toISOString()};
   writing[id]=db.doc("reviews/"+id).set(body).then(()=>{$("#status").textContent="Saved."}).catch(e=>{$("#status").textContent="Couldn't save ("+(e&&e.code||"error")+"). Try again in a moment."}).finally(()=>{writing[id]=null});
   await writing[id];
 }
 
-/* Audio: Web Audio from the published files (the viewer frame blocks plain <audio>). */
+/* Audio. On GitHub Pages: plain <audio> from the repo's audio/bgm. In the claude.ai viewer: Web Audio from published files. */
+const GH=location.hostname.endsWith("github.io")||location.protocol==="file:";
+const els={}; let ghCur=null;
+function ghEl(id){ if(!els[id]){ const a=new Audio("../../../audio/bgm/"+id+".mp3"); a.loop=true; a.preload="metadata"; els[id]=a } return els[id] }
+function ghBtn(id,playing){ const b=$(`#p-${id}`); b.textContent=playing?"❚❚":"▶"; b.setAttribute("aria-label",(playing?"Pause ":"Play ")+id) }
+async function ghToggle(id){
+  const a=ghEl(id);
+  if(ghCur&&ghCur!==id){ els[ghCur].pause(); ghBtn(ghCur,false) }
+  if(!a.paused){ a.pause(); ghBtn(id,false); ghCur=null; return }
+  try{ await a.play(); ghCur=id; ghBtn(id,true) }catch(e){ $("#status").textContent="Couldn't play "+id+": "+(e&&e.message||e) }
+}
+function ghSeek(id,frac){ const a=ghEl(id); const go=()=>{a.currentTime=Math.min(Math.max(frac,0),0.999)*a.duration}; if(isFinite(a.duration)) go(); else a.addEventListener("loadedmetadata",go,{once:true}); if(a.paused) ghToggle(id) }
 let ctx=null; const buf={}; let cur=null; // {id,src,startedAt,offset}
 const fmt=s=>{s=Math.max(0,Math.floor(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
 async function load(id){
@@ -187,6 +205,7 @@ async function start(id,offset){
   $(`#p-${id}`).textContent="❚❚"; $(`#p-${id}`).setAttribute("aria-label","Pause "+id);
 }
 async function toggle(id){
+  if(GH) return ghToggle(id);
   if(!ctx){const AC=window.AudioContext||window.webkitAudioContext; ctx=new AC()}
   if(ctx.state==="suspended") await ctx.resume();
   if(cur&&cur.id===id){stop(true);return}
@@ -197,23 +216,36 @@ async function toggle(id){
   finally{ btn.disabled=false }
 }
 async function seek(id,frac){
+  if(GH) return ghSeek(id,frac);
   frac=Math.min(Math.max(frac,0),0.999);
   if(!ctx){await toggle(id); if(!cur) return}
   const b=await load(id); const at=frac*b.duration;
   if(cur&&cur.id===id){ try{cur.src.stop()}catch(e){} cur.src.disconnect(); cur=null; await start(id,at) }
   else { if(cur) stop(true); b.paused=at; await start(id,at) }
 }
-function seekBy(id,sec){ if(!buf[id]) return; const d=buf[id].duration; const p=(cur&&cur.id===id)?pos():(buf[id].paused||0); seek(id,((p+sec+d)%d)/d) }
+function seekBy(id,sec){ if(GH){ const a=ghEl(id); if(isFinite(a.duration)) a.currentTime=(a.currentTime+sec+a.duration)%a.duration; return } if(!buf[id]) return; const d=buf[id].duration; const p=(cur&&cur.id===id)?pos():(buf[id].paused||0); seek(id,((p+sec+d)%d)/d) }
 function tick(){
+  if(GH&&ghCur){ const a=els[ghCur]; if(isFinite(a.duration)){ $(`#b-${ghCur} b`).style.width=(a.currentTime/a.duration*100)+"%"; $(`#t-${ghCur}`).textContent=fmt(a.currentTime)+" / "+fmt(a.duration) } }
   if(cur){ const d=buf[cur.id].duration, p=pos();
     $(`#b-${cur.id} b`).style.width=(p/d*100)+"%"; $(`#t-${cur.id}`).textContent=fmt(p)+" / "+fmt(d) }
   requestAnimationFrame(tick);
 }
 
 render(); tally(); requestAnimationFrame(tick);
+try{ const saved=JSON.parse(localStorage.getItem("ozk-music-review")||"{}"); for(const t of TRACKS){ if(saved[t.id]){ state[t.id]=saved[t.id]; paint(t.id) } } }catch(e){}
+function results(){
+  const L={yes:"YES",maybe:"MAYBE",no:"NO"};
+  return "Music review\n"+TRACKS.map(t=>{const x=state[t.id]||{}; return `${t.id}: ${x.verdict?L[x.verdict]:"(not reviewed)"}${x.note?" — "+x.note:""}`}).join("\n");
+}
+$("#copy").addEventListener("click",async()=>{
+  const txt=results();
+  try{ await navigator.clipboard.writeText(txt); $("#status").textContent="Copied. Paste it into the chat." }
+  catch(e){ const ta=document.createElement("textarea"); ta.value=txt; ta.style.minHeight="140px"; $("#copy").after(ta); ta.select(); $("#status").textContent="Copy blocked here. Select the text below and copy it." }
+});
 (async()=>{
+  if(GH){ db=null; $("#status").textContent="Answers save on this device."; return }
   try{ db=window.claude?.use ? await window.claude.use("db") : null }catch(e){ db=null }
-  if(!db){ $("#status").textContent="Answers won't save in this view. Open the page while signed in to claude.ai."; return }
+  if(!db){ $("#status").textContent="Answers save on this device."; return }
   $("#status").textContent="Answers save automatically.";
   db.collection("reviews").onSnapshot(snap=>{
     for(const d of snap.docs){ const x=d.data()||{}; if(!TRACKS.find(t=>t.id===d.id)) continue;
