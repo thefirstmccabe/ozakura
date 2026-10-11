@@ -102,6 +102,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Voice auditions widened:** audition every voice the author hasn't explicitly approved (approved: Kōhei, Natsuki, Emi, Takatsuki). 20 characters, 71 takes plus +2-semitone variants for Nanoha and Akane; audition page published. About $0.55. Waiting on picks. |
 | 10-11 | **Voice picks, round one** (style guide §7 table): 16 characters cast, including Nanoha (Erinome +2) and Akane (Aoede +2). Rika, Yuzu, Sōta and the fairy sent back (not high enough); a callback page offers each take as recorded, +2 and +4 semitones. |
 | 10-11 | **Voice cast complete:** Rika Laomedeia +4, Yuzu Autonoe +2, Sōta Leda +2, the fairy Leda +4. Every speaking character now has an approved voice (style guide §7). |
+| 10-11 | **Pilot music review** (review page `production/music/review-oct11/`): keep `title`, `nanoha`, `night` (extend it); maybe `daily` (his wife likes it), `natsuki` (too generic and upbeat; possibly the Persona-style direction) and `memory`; replace `comedy` (feel of the Muv-Luv main theme) and `kendo`. Style guide §7. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -145,7 +146,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 **Waiting on the author:**
 - **Spend approval** for steps 1–2 (about $1–3).
 - **Pending approvals:** pilot names, address guide, kanji, POV (pilot-notes §1).
-- **Music style:** he may spend time defining it; the `kendo` track needs replacing.
+- **Music:** review done Oct 11 (see the log). Next: a style test for Natsuki's theme (Persona-style) and the comedy replacement, then the kendo cue.
 - **Format details** (Planning thread; canon §2 has the leaning: VN-primary with manga inserts). Insert style is settled: **full color** (Oct 10).
   - **Presentation:** manga pages are portrait and the VN is landscape. Claude recommends a panel-by-panel reveal inside the VN frame rather than full pages.
   - **Which scenes get manga (working rule of thumb):** sequence-dependent beats go to manga (sparring, the street fight, the beast, the near-wordless kiss, montages, the full-page Nanoha moment); dialogue stays with sprites; emotional peaks get CGs.

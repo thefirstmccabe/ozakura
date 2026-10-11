@@ -211,16 +211,16 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 ## 7. Audio
 **Music:** MiniMax Music 3, with extensions from ElevenLabs Music v2.5. All eight pilot BGM tracks were prompted instrumental-only and loop with a crossfade (`memory` has a wordless choir pad by design). Both models can also sing: MiniMax takes lyrics, and ElevenLabs drops vocals only with `force_instrumental`.
 
-| Track | Used for |
-|---|---|
-| title | Title, finale |
-| daily | Everyday scenes |
-| nanoha | Nanoha's theme (river walk, shrine) |
-| natsuki | Natsuki's theme (intro, bridge) |
-| kendo | Dojo |
-| night | Night scenes, interludes |
-| memory | Dream and past-life |
-| comedy | Hoshino Kitchen |
+| Track | Used for | Author review (Oct 11) |
+|---|---|---|
+| title | Title, finale | **Keep** |
+| daily | Everyday scenes | Maybe (59 s loop; extend if kept) |
+| nanoha | Nanoha's theme (river walk, shrine) | **Keep** |
+| natsuki | Natsuki's theme (intro, bridge) | Maybe: too generic and upbeat ("phone commercial"); candidate for the Persona-style direction |
+| kendo | Dojo | **Replace** |
+| night | Tender nights, the window scenes | **Keep; extend** (43 s loop) |
+| memory | Dream and past-life | Maybe |
+| comedy | Hoshino Kitchen | **Replace**, in the feel of the Muv-Luv main theme |
 
 **Wanted:** an original vocal song for the kiss scene, in the feel of the author's reference (canon §2). The first BGM thread to use vocals.
 
