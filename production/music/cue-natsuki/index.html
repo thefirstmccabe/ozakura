@@ -49,7 +49,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 <div class="wrap">
   <header>
     <h1>Ōzakura Natsuki Theme</h1>
-    <p class="lead">One cue, four takes. All leveled to match the game's tracks; loops aren't trimmed yet. Mark each take, then tap <strong>Copy results</strong> and paste them into the chat.</p>
+    <p class="lead">Two new takes for Natsuki, with the earlier ones and your approved tracks for comparison. All leveled to match the game's tracks; loops aren't trimmed yet. Mark each take, then tap <strong>Copy results</strong> and paste them into the chat.</p>
   </header>
   <div class="status" id="status">Answers save on this device.</div>
   <button class="copy" id="copy">Copy results</button>
@@ -57,13 +57,13 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 </div>
 <script>
 const GROUPS=[
- {title:"Natsuki's theme",note:"First cue under the new plan: piano and strings at the core, with light acoustic guitar, drums and bass for her energy. No synths, no vocals. The ElevenLabs takes used Nanoha's theme as a style reference so they sound like the same soundtrack; Lyria can't take a reference.",
+ {title:"Natsuki's theme",note:"First cue under the new plan: piano and strings at the core, with light acoustic guitar, drums and bass for her energy. No synths, no vocals. Second try: her own lead instruments (acoustic guitar and solo violin) so she no longer sounds like Nanoha. Piano stays underneath for the house sound.",
   scenes:["Her entrances: the class introduction, arriving somewhere the group already is.","Banter and competitive challenges with Kōhei.","Walks toward the station and the bridge; photography outings; horror-movie night.","Her POV interludes, and her side of the June umbrella scheme [P]."],takes:[
-  {id:"ref-nanoha",label:"Nanoha's theme (approved)",d:"The style reference, for comparison.",ref:true,src:"../../../audio/bgm/nanoha.mp3"},
-  {id:"el-A",label:"A",d:"ElevenLabs, 90 s, about 100 BPM."},
-  {id:"el-B",label:"B",d:"ElevenLabs, 90 s, about 96 BPM, brushed drums."},
-  {id:"ly-C",label:"C",d:"Lyria, about 100 BPM."},
-  {id:"ly-D",label:"D",d:"Lyria, about 96 BPM, brushed drums."}]}
+  {id:"ref-nanoha",label:"Nanoha's theme (approved)",d:"For comparison: Natsuki's theme should sound clearly different.",ref:true,src:"../../../audio/bgm/nanoha.mp3"},
+  {id:"el-E",label:"E · guitar and violin lead",d:"ElevenLabs, 90 s, about 108 BPM. No style reference."},
+  {id:"el-F",label:"F · violin lead",d:"ElevenLabs, 90 s, about 106 BPM. Light style reference from the title theme, for the house sound."},
+  {id:"el-A",label:"Earlier take A",d:"Your favorite last time, but too close to Nanoha's theme.",ref:true,src:"a/el-A.mp3"},
+  {id:"el-B",label:"Earlier take B",d:"Same problem as A.",ref:true,src:"a/el-B.mp3"}]}
 ,
  {title:"Approved · title",note:"Piano ballad with koto and strings; nostalgic and bittersweet. The main theme.",
   scenes:["Title screen and menus.","Quiet chapter endings that close on feeling rather than a cliffhanger.","The finale and the ordinary spring bloom that ends the main story.","The epilogue with old Natsuki at the tree [P]."],takes:[
