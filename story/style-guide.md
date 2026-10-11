@@ -222,7 +222,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | memory | Dream and past-life | Maybe |
 | comedy | Hoshino Kitchen | **Replace**, in the feel of the Muv-Luv main theme |
 
-**Music plan (approved Oct 11):**
+**Music plan (approved Oct 11; on hold since that evening, kept for reference).** The author will likely keep almost all of the pilot tracks; see the production log.
 - **House sound:** piano-led with strings, soft and warm. Every cue keeps piano or a string section at its core (the link between `title`, `nanoha`, `night` and the author's reference, Steins;Gate's "Gate of Steiner"). Each cue changes the mood and adds one color, never the whole band.
 - **Colors by story area:** everyday and romance add flute, glockenspiel and light acoustic guitar. Energy cues (Natsuki, practice, comedy) add light live drums and bass, acoustic, no synths. Sad and emotional cues strip back to solo piano and slow strings. The tree and the past life add koto (Japanese zither), shakuhachi (bamboo flute) and a wordless voice. Strangeness, then danger, add Steins;Gate-style electronic textures and pulses, plus Japanese drums for the beast, over the same piano and strings.
 - **Vocals:** no lyrics under voiced scenes. Vocal songs only for the opening, the kiss and the ending cutscenes, which may use a different style.

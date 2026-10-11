@@ -106,6 +106,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-11 | **Music test round 1:** all three comedy takes rejected; Natsuki C and F (both ElevenLabs) and memory C (ElevenLabs, built on the current track) are maybes. **ElevenLabs only from now on.** Next directions: Natsuki in the feel of P4's "Heartbeat, Heartbreak"; memory as ethereal with twin lead guitars. |
 | 10-11 | **Music plan approved** (style guide §7): piano-led house sound with strings; a color per story area; Steins;Gate's "Gate of Steiner" as the reference for sad cues and its electronic textures for strangeness and danger; no lyrics under voiced scenes; approved tracks as style references; one cue at a time, about $2 each. Lyria takes alongside ElevenLabs for now. |
 | 10-11 | **Natsuki cue, take 1:** the ElevenLabs takes were his favorites but sounded too much like Nanoha's theme (the medium-strength `nanoha` reference). **Lyria dropped; ElevenLabs only.** Next: lighter or no reference and distinct lead instruments per character. |
+| 10-11 (eve) | **Music approach paused and rethought.** The author doesn't want to spend weeks on music and will likely accept almost all of the original pilot tracks. Next: he works out in the Story thread exactly what the first few chapters need, then this Music thread finishes up (extend, loop, level, plus any must-have new cues). Hiring a human composer later stays an option. The Oct 11 music plan (style guide §7) and the test rounds are kept for reference, not in force. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -153,7 +154,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 **Waiting on the author:**
 - **Spend approval** for steps 1–2 (about $1–3).
 - **Pending approvals:** pilot names, address guide, kanji, POV (pilot-notes §1).
-- **Music:** review done Oct 11 (see the log). Next: a style test for Natsuki's theme (Persona-style) and the comedy replacement, then the kendo cue.
+- **Music:** paused Oct 11 (eve). The author will likely keep almost all of the pilot tracks. He'll list the first chapters' music needs in the Story thread; then the Music thread finishes up (extend, loop, level, any must-have new cues). A composer may be hired later.
 - **Format details** (Planning thread; canon §2 has the leaning: VN-primary with manga inserts). Insert style is settled: **full color** (Oct 10).
   - **Presentation:** manga pages are portrait and the VN is landscape. Claude recommends a panel-by-panel reveal inside the VN frame rather than full pages.
   - **Which scenes get manga (working rule of thumb):** sequence-dependent beats go to manga (sparring, the street fight, the beast, the near-wordless kiss, montages, the full-page Nanoha moment); dialogue stays with sprites; emotional peaks get CGs.
