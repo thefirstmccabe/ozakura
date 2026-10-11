@@ -105,6 +105,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-11 | **Pilot music review** (review page `production/music/review-oct11/`): keep `title`, `nanoha`, `night` (extend it); maybe `daily` (his wife likes it), `natsuki` (too generic and upbeat; possibly the Persona-style direction) and `memory`; replace `comedy` (feel of the Muv-Luv main theme) and `kendo`. Style guide §7. |
 | 10-11 | **Music test round 1:** all three comedy takes rejected; Natsuki C and F (both ElevenLabs) and memory C (ElevenLabs, built on the current track) are maybes. **ElevenLabs only from now on.** Next directions: Natsuki in the feel of P4's "Heartbeat, Heartbreak"; memory as ethereal with twin lead guitars. |
 | 10-11 | **Music plan approved** (style guide §7): piano-led house sound with strings; a color per story area; Steins;Gate's "Gate of Steiner" as the reference for sad cues and its electronic textures for strangeness and danger; no lyrics under voiced scenes; approved tracks as style references; one cue at a time, about $2 each. Lyria takes alongside ElevenLabs for now. |
+| 10-11 | **Natsuki cue, take 1:** the ElevenLabs takes were his favorites but sounded too much like Nanoha's theme (the medium-strength `nanoha` reference). **Lyria dropped; ElevenLabs only.** Next: lighter or no reference and distinct lead instruments per character. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
