@@ -101,6 +101,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-10 | **Kiss song: an original vocal song**, made for the scene in the feel of the author's reference. The rights question is dropped. Vocal language and lyrics Open. (Music thread.) |
 | 10-10 | **Voice auditions widened:** audition every voice the author hasn't explicitly approved (approved: Kōhei, Natsuki, Emi, Takatsuki). 20 characters, 71 takes plus +2-semitone variants for Nanoha and Akane; audition page published. About $0.55. Waiting on picks. |
 | 10-11 | **Voice picks, round one** (style guide §7 table): 16 characters cast, including Nanoha (Erinome +2) and Akane (Aoede +2). Rika, Yuzu, Sōta and the fairy sent back (not high enough); a callback page offers each take as recorded, +2 and +4 semitones. |
+| 10-11 | **Voice cast complete:** Rika Laomedeia +4, Yuzu Autonoe +2, Sōta Leda +2, the fairy Leda +4. Every speaking character now has an approved voice (style guide §7). |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -138,7 +139,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 ## 6. Next up
 **Agreed order (Oct 8):**
 1. **Lock the character designs.** *(Done Oct 10: humans approved; visual inventory delivered, awaiting review.)* Kōhei (no approved image yet), the male Kirishima, a redo of Natsuki's casual outfit, final checks on Akane, and a consistency pass on the supporting cast. **Also lock a color swatch per character** (hair, eyes, skin, key outfit colors) in the style guide; color inserts make palette drift the main consistency risk.
-2. **Finalize the voices.** An audition sheet for Nanoha, Akane and the male Kirishima; the author approves the cast he hasn't reviewed yet (Ryōsuke, Rika, Yuzu, Sōta, Kirishima, Ōno-sensei, the manager). He picks by ear.
+2. **Finalize the voices.** *(Done Oct 11: full cast picked, style guide §7.)* An audition sheet for Nanoha, Akane and the male Kirishima; the author approves the cast he hasn't reviewed yet (Ryōsuke, Rika, Yuzu, Sōta, Kirishima, Ōno-sensei, the manager). He picks by ear.
 3. **Map the first chapters.** The revised Ch1–3 plus the next few (late April into May) against canon §4, with the fix list applied. Place Yuzu's introduction and the build toward the June umbrella scene and the girls' pact.
 
 **Waiting on the author:**

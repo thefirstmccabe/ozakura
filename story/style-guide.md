@@ -239,10 +239,10 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Akane | **Aoede, +2 semitones** | 14; sweet, soft, playful, a little frail | **Picked Oct 11** |
 | Kirishima (male) | Charon | calm, low, quiet authority; bone-dry jokes | **Picked Oct 11** |
 | Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |
-| Rika | — | genki, loud | Round two (callbacks with +2/+4) |
-| Yuzu | — | cheeky, sly kōhai | Round two (callbacks with +2/+4) |
-| Sōta | — | 7-year-old boy | Round two (callbacks with +2/+4) |
-| The fairy | — | small-girl voice, airy, ancient | Round two (callbacks with +2/+4) |
+| Rika | **Laomedeia, +4 semitones** | genki, loud | **Picked Oct 11** |
+| Yuzu | **Autonoe, +2 semitones** | cheeky, sly kōhai | **Picked Oct 11** |
+| Sōta | **Leda, +2 semitones** | 7-year-old boy | **Picked Oct 11** |
+| The fairy | **Leda, +4 semitones** | small-girl voice, airy, ancient | **Picked Oct 11** |
 | Emi | Achernar | warm, bubbly mother | OK (author, Oct 8) |
 | Takatsuki | Fenrir | **precise, reserved, dry** (was "curt, abrasive") | OK (author, Oct 8) |
 | Ōno-sensei | Schedar | tired teacher | **Picked Oct 11** |
@@ -258,7 +258,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Tournament opponent | Zubenelgenubi | cocky, mocking | **Picked Oct 11** |
 
 **Pitch shift:** "+2 semitones" means every generated line is post-processed with `ffmpeg -af "asetrate=24000*1.1225,aresample=24000,atempo=0.8909"` (raises pitch and formants, keeps timing); "+4" uses 1.2599 / 0.7937.
-**Shared voices:** Charon (Kirishima, Kazuo) and Algenib (Genji, the thug) are each used twice. Those pairs rarely share a scene; if they do, add a slight pitch offset to one of them.
+**Shared voices:** Charon (Kirishima, Kazuo) and Algenib (Genji, the thug) are each used twice; Leda is Sōta at +2 and the fairy at +4. Those pairs rarely share a scene; if they do, add a slight pitch offset to one of them.
 
 ## 8. fal workflow notes
 **Uploads:**
