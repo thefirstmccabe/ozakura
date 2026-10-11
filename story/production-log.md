@@ -118,6 +118,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 | Music style test, Oct 11 | $5 (approved) | about $4.30 (8 MiniMax takes, 492 s; 4 ElevenLabs takes, 330 s) | Natsuki (Persona-style), comedy (Muv-Luv feel), memory variations; `production/music/oct11-test/` |
 | Music test round 2, Oct 11 | $5 (approved) | about $5.20: 6 ElevenLabs takes × 80 s ($4.80) + 4 Lyria ($0.40). **About $0.20 over cap**; Claude underestimated the ElevenLabs cost | Natsuki, memory, comedy; ElevenLabs vs Lyria; `production/music/oct11-test2/` |
+| Music cue: Natsuki, Oct 11 | about $2 (approved per cue) | about $1.98: 2 ElevenLabs × 90 s ($1.80, `nanoha` as style reference) + 2 Lyria ($0.20) | `production/music/cue-natsuki/` |
 
 **Cumulative fal spend:** about $74–79. fal's dashboard has the exact figure.
 
