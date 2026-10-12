@@ -149,8 +149,8 @@ def render(spec, panel_dir, out_dir, suffix=''):
             for L in p.get('letters', []):
                 if L['t'] == 'sfx':
                     sfx(page, x0 + L['at'][0] * w, y0 + L['at'][1] * h, L['text'], L.get('size', 120), L.get('angle', -8))
-        out = os.path.join(out_dir, f"page{pg['n']}{suffix}.png")
-        page.convert('RGB').save(out)
+        out = os.path.join(out_dir, f"page{pg['n']}{suffix}.jpg")
+        page.convert('RGB').save(out, quality=92)
         outs.append(out)
     return outs
 
