@@ -534,7 +534,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **With others:** friends with Nanoha; a plausible romantic confidante and helper, and **understands Kōhei's romantic situation much better than he does** (reconfirmed Oct 10). She has her own pleasures, privacy and flaws.
   - **Proposal:** she's quietly but openly Team Nanoha ("Nanoha-chan made you lunch *again*, Onii-chan") while staying kind to Natsuki. Her teasing shows the reader what Kōhei can't see.
 - **She survives** the main story.
-- **Open:** birthday and independent interests.
+- **Birthday:** around May (accepted Oct 12). **Open:** independent interests.
 
 ### Supporting cast
 - **The core five:** Kōhei, his male best friend, Nanoha, her female best friend, and Natsuki. Natsuki belonging to the whole group matters.
@@ -632,7 +632,7 @@ Select and adapt; this is not a checklist.
     - **Proposal:** Natsuki caught the cold soaking herself in the umbrella scene, so the comic scheme leads straight into the sincere scene.
 13b. **Kōhei sick at home; both girls bring food (requested Oct 10).** Classic romcom, and it serves his arc, because he's bad at being cared for.
     - **Proposals:**
-      - **Why he's sick (Decided Oct 12):** he worked double shifts to buy Akane a birthday present. This puts Akane's birthday around May (Proposal; her birthday was Open). It lands before Mom's recovery, so the girls fill a real gap.
+      - **Why he's sick (Decided Oct 12):** he worked double shifts to buy Akane a birthday present. This puts **Akane's birthday around May** (accepted Oct 12). It lands before Mom's recovery, so the girls fill a real gap.
       - **Kitchen comedy:** Nanoha comes in through the kitchen, knows where everything is, and is already making rice porridge. Natsuki arrives with her own (store-bought, or ambitious and slightly burnt) and can't find a bowl. This plays scene bank #3 for laughs.
       - He's fed two porridges in competition and keeps trying to get up for work; Akane referees.
       - **The quiet beat:** he loses the fight to stay up and lets them care for him.
@@ -641,7 +641,7 @@ Select and adapt; this is not a checklist.
 16. **The confession:** Natsuki nearly accepts an unwanted confession just to feel chosen.
 13c. **Dueling lunches (requested Oct 12):** Nanoha has been making Kōhei's school lunch; Natsuki starts bringing him one too, and he ends up with two bentō on his desk.
     - **At home:** Emi teases Nanoha about it (catching her up early making an extra-elaborate one, "Competition, is it?").
-    - **Proposals:** it starts in the summer rivalry, after the umbrella scene, and becomes a running bit. Kōhei eats both rather than choose; Ryōsuke and Rika keep score. Nanoha's lunches are the familiar food he likes; Natsuki's are ambitious and improving week by week.
+    - **Accepted Oct 12:** it starts in the summer rivalry, after the umbrella scene, and becomes a running bit. Kōhei eats both rather than choose; Ryōsuke and Rika keep score. Nanoha's lunches are the familiar food he likes; Natsuki's are ambitious and improving week by week.
 17. **Mundane chores:** shrine chores and meals; Nanoha's grandfather.
 
 **Drama:**
@@ -659,7 +659,7 @@ Select and adapt; this is not a checklist.
 **Climax:**
 24a. **The night before the battle (accepted Oct 10; sharpened Oct 12):** Kōhei and Nanoha sit up together at the open windows, or on the boulder under the tree. They talk about *after*: spring, third year, next summer.
     - **Decided Oct 12:** he tells her "I love you" plainly for the first time and, in effect, asks her to marry him. **That's why they all have to live tomorrow.**
-    - **Proposals:** framed as a promise for after graduation, no ring (or something makeshift), so it reads as two teenagers meaning it rather than an engagement plot. It answers the past life on purpose: that marriage was arranged for an heir; this one is freely chosen, and the rōnin's last word, "Live," becomes their plan for the morning.
+    - **Accepted Oct 12:** framed as a promise for after graduation, no ring (or something makeshift), so it reads as two teenagers meaning it rather than an engagement plot. It answers the past life on purpose: that marriage was arranged for an heir; this one is freely chosen, and the rōnin's last word, "Live," becomes their plan for the morning.
     - They fall asleep leaning on each other, then walk into the fight in the morning. Blue Box restraint: the closeness carries the weight.
 25. **Armor before battle:** Natsuki helps Kōhei into his armor (armor as an heirloom is provisional), knowing how from the past life. An intimate framing widens to reveal Nanoha in the room, annoyed ("You guys, I'm right here"). The joke reveals their feelings without undercutting the danger.
 26. **Pre-battle respect:** Kōhei to the Rival, something like "I'm trusting you with the women I love." The Rival: "And I'm trusting you to let me handle my part, keep your cool, and not fuck it up and die." The wording is Open, and "both of them" is an optional alternative.
@@ -786,3 +786,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **The night before the battle** (scene bank 24a): "I love you" and, in effect, a marriage proposal; that's why they all have to live tomorrow.
   - **Kōhei gets sick** (13b) from double shifts to buy Akane's birthday present; he works full time or close to it during school breaks (§8).
   - **Dueling lunches** (13c), with Emi teasing Nanoha.
+  - Claude's staging proposals for 24a and 13c accepted; Akane's birthday is around May.
