@@ -113,6 +113,9 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-11 | **Natsuki cue, take 1:** the ElevenLabs takes were his favorites but sounded too much like Nanoha's theme (the medium-strength `nanoha` reference). **Lyria dropped; ElevenLabs only.** Next: lighter or no reference and distinct lead instruments per character. |
 | 10-11 (eve) | **Music approach paused and rethought.** The author doesn't want to spend weeks on music and will likely accept almost all of the original pilot tracks. Next: he works out in the Story thread exactly what the first few chapters need, then this Music thread finishes up (extend, loop, level, plus any must-have new cues). Hiring a human composer later stays an option. The Oct 11 music plan (style guide §7) and the test rounds are kept for reference, not in force. |
 | 10-12 | **Video tests 2, 10 s, locked designs** (`production/cutscene-test/oct12/`, ~$3.40). **Action (rōnin vs. beast):** Kling v3 Pro gives real choreography, with one spatial jump at ~7.6 s; H3 Max manages one slash, then a long static bind, and added a blood streak. Action shots look viable on Kling with 2–3 takes. **Cut (Kling multi-shot, wide → close-up):** the cut works and Natsuki is recognizable, but the close-up drifts: longer hair, a softer generic anime look and an invented ear stud. **Method:** build each shot from its own approved start frame, not in-generation cuts. Awaiting the author's verdict. |
+| 10-12 | **Author's verdict on tests 2:** the animation is "pretty far from commercial quality"; manga is much closer. **Approved two follow-up tests** (Claude's proposal): (A) an anime-structure fight and (B) the jigeiko insert in color and B&W. |
+| 10-12 | **Test A: anime-structure fight** (`production/cutscene-test/oct12b/`; `fight_kling_12fps.mp4`, `fight_veo_12fps.mp4`; script `production/pipeline/anime/build_fight.py`). 8 cuts in about 14 s: key poses drawn as stills (NB Pro), only the in-betweens generated (start + end frame), three limited cuts made in ffmpeg (push, impact hold with flash and shake, pan), retimed to anime pacing at 12 fps. **Claude's read:** clearly better than one long take. Short cuts hide drift, and start + end frames keep each shot on model. **Kling v3 Pro ≈ Veo 3.1:** Veo adds cel-style fog that clashes with the painted backgrounds and did leap-land-leap in C4; Kling is closer to the stills at about a quarter of the price. **The weak link is now the key stills:** C5 (impact) and C6 drift in rendering style, lighting and location props (stone lantern vs. jizō), and C5 gave the rōnin bandaged forearms. Fix: one style anchor and one location plate for every key in a sequence. **Error caught:** several first-pass stills drew a plain wolf face; redone with `turnarounds/beast.png` as a reference (the canon mask). Awaiting the author's verdict. |
+| 10-12 | **Test B: jigeiko insert, 2 pages** (`production/cutscene-test/oct12b/`: `insert-script.md`, `insert-spec.json`, `pages/`). Every panel in color and as a B&W redraw of the same panel, so only the treatment differs. Lettering is set in code by the rebuilt compositor (`production/pipeline/manga/compose.py`, fonts in `fonts/`). Two color panels first drew the fighters with bare faces and baked-in text; redone with men helmets. Panel-by-panel reveal inside the VN not built yet. Awaiting the color vs. B&W verdict. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -125,12 +128,14 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Voice auditions (Oct 10) | approved with the scope (author: audition all unapproved voices) | about $0.55 | Gemini 3.8 Flash TTS, 71 takes |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
 | Cutscene tests 2, Oct 12 | same $10 cap | about $3.40 | 2 start frames (NB Pro 2K), 2 × 10 s action, 1 × 10 s Kling multi-shot |
+| Fight test (A), Oct 12 | $10–15 (approved) | about $12.50: ~16 NB Pro 2K key stills (~$2.40), 5 × 3 s Kling v3 Pro ($2.10), 5 × 4 s Veo 3.1 (~$8 at $0.40/s; may be less with audio off) | `production/cutscene-test/oct12b/` |
+| Jigeiko insert test (B), Oct 12 | about $5 (approved) | about $3: ~20 NB Pro 2K (9 color panels, 2 redos, 9 B&W) | same folder |
 | Music style test, Oct 11 | $5 (approved) | about $4.30 (8 MiniMax takes, 492 s; 4 ElevenLabs takes, 330 s) | Natsuki (Persona-style), comedy (Muv-Luv feel), memory variations; `production/music/oct11-test/` |
 | Music test round 2, Oct 11 | $5 (approved) | about $5.20: 6 ElevenLabs takes × 80 s ($4.80) + 4 Lyria ($0.40). **About $0.20 over cap**; Claude underestimated the ElevenLabs cost | Natsuki, memory, comedy; ElevenLabs vs Lyria; `production/music/oct11-test2/` |
 | Music cue: Natsuki, Oct 11 | about $2 (approved per cue) | about $1.98: 2 ElevenLabs × 90 s ($1.80, `nanoha` as style reference) + 2 Lyria ($0.20) | `production/music/cue-natsuki/` |
 | Music cue: Natsuki take 2, Oct 11 | $1.80 (approved) | $1.80: 2 ElevenLabs × 90 s (guitar + violin lead; one with a light `title` reference) | same folder, takes E and F |
 
-**Cumulative fal spend:** about $74–79. fal's dashboard has the exact figure.
+**Cumulative fal spend:** about $90–95. fal's dashboard has the exact figure.
 
 ## 4. Known issues
 **Manga Vol. 1, worst first:**
@@ -147,7 +152,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 
 ## 5. Infrastructure risks
 - **Storage:** text canon lives in the Project; every file lives in the repo. Its `CLAUDE.md` holds the working rules.
-- **The Vol. 1 manga pipeline code is lost.** Rebuild it in `production/pipeline/` and commit as you go.
+- **The Vol. 1 manga pipeline code is lost.** The page compositor was rebuilt Oct 12 (`production/pipeline/manga/`); Vol. 1's own page layouts and lettering were not recovered. Commit pipeline code as you go.
 - **The repo is public, story included** (author's call, Oct 10). Never commit credentials or anything personal.
 - **Archived bible:** the Oct 1 snapshot is still in the Project and could confuse a search. It's marked archived in the project instructions; delete it if the author prefers.
 - **Parallel threads:** Project writes replace the whole doc, so two threads can overwrite each other. Edit through the repo copy (`story/`), which has history, and fetch before editing.
@@ -184,6 +189,8 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
     - **Tests 2, done Oct 12** (`production/cutscene-test/oct12/`; decision log 10-12):
       - **Fast action:** viable on Kling with 2–3 takes per shot, so animation can replace some manga action pages.
       - **Two-shot cut:** in-generation cuts drift in close-ups. Give each shot its own approved start frame (a CG or close-up still), then edit the shots together.
+    - **Tests 3, done Oct 12** (`production/cutscene-test/oct12b/`; decision log 10-12): the anime-structure fight (start + end key poses, 1–2 s cuts, 12 fps, limited cuts in ffmpeg) works better than long takes; Kling v3 Pro is the default in-betweener. Next lever: style and location consistency across the key stills of one sequence.
+  - **Manga pipeline rebuilt (Oct 12):** `production/pipeline/manga/compose.py` lays out pages from a JSON spec and letters them in code (balloons, narration, SFX), in color or B&W from the same spec.
 
 **After that:**
 - **One revision pass on the pilot.** That covers:
