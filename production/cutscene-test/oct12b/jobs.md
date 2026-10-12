@@ -28,3 +28,12 @@ Script: `insert-script.md`. The B&W versions will be made as edits of each color
 | p2-2 Natsuki laughing behind the grille | 01a13273-e9a0-7b02-a1c9-2de1c7368629 | 4:3 |
 | p2-3 Kōhei's unorthodox dō | 01a13273-e9ab-7720-8200-65d678183b3e | 16:9 |
 | p2-4 the bow | 01a13274-10bf-74e3-9457-eb73800752b0 | 21:9 |
+
+## Generated in-betweens (raw clips, not committed; fal URLs may expire)
+| Cut | Kling v3 Pro (3 s) | Veo 3.1 (4 s) |
+|---|---|---|
+| C2 | https://v3b.fal.media/files/b/0aae24e7/y3n87v59bWWRo0RfQky5X_output.mp4 | https://v3b.fal.media/files/b/0aae24c1/XIeW92cz_64WN3-2u3UnC_eb1f4341c59040e8a257e72b1e15f799.mp4 |
+| C3 | https://v3b.fal.media/files/b/0aae24c5/cTa4wRpa-IdG6BDEX9p1J_output.mp4 | https://v3b.fal.media/files/b/0aae24c1/f6rV9isuzuEFuUBSSbu0b_446929b5613749e6a1c67fb9eec40663.mp4 |
+| C4 | https://v3b.fal.media/files/b/0aae250d/8XgGIrzgcG3kPJaIwV_Jt_output.mp4 | https://v3b.fal.media/files/b/0aae24c1/C3VDplBnht4ghKUcDUa47_bcd1024726ce4d78bfb28240eae5a20e.mp4 |
+| C6 | https://v3b.fal.media/files/b/0aae24c5/Uxh5_OnQUbvg25C4DLsNw_output.mp4 | https://v3b.fal.media/files/b/0aae24c1/yKEPnwQIwxsrGwVcwmE-v_458525a71b274372bb41bd44c63738f0.mp4 |
+| C7 | https://v3b.fal.media/files/b/0aae2514/rW4UTU0U0iNZuU3tkfKB7_output.mp4 | https://v3b.fal.media/files/b/0aae24c1/xk1ZHKeZwv6TEfojSAbHo_f5d89635f3e0431bb735f8dd41d374a1.mp4 |
