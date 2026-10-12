@@ -4,7 +4,7 @@
 
 **Status:** first draft, Oct 12. Everything here is a **Proposal** (Claude) until the author approves it, except beats canon already decides. Chapter titles are working titles.
 
-**Shape:** a ~40-chapter spine on canon's working allocation (Oct 7): 17 chapters April–August, 5 for the fight and September, 7 for October–December, 10 for January–March, 1 for the aftermath, plus the epilogue. Expandable daily-life chapters can be added later, first in the April–August stretch.
+**Shape:** a ~40-chapter spine on canon's working allocation (Oct 7): 17 chapters April–August, 5 for the fight and September, 7 for October–December, 10 for January–March, 1 for the aftermath, plus the epilogue. Expandable daily-life chapters can be added later, first in the April–August stretch. **Decided Oct 12:** the 40-chapter spine; chapters run about 4,000–5,000 words where they cover a week or more (roughly 12–15 hours in all); slice-of-life and extra development added as needed.
 
 **Running threads** (not repeated in every row):
 - **Fairy (canon §8):** April–August, a drifting light about once a month that only Nanoha notices, plus small things moved in her room. Autumn, a half-form at the edge of her vision. New Year, full and speaking. January–March, visible to the whole group.

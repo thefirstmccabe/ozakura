@@ -156,7 +156,8 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 **Available set pieces:** school trip, summer festival, beach, cultural festival, Christmas, New Year, Valentine's, graduation. The school trip's destination and date are Open; Kanagawa schools have documented trips to Okinawa and Kansai.
 
 ### Length and pacing
-- **Total length: Open (parked Oct 6).**
+- **Total length (Decided Oct 12):** a 40-chapter spine (`chapter-map.md`). Chapter length floats, about 4,000–5,000 words where a chapter covers a week or more, for roughly 12–15 hours of reading. Slice-of-life chapters and extra development get added as needed. Minor characters stay light; that's fine.
+- **Earlier discussion (Oct 6):**
   - **Option under discussion:** a fixed spine of about 40 chapters (~120k words, ~10 hours), plus an expandable layer of standalone daily-life chapters.
   - **Growth path:** the spine could grow toward Muv-Luv Extra scale (55–60+ chapters). The author likes that length but considers it ambitious for a first run.
 - **Working, Oct 7:** about 40% of chapters go to the April–August romcom first half. Expandable daily-life chapters go there first.
@@ -793,3 +794,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Dueling lunches** (13c), with Emi teasing Nanoha.
   - Claude's staging proposals for 24a and 13c accepted; Akane's birthday is around May.
   - **Hiding in Akane's room** (scene bank 13d).
+  - **Length decided:** 40-chapter spine, chapters float to ~4,000–5,000 words, slice-of-life added as needed (§4).
