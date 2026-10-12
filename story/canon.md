@@ -642,6 +642,11 @@ Select and adapt; this is not a checklist.
 13c. **Dueling lunches (requested Oct 12):** Nanoha has been making Kōhei's school lunch; Natsuki starts bringing him one too, and he ends up with two bentō on his desk.
     - **At home:** Emi teases Nanoha about it (catching her up early making an extra-elaborate one, "Competition, is it?").
     - **Accepted Oct 12:** it starts in the summer rivalry, after the umbrella scene, and becomes a running bit. Kōhei eats both rather than choose; Ryōsuke and Rika keep score. Nanoha's lunches are the familiar food he likes; Natsuki's are ambitious and improving week by week.
+13d. **Hiding in Akane's room (accepted Oct 12):** late July or early August, on one of Kōhei's rare days off in summer break, after the pact.
+    - Natsuki drops off festival photos Akane asked for, so she's technically Akane's guest. Nanoha walks in through the kitchen without knocking, carrying food. Natsuki panics (alone at his house feels like breaking "fair"), and Akane pulls her into her room.
+    - Among the plushies: "Just so you know, I'm Team Nanoha-chan." / "…Then why are you hiding me?" / "Because I like you too. And this is the most interesting thing that's happened in this house all year." / "You're *my* guest. Why are *we* hiding?" / "…I panicked."
+    - **Payoff:** Natsuki's sandals were by the front door the whole time. Nanoha saw them, said nothing, and left three portions instead of two with a note: "for your guest."
+    - The reverse (Kōhei hiding at Natsuki's) is not used: her apartment is where the kiss happens, and hiding from Nanoha would make him look two-timing.
 17. **Mundane chores:** shrine chores and meals; Nanoha's grandfather.
 
 **Drama:**
@@ -787,3 +792,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Kōhei gets sick** (13b) from double shifts to buy Akane's birthday present; he works full time or close to it during school breaks (§8).
   - **Dueling lunches** (13c), with Emi teasing Nanoha.
   - Claude's staging proposals for 24a and 13c accepted; Akane's birthday is around May.
+  - **Hiding in Akane's room** (scene bank 13d).

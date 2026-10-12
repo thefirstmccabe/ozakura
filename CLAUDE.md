@@ -5,11 +5,12 @@ This repo is the durable store for everything Ōzakura: game build, art, audio, 
 The repo is **public**, and GitHub Pages serves it at https://thefirstmccabe.github.io/ozakura/. The author decided on Oct 10 that the story docs can be public too. Still never commit credentials or anything personal.
 
 ## Story docs: `story/` (mirrored to the claude.ai Project)
-The four living docs exist in two places: `story/` here (with git history) and the claude.ai Project "visual novel" under `ozakura/` (where the author reads them).
+The living docs exist in two places: `story/` here (with git history) and the claude.ai Project "visual novel" under `ozakura/` (where the author reads them).
 - `story/canon.md` — the single story bible. It governs over everything else in this repo.
 - `story/pilot-notes.md` — the shipped pilot's inventions and the agreed fix list.
 - `story/style-guide.md` — designs, references, prompts, lettering, voices.
 - `story/production-log.md` — decisions, budget, issues, next steps.
+- `story/chapter-map.md` — the chapter-by-chapter plan (Oct 12). Canon governs it.
 
 **How to edit them (every thread):**
 1. `git fetch origin main` and rebase, so you start from the latest commit.
