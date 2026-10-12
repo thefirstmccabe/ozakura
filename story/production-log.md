@@ -110,6 +110,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-11 | **Music plan approved** (style guide §7): piano-led house sound with strings; a color per story area; Steins;Gate's "Gate of Steiner" as the reference for sad cues and its electronic textures for strangeness and danger; no lyrics under voiced scenes; approved tracks as style references; one cue at a time, about $2 each. Lyria takes alongside ElevenLabs for now. |
 | 10-11 | **Natsuki cue, take 1:** the ElevenLabs takes were his favorites but sounded too much like Nanoha's theme (the medium-strength `nanoha` reference). **Lyria dropped; ElevenLabs only.** Next: lighter or no reference and distinct lead instruments per character. |
 | 10-11 (eve) | **Music approach paused and rethought.** The author doesn't want to spend weeks on music and will likely accept almost all of the original pilot tracks. Next: he works out in the Story thread exactly what the first few chapters need, then this Music thread finishes up (extend, loop, level, plus any must-have new cues). Hiring a human composer later stays an option. The Oct 11 music plan (style guide §7) and the test rounds are kept for reference, not in force. |
+| 10-12 | **Video tests 2, 10 s, locked designs** (`production/cutscene-test/oct12/`, ~$3.40). **Action (rōnin vs. beast):** Kling v3 Pro gives real choreography, with one spatial jump at ~7.6 s; H3 Max manages one slash, then a long static bind, and added a blood streak. Action shots look viable on Kling with 2–3 takes. **Cut (Kling multi-shot, wide → close-up):** the cut works and Natsuki is recognizable, but the close-up drifts: longer hair, a softer generic anime look and an invented ear stud. **Method:** build each shot from its own approved start frame, not in-generation cuts. Awaiting the author's verdict. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
@@ -121,6 +122,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | Visual inventory (Oct 10) | $20 | about $9 (≈90 images, NB2 1K/2K and NB Pro 2K, incl. review fixes; failed jobs uncharged) | see decision log and style guide §1b |
 | Voice auditions (Oct 10) | approved with the scope (author: audition all unapproved voices) | about $0.55 | Gemini 3.8 Flash TTS, 71 takes |
 | Cutscene test, Oct 10 | $10 (approved) | about $1.36 | 2 × 8 s clips (H3 Max 768P, Kling v3 Pro) |
+| Cutscene tests 2, Oct 12 | same $10 cap | about $3.40 | 2 start frames (NB Pro 2K), 2 × 10 s action, 1 × 10 s Kling multi-shot |
 | Music style test, Oct 11 | $5 (approved) | about $4.30 (8 MiniMax takes, 492 s; 4 ElevenLabs takes, 330 s) | Natsuki (Persona-style), comedy (Muv-Luv feel), memory variations; `production/music/oct11-test/` |
 | Music test round 2, Oct 11 | $5 (approved) | about $5.20: 6 ElevenLabs takes × 80 s ($4.80) + 4 Lyria ($0.40). **About $0.20 over cap**; Claude underestimated the ElevenLabs cost | Natsuki, memory, comedy; ElevenLabs vs Lyria; `production/music/oct11-test2/` |
 | Music cue: Natsuki, Oct 11 | about $2 (approved per cue) | about $1.98: 2 ElevenLabs × 90 s ($1.80, `nanoha` as style reference) + 2 Lyria ($0.20) | `production/music/cue-natsuki/` |
@@ -177,7 +179,9 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
       - **No video before the design lock.** The test already shows superseded designs.
       - **Use motion as punctuation,** so the static scenes don't feel dead.
       - **Review time is now the bottleneck,** not cost.
-    - **Next tests, after the design lock:** a fast-action shot (could animation replace some manga action pages?) and a two-shot cut for identity continuity.
+    - **Tests 2, done Oct 12** (`production/cutscene-test/oct12/`; decision log 10-12):
+      - **Fast action:** viable on Kling with 2–3 takes per shot, so animation can replace some manga action pages.
+      - **Two-shot cut:** in-generation cuts drift in close-ups. Give each shot its own approved start frame (a CG or close-up still), then edit the shots together.
 
 **After that:**
 - **One revision pass on the pilot.** That covers:
