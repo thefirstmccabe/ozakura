@@ -74,7 +74,8 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **Inserts are full color** (Decided Oct 10; reconfirmed Oct 12 after a side-by-side B&W test), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone.
   - **Experiment (Oct 12): a B&W storyboard (a manga "name")** for the author to approve before finished art, to cut his review time. Not a required step; the original Vol. 1 worked without one (style guide §4a).
   - **Proposal:** past-life scenes get a distinct treatment *within* color (a desaturated or warm-faded palette, softer edges) to mark the era at a glance. To decide when the first flashback is made.
-  - **No animation (Decided Oct 12).** The Oct 10 three-tier video plan (living stills, animated beats, cutscenes plus an opening movie) is dropped: after two rounds of tests, getting to commercial quality would cost too much in takes and review time. Pivotal moments use CGs and manga inserts instead.
+  - **No animated beats or cutscenes (Decided Oct 12).** After two rounds of tests, getting them to commercial quality would cost too much in takes and review time; pivotal moments use CGs and manga inserts instead.
+  - **Living stills stay (Decided Oct 12):** subtle 2–4 s loops on CGs (hair, petals, breathing, water). Motion is punctuation, not the default.
 - **The feel:** a Japanese manga translated into English. Aim for manga plausibility rather than exhaustive realism.
 - **Language:**
   - Keep honorifics and meaningful forms of address in natural English: -san, -kun, -chan, senpai, and sibling terms like onii-chan.
@@ -792,5 +793,5 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - Claude's staging proposals for 24a and 13c accepted; Akane's birthday is around May.
   - **Hiding in Akane's room** (scene bank 13d).
   - **Length decided:** 40-chapter spine, chapters float to ~4,000–5,000 words, slice-of-life added as needed (§4).
-  - **Animation dropped** (§2): the three-tier video plan is retired; pivotal moments use CGs and manga inserts.
+  - **Animated beats and cutscenes dropped** (§2); pivotal moments use CGs and manga inserts. **Living stills on CGs stay.**
   - **Inserts stay full color** (reconfirmed after the B&W comparison), and **a B&W storyboard ("name") step is being tried as an experiment** (§2).
