@@ -20,10 +20,10 @@
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
 | 1 | Mon Apr 7 | The House Next Door | Pilot Ch1, revised per the fix list: morning routine, river walk, Natsuki's arrival (physical reaction only), lunch, the trash walk. | Nanoha interlude. |
-| 2 | Apr 8–9 | Kendo | Pilot Ch2, revised: first practice, casual sparring, the catch and the tear, the bridge invitation. | Natsuki's texts to Chie and her interlude. |
+| 2 | Apr 8–9 | Kendo | Pilot Ch2, revised: first practice; **Natsuki explains kendo to Rika in teacher mode** (13f) before the practice match; casual sparring, the catch and the tear, the bridge invitation. | Natsuki's texts to Chie and her interlude. |
 | 3 | Apr 10–12 | Windows | Pilot Ch3 without Yuzu: Akane's dizzy spell, the window talk (new layout), Saturday practice, the Great Cherry (a fragment only), "…You came back," tea at the shrine, lunch at the Tachibanas'. | Fairy light. |
 | 4 | Mid-April | The Light at the Shrine | **FB1: the fairy leaves** (triggered by "You came back"). Natsuki's first visit to the Fujisawa house for group study: she notices Nanoha knows where his cups go (scene bank 3). Friends find out they aren't dating; his quick denial stings (15). | Takatsuki: "That shouldn't have worked." |
-| 5 | Late April–Golden Week | Golden Week | Kōhei works most of the holiday. On his one day off the five go to the coast; Natsuki plans it and then waits to be invited. A too-intense practice (first anger warning sign). | Introduce Kazuo's backyard training with Kōhei. |
+| 5 | Late April–Golden Week | Golden Week | Kōhei works most of the holiday. On his one day off the five go into the city; Natsuki plans it and then waits to be invited. A too-intense practice (first anger warning sign). | Introduce Kazuo's backyard training with Kōhei. |
 | 6 | May | Double Shifts | Kōhei works double shifts for Akane's birthday present, gives it, then collapses sick: both girls bring porridge, Akane referees, he loses the fight to stay up (13b). **FB4: Akane's first hospital scare.** | Mom still behind the fusuma. |
 | 7 | May | Usagi-san's Lawyer | Natsuki in Nanoha's room: plushie time-out (1) and the plushie lawyer (2). **FB2: Usagi-san.** A plushie has moved on its own; Nanoha blames Kōhei. | Fairy displacement. |
 | 8 | Late May–June | Point to Shiina | Yuzu's introduction at Hoshino Kitchen (the pilot scene, moved); Kōhei trains her; Nanoha and Natsuki briefly united in annoyance. Natsuki nearly accepts an unwanted confession (16). | |
@@ -39,7 +39,7 @@
 | 13 | Late July | Summer Break | Kōhei on near-full-time shifts. Cat nightmare (4). The manga misunderstanding across the open windows (5). | Fairy light. |
 | 14 | Early August | Summer Festival | Yukata, stalls, fireworks; the girls' rivalry at full tilt; Natsuki photographs everything. | Seasonal outfits. |
 | 15 | August | Team Nanoha | Hiding in Akane's room (13d): the festival photos, the kitchen door, the plushies, "for your guest." | |
-| 16 | August | Beach | Beach day and the beach reassurance (14). Natsuki's horror movie with Nanoha, then Nanoha keeps Kōhei up talking across the windows (11). | |
+| 16 | August | Watermelon | Backyard watermelon at the Tachibanas' (13e); the reassurance scene (14) if it stays (setting Open). Natsuki's horror movie with Nanoha, then Nanoha keeps Kōhei up talking across the windows (11). | |
 | 17 | Mid-August | Proof I Was There | Natsuki's walks lead to an old memorial (12; whose is Open). A girl finds Kōhei asleep and helps (9). Fragments for both. | Late-summer quiet before the fight. |
 
 ## Part 3 — The fight and September (late August–September)

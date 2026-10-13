@@ -140,7 +140,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 
 | When | Beats |
 |---|---|
-| Apr–Aug | Natsuki arrives. Slow burn and fragments; Nanoha's jealousy; anger warning signs. Rainy-season umbrella scene and the girls' pact (June–July, working). Summer festival, beach, horror movie. |
+| Apr–Aug | Natsuki arrives. Slow burn and fragments; Nanoha's jealousy; anger warning signs. Rainy-season umbrella scene and the girls' pact (June–July, working). Summer festival, backyard watermelon, horror movie. |
 | **Late Aug** (end of summer break) | Karaoke, street fight, wound care, the kiss. |
 | **Within about a week** | Natsuki tells Nanoha. Kōhei owns his half. The fallout runs into September: the mentor arc with Nanoha's father begins, the flashback to Dad's death, and Emi's confrontation that starts Mom's recovery. |
 | **Oct** | Kōhei and Nanoha start dating. **Proposal:** the cultural festival hosts it. |
@@ -151,7 +151,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 | Mar–Apr | Aftermath, graduation, the ordinary spring bloom. The main story ends. |
 | Much later | Epilogue: Natsuki, old, at the tree. |
 
-**Available set pieces:** school trip, summer festival, beach, cultural festival, Christmas, New Year, Valentine's, graduation. The school trip's destination and date are Open; Kanagawa schools have documented trips to Okinawa and Kansai.
+**Available set pieces:** school trip, summer festival, backyard watermelon (replaces the beach, Oct 12), cultural festival, Christmas, New Year, Valentine's, graduation. The school trip's destination and date are Open; Kanagawa schools have documented trips to Okinawa and Kansai.
 
 ### Length and pacing
 - **Total length (Decided Oct 12):** a 40-chapter spine (`chapter-map.md`). Chapter length floats, about 4,000–5,000 words where a chapter covers a week or more, for roughly 12–15 hours of reading. Slice-of-life chapters and extra development get added as needed. Minor characters stay light; that's fine.
@@ -227,7 +227,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - The two girls come to recognize that they're both into him, and talk about it openly. They agree, at least tacitly, to compete fairly.
   - **This is part of why the kiss is a betrayal:** it breaks their agreement.
   - **Working placement (Oct 10):** the umbrella scene (June) is where both realize it. The pact itself happens when **Nanoha brings food to a sick Natsuki** (scene bank 13a).
-- **Proposal:** the romcom rivalry runs through summer. The festival, the beach and outings get a competitive edge, and the girls' friendship stays sincere.
+- **Proposal:** the romcom rivalry runs through summer. The festival, the backyard watermelon and outings get a competitive edge, and the girls' friendship stays sincere.
 - **The triangle isn't symmetrical.** Natsuki loves him. His affection, attraction and confusion toward her do not amount to equivalent present romantic love. Later, the memories can disturb him without reopening a girlfriend competition.
 
 ### Anger: warning signs
@@ -538,7 +538,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 ### Supporting cast
 - **The core five:** Kōhei, his male best friend, Nanoha, her female best friend, and Natsuki. Natsuki belonging to the whole group matters.
 - **Kōhei's best friend:** the glasses-wearing wise friend. **Proposals, not fixed traits:** selective wisdom, dry humor, comic investment in trivia, avoiding personal embarrassment.
-  - **Function:** confidant and comedy, plus the beach reassurance scene.
+  - **Function:** confidant and comedy, plus the reassurance scene (14; its setting is Open now that the beach is cut).
   - **Kept alongside the Rival** (Oct 7); their jobs differ, and merging them would overload one character.
 - **Nanoha's best friend:** close to Nanoha independently, and welcomes Natsuki. Cheerful creative enthusiasm is the pilot's version.
 - **The Rival (Takatsuki in the pilot; redesigned Oct 7):**
@@ -635,7 +635,7 @@ Select and adapt; this is not a checklist.
       - **Kitchen comedy:** Nanoha comes in through the kitchen, knows where everything is, and is already making rice porridge. Natsuki arrives with her own (store-bought, or ambitious and slightly burnt) and can't find a bowl. This plays scene bank #3 for laughs.
       - He's fed two porridges in competition and keeps trying to get up for work; Akane referees.
       - **The quiet beat:** he loses the fight to stay up and lets them care for him.
-14. **Beach reassurance:** Nanoha hesitates to take off her cover-up, self-conscious about her small bust next to Natsuki. With Kōhei absent, his wise friend says something like, "I'm just talking to myself here, but [Kōhei] told me he doesn't care about that. He just wants a girl who loves him back." She's mortified and thanks him. **Rule:** her feelings carry the scene, with no visual scrutiny of bodies; non-explicit.
+14. **Reassurance (was the beach; Open since Oct 12):** the beach is cut, so this either moves to another summer setting or goes. As written: Nanoha hesitates to take off her cover-up, self-conscious about her small bust next to Natsuki. With Kōhei absent, his wise friend says something like, "I'm just talking to myself here, but [Kōhei] told me he doesn't care about that. He just wants a girl who loves him back." She's mortified and thanks him. **Rule:** her feelings carry the scene, with no visual scrutiny of bodies; non-explicit.
 15. **Friends find out they're not dating:** his quick denial hurts Nanoha.
 16. **The confession:** Natsuki nearly accepts an unwanted confession just to feel chosen.
 13c. **Dueling lunches (requested Oct 12):** Nanoha has been making Kōhei's school lunch; Natsuki starts bringing him one too, and he ends up with two bentō on his desk.
@@ -646,6 +646,10 @@ Select and adapt; this is not a checklist.
     - Among the plushies: "Just so you know, I'm Team Nanoha-chan." / "…Then why are you hiding me?" / "Because I like you too. And this is the most interesting thing that's happened in this house all year." / "You're *my* guest. Why are *we* hiding?" / "…I panicked."
     - **Payoff:** Natsuki's sandals were by the front door the whole time. Nanoha saw them, said nothing, and left three portions instead of two with a note: "for your guest."
     - The reverse (Kōhei hiding at Natsuki's) is not used: her apartment is where the kiss happens, and hiding from Nanoha would make him look two-timing.
+13e. **Backyard watermelon (Decided Oct 12; replaces the beach day):** summer, a backyard (the Tachibanas' is the natural one), watermelon, probably a round of suikawari (blindfolded watermelon splitting). Rivalry and friends, no swimsuits.
+13f. **Kendo explained (Decided Oct 12):** Natsuki explains kendo to Rika, and it's openly exposition: Natsuki goes into full teacher mode (Proposal: borrowed glasses, a shinai as a pointer, a whiteboard) and walks through the rules, the targets, the calls and how a point is scored. It's for the reader, and the scene knows it.
+    - **Placement (Proposal):** Ch2, before the first practice match, with Rika visiting the dojo to sketch for art club, so Kōhei and the others demonstrate in the background.
+    - **Terms in both languages:** match calls and kendo terms appear in Japanese with English (style guide §5).
 17. **Mundane chores:** shrine chores and meals; Nanoha's grandfather.
 
 **Drama:**
@@ -795,3 +799,5 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Length decided:** 40-chapter spine, chapters float to ~4,000–5,000 words, slice-of-life added as needed (§4).
   - **Cutscenes and longer animation dropped** (§2); pivotal moments use CGs and manga inserts. **Living stills on CGs and a few very short animated moments (e.g. the fall and catch) stay.**
   - **Inserts stay full color** (reconfirmed after the B&W comparison), with no storyboard step: Claude self-reviews and presents only finished pages (§2).
+  - **The beach is cut;** a backyard watermelon day replaces it (13e). Where the reassurance scene (14) goes is Open.
+  - **Kendo explained** (13f): Natsuki teaches Rika the rules, openly as exposition; kendo calls and terms appear in Japanese and English.

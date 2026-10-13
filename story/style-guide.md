@@ -209,6 +209,8 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 
 **QA:** an overlap-detection pass plus a gridded proof sheet (`adjust.json`).
 
+**Kendo terms (Oct 12):** the author doesn't know kendo vocabulary, so every kendo call and term appears in Japanese with English. In VN text: the Japanese in the line, the English right after it in a smaller or paler span on first use in a scene (for example, "Men! (Head!)", "Kote ari! (Point: wrist!)", "Hajime! (Begin!)", "Yame! (Stop!)", "Shōbu ari! (Match decided!)"). Natsuki's explainer scene (canon 13f) introduces the core set. In manga inserts, the same pairing in a small caption beside the sound.
+
 ## 6. Failure modes and fixes
 - **"Leave blank space for balloons"** makes the model draw literal blank boxes. Ask instead for "generous open background (wall, sky, trees or soft tone) above and beside the heads; keep faces out of the top fifth," or name the regions to keep simple, then crop.
 - **Heads cropped at the top edge:** add "a natural cinematic composition with some background visible around the characters (do not crop heads at the top edge); the illustration must still fill the whole canvas with no blank bands."

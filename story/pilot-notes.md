@@ -58,6 +58,8 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 
 19. **[Fix] Re-cast Nanoha and Akane.** Both sound like much older women. The author will choose from an audition sheet of younger-sounding candidates; spend approval is pending. Kōhei and Natsuki are fine. **Oct 8:** Emi's and Takatsuki's voices are approved too; the rest haven't been reviewed yet. Kirishima needs a male voice (fix 28).
 
+32. **[Fix] Kendo explainer and bilingual terms (Oct 12):** add Natsuki explaining kendo to Rika in Ch2, before the practice match (canon 13f), and show every kendo call and term in Japanese with English (style guide §5).
+
 ### 1b. Author playthrough feedback, Oct 8 (Prologue–Ch3)
 **Agreed (new fixes):**
 
