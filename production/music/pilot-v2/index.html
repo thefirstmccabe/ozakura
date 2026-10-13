@@ -49,7 +49,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 <div class="wrap">
   <header>
     <h1>Ōzakura Pilot Soundtrack</h1>
-    <p class="lead">Every track for the new pilot (Prologue and Ch1–4), with the scenes each one plays in. The kept tracks are reference only. Mark the Natsuki options, then tap <strong>Copy results</strong> and paste them into the chat.</p>
+    <p class="lead">Every track for the new pilot (Prologue and Ch1–4), with the scenes each one plays in. The kept tracks are reference only. Mark the practice and childhood takes, then tap <strong>Copy results</strong> and paste them into the chat.</p>
   </header>
   <div class="status" id="status">Answers save on this device.</div>
   <button class="copy" id="copy">Copy results</button>
@@ -57,18 +57,22 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 </div>
 <script>
 const GROUPS=[
- {title:"Natsuki's theme · decide",note:"Pick one: keep the pilot track, or adopt one of the Oct 11 takes. Mark Yes, Maybe or No on each.",
-  scenes:["1.4 Her introduction to the class (a beat of silence at the hitch).","2.6 The bridge at dusk, the invitation.","Later: her entrances, banter and challenges with Kōhei, station walks, photography outings."],takes:[
-  {id:"nat-pilot",label:"Pilot track",d:"The current natsuki (ElevenLabs, 2:00).",src:"../../../audio/bgm/natsuki.mp3"},
-  {id:"nat-A",label:"Oct 11 · A",d:"ElevenLabs, piano-led. You liked it, but it leans toward Nanoha's sound.",src:"../cue-natsuki/a/el-A.mp3"},
-  {id:"nat-B",label:"Oct 11 · B",d:"ElevenLabs, piano-led, brushed drums. Same lean as A.",src:"../cue-natsuki/a/el-B.mp3"},
-  {id:"nat-E",label:"Oct 11 · E",d:"ElevenLabs, acoustic guitar and violin lead.",src:"../cue-natsuki/a/el-E.mp3"},
-  {id:"nat-F",label:"Oct 11 · F",d:"ElevenLabs, violin lead, light title-theme flavor.",src:"../cue-natsuki/a/el-F.mp3"}]},
- {title:"Practice · new (replaces kendo)",note:"New takes come after you approve the spend. The old kendo track is here only as a reminder of what's being replaced.",
+ {title:"Practice · new (replaces kendo)",note:"Focused and disciplined with a quiet competitive spark: strings, piano, acoustic guitar, light drums. No taiko or rock guitar, unlike the old track.",
   scenes:["2.2–2.3 First practice, Natsuki's kendo explainer for Rika, the practice match.","3.4 Saturday practice, casual sparring.","4.4 Practice with Takatsuki: \"That shouldn't have worked.\""],takes:[
+  {id:"practice-el1",label:"A",d:"ElevenLabs, 90 s. Driving string ostinato, about 112 BPM."},
+  {id:"practice-el2",label:"B",d:"ElevenLabs, 90 s. Pizzicato and footwork-like percussion, then a livelier sparring section."},
+  {id:"practice-mm1",label:"C",d:"MiniMax, 28 s (short; would be extended)."},
+  {id:"practice-mm2",label:"D",d:"MiniMax, 40 s (short; would be extended)."},
   {id:"kendo-old",label:"Old kendo (being replaced)",d:"For reference only.",ref:true,src:"../../../audio/bgm/kendo.mp3"}]},
- {title:"Childhood · new",note:"New takes come after you approve the spend. Nostalgic, small and warm, and clearly different from memory (the past life).",
-  scenes:["4.1 FB1: the fairy leaves (Kōhei and Nanoha as kids).","Later: the other shared-past flashbacks (FB2–FB6)."],takes:[]},
+ {title:"Childhood · new",note:"Nostalgic, small and warm: nylon guitar, toy piano or music box, soft strings. No koto, shakuhachi or choir, so it can't blur with memory (compare below).",
+  scenes:["4.1 FB1: the fairy leaves (Kōhei and Nanoha as kids).","Later: the other shared-past flashbacks (FB2–FB6)."],takes:[
+  {id:"childhood-el1",label:"A",d:"ElevenLabs, 90 s. Nylon guitar, toy piano and celesta."},
+  {id:"childhood-el2",label:"B",d:"ElevenLabs, 90 s. Opens on an old music box."},
+  {id:"childhood-mm1",label:"C",d:"MiniMax, 42 s."},
+  {id:"childhood-mm2",label:"D",d:"MiniMax, 61 s. Music-box lullaby."},
+  {id:"mem-compare",label:"memory (past life)",d:"For comparison: childhood must sound clearly different.",ref:true,src:"../../../audio/bgm/memory.mp3"}]},
+ {title:"Natsuki's theme · on hold",note:"All current options were a no (Oct 13). We come back to her after practice and childhood are settled.",
+  scenes:["1.4 Her introduction to the class.","2.6 The bridge at dusk."],takes:[]},
  {title:"Keep · title",note:"Piano ballad with koto and strings. Approved.",
   scenes:["Title screen.","3.8 End of Ch3: the walk home, daily handing over to title.","End of the pilot."],takes:[
   {id:"k-title",label:"title",d:"Will be extended and looped.",ref:true,src:"../../../audio/bgm/title.mp3"}]},
