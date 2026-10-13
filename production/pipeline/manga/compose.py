@@ -1,6 +1,10 @@
 """Ōzakura manga page compositor (rebuilt Oct 12).
 
-Usage: python3 compose.py <spec.json> <panel_dir> <out_dir> [--suffix _bw]
+Usage: python3 compose.py <spec.json> <panel_dir> <out_dir> [--suffix _bw] [--name]
+
+--name renders the storyboard ('name') for approval: per-panel shot notes ('shot'),
+optional stick figures ('figs': [[x, feet_y, height, label], ...] in panel fractions)
+and the real lettering. No art, no cost.
 
 The spec defines pages -> panels (pixel boxes on a 1600x2272 B6 page master) and the
 lettering for each panel in panel-relative coordinates (0..1). Panel art is cover-cropped
@@ -114,7 +118,74 @@ def sfx(page, cx, cy, text, size=120, angle=-8, fill='white'):
     page.alpha_composite(tmp, (int(cx - tmp.width / 2), int(cy - tmp.height / 2)))
 
 
-def render(spec, panel_dir, out_dir, suffix=''):
+def stick(d, x, yf, h, label, lw=4):
+    """Rough stick figure: feet at (x, yf), height h px, label above the head."""
+    g = (90, 90, 90)
+    r = h * 0.09
+    hy = yf - h + r
+    d.ellipse((x - r, hy - r, x + r, hy + r), outline=g, width=lw)
+    neck, hip = hy + r, yf - h * 0.45
+    d.line((x, neck, x, hip), fill=g, width=lw)
+    d.line((x - h * 0.2, neck + h * 0.12, x, neck + h * 0.05, x + h * 0.2, neck + h * 0.12), fill=g, width=lw)
+    d.line((x - h * 0.15, yf, x, hip, x + h * 0.15, yf), fill=g, width=lw)
+    if label:
+        fs = max(22, h * 0.09)
+        f = font(F_SAY, fs)
+        tw = d.textlength(label, font=f)
+        d.text((x - tw / 2, hy - r - fs * 1.3), label, font=f, fill=(60, 60, 60))
+
+
+def face(d, x, y, r, label):
+    g = (90, 90, 90)
+    d.ellipse((x - r, y - r, x + r, y + r), outline=g, width=5)
+    for ex in (-0.35, 0.35):
+        d.ellipse((x + ex * r - r * 0.08, y - r * 0.15 - r * 0.08, x + ex * r + r * 0.08, y - r * 0.15 + r * 0.08), fill=g)
+    if label:
+        f = font(F_SAY, max(26, r * 0.25))
+        d.text((x - d.textlength(label, font=f) / 2, y - r - max(26, r * 0.25) * 1.4), label, font=f, fill=(60, 60, 60))
+
+
+def name_panel(page, p):
+    """Storyboard ("name") panel: optional stick figures and face glyphs instead of art."""
+    x0, y0, x1, y1 = p['box']
+    w, h = x1 - x0, y1 - y0
+    d = ImageDraw.Draw(page)
+    d.rectangle((x0, y0, x1, y1), fill=(250, 250, 250))
+    for fx, fy, fh, lab in p.get('figs', []):
+        stick(d, x0 + fx * w, y0 + fy * h, fh * h, lab)
+    for fx, fy, fr, lab in p.get('faces', []):  # close-ups: a face glyph, radius as a fraction of the shorter panel side
+        face(d, x0 + fx * w, y0 + fy * h, fr * min(w, h), lab)
+
+
+def name_sheet(page, pg):
+    """Storyboard sheet: page plus a notes column; each panel gets an id tag in its corner."""
+    d = ImageDraw.Draw(page)
+    ft = font(F_NAR, 26)
+    for p in pg['panels']:
+        x0, y0 = p['box'][:2]
+        tw = d.textlength(p['id'], font=ft)
+        d.rectangle((x0 + 5, y0 + 5, x0 + tw + 25, y0 + 43), fill='black')
+        d.text((x0 + 15, y0 + 9), p['id'], font=ft, fill='white')
+    MW = 760
+    sheet = Image.new('RGB', (PW + MW, PH), 'white')
+    sheet.paste(page.convert('RGB'), (0, 0))
+    d = ImageDraw.Draw(sheet)
+    d.line((PW + 10, 70, PW + 10, PH - 70), fill=(180, 180, 180), width=3)
+    fh, fb = font(F_SAY, 44), font(F_NAR, 34)
+    y = 70
+    d.text((PW + 40, y), f"Page {pg['n']}  (reads right to left)", font=fh, fill='black')
+    y += 80
+    for p in pg['panels']:
+        d.text((PW + 40, y), p['id'], font=fh, fill='black')
+        y += 50
+        for l in wrap(p.get('shot', ''), fb, MW - 90, d):
+            d.text((PW + 40, y), l, font=fb, fill=(40, 40, 40))
+            y += 42
+        y += 30
+    return sheet
+
+
+def render(spec, panel_dir, out_dir, suffix='', name=False):
     os.makedirs(out_dir, exist_ok=True)
     outs = []
     for pg in spec['pages']:
@@ -122,9 +193,12 @@ def render(spec, panel_dir, out_dir, suffix=''):
         # art + borders
         for p in pg['panels']:
             x0, y0, x1, y1 = p['box']
-            src = os.path.join(panel_dir, p['id'] + suffix + '.jpg')
-            art = cover(Image.open(src).convert('RGB'), x1 - x0, y1 - y0, *p.get('focus', (0.5, 0.5)))
-            page.paste(art, (x0, y0))
+            if name:
+                name_panel(page, p)
+            else:
+                src = os.path.join(panel_dir, p['id'] + suffix + '.jpg')
+                art = cover(Image.open(src).convert('RGB'), x1 - x0, y1 - y0, *p.get('focus', (0.5, 0.5)))
+                page.paste(art, (x0, y0))
             ImageDraw.Draw(page).rectangle((x0, y0, x1 - 1, y1 - 1), outline='black', width=BORDER)
         # lettering on a supersampled layer, clipped per panel
         for p in pg['panels']:
@@ -149,13 +223,17 @@ def render(spec, panel_dir, out_dir, suffix=''):
             for L in p.get('letters', []):
                 if L['t'] == 'sfx':
                     sfx(page, x0 + L['at'][0] * w, y0 + L['at'][1] * h, L['text'], L.get('size', 120), L.get('angle', -8))
-        out = os.path.join(out_dir, f"page{pg['n']}{suffix}.jpg")
-        page.convert('RGB').save(out, quality=92)
+        out = os.path.join(out_dir, f"page{pg['n']}{'_name' if name else suffix}.jpg")
+        (name_sheet(page, pg) if name else page.convert('RGB')).save(out, quality=92)
         outs.append(out)
     return outs
 
 
 if __name__ == '__main__':
-    spec = json.load(open(sys.argv[1]))
-    suffix = sys.argv[5] if len(sys.argv) > 5 and sys.argv[4] == '--suffix' else ''
-    print(render(spec, sys.argv[2], sys.argv[3], suffix))
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('spec'); ap.add_argument('panel_dir'); ap.add_argument('out_dir')
+    ap.add_argument('--suffix', default='', help='panel file suffix, e.g. _bw')
+    ap.add_argument('--name', action='store_true', help='storyboard: shot notes and stick figures, no art')
+    a = ap.parse_args()
+    print(render(json.load(open(a.spec)), a.panel_dir, a.out_dir, a.suffix, a.name))

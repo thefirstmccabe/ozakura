@@ -155,7 +155,17 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Past-life Natsuki ("???") | faded gold |
 | Others | neutral (no tint) |
 
-## 4. Manga art (black and white)
+## 4a. Manga inserts (color, from Oct 12): workflow
+The goal is to save the author's review time: every layout and dialogue choice gets settled on a cheap draft before any finished art exists.
+1. **Script** the insert (`production/<insert>/insert-script.md`): pages, panels, shot, dialogue, SFX.
+2. **Storyboard ("name"):** B&W, drawn in code at no cost by `production/pipeline/manga/compose.py --name`. Each panel shows its box, a one-line shot note, the real dialogue in balloons and the SFX in place. For action pages where composition matters, add rough pencil sketches per panel (cheap model, about $0.08 each).
+3. **The author approves the storyboard** (layout, pacing, shots, dialogue). Changes are made in the spec and re-rendered for free.
+4. **Final art:** each panel is generated in color at its box's exact aspect ratio, using the approved shot note (and sketch, if any) plus the locked references. Lettering comes from the same spec.
+5. **Review final pages:** only acting, faces and on-model checks remain.
+
+Lessons from the jigeiko test (Oct 12): state "wearing the men helmet, no bare faces" for every kendo panel; say "absolutely no text" or the model letters SFX itself; kendo bows normally happen with men on.
+
+## 4. Manga art (black and white; legacy Vol. 1)
 **Engine:** `fal-ai/nano-banana-pro/edit` at `resolution: '2K'`. Pro gave real screentone; NB2 gave a gray wash. Use `fal-ai/nano-banana-pro` (no `/edit`) for panels with no characters.
 
 **Base prompt (verbatim, prepended to every panel):**
@@ -225,7 +235,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 **Music plan (approved Oct 11; on hold since that evening, kept for reference).** The author will likely keep almost all of the pilot tracks; see the production log.
 - **House sound:** piano-led with strings, soft and warm. Every cue keeps piano or a string section at its core (the link between `title`, `nanoha`, `night` and the author's reference, Steins;Gate's "Gate of Steiner"). Each cue changes the mood and adds one color, never the whole band.
 - **Colors by story area:** everyday and romance add flute, glockenspiel and light acoustic guitar. Energy cues (Natsuki, practice, comedy) add light live drums and bass, acoustic, no synths. Sad and emotional cues strip back to solo piano and slow strings. The tree and the past life add koto (Japanese zither), shakuhachi (bamboo flute) and a wordless voice. Strangeness, then danger, add Steins;Gate-style electronic textures and pulses, plus Japanese drums for the beast, over the same piano and strings.
-- **Vocals:** no lyrics under voiced scenes. Vocal songs only for the opening, the kiss and the ending cutscenes, which may use a different style.
+- **Vocals:** no lyrics under voiced scenes. Vocal songs only for the opening theme, the kiss and the ending, which may use a different style. (No cutscenes since Oct 12; these play over stills and CGs.)
 - **Generation:** ElevenLabs v2.5 only (Lyria dropped Oct 11). Style references must stay light: a `nanoha` reference at medium strength made Natsuki's theme sound like Nanoha's. Give each character theme its own lead instrument within the house palette (Nanoha: felt piano with flute and glockenspiel) [P].
 - **Finishing:** every track leveled to −19 LUFS, extended to 2–3 minutes, looped with a clean seam.
 - **First-chapters cue list:** keep `title`, `nanoha`, `night` (extend). `daily` stays unless a referenced version beats it. New, one cue at a time: Natsuki, comedy, practice (replaces `kendo`), sad, memory. About $2 per cue (two takes).

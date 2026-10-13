@@ -77,7 +77,7 @@
 | 36 | Late February | The Plan | The plan that needs both styles. Natsuki helps Kōhei into the armor (25). Kōhei and Takatsuki's exchange of trust (26). | |
 | 37 | The night before | Tomorrow | The windows or the boulder: "I love you" and, in effect, a proposal; "that's why we all have to live tomorrow" (24a). | |
 | 38 | Morning | The Walk | Into the distortion; the plan breaks under pressure. Intercut with the full past-life walk in the winter mist. | |
-| 39 | Same | Live | The old instinct pulls him toward the same opening; Natsuki recognizes it and saves him; Takatsuki's strike; the beast comes apart into mist. Intercut with the past-life trade and the bloom over her. | Full cutscene candidate. |
+| 39 | Same | Live | The old instinct pulls him toward the same opening; Natsuki recognizes it and saves him; Takatsuki's strike; the beast comes apart into mist. Intercut with the past-life trade and the bloom over her. | Manga insert and CG candidate (animation dropped Oct 12). |
 
 ## Part 6 — Aftermath (March–April)
 
