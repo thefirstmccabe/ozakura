@@ -257,6 +257,20 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - No supernatural compulsion; his distress doesn't erase his attraction or his agency.
 - It isn't infidelity, since Kōhei and Nanoha aren't together. The breach is the pact and the trust.
 - **Kiss chapter staging (Working):** almost wordless even where the characters speak, with brief visual echoes of an analogous past-life moment. Only Natsuki's request is voiced aloud.
+- **The wound-care and kiss sequence (Decided Oct 13):** told in the style of *The Fragrant Flower Blooms with Dignity*: close-ups of faces and hands, with many half- and full-page images. Beat by beat:
+  1. Natsuki gets a text and is shocked. (Who it's from, and so how much she knows, is still Open.)
+  2. She opens the door: his face, his bloody hands, blood dripping on the floor.
+  3. At the sink she washes his hands; her hands caressing his; bandaging them.
+  4. She tends his face while he sits on a stool, so they're at eye level or she's slightly higher.
+  5. He starts sobbing, really for his dad, and buries his face against her.
+  6. Close-up of her face, full of conflicting feelings: sad for him, happy to be holding him, déjà vu, satisfaction, worry about Nanoha.
+  7. She cleans his face and dries his tears, then lingers longer than she needs to.
+  8. Half or full page: she kisses him.
+  9. Full page: he stands up and kisses her back, wrapping his arms around her.
+  - Then she stops it (step 9 above) and asks to be the one to tell Nanoha.
+  - **Framing rule:** the embrace in step 5 is grief and comfort, framed on faces, not bodies.
+  - **Open:** whether "a different art style" means only this staging (close-ups, page-sized images) inside the usual full-color look, or a distinct rendering for this one sequence.
+- **Afterward (Decided Oct 13):** later, texting Chie, Natsuki types something like "I wish it had been me he fought for" or "I wouldn't have run," then deletes it without sending.
 - **Open:** what Natsuki knows about the fight at that moment.
 
 ### Telling Nanoha (Decided Oct 6; sharpened by the pact Oct 7)
@@ -406,6 +420,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 
 **Epilogue (accepted):**
 - As an old woman, Natsuki returns to the familiar place by the tree, established in both eras, and sits and dies peacefully after a full, happy life, grateful to both of them.
+- **The fairy appears (Decided Oct 13):** in this last scene with Natsuki, the fairy appears to her. She was there at both blooms; she's there at the end. (Reading: "the final scene with Natsuki" = the epilogue.)
 - **What it must not suggest:** that she was waiting to die, will reclaim Kōhei, or expects to be his lover in another life.
 - **Not required:** graves nearby, family, marriage or children.
 - **Whether her death is shown or implied** is Open, as are her final sitting place relative to the formal precinct and the evidence of the life she has led.
@@ -538,7 +553,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 ### Supporting cast
 - **The core five:** Kōhei, his male best friend, Nanoha, her female best friend, and Natsuki. Natsuki belonging to the whole group matters.
 - **Kōhei's best friend:** the glasses-wearing wise friend. **Proposals, not fixed traits:** selective wisdom, dry humor, comic investment in trivia, avoiding personal embarrassment.
-  - **Function:** confidant and comedy, plus the reassurance scene (14; its setting is Open now that the beach is cut).
+  - **Function:** confidant and comedy.
   - **Kept alongside the Rival** (Oct 7); their jobs differ, and merging them would overload one character.
 - **Nanoha's best friend:** close to Nanoha independently, and welcomes Natsuki. Cheerful creative enthusiasm is the pilot's version.
 - **The Rival (Takatsuki in the pilot; redesigned Oct 7):**
@@ -635,7 +650,7 @@ Select and adapt; this is not a checklist.
       - **Kitchen comedy:** Nanoha comes in through the kitchen, knows where everything is, and is already making rice porridge. Natsuki arrives with her own (store-bought, or ambitious and slightly burnt) and can't find a bowl. This plays scene bank #3 for laughs.
       - He's fed two porridges in competition and keeps trying to get up for work; Akane referees.
       - **The quiet beat:** he loses the fight to stay up and lets them care for him.
-14. **Reassurance (was the beach; Open since Oct 12):** the beach is cut, so this either moves to another summer setting or goes. As written: Nanoha hesitates to take off her cover-up, self-conscious about her small bust next to Natsuki. With Kōhei absent, his wise friend says something like, "I'm just talking to myself here, but [Kōhei] told me he doesn't care about that. He just wants a girl who loves him back." She's mortified and thanks him. **Rule:** her feelings carry the scene, with no visual scrutiny of bodies; non-explicit.
+14. **Cut (Oct 13):** the reassurance scene (Nanoha self-conscious next to Natsuki, Ryōsuke's reassurance) is cut. The author's own call for this scene, not a general content rule.
 15. **Friends find out they're not dating:** his quick denial hurts Nanoha.
 16. **The confession:** Natsuki nearly accepts an unwanted confession just to feel chosen.
 13c. **Dueling lunches (requested Oct 12):** Nanoha has been making Kōhei's school lunch; Natsuki starts bringing him one too, and he ends up with two bentō on his desk.
@@ -801,3 +816,7 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Inserts stay full color** (reconfirmed after the B&W comparison), with no storyboard step: Claude self-reviews and presents only finished pages (§2).
   - **The beach is cut;** a backyard watermelon day replaces it (13e). Where the reassurance scene (14) goes is Open.
   - **Kendo explained** (13f): Natsuki teaches Rika the rules, openly as exposition; kendo calls and terms appear in Japanese and English.
+- **Oct 13:**
+  - **Reassurance scene cut** (scene bank 14); the author's call for this scene only.
+  - **Wound care and kiss** staged as a *Fragrant Flower*-style close-up sequence with half- and full-page images (§6); Natsuki's deleted text to Chie.
+  - **The fairy appears** in Natsuki's last scene, the epilogue (§7).

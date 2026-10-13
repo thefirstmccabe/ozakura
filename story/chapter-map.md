@@ -39,7 +39,7 @@
 | 13 | Late July | Summer Break | Kōhei on near-full-time shifts. Cat nightmare (4). The manga misunderstanding across the open windows (5). | Fairy light. |
 | 14 | Early August | Summer Festival | Yukata, stalls, fireworks; the girls' rivalry at full tilt; Natsuki photographs everything. | Seasonal outfits. |
 | 15 | August | Team Nanoha | Hiding in Akane's room (13d): the festival photos, the kitchen door, the plushies, "for your guest." | |
-| 16 | August | Watermelon | Backyard watermelon at the Tachibanas' (13e); the reassurance scene (14) if it stays (setting Open). Natsuki's horror movie with Nanoha, then Nanoha keeps Kōhei up talking across the windows (11). | |
+| 16 | August | Watermelon | Backyard watermelon at the Tachibanas' (13e); Natsuki's horror movie with Nanoha, then Nanoha keeps Kōhei up talking across the windows (11). | |
 | 17 | Mid-August | Proof I Was There | Natsuki's walks lead to an old memorial (12; whose is Open). A girl finds Kōhei asleep and helps (9). Fragments for both. | Late-summer quiet before the fight. |
 
 ## Part 3 — The fight and September (late August–September)
@@ -47,7 +47,7 @@
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
 | 18 | Late August | Karaoke | The street fight: the knockdown, Nanoha backing away from his hand, Takatsuki taking her home. | Full-page Nanoha moment. |
-| 19 | Same night | Wound Care | Natsuki's apartment: wound care, the comfort kiss, she stops it, "Let me be the one to tell her." Nearly wordless, with past-life echoes. | The kiss song. |
+| 19 | Same night | Wound Care | Natsuki's apartment, as a *Fragrant Flower*-style close-up sequence with half- and full-page images (canon §6): the text, the door, washing and bandaging his hands, tending his face, he breaks down over his dad, she kisses him, he kisses her back; she stops it, "Let me be the one to tell her." Later, a text to Chie she deletes unsent. | The kiss song. |
 | 20 | Early September | Second Semester | Natsuki struggles for days, then tells Nanoha. Takatsuki: "I'd rather we go together" to the adviser; the suspension. Nanoha faces Kōhei; he owns it. | |
 | 21 | September | The Kitchen Table | Emi confronts Mom. **Flashback to Dad's death:** the hospital request, his private request to Kazuo, the bills, and **FB6: Nanoha walking in without knocking** that night. Kōhei finally accepts Kazuo's help. | |
 | 22 | September | Nikujaga | Mom and Emi cook; Kōhei and Akane come home to the smell. Natsuki names Nanoha's feelings to him ("You really don't see it?"). | |
@@ -84,7 +84,7 @@
 | # | When | Working title | Main beats |
 |---|---|---|---|
 | 40 | March–April | Spring | Recovery; the fairy's real goodbye to Nanoha; Natsuki's farewells and her next chapter; the seniors' graduation; the ordinary spring bloom. |
-| — | Much later | Epilogue | Natsuki, old, at the tree. |
+| — | Much later | Epilogue | Natsuki, old, at the tree; the fairy appears to her. |
 
 ---
 
