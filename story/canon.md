@@ -472,7 +472,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Costume (Working):** navy blazer, white shirt, burgundy ribbon, **charcoal plaid pleated skirt**, dark socks, brown loafers. Pale-blue pajamas with a small cat detail is a proposal.
 - **Concept refs:** faces and hair are accepted directions; their elongated bodies are not. The initial reference was Nanoha; make the bedtime scrunchie puffier.
 - **Family:** settled and affectionate.
-  - **A much younger sister** (Decided Oct 13; was a brother), early elementary age, about 7. **Personality (Decided Oct 13): a bossy gremlin.** She's decided Kōhei is her personal retainer and gives him orders like a tiny princess ("Kō-nii, sit there"), and she's still a trash-talking, sore-losing fighting-game fiend who calls him "Kō-nii." Kazuo is visibly outnumbered at home. Name Open (Sōta's name goes with the change; Claude's provisional pick is **Mio** [P]).
+  - **A much younger sister** (Decided Oct 13; was a brother), early elementary age, about 7. **Personality (Decided Oct 13): a bossy gremlin.** She's decided Kōhei is her personal retainer and gives him orders like a tiny princess ("Kō-nii, sit there"), and she's still a trash-talking, sore-losing fighting-game fiend who calls him "Kō-nii." Kazuo is visibly outnumbered at home. **Name: Mio** (approved Oct 13; replaces Sōta).
   - **Why:** Kazuo has only daughters, so Kōhei becomes the son he never had. It echoes the past life, where her father had no male heir and gained a son through the marriage.
   - Her grandfather is the shrine caretaker; her father is the mentor.
   - The families know each other well, and she has her own friendship with Akane.
@@ -831,3 +831,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **The text** in the kiss sequence comes from Kōhei (§6).
   - **Little sister's personality:** a blend of the gremlin and the tiny boss (§8).
   - **Little sister's design:** D (style guide §2).
+  - **Little sister's name: Mio** (approved).
