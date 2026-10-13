@@ -830,3 +830,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Nanoha's sibling becomes a little sister** (§8), same personality, a little more girly; Kōhei as the son Kazuo never had. New name, design and voice needed.
   - **The text** in the kiss sequence comes from Kōhei (§6).
   - **Little sister's personality:** a blend of the gremlin and the tiny boss (§8).
+  - **Little sister's design:** D (style guide §2).

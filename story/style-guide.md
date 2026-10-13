@@ -96,7 +96,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Kirishima | **Male (Oct 10):** black crew cut, square jaw, broad shoulders | Calm, unreadable, deadpan | 5′11″ [P] | White keikogi, navy hakama | — |
 | Takatsuki | Swept-back, **deep slate blue** (blue-black with steel-blue highlights) [P], Oct 10, for readability against the dark-haired cast | Sharp; **precise and composed, not sneering** (redesign) | — | Navy keikogi and hakama | — (prone to drift; always pass his sprite) |
 | Emi | Dark hair, low bun | Warm | — | Light-blue shirt, mustard-yellow apron | — |
-| Nanoha's little sister (was Sōta; name Open, [P] Mio) | **Redesign needed (Oct 13):** a girl of about 7, dark-brown hair like Nanoha's | Gap-toothed grin; same gremlin energy, a little more girly | about 4′0″ | Game controller; outfit to be designed | — |
+| Nanoha's little sister (was Sōta; name Open, [P] Mio) | **Locked Oct 13: design D** (`production/refs/inventory/sister-D.png`): dark-brown bob with blunt bangs and one small side braid | Gap-toothed grin; smug, arms crossed; the bossy gremlin | about 4′0″ | Mint T-shirt with a star print, tiered plaid skirt over bike shorts, mismatched socks, sneakers, bandage on her elbow; a generic controller (no logos) | — |
 | Ōno-sensei | Slightly messy | Droopy and tired; 40s, tall and thin | — | Knit cardigan over shirt and tie | — |
 
 **Color swatches (to lock in the design pass):** manga inserts are full color in the VN style (Oct 10), so each character needs locked hex values for hair, eyes, skin and key outfit colors, checked against every insert panel. The B&W rendering column above applies only to the legacy Vol. 1 manga.
