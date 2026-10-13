@@ -273,7 +273,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |
 | Rika | **Laomedeia, +4 semitones** | genki, loud | **Picked Oct 11** |
 | Yuzu | **Autonoe, +2 semitones** | cheeky, sly kōhai | **Picked Oct 11** |
-| Nanoha's little sister (was Sōta) | — | 7-year-old girl, bright, a little girly | **Re-audition (Oct 13):** Leda +2 still sounded like a boy |
+| Nanoha's little sister (was Sōta) | **Kore, +4 semitones** | 7-year-old girl; bossy tiny-princess orders, cheeky, sore loser | **Picked Oct 13** |
 | The fairy | **Leda, +4 semitones** | small-girl voice, airy, ancient | **Picked Oct 11** |
 | Emi | Achernar | warm, bubbly mother | OK (author, Oct 8) |
 | Takatsuki | Fenrir | **precise, reserved, dry** (was "curt, abrasive") | OK (author, Oct 8) |
