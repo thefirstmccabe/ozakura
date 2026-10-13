@@ -1,0 +1,5 @@
+{"el-A":["elevenlabs/music/v2.5","01a137a9-6f09-75f0-acbe-45b45c6f0161","guitar clip 0:10-0:40 ref, xhigh"],
+"el-B":["elevenlabs/music/v2.5","01a137a9-6f08-7ed0-8a5c-c7a1c0ae3827","guitar clip ref, high, violin answers"],
+"sa-C":["fal-ai/stable-audio-3/small/music/audio-to-audio","01a137a9-6d55-7aa3-89db-02b6b0a470e8","noise 0.5"],
+"sa-D":["fal-ai/stable-audio-3/small/music/audio-to-audio","01a137a9-6d4d-7e10-9ec8-7fb173593ade","noise 0.65"],
+"sa-E":["fal-ai/stable-audio-3/small/music/audio-to-audio","01a137a9-6d57-76c0-b898-9a1c1673d715","noise 0.8, violin"]}
