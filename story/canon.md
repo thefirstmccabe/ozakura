@@ -186,6 +186,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **The trap:** a beast that distorts familiar paths traps them, so she cannot go for help.
   - **The fight:** long. He realizes he is losing a battle of attrition, and that if it goes on they will both die.
   - **The trade:** **he deliberately opens himself to a fatal wound so he can get close enough to kill it**. The beast and Kōhei kill each other.
+  - **Look (Working, Oct 13):** the past-life beast fight gets its own visibly different art style, an homage to *Vagabond*: heavy brush-ink, gritty and painterly, like the kiss sequence's *Fragrant Flower* homage. Homage to the style, never copies of actual pages.
   - **Her role:** she is **helpless throughout**. She survives and stays with him.
 - **After (Decided Oct 10):** once he has killed the beast and they've made the promise, **the tree blooms out of season.** The distortion falls away.
   - **The CG:** her cradling his broken body, blood everywhere, cherry blossoms falling all around her.
@@ -268,8 +269,8 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   8. Half or full page: she kisses him.
   9. Full page: he stands up and kisses her back, wrapping his arms around her.
   - Then she stops it (step 9 above) and asks to be the one to tell Nanoha.
-  - **Framing rule:** the embrace in step 5 is grief and comfort, framed on faces, not bodies.
-  - **Open:** whether "a different art style" means only this staging (close-ups, page-sized images) inside the usual full-color look, or a distinct rendering for this one sequence.
+  - **Framing (Oct 13):** step 5 is a hug, and it's shown: the two of them holding each other. The emphasis stays on their faces; it's grief and comfort.
+  - **Look (Decided Oct 13):** a visibly different art style for this one section, an homage to *The Fragrant Flower Blooms with Dignity*: delicate fine linework, large expressive eyes, soft tones, lots of white space. An homage to the style, never a copy of its actual pages.
 - **Afterward (Decided Oct 13):** later, texting Chie, Natsuki types something like "I wish it had been me he fought for" or "I wouldn't have run," then deletes it without sending.
 - **Open:** what Natsuki knows about the fight at that moment.
 
@@ -820,3 +821,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Reassurance scene cut** (scene bank 14); the author's call for this scene only.
   - **Wound care and kiss** staged as a *Fragrant Flower*-style close-up sequence with half- and full-page images (§6); Natsuki's deleted text to Chie.
   - **The fairy appears** in Natsuki's last scene, the epilogue (§7).
+  - **Style homages:** the kiss sequence in a *Fragrant Flower* style (Decided); the past-life beast fight in a *Vagabond* style (Working). The hug in the kiss sequence is shown.
