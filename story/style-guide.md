@@ -156,16 +156,20 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Others | neutral (no tint) |
 
 ## 4a. Manga inserts (color, from Oct 12): workflow
-**The storyboard step (2–3) is an experiment** (author, Oct 12): the original Vol. 1 was made without one and came out well. The goal is to save the author's review time by settling layout and dialogue on a free draft before any finished art exists. Keep it only if it does.
+**No storyboard step** (author, Oct 12): Vol. 1 was made from scratch and came out well. Claude builds each insert straight from the script and **presents only finished pages** that have passed the self-review below. The author's review time is the constraint, not cost.
+
 1. **Script** the insert (`production/<insert>/insert-script.md`): pages, panels, shot, dialogue, SFX.
-2. **Storyboard ("name"):** B&W, drawn in code at no cost by `production/pipeline/manga/compose.py --name`. Each panel shows its box, a one-line shot note, the real dialogue in balloons and the SFX in place. For action pages where composition matters, add rough pencil sketches per panel (cheap model, about $0.08 each).
-3. **The author approves the storyboard** (layout, pacing, shots, dialogue). Changes are made in the spec and re-rendered for free.
-4. **Final art:** each panel is generated in color at its box's exact aspect ratio, using the approved shot note (and sketch, if any) plus the locked references. Lettering comes from the same spec.
-5. **Review final pages:** only acting, faces and on-model checks remain.
+2. **Layout spec** (`insert-spec.json`): panel boxes and balloon positions, decided before generation. `compose.py --name` can render it as a quick layout proof for Claude's own check; the author doesn't review it.
+3. **Generate** each panel in color at its box's exact aspect ratio, with the locked references, and **reserve the balloon area in the prompt** ("keep the upper right empty for a speech balloon; no faces there"). Vol. 1's biggest flaw was dialogue covering faces.
+4. **Self-review, every panel** (redo until it passes):
+   - On model against the references: face, hair, eye color, outfit, swatches, height relationships.
+   - Canon and setting: the beast's bone-white mask; kendo panels wear men (no bare faces); props and location consistent within a scene.
+   - No baked-in text, watermarks or frame lines; hands and anatomy sound.
+5. **Letter and self-review every page:** no balloon covers a face or a key action; reading order right to left is unambiguous; SFX sit inside their panel; text is legible at phone size.
+6. **Independent check before delivery:** a separate reviewer agent, which hasn't seen the production, checks the finished pages against the script, canon and references. Fix what it finds.
+7. **Deliver** the finished pages with a short note of any known compromises.
 
-**Keep faces clear of the lettering** (Vol. 1's biggest problem was dialogue covering faces): each panel prompt reserves the balloon area ("keep the upper right empty for a speech balloon; no faces there"), and the lettering pass checks every balloon against faces before review.
-
-Lessons from the jigeiko test (Oct 12): state "wearing the men helmet, no bare faces" for every kendo panel; say "absolutely no text" or the model letters SFX itself; kendo bows normally happen with men on.
+**Lessons from the jigeiko test (Oct 12):** state "wearing the men helmet, no bare faces" for every kendo panel; say "absolutely no text" or the model letters SFX itself; kendo bows normally happen with men on; one style anchor and one location plate per scene keep panels consistent.
 
 ## 4. Manga art (black and white; legacy Vol. 1)
 **Engine:** `fal-ai/nano-banana-pro/edit` at `resolution: '2K'`. Pro gave real screentone; NB2 gave a gray wash. Use `fal-ai/nano-banana-pro` (no `/edit`) for panels with no characters.
