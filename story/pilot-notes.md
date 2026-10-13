@@ -173,7 +173,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 **Tachibana family [P]:**
 - **Emi (mother):** warm and brisk, yellow apron. Her chronic "made too much" kinpira is quiet charity (fix 20: no longer explained in narration).
 - **Kazuo (father, the mentor):** big and quiet, a former karate club member, an office job at the city water bureau. Not yet on screen.
-- **Sōta (brother):** 7, in second grade, a fighting-game gremlin who calls Kōhei "Kō-nii."
+- **Sōta (brother):** 7, in second grade, a fighting-game gremlin who calls Kōhei "Kō-nii." **[Fix] Oct 13: becomes a little sister** (canon §8), same personality, a little more girly; new name, design and voice.
 - **Genji (grandfather, shrine caretaker):** his "very convenient back" only hurts on petal days. Mentioned only.
 
 **School [P]:**

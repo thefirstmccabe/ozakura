@@ -96,7 +96,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Kirishima | **Male (Oct 10):** black crew cut, square jaw, broad shoulders | Calm, unreadable, deadpan | 5′11″ [P] | White keikogi, navy hakama | — |
 | Takatsuki | Swept-back, **deep slate blue** (blue-black with steel-blue highlights) [P], Oct 10, for readability against the dark-haired cast | Sharp; **precise and composed, not sneering** (redesign) | — | Navy keikogi and hakama | — (prone to drift; always pass his sprite) |
 | Emi | Dark hair, low bun | Warm | — | Light-blue shirt, mustard-yellow apron | — |
-| Sōta | Messy dark hair, bandage on his cheek | Gap-toothed grin | Age 7 | Green dinosaur T-shirt, navy shorts, game controller | — |
+| Nanoha's little sister (was Sōta; name Open, [P] Mio) | **Redesign needed (Oct 13):** a girl of about 7, dark-brown hair like Nanoha's | Gap-toothed grin; same gremlin energy, a little more girly | about 4′0″ | Game controller; outfit to be designed | — |
 | Ōno-sensei | Slightly messy | Droopy and tired; 40s, tall and thin | — | Knit cardigan over shirt and tie | — |
 
 **Color swatches (to lock in the design pass):** manga inserts are full color in the VN style (Oct 10), so each character needs locked hex values for hair, eyes, skin and key outfit colors, checked against every insert panel. The B&W rendering column above applies only to the legacy Vol. 1 manga.
@@ -267,7 +267,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |
 | Rika | **Laomedeia, +4 semitones** | genki, loud | **Picked Oct 11** |
 | Yuzu | **Autonoe, +2 semitones** | cheeky, sly kōhai | **Picked Oct 11** |
-| Sōta | **Leda, +2 semitones** | 7-year-old boy | **Picked Oct 11** |
+| Nanoha's little sister (was Sōta) | — | 7-year-old girl, bright, a little girly | **Re-audition (Oct 13):** Leda +2 still sounded like a boy |
 | The fairy | **Leda, +4 semitones** | small-girl voice, airy, ancient | **Picked Oct 11** |
 | Emi | Achernar | warm, bubbly mother | OK (author, Oct 8) |
 | Takatsuki | Fenrir | **precise, reserved, dry** (was "curt, abrasive") | OK (author, Oct 8) |
@@ -284,7 +284,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Tournament opponent | Zubenelgenubi | cocky, mocking | **Picked Oct 11** |
 
 **Pitch shift:** "+2 semitones" means every generated line is post-processed with `ffmpeg -af "asetrate=24000*1.1225,aresample=24000,atempo=0.8909"` (raises pitch and formants, keeps timing); "+4" uses 1.2599 / 0.7937.
-**Shared voices:** Charon (Kirishima, Kazuo) and Algenib (Genji, the thug) are each used twice; Leda is Sōta at +2 and the fairy at +4. Those pairs rarely share a scene; if they do, add a slight pitch offset to one of them.
+**Shared voices:** Charon (Kirishima, Kazuo) and Algenib (Genji, the thug) are each used twice; Leda is the fairy at +4. Those pairs rarely share a scene; if they do, add a slight pitch offset to one of them.
 
 ## 8. fal workflow notes
 **Uploads:**

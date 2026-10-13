@@ -101,6 +101,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Winter:** cold but mild, with little snow. Snowfall is a special event.
 - **What's ruled out:** no Tokyo invasion, national catastrophe, military mobilization or AGI subplot.
 - **Open:** the town name, the exact map, commutes and travel times.
+- **Era (Decided Oct 13):** contemporary, with smartphones and messaging apps everywhere, but before generative AI. The exact year is Open.
 - **Proposal:** Natsuki lives nearer the station.
 
 ### The two houses (updated Oct 6)
@@ -259,7 +260,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - It isn't infidelity, since Kōhei and Nanoha aren't together. The breach is the pact and the trust.
 - **Kiss chapter staging (Working):** almost wordless even where the characters speak, with brief visual echoes of an analogous past-life moment. Only Natsuki's request is voiced aloud.
 - **The wound-care and kiss sequence (Decided Oct 13):** told in the style of *The Fragrant Flower Blooms with Dignity*: close-ups of faces and hands, with many half- and full-page images. Beat by beat:
-  1. Natsuki gets a text and is shocked. (Who it's from, and so how much she knows, is still Open.)
+  1. Natsuki gets a text from Kōhei, something like "Are you home?" or "I'm at your door," and is shocked. (Decided Oct 13.) **Proposal:** she checks the apartment intercom's video screen and sees his bloodied face on it.
   2. She opens the door: his face, his bloody hands, blood dripping on the floor.
   3. At the sink she washes his hands; her hands caressing his; bandaging them.
   4. She tends his face while he sits on a stool, so they're at eye level or she's slightly higher.
@@ -470,7 +471,8 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Costume (Working):** navy blazer, white shirt, burgundy ribbon, **charcoal plaid pleated skirt**, dark socks, brown loafers. Pale-blue pajamas with a small cat detail is a proposal.
 - **Concept refs:** faces and hair are accepted directions; their elongated bodies are not. The initial reference was Nanoha; make the bedtime scrunchie puffier.
 - **Family:** settled and affectionate.
-  - A much younger brother, early elementary age (tentative).
+  - **A much younger sister** (Decided Oct 13; was a brother), early elementary age, about 7. Same personality as the pilot's Sōta (a fighting-game gremlin who calls Kōhei "Kō-nii"), a little more girly. Name Open (Sōta's name goes with the change; Claude's provisional pick is **Mio** [P]).
+  - **Why:** Kazuo has only daughters, so Kōhei becomes the son he never had. It echoes the past life, where her father had no male heir and gained a son through the marriage.
   - Her grandfather is the shrine caretaker; her father is the mentor.
   - The families know each other well, and she has her own friendship with Akane.
   - Her parents' jobs are Open.
@@ -822,3 +824,6 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Wound care and kiss** staged as a *Fragrant Flower*-style close-up sequence with half- and full-page images (§6); Natsuki's deleted text to Chie.
   - **The fairy appears** in Natsuki's last scene, the epilogue (§7).
   - **Style homages:** the kiss sequence in a *Fragrant Flower* style (Decided); the past-life beast fight in a *Vagabond* style (Working). The hug in the kiss sequence is shown.
+  - **Era:** contemporary, smartphones everywhere, before generative AI (§3).
+  - **Nanoha's sibling becomes a little sister** (§8), same personality, a little more girly; Kōhei as the son Kazuo never had. New name, design and voice needed.
+  - **The text** in the kiss sequence comes from Kōhei (§6).
