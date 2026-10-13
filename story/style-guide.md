@@ -156,12 +156,14 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Others | neutral (no tint) |
 
 ## 4a. Manga inserts (color, from Oct 12): workflow
-The goal is to save the author's review time: every layout and dialogue choice gets settled on a cheap draft before any finished art exists.
+**The storyboard step (2–3) is an experiment** (author, Oct 12): the original Vol. 1 was made without one and came out well. The goal is to save the author's review time by settling layout and dialogue on a free draft before any finished art exists. Keep it only if it does.
 1. **Script** the insert (`production/<insert>/insert-script.md`): pages, panels, shot, dialogue, SFX.
 2. **Storyboard ("name"):** B&W, drawn in code at no cost by `production/pipeline/manga/compose.py --name`. Each panel shows its box, a one-line shot note, the real dialogue in balloons and the SFX in place. For action pages where composition matters, add rough pencil sketches per panel (cheap model, about $0.08 each).
 3. **The author approves the storyboard** (layout, pacing, shots, dialogue). Changes are made in the spec and re-rendered for free.
 4. **Final art:** each panel is generated in color at its box's exact aspect ratio, using the approved shot note (and sketch, if any) plus the locked references. Lettering comes from the same spec.
 5. **Review final pages:** only acting, faces and on-model checks remain.
+
+**Keep faces clear of the lettering** (Vol. 1's biggest problem was dialogue covering faces): each panel prompt reserves the balloon area ("keep the upper right empty for a speech balloon; no faces there"), and the lettering pass checks every balloon against faces before review.
 
 Lessons from the jigeiko test (Oct 12): state "wearing the men helmet, no bare faces" for every kendo panel; say "absolutely no text" or the model letters SFX itself; kendo bows normally happen with men on.
 

@@ -72,7 +72,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 ## 2. Format and presentation
 - **Format (Working, the author's leaning):** VN-primary, with frequent interludes, CGs and occasional manga pages for scenes that only work as manga. The author thinks the story works best as manga, but full manga production is too costly and inconsistent at his quality bar.
   - **Inserts are full color** (Decided Oct 10; reconfirmed Oct 12 after a side-by-side B&W test), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone.
-  - **Every insert starts as a B&W storyboard (a manga "name")** that the author approves before any finished art is made (Decided Oct 12; process in style guide §4a).
+  - **Experiment (Oct 12): a B&W storyboard (a manga "name")** for the author to approve before finished art, to cut his review time. Not a required step; the original Vol. 1 worked without one (style guide §4a).
   - **Proposal:** past-life scenes get a distinct treatment *within* color (a desaturated or warm-faded palette, softer edges) to mark the era at a glance. To decide when the first flashback is made.
   - **No animation (Decided Oct 12).** The Oct 10 three-tier video plan (living stills, animated beats, cutscenes plus an opening movie) is dropped: after two rounds of tests, getting to commercial quality would cost too much in takes and review time. Pivotal moments use CGs and manga inserts instead.
 - **The feel:** a Japanese manga translated into English. Aim for manga plausibility rather than exhaustive realism.
@@ -793,4 +793,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Hiding in Akane's room** (scene bank 13d).
   - **Length decided:** 40-chapter spine, chapters float to ~4,000–5,000 words, slice-of-life added as needed (§4).
   - **Animation dropped** (§2): the three-tier video plan is retired; pivotal moments use CGs and manga inserts.
-  - **Inserts stay full color** (reconfirmed after the B&W comparison), and **every insert starts as an approved B&W storyboard ("name")** (§2).
+  - **Inserts stay full color** (reconfirmed after the B&W comparison), and **a B&W storyboard ("name") step is being tried as an experiment** (§2).
