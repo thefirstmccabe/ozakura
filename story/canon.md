@@ -822,7 +822,6 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Kendo explained** (13f): Natsuki teaches Rika the rules, openly as exposition; kendo calls and terms appear in Japanese and English.
 - **Oct 13:**
   - **Insert presentation: panel by panel** (§2), locked as tested.
-- **Oct 13:**
   - **Reassurance scene cut** (scene bank 14); the author's call for this scene only.
   - **Wound care and kiss** staged as a *Fragrant Flower*-style close-up sequence with half- and full-page images (§6); Natsuki's deleted text to Chie.
   - **The fairy appears** in Natsuki's last scene, the epilogue (§7).
