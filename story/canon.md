@@ -73,6 +73,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Format (Working, the author's leaning):** VN-primary, with frequent interludes, CGs and occasional manga pages for scenes that only work as manga. The author thinks the story works best as manga, but full manga production is too costly and inconsistent at his quality bar.
   - **Inserts are full color** (Decided Oct 10; reconfirmed Oct 12 after a side-by-side B&W test), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone.
   - **No storyboard step (Decided Oct 12).** Claude makes inserts from the script directly, runs a robust self-review, and presents only finished pages (style guide §4a).
+  - **Presentation: panel by panel (Decided Oct 13).** Inside the VN, an insert opens on the whole page, then each tap zooms to the next panel while the rest of the page stays visible but dimmed. The author: "don't change a thing." Spec in style guide §4a.
   - **Proposal:** past-life scenes get a distinct treatment *within* color (a desaturated or warm-faded palette, softer edges) to mark the era at a glance. To decide when the first flashback is made.
   - **No cutscenes or longer animation (Decided Oct 12).** After two rounds of tests, getting them to commercial quality would cost too much in takes and review time; pivotal moments use CGs and manga inserts instead.
   - **Kept (Decided Oct 12):** subtle 2–4 s living-still loops on CGs (hair, petals, breathing, water), and **a few very short animated moments** of the kind the models handle well, such as the fall and catch (Ch2; tested Oct 10). Motion is punctuation, not the default.
@@ -819,6 +820,8 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Inserts stay full color** (reconfirmed after the B&W comparison), with no storyboard step: Claude self-reviews and presents only finished pages (§2).
   - **The beach is cut;** a backyard watermelon day replaces it (13e). Where the reassurance scene (14) goes is Open.
   - **Kendo explained** (13f): Natsuki teaches Rika the rules, openly as exposition; kendo calls and terms appear in Japanese and English.
+- **Oct 13:**
+  - **Insert presentation: panel by panel** (§2), locked as tested.
 - **Oct 13:**
   - **Reassurance scene cut** (scene bank 14); the author's call for this scene only.
   - **Wound care and kiss** staged as a *Fragrant Flower*-style close-up sequence with half- and full-page images (§6); Natsuki's deleted text to Chie.

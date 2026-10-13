@@ -169,6 +169,12 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 6. **Independent check before delivery:** a separate reviewer agent, which hasn't seen the production, checks the finished pages against the script, canon and references. Fix what it finds.
 7. **Deliver** the finished pages with a short note of any known compromises.
 
+**Presentation in the VN (Decided Oct 13, locked as tested; the author said "don't change a thing"):** panel by panel, as built in `production/insert-presentation-test/index.html`. That file is the reference implementation; port it into the VN as is.
+- The insert opens on the whole page fitted to the screen (an establishing look), then each tap zooms to the next panel in reading order (right to left, top to bottom).
+- The current panel fills the screen with about 4% padding. The rest of the page stays visible around it, dimmed under the night-ink overlay (`rgba(16,19,31,.86)`), with about 24 px of page-space margin so SFX that break the border stay lit.
+- Zoom moves are animated (0.55 s ease). Pages cross-fade between each other and into and out of the VN scene.
+- Panel boxes come from the insert's `insert-spec.json`, so lettering and the zoom share one source.
+
 **Lessons from the jigeiko test (Oct 12):** state "wearing the men helmet, no bare faces" for every kendo panel; say "absolutely no text" or the model letters SFX itself; kendo bows normally happen with men on; one style anchor and one location plate per scene keep panels consistent.
 
 ## 4. Manga art (black and white; legacy Vol. 1)
