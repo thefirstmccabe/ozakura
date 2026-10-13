@@ -175,6 +175,15 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 - Zoom moves are animated (0.55 s ease). Pages cross-fade between each other and into and out of the VN scene.
 - Panel boxes come from the insert's `insert-spec.json`, so lettering and the zoom share one source.
 
+**Design every insert for panel-by-panel reading (Oct 13).** Guided view on ordinary comics is clumsy because those pages were drawn for print. Ours are drawn for this view from the start; apply these rules at the script and layout steps (1–2):
+- **Every panel stands alone.** Each panel gets its own full screen, so it must read without its neighbors: all its balloons inside its own border (the compositor already clips lettering per panel); no figure, balloon or caption spanning two panels; no inset or overlapping panels. SFX may break the border by a little (inside the 24 px lit margin).
+- **One beat per panel, one tap per beat.** The tap is the pacing: a reaction or a pause gets its own panel. Aim for about 4–6 panels per page; more just means more taps.
+- **Shape panels for a landscape screen.** Wide panels (21:9 to 4:3) fill the screen; square ones are fine; tall panels (2:3, 9:16) show with big dark side margins, so keep them for real vertical motion (a fall, a downward strike, full-height figures).
+- **Surprises go on a new page.** The establishing look and the dimmed neighbors show the whole page before you reach each panel, so a reveal placed mid-page is seen early. Put a reveal at the start of a new page, ideally as a half- or full-page image (which plays as one step).
+- **Pages still look like manga** in the establishing view: conventional right-to-left layouts with clear gutters, no layouts that only make sense zoomed.
+- **Lettering size:** 38 px balloon text on the 1600 px page reads at about 22 px on a phone in landscape for a full-width panel and larger for smaller panels, so keep the base sizes in §5 and avoid any panel narrower than about a third of the page width with more than a few words.
+- **Resolution (to do before the first real insert):** a zoomed panel is shown up to about 2.5× its page-master size on a Retina iPad, so 1600 px masters look soft when zoomed. Compose VN pages at 2× (3200 × 4544) from the 2K panel art; the look and behavior don't change.
+
 **Lessons from the jigeiko test (Oct 12):** state "wearing the men helmet, no bare faces" for every kendo panel; say "absolutely no text" or the model letters SFX itself; kendo bows normally happen with men on; one style anchor and one location plate per scene keep panels consistent.
 
 ## 4. Manga art (black and white; legacy Vol. 1)
