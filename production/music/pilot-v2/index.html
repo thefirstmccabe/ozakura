@@ -49,7 +49,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 <div class="wrap">
   <header>
     <h1>Ōzakura Pilot Soundtrack</h1>
-    <p class="lead">Every track for the new pilot (Prologue and Ch1–4), with the scenes each one plays in. The kept tracks are reference only. Mark the practice, childhood and Natsuki takes, then tap <strong>Copy results</strong> and paste them into the chat.</p>
+    <p class="lead">Every track for the new pilot (Prologue and Ch1–4), with the scenes each one plays in. The kept tracks are reference only. Mark the practice and Natsuki takes, then tap <strong>Copy results</strong> and paste them into the chat.</p>
   </header>
   <div class="status" id="status">Answers save on this device.</div>
   <button class="copy" id="copy">Copy results</button>
@@ -57,27 +57,22 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 </div>
 <script>
 const GROUPS=[
- {title:"Practice · new (replaces kendo)",note:"Focused and disciplined with a quiet competitive spark: strings, piano, acoustic guitar, light drums. No taiko or rock guitar, unlike the old track.",
+ {title:"Practice · tribal percussion (replaces kendo)",note:"Second try, per your note: a tribal fight song with lots of percussion and no vocals. Taiko, toms, frame drums and sticks, with a low string drone underneath.",
   scenes:["2.2–2.3 First practice, Natsuki's kendo explainer for Rika, the practice match.","3.4 Saturday practice, casual sparring.","4.4 Practice with Takatsuki: \"That shouldn't have worked.\""],takes:[
-  {id:"practice-el1",label:"A",d:"ElevenLabs, 90 s. Driving string ostinato, about 112 BPM."},
-  {id:"practice-el2",label:"B",d:"ElevenLabs, 90 s. Pizzicato and footwork-like percussion, then a livelier sparring section."},
-  {id:"practice-mm1",label:"C",d:"MiniMax, 28 s (short; would be extended)."},
-  {id:"practice-mm2",label:"D",d:"MiniMax, 40 s (short; would be extended)."},
+  {id:"pr2-el1",label:"E · ElevenLabs, building",d:"90 s. Builds from one drum; a flute cry in the middle section.",src:"../practice-v2/a/el1.mp3"},
+  {id:"pr2-el2",label:"F · ElevenLabs, relentless",d:"90 s. Interlocking drums throughout, about 128 BPM.",src:"../practice-v2/a/el2.mp3"},
+  {id:"pr2-mm1",label:"G · MiniMax",d:"40 s (would be extended).",src:"../practice-v2/a/mm1.mp3"},
+  {id:"pr2-mm2",label:"H · MiniMax, with flute",d:"32 s (would be extended).",src:"../practice-v2/a/mm2.mp3"},
   {id:"kendo-old",label:"Old kendo (being replaced)",d:"For reference only.",ref:true,src:"../../../audio/bgm/kendo.mp3"}]},
- {title:"Childhood · new",note:"Nostalgic, small and warm: nylon guitar, toy piano or music box, soft strings. No koto, shakuhachi or choir, so it can't blur with memory (compare below).",
+ {title:"Childhood · approved: A",note:"You approved take A on Oct 14. It will be extended, looped and leveled.",
   scenes:["4.1 FB1: the fairy leaves (Kōhei and Nanoha as kids).","Later: the other shared-past flashbacks (FB2–FB6)."],takes:[
-  {id:"childhood-el1",label:"A",d:"ElevenLabs, 90 s. Nylon guitar, toy piano and celesta."},
-  {id:"childhood-el2",label:"B",d:"ElevenLabs, 90 s. Opens on an old music box."},
-  {id:"childhood-mm1",label:"C",d:"MiniMax, 42 s."},
-  {id:"childhood-mm2",label:"D",d:"MiniMax, 61 s. Music-box lullaby."},
-  {id:"mem-compare",label:"memory (past life)",d:"For comparison: childhood must sound clearly different.",ref:true,src:"../../../audio/bgm/memory.mp3"}]},
- {title:"Natsuki · built from your guitar",note:"Arrangements of your guitar clip (0:10–0:49). A and B are ElevenLabs using the clip as a style reference: polished, but they may drift from your notes. C, D and E are Stable Audio transforming the clip itself: closer to what you played, rougher sound. C stays closest; E strays furthest.",
+  {id:"childhood-el1",label:"childhood (A)",d:"Approved.",ref:true,src:"a/childhood-el1.mp3"}]},
+ {title:"Natsuki · from your guitar, pick a favorite",note:"A and B were your maybes. G and H are new. All four are ElevenLabs built on your clip. B's drumstick count-in would be trimmed if you pick it.",
   scenes:["1.4 Her introduction to the class.","2.6 The bridge at dusk.","Later: her entrances, banter with Kōhei, station walks, photography outings."],takes:[
-  {id:"ng-el-A",label:"A · ElevenLabs, strong reference",d:"90 s. Guitar lead, then piano, strings, light drums.",src:"../natsuki-guitar/a/el-A.mp3"},
-  {id:"ng-el-B",label:"B · ElevenLabs, with violin",d:"90 s. Guitar melody with a violin answering.",src:"../natsuki-guitar/a/el-B.mp3"},
-  {id:"ng-sa-C",label:"C · Stable Audio, closest to your playing",d:"39 s. Light transformation.",src:"../natsuki-guitar/a/sa-C.mp3"},
-  {id:"ng-sa-D",label:"D · Stable Audio, medium",d:"39 s.",src:"../natsuki-guitar/a/sa-D.mp3"},
-  {id:"ng-sa-E",label:"E · Stable Audio, furthest",d:"39 s. Adds violin.",src:"../natsuki-guitar/a/sa-E.mp3"}]},
+  {id:"ng-el-A",label:"A (your maybe)",d:"90 s. Guitar lead, then piano, strings, light drums.",src:"../natsuki-guitar/a/el-A.mp3"},
+  {id:"ng-el-B",label:"B (your maybe)",d:"90 s. Guitar with a violin answering. Count-in to be cut.",src:"../natsuki-guitar/a/el-B.mp3"},
+  {id:"ng-el-G",label:"G · new",d:"90 s. Strongest reference to your playing; cello, brushed drums, upright bass.",src:"../natsuki-guitar/a/el-G.mp3"},
+  {id:"ng-el-H",label:"H · new",d:"90 s. Brighter: electric piano and a light pop groove.",src:"../natsuki-guitar/a/el-H.mp3"}]},
  {title:"Keep · title",note:"Piano ballad with koto and strings. Approved.",
   scenes:["Title screen.","3.8 End of Ch3: the walk home, daily handing over to title.","End of the pilot."],takes:[
   {id:"k-title",label:"title",d:"Will be extended and looped.",ref:true,src:"../../../audio/bgm/title.mp3"}]},
@@ -95,7 +90,7 @@ const GROUPS=[
   {id:"k-memory",label:"memory",d:"Will be extended and looped.",ref:true,src:"../../../audio/bgm/memory.mp3"}]}
 ];
 
-const $=s=>document.querySelector(s); const KEY="ozk-music-pilot-v2";
+const $=s=>document.querySelector(s); const KEY="ozk-music-pilot-v2-r2";
 let state={}; try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
 const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
