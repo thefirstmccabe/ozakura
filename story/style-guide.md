@@ -249,11 +249,12 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | title | Title, finale | **Keep** |
 | daily | Everyday scenes | Maybe (59 s loop; extend if kept) |
 | nanoha | Nanoha's theme (river walk, shrine) | **Keep** |
-| natsuki | Natsuki's theme (intro, bridge) | Maybe: too generic and upbeat ("phone commercial"); candidate for the Persona-style direction |
-| kendo | Dojo | **Replace** |
+| natsuki | Natsuki's theme (intro, bridge) | **Replaced Oct 14** by take G, built from the author's own guitar melody |
+| kendo → practice | Dojo, practice, sparring | **Replaced Oct 14** by tribal-percussion take F. Take E saved for intense fight scenes |
 | night | Tender nights, the window scenes | **Keep; extend** (43 s loop) |
 | memory | Dream and past-life | Maybe |
-| comedy | Hoshino Kitchen | **Replace**, in the feel of the Muv-Luv main theme |
+| comedy | Hoshino Kitchen | **Replace**, in the feel of the Muv-Luv main theme (not needed until Yuzu, Ch8) |
+| childhood | Shared-past flashbacks (FB1–FB6) | **New Oct 14:** take A (nylon guitar, toy piano, celesta) |
 
 **Music plan (approved Oct 11; on hold since that evening, kept for reference).** The author will likely keep almost all of the pilot tracks; see the production log.
 - **House sound:** piano-led with strings, soft and warm. Every cue keeps piano or a string section at its core (the link between `title`, `nanoha`, `night` and the author's reference, Steins;Gate's "Gate of Steiner"). Each cue changes the mood and adds one color, never the whole band.
