@@ -8,10 +8,14 @@
 - Shipped pilot to revise: `script.json`, `index.html`, `img/`, `voice/`, `audio/`.
 
 **Scope:**
-1. **Script:** rewrite Ch1–3 with every [Fix] in pilot-notes; write Ch4 from the chapter map (FB1 the fairy leaves; Natsuki's first visit and "Have you been coming here forever?"; friends find out they aren't dating; Takatsuki's "That shouldn't have worked"). Show the author chapter by chapter.
+1. **Script:** rewrite Ch1–3 with every [Fix] in pilot-notes; write Ch4 from the chapter map (FB1 the fairy leaves; Natsuki's first visit and "Have you been coming here forever?"; friends find out they aren't dating; Takatsuki's "That shouldn't have worked"). **Do not send script-only drafts for review.**
 2. **Special visuals (Story thread's proposal, awaiting the author's OK):** manga insert for the Ch2 practice match (panel by panel, as approved Oct 13); full-screen CGs for the prologue dream (kimono, bound wrist), Natsuki's arrival, the catch, the window scene (new layout), the Ch4 childhood flashback; living-still motion on the title, prologue, catch, window and the Great Cherry background. No cutscenes (dropped Oct 12).
 3. **Art:** new sprite sets from the locked designs (Kōhei, Akane, Natsuki, male Kirishima, Takatsuki's slate-blue hair, Mio); Kōhei's face windows (done: `production/refs/design-oct10/r4/faces/`); new backgrounds already made in `production/refs/locations/` (houses, both window views, Nanoha's room); child Kōhei and Nanoha for FB1. Fix Nanoha's pale skin in the final sprites.
 4. **Voice:** re-voice with the final cast (style guide §7), including pitch shifts.
 5. **Build:** assemble, test on iPad, deploy to GitHub Pages.
+
+**How the author reviews (decided Oct 16):** he reads for enjoyment and won't review a script without the art. Produce **all four chapters as a finished, playable build** (script, art, voices, music, inserts), self-review everything, and only then hand it over. Efficiency matters less than that.
+
+**Budget:** a cap for the whole pilot is pending the author's approval (Story thread proposed $40; estimate about $20–30).
 
 **Rules that bite:** imperial units; modest framing for the school-age cast; push refs before submitting fal jobs; self-review before showing the author.
