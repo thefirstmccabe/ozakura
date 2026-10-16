@@ -137,10 +137,12 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-13 | **Insert presentation decided: panel by panel**, exactly as in the test page (`production/insert-presentation-test/`): whole page first, then a zoom to each panel with the rest of the page dimmed but visible. The author: "It's awesome... Don't change a thing." (Canon §2, style guide §4a.) |
 | 10-13 | **Inserts are designed for panel-by-panel reading** (author's point: guided view works badly on comics drawn for print). Design rules added to style guide §4a: every panel reads alone, one beat per tap, landscape-friendly panel shapes, surprises at the start of a new page. **To do before the first real insert:** compose VN pages at 2× (3200 × 4544) so zoomed panels stay sharp on a Retina iPad. |
 | 10-16 | **Pilot v2 goes to its own Production thread** (brief: `production/pilot-v2/README.md`). **Review rule:** the author reviews only finished, playable chapters (art, voice, music included), never script-only drafts; produce all four chapters before handing over. Budget cap pending (proposed $40). |
+| 10-16 | **Pilot v2 review flow approved:** the author approves a one-page-per-chapter scene outline (scenes, CGs, inserts, backgrounds) first, then gets all four chapters as a finished build. **Budget: $40 cap** for the whole pilot. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
 |---|---|---|---|
+| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | — | Production thread; estimate $20–30 |
 | VN pilot | $100 | about $30–35 | |
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |

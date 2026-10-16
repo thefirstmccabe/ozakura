@@ -14,8 +14,10 @@
 4. **Voice:** re-voice with the final cast (style guide §7), including pitch shifts.
 5. **Build:** assemble, test on iPad, deploy to GitHub Pages.
 
-**How the author reviews (decided Oct 16):** he reads for enjoyment and won't review a script without the art. Produce **all four chapters as a finished, playable build** (script, art, voices, music, inserts), self-review everything, and only then hand it over. Efficiency matters less than that.
+**How the author reviews (decided Oct 16):**
+1. **First, a scene outline for Ch1–4** (about one page per chapter): each scene in a line or two, plus the CGs, manga insert, living stills and backgrounds it needs. The author approves it before any art is made. Scene-level changes are what make art expensive to redo; wording changes are nearly free.
+2. **Then all four chapters as a finished, playable build** (script, art, voices, music, inserts), self-reviewed before handover. No script-only drafts; he reads the chapters for enjoyment.
 
-**Budget:** a cap for the whole pilot is pending the author's approval (Story thread proposed $40; estimate about $20–30).
+**Budget: $40 cap for the whole pilot** (approved Oct 16; estimate about $20–30). Ask before going over.
 
 **Rules that bite:** imperial units; modest framing for the school-age cast; push refs before submitting fal jobs; self-review before showing the author.
