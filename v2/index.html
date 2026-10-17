@@ -1,0 +1,974 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ōzakura">
+<meta name="theme-color" content="#10131f">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>[hidden]{display:none!important}img{max-width:100%}</style>
+<title>Ōzakura</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: one full-viewport stage — background cover-fit, sprites bottom-anchored, dialogue panel docked low. Single dark "night ink" world by design. */
+:root{
+  --ink:#10131f;          /* stage + panels */
+  --ink-2:#1b2034;        /* raised panel */
+  --paper:#f3ecdf;        /* body text, washi white */
+  --paper-dim:#bdb6a8;    /* secondary text */
+  --sakura:#e8a7b5;       /* accent: blossom pink */
+  --gilt:#c9a46a;         /* hairlines, chapter ornaments */
+  --veil:rgba(12,14,24,.82);
+  --f-display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
+  --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  color-scheme:dark;
+}
+html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow:hidden;
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+#app{position:fixed;inset:0;overflow:hidden;font-family:var(--f-body);touch-action:manipulation}
+.layer{position:absolute;inset:0}
+.bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
+.bgimg.on{opacity:1}
+#bgSolid{background:#000;transition:background .6s}
+#sprites{pointer-events:none}
+.spr{position:absolute;bottom:0;transform:translateX(-50%);transition:opacity .35s ease,filter .3s ease,left .45s ease;opacity:0;will-change:opacity}
+.spr.on{opacity:1}
+.spr{filter:var(--bgf,none)}
+.spr.dim{filter:var(--bgf,) brightness(.78) saturate(.9)}
+#cg .bgimg{transition:opacity 1s ease}
+#tint{pointer-events:none;opacity:0;transition:opacity .8s;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(20,10,30,.45) 100%)}
+#tint.on{opacity:1}
+#flash{pointer-events:none;background:#fff;opacity:0}
+#flash.go{animation:flash .7s ease-out}
+@keyframes flash{0%{opacity:.95}100%{opacity:0}}
+.shake{animation:shake .38s cubic-bezier(.36,.07,.19,.97)}
+@keyframes shake{10%,90%{transform:translate(-2px,1px)}20%,80%{transform:translate(5px,-2px)}30%,50%,70%{transform:translate(-9px,3px)}40%,60%{transform:translate(9px,-3px)}}
+
+/* dialogue panel */
+#box{position:absolute;left:50%;transform:translateX(-50%);bottom:max(14px,env(safe-area-inset-bottom,0px));
+  width:min(1180px,calc(100% - 32px));min-height:clamp(104px,19vh,176px);box-sizing:border-box;
+  background:linear-gradient(180deg,rgba(16,19,31,.80),rgba(16,19,31,.92));
+  border-top:1px solid rgba(201,164,106,.55);border-radius:4px;
+  box-shadow:0 10px 40px rgba(0,0,0,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  padding:clamp(20px,2.8vh,30px) clamp(18px,3vw,40px) clamp(38px,5vh,46px);transition:opacity .25s}
+#box.hidden{opacity:0;pointer-events:none}
+#box.withface{padding-left:calc(var(--fw) + clamp(26px,3.4vw,48px))}
+#box.withface #name{left:calc(var(--fw) + clamp(20px,3vw,42px))}
+#face{--fw:clamp(118px,21vh,196px);position:absolute;left:clamp(10px,1.6vw,22px);bottom:clamp(10px,1.6vh,16px);width:var(--fw);height:var(--fw);
+  border-radius:4px;overflow:hidden;border:1px solid rgba(201,164,106,.6);background:radial-gradient(ellipse at 50% 30%,#2a3150 0%,#151a2b 75%);
+  box-shadow:0 6px 20px rgba(0,0,0,.45);opacity:0;transform:translateY(6px);transition:opacity .18s ease,transform .18s ease;pointer-events:none}
+#face.on{opacity:1;transform:none}
+#face img{display:block;width:100%;height:100%;object-fit:cover}
+#face::after{content:"";position:absolute;inset:auto 0 0 0;height:3px;background:var(--nc,var(--gilt))}
+#box{--fw:clamp(118px,21vh,196px)}
+.live{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease;pointer-events:none}
+.live.on{opacity:1}
+#name{position:absolute;top:0;left:clamp(14px,2.4vw,34px);transform:translateY(-62%);
+  font-family:var(--f-display);font-weight:700;font-size:clamp(16px,2.4vh,23px);letter-spacing:.06em;
+  padding:.28em 1.05em .32em;background:var(--ink-2);border:1px solid rgba(201,164,106,.5);border-radius:3px;
+  color:var(--paper);min-width:4em;text-align:center}
+#name:empty{display:none}
+#name .bar{display:block;height:2px;margin-top:4px;border-radius:2px;background:var(--nc,var(--sakura))}
+#name{color:var(--nc,var(--paper))}
+#text{font-size:clamp(17px,2.55vh,27px);line-height:1.62;max-width:62em;min-height:3.2em;white-space:pre-wrap;
+  text-wrap:pretty;color:var(--paper)}
+#text.narr{color:#e4dfd6}
+#text.say{color:var(--tc,var(--paper))}
+.gl{font-size:.74em;opacity:.72;letter-spacing:.02em;white-space:nowrap}
+#text.interlude.narr{color:#e4dccd}
+#text .cur{display:inline-block;width:.5em;color:var(--sakura);animation:blink 1.1s infinite;margin-left:.15em}
+@keyframes blink{0%,60%{opacity:1}61%,100%{opacity:0}}
+#ilabel{position:absolute;top:max(16px,env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);
+  font-family:var(--f-display);letter-spacing:.3em;font-size:clamp(12px,1.7vh,16px);color:var(--paper);
+  padding:.45em 1.4em;background:rgba(16,19,31,.7);border:1px solid rgba(201,164,106,.4);border-radius:2px;
+  opacity:0;transition:opacity .6s;pointer-events:none}
+#ilabel.on{opacity:1}
+#ctrl{position:absolute;right:clamp(12px,2vw,26px);bottom:clamp(8px,1.2vh,12px);display:flex;gap:2px}
+.cb{appearance:none;border:0;background:transparent;color:var(--paper-dim);font:500 clamp(11px,1.45vh,14px)/1 var(--f-body);
+  letter-spacing:.12em;text-transform:uppercase;padding:.75em .8em;border-radius:3px;cursor:pointer}
+.cb:hover,.cb:focus-visible{color:var(--paper);background:rgba(255,255,255,.07);outline:none}
+.cb.on{color:var(--sakura)}
+
+/* phone */
+#phone{position:absolute;right:clamp(16px,6vw,90px);top:clamp(16px,5vh,60px);width:min(360px,calc(100% - 32px));
+  max-height:58vh;overflow:hidden;display:flex;flex-direction:column;gap:8px;padding:16px 14px;
+  background:rgba(240,236,228,.95);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.5);
+  opacity:0;transform:translateY(12px);transition:opacity .35s,transform .35s;pointer-events:none;color:#1b1d26}
+#phone.on{opacity:1;transform:none}
+#phone .ph{font:700 13px/1 var(--f-body);color:#5b5f70;text-align:center;padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,.08);letter-spacing:.04em}
+.msg{max-width:82%;padding:8px 12px;border-radius:16px;font-size:clamp(14px,1.9vh,17px);line-height:1.4;animation:pop .25s ease-out}
+.msg.me{align-self:flex-end;background:#e98fa4;color:#fff;border-bottom-right-radius:5px}
+.msg.them{align-self:flex-start;background:#fff;border-bottom-left-radius:5px}
+@keyframes pop{from{transform:scale(.9);opacity:0}}
+
+/* full-screen cards */
+.card{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  background:var(--ink);opacity:0;pointer-events:none;transition:opacity .8s;text-align:center;padding:0 24px}
+.card.on{opacity:1;pointer-events:auto}
+.ch-num{font-family:var(--f-display);color:var(--gilt);letter-spacing:.5em;font-size:clamp(13px,2vh,18px)}
+.ch-title{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,7vh,70px);letter-spacing:.04em;text-wrap:balance}
+.ch-rule{width:72px;height:1px;background:var(--gilt);opacity:.7}
+.ch-kanji{font-family:var(--f-display);color:var(--paper-dim);font-size:clamp(14px,2.2vh,20px);letter-spacing:.4em}
+#dateCard{background:transparent}
+#dateCard .d{font-family:var(--f-display);font-size:clamp(22px,4.2vh,40px);letter-spacing:.12em;padding:.5em 1.6em;
+  background:rgba(16,19,31,.72);border-top:1px solid var(--gilt);border-bottom:1px solid var(--gilt)}
+
+/* title */
+#title{position:absolute;inset:0;z-index:20;background:var(--ink)}
+#title img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#title .shade{position:absolute;inset:0;background:linear-gradient(100deg,rgba(14,16,26,.86) 0%,rgba(14,16,26,.55) 34%,rgba(14,16,26,0) 62%)}
+#title .brand{position:absolute;left:clamp(24px,7vw,110px);top:50%;transform:translateY(-52%);display:flex;gap:clamp(16px,2.4vw,34px);align-items:flex-start}
+.tate{writing-mode:vertical-rl;font-family:var(--f-display);font-weight:800;font-size:clamp(46px,11vh,110px);letter-spacing:.12em;
+  color:var(--paper);text-shadow:0 2px 24px rgba(0,0,0,.5);line-height:1}
+.brand .stack{display:flex;flex-direction:column;gap:clamp(14px,2.6vh,26px);padding-top:.4em}
+.brand h1{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(30px,6vh,58px);letter-spacing:.08em;line-height:1}
+.brand .sub{font-size:clamp(12px,1.7vh,15px);color:var(--paper-dim);letter-spacing:.22em;text-transform:uppercase}
+.menu{display:flex;flex-direction:column;gap:4px;margin-top:6px}
+.mi{appearance:none;border:0;background:transparent;color:var(--paper);text-align:left;cursor:pointer;
+  font:500 clamp(16px,2.5vh,22px)/1.2 var(--f-display);letter-spacing:.14em;padding:.5em 0 .5em .9em;border-left:2px solid transparent;transition:border-color .2s,color .2s,padding .2s}
+.mi:hover,.mi:focus-visible{border-left-color:var(--sakura);color:#fff;padding-left:1.2em;outline:none}
+.mi[disabled]{opacity:.35;cursor:default}
+#tapStart{position:absolute;inset:0;display:flex;align-items:flex-end;justify-content:center;padding-bottom:9vh;z-index:21;
+  font-family:var(--f-display);letter-spacing:.4em;font-size:clamp(14px,2.2vh,19px);color:var(--paper);
+  background:rgba(10,12,20,.25);cursor:pointer}
+#tapStart span{animation:breathe 2.4s ease-in-out infinite;padding:.6em 1.4em;background:rgba(16,19,31,.55);border-radius:2px}
+@keyframes breathe{50%{opacity:.45}}
+
+/* panels: log, save, settings, chapters */
+.panel{position:absolute;inset:0;z-index:30;background:rgba(10,12,20,.92);display:none;flex-direction:column;
+  padding:max(18px,env(safe-area-inset-top,0px)) 16px max(18px,env(safe-area-inset-bottom,0px))}
+.panel.on{display:flex}
+.panel header{display:flex;align-items:center;justify-content:space-between;width:min(980px,100%);margin:0 auto 12px;gap:12px}
+.panel h2{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(20px,3.2vh,30px);letter-spacing:.14em}
+.panel .body{flex:1;overflow-y:auto;width:min(980px,100%);margin:0 auto;-webkit-overflow-scrolling:touch;min-height:0}
+.x{appearance:none;border:1px solid rgba(201,164,106,.5);background:transparent;color:var(--paper);border-radius:3px;
+  font:500 14px var(--f-body);letter-spacing:.12em;padding:.6em 1.1em;cursor:pointer}
+.x:hover,.x:focus-visible{background:rgba(255,255,255,.06);outline:none}
+.log-row{display:grid;grid-template-columns:7.5em 1fr 2.4em;gap:12px;padding:12px 4px;border-bottom:1px solid rgba(255,255,255,.07);align-items:start}
+.log-row .who{font-family:var(--f-display);font-weight:700;color:var(--sakura);text-align:right;padding-top:.15em}
+.log-row .t{line-height:1.6;min-width:0;color:var(--tc,#e4dfd6)}
+.log-row .ja{font-family:var(--f-display);font-size:.88em;color:var(--paper-dim);margin-top:.2em;letter-spacing:.04em}
+.log-row .vb{appearance:none;border:0;background:transparent;color:var(--gilt);font-size:17px;cursor:pointer;padding:0}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.slot{appearance:none;text-align:left;border:1px solid rgba(255,255,255,.12);background:var(--ink-2);color:var(--paper);border-radius:4px;
+  padding:0;cursor:pointer;overflow:hidden;display:flex;flex-direction:column;font:inherit}
+.slot:hover,.slot:focus-visible{border-color:var(--sakura);outline:none}
+.slot .th{aspect-ratio:16/9;width:100%;background:#000 center/cover no-repeat;max-width:100%}
+.slot .meta{padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.slot .n{font:700 13px var(--f-body);letter-spacing:.16em;color:var(--gilt)}
+.slot .s{font-size:14px;color:var(--paper-dim);line-height:1.4}
+.set{display:grid;grid-template-columns:minmax(120px,14em) 1fr;gap:14px 20px;align-items:center;padding:8px 4px}
+.set label{color:var(--paper-dim);letter-spacing:.06em}
+.set input[type=range]{width:100%;accent-color:var(--sakura)}
+.voices{display:flex;flex-wrap:wrap;gap:8px}
+.chip{appearance:none;border:1px solid rgba(255,255,255,.18);background:transparent;color:var(--paper);border-radius:999px;padding:.45em .95em;font:500 14px var(--f-body);cursor:pointer}
+.chip.off{opacity:.4;text-decoration:line-through}
+.chap{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.chap button{appearance:none;border:1px solid rgba(255,255,255,.12);background:var(--ink-2);color:var(--paper);border-radius:4px;padding:0;cursor:pointer;overflow:hidden;text-align:left;font:inherit}
+.chap button:hover,.chap button:focus-visible{border-color:var(--sakura);outline:none}
+.chap .th{aspect-ratio:16/9;background:#000 center/cover no-repeat}
+.chap .meta{padding:10px 12px}
+.chap .k{font-family:var(--f-display);color:var(--gilt);letter-spacing:.2em;font-size:13px}
+.chap .tt{font-family:var(--f-display);font-weight:700;font-size:18px;margin-top:4px}
+#toast{position:absolute;left:50%;top:16px;transform:translateX(-50%);z-index:40;background:var(--ink-2);border:1px solid var(--gilt);
+  padding:.6em 1.2em;border-radius:3px;font-size:14px;letter-spacing:.08em;opacity:0;transition:opacity .3s;pointer-events:none}
+#toast.on{opacity:1}
+.sndout{white-space:pre-wrap;font:13px/1.55 ui-monospace,Menlo,monospace;color:var(--paper-dim);margin:.7em 0 0;min-height:0}
+.sndout:empty{display:none}
+#err{position:absolute;left:12px;bottom:12px;z-index:50;max-width:min(560px,calc(100% - 24px));background:#3a1820;color:var(--paper);
+  border:1px solid var(--sakura);border-radius:3px;padding:.7em 1em;font-size:13px;line-height:1.45;cursor:pointer}
+#endCard .thanks{color:var(--paper-dim);max-width:34em;line-height:1.7;font-size:clamp(14px,2vh,17px)}
+#endCard .x{margin-top:18px}
+/* developer mode: scene chart + line stepper (shown only when developer mode is on) */
+#app:not(.dev) .dev-only{display:none!important}
+input{-webkit-user-select:text;user-select:text}
+.mi.devmi{text-shadow:0 1px 10px rgba(0,0,0,.65)}
+.mi.devmi::after{content:"DEV";font:700 10px/1 var(--f-body);letter-spacing:.16em;color:#1b1d26;background:var(--gilt);padding:3px 5px;border-radius:2px;margin-left:.8em;vertical-align:.35em;text-shadow:none}
+#chartP{background:var(--ink)}
+#devbar{position:absolute;z-index:25;display:flex;align-items:center;gap:1px;padding:2px 3px 2px 4px;
+  right:calc((100% - min(1180px,calc(100% - 32px)))/2 + clamp(14px,2.4vw,34px));
+  bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 12px);
+  background:rgba(27,32,52,.92);border:1px solid rgba(201,164,106,.5);border-radius:3px;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+#title:not([hidden]) ~ #devbar{display:none}
+#devbar .did{appearance:none;border:0;background:transparent;color:var(--gilt);font:600 13px/1 ui-monospace,Menlo,monospace;letter-spacing:.03em;padding:10px 8px;cursor:pointer;border-radius:3px}
+#devbar .dsc{color:var(--paper-dim);font:500 12px/1 var(--f-body);letter-spacing:.06em;padding:0 8px 0 2px;white-space:nowrap}
+#devbar .db{appearance:none;border:0;background:transparent;color:var(--paper);width:40px;height:36px;border-radius:3px;display:grid;place-items:center;cursor:pointer;padding:0}
+#devbar .db svg{width:15px;height:15px;fill:currentColor}
+#devbar .did:hover,#devbar .db:hover,#devbar .did:focus-visible,#devbar .db:focus-visible{background:rgba(255,255,255,.08);outline:none}
+#devbar .dchart{width:auto;padding:0 12px;font:600 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--sakura);border-left:1px solid rgba(255,255,255,.1);border-radius:0 3px 3px 0}
+#chartP header{flex-wrap:wrap}
+.chart-h,.chart-r{display:flex;align-items:center;gap:12px;min-width:0}
+.chart-r{flex:1;justify-content:flex-end}
+#chartQ{flex:1;min-width:0;max-width:340px;appearance:none;-webkit-appearance:none;background:var(--ink-2);border:1px solid rgba(255,255,255,.16);border-radius:3px;color:var(--paper);font:400 16px var(--f-body);padding:.5em .8em}
+#chartQ:focus{outline:none;border-color:var(--sakura)}
+.cch{display:flex;align-items:baseline;gap:14px;margin:26px 2px 12px;padding-bottom:8px;border-bottom:1px solid rgba(201,164,106,.35)}
+.cch:first-child{margin-top:4px}
+.cch .k{font-family:var(--f-display);color:var(--gilt);letter-spacing:.3em;font-size:13px}
+.cch .tt{font-family:var(--f-display);font-weight:700;font-size:20px;letter-spacing:.04em}
+.scg{display:grid;grid-template-columns:repeat(auto-fill,minmax(205px,1fr));gap:12px}
+.sc{appearance:none;border:1px solid rgba(255,255,255,.12);background:var(--ink-2);color:var(--paper);border-radius:4px;padding:0;cursor:pointer;overflow:hidden;text-align:left;font:inherit;display:flex;flex-direction:column;position:relative}
+.sc:hover,.sc:focus-visible{border-color:var(--sakura);outline:none}
+.sc.now{border-color:var(--sakura);box-shadow:0 0 0 1px var(--sakura)}
+.sc img,.sd-head img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.sc .meta{padding:9px 11px 12px;display:flex;flex-direction:column;gap:5px}
+.sc .n,.sd-head .n{font:600 12px ui-monospace,Menlo,monospace;color:var(--gilt);letter-spacing:.05em}
+.sc .tt{font-family:var(--f-display);font-weight:700;font-size:16px;line-height:1.25}
+.sc .s{font-size:12px;color:var(--paper-dim);line-height:1.4}
+.sc .tag{position:absolute;top:8px;left:8px;background:var(--sakura);color:#1b1d26;font:700 10px/1 var(--f-body);letter-spacing:.16em;padding:4px 7px;border-radius:2px}
+.wd{display:flex;flex-wrap:wrap;gap:3px 10px;font-size:12px;color:var(--paper-dim)}
+.wd i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.sd-head{display:flex;gap:18px;align-items:flex-start;margin:2px 0 16px;flex-wrap:wrap}
+.sd-head img{width:min(280px,42%);border-radius:3px}
+.sd-head .info{flex:1;min-width:230px;display:flex;flex-direction:column;gap:8px}
+.sd-head .tt{font-family:var(--f-display);font-weight:700;font-size:clamp(20px,3vh,26px);letter-spacing:.03em}
+.sd-head .s{font-size:13px;color:var(--paper-dim);line-height:1.5}
+.sd-acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.ln-row{display:grid;grid-template-columns:1fr 2.6em;align-items:start;border-bottom:1px solid rgba(255,255,255,.06)}
+.ln-row.now{background:rgba(232,167,181,.11);box-shadow:inset 3px 0 0 var(--sakura)}
+.ln{appearance:none;border:0;background:transparent;color:var(--paper);font:inherit;text-align:left;cursor:pointer;display:grid;grid-template-columns:5.4em 6.6em 1fr;gap:12px;padding:11px 6px;align-items:start;min-width:0}
+.ln:hover,.ln:focus-visible{background:rgba(255,255,255,.05);outline:none}
+.ln .lid{font:12px/1.95 ui-monospace,Menlo,monospace;color:var(--paper-dim)}
+.ln .lw{font-family:var(--f-display);font-weight:700;color:var(--nc,var(--paper-dim));text-align:right;line-height:1.6}
+.ln .lt{line-height:1.6;min-width:0}
+.ln.nar .lt{color:#d6cebf}
+.ln .ja{display:block;font-family:var(--f-display);font-size:.88em;color:var(--paper-dim);margin-top:.15em;letter-spacing:.03em}
+.ln .scl{display:block;font-size:12px;color:var(--gilt);letter-spacing:.05em;margin-bottom:.2em}
+.ln-row .vb{appearance:none;border:0;background:transparent;color:var(--gilt);font-size:17px;cursor:pointer;padding:11px 0;min-height:44px}
+.mk{appearance:none;border:0;border-bottom:1px solid rgba(255,255,255,.06);background:transparent;width:100%;text-align:left;cursor:pointer;
+  font:600 11px/1.4 var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);padding:10px 6px 10px calc(12em + 30px)}
+.mk.minor{color:rgba(189,182,168,.6)}
+.mk:hover,.mk:focus-visible{background:rgba(255,255,255,.05);outline:none}
+.mk.now{background:rgba(232,167,181,.11)}
+.chart-note{color:var(--paper-dim);font-size:13px;letter-spacing:.04em;margin:2px 4px 10px}
+@media (max-width:700px){ .ln{grid-template-columns:1fr;gap:2px} .ln .lw{text-align:left} .mk{padding-left:6px} #devbar .dsc{display:none} }
+@media (prefers-reduced-motion: reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media (max-aspect-ratio: 1/1){ #box{min-height:22vh} .spr{max-width:none} #face,#box{--fw:clamp(96px,15vh,150px)} }
+</style>
+</head>
+<body>
+
+
+<div id="app" aria-label="Ōzakura visual novel">
+  <div id="bgSolid" class="layer"></div>
+  <div id="bg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""></div>
+  <div id="sprites" class="layer"></div>
+  <div id="cg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""><video class="live" id="cgLive" muted playsinline loop preload="auto" aria-hidden="true"></video></div>
+  <div id="tint" class="layer"></div>
+  <div id="ilabel"></div>
+  <div id="phone"><div class="ph">Chie</div></div>
+  <div id="box" class="hidden" role="region" aria-live="polite">
+    <div id="face" aria-hidden="true"><img alt=""></div>
+    <div id="name"></div>
+    <div id="text"></div>
+    <div id="ctrl">
+      <button class="cb" id="bAuto" type="button">Auto</button>
+      <button class="cb" id="bSkip" type="button">Skip</button>
+      <button class="cb" id="bLog" type="button">Log</button>
+      <button class="cb" id="bSave" type="button">Save</button>
+      <button class="cb" id="bLoad" type="button">Load</button>
+      <button class="cb" id="bMenu" type="button">Menu</button>
+    </div>
+  </div>
+  <div id="dateCard" class="card"><div class="d"></div></div>
+  <div id="chapterCard" class="card"><div class="ch-num"></div><div class="ch-rule"></div><div class="ch-title"></div><div class="ch-kanji"></div></div>
+  <div id="flash" class="layer"></div>
+  <div id="endCard" class="card">
+    <div class="ch-num" id="endNum">END OF CHAPTER 1</div><div class="ch-rule"></div>
+    <div class="ch-title" id="endTitle">To be continued</div>
+    <p class="thanks" id="endText">Chapter 2, “Kendo,” comes next.</p>
+    <button class="x" id="endBack" type="button">Return to title</button>
+  </div>
+
+  <div id="title">
+    <img src="img/bg/cg_title.webp" alt="Kōhei, Nanoha and Natsuki beneath the great cherry tree">
+    <video class="live" id="titleLive" src="img/live/cg_title.mp4" muted playsinline loop autoplay preload="auto" aria-hidden="true"></video>
+    <div class="shade"></div>
+    <div class="brand">
+      <div class="tate" aria-hidden="true">大桜</div>
+      <div class="stack">
+        <h1>Ōzakura</h1>
+        <div class="sub">Pilot v2 · Prologue &amp; Chapter 1</div>
+        <nav class="menu">
+          <button class="mi" id="mStart" type="button">Begin</button>
+          <button class="mi" id="mCont" type="button">Continue</button>
+          <button class="mi" id="mChap" type="button">Chapters</button>
+          <button class="mi" id="mLoad" type="button">Load</button>
+          <button class="mi" id="mSet" type="button">Settings</button>
+          <button class="mi devmi dev-only" id="mChart" type="button">Scene Chart</button>
+        </nav>
+      </div>
+    </div>
+    <div id="tapStart"><span>TAP TO BEGIN</span></div>
+  </div>
+  <div id="devbar" class="dev-only" role="toolbar" aria-label="Developer controls">
+    <button class="did" id="devId" type="button" title="Copy line ID">—</button>
+    <span class="dsc" id="devSc"></span>
+    <button class="db" id="dPrevS" type="button" aria-label="Previous scene" title="Previous scene (Page Up)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h2.2v12H2zM14 2v12L5.4 8z"/></svg></button>
+    <button class="db" id="dPrevL" type="button" aria-label="Previous line" title="Previous line (Left arrow)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M12.5 2v12L3.5 8z"/></svg></button>
+    <button class="db" id="dNextL" type="button" aria-label="Next line" title="Next line"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 2v12l9-6z"/></svg></button>
+    <button class="db" id="dNextS" type="button" aria-label="Next scene" title="Next scene (Page Down)"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2v12l8.6-6zM11.8 2H14v12h-2.2z"/></svg></button>
+    <button class="db dchart" id="dChart" type="button">Chart</button>
+  </div>
+
+  <section class="panel" id="logP"><header><h2>Backlog</h2><button class="x" data-close type="button">Close</button></header><div class="body" id="logBody"></div></section>
+  <section class="panel" id="saveP"><header><h2 id="saveH">Save</h2><button class="x" data-close type="button">Close</button></header><div class="body"><div class="slots" id="slots"></div></div></section>
+  <section class="panel" id="chapP"><header><h2>Chapters</h2><button class="x" data-close type="button">Close</button></header><div class="body"><div class="chap" id="chapList"></div></div></section>
+  <section class="panel" id="chartP"><header><div class="chart-h"><button class="x" id="chartBack" type="button" hidden>‹ All scenes</button><h2 id="chartH">Scene Chart</h2></div>
+    <div class="chart-r"><input id="chartQ" type="search" placeholder="Search lines, names, IDs" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" aria-label="Search the script"><button class="x" data-close type="button">Close</button></div></header>
+    <div class="body" id="chartBody"></div></section>
+  <section class="panel" id="setP"><header><h2>Settings</h2><button class="x" data-close type="button">Close</button></header>
+    <div class="body">
+      <div class="set"><label for="sText">Text speed</label><input id="sText" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sAuto">Auto-advance delay</label><input id="sAuto" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sBgm">Music volume</label><input id="sBgm" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sVoice">Voice volume</label><input id="sVoice" type="range" min="0" max="100"></div>
+      <div class="set"><label for="sSfx">Sound effects</label><input id="sSfx" type="range" min="0" max="100"></div>
+      <div class="set"><label>Character voices</label><div class="voices" id="vChips"></div></div>
+      <div class="set"><label>Sound</label><div><button class="x" id="sndBtn" type="button">Sound check</button><pre id="sndOut" class="sndout"></pre></div></div>
+      <div class="set"><label>Navigation</label><div class="voices"><button class="x" id="toTitle" type="button">Return to title</button></div></div>
+      <div class="set dev-only"><label>Developer</label><div class="voices"><button class="x" id="setChart" type="button">Scene Chart</button><button class="x" id="devOff" type="button">Turn off developer mode</button></div></div>
+    </div>
+  </section>
+  <div id="toast"></div>
+  <div id="err" role="alert" hidden></div>
+</div>
+
+<script>
+(()=>{
+'use strict';
+/* ---------- config ---------- */
+/* h: height in inches (style guide §1b lineup). v: fraction of the body the sprite shows, worked out from head size
+   (each sprite set is framed a little differently), so heads stay life-sized and everyone stands on one floor.
+   c: name-tag colour; t: the pale tint of it used for that character's dialogue (style guide §3a). */
+const CHAR = {
+  kohei:{h:69,v:.70,c:'#d4a97e',t:'#f4e8db'}, nanoha:{h:59,v:.733,c:'#8db6e6',t:'#e4eefb'}, natsuki:{h:63,v:.669,c:'#eb9660',t:'#fbe7d8'},
+  akane:{h:60,v:.733,c:'#b9a5e8',t:'#ede6fa'}, ryosuke:{h:67,v:.714,c:'#62c1b8',t:'#daf2ef'}, rika:{h:61,v:.669,c:'#f38ba3',t:'#fde2e9'},
+  yuzu:{h:61,v:.67,c:'#ec6067',t:'#fcdedf'}, kirishima:{h:71,v:.70,c:'#8a92e0',t:'#e3e5f9'}, takatsuki:{h:68,v:.70,c:'#93a6c2',t:'#e4eaf2'},
+  emi:{h:62,v:.70,c:'#e4b745',t:'#f8eed2'}, mio:{h:48,v:.75,c:'#86c983',t:'#e3f3e2'},
+  teacher:{c:'#c9c2b0',t:'#f1ebe0'}, manager:{c:'#c9c2b0',t:'#f1ebe0'}, past_natsuki:{c:'#d4b472',t:'#f3ead3'}
+};
+/* every on-stage character shares one floor F inches below the bottom of the screen */
+const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
+const NOWIN = new Set(['teacher','manager','past_natsuki']);       // no face window: no sprite, or a hidden face
+const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki']};
+/* sprites take on the light of the scene: night and evening backgrounds tint them */
+const BG_LIGHT = {bg_houses_night:'brightness(.8) saturate(.82) hue-rotate(-6deg)', bg_houses_night_lit:'brightness(.82) saturate(.84) hue-rotate(-6deg)', bg_classroom_evening:'sepia(.18) saturate(1.08) brightness(.97)'};
+const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4'};   // living stills (2–4 s loops)
+const POSX_W = {l:20, lc:34, c:50, rc:66, r:80}, POSX_N = {l:27, lc:38, c:50, rc:62, r:73};
+const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?POSX_N:POSX_W)[k]});
+const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
+const CHAPTERS = [
+  {k:'PROLOGUE', t:'The Dream', start:'prologue', th:'cg_dream'},
+  {k:'CHAPTER 1', t:'The House Next Door', start:'c1_morning', th:'cg_natsuki_intro'},
+];
+const KANJI = ['','第一話','第二話','第三話','第四話'];
+const store = {
+  get(k,d){try{const v=localStorage.getItem('ozk.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},
+  set(k,v){try{localStorage.setItem('ozk.'+k,JSON.stringify(v))}catch(e){}}
+};
+const prefs = Object.assign({text:62, auto:45, bgm:62, voice:90, sfx:70, mute:{}}, store.get('prefs',{}));
+
+/* ---------- dom ---------- */
+const $ = s=>document.querySelector(s);
+const app=$('#app'), box=$('#box'), nameEl=$('#name'), textEl=$('#text');
+const bgImgs=[...document.querySelectorAll('#bg .bgimg')], cgImgs=[...document.querySelectorAll('#cg .bgimg')];
+let bgFront=0, cgFront=0;
+
+/* ---------- audio (Web Audio so volume works on iPad) ---------- */
+let ac=null, gBgm, gVoice, gSfx, bgmWanted=null, silentEl=null;
+const bufCache=new Map();
+/* decoded audio is large (a 2-minute stereo track is ~50 MB as PCM), so keep only recent music and voice in memory */
+function cachePut(key, p){ bufCache.delete(key); bufCache.set(key, p);
+  const lim = key.startsWith('v:') ? 60 : key.includes('/bgm/') ? 3 : 1e9, pre = key.startsWith('v:') ? 'v:' : key.includes('/bgm/') ? 'audio/bgm/' : null;
+  if(!pre) return; const keys=[...bufCache.keys()].filter(k=>k.startsWith(pre));
+  for(let k=0;k<keys.length-lim;k++) if(keys[k]!==key && !(bgmWanted && keys[k].endsWith('/'+bgmWanted+'.mp3'))) bufCache.delete(keys[k]); }
+const diag={errors:[], decodeOk:0, decodeFail:0, unlocked:false};
+function note(kind, e){ const m=kind+': '+((e&&(e.name?e.name+' ':'')+(e.message||''))||String(e)); diag.errors.push(m); if(diag.errors.length>40) diag.errors.shift(); }
+/* decodeAudioData has both a callback and a promise form; WebKit rejects the promise even when callbacks are given, so handle both */
+function decode(ab){ return new Promise(res=>{ let done=false;
+  const ok=b=>{ if(done) return; done=true; diag.decodeOk++; res(b); }, bad=e=>{ if(done) return; done=true; diag.decodeFail++; note('decode',e); res(null); };
+  try{ const p=ac.decodeAudioData(ab, ok, bad); if(p&&p.then) p.then(ok,bad); }catch(e){ bad(e); } }); }
+function silentWavURL(){ const sr=22050, n=sr/2, bytes=n*2, buf=new ArrayBuffer(44+bytes), v=new DataView(buf), w=(o,t)=>{ for(let i=0;i<t.length;i++) v.setUint8(o+i,t.charCodeAt(i)); };
+  w(0,'RIFF'); v.setUint32(4,36+bytes,true); w(8,'WAVE'); w(12,'fmt '); v.setUint32(16,16,true); v.setUint16(20,1,true); v.setUint16(22,1,true); v.setUint32(24,sr,true); v.setUint32(28,sr*2,true); v.setUint16(32,2,true); v.setUint16(34,16,true); w(36,'data'); v.setUint32(40,bytes,true);
+  return URL.createObjectURL(new Blob([buf],{type:'audio/wav'})); }
+/* iPhone/iPad Silent Mode mutes Web Audio unless the page's audio session is "playback":
+   use the Audio Session API where available, and a silent looping media element as the fallback */
+function unlockIOS(){
+  try{ if(navigator.audioSession && navigator.audioSession.type!=='playback') navigator.audioSession.type='playback'; }catch(e){ note('audioSession',e); }
+  try{ if(!silentEl){ silentEl=document.createElement('audio'); silentEl.setAttribute('playsinline',''); silentEl.setAttribute('x-webkit-airplay','deny'); silentEl.loop=true; silentEl.preload='auto'; silentEl.src=silentWavURL(); }
+    const p=silentEl.play(); if(p&&p.then) p.then(()=>{diag.unlocked=true;},e=>note('unlock',e)); }catch(e){ note('unlock',e); }
+}
+function resumeAudio(){ if(ac && ac.state!=='running'){ try{ const p=ac.resume(); if(p&&p.catch) p.catch(e=>note('resume',e)); }catch(e){ note('resume',e); } } }
+function audioInit(){
+  unlockIOS();
+  if(ac){ resumeAudio(); return; }
+  const AC=window.AudioContext||window.webkitAudioContext; if(!AC){ note('init','Web Audio not available'); return; }
+  try{
+    ac=new AC(); gBgm=ac.createGain(); gVoice=ac.createGain(); gSfx=ac.createGain();
+    [gBgm,gVoice,gSfx].forEach(g=>g.connect(ac.destination)); applyVol();
+    const b=ac.createBuffer(1,1,ac.sampleRate), s=ac.createBufferSource(); s.buffer=b; s.connect(ac.destination); s.start(0);
+    resumeAudio();
+    if(bgmWanted){ const w=bgmWanted; bgmName=null; playBgm(w); }
+  }catch(e){ note('init',e); }
+}
+function applyVol(){ if(!ac) return; gBgm.gain.cancelScheduledValues(ac.currentTime); gBgm.gain.value=(prefs.bgm/100)**1.6*(vNode?0.55:1); gVoice.gain.value=(prefs.voice/100)**1.3; gSfx.gain.value=(prefs.sfx/100)**1.5; }
+async function loadBuf(url){
+  if(bufCache.has(url)){ const p=bufCache.get(url); cachePut(url,p); return p; }
+  const p=fetch(url).then(r=>{ if(!r.ok) throw new Error(url+' '+r.status); return r.arrayBuffer(); }).then(decode).catch(e=>{ note('load',e); bufCache.delete(url); return null; });
+  cachePut(url,p); return p;
+}
+let bgmName=null, bgmGain=null, bgmTok=0, bgmSrcs=[], bgmTimer=null;
+/* music loops by crossfading the end of the track into a fresh start, so long scenes never hear a hard seam */
+function loopPoints(buf){ const d=buf.getChannelData(0), sr=buf.sampleRate, lim=Math.min(d.length>>2, sr*0.3|0);
+  let a=0; while(a<lim && Math.abs(d[a])<2e-4) a++; let b=d.length-1; while(d.length-1-b<lim && Math.abs(d[b])<2e-4) b--;
+  return [a/sr, (b+1)/sr]; }
+function bgmIter(buf, g, when, first, tok){
+  const XF=Math.min(2.5, buf.duration/8), s=ac.createBufferSource(), sg=ac.createGain(); s.buffer=buf; s.connect(sg); sg.connect(g);
+  if(first) sg.gain.setValueAtTime(1, when); else { sg.gain.setValueAtTime(0, when); sg.gain.linearRampToValueAtTime(1, when+XF); }
+  const end=when+buf.duration; sg.gain.setValueAtTime(1, end-XF); sg.gain.linearRampToValueAtTime(0, end);
+  s.start(when); s.stop(end+0.05); bgmSrcs.push(s); s.onended=()=>{ bgmSrcs=bgmSrcs.filter(x=>x!==s); };
+  const next=end-XF;
+  bgmTimer=setTimeout(()=>{ if(tok===bgmTok) bgmIter(buf,g,next,false,tok); }, Math.max(0,(next-ac.currentTime-4)*1000));
+}
+async function playBgm(name){
+  bgmWanted=name;
+  if(!ac) return;
+  if(name===bgmName) return; bgmName=name;
+  const tok=++bgmTok; clearTimeout(bgmTimer);
+  const oldG=bgmGain, oldSrcs=bgmSrcs; bgmGain=null; bgmSrcs=[];
+  if(oldG){ const t=ac.currentTime; oldG.gain.cancelScheduledValues(t); oldG.gain.setValueAtTime(oldG.gain.value,t); oldG.gain.linearRampToValueAtTime(0,t+1.4); setTimeout(()=>{ oldSrcs.forEach(x=>{try{x.stop()}catch(e){}}); try{oldG.disconnect()}catch(e){} },1600); }
+  if(!name) return;
+  const buf=await loadBuf(`audio/bgm/${name}.mp3`); if(!buf||tok!==bgmTok) return;
+  const g=ac.createGain(); g.connect(gBgm); const t=ac.currentTime+0.05; g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(1,t+1.6);
+  bgmGain=g; const s=ac.createBufferSource(), [ls,le]=loopPoints(buf); s.buffer=buf; s.loop=true; s.loopStart=ls; s.loopEnd=le; s.connect(g); s.start(t, ls); bgmSrcs.push(s);
+}
+/* voice packs: voice/index.json -> {id:[pack,offset,length]} */
+let vIndex=null, vPacks=new Map(), vNode=null, vNodeOnEnd=null;
+fetch('voice/index.json').then(r=>r.ok?r.json():null).then(j=>{vIndex=j}).catch(()=>{});
+async function voiceBuf(id){
+  if(!vIndex||!vIndex[id]||!ac) return null;
+  const [pack,off,len]=vIndex[id]; const key='v:'+id;
+  if(bufCache.has(key)){ const p=bufCache.get(key); cachePut(key,p); return p; }
+  const p=(async()=>{
+    if(vPacks.size>6 && !vPacks.has(pack)) vPacks.delete(vPacks.keys().next().value);
+    if(!vPacks.has(pack)) vPacks.set(pack, fetch('voice/'+pack).then(r=>{ if(!r.ok) throw new Error('voice/'+pack+' '+r.status); return r.arrayBuffer(); }).catch(e=>{ vPacks.delete(pack); throw e; }));
+    const ab=await vPacks.get(pack); const slice=ab.slice(off,off+len);
+    return await decode(slice);
+  })().catch(e=>{ note('voice',e); bufCache.delete(key); return null; });
+  cachePut(key,p); return p;
+}
+let vTok=0, jaText=null;
+fetch('voice/ja.json').then(r=>r.ok?r.json():null).then(j=>{jaText=j}).catch(()=>{});
+function duck(on){ if(!ac) return; const t=ac.currentTime, g=gBgm.gain, base=(prefs.bgm/100)**1.6; g.cancelScheduledValues(t); g.setValueAtTime(g.value,t); g.linearRampToValueAtTime(on?base*0.55:base, t+(on?0.15:0.6)); }
+function stopVoice(){ vTok++; if(vNode){ vNode.onended=null; try{vNode.stop()}catch(e){} vNode=null; duck(false); } }
+async function playVoice(id, who, onEnd){
+  stopVoice(); const tok=vTok; if(prefs.mute[who]) return false;
+  const buf=await voiceBuf(id); if(!buf||tok!==vTok) return false;   // the player moved on while it loaded
+  const s=ac.createBufferSource(); s.buffer=buf; s.connect(gVoice);
+  s.onended=()=>{ if(vNode===s){ vNode=null; duck(false); onEnd&&onEnd(); } }; s.start(); vNode=s; duck(true); return true;
+}
+async function playSfx(name){ if(!ac) return; const b=await loadBuf(`audio/sfx/${name}.mp3`); if(!b) return; const s=ac.createBufferSource(); s.buffer=b; s.connect(gSfx); s.start(); }
+
+/* ---------- state ---------- */
+let S=null, SP={}, SPK={}; const preloaded=new Set(), lastSpr={};
+const state={i:0,bg:'black',cg:null,spr:{},bgm:null,mode:'normal',ilabel:'',read:{}};
+let busy=false, typing=false, typeTimer=null, fullText='', autoOn=false, skipOn=false, waitTimer=null, autoTimer=null, curLine=null, running=false;
+const log=[];
+
+function sprImg(who){
+  let el=document.querySelector(`.spr[data-who="${who}"]`);
+  if(!el){ el=document.createElement('img'); el.className='spr'; el.dataset.who=who; el.alt=''; $('#sprites').appendChild(el); }
+  return el;
+}
+function stageH(){ const w=app.clientWidth,h=app.clientHeight; return Math.min(h, w*0.92); }
+function sizeSpr(el, who){ const H=stageH(), c=CHAR[who]||{h:64,v:.7};
+  el.style.height=Math.round(H*SCALE*c.h*c.v)+'px'; el.style.bottom=Math.round(H*SCALE*(c.h*(1-c.v)-FLOOR))+'px'; }
+function layoutSprites(){ document.querySelectorAll('.spr').forEach(el=>sizeSpr(el, el.dataset.who)); }
+setBg.tok=0; setCg.tok=0;
+function setBg(name, tr){
+  state.bg=name; $('#sprites').style.setProperty('--bgf', BG_LIGHT[name]||'none');
+  if(name==='black'||name==='white'){ setBg.tok++; $('#bgSolid').style.background=name==='white'?'#fff':'#000'; bgImgs.forEach(i=>i.classList.remove('on')); return; }
+  const next=bgImgs[1-bgFront], cur=bgImgs[bgFront];
+  const dur = tr==='cut'?0: tr==='slow'?1.8: .9;
+  next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
+  const tok=++setBg.tok; next.onload=()=>{ if(tok!==setBg.tok) return; next.classList.add('on'); cur.classList.remove('on'); };
+  next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload();
+  bgFront=1-bgFront;
+  if(tr==='flash') flash();
+}
+const cgLive=$('#cgLive');
+function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
+function liveOn(name, delay){
+  liveOff(); if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
+  cgLive.src=LIVE[name]; cgLive.muted=true;
+  cgLive.onplaying=()=>{ if(tok===setCg.tok) setTimeout(()=>{ if(tok===setCg.tok) cgLive.classList.add('on'); }, delay); };
+  const p=cgLive.play(); if(p&&p.catch) p.catch(()=>{});      // if autoplay is refused, the still simply stays
+}
+function setCg(name, tr){
+  state.cg=name;
+  if(!name){ setCg.tok++; liveOff(); cgImgs.forEach(i=>i.classList.remove('on')); return; }
+  const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
+  next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
+  const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); cur.classList.remove('on'); };
+  next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload(); cgFront=1-cgFront;
+  liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150);
+}
+function showSpr(who, spr, pos){
+  const el=sprImg(who); const prev=state.spr[who];
+  pos = pos || (prev&&prev.pos) || 'c';
+  state.spr[who]={spr,pos};
+  sizeSpr(el, who); el.style.left=POSX[pos]+'%'; lastSpr[who]=spr;
+  const url=`img/ch/${spr}.webp`;
+  if(!el.src.endsWith(url)){ const pre=new Image(); pre.onload=()=>{el.src=url; el.classList.add('on');}; pre.src=url; }
+  else el.classList.add('on');
+}
+function hideSpr(who){ delete state.spr[who]; const el=document.querySelector(`.spr[data-who="${who}"]`); if(el) el.classList.remove('on'); }
+function hideAll(){ Object.keys(state.spr).forEach(hideSpr); }
+function dimFor(speaker){ document.querySelectorAll('.spr').forEach(el=>el.classList.toggle('dim', !!speaker && speaker!=='kohei' && el.dataset.who!==speaker && Object.keys(state.spr).includes(speaker))); }
+function flash(){ const f=$('#flash'); f.classList.remove('go'); void f.offsetWidth; f.classList.add('go'); }
+function shake(){ app.classList.remove('shake'); void app.offsetWidth; app.classList.add('shake'); }
+function setMode(m,label){ state.mode=m; state.ilabel=label||''; $('#tint').classList.toggle('on',m==='interlude'); const il=$('#ilabel'); il.textContent=label?`— ${label} —`:''; il.classList.toggle('on',m==='interlude'); textEl.classList.toggle('interlude',m==='interlude'); }
+function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('on'); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove('on'),1600); }
+
+/* ---------- phone ---------- */
+function phoneMsg(who,text){ const p=$('#phone'); p.classList.add('on'); const m=document.createElement('div'); m.className='msg '+(who==='me'?'me':'them'); m.textContent=text; p.appendChild(m);
+  while(p.scrollHeight>p.clientHeight && p.children.length>2) p.children[1].remove(); }
+function phoneClear(){ const p=$('#phone'); p.classList.remove('on'); setTimeout(()=>{ if(!p.classList.contains('on')) [...p.querySelectorAll('.msg')].forEach(m=>m.remove()); },400); }
+
+/* ---------- text ---------- */
+function cps(){ return prefs.text>=100?1e9: 18+prefs.text*1.1; }
+/* {term|gloss} shows a Japanese term with a small English gloss after it (style guide §5) */
+function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^}]+)\}/g;
+  while((m=re.exec(t))){ if(m.index>last) out.push({t:t.slice(last,m.index)}); out.push({t:m[1]}); out.push({t:'\u00a0('+m[2]+')', g:1}); last=re.lastIndex; }
+  if(last<t.length) out.push({t:t.slice(last)}); return out; }
+function plain(t){ return String(t||'').replace(/\{([^|}]+)\|([^}]+)\}/g,'$1 ($2)'); }
+let curSegs=[], curLen=0;
+function renderTo(n){ textEl.textContent=''; let left=n;
+  for(const x of curSegs){ if(left<=0) break; const piece=x.t.slice(0,left); left-=x.t.length;
+    if(x.g){ const sp=document.createElement('span'); sp.className='gl'; sp.textContent=piece; textEl.appendChild(sp); } else textEl.appendChild(document.createTextNode(piece)); } }
+function typeOut(t, cls){
+  curSegs=segs(t); curLen=curSegs.reduce((a,x)=>a+x.t.length,0); fullText=plain(t);
+  textEl.className=cls+(state.mode==='interlude'?' interlude':''); textEl.textContent='';
+  if(skipOn||cps()>1e8){ renderTo(curLen); typing=false; addCur(); return; }
+  typing=true; let n=0; const step=Math.max(1,Math.round(cps()/60));
+  clearInterval(typeTimer); typeTimer=setInterval(()=>{ n+=step; renderTo(n); if(n>=curLen){ clearInterval(typeTimer); typing=false; addCur(); scheduleAuto(); } },1000/60);
+}
+function addCur(){ const c=document.createElement('span'); c.className='cur'; c.textContent='▾'; textEl.appendChild(c); }
+function finishType(){ clearInterval(typeTimer); typing=false; renderTo(curLen); addCur(); scheduleAuto(); }
+/* face windows (style guide §3a): Kōhei on every spoken line; others only when their sprite isn't on screen */
+const faceEl=$('#face'), faceImg=faceEl.querySelector('img');
+function faceFor(c){
+  if(!c || c.t!=='say') return null; const w=c.who;
+  if(w==='kohei') return `img/face/kohei_${c.face||'neutral'}.webp`;
+  if(NOWIN.has(w) || state.spr[w]) return null;
+  if(state.cg && (CG_CAST[state.cg]||[]).includes(w)) return null;
+  return `img/face/${lastSpr[w]||w+'_school_smile'}.webp`;
+}
+function showFace(url, who){
+  if(!url){ faceEl.classList.remove('on'); box.classList.remove('withface'); return; }
+  faceEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--gilt)');
+  if(!faceImg.src.endsWith(url)) faceImg.src=url; faceEl.classList.add('on'); box.classList.add('withface');
+}
+
+/* ---------- runner ---------- */
+function scheduleAuto(){
+  clearTimeout(autoTimer); if(!autoOn||skipOn) return;
+  const base=900+fullText.length*28*(1.6-prefs.auto/100);
+  const go=()=>{ if(autoOn&&!typing&&!overlayOpen()) advance(); };
+  if(vNode){ vNodeOnEnd=()=>{ autoTimer=setTimeout(go,500+ (100-prefs.auto)*12); }; }
+  else autoTimer=setTimeout(go, base);
+}
+function overlayOpen(){ return !!document.querySelector('.panel.on') || !$('#title').hidden; }
+
+function run(){
+  if(running) return; running=true;
+  try{
+    if(state.i>=S.length){ store.set('cont',null); return endPilot(); }
+    while(state.i<S.length){
+      const c=S[state.i++];
+      if(c.t!=='phone' && c.t!=='say' && c.t!=='nar') {/* fallthrough */}
+      switch(c.t){
+        case 'scene': state.scene=c.id; store.set('cont',snap()); break;
+        case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
+        case 'cg': setCg(c.name,c.tr); if(c.name) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break;
+        case 'bgm': playBgm(c.name); state.bgm=c.name; break;
+        case 'sfx': if(!skipOn) playSfx(c.name); break;
+        case 'show': showSpr(c.who,c.spr,c.pos); break;
+        case 'hide': hideSpr(c.who); break;
+        case 'hideall': hideAll(); break;
+        case 'mode': setMode(c.mode,c.label); break;
+        case 'flash': if(!skipOn) flash(); break;
+        case 'shake': if(!skipOn) shake(); break;
+        case 'wait': return pause(skipOn?40:c.s*1000);
+        case 'card': return dateCard(c.text);
+        case 'chapter': return chapterCard(c);
+        case 'endchapter': showFace(null); return pause(200);
+        case 'endpilot': store.set('cont',null); return endPilot();
+        case 'video': break; // future cutscenes: falls back to continuing
+        case 'phone': if(!skipOn) playSfx('notif'); showFace(null); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); devUpdate(); return waitTap(0);
+        case 'say': case 'nar': return line(c);
+      }
+    }
+    store.set('cont',null); return endPilot();
+  } finally { running=false; }
+}
+function pause(ms, keepHidden){ running=false; clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(!keepHidden) {} run(); }, ms); }
+function waitTap(ms){ running=false; }
+function line(c){
+  running=false; curLine=c; stopVoice(); vNodeOnEnd=null;
+  if(c.t==='say'||c.t==='nar'){ if(!$('#phone').classList.contains('on')) {} }
+  box.classList.remove('hidden');
+  const who=c.t==='say'?c.who:null;
+  if(who){ const nm=(SPK[who]||who); nameEl.innerHTML=''; nameEl.append(nm); const b=document.createElement('span'); b.className='bar'; nameEl.appendChild(b); nameEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--sakura)'); textEl.style.setProperty('--tc',(CHAR[who]||{}).t||'var(--paper)'); }
+  else nameEl.textContent='';
+  showFace(faceFor(c), who);
+  dimFor(who);
+  typeOut(c.text, c.t==='nar'?'narr':'say');
+  log.push({who: who? SPK[who]: '', t:plain(c.text), id:c.t==='say'?c.id:null, w:who});
+  if(log.length>400) log.shift();
+  state.read[c.id]=1; devUpdate();
+  if(c.t==='say' && !skipOn && ac){ playVoice(c.id,who,()=>{ if(vNodeOnEnd) {const f=vNodeOnEnd; vNodeOnEnd=null; f();} }); }
+}
+function advance(){
+  if(overlayOpen()) return;
+  if(typing){ finishType(); return; }
+  if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
+  clearTimeout(autoTimer); clearTimeout(waitTimer);
+  if(curLine && curLine.t!=='phone' && S[state.i] && S[state.i].t!=='phone') phoneClear();
+  curLine=null; run();
+}
+/* every timed continuation goes through one timer (waitTimer) so a tap can never leave a card on screen or fire a stray run() */
+let cardFinish=null, cardT=0;
+function later(ms, fn){ clearTimeout(waitTimer); waitTimer=setTimeout(fn, ms); }
+function finishCard(){ if(cardFinish){ const f=cardFinish; cardFinish=null; f(); } }
+function dateCard(text){
+  running=false; const d=$('#dateCard'); d.querySelector('.d').textContent=text; box.classList.add('hidden'); d.classList.add('on');
+  cardFinish=()=>d.classList.remove('on'); cardT=Date.now();
+  later(skipOn?200:1900, ()=>{ finishCard(); later(skipOn?50:500, run); });
+}
+function chapterCard(c){
+  running=false; const d=$('#chapterCard'); box.classList.add('hidden');
+  d.querySelector('.ch-num').textContent='CHAPTER '+c.n; d.querySelector('.ch-title').textContent=c.title; d.querySelector('.ch-kanji').textContent=KANJI[c.n]||'';
+  d.classList.add('on'); cardFinish=()=>d.classList.remove('on'); cardT=Date.now();
+  later(skipOn?400:3200, ()=>{ finishCard(); later(700, run); });
+}
+function endPilot(){ running=false; showFace(null); box.classList.add('hidden'); setSkip(false); setAuto(false); $('#endCard').classList.add('on'); playBgm('title'); }
+
+/* ---------- save/load ---------- */
+function snap(){ // state at current command index (rewind to the line being shown)
+  const i = curLine? S.indexOf(curLine) : state.i;
+  // text messages already on the phone (minus the one being shown, which replays on load)
+  const phone = $('#phone').classList.contains('on') ? [...document.querySelectorAll('#phone .msg')].map(m=>({who:m.classList.contains('me')?'me':'them', text:m.textContent})) : [];
+  if(curLine && curLine.t==='phone') phone.pop();
+  return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene, phone};
+}
+function restore(s){
+  showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
+  ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
+  // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes
+  const keep=s.spr||{}; document.querySelectorAll('.spr').forEach(e=>{ if(!keep[e.dataset.who]) e.remove(); }); state.spr={};
+  setBg(s.bg||'black','cut'); setCg(s.cg||null,'cut');
+  Object.entries(keep).forEach(([w,v])=>showSpr(w,v.spr,v.pos));
+  (s.phone||[]).forEach(m=>phoneMsg(m.who,m.text));
+  playBgm(s.bgm||null); state.bgm=s.bgm||null; setMode(s.mode||'normal',s.ilabel); state.scene=s.scene;
+  state.i=s.i; if(s.cg) box.classList.add('hidden'); run();
+}
+function sceneStart(id){ return S.findIndex(c=>c.t==='scene'&&c.id===id); }
+function startAt(idx){
+  hideTitle();
+  // rebuild visual state by scanning back to most recent bg
+  const s={i:idx,bg:'black',cg:null,spr:{},bgm:null,mode:'normal',phone:[],scene:undefined};
+  for(let k=0;k<idx;k++){ const c=S[k];
+    if(c.t==='bg'){s.bg=c.name;s.spr={};s.cg=null;s.phone=[];} else if(c.t==='cg'){s.cg=c.name;} else if(c.t==='bgm'){s.bgm=c.name;}
+    else if(c.t==='show'){ s.spr[c.who]={spr:c.spr,pos:c.pos||(s.spr[c.who]&&s.spr[c.who].pos)||'c'}; } else if(c.t==='hide'){ delete s.spr[c.who]; }
+    else if(c.t==='hideall'){s.spr={};} else if(c.t==='mode'){ s.mode=c.mode; s.ilabel=c.label; } else if(c.t==='scene'){ s.scene=c.id; }
+    // the phone stays up through one line after the last text, then clears (same rule as advance())
+    else if(c.t==='phone'){ s.phone.push({who:c.who,text:c.text}); } else if((c.t==='say'||c.t==='nar') && !(S[k+1]&&S[k+1].t==='phone')){ s.phone=[]; } }
+  restore(s);
+}
+function openSave(mode){
+  $('#saveH').textContent = mode==='save'?'Save':'Load';
+  const wrap=$('#slots'); wrap.innerHTML='';
+  for(let n=1;n<=9;n++){
+    const d=store.get('slot'+n,null); const b=document.createElement('button'); b.className='slot'; b.type='button';
+    const th=document.createElement('div'); th.className='th'; if(d) th.style.backgroundImage=`url(img/bg/${d.cg||(['black','white'].includes(d.bg)?'cg_title':d.bg)}.webp)`;
+    const meta=document.createElement('div'); meta.className='meta';
+    const nn=document.createElement('div'); nn.className='n'; nn.textContent='SLOT '+n;
+    const ss=document.createElement('div'); ss.className='s';
+    if(d){ const c=S[d.i]; const txt=c&&c.text?plain(c.text).replace(/^"|"$/g,''):''; ss.textContent=`${new Date(d.t).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})} · ${txt.slice(0,64)}${txt.length>64?'…':''}`; }
+    else ss.textContent= mode==='save'?'Empty — tap to save here':'Empty';
+    meta.append(nn,ss); b.append(th,meta);
+    b.onclick=()=>{ if(mode==='save'){ store.set('slot'+n,snap()); toast('Saved to slot '+n); openSave('save'); } else if(d){ closePanels(); hideTitle(); restore(d); } };
+    if(mode==='load'&&!d) b.disabled=true;
+    wrap.appendChild(b);
+  }
+  $('#saveP').classList.add('on');
+}
+function openLog(){
+  const body=$('#logBody'); body.innerHTML='';
+  log.forEach(e=>{ const r=document.createElement('div'); r.className='log-row';
+    const w=document.createElement('div'); w.className='who'; w.textContent=e.who||''; if(e.w) w.style.color=(CHAR[e.w]||{}).c||''; if(e.w) r.style.setProperty('--tc',(CHAR[e.w]||{}).t||'');
+    const t=document.createElement('div'); t.className='t'; t.textContent=e.t; if(e.id&&jaText&&jaText[e.id]){ const j=document.createElement('div'); j.className='ja'; j.lang='ja'; j.textContent=jaText[e.id]; t.appendChild(j); }
+    const v=document.createElement('div');
+    if(e.id&&vIndex&&vIndex[e.id]){ const b=document.createElement('button'); b.className='vb'; b.type='button'; b.textContent='♪'; b.setAttribute('aria-label','Replay voice'); b.onclick=()=>playVoice(e.id,e.w); v.appendChild(b); }
+    r.append(w,t,v); body.appendChild(r); });
+  $('#logP').classList.add('on'); body.scrollTop=body.scrollHeight;
+}
+function openChapters(){
+  const wrap=$('#chapList'); wrap.innerHTML='';
+  CHAPTERS.forEach(ch=>{ const b=document.createElement('button'); b.type='button';
+    b.innerHTML=`<div class="th" style="background-image:url(img/bg/${ch.th}.webp)"></div><div class="meta"><div class="k"></div><div class="tt"></div></div>`;
+    b.querySelector('.k').textContent=ch.k; b.querySelector('.tt').textContent=ch.t;
+    b.onclick=()=>{ closePanels(); startAt(sceneStart(ch.start)); }; wrap.appendChild(b); });
+  $('#chapP').classList.add('on');
+}
+function openSettings(){
+  const bind=(id,key)=>{ const el=$(id); el.value=prefs[key]; el.oninput=()=>{ prefs[key]=+el.value; applyVol(); store.set('prefs',prefs); }; };
+  bind('#sText','text'); bind('#sAuto','auto'); bind('#sBgm','bgm'); bind('#sVoice','voice'); bind('#sSfx','sfx');
+  const vc=$('#vChips'); vc.innerHTML='';
+  ['kohei','nanoha','natsuki','akane','rika','ryosuke','teacher'].forEach(w=>{ const b=document.createElement('button'); b.type='button'; b.className='chip'+(prefs.mute[w]?' off':''); b.textContent=SPK[w]||w; b.setAttribute('aria-pressed',String(!prefs.mute[w]));
+    b.onclick=()=>{ prefs.mute[w]=!prefs.mute[w]; store.set('prefs',prefs); openSettings(); }; vc.appendChild(b); });
+  $('#toTitle').onclick=()=>{ closePanels(); toTitle(); };
+  $('#setP').classList.add('on');
+}
+async function soundCheck(){
+  audioInit();
+  const out=$('#sndOut'); out.textContent='Checking…'; const L=[];
+  L.push('Audio engine: '+(ac?ac.state+', '+ac.sampleRate+' Hz':'not available'));
+  L.push('Silent Mode override: '+(navigator.audioSession?'audio session "'+navigator.audioSession.type+'"':(diag.unlocked?'active':'not active'))+(diag.unlocked?' (media unlock on)':''));
+  if(ac){ try{ const t=ac.currentTime, o=ac.createOscillator(), g=ac.createGain(); o.frequency.value=660; g.gain.setValueAtTime(0.0001,t); g.gain.exponentialRampToValueAtTime(0.3,t+0.03); g.gain.exponentialRampToValueAtTime(0.0001,t+0.6); o.connect(g); g.connect(gSfx); o.start(t); o.stop(t+0.65); }catch(e){ note('tone',e); } }
+  const m=await loadBuf('audio/bgm/title.mp3'); L.push('Music file: '+(m?'ok ('+Math.round(m.duration)+' s)':'FAILED'));
+  const kid=(S||[]).find(c=>c.t==='say'&&c.who==='kohei'), v=kid?await voiceBuf(kid.id):null; L.push('Voice file: '+(v?'ok':'FAILED'));
+  if(v&&ac){ try{ const s=ac.createBufferSource(); s.buffer=v; s.connect(gVoice); s.start(ac.currentTime+0.8); }catch(e){ note('voice test',e); } }
+  L.push('Volumes: music '+prefs.bgm+' · voice '+prefs.voice+' · effects '+prefs.sfx);
+  L.push('Decoded '+diag.decodeOk+' ok / '+diag.decodeFail+' failed');
+  L.push('Problems logged: '+(diag.errors.length?'\n  '+diag.errors.slice(-8).join('\n  '):'none'));
+  L.push('You should hear a chime, then one of Kōhei’s lines. If you hear nothing, check the volume buttons and Silent Mode.');
+  out.textContent=L.join('\n');
+}
+/* ---------- developer mode: scene chart and line stepper ---------- */
+let SCENE_T = {prologue:'The Dream', c1_morning:'Mornings at the Fujisawas', c1_river:'The river walk', c1_entrance:'The class lists',
+  c1_intro:'The transfer student', c1_lunch:'Lunch with Mizuno', c1_interlude:'Nanoha: the tour', c1_night:'Wrong day for the trash',
+  c2_tuesday:'A Tuesday shift', c2_dojo:'The dojo', c2_jigeiko:'Jigeiko', c2_after:'After the match', c2_mop:'The catch',
+  c2_bridge:'The bridge', c2_interlude:'Natsuki: texting Chie', c3_shift:'Training Yuzu', c3_home:'Home late', c3_window:'Windows',
+  c3_saturday:'Best of five', c3_shrine:'The Great Cherry', c3_lunch:'Tea at the shrine', c3_end:'Lunch at the Tachibanas’'};
+const HASH = new Set(location.hash.slice(1).split(/[&+,]/).filter(Boolean));
+let devOn = !!store.get('dev', false);
+if(HASH.has('dev')) devOn=true; if(HASH.has('nodev')) devOn=false;
+function setDev(v){ devOn=!!v; store.set('dev',devOn); app.classList.toggle('dev',devOn); devUpdate(); }
+const isLine = c => c && (c.t==='say'||c.t==='nar'||c.t==='phone');
+let DX=null;
+function devIndex(){
+  if(DX) return DX;
+  const scenes=[], at=new Array(S.length).fill(0); let cur=null, ch=0, chT=CHAPTERS[0].t, bg='black', perCh=0;
+  S.forEach((c,i)=>{
+    if(c.t==='chapter'){ ch=c.n; chT=c.title; perCh=0; }
+    if(c.t==='scene'){ perCh++; cur={id:c.id, i, ch, chT, no: ch? ch+'.'+perCh : 'P', date:'', lines:[], who:[], cgs:[], bgFirst:null, inh:bg}; scenes.push(cur); }
+    if(cur) at[i]=scenes.length-1; if(!cur) return;
+    if(c.t==='card' && !cur.date) cur.date=c.text;
+    if(c.t==='bg'){ bg=c.name; if(!cur.bgFirst && c.name!=='black' && c.name!=='white') cur.bgFirst=c.name; }
+    if(c.t==='cg' && c.name) cur.cgs.push(c.name);
+    if(isLine(c)){ cur.lines.push(i); if(c.t==='say' && !cur.who.includes(c.who)) cur.who.push(c.who); }
+  });
+  let d=''; scenes.forEach((s,k)=>{ if(s.date) d=s.date; else s.date=d; s.end=k<scenes.length-1?scenes[k+1].i:S.length;
+    s.thumb = s.cgs[0] || s.bgFirst || (s.inh==='black'||s.inh==='white' ? 'cg_title' : s.inh); });
+  DX={scenes, at}; return DX;
+}
+function curIdx(){ return curLine ? S.indexOf(curLine) : Math.max(0, state.i-1); }
+function devUpdate(){
+  if(!devOn || !S) return;
+  const X=devIndex(), ci=curIdx(), s=X.scenes[X.at[ci]], c=S[ci];
+  $('#devId').textContent = isLine(c) ? c.id : '—';
+  $('#devSc').textContent = s ? `${s.no} · ${Math.max(1, s.lines.filter(j=>j<=ci).length)}/${s.lines.length}` : '';
+}
+/* jump straight to any command: rebuilds the stage (background, CG, characters, music, phone) as it would be at that point */
+function devJump(j){
+  closePanels(); setSkip(false); setAuto(false); $('#tapStart').hidden=true; audioInit(); startAt(j); devUpdate();
+}
+function stepLine(d){ if(!S) return; let j=curIdx()+d; while(j>=0 && j<S.length && !isLine(S[j])) j+=d; if(j>=0 && j<S.length) devJump(j); }
+function stepScene(d){ if(!S) return; const X=devIndex(), ci=curIdx(), k=X.at[ci], s=X.scenes[k];
+  if(d<0){ if(s.lines.length && ci>s.lines[0]) devJump(s.i); else if(k>0) devJump(X.scenes[k-1].i); }
+  else if(k<X.scenes.length-1) devJump(X.scenes[k+1].i); }
+function copyId(){ const id=$('#devId').textContent; if(!id||id==='—') return;
+  const done=()=>toast('Copied '+id);
+  try{ navigator.clipboard.writeText(id).then(done, ()=>toast(id)); }catch(e){ toast(id); } }
+function nice(n){ return String(n).replace(/^(bg|cg)_/,'').replace(/_/g,' ').replace(/^./,m=>m.toUpperCase()); }
+function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+let chartLast={mode:'grid'};
+function openChart(view){
+  const X=devIndex(), body=$('#chartBody'), inGame=$('#title').hidden, ci=inGame?curIdx():-1, csk=inGame?X.at[ci]:-1, q=$('#chartQ');
+  if(!view){ q.value=''; view = csk>=0 ? {mode:'scene', k:csk} : {mode:'grid'}; }
+  if(view.mode!=='search') chartLast=view;
+  body.innerHTML=''; $('#chartBack').hidden = view.mode==='grid';
+  $('#chartH').textContent = view.mode==='scene' ? 'Scene '+X.scenes[view.k].no : 'Scene Chart';
+  if(view.mode==='grid') chartGrid(body, X, csk);
+  else if(view.mode==='scene') chartScene(body, X, view.k, ci);
+  else chartSearch(body, X, view.q, ci);
+  $('#chartP').classList.add('on');
+  const now=body.querySelector('.now'); if(now && view.mode!=='search') now.scrollIntoView({block:'center'}); else body.scrollTop=0;
+}
+function whoDots(list){ const w=el('div','wd'); list.forEach(x=>{ const s=el('span'); const i=el('i'); i.style.background=(CHAR[x]||{}).c||'var(--paper-dim)'; s.append(i, SPK[x]||x); w.appendChild(s); }); return w; }
+function thumb(name){ const im=el('img'); im.alt=''; im.loading='lazy'; im.decoding='async'; im.src=`img/th/${name}.webp`; return im; }
+function chartGrid(body, X, csk){
+  let lastCh=-1, grid=null;
+  X.scenes.forEach((s,k)=>{
+    if(s.ch!==lastCh){ lastCh=s.ch; const h=el('div','cch'); h.append(el('span','k', s.ch?'CHAPTER '+s.ch:'PROLOGUE'), el('span','tt', s.ch?s.chT:CHAPTERS[0].t)); grid=el('div','scg'); body.append(h,grid); }
+    const b=el('button','sc'+(k===csk?' now':'')); b.type='button'; b.dataset.scene=s.id;
+    const m=el('div','meta'); m.append(el('div','n', s.no+'  '+s.id), el('div','tt', SCENE_T[s.id]||s.id), el('div','s', (s.date?s.date+' · ':'')+s.lines.length+' lines'));
+    if(s.who.length) m.append(whoDots(s.who));
+    b.append(thumb(s.thumb), m); if(k===csk) b.append(el('span','tag','NOW'));
+    b.onclick=()=>openChart({mode:'scene', k}); grid.appendChild(b);
+  });
+}
+function lineRow(j, ci, withScene){
+  const c=S[j], row=el('div','ln-row'+(j===ci?' now':'')), b=el('button','ln'+(c.t==='say'?'':' nar')); b.type='button'; b.dataset.i=j;
+  const who = c.t==='say' ? (SPK[c.who]||c.who) : c.t==='phone' ? (c.who==='me'?'Natsuki':'Chie')+' ✉' : '';
+  const lw=el('span','lw', who); if(c.t==='say') lw.style.setProperty('--nc', (CHAR[c.who]||{}).c||'var(--sakura)');
+  const lt=el('span','lt');
+  if(withScene){ const X=devIndex(), s=X.scenes[X.at[j]]; lt.appendChild(el('span','scl', s.no+' · '+(SCENE_T[s.id]||s.id))); }
+  lt.append(plain(c.text)); if(c.t==='say' && jaText && jaText[c.id]){ const ja=el('span','ja', jaText[c.id]); ja.lang='ja'; lt.appendChild(ja); }
+  b.append(el('span','lid', c.id||''), lw, lt); b.onclick=()=>devJump(j);
+  const v=el('div'); if(c.t==='say' && vIndex && vIndex[c.id]){ const p=el('button','vb','♪'); p.type='button'; p.setAttribute('aria-label','Play voice'); p.onclick=()=>{ audioInit(); playVoice(c.id, null); }; v.appendChild(p); }
+  row.append(b, v); return row;
+}
+function chartScene(body, X, k, ci){
+  const s=X.scenes[k], head=el('div','sd-head'), info=el('div','info');
+  const voiced=s.lines.filter(j=>S[j].t==='say' && vIndex && vIndex[S[j].id]).length;
+  info.append(el('div','n', `${s.no} · ${s.ch?'Chapter '+s.ch+', '+s.chT:'Prologue'}${s.date?' · '+s.date:''} · ${s.id}`), el('div','tt', SCENE_T[s.id]||s.id),
+    el('div','s', `${s.lines.length} lines · ${voiced} voiced${s.who.length?' · '+s.who.map(w=>SPK[w]||w).join(', '):''}`));
+  const acts=el('div','sd-acts'); const btn=(t,f,dis)=>{ const b=el('button','x',t); b.type='button'; b.onclick=f; if(dis) b.disabled=true; acts.appendChild(b); };
+  btn('▶ Play from scene start', ()=>devJump(s.i));
+  btn('‹ Previous scene', ()=>openChart({mode:'scene',k:k-1}), k===0);
+  btn('Next scene ›', ()=>openChart({mode:'scene',k:k+1}), k===X.scenes.length-1);
+  info.appendChild(acts); head.append(thumb(s.thumb), info); body.appendChild(head);
+  for(let j=s.i+1;j<s.end;j++){ const c=S[j];
+    if(isLine(c)){ body.appendChild(lineRow(j, ci, false)); continue; }
+    let label=null, minor=false;
+    if(c.t==='bg') label = c.name==='black' ? 'Fade to black' : c.name==='white' ? 'Flash to white' : 'Background · '+nice(c.name);
+    else if(c.t==='cg') label = c.name ? 'CG · '+nice(c.name) : 'CG ends';
+    else if(c.t==='card') label = 'Date card · '+c.text;
+    else if(c.t==='mode' && c.mode==='interlude') label = 'Interlude · '+c.label;
+    else if(c.t==='bgm'){ label = c.name ? 'Music · '+c.name : 'Music stops'; minor=true; }
+    else if(c.t==='endpilot') label = 'End of pilot';
+    if(!label) continue;
+    const m=el('button','mk'+(minor?' minor':'')+(j===ci?' now':''), label); m.type='button'; m.dataset.i=j; m.onclick=()=>devJump(j); body.appendChild(m);
+  }
+}
+function chartSearch(body, X, q, ci){
+  const ql=q.toLowerCase(), hits=[];
+  for(let j=0;j<S.length;j++){ const c=S[j]; if(!isLine(c)) continue;
+    const hay=(c.text+' '+(c.id||'')+' '+(c.t==='say'?(SPK[c.who]||c.who):c.t==='phone'?'text phone '+c.who:'')+' '+((jaText&&jaText[c.id])||'')).toLowerCase();
+    if(hay.includes(ql)) hits.push(j); }
+  body.appendChild(el('div','chart-note', hits.length ? `${hits.length} matching line${hits.length===1?'':'s'}${hits.length>200?' · showing the first 200':''}` : 'No lines match.'));
+  hits.slice(0,200).forEach(j=>body.appendChild(lineRow(j, ci, true)));
+}
+$('#chartQ').addEventListener('input', e=>{ const q=e.target.value.trim(); if(q.length>=2) openChart({mode:'search', q}); else if(!q) openChart(chartLast); });
+$('#chartBack').onclick=()=>{ $('#chartQ').value=''; openChart({mode:'grid'}); };
+$('#devId').onclick=copyId;
+$('#dPrevS').onclick=()=>stepScene(-1); $('#dNextS').onclick=()=>stepScene(1);
+$('#dPrevL').onclick=()=>stepLine(-1); $('#dNextL').onclick=()=>stepLine(1);
+$('#dChart').onclick=()=>{ if(!S) return; setAuto(false); setSkip(false); openChart(); };
+$('#setChart').onclick=()=>{ closePanels(); if(S) openChart(); };
+$('#devOff').onclick=()=>{ setDev(false); closePanels(); toast('Developer mode off'); };
+// hidden switch that also works from a home-screen icon: tap 大桜 on the title five times
+{ let n=0, t=0; $('.tate').addEventListener('click', ()=>{ const now=Date.now(); n = now-t<800 ? n+1 : 1; t=now; if(n>=5){ n=0; setDev(!devOn); toast(devOn?'Developer mode on':'Developer mode off'); } }); }
+// keep the developer strip just above the dialogue box, whatever its height
+try{ new ResizeObserver(()=>app.style.setProperty('--boxh', box.offsetHeight+'px')).observe(box); }catch(e){}
+app.classList.toggle('dev', devOn); store.set('dev', devOn);
+
+function closePanels(){ document.querySelectorAll('.panel.on').forEach(p=>p.classList.remove('on')); if(curLine&&!typing) scheduleAuto(); }
+function setAuto(v){ autoOn=v; $('#bAuto').classList.toggle('on',v); if(v){ setSkip(false); if(!typing) scheduleAuto(); } else clearTimeout(autoTimer); }
+/* skip runs on its own clock: whenever a line or text message is waiting, move on (cards and pauses shorten themselves while skipping) */
+let skipTimer=null;
+function setSkip(v){ skipOn=v; $('#bSkip').classList.toggle('on',v); clearInterval(skipTimer);
+  if(v){ autoOn=false; $('#bAuto').classList.remove('on'); stopVoice();
+    skipTimer=setInterval(()=>{ if(!skipOn){ clearInterval(skipTimer); return; } if(overlayOpen()||running) return; if(typing){ finishType(); return; } if(curLine) advance(); }, 55); } }
+
+/* ---------- title ---------- */
+function hideTitle(){ $('#title').hidden=true; }
+function toTitle(){
+  cardFinish=null; setSkip(false); setAuto(false); stopVoice(); clearTimeout(waitTimer); box.classList.add('hidden');
+  ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); setCg(null); setMode('normal');
+  $('#title').hidden=false; $('#tapStart').hidden=true; $('#mCont').disabled=!store.get('cont',null); playBgm('title');
+}
+
+/* ---------- input ---------- */
+app.addEventListener('click',e=>{
+  resumeAudio();
+  if(e.target&&e.target.closest&&e.target.closest('button,.panel,#title,input,#devbar')) return;
+  if($('#endCard').classList.contains('on')) return;
+  if(skipOn){ setSkip(false); return; }
+  advance();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){ if(!overlayOpen()&&!(e.target&&e.target.closest&&e.target.closest('button,input'))){ e.preventDefault(); if(skipOn) setSkip(false); else advance(); } }
+  if(e.key==='Escape') closePanels();
+  if(devOn && S && $('#title').hidden && !overlayOpen()){ if(e.key==='ArrowLeft'){ e.preventDefault(); stepLine(-1); } else if(e.key==='PageUp'){ e.preventDefault(); stepScene(-1); } else if(e.key==='PageDown'){ e.preventDefault(); stepScene(1); } }
+});
+$('#bAuto').onclick=()=>setAuto(!autoOn);
+$('#bSkip').onclick=()=>setSkip(!skipOn);
+$('#bLog').onclick=()=>{ setAuto(false); setSkip(false); openLog(); };
+$('#bSave').onclick=()=>{ setAuto(false); openSave('save'); };
+$('#bLoad').onclick=()=>{ setAuto(false); openSave('load'); };
+$('#bMenu').onclick=()=>{ setAuto(false); setSkip(false); openSettings(); };
+document.querySelectorAll('[data-close]').forEach(b=>b.onclick=closePanels);
+// every menu action waits for the script to be loaded, so a slow or late boot can never strand the player on a black stage
+function whenLoaded(fn){ return ()=>{ audioInit(); if(S){ fn(); return; } toast('Loading…'); loadScript().then(fn).catch(showErr); }; }
+$('#tapStart').onclick=()=>{ audioInit(); $('#tapStart').hidden=true; playBgm('title'); };
+$('#mStart').onclick=whenLoaded(()=>startAt(0));
+$('#mCont').onclick=whenLoaded(()=>{ const c=store.get('cont',null); if(c){ hideTitle(); restore(c);} });
+$('#mChap').onclick=whenLoaded(openChapters);
+$('#mLoad').onclick=whenLoaded(()=>openSave('load'));
+$('#mSet').onclick=()=>{ audioInit(); openSettings(); };
+$('#mChart').onclick=whenLoaded(()=>openChart());
+$('#endBack').onclick=()=>toTitle();
+$('#sndBtn').onclick=soundCheck;
+window.addEventListener('resize',()=>{ layoutSprites(); Object.entries(state.spr).forEach(([w,v])=>{ const el=document.querySelector(`.spr[data-who="${w}"]`); if(el) el.style.left=POSX[v.pos]+'%'; }); });
+document.addEventListener('visibilitychange',()=>{ if(!ac) return; try{ if(document.hidden){ const p=ac.suspend(); if(p&&p.catch) p.catch(e=>note('suspend',e)); if(silentEl) silentEl.pause(); } else { resumeAudio(); if(silentEl){ const q=silentEl.play(); if(q&&q.catch) q.catch(()=>{}); } } }catch(e){ note('visibility',e); } });
+
+/* ---------- boot ---------- */
+/* errors surface on screen (small, bottom-left) so a failure is never just a black stage */
+function showErr(e){ const m=(e&&(e.message||e.reason&&e.reason.message||e.reason))||String(e); note('error',m); const el=$('#err'); el.textContent='Something went wrong: '+m+' (tap to dismiss; Settings → Sound check has details)'; el.hidden=false; }
+window.addEventListener('error',e=>showErr(e.error||e.message));
+window.addEventListener('unhandledrejection',e=>showErr(e.reason||e));
+$('#err').onclick=()=>{ $('#err').hidden=true; };
+let scriptP=null;
+function loadScript(){
+  if(!scriptP) scriptP=fetch('script.json').then(r=>{ if(!r.ok) throw new Error('could not load the story (script.json '+r.status+')'); return r.json(); })
+    .then(j=>{ S=j.script; SPK=j.speakers; S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; }); $('#mCont').disabled=!store.get('cont',null); return j; })
+    .catch(e=>{ scriptP=null; throw e; });
+  return scriptP;
+}
+loadScript().catch(showErr);   // load immediately, independent of the viewer's hot-reload hook
+// warm the image cache for the first scenes
+['cg_dream','bg_kohei_room_day','bg_fujisawa_kitchen'].forEach(n=>{const i=new Image(); i.src=`img/bg/${n}.webp`;});
+let restoredHot=false;
+function start(data){
+  if(!data||!data.snap||restoredHot) return;
+  restoredHot=true;
+  loadScript().then(()=>{ if(!$('#title').hidden && !$('#tapStart').hidden){ $('#tapStart').hidden=true; hideTitle(); restore(data.snap); } }).catch(showErr);
+}
+if(HASH.has('qa')) window.__vn={get devOn(){return devOn}, setDev, devJump, stepLine, stepScene, openChart, curIdx, get DX(){return devIndex()}, startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, diag, soundCheck,
+  meter:()=>{ if(!ac) return null; const mk=g=>{ if(!g._an){ g._an=ac.createAnalyser(); g._an.fftSize=2048; g.connect(g._an); } const d=new Float32Array(2048); g._an.getFloatTimeDomainData(d); let s=0; for(const x of d) s+=x*x; return Math.sqrt(s/d.length); };
+    return {state:ac.state, bgm:mk(gBgm), voice:mk(gVoice), sfx:mk(gSfx)}; }, check:()=>({i:state.i, cur:curLine&&curLine.t, id:curLine&&curLine.id, typing, box:!box.classList.contains('hidden'), cards:[...document.querySelectorAll('.card.on')].map(e=>e.id), title:!$('#title').hidden, text:textEl.textContent.length, phone:$('#phone').classList.contains('on'), cg:state.cg, bg:state.bg})};
+try{
+  const hot=window.claude&&window.claude.hot;
+  if(hot&&hot.snapshot) hot.snapshot(()=>({snap: $('#title').hidden ? snap() : null}));
+  if(hot&&hot.ready) hot.ready(start); else start(hot&&hot.data||{});
+}catch(e){ /* the hook is optional */ }
+// look-ahead preloading of upcoming art
+setInterval(()=>{ if(!S) return; for(let k=state.i;k<Math.min(S.length,state.i+40);k++){ const c=S[k];
+  if((c.t==='bg'||c.t==='cg')&&c.name&&!['black','white'].includes(c.name)){ const u=`img/bg/${c.name}.webp`; if(!preloaded.has(u)){preloaded.add(u); const i=new Image(); i.src=u;} }
+  if(c.t==='show'){ const u=`img/ch/${c.spr}.webp`; if(!preloaded.has(u)){preloaded.add(u); const i=new Image(); i.src=u;} }
+  if(c.t==='say'&&ac) voiceBuf(c.id); } },1500);
+})();
+</script>
+
+</body>
+</html>

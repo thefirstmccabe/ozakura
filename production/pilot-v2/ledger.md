@@ -10,3 +10,6 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-17 | Fixes: dream CG cut under the bandage, title CG Natsuki's hair (NB Pro 2K ×2 each) | 2 | $0.60 |
 | 10-17 | Night houses plate for 1.7 (NB Pro 2K ×2): the shipped night street has the alley canon forbids | 1 | $0.30 |
 | 10-17 | Cutouts: 12 sprites + Kōhei's 10 face-window images (bria) | 22 | $0.40 |
+| 10-17 | Living stills: title, dream (Kling v3 Pro, 4 s each, start = end frame) | 2 | $1.12 |
+| 10-17 | Voices: 25 batched Gemini TTS takes, ~11,100 characters | 25 | $0.50 |
+| 10-17 | Voice QA: transcriptions of the joined takes and of the final clips (ElevenLabs STT, ~29 min) | 2 | $0.85 |

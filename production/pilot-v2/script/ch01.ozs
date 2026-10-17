@@ -223,15 +223,17 @@ natsuki: "…six times now? So I'm basically a professional. Please don't go eas
 natsuki: "I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, I'll be grateful forever." || 剣道をやっていて、私を受け入れてくれる道場を探してます。あと、ホラー映画が大好きなので、一緒に観てくれる人がいたら、一生感謝します。
 natsuki: "Please take care of me." || よろしくお願いします。
 > She bows, and comes up out of the bow grinning.
+@cg - cut
+@show natsuki school_grin c
 > And then she looks straight at me.
 @bgm -
 @wait 0.8
-natsuki: "…Ah." || ……あ。
+natsuki<surprised>: "…Ah." || ……あ。
 > Her grin stutters. Just for a second. Just long enough that I'm sure I'm the only one who sees it.
-natsuki: "Sorry, I lost my place. Um. That's everything! Thank you!" || ごめんなさい、何を言うか飛んじゃいました。えっと……以上です！ ありがとうございました！
+natsuki<laugh>: "Sorry, I lost my place. Um. That's everything! Thank you!" || ごめんなさい、何を言うか飛んじゃいました。えっと……以上です！ ありがとうございました！
 > More laughter, the friendly kind.
 > I realize I've been holding my pen hard enough to hurt.
-@cg -
+@hide natsuki
 @bgm natsuki
 teacher: "Thank you, Mizuno. Let's see… the empty seat behind Fujisawa, by the window. Fujisawa, raise your hand so she doesn't have to wander." || ありがとう、みずの。じゃあ席は……ふじさわの後ろが空いてるな。窓際だ。ふじさわ、迷わないように手を挙げてやれ。
 > I raise my hand. She walks down the aisle. When she passes my desk, she slows down just enough to lean in.
@@ -296,7 +298,7 @@ nanoha<blush>: "That's—yes. That's fine." || それは……うん。いいよ
 > I eat my rice. It's very good rice. I made it myself.
 
 == c1_interlude | Nanoha: the tour
-@mode interlude Nanoha
+@mode interlude Interlude: Nanoha
 @bg bg_classroom_evening
 @bgm nanoha
 > Natsuki noticed everything.

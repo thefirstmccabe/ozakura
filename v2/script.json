@@ -1409,6 +1409,17 @@
 "text": "She bows, and comes up out of the bow grinning."
 },
 {
+"t": "cg",
+"name": null,
+"tr": "cut"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_grin",
+"pos": "c"
+},
+{
 "t": "nar",
 "id": "c1_0148",
 "text": "And then she looks straight at me."
@@ -1422,6 +1433,11 @@
 "s": 0.8
 },
 {
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_surprised"
+},
+{
 "t": "say",
 "id": "c1_0149",
 "who": "natsuki",
@@ -1431,6 +1447,11 @@
 "t": "nar",
 "id": "c1_0150",
 "text": "Her grin stutters. Just for a second. Just long enough that I'm sure I'm the only one who sees it."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_laugh"
 },
 {
 "t": "say",
@@ -1449,9 +1470,8 @@
 "text": "I realize I've been holding my pen hard enough to hurt."
 },
 {
-"t": "cg",
-"name": null,
-"tr": "fade"
+"t": "hide",
+"who": "natsuki"
 },
 {
 "t": "bgm",
@@ -1923,7 +1943,7 @@
 {
 "t": "mode",
 "mode": "interlude",
-"label": "Nanoha"
+"label": "Interlude: Nanoha"
 },
 {
 "t": "bg",
