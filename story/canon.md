@@ -81,6 +81,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Language:**
   - Keep honorifics and meaningful forms of address in natural English: -san, -kun, -chan, senpai, and sibling terms like onii-chan.
   - Bare names and changes in address matter.
+  - **Address forms and pronouns (Decided Oct 17; Claude's choices, delegated by the author):** style guide §3c. Key forms: Kōhei calls Nanoha "Nano" (childhood, family-coded) until he calls her "Nanoha" when they start dating; she calls him "Kōhei," or "Kō-chan" in private; he and Natsuki stay on surnames ("Mizuno" / "Fujisawa") until the January farewell to their past selves.
   - If a female character ever uses *boku*, preserve it with a cue. None has been assigned, and none may ever be.
 - **Hair color is a medium convention, never commented on in-world**, for any character, including Natsuki's copper and Akane's lavender-silver. (Oct 6.)
   - **Working default:** narration may describe a color plainly as visual description. No character ever remarks that a color is unusual, and no one's color is explained by the plot.
@@ -720,7 +721,6 @@ Select and adapt; this is not a checklist.
 **Setting and presentation:**
 - Town name, map and shrine architecture.
 - School trip.
-- The address guide.
 - Kanji.
 - The kiss song's vocal language and lyrics.
 
@@ -837,3 +837,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Era treatments** decided (§2): past life cool and desaturated; childhood warm and faded.
   - **Pilot v2 scene outline approved** with changes (`production/pilot-v2/scene-outline.md`).
   - **Wataboshi image** added to the image motifs (scene bank 23), from the author; placement a Proposal.
+  - **Address guide decided** (§2; style guide §3c), with planned name changes: "Nano" → "Nanoha" (the nickname that hurts in Ch11, the switch in Ch24), Nanoha's one cold "Fujisawa-kun" (Ch20), Natsuki's first "Kōhei" in her one voiced line in the kiss sequence (Ch19), his first "Natsuki" at the January farewell (Ch30), and Nanoha's "-san"/"-chan" shifts with Natsuki. Claude's choices, delegated by the author.

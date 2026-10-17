@@ -13,6 +13,7 @@
 - **Shared-past flashbacks (canon §6):** FB1–FB6, one short scene each, triggered by something in the present.
 - **Family:** Kōhei carries everything until September; Mom's partial recovery runs from September with setbacks.
 - **Takatsuki:** friction April–July, low point in September, learning from each other October–December, drawn in by the loop in January.
+- **Names (style guide §3c):** Kōhei's "Nano" planted in Ch1–3; Nanoha → Natsuki "-chan" at the pact (Ch10); "It's Nano. It's like eating at home" hurts (Ch11); Rika notices Kōhei and Natsuki are still on surnames (Ch14); Akane → "Natsuki-chan" (Ch15); Takatsuki's one *omae* (Ch18–20); Natsuki's first "Kōhei" in her one voiced line (Ch19); Nanoha's cold "Fujisawa-kun" and "Natsuki-san" (Ch20); "Kōhei" back by Ch22; he calls her "Nanoha" as they start dating (Ch24); "Natsuki-chan" again (Ch25); his first "Natsuki" at the farewell (Ch30); Nanoha's plain "Natsuki" (Ch31).
 - **Past-life fragments:** small and physical all year; the substantial memories come at the New Year bloom. Reader-ahead past-life interludes are still Open (parked), so none are placed here.
 
 ---

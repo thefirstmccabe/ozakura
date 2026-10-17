@@ -106,7 +106,7 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
    - Places: the town (Shirasawa), the school (Shirasawa High), the shrine (Hanaoka) and the restaurant (Hoshino Kitchen).
    - Cast: Ryōsuke, Rika, Yuzu, Kirishima, Takatsuki, Sōta, Kazuo, Emi, Genji, Chie and Ōno-sensei.
    - Details: Natsuki's father's job and Akane's clinic day.
-2. **The address guide (§4), including "Kō-chan."** Canon scene bank #6, the nickname that later hurts, depends on this choice.
+2. ~~The address guide (§4), including "Kō-chan."~~ **Decided Oct 17** (style guide §3c; delegated by the author): Nanoha keeps "Kō-chan" in private; the nickname that hurts (scene bank 6) is Kōhei's "Nano" for her.
 3. **POV** (canon: Open).
 
 ## 2. The pilot as shipped
@@ -198,19 +198,8 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 
 **The past-life girl:** speaker label "???". She waits under the low branch. Thatched roofs and flooded paddies; a stone and a shimenawa rope before the shrine existed. In the pilot she ties a strap around the dreamer's wrist; per fix 23 she binds a cut on his wrist. See fix 12 for her costume.
 
-## 4. Address guide (pilot; Open in canon)
-| From → To | Form |
-|---|---|
-| Kōhei ↔ Nanoha | Bare given names; Nanoha teases with "Kō-chan" |
-| Akane → Kōhei / Nanoha | "Onii-chan" (fix 9) / "Nanoha-chan" |
-| Natsuki ↔ Kōhei | "Fujisawa" / "Mizuno" |
-| Nanoha → Natsuki | "Mizuno-san" → "Natsuki-san" ("I'm working up to it"); "-chan" saved for a later beat |
-| Natsuki → Nanoha | "Nanoha" from day one |
-| Rika → Nanoha | "Nano-chan" |
-| Sōta → Kōhei | "Kō-nii" |
-| Yuzu → Kōhei | "Senpai" / "Fujisawa-senpai" |
-| Kendo juniors → Kirishima | "Captain" |
-| Classmates → Natsuki | "Nacchan" |
+## 4. Address guide
+**Superseded Oct 17 by style guide §3c** (address forms, Japanese pronouns and the planned name changes). The pilot's table matched it except: Sōta is now Mio ("Kō-nii" kept); "Nacchan" is Rika's nickname for Natsuki, not every classmate's; Kōhei calls Nanoha "Nano."
 
 ## 5. World as the pilot built it [P]
 - **Shirasawa (白沢):** the Shirasawa River runs fat with snowmelt in April. A cherry-lined embankment path leads to school, and a bridge marks where the routes split.
