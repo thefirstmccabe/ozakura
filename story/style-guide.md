@@ -179,30 +179,30 @@ Speech rules, not personality summaries; personalities are in canon §8. Address
 | **Takatsuki** | Complete, correct sentences; few contractions; exact kendo vocabulary | Unintentional: dead serious and literal about rules and form. Unlike Kōhei's short, plain straight man, he is formal and complete | Citing form and rules; precise criticism instead of feelings; going quiet. When he finally says something personal it's short and blunt ("You scared her. You scared me too.") | Mocking Kōhei's missed practices; slang; sarcasm |
 | **Kirishima** (captain) | Terse; coaching in single sentences ("You stopped for half a second. Don't.") | Deadpan that lands a beat late; nobody laughs, and he doesn't wait for it | Changing the drill | Speeches; shouting |
 | **Emi** (Nanoha's mother) | Warm, brisk, runs on food | Cheerful bluntness; embarrassing teasing ("Competition, is it?") | Feeding people | Wallowing; lecturing Kōhei. When serious she's blunt and loving ("Your kids just want their mom back.") |
-| **Kazuo** (Nanoha's father, the mentor) | Big and quiet; few words, plain and practical; asks questions | Very dry, rare | Telling a concrete story from his own life (the karate club) instead of a principle | Therapy language; abstractions; letting Kōhei off the hook |
-| **Kōhei's mom** | Early on, few words, quiet and apologetic; later, small, slightly rusty attempts at ordinary mom-talk | Barely any at first; it returns as she does | Apologizing; going back behind the fusuma | Melodrama; explaining her depression |
+| **Kazuo** (Nanoha's father, the mentor) | Big and quiet; few words, plain and practical; asks questions | Very dry, rare | Telling a concrete story from his own life (the karate club) | Therapy language; abstract lectures (his one image, "be more like the tree," grows out of a story); letting Kōhei off the hook |
+| **Kōhei's mom** | Early on, few words, quiet and apologetic; later, small, slightly rusty attempts at ordinary mom-talk | Barely any at first; it returns as she does | Apologizing; going back behind the fusuma | Melodrama; naming or explaining her condition |
 | **Genji** (Nanoha's grandfather) | Easygoing old man | Cheerful evasions (his very convenient back) | Changing the subject to the weather or the tree | Oracle speeches; folk knowledge comes out as gossip and habit, not lore dumps |
 | **Ōno-sensei** | Weary, dry; refers to himself as "Sensei" | Bureaucratic understatement ("through channels I'd like to know more about") | Paperwork | Enthusiasm |
 | **Yuzu** (work kōhai) | Cheeky, sing-song "Senpai~"; switches to a flawless customer-service register on cue | Scoring points out loud ("Point to Shiina"); bold verbal flirting | Going short and flustered when someone is sincerely nice to her | Serious romance talk; real meanness to Nanoha or Natsuki |
 | **The manager** | Harried | "You're a lifesaver" about nine times a shift (one-note on purpose) | More shifts | Depth |
-| **Chie** (by text only) | Short texts, lowercase | A blunt best friend who sees through Natsuki's cheerfulness and asks the real question | Sending zunda mochi | Long messages |
+| **Chie** (mostly texts; a phone call at Christmas) | Short texts | A blunt best friend who sees through Natsuki's cheerfulness and asks the real question | Sending zunda mochi | Long messages |
 | **Past-life Natsuki** | Gentle, polite Japanese (desu/masu); few words; a grown woman, warmer and slower than a teen | Scolding with love ("You're late." "Hurt again.") | Tending his hurt | Modern phrasing; saying his name |
 | **The fairy** | Short exclamations, old-fashioned turns of phrase | Old but childlike: curious, a little vain, food-motivated, mischievous with Nanoha; remembers what she cared about (cookies), not what's useful | Wandering off the subject | Exposition without personality; knowing everything |
 
 ## 3c. Address and pronouns (decided Oct 17; Claude's choices, delegated by the author)
-Canon §2: honorifics and changes in address matter. This sheet supersedes pilot-notes §4. Japanese lines (the voiced column) follow the pronouns here exactly; English follows the address forms. **Narration** uses full names (Kōhei's narration says "Nanoha" even when he says "Nano" aloud), except that Kōhei's narration calls Natsuki whatever he calls her aloud ("Mizuno" until he switches). Interludes follow their POV character.
+Canon §2: honorifics and changes in address matter. This sheet supersedes pilot-notes §4. Japanese lines (the voiced column) follow the pronouns and forms here exactly. **English** keeps honorifics, sibling terms and Japanese nicknames ("-san," "Onii-chan," "Kō-chan," "Chibi"), but translates parent, grandparent and neighbor-adult terms (Mom, Grandpa, Auntie, Uncle). **Kōhei's narration** uses the name he uses aloud ("Tokiwa," "Mizuno"), except that Nanoha is always "Nanoha" in narration. Interludes follow their POV character.
 
 **Self and "you" (Japanese):**
 | Character | "I" | "You" / how they address people |
 |---|---|---|
-| Kōhei | ore | *omae* to Nanoha, Akane, Ryōsuke, Takatsuki; Natsuki by surname only, never *omae*; polite forms to adults |
+| Kōhei | ore | *omae* to Nanoha, Akane, Ryōsuke, Takatsuki; Natsuki by surname only, never *omae*; casual with the Tachibana adults, polite with teachers and strangers |
 | Nanoha | watashi | Names, never *anata* or *anta*; polite *desu/masu* with strangers |
 | Natsuki | watashi | *kimi* to Kōhei (her signature); names for everyone else |
 | Akane | watashi | Names; "Onii-chan" |
 | Mio | refers to herself as "Mio" (third person) | Orders, names, "Kō-nii" |
 | Rika | atashi | Nicknames |
 | Ryōsuke | ore | Surnames |
-| Takatsuki | boku | Surnames, avoids "you"; one register break to *omae* when he confronts Kōhei after the street fight (Ch18–20) |
+| Takatsuki | boku | Surnames, avoids "you"; one register break to *omae* when he confronts Kōhei about going to the adviser together (Ch20) |
 | Kirishima | ore | Bare surnames |
 | Emi | watashi | Affectionate names |
 | Kazuo | ore (with Kōhei) | "Kōhei" |
@@ -210,19 +210,24 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Ōno-sensei | "Sensei" | Bare surnames |
 | Yuzu | watashi | "Senpai" |
 | Past-life Natsuki | watashi (polite speech) | *anata*; never his name |
+| Past-life Kōhei (the rōnin) | ore | *omae* to his wife (a contrast with his never using *omae* to Natsuki now) |
+| The fairy | watashi, in old-fashioned plain speech | Bare given names |
 
 **Who calls whom what (at the start of the story):**
 | From → To | Form |
 |---|---|
-| Kōhei → Nanoha | **"Nano"**: the childhood short form he's used since they were small. Family-coded, and he doesn't hear it that way (see the shifts below) |
-| Nanoha → Kōhei | "Kōhei" in front of others; **"Kō-chan"** when it's the two of them and she's teasing or tender ("Good night, Kō-chan"). Emi still calls him "Kō-chan" too, which is where Nanoha got it |
-| Kōhei ↔ Natsuki | "Mizuno" / "Fujisawa" (she adds *kimi*). Natsuki asks everyone else to call her Natsuki on day one, but never asks him |
+| Kōhei → Nanoha | Usually no name at all (*omae*, the way close people talk); when he teases her, **"Chibi"** ("shorty"), the childhood nickname that plays on her height. It means *little kid*, and he doesn't hear it that way (see the shifts below) |
+| Nanoha → Kōhei | "Kōhei" by default; **"Kō-chan"** at private teasing or tender moments ("Kō-chan. Your collar." "Good night, Kō-chan."), never in front of the class |
+| Kōhei ↔ Natsuki | "Mizuno" / "Fujisawa" (she adds *kimi*; a bare surname, where she says "-kun" to other boys). Natsuki asks Nanoha to call her Natsuki on day one, with him sitting right there, and never asks him |
 | Nanoha → Natsuki | "Mizuno-san" → "Natsuki-san" on day one ("I'm working up to it") |
 | Natsuki → Nanoha | "Nanoha" from day one, and she never changes it |
+| Natsuki → Ryōsuke / Takatsuki / Rika / Akane / Mio | "Tokiwa-kun" / "Takatsuki-kun" / "Rika" / "Akane-chan" / "Mio-chan" |
+| Classmates → Natsuki | **"Nacchan"** by her second day (scene outline 2.1), except Kōhei, Ryōsuke and Takatsuki, who use "Mizuno" |
 | Akane → Kōhei / Nanoha / Natsuki | "Onii-chan" / "Nanoha-chan" / "Natsuki-san" |
-| Kōhei → Akane | "Akane" |
+| Kōhei → Akane / Mio / Rika | "Akane" / "Mio" / "Hoshikawa" |
+| Nanoha → Rika / Akane / Ryōsuke / Takatsuki | "Rika-chan" / "Akane-chan" / "Tokiwa-kun" / "Takatsuki-kun" |
 | Mio → Kōhei / Nanoha / Akane / Natsuki | "Kō-nii" / "Onee-chan" / "Akane-nee" / "Natsuki-nee" |
-| Rika → Nanoha / Kōhei / Natsuki / Ryōsuke | "Nano-chan" / "Fujisawa-kun" / **"Nacchan"** (from Ch2; Rika nicknames everyone) / "Tokiwa-kun" |
+| Rika → Nanoha / Kōhei / Natsuki / Ryōsuke | "Nano-chan" / "Fujisawa-kun" / "Nacchan" / "Tokiwa-kun" |
 | Kōhei ↔ Ryōsuke | "Tokiwa" / "Fujisawa" |
 | Ryōsuke → Nanoha / Natsuki / Rika | "Tachibana" / "Mizuno" / "Hoshikawa" |
 | Kōhei ↔ Takatsuki | "Takatsuki" / "Fujisawa" (throughout; their change is in tone, not names) |
@@ -230,24 +235,25 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Club → Kirishima | "Captain" (*shushō*) at practice; "Kirishima-senpai" off the floor |
 | Kirishima → members | Bare surnames |
 | Kōhei → Emi / Kazuo / Genji | "Oba-san" / "Oji-san" / "Ojii-san" |
-| Emi / Kazuo / Genji → Kōhei | "Kō-chan" / "Kōhei" / "Kōhei" |
+| Emi / Kazuo / Genji → Kōhei | "Kōhei-kun" (as in the shipped pilot scene the author liked) / "Kōhei" / "Kōhei" |
+| Emi / Kazuo → Nanoha | "Nanoha" |
 | Nanoha → Genji | "Ojii-chan" |
 | Kōhei ↔ his mom | "Kaa-san" / "Kōhei" |
 | Mom → Nanoha | "Nanoha-chan" |
 | Emi → Kōhei's mom | Her given name, as old friends (the name is Open) |
 | Ōno-sensei → students | Bare surnames |
-| Yuzu → Kōhei / Kōhei → Yuzu | "Senpai" / "Shiina" (she'd like more; he doesn't notice) |
+| Yuzu → Kōhei / Kōhei → Yuzu | "Senpai" / "Shiina" (she'd like more; he doesn't take the hint) |
 | Manager ↔ Kōhei | "Fujisawa-kun" / "Tenchō" (Manager) |
-| Chie → Natsuki | "Natsu" (texts) |
+| Chie → Natsuki | "Natsuki" (often in capitals, as in the kept Ch2 texts) |
 | Fairy → everyone | Bare given names; at the bloom, to Kōhei and Natsuki: "You two. Again." |
 
 **Planned shifts (story beats; placed in the chapter map's running threads):**
-1. **Kōhei → Nanoha: "Nano" → "Nanoha."** Plant "Nano" early (the Ch1 revision: "Night, Nano," answering her "Good night, Kō-chan"). **Ch11** is the nickname that suddenly hurts (scene bank 6): with the dueling lunches, he waves off the scorekeeping with something like "Come on. It's Nano. It's like eating at home," and she hears a little sister's name. **Ch24**, when they start dating, he calls her "Nanoha" on purpose for the first time since they were small, and she notices. After that, "Nano" when he's teasing, "Nanoha" when he means it (and in Ch37's "I love you").
-2. **Nanoha → Kōhei: one cold "Fujisawa-kun."** In **Ch20**, when she faces him about the kiss, the girl who has said "Kō-chan" for sixteen years calls him "Fujisawa-kun." "Kōhei" comes back by Ch22, and "Kō-chan" by Ch24.
-3. **Kōhei ↔ Natsuki: surnames until January.** **Ch14** (summer festival): Rika notices they're the only two still on "Fujisawa" and "Mizuno"; neither answers. **Ch19:** her one voiced line in the kiss sequence opens with his name, the first time she says it: "Kōhei… Let me be the one to tell her." **Ch20–29:** she goes back to "Fujisawa" (distance). **Ch30**, at the farewell to their past selves, he calls her "Natsuki" for the first time: her present name, which is what she asked for. Given names on both sides from then on, and his narration switches to "Natsuki" too.
+1. **Kōhei → Nanoha: "Chibi" → "Nanoha."** Plant "Chibi" early (the Ch1 revision: "Night, Chibi," おやすみ、チビ, answering her "Good night, Kō-chan"; Ch1 already has her "short-person direction" bit). **Ch11** is the nickname that suddenly hurts (scene bank 6): with the dueling lunches and the scorekeeping, he waves it off with something like "Come on. It's Chibi. It's like eating at home," and she hears that he still sees a little kid. **Ch24**, when they start dating, he calls her "Nanoha" to her face, on purpose, for the first time in years, and she notices. After that, "Chibi" when he's teasing, "Nanoha" when he means it (and in Ch37's "I love you"). ("Nano" was considered and dropped: なの is also a sentence ending, so a voiced "Nano" sounds like cutesy speech, not a name.)
+2. **Nanoha → Kōhei: one cold "Fujisawa-kun."** In **Ch20**, when she faces him about the kiss, the girl who has called him "Kōhei" and "Kō-chan" all her life calls him "Fujisawa-kun." "Kōhei" comes back by Ch22, and "Kō-chan" by Ch24.
+3. **Kōhei ↔ Natsuki: surnames until January.** **Ch14** (summer festival): Rika teases the asymmetry: the whole class calls her Nacchan and she made Nano-chan call her Natsuki on day one, so why is Fujisawa-kun still on "Mizuno"? (Tokiwa-kun doesn't count; he surnames everyone.) Neither of them answers. **Ch19:** her one voiced line in the kiss sequence opens with his name, the first time she says it: "Kōhei… Let me be the one to tell her." **Ch20–29:** she goes back to "Fujisawa" (distance). **Ch30**, at the farewell to their past selves (if that scene is used; canon 21a is a Proposal), she finally asks: "Everyone calls me Natsuki. You too. Mine, not hers." He does, which reads as him joining her friends, not a step toward romance. Given names on both sides from then on, and his narration switches to "Natsuki" too. **Ch31:** Nanoha notices the change.
 4. **Nanoha → Natsuki: "-san" → "-chan" → "-san" → bare.** "Natsuki-chan" at the pact (**Ch10**); back to a cool "Natsuki-san" after Natsuki tells her (**Ch20**); "Natsuki-chan" again as the friendship is repaired (**Ch25**); plain "Natsuki" when the girls talk privately in January (**Ch31**). Natsuki says "Nanoha" through all of it.
 5. **Akane → Natsuki: "Natsuki-san" → "Natsuki-chan"** in **Ch15**, when she hides her in her room ("I'm Team Nanoha-chan… because I like you too").
-6. **Takatsuki's register break:** *boku* and surnames always, except one *omae* when he confronts Kōhei after the street fight (Ch18–20).
+6. **Takatsuki's register break:** *boku* and surnames always, except one *omae* in **Ch20**, when he tells Kōhei he'd rather they go to the adviser together ("You scared her. You scared me too.").
 
 ## 4a. Manga inserts (color, from Oct 12): workflow
 **No storyboard step** (author, Oct 12): Vol. 1 was made from scratch and came out well. Claude builds each insert straight from the script and **presents only finished pages** that have passed the self-review below. The author's review time is the constraint, not cost.
