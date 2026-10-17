@@ -118,3 +118,18 @@
 1. **The [P] staging** above: 2.3 (demo dummies), 3.1 (the phone), 3.5 (the snow-smell fragment), 4.2 (Sunday at his place), 4.3 (Natsuki is the one who finds out), 4.4 (the new Nanoha interlude).
 2. **Era treatments** (canon §2 says to decide at the first flashback; the prologue and FB1 are it). **Proposal:** the past life gets a cool, desaturated palette with softer edges; childhood gets a warm, sunlit, slightly faded-photo look with a soft vignette. The two never share a palette.
 3. **The special visuals** (the Story thread's list in the brief) are the ones in this outline; approving the outline approves them.
+
+---
+
+## Approval (Oct 17)
+**Approved** with the changes below; the author delegated the review to the Story thread. Build from this outline as amended.
+
+**All six [P] stagings approved** (2.3, 3.1, 3.5, 4.2, 4.3, 4.4). In 2.3, make Takatsuki the model of correct form and Kōhei the counterexample; he'll be visibly annoyed about it. In 4.4, keep the interlude to a few lines.
+
+**Era treatments approved** as proposed (now canon §2): past life cool and desaturated with soft edges; childhood warm, sunlit, a faded photo with a soft vignette. Keep the past life in color. "Desaturated" drifts toward grayscale on these models (style guide §6), so check every past-life image for it.
+
+**Changes:**
+1. **Ryōsuke's hot-dog argument moves to 1.3.** Canon (§2 openings rule) makes it how he's introduced, so it can't wait until Ch4. In 4.2 he needs a different bit, e.g. arguing with the TV or with Mio over the game.
+2. **The catch (2.6) gets its very short animated moment**, which canon §2 keeps by name (the fall and catch, tested Oct 10), with the living still as a fallback if it doesn't pass review.
+3. **4.1 "He's heard her say it once before"** has to be shown. In FB1, during the weeks of searching, she runs to something on the boulder (a glint or a firefly), says "…You came back," and it isn't. That's the line he remembers.
+4. **Child Kōhei follows the present-day rule:** face window only (cropped from the FB1 CG work), shown in full only in the CG. Child Nanoha gets the sprites.
