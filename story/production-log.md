@@ -139,6 +139,7 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-16 | **Pilot v2 goes to its own Production thread** (brief: `production/pilot-v2/README.md`). **Review rule:** the author reviews only finished, playable chapters (art, voice, music included), never script-only drafts; produce all four chapters before handing over. Budget cap pending (proposed $40). |
 | 10-16 | **Pilot v2 review flow approved:** the author approves a one-page-per-chapter scene outline (scenes, CGs, inserts, backgrounds) first, then gets all four chapters as a finished build. **Budget: $40 cap** for the whole pilot. |
 | 10-17 | **Pilot v2 scene outline approved** (review delegated to the Story thread). All six [P] stagings kept. **Era treatments decided:** past life cool and desaturated, childhood warm and faded (canon §2). Changes: Ryōsuke's hot-dog argument moves to 1.3; the catch gets its short animated moment; FB1 shows the earlier "…You came back"; child Kōhei is a face window only. |
+| 10-17 | **The author approved the revised outline.** **Review flow changed:** chapter by chapter instead of all four at once; each chapter (Prologue with Ch1) arrives as a finished, playable build and is reviewed before the next starts (brief updated). |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |

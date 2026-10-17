@@ -1,6 +1,6 @@
 # Pilot v2 — scene outline (Prologue + Ch1–4)
 
-**Draft Oct 16; revised Oct 17 with the Story thread's changes, for the author's final OK.** Nothing is drawn until he approves it. **[P]** = Claude's staging, provisional. Everything else comes from canon, the chapter map or the pilot-notes fix list (numbers in brackets). Scene numbers match dev mode.
+**Approved by the author Oct 17** (draft Oct 16, revised Oct 17 with the Story thread's changes). Build from this. **[P]** = Claude's staging, provisional. Everything else comes from canon, the chapter map or the pilot-notes fix list (numbers in brackets). Scene numbers match dev mode.
 
 ---
 

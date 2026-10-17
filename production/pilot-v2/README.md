@@ -16,7 +16,7 @@
 
 **How the author reviews (decided Oct 16):**
 1. **First, a scene outline for Ch1–4** (about one page per chapter): each scene in a line or two, plus the CGs, manga insert, living stills and backgrounds it needs. The author approves it before any art is made. Scene-level changes are what make art expensive to redo; wording changes are nearly free.
-2. **Then all four chapters as a finished, playable build** (script, art, voices, music, inserts), self-reviewed before handover. No script-only drafts; he reads the chapters for enjoyment.
+2. **Then chapter by chapter (changed Oct 17):** each chapter (the Prologue goes with Ch1) as a finished, playable build (script, art, voices, music, inserts), self-reviewed before handover. He reviews it before the next chapter starts, so fixes to shared assets carry forward. No script-only drafts; he reads the chapters for enjoyment.
 
 **Budget: $40 cap for the whole pilot** (approved Oct 16; estimate about $20–30). Ask before going over.
 
