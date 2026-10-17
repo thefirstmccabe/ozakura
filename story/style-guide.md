@@ -124,8 +124,8 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 **Face windows** (bottom left, beside the text box, Baldr Sky style). A face window stands in for a sprite that isn't on screen.
 1. **Kōhei: a window on every spoken line,** with the expression matching the line. He's the POV and never on stage. Narration and inner thoughts get no window.
 2. **Everyone else: a window only when they speak and their sprite isn't on screen** (offscreen voice, next room, behind him, a crowded scene, or a CG that doesn't show them). If the sprite is on stage, no window.
-3. **Interludes:** the same rule. If Kōhei appears in an interlude, he's on stage like anyone else.
-4. **Never:** phone texts (chat UI), speakers with no sprite (Ōno-sensei, the manager), "???", or past-life scenes (her face stays hidden).
+3. **Interludes:** the interlude's POV character takes Kōhei's place: a face window on her spoken lines, never a sprite (author, Oct 17). Everyone else follows rule 2, and if Kōhei appears in an interlude he's on stage like anyone else.
+4. **Never:** phone texts (chat UI), speakers with no sprite (the manager), "???", or past-life scenes (her face stays hidden). Ōno-sensei has a sprite since Pilot v2 (Oct 17), so he follows rule 2.
 
 **Assets:**
 - **Kōhei:** a dedicated face set of about 10 expressions: neutral, warm smile, grin, deadpan, surprised, flustered, annoyed, serious, the frightening stillness, sad.
@@ -283,7 +283,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Akane | **Aoede, +2 semitones** | 14; sweet, soft, playful, a little frail | **Picked Oct 11** |
 | Kirishima (male) | Charon | calm, low, quiet authority; bone-dry jokes | **Picked Oct 11** |
 | Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |
-| Rika | **Laomedeia, +4 semitones** | genki, loud | **Picked Oct 11** |
+| Rika | **Laomedeia, +2 semitones** (was +4; the author lowered it Oct 17 after hearing Pilot v2) | genki, loud | **Picked Oct 11** |
 | Yuzu | **Autonoe, +2 semitones** | cheeky, sly kōhai | **Picked Oct 11** |
 | Mio (was Sōta) | **Kore, +4 semitones** | 7-year-old girl; bossy tiny-princess orders, cheeky, sore loser | **Picked Oct 13** |
 | The fairy | **Leda, +4 semitones** | small-girl voice, airy, ancient | **Picked Oct 11** |
