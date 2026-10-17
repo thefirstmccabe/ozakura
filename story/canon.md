@@ -681,6 +681,7 @@ Select and adapt; this is not a checklist.
 **Past life:**
 22. **Past happiness and farewell:** childhood familiarity, the marriage, domestic teasing and affection, her watching him train, the misty walk, the trade, the promise, the tree's answer.
 23. **Image motifs (Working):** Natsuki waiting under the low branch; her hands binding a cut on his wrist (echoed in modern wound care); a distinctive sword hilt; the same landmark reappearing on the trapped walk; her face and unheard farewell over the wounded Kōhei. Mix the happy and tender with the dread.
+    - **The bride in the wataboshi (the author's idea, Oct 17; Working):** a single image of her in the white wedding hood (*wataboshi*) over a plain white kimono, simple rather than lavish to fit her family. It comes late, as one of the last fragments before the long dreams, and pays off when the wedding plays in full in the past-life sequence. The hood hides her face, which keeps the past-life face rule (§5) with no cropping tricks. **Proposal:** it's Kōhei's fragment, seen from the side, with petals on the white silk, or snow, he can't tell which; one copper strand escapes the hood.
 24. **Optional coda:** past Natsuki at the tree after his death.
 
 **Climax:**
@@ -835,3 +836,4 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
 - **Oct 17:**
   - **Era treatments** decided (§2): past life cool and desaturated; childhood warm and faded.
   - **Pilot v2 scene outline approved** with changes (`production/pilot-v2/scene-outline.md`).
+  - **Wataboshi image** added to the image motifs (scene bank 23), from the author; placement a Proposal.

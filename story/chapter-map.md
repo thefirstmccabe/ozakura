@@ -60,7 +60,7 @@
 | 24 | October | Cultural Festival | **FB5: the middle-school speech**, mirrored by Nanoha on stage now. They start dating. | |
 | 25 | October–November | Dating | Dates shown, not announced. Natsuki's own pursuit (photography) and her repaired friendship with Nanoha. A hiker lost on a familiar trail turns up dazed. | Fairy half-form. |
 | 26 | November | What He Asked of You | Kazuo passes on Dad's regret and apologizes for not pressing his help. Kōhei asks for help on purpose (10) and lets Mom take something back. | |
-| 27 | November | Posters at the Station | A disappearance, posters at the station; an injury no one can explain. Nanoha senses something between Kōhei and Natsuki. Fragments intensify. | |
+| 27 | November | Posters at the Station | A disappearance, posters at the station; an injury no one can explain. Nanoha senses something between Kōhei and Natsuki. Fragments intensify. | **Proposal:** the wataboshi image (Kōhei's fragment) lands here, while he's with Nanoha. |
 | 28 | December | Christmas | Their Christmas; Natsuki's evening with Chie on the phone; the friends' party. | |
 | 29 | New Year | The Bloom | The family's first New Year together; hatsumode; the tree blooms out of season in the snow; the memories flood; the fairy: "You two. Again." | Act turn. |
 
@@ -68,7 +68,7 @@
 
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
-| 30 | Early January | What We Were | A substantial past-life sequence (the marriage, everyday happiness). Kōhei and Natsuki compare memories and grieve together; the farewell to their past selves at the tree (21a): "I don't want you to love me because of her." | |
+| 30 | Early January | What We Were | A substantial past-life sequence (the wedding, where the wataboshi pays off; the marriage; everyday happiness). Kōhei and Natsuki compare memories and grieve together; the farewell to their past selves at the tree (21a): "I don't want you to love me because of her." | |
 | 31 | Early January | Told | Kōhei tells Nanoha about the past life and reaffirms his choice; she'd already sensed it; hurt and time. The girls talk privately. | |
 | 32 | Mid-January | Found | The missing person is found dead: the escalation begins. The fairy is visible to the group; exposition with limits. | |
 | 33 | January | The Loop | Takatsuki trapped in a walk home that keeps looping; the group frees him; he believes, and he noticed how it works. | |
