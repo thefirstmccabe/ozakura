@@ -264,6 +264,8 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 - **Finishing:** every track leveled to −19 LUFS, extended to 2–3 minutes, looped with a clean seam.
 - **First-chapters cue list:** keep `title`, `nanoha`, `night` (extend). `daily` stays unless a referenced version beats it. New, one cue at a time: Natsuki, comedy, practice (replaces `kendo`), sad, memory. About $2 per cue (two takes).
 
+**Kiss scene candidate (Oct 17):** take B of the author's hummed melody (violin and cello duet), `production/music/kiss-hum/`. Kept in mind, not final.
+
 **Wanted:** an original vocal song for the kiss scene, in the feel of the author's reference (canon §2). The first BGM thread to use vocals.
 
 **SFX:** door_slide, notif, slip, steps.
