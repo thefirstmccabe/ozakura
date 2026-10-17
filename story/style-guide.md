@@ -175,7 +175,7 @@ Speech rules, not personality summaries; personalities are in canon §8. Address
 | **Akane** | Sing-song, younger, exaggerates | Sibling teasing; resists being managed with pouting and cheerful defiance ("Onii-chan, you're hovering again") | A quiet sincere line under the teasing; forced brightness on bad days | Nanoha's mock-formal deadpan; adult wit; sniping |
 | **Mio** | Bossy, little-kid bluntness | A tiny princess giving Kōhei orders ("Kō-nii, sit there"); trash talk and sore losing at fighting games | Changing the game | Sounding older than about 7 |
 | **Rika** | Exclamations, run-ons, topic jumps, nicknames | Enthusiasm and non-sequitur; schemes she thinks are subtle | More volume | Dry understatement (and let her have more than volume: specific obsessions, like the hair clips) |
-| **Ryōsuke** | Measured, complete sentences, structured arguments | Pedantry about trivia, argued with total seriousness, on topics a Japanese teen would pick | Retreating into trivia | Emotional speeches; enthusiasm |
+| **Ryōsuke** | Measured, complete sentences, structured arguments | Pedantry about trivia, argued with total seriousness, on topics a Japanese teen would pick (his Ch1 entrance: whether you eat a taiyaki head or tail first) | Retreating into trivia | Emotional speeches; enthusiasm |
 | **Takatsuki** | Complete, correct sentences; few contractions; exact kendo vocabulary | Unintentional: dead serious and literal about rules and form. Unlike Kōhei's short, plain straight man, he is formal and complete | Citing form and rules; precise criticism instead of feelings; going quiet. When he finally says something personal it's short and blunt ("You scared her. You scared me too.") | Mocking Kōhei's missed practices; slang; sarcasm |
 | **Kirishima** (captain) | Terse; coaching in single sentences ("You stopped for half a second. Don't.") | Deadpan that lands a beat late; nobody laughs, and he doesn't wait for it | Changing the drill | Speeches; shouting |
 | **Emi** (Nanoha's mother) | Warm, brisk, runs on food | Cheerful bluntness; embarrassing teasing ("Competition, is it?") | Feeding people | Wallowing; lecturing Kōhei. When serious she's blunt and loving ("Your kids just want their mom back.") |
@@ -246,6 +246,8 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Manager ↔ Kōhei | "Fujisawa-kun" / "Tenchō" (Manager) |
 | Chie → Natsuki | "Natsuki" (often in capitals, as in the kept Ch2 texts) |
 | Fairy → everyone | Bare given names; at the bloom, to Kōhei and Natsuki: "You two. Again." |
+
+**Childhood flashbacks (FB1–FB6; added Oct 17):** before middle school Kōhei calls her "Nanoha" (FB1–FB4); "Chibi" starts at the beginning of middle school, when he shoots past her (FB5 can show it in passing). So his "Nanoha" in Ch24 really is the first time in years. As a child she calls him "Kō-chan" freely, in front of anyone; keeping it private came later. Child Kōhei says *boku* until middle school, then *ore*; child Nanoha says *watashi*.
 
 **Planned shifts (story beats; placed in the chapter map's running threads):**
 1. **Kōhei → Nanoha: "Chibi" → "Nanoha."** Plant "Chibi" early (the Ch1 revision: "Night, Chibi," おやすみ、チビ, answering her "Good night, Kō-chan"; Ch1 already has her "short-person direction" bit). **Ch11** is the nickname that suddenly hurts (scene bank 6): with the dueling lunches and the scorekeeping, he waves it off with something like "Come on. It's Chibi. It's like eating at home," and she hears that he still sees a little kid. **Ch24**, when they start dating, he calls her "Nanoha" to her face, on purpose, for the first time in years, and she notices. After that, "Chibi" when he's teasing, "Nanoha" when he means it (and in Ch37's "I love you"). ("Nano" was considered and dropped: なの is also a sentence ending, so a voiced "Nano" sounds like cutesy speech, not a name.)
@@ -379,7 +381,7 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Kōhei | Puck | calm, grounded, a little tired, dry; let warmth through | OK (author) |
 | Nanoha | **Erinome, +2 semitones** | 16; soft, relaxed, deadpan; "anime heroine" youth direction | **Picked Oct 11** |
 | Natsuki | Zephyr | bright, warm, confident (no longer "tomboyish") | OK (author) |
-| Natsuki (past life) | Zephyr (+ echo in game) | young Edo-era wife; softer, warmer | **Picked Oct 11** |
+| Natsuki (past life) | Zephyr (+ echo in game) | young Edo-era wife; softer, warmer | **Picked Oct 11**; kept Oct 17 as a clue for attentive listeners (the same actress as present-day Natsuki); keep the dream lines soft so the match is felt, not announced |
 | Akane | **Aoede, +2 semitones** | 14; sweet, soft, playful, a little frail | **Picked Oct 11** |
 | Kirishima (male) | Charon | calm, low, quiet authority; bone-dry jokes | **Picked Oct 11** |
 | Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |

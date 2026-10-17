@@ -162,6 +162,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - "I'm amazing at first days. It's the second semesters I never get to."
 - Chie [P] in Sendai is the only friend she's kept.
 - **v2 [P]:** on her first day she answers "Sendai, most recently" all morning, which is how Nanoha knows where she moved from.
+- **v2 [P] (Story thread, Oct 17):** writes schedules on her wrist in ballpoint, a habit from six schools' worth of new timetables ("WED" at lunch in Ch1). Replaces the narration's wrist simile.
 - Her involuntary tears at the catch ("cedar pollen" / "It's April").
 - **Cut or move per the fixes:** the "loud" framing (fix 8); "Did you just hear someone?" at the tree (fix 2).
 
@@ -180,7 +181,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - **Genji (grandfather, shrine caretaker):** his "very convenient back" only hurts on petal days. Mentioned only.
 
 **School [P]:**
-- **Tokiwa Ryōsuke:** the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes. Calls Kōhei "Fujisawa."
+- **Tokiwa Ryōsuke:** the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes (v2: the topic becomes taiyaki, head or tail first; style guide §3b). Calls Kōhei "Fujisawa."
 - **Hoshikawa Rika:** Nanoha's best friend. Art club, no indoor voice, novelty clips (strawberry, star, a frog wearing a crown). Calls Nanoha "Nano-chan."
 - **Ōno-sensei:** 2-B homeroom, classical Japanese. Tall, tired, "born in a cardigan." On screen from v2 (sprite from `inventory/full-ono.png`).
 - **v2 [P]:** there's no Fukuda in 2-B this year, which is how Kōhei knows Nanoha looked for his name before her own (names sort in kana order, so ふくだ sits right above ふじさわ).

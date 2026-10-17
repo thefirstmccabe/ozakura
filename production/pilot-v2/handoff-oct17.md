@@ -34,6 +34,8 @@ Everything below is decided and committed (production log, 10-17 rows). Read the
 4. **Baseline:** take `qa_play.py --every` shots of the current Ch1 build and keep them with its `script.json` as the baseline for the revision's regression diff.
 
 **B. After the Story thread's Ch1 decisions** (it decides them itself, so this shouldn't take long):
+
+> **Done Oct 17 (Story thread):** the Ch1–4 reader-knowledge targets and the Ch1 revision decisions are at the end of `production/pilot-v2/scene-outline.md`. In short: the wrist simile becomes an action (she writes "WED" on her wrist); "someone you've met before?" becomes an ordinary attempt to place him; the dream voice stays; "Probably a stubborn crease" goes; Ryōsuke argues about taiyaki, not hot dogs. Childhood address forms for FB1 are in style guide §3c.
 5. **Revise Ch1 under §9:** continuity check, `script_lint.py --chapter 1` (it currently flags "very" 8×, "says it like" 3×, "the way you" 2×, "Something about" 2×), then the dialogue passes on the whole chapter. `production/tests/oct17-dialogue-coldread/dialogue/scene-final.ozs` is a tested rewrite of the lunch scene (unchanged in the build since); use it as the starting point. Then the Japanese pass and three cold readers against the target.
    - The address-sheet fixes: plant "Chibi" ("Night, Chibi" / おやすみ、チビ, answering "Good night, Kō-chan"); Natsuki's えっと、きみは…… to Nanoha becomes えっと…….
    - The biggest chapter-wide wins: give Akane her own voice apart from Nanoha's; keep Natsuki's jokes off Nanoha's deadpan; cut the tics.

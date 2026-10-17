@@ -64,7 +64,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 
 **Writing guidance:**
 - **Show more and tell less.** The pilot leaned on narrated explanation, and the longer format gives room to let scenes carry it.
-- **In openings, a fact goes in only if the scene shows it happening.** Save backstory for real scenes. Ryōsuke has his hot-dog argument on screen; he isn't introduced by a list of facts about him. (Oct 8)
+- **In openings, a fact goes in only if the scene shows it happening.** Save backstory for real scenes. Ryōsuke arrives mid-argument on screen; he isn't introduced by a list of facts about him. (Oct 8; Oct 17: the topic is a Japanese one, taiyaki head or tail first, not the hot-dog debate)
 - **No telegraphic name-tag intros or trait lists** ("Name. Role. Club. Glasses."). People arrive through what they do and say. Narration uses complete sentences by default. (Oct 8)
 - **No manga self-reference.** Characters never compare their own situation to manga. Owning and reading manga is fine. (Oct 8)
 - **Keep the strangeness subtle** across the long runtime, and drip-feed the fairy. (Oct 8)
@@ -362,6 +362,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Her growth:** accepting that a part of him belongs to that past and isn't a threat.
   - **Proposal:** because she already sensed something, the disclosure confirms rather than blindsides her.
 - **What the reader sees:** a coherent past-life flashback for the reader doesn't imply the characters remember every day. Exact memory symmetry between Kōhei and Natsuki, and how much the reader knows relative to each, are Open.
+  - **Working (Oct 17, Story thread, delegated for the pilot):** the reader leans toward Natsuki as the dream woman from Ch1 and suspects it strongly after the Ch2 catch, but is never told before the New Year bloom. The question the story asks is whether the past gets a claim on this life, not who she was. Nanoha's care may echo the dream's tenderness; the uncanny pull belongs to Natsuki. Later chapters set their own targets in their outlines (style guide §9).
 - **Increased physical affection after disclosure** is possible. Her anxiety that Natsuki shares more with him is her feeling, not an objective scoreboard. Kept non-explicit.
 - **No second deception** when he is confronted.
 - **Open:** exact dialogue and scenes.
@@ -838,3 +839,5 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Pilot v2 scene outline approved** with changes (`production/pilot-v2/scene-outline.md`).
   - **Wataboshi image** added to the image motifs (scene bank 23), from the author; placement a Proposal.
   - **Address guide decided** (§2; style guide §3c), with planned name changes: "Chibi" → "Nanoha" (the nickname that hurts in Ch11, the switch in Ch24), Nanoha's one cold "Fujisawa-kun" (Ch20), Natsuki's first "Kōhei" in her one voiced line in the kiss sequence (Ch19), his first "Natsuki" at the January farewell (Ch30), and Nanoha's "-san"/"-chan" shifts with Natsuki. Claude's choices, delegated by the author.
+  - **Reader knowledge, pilot (Working):** the reader leans Natsuki from Ch1 and is never told before the bloom (§5 "What the reader sees"); Ch1–4 targets in `production/pilot-v2/scene-outline.md`.
+  - **Ryōsuke's opening argument** is about taiyaki (head or tail first), not hot dogs (§2 openings rule).
