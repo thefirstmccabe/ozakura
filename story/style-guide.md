@@ -216,7 +216,7 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 **Who calls whom what (at the start of the story):**
 | From → To | Form |
 |---|---|
-| Kōhei → Nanoha | Usually no name at all (*omae*, the way close people talk); when he teases her, **"Chibi"** ("shorty"), the childhood nickname that plays on her height. It means *little kid*, and he doesn't hear it that way (see the shifts below) |
+| Kōhei → Nanoha | Usually no name at all (*omae*, the way close people talk); when he teases her, **"Chibi"** ("shorty"), his nickname for her since middle school, playing on her height. It means *little kid*, and he doesn't hear it that way (see the shifts below) |
 | Nanoha → Kōhei | "Kōhei" by default; **"Kō-chan"** at private teasing or tender moments ("Kō-chan. Your collar." "Good night, Kō-chan."), never in front of the class |
 | Kōhei ↔ Natsuki | "Mizuno" / "Fujisawa" (she adds *kimi*; a bare surname, where she says "-kun" to other boys). Natsuki asks Nanoha to call her Natsuki on day one, with him sitting right there, and never asks him |
 | Nanoha → Natsuki | "Mizuno-san" → "Natsuki-san" on day one ("I'm working up to it") |
@@ -247,7 +247,7 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Chie → Natsuki | "Natsuki" (often in capitals, as in the kept Ch2 texts) |
 | Fairy → everyone | Bare given names; at the bloom, to Kōhei and Natsuki: "You two. Again." |
 
-**Childhood flashbacks (FB1–FB6; added Oct 17):** before middle school Kōhei calls her "Nanoha" (FB1–FB4); "Chibi" starts at the beginning of middle school, when he shoots past her (FB5 can show it in passing). So his "Nanoha" in Ch24 really is the first time in years. As a child she calls him "Kō-chan" freely, in front of anyone; keeping it private came later. Child Kōhei says *boku* until middle school, then *ore*; child Nanoha says *watashi*.
+**Childhood flashbacks (FB1–FB6; added Oct 17 [P]):** before middle school Kōhei calls her "Nanoha" (FB1, FB2, FB4, and FB3 if it's set in childhood; its age is Open, canon §6). At the start of middle school he shoots past her and the other boys start teasing him about her, so he drops her given name and "Chibi" takes over (FB5 can show it in passing). His "Nanoha" in Ch24 really is the first time in years. As a child she calls him "Kō-chan" in front of anyone; from middle school it's "Kōhei" in public and "Kō-chan" in private. Child Kōhei says *boku* until middle school, then *ore*; child Nanoha says *watashi*.
 
 **Planned shifts (story beats; placed in the chapter map's running threads):**
 1. **Kōhei → Nanoha: "Chibi" → "Nanoha."** Plant "Chibi" early (the Ch1 revision: "Night, Chibi," おやすみ、チビ, answering her "Good night, Kō-chan"; Ch1 already has her "short-person direction" bit). **Ch11** is the nickname that suddenly hurts (scene bank 6): with the dueling lunches and the scorekeeping, he waves it off with something like "Come on. It's Chibi. It's like eating at home," and she hears that he still sees a little kid. **Ch24**, when they start dating, he calls her "Nanoha" to her face, on purpose, for the first time in years, and she notices. After that, "Chibi" when he's teasing, "Nanoha" when he means it (and in Ch37's "I love you"). ("Nano" was considered and dropped: なの is also a sentence ending, so a voiced "Nano" sounds like cutesy speech, not a name.)
@@ -381,7 +381,7 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Kōhei | Puck | calm, grounded, a little tired, dry; let warmth through | OK (author) |
 | Nanoha | **Erinome, +2 semitones** | 16; soft, relaxed, deadpan; "anime heroine" youth direction | **Picked Oct 11** |
 | Natsuki | Zephyr | bright, warm, confident (no longer "tomboyish") | OK (author) |
-| Natsuki (past life) | Zephyr (+ echo in game) | young Edo-era wife; softer, warmer | **Picked Oct 11**; kept Oct 17 as a clue for attentive listeners (the same actress as present-day Natsuki); keep the dream lines soft so the match is felt, not announced |
+| Natsuki (past life) | Zephyr (+ echo in game) | young Edo-era wife; softer, warmer | **Picked Oct 11**; kept Oct 17 as a clue for attentive listeners (the same actress as present-day Natsuki), with the echo **plus about −1 semitone** so the match is felt, not announced; the author judges it by ear |
 | Akane | **Aoede, +2 semitones** | 14; sweet, soft, playful, a little frail | **Picked Oct 11** |
 | Kirishima (male) | Charon | calm, low, quiet authority; bone-dry jokes | **Picked Oct 11** |
 | Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |

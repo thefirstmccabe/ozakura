@@ -162,7 +162,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - "I'm amazing at first days. It's the second semesters I never get to."
 - Chie [P] in Sendai is the only friend she's kept.
 - **v2 [P]:** on her first day she answers "Sendai, most recently" all morning, which is how Nanoha knows where she moved from.
-- **v2 [P] (Story thread, Oct 17):** writes schedules on her wrist in ballpoint, a habit from six schools' worth of new timetables ("WED" at lunch in Ch1). Replaces the narration's wrist simile.
+- **v2 [P] (Story thread, Oct 17):** writes schedules on the inside of her wrist in ballpoint, a habit from six schools' worth of new timetables (水, for Wednesday, at lunch in Ch1). Replaces the narration's wrist simile.
 - Her involuntary tears at the catch ("cedar pollen" / "It's April").
 - **Cut or move per the fixes:** the "loud" framing (fix 8); "Did you just hear someone?" at the tree (fix 2).
 
