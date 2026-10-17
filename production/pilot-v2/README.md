@@ -21,3 +21,11 @@
 **Budget: $40 cap for the whole pilot** (approved Oct 16; estimate about $20–30). Ask before going over.
 
 **Rules that bite:** imperial units; modest framing for the school-age cast; push refs before submitting fal jobs; self-review before showing the author.
+
+## Build (from Oct 17)
+- **Play:** https://thefirstmccabe.github.io/ozakura/v2/ (GitHub Pages serves `v2/`). The shipped pilot at the site root stays untouched until all four chapters are approved; then `v2/` replaces it.
+- **Source script:** `production/pilot-v2/script/ch01.ozs` (format in its header) → `production/pipeline/vn/compile_script.py` → `v2/script.json`.
+- **Voices:** `voice_jobs.py` batches lines per speaker and scene → Gemini TTS takes (archived as `voice/takes/*.opus`) → `voice_split.py` first-pass cuts → transcript check (ElevenLabs STT) → `voice_recut.py` final cuts → `voice_pack.py` (pitch shifts, dream echo, leveling) → `v2/voice/`. A second transcript of the final clips confirms every clip holds exactly its line. To rebuild, decode the opus takes to 24 kHz mono WAV (`take_NN.wav`) first.
+- **Art:** sprites finished with `sprites.py` (one shared crop per set), face windows with `faces.py`, the lit-window night plate with `gap_glow.py`; full-res masters of new CGs/backgrounds in `art/masters/`. Living stills are Kling v3 Pro loops (start frame = end frame) in `v2/img/live/`.
+- **QA:** `qa_play.py` plays every line in Chromium at iPad sizes, decodes every voice line and checks every request.
+- **Spend:** `ledger.md`.

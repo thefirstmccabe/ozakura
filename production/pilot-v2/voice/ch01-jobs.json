@@ -640,5 +640,20 @@
    "voice": "Puck",
    "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. These are separate lines of dialogue from a quiet street at night: give each line its own natural emotion, and leave a clear pause between lines."
   }
+ },
+ {
+  "key": "retake.c1_0085",
+  "ids": [
+   "c1_0085"
+  ],
+  "texts": [
+   "月、水、金、土曜の朝。バイトが火曜、木曜、日曜。"
+  ],
+  "note": "re-voiced Oct 17: the batch take read 火 as 金 (caught by the transcript check)",
+  "input": {
+   "prompt": "月、水、金、土曜の朝。バイトが火曜、木曜、日曜。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, never gruff. A line of dialogue on a walk to school: reciting his weekly schedule matter-of-factly, as if it's no big deal."
+  }
  }
 ]

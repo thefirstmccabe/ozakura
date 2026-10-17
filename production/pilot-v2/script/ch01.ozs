@@ -71,7 +71,7 @@ kohei(grin): "I've got an egg with your name on it. That's basically a license."
 akane<smile>: "I could make my own lunch, you know. I'm very talented." || お弁当くらい、自分で作れるよ？ 私、けっこう器用なんだから。
 kohei(smile): "I'm already making two." || どうせ二つ作ってるし。
 akane<pout>: "…That's sort of my point." || ……そういうとこだよ、お兄ちゃん。
-> She says it to the rice cooker, not to me, and straightens her scarf herself before I can reach for it. I decide not to hear the rest, which I'm also fast at.
+> She says it to the rice cooker, not to me, and straightens her scarf herself before I can reach for it. I decide not to hear that, which I'm also fast at.
 @sfx door_slide
 > The back door slides open. No knock. There's never a knock.
 @move akane l
@@ -140,7 +140,7 @@ nanoha<tease>: "That's why I fix them." || だから、私が直すの。
 nanoha<smile>: "Practice today?" || 今日、部活？
 kohei(neutral): "Club doesn't start until Wednesday. First week." || 部活は水曜から。最初の週だし。
 nanoha<smile>: "And after that?" || そのあとは？
-kohei(neutral): "Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Thursday, Sunday." || 月、水、金、土曜の朝。バイトが火、木、日。
+kohei(neutral): "Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Thursday, Sunday." || 月、水、金、土曜の朝。バイトが火曜、木曜、日曜。
 nanoha<sad>: "I know." || ……知ってる。
 kohei(surprised): "Then why'd you ask?" || じゃあ、なんで聞いたんだよ。
 nanoha<sad>: "So you'd hear yourself say it." || 自分で言ってるの、聞いてほしかったから。

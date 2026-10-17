@@ -140,11 +140,13 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-16 | **Pilot v2 review flow approved:** the author approves a one-page-per-chapter scene outline (scenes, CGs, inserts, backgrounds) first, then gets all four chapters as a finished build. **Budget: $40 cap** for the whole pilot. |
 | 10-17 | **Pilot v2 scene outline approved** (review delegated to the Story thread). All six [P] stagings kept. **Era treatments decided:** past life cool and desaturated, childhood warm and faded (canon §2). Changes: Ryōsuke's hot-dog argument moves to 1.3; the catch gets its short animated moment; FB1 shows the earlier "…You came back"; child Kōhei is a face window only. |
 | 10-17 | **The author approved the revised outline.** **Review flow changed:** chapter by chapter instead of all four at once; each chapter (Prologue with Ch1) arrives as a finished, playable build and is reviewed before the next starts (brief updated). |
+| 10-17 | **Pilot v2 Prologue + Ch1 built** and handed to the author for review: https://thefirstmccabe.github.io/ozakura/v2/ (the shipped pilot at the site root is untouched). Script rewritten with the Prologue/Ch1 fixes (2, 4, 8–13, 20–21, 23, 25–27, 32); new CGs (the dream in the past-life treatment, Natsuki's arrival, title); Akane school and Natsuki uniform sprites from the locked designs; Kōhei's face windows; every line re-voiced with the final cast; the finished music loops. Living stills on the title and the dream. Sources and pipeline: `production/pilot-v2/README.md` (Build). |
+| 10-17 | **Claude's calls in the Ch1 build [P]:** the shipped night street (`bg_street_night`) shows the alley and stairs canon rules out, so 1.7 uses a night version of the Oct 10 houses plate, plus a variant where Nanoha's upstairs light glows in the three-foot gap (outline said "reuse street at night"). Natsuki's stutter plays on her sprite rather than over the arrival CG, so her face can actually falter. Akane's home outfit waits for Ch3 (she's in uniform all of Ch1). Nanoha's shipped school sprites were checked against her skin swatch and are fine; the pale-skin issue is in the lineup and turnaround images only. Sprites take a light tint on night and evening backgrounds. |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
 |---|---|---|---|
-| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | — | Production thread; estimate $20–30 |
+| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | about $5.80 after Ch1 | Ch1: ~30 images, 2 living stills, 26 voice takes, 2 transcript checks. Ledger: `production/pilot-v2/ledger.md` |
 | VN pilot | $100 | about $30–35 | |
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |
@@ -177,6 +179,8 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 8. The reader's control bars cover the page edges until they auto-hide.
 
 **VN:** the pilot-notes §1 fix list. Not yet confirmed on a physical iPad. Voice QA was automated.
+
+**Pilot v2 Ch1 (Oct 17):** tested in Chromium at iPad sizes (landscape 1180×820, portrait 820×1180), not yet on a physical iPad. Voices checked by transcript, not by ear. Web fonts couldn't load in the test browser, so the title's vertical 大桜 was checked only in code.
 
 ## 5. Infrastructure risks
 - **Storage:** text canon lives in the Project; every file lives in the repo. Its `CLAUDE.md` holds the working rules.

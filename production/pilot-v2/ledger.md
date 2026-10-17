@@ -13,3 +13,4 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-17 | Living stills: title, dream (Kling v3 Pro, 4 s each, start = end frame) | 2 | $1.12 |
 | 10-17 | Voices: 25 batched Gemini TTS takes, ~11,100 characters | 25 | $0.50 |
 | 10-17 | Voice QA: transcriptions of the joined takes and of the final clips (ElevenLabs STT, ~29 min) | 2 | $0.85 |
+| 10-17 | Re-voice c1_0085 (the batch take misread a weekday) | 1 | $0.01 |
