@@ -144,7 +144,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - Nanoha's catalogue of his faces: No. 1 is "Secret"; No. 4 is "Somebody wants to fight me."
 
 **Nanoha:**
-- 2-B, top grades (see 13a), the class representative's assistant ("owns a clipboard"). Underclassmen bow to her.
+- 2-B, top grades (see 13a), the class representative's assistant ("owns a clipboard"); in v2 that was last year's job, since it's only the first day of the new year. Underclassmen bow to her.
 - Their mothers shared a maternity ward.
 - Privately: a goldfish funeral with a eulogy, arguing with the TV, conspiracy theories, keeping score against Kōhei.
 - Walks into his kitchen without knocking and knows every sticky drawer. Fixes his collar.
