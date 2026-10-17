@@ -150,12 +150,13 @@ The old working bible (`ozakura/story-bible.md`) was retired Oct 8. Its contents
 | 10-17 | **Third independent review** (of the second round's fixes): the mirrored collar CG had also reversed the riverside against the background shown just before it, and the CG drew Nanoha about 5 inches too tall. **Redrawn** to match `bg_river_morning`, with her head reaching only his chin and her arms raised; her braid and clip (her left side) are on the far side in this view. A fast tap during the falter crossfade no longer cuts. In the interlude Natsuki now leans on the desk in front of hers (her sprite stands). Pilot notes list the remaining v2 [P] details. |
 | 10-17 | **Fourth independent check** (the new collar CG and the tap fix): the CG met "her head at his chin" by drawing her whole figure smaller (her head about two-thirds of his, so she read younger), stood them off the path, and lost her braid. **Redrawn again** with the cast lineup as a size reference: heads nearly the same size, both on the path, her braid hanging forward from her far (left) shoulder. A tap before the falter image has loaded no longer blinks the CG. |
 | 10-17 | **Fifth check** (collar CG only) still found her figure drawn small, the fence moved, and her hair off-model. **New method:** the CG is painted over a layout sketch with both characters pasted at their true heights on the river-path plate (`production/pipeline/vn/cg_layout.py`); Nanoha now faces left so her braid and clip face the camera. Both stand on the path with the fence behind him; her head comes to his chin. Method noted in `production/pilot-v2/art/prompts.md` for later two-character CGs. |
+| 10-17 | **Sixth check** (collar CG): her head measured 0.6–0.65× his (Claude had estimated 0.8 by eye, which was wrong). One edit enlarged her head and shoulders: now 0.77× crown to chin, 0.88× eye to chin, the top of her head just below his eyes on full tiptoe. Remaining nits a viewer won't notice at iPad size: the pole's yellow band is missing; her face is a little rounder than her sprite. |
 | 10-17 | **Image motif added (the author's idea):** past-life Natsuki in the white wedding hood (*wataboshi*), a late fragment before the long dreams, paid off by the wedding in Ch30 (canon scene bank 23; chapter map Ch27 and Ch30, placement a Proposal). |
 
 ## 3. Budget
 | Line | Cap | Spent | Notes |
 |---|---|---|---|
-| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | about $8.35 after Ch1 | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
+| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | about $8.50 after Ch1 | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
 | VN pilot | $100 | about $30–35 | |
 | Manga Vol. 1 | $50 | $33.01 | About $17 left |
 | Concept art, Oct 6 | none set (author-requested) | about $1–2 | 7 character images (NB2 1K) plus 4 house tests (NB2 2K) |

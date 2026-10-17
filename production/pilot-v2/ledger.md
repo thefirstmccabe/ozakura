@@ -20,5 +20,6 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-17 | Third review: collar CG redrawn (NB Pro 2K ×2) plus one braid edit | 3 | $0.45 |
 | 10-17 | Fourth review: collar CG redrawn again (NB Pro 2K ×2) plus one braid edit | 3 | $0.45 |
 | 10-17 | Fifth check: collar CG from a layout sketch (NB Pro 2K ×2) plus one fence edit | 3 | $0.45 |
+| 10-17 | Sixth check: collar CG head-size edit (NB Pro 2K) | 1 | $0.15 |
 
-**Total after Ch1: about $8.35 of $40.**
+**Total after Ch1: about $8.50 of $40.**
