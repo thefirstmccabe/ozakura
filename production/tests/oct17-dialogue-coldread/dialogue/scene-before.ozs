@@ -1,0 +1,49 @@
+== c1_lunch | Lunch with Mizuno
+@bg bg_classroom_day
+@bgm daily
+> By lunch, Mizuno Natsuki has learned the names of half the class, answered "Sendai, most recently" about twenty times, been invited to two clubs, and agreed to go to karaoke with a group of girls whose names I don't think I've ever said out loud.
+> I'm impressed. I'm also slightly exhausted just watching.
+> I've barely gotten the lid off my lunch when a chair scrapes behind me.
+@show natsuki school_smirk c
+natsuki: "So. You're Fujisawa."
+kohei(deadpan): "That's what the attendance sheet says."
+natsuki<smirk>: "The guy who turned down three confessions last year."
+> I put my chopsticks down.
+kohei(annoyed): "Is that in the welcome packet?"
+natsuki<laugh>: "Someone told me before I'd even put my shoes in my locker. I'm not kidding. The girl by the door was very passionate about it."
+kohei(deadpan): "Great."
+natsuki<smile>: "She said you told every one of them you didn't have time for a girlfriend. Is that true?"
+kohei(neutral): "It's true that I don't have time."
+natsuki<smile>: "Huh."
+> She props her chin on her hand and looks at me like she's reading a scorecard.
+natsuki<smirk>: "That's either really honest or really sad. I can't decide."
+kohei(smile): "Let me know when you do."
+natsuki<smile>: "I will. I'm very decisive. Usually."
+> Something about the way she says it makes me laugh.
+natsuki<smirk>: "Okay, you're fun. So what are you, {shodan|first dan}?"
+kohei(smile): "We'll find out on the floor."
+natsuki<laugh>: "Oh, he's cocky. Good. I hate practicing with polite people."
+kohei(neutral): "Club starts Wednesday."
+natsuki<smile>: "Wednesday."
+> She repeats it like she's writing it on the inside of her wrist.
+@move natsuki r
+@show nanoha school_smile l
+nanoha: "Excuse me. Mizuno-san?"
+> Nanoha's standing by my desk with her lunch held in front of her in both hands, the way she holds things when she's about to do something brave.
+natsuki<surprised>: "Oh—hi. You're…"
+nanoha<smile>: "Tachibana Nanoha. I sit two rows over. I was the class representative's assistant last year, so I still own a clipboard."
+nanoha<smile>: "If you'd like, I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing."
+> For a second Mizuno doesn't say anything. She looks almost startled, like she isn't used to being the one who gets asked.
+natsuki<blush>: "…Really? You'd do that?"
+nanoha<smile>: "It's not a big tour. The vending machine part is the most important."
+natsuki<laugh>: "I would love that. Really. Thank you."
+natsuki<grin>: "Oh, and call me Natsuki. Is that okay? People tell me I'm pushy."
+nanoha<blush>: "…Natsuki-san."
+natsuki<surprised>: "Eh, 'san'? We're the same age!"
+nanoha<tease>: "I'm working up to it. I need time to adjust."
+natsuki<smile>: "Okay, okay. Then I'll just call you Nanoha. Is that all right? I'm going to do it anyway."
+nanoha<blush>: "That's—yes. That's fine."
+> They both laugh, and something about the two of them laughing in the window light, over the top of my head, makes me feel weirdly like furniture.
+@hideall
+> I eat my rice. It's very good rice. I made it myself.
+

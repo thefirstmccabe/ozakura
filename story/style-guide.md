@@ -155,6 +155,28 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 | Past-life Natsuki ("???") | faded gold |
 | Others | neutral (no tint) |
 
+## 3b. Character speech sheets (Oct 17; owned by the Story thread, PROVISIONAL)
+Speech rules, not personality summaries; personalities are in canon §8. Drafts and dialogue passes use these (§9). The author doesn't approve them line by line; his punch lists tune them. Built after the Oct 17 cold reads found that one dry deadpan voice (Nanoha's) had become everyone's: Akane read as a younger Nanoha, Natsuki sounded like Nanoha whenever she joked, and Ryōsuke's bits ran on the same rhythm.
+
+**Rules for all dialogue:**
+- Translated-manga feel: natural modern English, contractions, honorifics kept.
+- Not every exchange ends on a punchline. Lines can trail off, get interrupted, get ignored or miss.
+- People rarely say what they feel. They deflect, change the subject, act, or say something adjacent.
+- Restraint (Blue Box): quiet moments stay quiet; nobody gets wittier just to be lively.
+- No line explains its own joke; no one narrates their feelings in therapy language; no manga self-reference.
+- **Tics to avoid** (found in Ch1): the deadpan "I'm very X" joke across characters (keep "very" rare); narration's "She says it like…" and "the way you…" more than once a chapter; two girls reading Kōhei's face in the same chapter; American-internet bits that break the translated feel (the hot-dog-is-a-sandwich debate, "sub roll").
+
+| Character | Rhythm | Humor | Dodges feelings by | Never |
+|---|---|---|---|---|
+| **Kōhei** | Short; one sentence, often a fragment | The straight man: literal answers, understatement, mock seriousness; plays along with bits rather than topping them | Going practical (schedules, food), "It's fine," changing the subject; sincere flirting makes him go shorter, not cleverer | Matching a flirt with an equally polished line; speeches about himself; admitting he's tired |
+| **Nanoha (private)** | Measured, precise vocabulary | Committed deadpan bits and elaborate straight-faced theories; keeps score | Hiding inside the bit; a quiet "Mm"; a very specific practical detail | Saying what she wants about Kōhei |
+| **Nanoha (public)** | Gentle, polite, a little formal; small hesitations ("Um—", "If you'd like…") | At most one dry understatement | Formality (bravery looks like politeness) | Snark; teasing someone she just met; loud enthusiasm |
+| **Natsuki** | Easy and fast; questions, "Hey," "So," uses names early | Outward: pokes, challenges, teasing by noticing physical details (calluses, posture, which stair squeaks). She asks; Nanoha states | Getting *more* entertaining when hurt; making big invitations sound casual; a laugh to close a moment. When sincere, she goes short and quiet | Verdicts and self-labels ("you're fun," "I'm pushy"); Nanoha's dry deadpan; practiced-sounding flirting |
+| **Akane** | Sing-song, younger, exaggerates | Sibling teasing; resists being managed with pouting and cheerful defiance ("Onii-chan, you're hovering again") | A quiet sincere line under the teasing; forced brightness on bad days | Nanoha's mock-formal deadpan; adult wit; sniping |
+| **Mio** | Bossy, little-kid bluntness | A tiny princess giving Kōhei orders ("Kō-nii, sit there"); trash talk and sore losing at fighting games | Changing the game | Sounding older than about 7 |
+| **Rika** | Exclamations, run-ons, topic jumps, nicknames | Enthusiasm and non-sequitur; schemes she thinks are subtle | More volume | Dry understatement (and let her have more than volume: specific obsessions, like the hair clips) |
+| **Ryōsuke** | Measured, complete sentences, structured arguments | Pedantry about trivia, argued with total seriousness, on topics a Japanese teen would pick | Retreating into trivia | Emotional speeches; enthusiasm |
+
 ## 4a. Manga inserts (color, from Oct 12): workflow
 **No storyboard step** (author, Oct 12): Vol. 1 was made from scratch and came out well. Claude builds each insert straight from the script and **presents only finished pages** that have passed the self-review below. The author's review time is the constraint, not cost.
 
@@ -323,3 +345,26 @@ Raw repo URLs often make uploading unnecessary.
 **Bulk jobs:** use `submit_job` with `check_job`/`get_job_result`, and keep a manifest (name → URL) and a spend ledger.
 
 **Save keepers to the repo** (`production/refs/…`) right away. fal URLs expire and workspaces get wiped.
+
+## 9. Chapter production process (decided Oct 17; applies from Pilot v2 Ch2)
+The goal is to spend the author's review time on taste, not on finding errors. In Ch1, the author's first punch list was mostly continuity, wording and staging, and the Oct 17 cold reads found flat dialogue, heavy-handed clues and art/text mismatches that no technical check looks for. Every check below is run by a **fresh agent that hasn't seen the work being made**; self-review alone missed real problems in every Ch1 round.
+
+1. **Outline (Story thread; the author approves, as now).** A scene list plus the CGs, inserts, living stills and backgrounds needed, **plus a reader-knowledge target**: what the reader should *suspect* and *know* by the end of the chapter (the Ch1 cold reads showed this has to be decided on purpose).
+2. **Draft** against canon, the chapter map, pilot-notes and the speech sheets (§3b). Write stable line IDs into the script source so edits never renumber lines.
+3. **Writing gates, before any art or voices:**
+   - **Canon and continuity check:** heights, dates, names, rules, earlier chapters. It also lists every [P] detail the draft invents.
+   - **Dialogue:** a diagnosis pass (line-by-line verdicts, a blind voice test), then a rewrite, then an independent overcorrection check that compares before and after. Whole chapter.
+   - **Three cold readers** (casual, manga reader, genre-savvy) get only what a reader sees, in parts with checkpoints. They report what they infer against the reader-knowledge target, plus flat, confusing or heavy-handed lines. Fix here, while changes are free.
+4. **Art:** shot list from the final script; a true-height layout sketch (`production/pipeline/vn/cg_layout.py`) for every multi-character CG, planning one edit pass; **an on-model check of every image** against the locked references *and* the script text around it (hair length, which wrist, who stretches to reach); every piece logged in the deliverable's `art/prompts.md`.
+5. **Voices** as in the Pilot v2 README (transcript-checked cuts), plus an automatic loudness and clipping check.
+6. **Build and technical QA:** `qa_play.py` at iPad landscape and portrait, plus a **visual snapshot of every line** compared against the last approved build, so reviewers look only at what changed.
+7. **Independent review of the whole build.** After each fix: a check scoped to the diff, plus the regression run (step 6). Fix rounds introduced new bugs in Ch1, so this is mandatory.
+8. **Handover:** a playable link and one short note: the [P] inventions, known compromises and spend. The author plays on his iPad (nothing here can test Safari or listen by ear) and flags only what doesn't work.
+9. **Punch-list rounds:** each gets a diff-scoped independent check plus the regression run.
+
+**Standing rules:**
+- **Spending inside an approved cap:** no item-by-item check-ins. Report spend at handover; ask first only if a single item would cost more than about $5 or the total would pass the cap. If Claude tells the author something is "your call," it waits for his answer.
+- **[P] details invented in production** go in the handover note and pilot-notes; the author judges them by playing, and the Story thread folds them into canon afterward. No pre-review.
+- **Measure, don't eyeball:** proportions and ratios are measured on a pixel grid.
+- **Record prompts** for every generated piece, and commit pipeline code as you go.
+- **Reference test:** `production/tests/oct17-dialogue-coldread/` (the first cold reads and dialogue pass, with the materials to rerun them).

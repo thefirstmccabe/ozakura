@@ -6,6 +6,8 @@
 
 **Shape:** a ~40-chapter spine on canon's working allocation (Oct 7): 17 chapters April–August, 5 for the fight and September, 7 for October–December, 10 for January–March, 1 for the aftermath, plus the epilogue. Expandable daily-life chapters can be added later, first in the April–August stretch. **Decided Oct 12:** the 40-chapter spine; chapters run about 4,000–5,000 words where they cover a week or more (roughly 12–15 hours in all); slice-of-life and extra development added as needed.
 
+**Reader-knowledge targets (Oct 17):** when the Story thread outlines a chapter for production, it adds what the reader should *suspect* and *know* by the chapter's end (style guide §9, step 1). Cold readers measure each chapter against it. Ch1's cold reads (Oct 17) ended split on who the dream woman is (two readers leaned Nanoha, one Natsuki; none above 65%), with all three guessing wife or lover.
+
 **Running threads** (not repeated in every row):
 - **Fairy (canon §8):** April–August, a drifting light about once a month that only Nanoha notices, plus small things moved in her room. Autumn, a half-form at the edge of her vision. New Year, full and speaking. January–March, visible to the whole group.
 - **Shared-past flashbacks (canon §6):** FB1–FB6, one short scene each, triggered by something in the present.

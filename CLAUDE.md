@@ -30,6 +30,7 @@ If someone edited the Project copy directly, `project_read` it first and fold th
 - `production/<deliverable>/`: per-deliverable sources (scripts, manifests, editable lettering, masters).
 
 ## Habits
+- **Chapter production follows `story/style-guide.md` §9** (writing gates before art, fresh-agent checks, cold readers, regression runs, handover note). Dialogue follows the speech sheets in §3b.
 - **Imperial units only** (feet and inches) in docs, art notes, lineups and prompts. The author doesn't want metric anywhere.
 - Commit at checkpoints, not only at the end. Keep large intermediate renders out unless they're needed to rebuild.
 - Before pushing, run `git fetch origin main` and rebase. The clone is shallow.
