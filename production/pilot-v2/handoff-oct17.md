@@ -9,11 +9,11 @@ Everything below is decided and committed (production log, 10-17 rows). Read the
 - **Ch1 cold reads** (`production/tests/oct17-dialogue-coldread/`; log 10-17): three fresh readers ended Ch1 split on who the dream woman is (none above 65%) and all guessed wife or lover. All three flagged the wrist simile, "someone you've met before?" and "Probably a stubborn crease" as heavy-handed. Nanoha's deadpan has become the house voice. The readers also caught art/text mismatches.
 
 ## Story thread
-1. **Set Ch1's reader-knowledge target** (what the reader should suspect and know by the end of Ch1), using the cold-read results. Then decide three levers:
+1. **Decide Ch1's reader-knowledge target** (what the reader should suspect and know by the end of Ch1), using the cold-read results, **and decide the three levers below yourself.** The author delegated these (Oct 17): make the calls, tell him what you chose and why in a few lines, log them, and pass them to Production. Don't wait for his approval.
    - **The wrist simile** ("She repeats it like she's writing it on the inside of her wrist"): keep, soften or cut. It moved all three readers toward Natsuki more than any other line.
    - **Natsuki's "Does he ever seem like… someone you've met before?"** in the interlude: keep, or make it oblique (one reader suggested she ask whether Kōhei ever hurt his left wrist).
    - **The dream voice:** currently Natsuki's actress (Zephyr) with an echo. Keep it as a clue for attentive listeners, or recast the dream so it stays ambiguous.
-2. **Add a reader-knowledge target to every chapter outline from now on** (§9 step 1; chapter-map header note). Ch2–4 of the pilot need theirs before Production drafts them.
+2. **Add a reader-knowledge target to every chapter outline from now on** (you decide these too, as part of the outline the author approves) (§9 step 1; chapter-map header note). Ch2–4 of the pilot need theirs before Production drafts them.
 3. **You own §3b and §3c.** Check them against your plans. The name-change beats are in the chapter map's "Names" running thread; Ch30's beat depends on the farewell at the tree (scene bank 21a), which is still a Proposal.
 4. **[P] details from the Ch1 build** (pilot-notes §3: Dad's calendar line, no Fukuda, Sendai, the collar CG, Ōno on screen) get folded into canon after the author has played them; no pre-review.
 
@@ -33,7 +33,7 @@ Everything below is decided and committed (production log, 10-17 rows). Read the
 3. **Dream lines:** `voice_levels.py` measures both about 6 dB under the rest. Decide by ear whether that's intended softness.
 4. **Baseline:** take `qa_play.py --every` shots of the current Ch1 build and keep them with its `script.json` as the baseline for the revision's regression diff.
 
-**B. After the Story thread's Ch1 decisions:**
+**B. After the Story thread's Ch1 decisions** (it decides them itself, so this shouldn't take long):
 5. **Revise Ch1 under §9:** continuity check, `script_lint.py --chapter 1` (it currently flags "very" 8×, "says it like" 3×, "the way you" 2×, "Something about" 2×), then the dialogue passes on the whole chapter. `production/tests/oct17-dialogue-coldread/dialogue/scene-final.ozs` is a tested rewrite of the lunch scene (unchanged in the build since); use it as the starting point. Then the Japanese pass and three cold readers against the target.
    - The address-sheet fixes: plant "Chibi" ("Night, Chibi" / おやすみ、チビ, answering "Good night, Kō-chan"); Natsuki's えっと、きみは…… to Nanoha becomes えっと…….
    - The biggest chapter-wide wins: give Akane her own voice apart from Nanoha's; keep Natsuki's jokes off Nanoha's deadpan; cut the tics.
