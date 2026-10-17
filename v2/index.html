@@ -520,8 +520,8 @@ function setCg(name, tr){
   if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); fill.style.transition=`opacity ${d}s ease`; fill.classList.remove('on'); return; }
   const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
   const over=cur.classList.contains('on');   // a CG is already up: the new one fades in on top of it
-  if(over && next.classList.contains('on') && next.src.endsWith(`/img/bg/${name}.webp`)){
-    // a tap mid-fade back to the image still underneath: fade the top one back out, no cut
+  if(next.classList.contains('on') && next.src.endsWith(`/img/bg/${name}.webp`)){
+    // a tap mid-fade (or before the new image has even loaded) back to the image still underneath: fade the top one back out, no cut
     ++setCg.tok; cur.style.transition=`opacity ${dur}s ease`; cur.classList.remove('on');
     fill.style.backgroundImage=`url(img/bg/${name}.webp)`; cgFront=1-cgFront; liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150); return;
   }
