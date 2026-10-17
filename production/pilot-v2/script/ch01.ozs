@@ -1,0 +1,374 @@
+# Ōzakura pilot v2 — Prologue + Chapter 1 (source script)
+# Compiled by production/pipeline/vn/compile_script.py into v2/script.json and the voice job list.
+#
+# Syntax
+#   == scene_id | Dev-chart title
+#   > narration
+#   who: "English" || 日本語            spoken line (日本語 is what gets voiced; "-" = unvoiced)
+#   who<expr>: ...                      change that character's sprite expression first (outfit kept)
+#   kohei(face): ...                    Kōhei's face-window expression
+#   @show who outfit_expr pos  @hide who  @hideall  @move who pos
+#   @bg name [cut|fade|slow]  @cg name [cut|fade|slow]  @cg -
+#   @bgm name  @bgm -   @sfx name   @wait seconds   @flash white
+#   @card text   @chapter n | title   @mode interlude Label   @mode normal   @endchapter n
+#   {term|gloss}  Japanese term shown with a small English gloss (style guide §5)
+#
+# Names in the Japanese lines are in kana until their kanji are chosen (pilot-notes fix 14).
+
+== prologue | The Dream
+@bg black cut
+@bgm memory
+@wait 0.7
+> There's a dream I've had since I was small.
+> I never remember it properly when I wake. Only pieces.
+@cg cg_dream slow
+> The sound of a river, close by.
+> My wrist stings. There's a cut across the back of it, and I've held it closed the whole way here.
+> Somewhere above us, a branch moving in the wind.
+> Petals.
+past_natsuki: "You're late." || ……遅いですよ。
+> She says it like a scolding. She says it like she's laughing.
+> She says it like she's been waiting a very long time.
+past_natsuki: "Hurt again. Give me your hand… Hold still." || また怪我して。……手、見せてください。じっとして。
+> Hands that aren't mine wind a strip of cloth around a wrist that is. Slow and careful, like the knot matters more than anything else in the world.
+@flash white
+> And then I wake up, and the only thing left is a feeling I can't put a name to.
+> That someone was waiting for me.
+> That I kept them waiting far too long.
+@bgm -
+@bg black slow
+@wait 1.0
+@chapter 1 | The House Next Door
+
+== c1_morning | Mornings at the Fujisawas
+@card Monday, April 7
+@bg bg_kohei_room_day
+@bgm daily
+> My alarm goes off at 5:40.
+> I'm usually awake before it. I lie there for the full ten seconds anyway, as a matter of principle, listening to the house.
+> The water heater ticking. A crow on the power line. Nothing from the room down the hall.
+> Second year of high school starts today. It doesn't feel like anything starts. It feels like Monday.
+> I get up.
+@bg bg_fujisawa_kitchen
+> The rice was on the timer last night, so the kitchen already smells like steam. Eggs, the leftover spinach, the last of the frozen karaage. Two lunch boxes, side by side on the counter.
+> I've gotten fast at this. Fast enough to do it while reading the calendar on the wall.
+> Kendo: Monday, Wednesday, Friday and Saturday morning. Hoshino Kitchen: Tuesday, Thursday and Sunday. A red circle around the eighteenth, Akane's clinic day. All of it in my handwriting.
+> All of it except the bottom line, which still says "Garbage: burnables, Tue/Fri" in Dad's. He wrote it last spring. I've never written over it.
+> The fusuma to Mom's room is closed. It usually is.
+@wait 0.6
+@show akane school_sleepy c
+akane: "Morning, Onii-chan…" || おはよ、お兄ちゃん……
+> My sister shuffles in already dressed for school, scarf crooked, eyes still at half-mast.
+kohei(smile): "Morning. How'd you sleep?" || おはよう。よく眠れたか？
+akane<pout>: "You asked me that yesterday." || それ、昨日も聞いた。
+kohei(deadpan): "And?" || で？
+akane<tease>: "And I slept yesterday too. Two nights in a row. Medical science is baffled." || 昨日もちゃんと寝たよ。二晩連続。医学界もびっくりだね。
+> I look at her anyway. Color's fine. She isn't leaning on the doorframe. She isn't holding her head the way she does when the room starts tilting on her.
+akane<pout>: "Stop doing the face." || その顔、やめて。
+kohei(neutral): "What face?" || どの顔だよ。
+akane<tease>: "The doctor face. You don't have a license, Onii-chan." || お医者さんの顔。お兄ちゃん、免許持ってないでしょ。
+kohei(grin): "I've got an egg with your name on it. That's basically a license." || お前の名前入りの卵焼きがある。ほぼ免許だろ。
+akane<smile>: "I could make my own lunch, you know. I'm very talented." || お弁当くらい、自分で作れるよ？ 私、けっこう器用なんだから。
+kohei(smile): "I'm already making two." || どうせ二つ作ってるし。
+akane<pout>: "…That's sort of my point." || ……そういうとこだよ、お兄ちゃん。
+> She says it to the rice cooker, not to me, and straightens her scarf herself before I can reach for it. I decide not to hear the rest, which I'm also fast at.
+@sfx door_slide
+> The back door slides open. No knock. There's never a knock.
+@move akane l
+@show nanoha school_smile r
+nanoha: "Good morning. I'm coming in." || おはよう。おじゃましまーす。
+kohei(deadpan): "You're already in." || もう入ってるだろ。
+nanoha<happy>: "Then I've arrived. Good morning, Akane-chan." || じゃあ、到着しました。おはよう、あかねちゃん。
+akane<happy>: "Morning, Nanoha-chan!" || おはよ、なのはちゃん！
+> She sets a plastic container on the table.
+nanoha<smile>: "Kinpira. Mom made too much again." || きんぴら。お母さんが、また作りすぎちゃって。
+kohei(neutral): "Again." || また、か。
+nanoha<deadpan>: "Again. She's very bad at measuring burdock. It's a sickness." || また。ごぼうを量るのが、ほんとに苦手なの。もう病気だね。
+> She's been bringing food over for about a year now. I used to argue. Somewhere around last summer, I gave up.
+kohei(smile): "Tell her thanks." || おばさんに、ありがとうって伝えといて。
+nanoha<smile>: "I'll tell her you said it like you meant it." || 心を込めて言ってたって、伝えておくね。
+> She goes to the cupboard left of the sink, the one with the mugs and not the one with the glasses, and takes down two without looking. She bumps the drawer under the counter with her hip so it won't stick. She reaches over the sink and jiggles the window latch at the exact angle it needs, so the steam can get out.
+> She's been doing all of that since she was tall enough to reach.
+> Which, considering it's Nanoha, wasn't that long ago.
+nanoha<deadpan>: "I heard that." || 聞こえたよ。
+kohei(surprised): "I didn't say anything." || 何も言ってないだろ。
+nanoha<deadpan>: "You thought it in a short-person direction." || 背が低い方向のこと、考えてたでしょ。
+akane<tease>: "He did. I saw his face." || 考えてたよ。顔に出てた。
+kohei(annoyed): "Whose side are you on?" || お前、どっちの味方なんだよ。
+akane<happy>: "Hers. She brought kinpira." || なのはちゃん。きんぴら持ってきてくれたもん。
+@hideall
+> I wrap the lunches. I knock twice on the fusuma.
+kohei(neutral): "Mom, we're heading out. There's rice in the cooker and miso on the stove. Just heat it up." || 母さん、行ってくる。ご飯は炊飯器、味噌汁はコンロにあるから。温めて食べて。
+> Nothing.
+> Then a small shift of weight on the other side of the paper. A creak of floorboard.
+> That's an answer. Sort of.
+
+== c1_river | The river walk
+@bg bg_river_morning
+@bgm nanoha
+> The path to school follows the river for a while before it turns toward town.
+> This week it's the best walk in Shirasawa. The cherry trees along the embankment are in full bloom, so heavy with flowers the branches sag over the path, and every time the wind comes down off the mountains the whole tunnel lets go at once.
+@show nanoha school_smile c
+> Nanoha walks on the river side. She always walks on the river side. I don't remember when we decided that.
+nanoha: "So. Class assignments." || さて。クラス分け。
+kohei(neutral): "They'll be posted at the entrance." || 昇降口に貼り出されてるだろ。
+nanoha<deadpan>: "That's the boring answer. I've prepared a theory." || それはつまらない答え。私は、仮説を用意してきました。
+kohei(smile): "Of course you have." || だろうな。
+nanoha<smile>: "There are six second-year classes. On paper, our odds of being in the same one are one in six." || 二年生は六クラス。計算上、私たちが同じクラスになる確率は、六分の一。
+nanoha<tease>: "However. We've been in the same class four years running. A teacher somewhere has noticed. A file has been opened. There have been meetings." || しかし。私たちは四年連続で同じクラスです。どこかの先生が気づいてる。ファイルが作られてる。会議も、開かれてる。
+kohei(deadpan): "Meetings." || 会議。
+nanoha<deadpan>: "In a small room with no windows. They've realized that if we're separated, something terrible happens. The school's feng shui collapses. The pool turns green." || 窓のない小さな部屋で。私たちを離すと、恐ろしいことが起きるって気づいたの。学校の風水が崩れて、プールが緑色になる。
+kohei(deadpan): "The pool is green." || プールは緑だぞ。
+nanoha<deadpan>: "Because last year they put you in 1-C for five days during the exchange program. You remember." || 去年、交流プログラムの間、こうへいを五日間だけ一年C組にしたからだよ。覚えてるでしょ。
+kohei(grin): "That was a scheduling error." || あれは日程のミスだって。
+nanoha<deadpan>: "That's what they want you to think." || ……そう思わされてるだけ。
+> I laugh. I can't help it.
+nanoha<happy>: "You laughed. That's two points for me this morning." || 笑った。今朝はこれで、私に二ポイント。
+kohei(smile): "We're keeping score now?" || 点数つけてたのかよ。
+nanoha<smile>: "We've always been keeping score. You're losing." || ずっとつけてるよ。こうへいの負け越し。
+> A gust shakes the trees. Petals come down so thick it's like walking through snow that forgot to be cold. One lands in her hair, right on the clip, and stays there.
+> I don't mention it. It suits her.
+nanoha<deadpan>: "Kō-chan. Your collar." || こうちゃん。襟。
+> Before I can do anything about it, she's stopped in front of me, up on her toes, folding my shirt collar back down over my tie.
+> She has to stretch to reach. She's always had to stretch to reach.
+> Her hands stay a second longer than the collar strictly needs.
+> Probably a stubborn crease.
+nanoha<smile>: "There. Now you look like someone who has his life together." || はい、できた。これで、人生ちゃんとしてる人に見えるよ。
+kohei(grin): "Looks can be deceiving." || 見た目にだまされるなよ。
+nanoha<tease>: "That's why I fix them." || だから、私が直すの。
+> We walk on. A bike bell rings somewhere behind us and doesn't pass.
+nanoha<smile>: "Practice today?" || 今日、部活？
+kohei(neutral): "Club doesn't start until Wednesday. First week." || 部活は水曜から。最初の週だし。
+nanoha<smile>: "And after that?" || そのあとは？
+kohei(neutral): "Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Thursday, Sunday." || 月、水、金、土曜の朝。バイトが火、木、日。
+nanoha<sad>: "I know." || ……知ってる。
+kohei(surprised): "Then why'd you ask?" || じゃあ、なんで聞いたんだよ。
+nanoha<sad>: "So you'd hear yourself say it." || 自分で言ってるの、聞いてほしかったから。
+> She doesn't say it like a criticism. She says it like a weather report. That's somehow worse.
+kohei(smile): "It's fine. I like being busy." || 平気だって。忙しいの、嫌いじゃないし。
+nanoha<smile>: "Mm." || ……うん。
+> A few steps of nothing. The river is loud this time of year, fat with snowmelt from the Tanzawa.
+nanoha<happy>: "Oh. Grandpa says the Ōzakura's the best it's been in years. I'm helping him sweep up there Saturday." || あ。おじいちゃんがね、今年の大桜は、何年かぶりの見頃なんだって。土曜日、上の神社の掃除を手伝うの。
+kohei(neutral): "His back again?" || また腰か？
+nanoha<deadpan>: "His back is a very convenient back. It only hurts on days with a lot of petals." || おじいちゃんの腰は、すごく都合のいい腰なの。花びらの多い日だけ痛くなるんだよ。
+kohei(grin): "I'll come after practice. Somebody has to carry the trash bags while you supervise." || 部活のあとで行くよ。お前が監督してる間、誰かがゴミ袋運ばないとな。
+nanoha<happy>: "I do supervise beautifully." || 監督させたら、私は一流だからね。
+> She walks a little faster after that. I have to lengthen my stride to keep up, which, considering the difference in our legs, should be impossible.
+@hide nanoha
+
+== c1_entrance | The class lists
+@bg bg_school_entrance
+@bgm daily
+> The entrance hall is chaos. Two hundred students trying to read six sheets of paper at once.
+@show rika school_grin r
+rika: "Nano-chaaaan!" || なのちゃーーーん！
+> A blur with pigtails and approximately nine hair clips hits Nanoha from the side.
+@show nanoha school_surprised l
+rika: "Two-B! You're in Two-B! I'm in Two-B! It's destiny! It's in the stars! I'm making us matching keychains!" || 二年B組！ なのちゃん、二のB！ あたしも二のB！ 運命だよ！ 星のお導き！ おそろいのキーホルダー作るね！
+nanoha<happy>: "Good morning, Rika-chan." || おはよう、りかちゃん。
+> Today's clips are a strawberry, a star and a small frog wearing a crown. The frog is new.
+rika<scheme>: "And Fujisawa-kun's in Two-B too. Hm. Hmmm." || で、ふじさわくんも二のBなんだ。ふーん。ふーーーん。
+kohei(deadpan): "What's 'hmmm'?" || なんだよ、その「ふーん」。
+rika<grin>: "Nothing! Nothing at all. A completely neutral hmmm." || なんでもない！ ぜーんぜん！ 完全に中立な「ふーん」だから！
+@show ryosuke school_smug c
+ryosuke: "—which is why, structurally, a hot dog is a sandwich." || ……だから構造的に言えば、ホットドッグはサンドイッチなんだよ。
+> Tokiwa has arrived the way he usually does, in the middle of an argument nobody else knew had started.
+kohei(deadpan): "Good morning, Tokiwa." || おはよう、ときわ。
+ryosuke<neutral>: "Bread on two sides. Filling in the middle. A hinge doesn't disqualify it. A sub roll has a hinge, and nobody says a sub isn't a sandwich." || 両側にパン。真ん中に具。つながっていても失格にはならない。サブマリンサンドだってつながってるけど、誰もあれをサンドイッチじゃないとは言わない。
+kohei(deadpan): "It's seven-fifty in the morning." || 朝の七時五十分だぞ。
+ryosuke<smug>: "That's not a counterargument. That's a timestamp." || それは反論じゃない。ただの時刻だ。
+rika<surprised>: "It's a hot DOG! It says so in the name!" || ホットドッグだよ！ 名前に書いてあるじゃん！
+ryosuke<smug>: "By that logic, a pancake is a cake." || その理屈だと、ホットケーキはケーキってことになるね。
+rika<scheme>: "…Isn't it?" || ……違うの？
+ryosuke<sigh>: "We'll resume this at lunch. I'll need a diagram." || この続きは昼休みにしよう。図が要る。
+kohei(smile): "Please don't." || やめてくれ。
+ryosuke<smug>: "Also, we're all in Two-B. I've already chosen my seat." || ちなみに、全員二のBだ。席はもう決めてある。
+kohei(neutral): "We haven't seen the room yet." || まだ教室も見てないだろ。
+ryosuke<smug>: "I chose it theoretically. Third row, by the window, out of the teacher's natural sightline but close enough to the heater for winter." || 理論上で決めたんだよ。三列目の窓際。先生の自然な視線から外れつつ、冬はストーブに近い。
+rika<scheme>: "Oh! Oh oh oh, but have you heard? Two-B is getting a transfer student!" || あっ！ あっあっあっ、ねえ聞いた？ 二のBに転校生が来るんだって！
+nanoha<surprised>: "A transfer student?" || 転校生？
+rika<grin>: "A girl! From somewhere! Far! I heard she's super tall. Taller than the vice-principal!" || 女の子！ どこか……遠いところから！ すっごく背が高いらしいよ。教頭先生より高いんだって！
+ryosuke<sigh>: "The vice-principal is five feet tall. In shoes." || 教頭先生は、靴を履いてもかなり小柄だよ。
+rika<surprised>: "So it's TRUE." || じゃあ本当なんだ！
+@hide ryosuke
+@hide rika
+> While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through somewhere at elbow height and is pointing up at a line I can't see yet.
+@move nanoha c
+@show nanoha school_smile c
+nanoha: "Fujisawa Kōhei. Two-B. Third from the top." || ふじさわこうへい。二年B組。上から三番目。
+kohei(surprised): "You found mine before yours?" || 自分のより先に、俺の見つけたのか？
+nanoha<smile>: "Yours was easier. It's always right above Fukuda's. Fukuda is very easy to find." || こうへいのほうが簡単だったの。いつも、ふくだくんのすぐ上だから。ふくだくんは、すごく見つけやすい。
+> That isn't true. Fukuda is in the middle of the list every year. She just looked for mine first.
+> I don't know why that's the thing that sticks with me all through the opening ceremony.
+@hide nanoha
+
+== c1_intro | The transfer student
+@bg bg_classroom_day
+@bgm -
+> Tokiwa gets his theoretical seat, which annoys me more than it should. I end up in the second-to-last row by the window. Nanoha's two rows over, which by the standards of the conspiracy is apparently acceptable.
+> Ōno-sensei, our homeroom teacher, shuffles in with the attendance sheet and the expression of a man who was born in a cardigan.
+teacher: "All right. Settle down. Before we start—as some of you have apparently already heard, through channels I'd like to know more about—we have a new student joining us this year." || はい、静かに。始める前に……どうも一部はもう知っているようだな。どこから漏れたのか、先生はぜひ知りたいところだが。今日から、新しい仲間が一人加わる。
+teacher: "Come on in." || 入っていいぞ。
+@sfx door_slide
+> The door opens.
+@bgm natsuki
+@cg cg_natsuki_intro
+> She walks to the front of a room full of strangers like she's walking onto a court she's already won on.
+> Copper hair, cut neat at her shoulders and tucked behind one ear. Her uniform looks like it was ironed by someone who meant it.
+natsuki: "I'm Mizuno Natsuki. It's nice to meet you all." || みずのなつきです。よろしくお願いします。
+natsuki: "My dad's job moves us around a lot, so I've been the new girl…" || 父の仕事の都合で引っ越しが多くて、転校生をやるのは……
+> She counts on her fingers.
+natsuki: "…six times now? So I'm basically a professional. Please don't go easy on me." || ……六回目、かな？ なので、もうほぼプロです。手加減はいりません。
+> A ripple of laughter. Someone in the front row actually claps.
+natsuki: "I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, I'll be grateful forever." || 剣道をやっていて、私を受け入れてくれる道場を探してます。あと、ホラー映画が大好きなので、一緒に観てくれる人がいたら、一生感謝します。
+natsuki: "Please take care of me." || よろしくお願いします。
+> She bows, and comes up out of the bow grinning.
+> And then she looks straight at me.
+@bgm -
+@wait 0.8
+natsuki: "…Ah." || ……あ。
+> Her grin stutters. Just for a second. Just long enough that I'm sure I'm the only one who sees it.
+natsuki: "Sorry, I lost my place. Um. That's everything! Thank you!" || ごめんなさい、何を言うか飛んじゃいました。えっと……以上です！ ありがとうございました！
+> More laughter, the friendly kind.
+> I realize I've been holding my pen hard enough to hurt.
+@cg -
+@bgm natsuki
+teacher: "Thank you, Mizuno. Let's see… the empty seat behind Fujisawa, by the window. Fujisawa, raise your hand so she doesn't have to wander." || ありがとう、みずの。じゃあ席は……ふじさわの後ろが空いてるな。窓際だ。ふじさわ、迷わないように手を挙げてやれ。
+> I raise my hand. She walks down the aisle. When she passes my desk, she slows down just enough to lean in.
+@show natsuki school_smirk c
+natsuki: "Hey. Kendo, right?" || ねえ。剣道、やってるでしょ？
+kohei(surprised): "…How did you—" || ……なんで……
+natsuki<smile>: "Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick." || 左の手のひら。つかが当たるところに、ちょうどタコがある。そこまで厚くなるには、何年もかかるんだよね。
+> I look down at my hand like it's betrayed me.
+natsuki<grin>: "Takes one to know one." || 見ればわかるよ。私もそうだから。
+> And then she's past me, settling into the seat at my back, and I can feel the whole classroom's attention swing toward the window like a weathervane.
+@hide natsuki
+> I keep my eyes on the board for the entire first period.
+> I don't hear a single word of it.
+
+== c1_lunch | Lunch with Mizuno
+@bg bg_classroom_day
+@bgm daily
+> By lunch, Mizuno Natsuki has learned the names of half the class, been invited to two clubs, and agreed to go to karaoke with a group of girls whose names I don't think I've ever said out loud.
+> I'm impressed. I'm also slightly exhausted just watching.
+> I've barely gotten the lid off my lunch when a chair scrapes behind me.
+@show natsuki school_grin c
+natsuki: "So. You're Fujisawa." || ふーん。きみが、ふじさわかあ。
+kohei(deadpan): "That's what the attendance sheet says." || 出席簿には、そう書いてあるな。
+natsuki<smirk>: "The guy who turned down three confessions last year." || 去年、告白を三回断った人。
+> I put my chopsticks down.
+kohei(annoyed): "Is that in the welcome packet?" || それ、転校生向けの案内に載ってるのか？
+natsuki<laugh>: "Someone told me before I'd finished putting my shoes in my locker! I'm not even kidding. The girl by the door was very passionate about it." || 下駄箱に靴を入れ終わる前に聞かされたよ！ ほんとに！ ドアの近くの子が、すっごく熱く語ってた。
+kohei(deadpan): "Great." || ……最高だな。
+natsuki<smile>: "She said you told every one of them you didn't have time for a girlfriend. Is that true?" || 全員に「彼女を作る時間がない」って言ったんだって。ほんと？
+kohei(neutral): "It's true that I don't have time." || 時間がないのは、本当だ。
+natsuki<smile>: "Huh." || へえ。
+> She props her chin on her hand and looks at me like she's reading a scorecard.
+natsuki<smirk>: "That's either really honest or really sad. I can't decide." || それって、すっごく正直なのか、すっごく寂しいのか。決められないなあ。
+kohei(smile): "Let me know when you do." || 決まったら教えてくれ。
+natsuki<grin>: "I will! I'm very decisive. Usually." || うん、教える！ 私、決断力あるから。……だいたいは。
+> Something about the way she says it gets a laugh out of me before I can stop it.
+natsuki<smirk>: "Oh, there it is. So what are you, {shodan|first dan}?" || あ、笑った。で、段は？ 初段？
+kohei(grin): "We'll find out on the floor." || 竹刀を交えればわかる。
+natsuki<laugh>: "Oh, he's cocky. Good. I hate practicing with polite people." || おっ、自信家だ。いいね。礼儀正しいだけの相手と稽古するの、苦手なんだ。
+kohei(neutral): "Club starts Wednesday." || 部活は水曜からだ。
+natsuki<smile>: "Wednesday." || 水曜日。
+> She repeats it like she's writing it on the inside of her wrist.
+@move natsuki r
+@show nanoha school_smile l
+nanoha: "Excuse me. Mizuno-san?" || あの……みずのさん？
+> Nanoha's standing by my desk with her lunch held in front of her in both hands, the way she holds things when she's about to do something brave.
+natsuki<surprised>: "Oh! Hi! You're—" || あっ！ どうも！ えっと、きみは……
+nanoha<smile>: "Tachibana Nanoha. I sit two rows over. I'm the class representative's assistant, which means I own a clipboard." || たちばななのはです。二列向こうの席。学級委員の補佐で……つまり、クリップボードを持ってます。
+nanoha<smile>: "If you'd like, I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing." || よかったら、放課後に校内を案内しようか？ 図書室とか、音楽室とか。どの下駄箱がひっかかるか。どの自販機がお金を食べるか。そういうの。
+> For a second Mizuno doesn't say anything. She looks almost startled, like she isn't used to being the one who gets asked.
+natsuki<blush>: "…Really? You'd do that?" || ……ほんとに？ 案内してくれるの？
+nanoha<smile>: "It's not a big tour. The vending machine part is the most important." || 大したツアーじゃないよ。自販機のところが、一番大事。
+natsuki<laugh>: "I would love that. Really. Thank you." || すっごく嬉しい。ほんとに。ありがとう。
+natsuki<grin>: "Oh, and call me Natsuki. Is that okay? People tell me I'm pushy." || あ、それと、なつきって呼んで！ いいかな？ 押しが強いって、よく言われるんだけど。
+nanoha<happy>: "…Natsuki-san." || ……なつき、さん。
+natsuki<surprised>: "Eh, 'san'? We're the same age!" || えー、「さん」？ 同い年じゃん！
+nanoha<tease>: "I'm working up to it. I need time to adjust." || 段階を踏んでるの。慣れるのに、時間がいるから。
+natsuki<grin>: "Okay, okay. Then I'll just call you Nanoha. Is that all right? I'm going to do it anyway." || わかった、わかった。じゃあ、私は「なのは」って呼ぶね。いい？ どっちにしろ呼ぶけど。
+nanoha<blush>: "That's—yes. That's fine." || それは……うん。いいよ。
+> They both laugh, and something about the two of them laughing in the window light, over the top of my head, makes me feel weirdly like furniture.
+@hideall
+> I eat my rice. It's very good rice. I made it myself.
+
+== c1_interlude | Nanoha: the tour
+@mode interlude Nanoha
+@bg bg_classroom_evening
+@bgm nanoha
+> Natsuki noticed everything.
+> That was the first thing Nanoha learned on the tour. Natsuki noticed that the stairs by the art room squeaked on the fourth step and the eleventh. She noticed the faded rectangle on the wall where a trophy case used to be. She noticed that the third-floor girls' bathroom had a window that looked straight at the mountains, and she said "Oh," very quietly, like she'd been handed something.
+@show natsuki school_smile r
+natsuki: "This school's nice. It feels… lived in. Does that make sense?" || この学校、いいね。なんか……人がちゃんと暮らしてきた感じがする。わかる？
+@show nanoha school_smile l
+nanoha: "It's very old. The heating sounds like a ghost." || すごく古いからね。暖房の音が、おばけみたいなの。
+natsuki<laugh>: "Perfect. I love it already." || 最高。もう好きになっちゃった。
+> They ended the tour in their own empty classroom, the evening sun coming in sideways and turning every desk gold. Natsuki dropped into Kōhei's chair without asking whose it was, turned it around, and sat backward on it with her arms folded over the backrest.
+natsuki<smirk>: "So. You and Fujisawa." || で。なのはと、ふじさわって。
+nanoha<surprised>: "Me and Kōhei?" || 私と、こうへい？
+natsuki<smile>: "You live next door, right? Somebody said." || お隣さんなんでしょ？ 誰かが言ってた。
+nanoha<smile>: "Since we were born." || 生まれた時からね。
+natsuki<surprised>: "No way. So you're real childhood friends." || うそ。じゃあ、ほんとの幼なじみなんだ。
+nanoha<smile>: "Real childhood friends." || ほんとの幼なじみ。
+> Nanoha said it as lightly as she knew how. She'd had practice.
+natsuki<wistful>: "That's really nice." || ……いいなあ、そういうの。
+natsuki<wistful>: "I've never stayed anywhere long enough to have one of those. You know? Someone who knows which drawer sticks in your kitchen." || 私、そういうのができるほど、ひとつの場所にいたことないんだ。わかる？ 台所のどの引き出しがひっかかるか、知ってるような人。
+> Nanoha didn't say that Kōhei's kitchen drawer stuck. She didn't say she'd known it since she was six.
+natsuki<smile>: "Hey. This is going to sound weird." || ねえ。変なこと言うけど。
+nanoha<smile>: "I like weird." || 変なの、好きだよ。
+natsuki<wistful>: "Does he ever seem like… someone you've met before?" || ふじさわってさ……前にも会ったことがあるような……そんな感じ、しない？
+nanoha<surprised>: "…" || -
+nanoha<tease>: "I have met him before. Every day. For sixteen years." || 会ったこと、あるよ。毎日。十六年間。
+natsuki<laugh>: "Okay, fair! Fair. Forget it. It's the jet lag talking." || だよね！ そりゃそうだ！ 忘れて。時差ボケのせい。
+nanoha<deadpan>: "You moved from Sendai. That's barely three hours by train." || 仙台から来たんでしょ。電車でたった三時間くらいだよ。
+natsuki<blush>: "Very intense jet lag." || すっごく強烈な時差ボケなの。
+> They both laughed, and the moment closed up, and it was fine.
+> It was fine.
+natsuki<smile>: "Thanks for today, Nanoha. Seriously. First days are usually…" || 今日はありがとね、なのは。ほんとに。転校初日って、いつもは……
+> She didn't finish. She just smiled, and it was a different smile from the one she'd used in front of the class. Smaller. It looked like it cost her something.
+natsuki<wistful>: "Anyway. Thanks." || ……とにかく。ありがと。
+@hide natsuki
+> Somewhere between the library and the gym, Nanoha had decided that she liked Mizuno Natsuki.
+> She'd decided it firmly, the way you shut a window against the wind.
+> She did not let herself think about why it had needed deciding at all.
+@hide nanoha
+@mode normal
+
+== c1_night | Wrong day for the trash
+@bg bg_houses_night
+@bgm night
+> I'm taking the burnables out to the corner. Monday isn't garbage day, but Dad's handwriting on the calendar doesn't know that, and I couldn't stand the bag by the door anymore.
+> That's when Nanoha comes up the street with her school bag over her shoulder.
+@show nanoha school_smile c
+nanoha: "You're taking out the trash on the wrong day." || ゴミの日、間違ってるよ。
+kohei(grin): "I'm moving it closer to the right day. How was the tour?" || 正しい日に近づけてるだけだ。案内、どうだった？
+nanoha<happy>: "Good. She noticed the squeaky stairs. Both of them." || よかったよ。階段のきしむところ、気づいてた。二か所とも。
+kohei(surprised): "Nobody notices the eleventh step." || 十一段目に気づくやつなんて、いないぞ。
+nanoha<smile>: "She did." || なつきさんは、気づいた。
+nanoha<smile>: "She's nice, Kōhei. I like her." || いい子だよ、こうへい。私、あの子好き。
+> She says it a little too clearly, the way you say something you'd like written down.
+nanoha<smile>: "What did you think of her?" || こうへいは、どう思った？
+kohei(neutral): "She seems fine." || ……普通に、いいやつなんじゃないか。
+nanoha<tease>: "You smiled." || 笑ってたよ。
+kohei(surprised): "When?" || いつ。
+nanoha<tease>: "When she said she was looking for a dojo that would put up with her. You did your—" || 受け入れてくれる道場を探してる、って言ったとき。こうへい、いつもの……
+> She drops her chin and narrows her eyes and does a frankly offensive impression of what I can only assume is my face.
+kohei(annoyed): "I don't have a face." || 俺に顔なんてない。
+nanoha<deadpan>: "You have several. I've catalogued them. That one's number four. 'Somebody wants to fight me.'" || いっぱいあるよ。全部カタログにしてある。あれは四番。「誰かが俺とやり合いたがってる」の顔。
+kohei(smile): "What's number one?" || 一番は？
+nanoha<smile>: "Secret." || ひみつ。
+> She walks the ten feet to her own front door. Pauses with her hand on the latch.
+nanoha<smile>: "Good night, Kō-chan." || おやすみ、こうちゃん。
+kohei(smile): "Night." || おやすみ。
+@hide nanoha
+> The door closes.
+@bg bg_houses_night_lit slow
+> A moment later her upstairs light comes on, in the window that faces mine across a gap so narrow you could pass a book through it if you leaned.
+> I stand there for a while longer than the garbage requires.
+@bgm -
+@bg black slow
+@wait 1.0
+@endchapter 1

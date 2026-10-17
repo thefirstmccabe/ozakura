@@ -1,0 +1,12 @@
+# Pilot v2 spend ledger (cap $40)
+
+Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout $0.018, Gemini 3.8 Flash TTS $0.045 per 1,000 characters, Kling v3 Pro image-to-video $0.14/s. Failed jobs aren't charged.
+
+| Date | What | Jobs | Est. cost |
+|---|---|---|---|
+| 10-17 | Akane school base (NB2 2K ×2), Natsuki school base (NB2 2K ×2) | 2 | $0.32 |
+| 10-17 | CGs: dream, Natsuki intro, title (NB Pro 2K ×2 each) | 3 | $0.90 |
+| 10-17 | Natsuki expressions ×6, Akane expressions ×4 (NB2 2K) | 10 | $0.80 |
+| 10-17 | Fixes: dream CG cut under the bandage, title CG Natsuki's hair (NB Pro 2K ×2 each) | 2 | $0.60 |
+| 10-17 | Night houses plate for 1.7 (NB Pro 2K ×2): the shipped night street has the alley canon forbids | 1 | $0.30 |
+| 10-17 | Cutouts: 12 sprites + Kōhei's 10 face-window images (bria) | 22 | $0.40 |
