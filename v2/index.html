@@ -512,7 +512,7 @@ function liveOn(name, delay){
 }
 function setCg(name, tr){
   state.cg=name;
-  if(!name){ setCg.tok++; liveOff(); cgImgs.forEach(i=>i.classList.remove('on')); return; }
+  if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); return; }
   const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
   next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
   const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); cur.classList.remove('on'); };
@@ -669,6 +669,7 @@ function snap(){ // state at current command index (rewind to the line being sho
   return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene, phone};
 }
 function restore(s){
+  log.length=0;   // a jump (load, continue, chapters) starts a fresh backlog
   showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
   // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes
@@ -853,7 +854,7 @@ function chartScene(body, X, k, ci){
     if(c.t==='bg') label = c.name==='black' ? 'Fade to black' : c.name==='white' ? 'Flash to white' : 'Background · '+nice(c.name);
     else if(c.t==='cg') label = c.name ? 'CG · '+nice(c.name) : 'CG ends';
     else if(c.t==='card') label = 'Date card · '+c.text;
-    else if(c.t==='mode' && c.mode==='interlude') label = 'Interlude · '+c.label;
+    else if(c.t==='mode' && c.mode==='interlude') label = c.label || 'Interlude';
     else if(c.t==='bgm'){ label = c.name ? 'Music · '+c.name : 'Music stops'; minor=true; }
     else if(c.t==='endpilot') label = 'End of pilot';
     if(!label) continue;

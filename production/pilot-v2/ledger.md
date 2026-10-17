@@ -14,3 +14,6 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-17 | Voices: 25 batched Gemini TTS takes, ~11,100 characters | 25 | $0.50 |
 | 10-17 | Voice QA: transcriptions of the joined takes and of the final clips (ElevenLabs STT, ~29 min) | 2 | $0.85 |
 | 10-17 | Re-voice c1_0085 (the batch take misread a weekday) | 1 | $0.01 |
+| 10-17 | Re-voice 9 lines rewritten after the independent review (single-line TTS, ~3,400 characters) and transcribe them (~1 min) | 18 | $0.18 |
+
+**Total after Ch1: about $5.98 of $40.**
