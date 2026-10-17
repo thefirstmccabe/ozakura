@@ -1,6 +1,6 @@
 # Pilot v2 — scene outline (Prologue + Ch1–4)
 
-**For the author's approval, Oct 16.** Nothing is drawn until this is approved. **[P]** = Claude's staging, provisional. Everything else comes from canon, the chapter map or the pilot-notes fix list (numbers in brackets). Scene numbers match dev mode.
+**Draft Oct 16; revised Oct 17 with the Story thread's changes, for the author's final OK.** Nothing is drawn until he approves it. **[P]** = Claude's staging, provisional. Everything else comes from canon, the chapter map or the pilot-notes fix list (numbers in brackets). Scene numbers match dev mode.
 
 ---
 
@@ -17,7 +17,7 @@
 
 **1.2 River walk.** Just the two of them, easy; she fixes his collar. The list of her private oddities is cut and saved for later scenes. (13, 24)
 
-**1.3 Class lists.** 2-B. Rika's "Nano-chaaan!" tackle; Ryōsuke arrives through something he says or does, not a name tag. (25)
+**1.3 Class lists.** 2-B. Rika's "Nano-chaaan!" tackle. Ryōsuke arrives mid-argument about hot dogs, which is his whole introduction; no name tag, no list of facts. (25; canon §2 openings rule)
 
 **1.4 Natsuki's introduction.** Physical reaction only: her grin stutters when she sees him, and he grips his pen hard enough to hurt. No flash, no narrated certainty. (2, 8)
 
@@ -40,13 +40,13 @@
 
 **2.2 First practice.** Kirishima (now male, deadpan) runs warm-ups. Takatsuki arrives through his clean, exact form; no needling about missed practices. Natsuki joins. (7, 28)
 
-**2.3 Kendo explained.** Rika is at the dojo sketching for art club. Natsuki goes into full teacher mode for her (borrowed glasses, a shinai as a pointer, a whiteboard): the targets, the calls, how a point scores. **[P]** She drafts Kōhei and Takatsuki as her demonstration dummies. Every term in Japanese with English. (32)
+**2.3 Kendo explained.** Rika is at the dojo sketching for art club. Natsuki goes into full teacher mode for her (borrowed glasses, a shinai as a pointer, a whiteboard): the targets, the calls, how a point scores. **[P]** She drafts Takatsuki as the model of correct form and Kōhei as the counterexample, which annoys him visibly. Every term in Japanese with English. (32)
 
 **2.4 The practice match** (shiai-geiko), Natsuki vs. Kōhei, Kirishima calling it. **Manga insert.** She's already there when he moves; "Kote ari! (Point: wrist!)"; then his low, wrong-footed dō. (P3, 6)
 
 **2.5 Debrief.** Kirishima: "You stopped for half a second. Don't." Takatsuki notices she read Kōhei better than he ever has. The "remembering something" line is cut. (P1)
 
-**2.6 The mop race and the catch.** He stays late without explaining why (P4). She slips; he catches her; a tear she can't account for: "Cedar pollen." / "It's April." No flash, no "something heavy." (2, 29)
+**2.6 The mop race and the catch.** He stays late without explaining why (P4). She slips; he catches her (a **very short animated moment**, which canon §2 keeps by name); a tear she can't account for: "Cedar pollen." / "It's April." No flash, no "something heavy." (2, 29)
 
 **2.7 The bridge at dusk.** "Saturday mornings. Club practice. You'll be there?" No best-of-five setup and no "promise" line. (2, 5)
 
@@ -54,7 +54,7 @@
 
 **Needs**
 - **Manga insert:** the match, 2 pages, about 9 panels, panel by panel. Built from the Oct 12 test script; its panels get reused where they pass review. It replaces `cg_jigeiko`.
-- **CG:** the catch, redrawn for her hair (16). **Living still:** her hair settling, the tear, dust in the light.
+- **CG:** the catch, redrawn for her hair (16). **Animated moment:** the fall and catch, 2–3 seconds; the living still (her hair settling, the tear, dust in the light) is the fallback if it doesn't pass review.
 - **Backgrounds (reuse):** restaurant, classroom, dojo, bridge at dusk, river evening.
 - **Sprites (new):** Natsuki in kendo gear plus a teacher-mode pair (glasses, shinai pointer); male Kirishima; Takatsuki with slate-blue hair. Rika reused.
 - **Music:** daily, practice, memory (fading in from practice at the catch), natsuki, night.
@@ -87,19 +87,19 @@
 ---
 
 ## Ch4 — The Light at the Shrine (Sat Apr 12 night – Mon Apr 14) · new
-**4.1 FB1: the fairy leaves.** That night Kōhei keeps hearing "…You came back." He's heard her say it once before. Flashback, about age 7: her friend the light is gone without a goodbye, and the grown-ups smile at her. He's the one who believes her. He searches the shrine grounds with her, and every day for weeks they leave cookies on the boulder. He never saw it. Back in the present, her window is dark.
+**4.1 FB1: the fairy leaves.** That night Kōhei keeps hearing "…You came back." He's heard her say it once before. Flashback, about age 7: her friend the light is gone without a goodbye, and the grown-ups smile at her. He's the one who believes her. He searches the shrine grounds with her, and every day for weeks they leave cookies on the boulder. **[P]** One evening she runs to a glint on the boulder, "…You came back," and it's only a bottle cap. That's the line he remembers. He never saw the light himself. Back in the present, her window is dark.
 
-**4.2 Group study at the Fujisawa house.** **[P]** Sunday, after his lunch shift, at his place because he has to make dinner and Akane is home. Natsuki's first visit. She notices Nanoha knows where his cups go and which window sticks: "Have you been coming here forever?" She notices the closed fusuma and the lowered voices, and doesn't ask. Ryōsuke has his hot-dog argument on screen. Akane drifts through, openly Team Nanoha while being sweet to Natsuki.
+**4.2 Group study at the Fujisawa house.** **[P]** Sunday, after his lunch shift, at his place because he has to make dinner and Akane is home. Natsuki's first visit. She notices Nanoha knows where his cups go and which window sticks: "Have you been coming here forever?" She notices the closed fusuma and the lowered voices, and doesn't ask. **[P]** Ryōsuke eats Kōhei's snacks and ranks them out loud instead of studying. Akane drifts through, openly Team Nanoha while being sweet to Natsuki.
 
 **4.3 Not dating.** **[P]** Natsuki asks lightly how long they've been going out. Kōhei's "We're not" comes too fast, with a laugh. Ryōsuke confirms without looking up; Rika glances at Nanoha. Nanoha smiles: "He'd have to have time." (Ryōsuke and Rika have known them for years, so the friend who finds out is Natsuki.)
 
-**4.4 Interlude: Nanoha.** **[P, new scene]** That night, in her room with her hair in the bedtime bun, she turns Usagi-san to face the wall. "He knows what he did."
+**4.4 Interlude: Nanoha.** **[P, new scene]** That night, in her room with her hair in the bedtime bun, she turns Usagi-san to face the wall. "He knows what he did." A few lines only.
 
 **4.5 Monday practice.** Takatsuki spars with Kōhei, and Kōhei lands something no textbook allows. Takatsuki, baffled rather than snide: "That shouldn't have worked." Kōhei's private chip: Takatsuki has time to be perfect, and he has shifts. Takatsuki never mentions it. End of the pilot.
 
 **Needs**
 - **CG (new):** FB1, the two seven-year-olds on the boulder at dusk with a plate of cookies under the tree, in the childhood treatment (below).
-- **Sprites (new):** child Kōhei and child Nanoha, about 3 expressions each.
+- **Sprites (new):** child Nanoha, about 3 expressions. Child Kōhei follows the present-day rule: a face window only (about 3 expressions); he appears in full only in the CG.
 - **Backgrounds:** **new:** the Fujisawa living room by day (from the night plate) and Nanoha's room at night (from the Oct 10 day plate). The FB1 shrine grounds use the existing tree plate through the childhood treatment. Reused: Kōhei's room at night, dojo.
 - **Music:** childhood, daily, nanoha (quiet), practice, title.
 
@@ -108,28 +108,14 @@
 ## Totals and cost
 - **CGs (7):** prologue dream, Natsuki's arrival, the catch, the window, the shrine meeting, FB1, and the title art (redrawn for Natsuki's hair, 16).
 - **Manga insert (1):** the Ch2 match.
-- **Living stills (5):** title, prologue, catch, window, Great Cherry.
+- **Living stills (4) and one animated moment:** stills on the title, prologue, window and Great Cherry; the fall and catch animated (still as fallback).
 - **Backgrounds:** 4 new or finished plates plus the Oct 10 houses plate; 15 shipped backgrounds reused.
-- **Sprites:** about 45 new. Kōhei is never on stage in these chapters, so he needs only his face windows (already done); his sprite set waits until a chapter puts him on stage.
+- **Sprites:** about 42 new, plus child Kōhei's face window. Kōhei is never on stage in these chapters, so he needs only his face windows (already done); his sprite set waits until a chapter puts him on stage.
 - **Voice:** every line re-voiced with the final cast. **Music:** the finished loops (production log, Oct 16).
 - **Estimate:** about $25 of the $40 cap.
 
-## Decisions for the author
-1. **The [P] staging** above: 2.3 (demo dummies), 3.1 (the phone), 3.5 (the snow-smell fragment), 4.2 (Sunday at his place), 4.3 (Natsuki is the one who finds out), 4.4 (the new Nanoha interlude).
-2. **Era treatments** (canon §2 says to decide at the first flashback; the prologue and FB1 are it). **Proposal:** the past life gets a cool, desaturated palette with softer edges; childhood gets a warm, sunlit, slightly faded-photo look with a soft vignette. The two never share a palette.
-3. **The special visuals** (the Story thread's list in the brief) are the ones in this outline; approving the outline approves them.
-
----
-
-## Approval (Oct 17)
-**Approved** with the changes below; the author delegated the review to the Story thread. Build from this outline as amended.
-
-**All six [P] stagings approved** (2.3, 3.1, 3.5, 4.2, 4.3, 4.4). In 2.3, make Takatsuki the model of correct form and Kōhei the counterexample; he'll be visibly annoyed about it. In 4.4, keep the interlude to a few lines.
-
-**Era treatments approved** as proposed (now canon §2): past life cool and desaturated with soft edges; childhood warm, sunlit, a faded photo with a soft vignette. Keep the past life in color. "Desaturated" drifts toward grayscale on these models (style guide §6), so check every past-life image for it.
-
-**Changes:**
-1. **Ryōsuke's hot-dog argument moves to 1.3.** Canon (§2 openings rule) makes it how he's introduced, so it can't wait until Ch4. In 4.2 he needs a different bit, e.g. arguing with the TV or with Mio over the game.
-2. **The catch (2.6) gets its very short animated moment**, which canon §2 keeps by name (the fall and catch, tested Oct 10), with the living still as a fallback if it doesn't pass review.
-3. **4.1 "He's heard her say it once before"** has to be shown. In FB1, during the weeks of searching, she runs to something on the boulder (a glint or a firefly), says "…You came back," and it isn't. That's the line he remembers.
-4. **Child Kōhei follows the present-day rule:** face window only (cropped from the FB1 CG work), shown in full only in the CG. Child Nanoha gets the sprites.
+## Settled Oct 17 (Story thread, delegated by the author)
+1. **[P] stagings kept:** 2.3, 3.1, 3.5, 4.2, 4.3, 4.4, plus the two new ones above (the FB1 glint, Ryōsuke's snacks).
+2. **Era treatments (now canon §2):** past life cool and desaturated with softer edges, still in color; childhood warm, sunlit and slightly faded, with a soft vignette. They never share a palette. Check every past-life image for grayscale drift (style guide §6).
+3. **Special visuals:** as listed in this outline.
+4. **Changes from the Oct 16 draft:** Ryōsuke's hot-dog argument moved to 1.3; the catch is animated; FB1 shows the earlier "…You came back"; child Kōhei is a face window only.
