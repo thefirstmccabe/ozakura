@@ -16,5 +16,6 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-17 | Re-voice c1_0085 (the batch take misread a weekday) | 1 | $0.01 |
 | 10-17 | Re-voice 9 lines rewritten after the independent review (single-line TTS, ~3,400 characters) and transcribe them (~1 min) | 18 | $0.18 |
 | 10-17 | Punch list 1: Ōno-sensei sprite (NB2 2K ×2 + cutout), intro CG falter variant (NB Pro 2K ×2), collar CG (NB Pro 2K ×2 + a clip fix), 3 re-voiced lines and their transcripts | 11 | $0.99 |
+| 10-17 | Second review fixes: 2 re-voiced lines and their transcripts | 4 | $0.03 |
 
-**Total after Ch1: about $6.97 of $40.**
+**Total after Ch1: about $7.00 of $40.**

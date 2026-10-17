@@ -116,7 +116,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 - **Style line:** "detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric."
 - **Age cue for Akane:** "clearly younger than a high-schooler; compact proportions with a slightly larger head relative to the body; rounder, softer face with fuller cheeks; larger eyes."
 
-**Backgrounds and CGs:** `fal-ai/nano-banana-pro/edit` (higher fidelity), 16:9. Pass the relevant sprites and the style anchor for CGs.
+**Backgrounds and CGs:** `fal-ai/nano-banana-pro/edit` (higher fidelity), 16:9. Pass the relevant sprites and the style anchor for CGs. **In portrait** (iPad held upright), CGs show whole over a blurred fill instead of being cropped to the middle; backgrounds still fill the screen (Pilot v2, Oct 17).
 
 **Current inventory:** 72 sprites (14 outfit sets), 16 backgrounds, 9 CGs (title, hands and strap, Natsuki intro, jigeiko, the catch, Yuzu at the counter, window night, shrine meeting, past life).
 

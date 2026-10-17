@@ -1,7 +1,7 @@
 """Carry existing voice cuts over to a recompiled script whose line IDs have shifted.
 
 Line IDs are sequential, so adding or removing any line renumbers everything after it. This matches the new voice
-line list against the old one by content (speaker + Japanese), in order, keeps the cut of every unchanged line under
+line list against the old one by content (speaker + Japanese), in order (and then any line that only moved), keeps the cut of every unchanged line under
 its new ID, and lists the lines that still need a take (new or changed Japanese).
 
 Usage: python3 voice_remap.py OLD_LINES OLD_CUTS NEW_LINES OUT_CUTS
@@ -18,6 +18,17 @@ for tag, i1, i2, j1, j2 in sm.get_opcodes():
     if tag == "equal":
         for k in range(i2 - i1):
             idmap[old[i1 + k]["id"]] = new[j1 + k]["id"]
+# second pass: lines that moved (the diff sees a move as delete + insert) keep their take if the same
+# speaker + Japanese occurs exactly once among the unmatched lines on each side
+from collections import Counter
+used_new = set(idmap.values())
+left_old = [x for x in old if x["id"] not in idmap]
+left_new = [x for x in new if x["id"] not in used_new]
+co, cn = Counter(key(x) for x in left_old), Counter(key(x) for x in left_new)
+for x in left_new:
+    if cn[key(x)] == 1 and co[key(x)] == 1:
+        o = next(y for y in left_old if key(y) == key(x))
+        idmap[o["id"]] = x["id"]
 out = {idmap[o]: cuts[o] for o in idmap if o in cuts}
 need = [x for x in new if x["id"] not in out]
 json.dump(out, open(sys.argv[4], "w", encoding="utf-8"), ensure_ascii=False)

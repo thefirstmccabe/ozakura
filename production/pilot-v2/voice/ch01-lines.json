@@ -646,7 +646,7 @@
  {
   "id": "c1_0140",
   "who": "natsuki",
-  "ja": "みずのなつきです。よろしくお願いします。",
+  "ja": "はじめまして。みずのなつきです。",
   "en": "\"I'm Mizuno Natsuki. It's nice to meet you all.\"",
   "scene": "c1_intro"
  },
@@ -884,7 +884,7 @@
  {
   "id": "c1_0195",
   "who": "natsuki",
-  "ja": "あ、それと、なつきって呼んで！ いいかな？ 押しが強いって、よく言われるんだけど。",
+  "ja": "あ、それと、なつきって呼んで。いいかな？ 押しが強いって、よく言われるんだけど。",
   "en": "\"Oh, and call me Natsuki. Is that okay? People tell me I'm pushy.\"",
   "scene": "c1_lunch"
  },
@@ -924,21 +924,21 @@
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0205",
+  "id": "c1_0206",
   "who": "natsuki",
   "ja": "この学校、いいね。なんか……使い込まれてる感じがする。わかる？",
   "en": "\"This school's nice. It feels… lived in. Does that make sense?\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0206",
+  "id": "c1_0207",
   "who": "nanoha",
   "ja": "すごく古いからね。暖房の音が、おばけみたいなの。",
   "en": "\"It's very old. The heating sounds like a ghost.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0207",
+  "id": "c1_0208",
   "who": "natsuki",
   "ja": "最高。もう好きになっちゃった。",
   "en": "\"Perfect. I love it already.\"",

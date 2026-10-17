@@ -57,7 +57,7 @@
 {
 "t": "nar",
 "id": "p_0004",
-"text": "My wrist stings. There's a cut across the inside of it, and I've held it closed the whole way home from training."
+"text": "My wrist stings. There's a cut on the inside of it from training, and I've held it closed the whole way home."
 },
 {
 "t": "nar",
@@ -337,7 +337,7 @@
 {
 "t": "nar",
 "id": "c1_0025",
-"text": "She says it to the rice cooker, not to me, and straightens her scarf herself before I can reach for it. I pretend I didn't hear that."
+"text": "She says it to the rice cooker, not to me. I pretend I didn't hear that."
 },
 {
 "t": "sfx",
@@ -789,6 +789,11 @@
 "text": "\"There. Now you look like someone who has his life together.\""
 },
 {
+"t": "cg",
+"name": null,
+"tr": "fade"
+},
+{
 "t": "say",
 "id": "c1_0079",
 "who": "kohei",
@@ -805,11 +810,6 @@
 "id": "c1_0080",
 "who": "nanoha",
 "text": "\"That's why I fix them.\""
-},
-{
-"t": "cg",
-"name": null,
-"tr": "fade"
 },
 {
 "t": "nar",
@@ -1247,17 +1247,17 @@
 "text": "\"Then we've already narrowed it down!\""
 },
 {
+"t": "nar",
+"id": "c1_0127",
+"text": "While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through somewhere at elbow height and is pointing up at a line I can't see yet."
+},
+{
 "t": "hide",
 "who": "ryosuke"
 },
 {
 "t": "hide",
 "who": "rika"
-},
-{
-"t": "nar",
-"id": "c1_0127",
-"text": "While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through somewhere at elbow height and is pointing up at a line I can't see yet."
 },
 {
 "t": "show",
@@ -1441,20 +1441,20 @@
 "text": "Her grin stutters. Just for a second. Just long enough that I'm sure I'm the only one who sees it."
 },
 {
+"t": "cg",
+"name": "cg_natsuki_intro",
+"tr": "fade"
+},
+{
 "t": "say",
 "id": "c1_0148",
 "who": "natsuki",
 "text": "\"Please take care of me.\""
 },
 {
-"t": "cg",
-"name": "cg_natsuki_intro",
-"tr": "fade"
-},
-{
 "t": "nar",
 "id": "c1_0149",
-"text": "She bows. When she comes up, the grin is back where it was, and the class gives her the friendly kind of applause."
+"text": "She bows, and the class gives her the friendly kind of applause."
 },
 {
 "t": "nar",
@@ -1963,6 +1963,11 @@
 "text": "That was the first thing Nanoha learned on the tour. Natsuki noticed that the stairs by the art room squeaked on the fourth step and the eleventh. She noticed the faded rectangle on the wall where a trophy case used to be. She noticed that the third-floor girls' bathroom had a window that looked straight at the mountains, and she said \"Oh,\" very quietly, like she'd been handed something."
 },
 {
+"t": "nar",
+"id": "c1_0205",
+"text": "They ended the tour in their own empty classroom, the evening sun coming in sideways and turning every desk gold. Natsuki dropped into the chair in front of her own, turned it around, and sat backward on it with her arms folded over the backrest."
+},
+{
 "t": "show",
 "who": "natsuki",
 "spr": "natsuki_school_smile",
@@ -1970,13 +1975,13 @@
 },
 {
 "t": "say",
-"id": "c1_0205",
+"id": "c1_0206",
 "who": "natsuki",
 "text": "\"This school's nice. It feels… lived in. Does that make sense?\""
 },
 {
 "t": "say",
-"id": "c1_0206",
+"id": "c1_0207",
 "who": "nanoha",
 "text": "\"It's very old. The heating sounds like a ghost.\"",
 "face": "school_smile"
@@ -1988,14 +1993,9 @@
 },
 {
 "t": "say",
-"id": "c1_0207",
+"id": "c1_0208",
 "who": "natsuki",
 "text": "\"Perfect. I love it already.\""
-},
-{
-"t": "nar",
-"id": "c1_0208",
-"text": "They ended the tour in their own empty classroom, the evening sun coming in sideways and turning every desk gold. Natsuki dropped into Kōhei's chair, knowing perfectly well whose it was, turned it around, and sat backward on it with her arms folded over the backrest."
 },
 {
 "t": "show",
@@ -2158,7 +2158,7 @@
 {
 "t": "nar",
 "id": "c1_0227",
-"text": "They both laughed, and the moment closed up, and it was fine."
+"text": "Natsuki laughed first. The moment closed up, and it was fine."
 },
 {
 "t": "nar",
@@ -2301,7 +2301,7 @@
 {
 "t": "nar",
 "id": "c1_0243",
-"text": "She says it a little too clearly, the way you say something you'd like written down."
+"text": "She says it a little too clearly, the way you say something so it stays said."
 },
 {
 "t": "show",

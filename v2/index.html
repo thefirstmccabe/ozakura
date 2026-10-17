@@ -41,7 +41,11 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 .spr.on{opacity:1}
 .spr{filter:var(--bgf,none)}
 .spr.dim{filter:var(--bgf,) brightness(.78) saturate(.9)}
+#cg{isolation:isolate}   /* keeps the CG images' z-order inside the CG layer, under the text box */
 #cg .bgimg{transition:opacity 1s ease}
+#cgFill{position:absolute;inset:-48px;background:center/cover no-repeat;filter:blur(28px) brightness(.5) saturate(1.1);opacity:0;transition:opacity 1s ease;display:none}
+#cgFill.on{opacity:1}
+@media (orientation:portrait){ #cg .bgimg, #cg .live{object-fit:contain;object-position:50% 36%} #cgFill{display:block} }
 #tint{pointer-events:none;opacity:0;transition:opacity .8s;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(20,10,30,.45) 100%)}
 #tint.on{opacity:1}
 #flash{pointer-events:none;background:#fff;opacity:0}
@@ -258,7 +262,7 @@ input{-webkit-user-select:text;user-select:text}
   <div id="bgSolid" class="layer"></div>
   <div id="bg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""></div>
   <div id="sprites" class="layer"></div>
-  <div id="cg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""><video class="live" id="cgLive" muted playsinline loop preload="auto" aria-hidden="true"></video></div>
+  <div id="cg" class="layer"><div id="cgFill"></div><img class="bgimg" alt=""><img class="bgimg" alt=""><video class="live" id="cgLive" muted playsinline loop preload="auto" aria-hidden="true"></video></div>
   <div id="tint" class="layer"></div>
   <div id="ilabel"></div>
   <div id="phone"><div class="ph">Chie</div></div>
@@ -512,10 +516,15 @@ function liveOn(name, delay){
 }
 function setCg(name, tr){
   state.cg=name;
-  if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); return; }
+  const fill=$('#cgFill');
+  if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); fill.style.transition=`opacity ${d}s ease`; fill.classList.remove('on'); return; }
   const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
-  next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
-  const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); cur.classList.remove('on'); };
+  const over=cur.classList.contains('on');   // a CG is already up: the new one fades in on top of it
+  next.style.zIndex=2; cur.style.zIndex=1; cgLive.style.zIndex=3;
+  next.style.transition=`opacity ${dur}s ease`; cur.style.transition= over ? 'none' : `opacity ${dur}s ease`;
+  const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on');
+    fill.style.transition=`opacity ${dur}s ease`; fill.style.backgroundImage=`url(img/bg/${name}.webp)`; fill.classList.add('on');
+    if(over) setTimeout(()=>{ if(tok===setCg.tok) cur.classList.remove('on'); }, dur*1000+60); else cur.classList.remove('on'); };
   next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload(); cgFront=1-cgFront;
   liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150);
 }
@@ -569,8 +578,9 @@ function faceFor(c){
   if(NOWIN.has(w) || state.spr[w]) return null;
   if(state.cg && (CG_CAST[state.cg]||[]).includes(w)) return null;
   if(c.face) return `img/face/${w}_${c.face}.webp`;      // face-window-only lines (an interlude's POV character)
-  return `img/face/${lastSpr[w]||w+'_school_smile'}.webp`;
+  const spr=lastSpr[w]||firstSpr(w); return spr ? `img/face/${spr}.webp` : null;
 }
+function firstSpr(w){ const c=S&&S.find(c=>c.t==='show'&&c.who===w); return c?c.spr:null; }
 function showFace(url, who){
   if(!url){ faceEl.classList.remove('on'); box.classList.remove('withface'); return; }
   faceEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--gilt)');
@@ -597,7 +607,7 @@ function run(){
       switch(c.t){
         case 'scene': state.scene=c.id; store.set('cont',snap()); break;
         case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
-        case 'cg': setCg(c.name,c.tr); if(c.name) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break;
+        case 'cg': { const was=state.cg; setCg(c.name,c.tr); if(c.name && !was) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break; }
         case 'bgm': playBgm(c.name); state.bgm=c.name; break;
         case 'sfx': if(!skipOn) playSfx(c.name); break;
         case 'show': showSpr(c.who,c.spr,c.pos); break;
@@ -670,7 +680,8 @@ function snap(){ // state at current command index (rewind to the line being sho
   return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene, phone};
 }
 function restore(s){
-  log.length=0;   // a jump (load, continue, chapters) starts a fresh backlog
+  log.length=0;
+  Object.keys(lastSpr).forEach(k=>delete lastSpr[k]); S.slice(0,s.i).forEach(c=>{ if(c.t==='show') lastSpr[c.who]=c.spr; });   // a jump (load, continue, chapters) starts a fresh backlog
   showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
   // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes

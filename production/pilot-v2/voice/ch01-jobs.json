@@ -356,7 +356,7 @@
  {
   "key": "c1_intro.natsuki.1",
   "ids": [
-   "c1_0140",
+   "x_c1_0140",
    "c1_0141",
    "c1_0143",
    "c1_0145",
@@ -435,7 +435,7 @@
    "x_c1_0190",
    "c1_0192",
    "c1_0194",
-   "c1_0195",
+   "x_c1_0195",
    "c1_0197",
    "c1_0199"
   ],
@@ -511,7 +511,7 @@
   "key": "c1_interlude.natsuki.1",
   "ids": [
    "x_c1_0207",
-   "c1_0207",
+   "c1_0208",
    "c1_0209",
    "c1_0211",
    "c1_0213",
@@ -560,7 +560,7 @@
  {
   "key": "c1_interlude.nanoha.1",
   "ids": [
-   "c1_0206",
+   "c1_0207",
    "c1_0210",
    "c1_0212",
    "c1_0214",
@@ -736,7 +736,7 @@
  {
   "key": "retake.c1_0204",
   "ids": [
-   "c1_0205"
+   "c1_0206"
   ],
   "texts": [
    "この学校、いいね。なんか……使い込まれてる感じがする。わかる？"
@@ -787,5 +787,27 @@
   ],
   "note": "re-voiced Oct 17 (author's punch list: Natsuki is no longer tall, so the rumor changed)",
   "direction": "triumphant, completely sure of her own logic"
+ },
+ {
+  "key": "retake.c1_0140",
+  "ids": [
+   "c1_0140"
+  ],
+  "texts": [
+   "はじめまして。みずのなつきです。"
+  ],
+  "note": "re-voiced Oct 17 after the second independent review",
+  "direction": "introducing herself to a new class from the front of the room, poised and warm, with an easy smile"
+ },
+ {
+  "key": "retake.c1_0195",
+  "ids": [
+   "c1_0195"
+  ],
+  "texts": [
+   "あ、それと、なつきって呼んで。いいかな？ 押しが強いって、よく言われるんだけど。"
+  ],
+  "note": "re-voiced Oct 17 after the second independent review",
+  "direction": "friendly and casual, at conversational volume, a little self-aware about being pushy"
  }
 ]

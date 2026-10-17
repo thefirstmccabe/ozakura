@@ -4,7 +4,7 @@
 
 **Who wins:** `ozakura/canon.md` governs. Where the shipped script disagrees with canon, the script is non-canon until it's revised.
 
-This document replaces the old working bible (`ozakura/story-bible.md`). Last updated 2026-10-10 (Ch3 feedback complete; P1–P5 and Yuzu's later introduction approved).
+This document replaces the old working bible (`ozakura/story-bible.md`). Last updated 2026-10-17 (Pilot v2 Ch1 built; its new [P] details are noted in §3).
 
 **Markers:**
 - **[P]:** invented by Claude for the pilot. Provisional until the author approves or replaces it.
@@ -170,7 +170,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 
 **Mom and Dad:**
 - Mom stays behind a closed fusuma.
-- Dad's handwriting is still on the kitchen calendar (see fix 11). The wrong-day garbage follows his handwriting.
+- Dad's handwriting is still on the kitchen calendar (see fix 11). The wrong-day garbage follows his handwriting. **v2 [P]:** his line is the old Mon/Thu burnables pickup; the town now collects Tue/Fri, so Kōhei takes the trash out on Monday night by Dad's handwriting.
 
 **Tachibana family [P]:**
 - **Emi (mother):** warm and brisk, yellow apron. Her chronic "made too much" kinpira is quiet charity (fix 20: no longer explained in narration).
@@ -181,7 +181,8 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 **School [P]:**
 - **Tokiwa Ryōsuke:** the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes. Calls Kōhei "Fujisawa."
 - **Hoshikawa Rika:** Nanoha's best friend. Art club, no indoor voice, novelty clips (strawberry, star, a frog wearing a crown). Calls Nanoha "Nano-chan."
-- **Ōno-sensei:** 2-B homeroom, classical Japanese. Tall, tired, "born in a cardigan."
+- **Ōno-sensei:** 2-B homeroom, classical Japanese. Tall, tired, "born in a cardigan." On screen from v2 (sprite from `inventory/full-ono.png`).
+- **v2 [P]:** there's no Fukuda in 2-B this year, which is how Kōhei knows Nanoha looked for his name before her own (names sort in kana order, so ふくだ sits right above ふじさわ).
 
 **Kendo club [P]:**
 - **Kirishima Aoi:** third-year captain. **Becoming male (fix 28).** Quiet authority, deadpan jokes no one gets. "You stopped for half a second. Don't."
