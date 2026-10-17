@@ -125,6 +125,8 @@
 ---
 
 ## Reader-knowledge targets (Story thread, Oct 17; delegated by the author)
+**ON HOLD (Oct 17, evening):** the author disagrees with these targets. He wants the past life kept more mysterious and who Kōhei ends up with kept about 50-50 until it's revealed. The Story thread revises them Monday. Don't start the Ch1 revision's writing changes (part B) until then; part A work continues.
+
 What the reader should **know** and **suspect** at the end of each chapter (style guide §9, step 1). Cold readers are measured against these. They read text only, so anything a player sees or hears but the cold-read packet lacks has to be added to the packet as a bracketed staging line.
 
 **Through-line for the pilot (Ch1–4):** the story's question isn't *who* the dream woman was but whether that past gets a claim on this life (canon §5–§6). So the reader leans toward Natsuki early and isn't told: a lean in Ch1, a strong suspicion after the catch in Ch2, still unconfirmed when the pilot ends. Nanoha's care can echo the dream's tenderness (she does for him now what that woman did), but the past-life pull belongs to Natsuki. Readers should come away with "Natsuki is tied to that life, Nanoha is this one," not "the dream woman is Nanoha"; two of three Oct 17 readers slid from the first to the second.

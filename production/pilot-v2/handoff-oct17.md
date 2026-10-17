@@ -35,6 +35,8 @@ Everything below is decided and committed (production log, 10-17 rows). Read the
 
 **B. After the Story thread's Ch1 decisions** (it decides them itself, so this shouldn't take long):
 
+> **ON HOLD (Oct 17, evening):** the author disagrees with these targets. He wants the past life kept more mysterious and who Kōhei ends up with kept about 50-50 until it's revealed. The Story thread revises them Monday. Don't start the Ch1 revision's writing changes (part B) until then; part A work continues.
+>
 > **Done Oct 17 (Story thread):** the Ch1–4 reader-knowledge targets and the Ch1 revision decisions are at the end of `production/pilot-v2/scene-outline.md`. In short: the wrist simile becomes an action (she writes 水 on the inside of her wrist); "someone you've met before?" becomes an ordinary attempt to place him; the Ōzakura's sentence goes in the interlude, at the window where Natsuki says "Oh"; the dream voice stays Zephyr with the echo plus about −1 semitone; "Probably a stubborn crease" and the river walk's snow simile go; Ryōsuke argues about taiyaki, not hot dogs. Childhood address forms for the shared-past flashbacks are in style guide §3c.
 5. **Revise Ch1 under §9:** continuity check, `script_lint.py --chapter 1` (it currently flags "very" 8×, "says it like" 3×, "the way you" 2×, "Something about" 2×), then the dialogue passes on the whole chapter. `production/tests/oct17-dialogue-coldread/dialogue/scene-final.ozs` is a tested rewrite of the lunch scene (unchanged in the build since); use it as the starting point. Then the Japanese pass and three cold readers against the target.
    - The address-sheet fixes: plant "Chibi" ("Night, Chibi" / おやすみ、チビ, answering "Good night, Kō-chan"); Natsuki's えっと、きみは…… to Nanoha becomes えっと…….
