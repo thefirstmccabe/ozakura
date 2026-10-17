@@ -1,0 +1,5 @@
+{"A-solo":["elevenlabs/music/v2.5","01a14b08-091f-7c42-8452-05351194020f","DECLINED by content checker; not retried"],
+"B-duet":["elevenlabs/music/v2.5","01a14b08-0920-79c2-98dc-492ea1807272","hum ref xhigh; violin + cello duet, harp"],
+"C-orchestra":["elevenlabs/music/v2.5","01a14b08-0920-7642-9fa0-ce4351f1c0b0","hum ref high; piano intro, violin + string orchestra"],
+"D-guitar":["elevenlabs/music/v2.5","01a14b08-0921-79d0-9cda-81f9c340e251","hum ref xhigh; violin over nylon guitar, strings, piano"],
+"note":"Reference: the author's humming (Oct 17); the recording itself is kept out of the public repo."}
