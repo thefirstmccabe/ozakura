@@ -57,7 +57,8 @@ with sync_playwright() as p:
             pg.evaluate("window.__vn.advance()")
             pg.wait_for_timeout(60)
         elif st.get("typing"):
-            pg.evaluate("window.__vn.advance()"); pg.wait_for_timeout(30)
+            # check and tap in one step: a short line can finish typing in between, and a plain tap would skip it
+            pg.evaluate("(()=>{ if(window.__vn.check().typing) window.__vn.advance(); })()"); pg.wait_for_timeout(30)
         else:
             pg.wait_for_timeout(250)
             if st["cards"]:

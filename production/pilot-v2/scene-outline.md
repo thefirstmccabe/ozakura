@@ -32,6 +32,7 @@
 - **Backgrounds (reuse):** Kōhei's room by day, kitchen, river morning, school entrance, classroom day and evening, street at night.
 - **Sprites (new):** Akane in school and home outfits; Natsuki in uniform.
 - **Music:** daily, nanoha, natsuki (a beat of silence at the hitch), night.
+- **Changed in the build (Oct 17):** Akane's home outfit moves to Ch3, since she's in uniform all of Ch1.
 - **Added in the build (Oct 17):** the collar CG on the river walk [P]; a face-only variant of Natsuki's arrival CG for the hitch; Ōno-sensei's sprite; a night version of the Oct 10 houses plate and its lit-window variant in place of the street at night (the shipped one shows the alley).
 
 ---

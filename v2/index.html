@@ -520,6 +520,12 @@ function setCg(name, tr){
   if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); fill.style.transition=`opacity ${d}s ease`; fill.classList.remove('on'); return; }
   const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
   const over=cur.classList.contains('on');   // a CG is already up: the new one fades in on top of it
+  if(over && next.classList.contains('on') && next.src.endsWith(`/img/bg/${name}.webp`)){
+    // a tap mid-fade back to the image still underneath: fade the top one back out, no cut
+    ++setCg.tok; cur.style.transition=`opacity ${dur}s ease`; cur.classList.remove('on');
+    fill.style.backgroundImage=`url(img/bg/${name}.webp)`; cgFront=1-cgFront; liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150); return;
+  }
+  if(next.classList.contains('on')){ next.style.transition='none'; next.classList.remove('on'); void next.offsetWidth; }
   next.style.zIndex=2; cur.style.zIndex=1; cgLive.style.zIndex=3;
   next.style.transition=`opacity ${dur}s ease`; cur.style.transition= over ? 'none' : `opacity ${dur}s ease`;
   const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on');

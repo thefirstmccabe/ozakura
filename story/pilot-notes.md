@@ -147,7 +147,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - 2-B, top grades (see 13a), the class representative's assistant ("owns a clipboard"); in v2 that was last year's job, since it's only the first day of the new year. Underclassmen bow to her.
 - Their mothers shared a maternity ward.
 - Privately: a goldfish funeral with a eulogy, arguing with the TV, conspiracy theories, keeping score against Kōhei.
-- Walks into his kitchen without knocking and knows every sticky drawer. Fixes his collar.
+- Walks into his kitchen without knocking and knows every sticky drawer. Fixes his collar. **v2 [P]:** the collar moment gets its own CG on the river walk (`cg_collar`); the VN never had one, the manga did.
 - Calls him "Kō-chan" to tease [P].
 - Decided to like Natsuki "the way you shut a window against the wind."
 - Childhood: called the light "the fairy" and left it cookies; Kōhei "heard someone in the next room."
@@ -161,6 +161,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - Photographs every town "so I have proof I was there."
 - "I'm amazing at first days. It's the second semesters I never get to."
 - Chie [P] in Sendai is the only friend she's kept.
+- **v2 [P]:** on her first day she answers "Sendai, most recently" all morning, which is how Nanoha knows where she moved from.
 - Her involuntary tears at the catch ("cedar pollen" / "It's April").
 - **Cut or move per the fixes:** the "loud" framing (fix 8); "Did you just hear someone?" at the tree (fix 2).
 
