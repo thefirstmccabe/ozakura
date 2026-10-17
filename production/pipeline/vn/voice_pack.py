@@ -21,7 +21,7 @@ def speech_rms_db(path, a, b):
     v = e[e > max(e.max() * 0.1, 1e-4)]
     return 20 * np.log10(np.sqrt(np.mean(v ** 2)))
 
-PITCH = {"nanoha": 2, "akane": 2, "rika": 4, "yuzu": 2, "mio": 4}
+PITCH = {"nanoha": 2, "akane": 2, "rika": 2, "yuzu": 2, "mio": 4}   # rika +4 -> +2 (author, Oct 17)
 RATE = {2: (1.1225, 0.8909), 4: (1.2599, 0.7937)}
 
 lines, jobs, segs, takes, out = (json.load(open(sys.argv[1])), json.load(open(sys.argv[2])),

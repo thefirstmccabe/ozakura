@@ -7,6 +7,7 @@
 #   who: "English" || 日本語            spoken line (日本語 is what gets voiced; "-" = unvoiced)
 #   who<expr>: ...                      change that character's sprite expression first (outfit kept)
 #   kohei(face): ...                    Kōhei's face-window expression
+#   who(expr): ...                      any speaker shown only in a face window (e.g. an interlude's POV character)
 #   @show who outfit_expr pos  @hide who  @hideall  @move who pos
 #   @bg name [cut|fade|slow]  @cg name [cut|fade|slow]  @cg -
 #   @bgm name  @bgm -   @sfx name   @wait seconds   @flash white
@@ -23,7 +24,7 @@
 > I never remember it properly when I wake. Only pieces.
 @cg cg_dream slow
 > The sound of a river, close by.
-> My wrist stings. There's a cut across the back of it, and I've held it closed the whole way home from training.
+> My wrist stings. There's a cut across the inside of it, and I've held it closed the whole way home from training.
 > Somewhere above us, a branch moving in the wind.
 > Petals.
 past_natsuki: "You're late." || ……遅いですよ。
@@ -71,7 +72,7 @@ kohei(smile): "I've got an egg with your name on it. That's basically a license.
 akane<smile>: "I could make my own lunch, you know. I'm very talented." || お弁当くらい、自分で作れるよ？ 私、けっこう器用なんだから。
 kohei(smile): "I'm already making two." || どうせ二つ作ってるし。
 akane<pout>: "…That's sort of my point." || ……そういうとこだよ、お兄ちゃん。
-> She says it to the rice cooker, not to me, and straightens her scarf herself before I can reach for it. I decide not to hear that, which I'm also fast at.
+> She says it to the rice cooker, not to me, and straightens her scarf herself before I can reach for it. I pretend I didn't hear that.
 @sfx door_slide
 > The back door slides open. No knock. There's never a knock.
 @move akane l
@@ -129,6 +130,7 @@ nanoha<smile>: "We've always been keeping score. You're losing." || ずっとつ
 > A gust shakes the trees. Petals come down so thick it's like walking through snow that forgot to be cold. One lands in her hair, right on the clip, and stays there.
 > I don't mention it. It suits her.
 nanoha<deadpan>: "Kō-chan. Your collar." || こうちゃん。襟。
+@cg cg_collar
 > Before I can do anything about it, she's stopped in front of me, up on her toes, folding my shirt collar back down over my tie.
 > She has to stretch to reach. She's always had to stretch to reach.
 > Her hands stay a second longer than the collar strictly needs.
@@ -136,6 +138,7 @@ nanoha<deadpan>: "Kō-chan. Your collar." || こうちゃん。襟。
 nanoha<smile>: "There. Now you look like someone who has his life together." || はい、できた。これで、人生ちゃんとしてる人に見えるよ。
 kohei(smile): "Looks can be deceiving." || 見た目にだまされるなよ。
 nanoha<tease>: "That's why I fix them." || だから、私が直すの。
+@cg -
 > We walk on. A bike bell rings somewhere behind us and doesn't pass.
 nanoha<smile>: "Practice today?" || 今日、部活？
 kohei(neutral): "Club doesn't start until Wednesday. First week." || 部活は水曜から。最初の週だし。
@@ -187,9 +190,9 @@ kohei(neutral): "We haven't seen the room yet." || まだ教室も見てない�
 ryosuke<smug>: "I chose it theoretically. Third row, by the window, out of the teacher's natural sightline but close enough to the heater for winter." || 理論上で決めたんだよ。三列目の窓際。先生の自然な視線から外れつつ、冬はストーブに近い。
 rika<scheme>: "Oh! Oh oh oh, but have you heard? Two-B is getting a transfer student!" || あっ！ あっあっあっ、ねえ聞いた？ 二のBに転校生が来るんだって！
 nanoha<surprised>: "A transfer student?" || 転校生？
-rika<grin>: "A girl! From somewhere! Far! I heard she's super tall. Taller than the vice-principal!" || 女の子！ どこか……遠いところから！ すっごく背が高いらしいよ。教頭先生より高いんだって！
-ryosuke<sigh>: "The vice-principal is five feet tall. In shoes." || 教頭先生は、靴を履いてもかなり小柄だよ。
-rika<surprised>: "So it's TRUE." || じゃあ本当なんだ！
+rika<grin>: "A girl! From somewhere! Far!" || 女の子！ どこか……遠いところから！
+ryosuke<sigh>: "'Somewhere far' covers most of the planet." || 「遠いところ」って、地球のほとんどが当てはまるよ。
+rika<scheme>: "Then we've already narrowed it down!" || じゃあ、もうだいぶ絞れてるじゃん！
 @hide ryosuke
 @hide rika
 > While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through somewhere at elbow height and is pointing up at a line I can't see yet.
@@ -207,10 +210,12 @@ nanoha<smile>: "Yours was easier. It's always right under Fukuda's. Fukuda is ve
 @bgm -
 > Tokiwa gets his theoretical seat, which annoys me more than it should. I end up in the second-to-last row by the window. Nanoha's two rows over, which by the standards of the conspiracy is apparently acceptable.
 > Ōno-sensei, our homeroom teacher, shuffles in with the attendance sheet and the expression of a man who was born in a cardigan.
+@show teacher school_neutral c
 teacher: "All right. Settle down. Before we start—as some of you have apparently already heard, through channels I'd like to know more about—we have a new student joining us this year." || はい、静かに。始める前に……どうも一部はもう知っているようだな。どこから漏れたのか、先生はぜひ知りたいところだが。今日から、新しい仲間が一人加わる。
 teacher: "Come on in." || 入っていいぞ。
 @sfx door_slide
 > The door opens.
+@hide teacher
 @bgm natsuki
 @cg cg_natsuki_intro
 > She walks to the front of a room full of strangers like she's walking onto a court she's already won on.
@@ -221,22 +226,21 @@ natsuki: "My dad's job moves us around a lot, so I've been the new girl…" || �
 natsuki: "…six times now? So I'm basically a professional. Please don't go easy on me." || ……六回目、かな？ なので、もうほぼプロです。手加減はいりません。
 > A ripple of laughter. Someone in the front row actually claps.
 natsuki: "I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, I'll be grateful forever." || 剣道をやっていて、私を受け入れてくれる道場を探してます。あと、ホラー映画が大好きなので、一緒に観てくれる人がいたら、一生感謝します。
-@cg - cut
-@show natsuki school_grin c
 > Her eyes go along the rows while she says it. Then they get to me.
 @bgm -
 @wait 0.8
-@show natsuki school_wistful c
+@cg cg_natsuki_intro_falter
 > Her grin stutters. Just for a second. Just long enough that I'm sure I'm the only one who sees it.
-natsuki<smile>: "Please take care of me." || よろしくお願いします。
-@show natsuki school_grin c
+natsuki: "Please take care of me." || よろしくお願いします。
+@cg cg_natsuki_intro
 > She bows. When she comes up, the grin is back where it was, and the class gives her the friendly kind of applause.
 > I realize I've been holding my pen hard enough to hurt.
-@hide natsuki
 @bgm natsuki
 teacher: "Thank you, Mizuno. Let's see… the empty seat behind Fujisawa, by the window. Fujisawa, raise your hand so she doesn't have to wander." || ありがとう、みずの。じゃあ席は……ふじさわの後ろが空いてるな。窓際だ。ふじさわ、迷わないように手を挙げてやれ。
-> I raise my hand. She walks down the aisle. When she passes my desk, she slows down just enough to lean in.
+> I raise my hand. She walks down the aisle.
+@cg -
 @show natsuki school_smirk c
+> When she passes my desk, she slows down just enough to lean in.
 natsuki: "Hey. Kendo, right?" || ねえ。剣道、やってるでしょ？
 kohei(surprised): "…How did you—" || ……なんで……
 natsuki<smile>: "Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick." || 左の手のひら。つかが当たるところに、ちょうどタコがある。そこまで厚くなるには、何年もかかるんだよね。
@@ -302,29 +306,28 @@ nanoha<blush>: "That's—yes. That's fine." || それは……うん。いいよ
 @bgm nanoha
 > Natsuki noticed everything.
 > That was the first thing Nanoha learned on the tour. Natsuki noticed that the stairs by the art room squeaked on the fourth step and the eleventh. She noticed the faded rectangle on the wall where a trophy case used to be. She noticed that the third-floor girls' bathroom had a window that looked straight at the mountains, and she said "Oh," very quietly, like she'd been handed something.
-@show natsuki school_smile r
+@show natsuki school_smile c
 natsuki: "This school's nice. It feels… lived in. Does that make sense?" || この学校、いいね。なんか……使い込まれてる感じがする。わかる？
-@show nanoha school_smile l
-nanoha: "It's very old. The heating sounds like a ghost." || すごく古いからね。暖房の音が、おばけみたいなの。
+nanoha(smile): "It's very old. The heating sounds like a ghost." || すごく古いからね。暖房の音が、おばけみたいなの。
 natsuki<laugh>: "Perfect. I love it already." || 最高。もう好きになっちゃった。
 > They ended the tour in their own empty classroom, the evening sun coming in sideways and turning every desk gold. Natsuki dropped into Kōhei's chair, knowing perfectly well whose it was, turned it around, and sat backward on it with her arms folded over the backrest.
 natsuki<smirk>: "So. You and Fujisawa." || で。なのはと、ふじさわって。
-nanoha<surprised>: "Me and Kōhei?" || 私と、こうへい？
+nanoha(surprised): "Me and Kōhei?" || 私と、こうへい？
 natsuki<smile>: "You live next door, right? Somebody said." || お隣さんなんでしょ？ 誰かが言ってた。
-nanoha<smile>: "Since we were born." || 生まれた時からね。
+nanoha(smile): "Since we were born." || 生まれた時からね。
 natsuki<surprised>: "No way. So you're real childhood friends." || うそ。じゃあ、ほんとの幼なじみなんだ。
-nanoha<smile>: "Real childhood friends." || ほんとの幼なじみ。
+nanoha(smile): "Real childhood friends." || ほんとの幼なじみ。
 > Nanoha said it as lightly as she knew how. She'd had practice.
 natsuki<wistful>: "That's really nice." || ……いいなあ、そういうの。
 natsuki<wistful>: "I've never stayed anywhere long enough to have one of those. You know? Someone who knows which drawer sticks in your kitchen." || 私、そういうのができるほど、ひとつの場所にいたことないんだ。わかる？ 台所のどの引き出しがひっかかるか、知ってるような人。
 > Nanoha didn't say that Kōhei's kitchen drawer stuck. She didn't say she'd known it since she was six.
 natsuki<smile>: "Hey. This is going to sound weird." || ねえ。変なこと言うけど。
-nanoha<smile>: "I like weird." || 変なの、好きだよ。
+nanoha(smile): "I like weird." || 変なの、好きだよ。
 natsuki<wistful>: "Does he ever seem like… someone you've met before?" || ふじさわってさ……前にも会ったことがあるような……そんな感じ、しない？
-nanoha<surprised>: "…" || -
-nanoha<tease>: "I have met him before. Every day. For sixteen years." || 会ったこと、あるよ。毎日。十六年間。
+nanoha(surprised): "…" || -
+nanoha(tease): "I have met him before. Every day. For sixteen years." || 会ったこと、あるよ。毎日。十六年間。
 natsuki<laugh>: "Okay, fair! Fair. Forget it. It's the jet lag talking." || だよね！ そりゃそうだ！ 忘れて。時差ボケのせい。
-nanoha<deadpan>: "You moved from Sendai. That's barely three hours by train." || 仙台から来たんでしょ。電車でたった三時間くらいだよ。
+nanoha(deadpan): "You moved from Sendai. That's barely three hours by train." || 仙台から来たんでしょ。電車でたった三時間くらいだよ。
 natsuki<blush>: "Very intense jet lag." || すっごく強烈な時差ボケなの。
 > They both laughed, and the moment closed up, and it was fine.
 > It was fine.
@@ -335,7 +338,6 @@ natsuki<wistful>: "Anyway. Thanks." || ……とにかく。ありがと。
 > Somewhere between the library and the gym, Nanoha had decided that she liked Mizuno Natsuki.
 > She'd decided it firmly, the way you shut a window against the wind.
 > She did not let herself think about why it had needed deciding at all.
-@hide nanoha
 @mode normal
 
 == c1_night | Wrong day for the trash

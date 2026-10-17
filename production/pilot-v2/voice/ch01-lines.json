@@ -590,22 +590,22 @@
  {
   "id": "c1_0124",
   "who": "rika",
-  "ja": "女の子！ どこか……遠いところから！ すっごく背が高いらしいよ。教頭先生より高いんだって！",
-  "en": "\"A girl! From somewhere! Far! I heard she's super tall. Taller than the vice-principal!\"",
+  "ja": "女の子！ どこか……遠いところから！",
+  "en": "\"A girl! From somewhere! Far!\"",
   "scene": "c1_entrance"
  },
  {
   "id": "c1_0125",
   "who": "ryosuke",
-  "ja": "教頭先生は、靴を履いてもかなり小柄だよ。",
-  "en": "\"The vice-principal is five feet tall. In shoes.\"",
+  "ja": "「遠いところ」って、地球のほとんどが当てはまるよ。",
+  "en": "\"'Somewhere far' covers most of the planet.\"",
   "scene": "c1_entrance"
  },
  {
   "id": "c1_0126",
   "who": "rika",
-  "ja": "じゃあ本当なんだ！",
-  "en": "\"So it's TRUE.\"",
+  "ja": "じゃあ、もうだいぶ絞れてるじゃん！",
+  "en": "\"Then we've already narrowed it down!\"",
   "scene": "c1_entrance"
  },
  {
@@ -686,497 +686,497 @@
   "scene": "c1_intro"
  },
  {
-  "id": "c1_0153",
+  "id": "c1_0154",
   "who": "natsuki",
   "ja": "ねえ。剣道、やってるでしょ？",
   "en": "\"Hey. Kendo, right?\"",
   "scene": "c1_intro"
  },
  {
-  "id": "c1_0154",
+  "id": "c1_0155",
   "who": "kohei",
   "ja": "……なんで……",
   "en": "\"…How did you—\"",
   "scene": "c1_intro"
  },
  {
-  "id": "c1_0155",
+  "id": "c1_0156",
   "who": "natsuki",
   "ja": "左の手のひら。つかが当たるところに、ちょうどタコがある。そこまで厚くなるには、何年もかかるんだよね。",
   "en": "\"Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick.\"",
   "scene": "c1_intro"
  },
  {
-  "id": "c1_0157",
+  "id": "c1_0158",
   "who": "natsuki",
   "ja": "見ればわかるよ。私もそうだから。",
   "en": "\"Takes one to know one.\"",
   "scene": "c1_intro"
  },
  {
-  "id": "c1_0164",
+  "id": "c1_0165",
   "who": "natsuki",
   "ja": "ふーん。きみが、ふじさわかあ。",
   "en": "\"So. You're Fujisawa.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0165",
+  "id": "c1_0166",
   "who": "kohei",
   "ja": "出席簿には、そう書いてあるな。",
   "en": "\"That's what the attendance sheet says.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0166",
+  "id": "c1_0167",
   "who": "natsuki",
   "ja": "去年、告白を三回断った人。",
   "en": "\"The guy who turned down three confessions last year.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0168",
+  "id": "c1_0169",
   "who": "kohei",
   "ja": "それ、転校生向けの案内に載ってるのか？",
   "en": "\"Is that in the welcome packet?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0169",
+  "id": "c1_0170",
   "who": "natsuki",
   "ja": "下駄箱に靴を入れる前に、もう聞かされたよ。ほんとだって。ドアの近くの子が、すっごく熱く語ってた。",
   "en": "\"Someone told me before I'd even put my shoes in my locker. I'm not kidding. The girl by the door was very passionate about it.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0170",
+  "id": "c1_0171",
   "who": "kohei",
   "ja": "……最高だな。",
   "en": "\"Great.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0171",
+  "id": "c1_0172",
   "who": "natsuki",
   "ja": "全員に「彼女を作る時間がない」って言ったんだって。ほんと？",
   "en": "\"She said you told every one of them you didn't have time for a girlfriend. Is that true?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0172",
+  "id": "c1_0173",
   "who": "kohei",
   "ja": "時間がないのは、本当だ。",
   "en": "\"It's true that I don't have time.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0173",
+  "id": "c1_0174",
   "who": "natsuki",
   "ja": "へえ。",
   "en": "\"Huh.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0175",
+  "id": "c1_0176",
   "who": "natsuki",
   "ja": "それって、すっごく正直なのか、すっごく寂しいのか。決められないなあ。",
   "en": "\"That's either really honest or really sad. I can't decide.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0176",
+  "id": "c1_0177",
   "who": "kohei",
   "ja": "決まったら教えてくれ。",
   "en": "\"Let me know when you do.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0177",
+  "id": "c1_0178",
   "who": "natsuki",
   "ja": "うん、教える。私、決断力あるから。……だいたいは。",
   "en": "\"I will. I'm very decisive. Usually.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0179",
+  "id": "c1_0180",
   "who": "natsuki",
   "ja": "ふふ、きみ、面白いね。で、段は？ 初段？",
   "en": "\"Okay, you're fun. So what are you, {shodan|first dan}?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0180",
+  "id": "c1_0181",
   "who": "kohei",
   "ja": "竹刀を交えればわかる。",
   "en": "\"We'll find out on the floor.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0181",
+  "id": "c1_0182",
   "who": "natsuki",
   "ja": "おっ、自信家だ。いいね。礼儀正しいだけの相手と稽古するの、苦手なんだ。",
   "en": "\"Oh, he's cocky. Good. I hate practicing with polite people.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0182",
+  "id": "c1_0183",
   "who": "kohei",
   "ja": "部活は水曜からだ。",
   "en": "\"Club starts Wednesday.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0183",
+  "id": "c1_0184",
   "who": "natsuki",
   "ja": "水曜日。",
   "en": "\"Wednesday.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0185",
+  "id": "c1_0186",
   "who": "nanoha",
   "ja": "あの……みずのさん？",
   "en": "\"Excuse me. Mizuno-san?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0187",
+  "id": "c1_0188",
   "who": "natsuki",
   "ja": "あ、どうも。えっと、きみは……",
   "en": "\"Oh—hi. You're…\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0188",
+  "id": "c1_0189",
   "who": "nanoha",
   "ja": "たちばななのはです。二列向こうの席。去年、学級委員の補佐をやってたから……今もクリップボードを持ってます。",
   "en": "\"Tachibana Nanoha. I sit two rows over. I was the class representative's assistant last year, so I still own a clipboard.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0189",
+  "id": "c1_0190",
   "who": "nanoha",
   "ja": "よかったら、放課後に校内を案内しようか？ 図書室とか、音楽室とか。どの下駄箱がひっかかるか。どの自販機がお金を食べるか。そういうの。",
   "en": "\"If you'd like, I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0191",
+  "id": "c1_0192",
   "who": "natsuki",
   "ja": "……ほんとに？ 案内してくれるの？",
   "en": "\"…Really? You'd do that?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0192",
+  "id": "c1_0193",
   "who": "nanoha",
   "ja": "大したツアーじゃないよ。自販機のところが、一番大事。",
   "en": "\"It's not a big tour. The vending machine part is the most important.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0193",
+  "id": "c1_0194",
   "who": "natsuki",
   "ja": "すっごく嬉しい。ほんとに。ありがとう。",
   "en": "\"I would love that. Really. Thank you.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0194",
+  "id": "c1_0195",
   "who": "natsuki",
   "ja": "あ、それと、なつきって呼んで！ いいかな？ 押しが強いって、よく言われるんだけど。",
   "en": "\"Oh, and call me Natsuki. Is that okay? People tell me I'm pushy.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0195",
+  "id": "c1_0196",
   "who": "nanoha",
   "ja": "……なつき、さん。",
   "en": "\"…Natsuki-san.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0196",
+  "id": "c1_0197",
   "who": "natsuki",
   "ja": "えー、「さん」？ 同い年じゃん！",
   "en": "\"Eh, 'san'? We're the same age!\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0197",
+  "id": "c1_0198",
   "who": "nanoha",
   "ja": "段階を踏んでるの。慣れるのに、時間がいるから。",
   "en": "\"I'm working up to it. I need time to adjust.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0198",
+  "id": "c1_0199",
   "who": "natsuki",
   "ja": "わかった、わかった。じゃあ、私は「なのは」って呼ぶね。いい？ どっちにしろ呼ぶけど。",
   "en": "\"Okay, okay. Then I'll just call you Nanoha. Is that all right? I'm going to do it anyway.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0199",
+  "id": "c1_0200",
   "who": "nanoha",
   "ja": "それは……うん。いいよ。",
   "en": "\"That's—yes. That's fine.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0204",
+  "id": "c1_0205",
   "who": "natsuki",
   "ja": "この学校、いいね。なんか……使い込まれてる感じがする。わかる？",
   "en": "\"This school's nice. It feels… lived in. Does that make sense?\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0205",
+  "id": "c1_0206",
   "who": "nanoha",
   "ja": "すごく古いからね。暖房の音が、おばけみたいなの。",
   "en": "\"It's very old. The heating sounds like a ghost.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0206",
+  "id": "c1_0207",
   "who": "natsuki",
   "ja": "最高。もう好きになっちゃった。",
   "en": "\"Perfect. I love it already.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0208",
+  "id": "c1_0209",
   "who": "natsuki",
   "ja": "で。なのはと、ふじさわって。",
   "en": "\"So. You and Fujisawa.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0209",
+  "id": "c1_0210",
   "who": "nanoha",
   "ja": "私と、こうへい？",
   "en": "\"Me and Kōhei?\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0210",
+  "id": "c1_0211",
   "who": "natsuki",
   "ja": "お隣さんなんでしょ？ 誰かが言ってた。",
   "en": "\"You live next door, right? Somebody said.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0211",
+  "id": "c1_0212",
   "who": "nanoha",
   "ja": "生まれた時からね。",
   "en": "\"Since we were born.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0212",
+  "id": "c1_0213",
   "who": "natsuki",
   "ja": "うそ。じゃあ、ほんとの幼なじみなんだ。",
   "en": "\"No way. So you're real childhood friends.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0213",
+  "id": "c1_0214",
   "who": "nanoha",
   "ja": "ほんとの幼なじみ。",
   "en": "\"Real childhood friends.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0215",
+  "id": "c1_0216",
   "who": "natsuki",
   "ja": "……いいなあ、そういうの。",
   "en": "\"That's really nice.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0216",
+  "id": "c1_0217",
   "who": "natsuki",
   "ja": "私、そういうのができるほど、ひとつの場所にいたことないんだ。わかる？ 台所のどの引き出しがひっかかるか、知ってるような人。",
   "en": "\"I've never stayed anywhere long enough to have one of those. You know? Someone who knows which drawer sticks in your kitchen.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0218",
+  "id": "c1_0219",
   "who": "natsuki",
   "ja": "ねえ。変なこと言うけど。",
   "en": "\"Hey. This is going to sound weird.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0219",
+  "id": "c1_0220",
   "who": "nanoha",
   "ja": "変なの、好きだよ。",
   "en": "\"I like weird.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0220",
+  "id": "c1_0221",
   "who": "natsuki",
   "ja": "ふじさわってさ……前にも会ったことがあるような……そんな感じ、しない？",
   "en": "\"Does he ever seem like… someone you've met before?\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0222",
+  "id": "c1_0223",
   "who": "nanoha",
   "ja": "会ったこと、あるよ。毎日。十六年間。",
   "en": "\"I have met him before. Every day. For sixteen years.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0223",
+  "id": "c1_0224",
   "who": "natsuki",
   "ja": "だよね！ そりゃそうだ！ 忘れて。時差ボケのせい。",
   "en": "\"Okay, fair! Fair. Forget it. It's the jet lag talking.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0224",
+  "id": "c1_0225",
   "who": "nanoha",
   "ja": "仙台から来たんでしょ。電車でたった三時間くらいだよ。",
   "en": "\"You moved from Sendai. That's barely three hours by train.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0225",
+  "id": "c1_0226",
   "who": "natsuki",
   "ja": "すっごく強烈な時差ボケなの。",
   "en": "\"Very intense jet lag.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0228",
+  "id": "c1_0229",
   "who": "natsuki",
   "ja": "今日はありがとね、なのは。ほんとに。転校初日って、いつもは……",
   "en": "\"Thanks for today, Nanoha. Seriously. First days are usually…\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0230",
+  "id": "c1_0231",
   "who": "natsuki",
   "ja": "……とにかく。ありがと。",
   "en": "\"Anyway. Thanks.\"",
   "scene": "c1_interlude"
  },
  {
-  "id": "c1_0236",
+  "id": "c1_0237",
   "who": "nanoha",
   "ja": "ゴミの日、間違ってるよ。",
   "en": "\"You're taking out the trash on the wrong day.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0237",
+  "id": "c1_0238",
   "who": "kohei",
   "ja": "正しい日に近づけてるだけだ。案内、どうだった？",
   "en": "\"I'm moving it closer to the right day. How was the tour?\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0238",
+  "id": "c1_0239",
   "who": "nanoha",
   "ja": "よかったよ。階段のきしむところ、気づいてた。二か所とも。",
   "en": "\"Good. She noticed the squeaky stairs. Both of them.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0239",
+  "id": "c1_0240",
   "who": "kohei",
   "ja": "十一段目に気づくやつなんて、いないぞ。",
   "en": "\"Nobody notices the eleventh step.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0240",
+  "id": "c1_0241",
   "who": "nanoha",
   "ja": "なつきさんは、気づいた。",
   "en": "\"She did.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0241",
+  "id": "c1_0242",
   "who": "nanoha",
   "ja": "いい子だよ、こうへい。私、あの子好き。",
   "en": "\"She's nice, Kōhei. I like her.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0243",
+  "id": "c1_0244",
   "who": "nanoha",
   "ja": "こうへいは、どう思った？",
   "en": "\"What did you think of her?\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0244",
+  "id": "c1_0245",
   "who": "kohei",
   "ja": "……普通に、いいやつなんじゃないか。",
   "en": "\"She seems fine.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0245",
+  "id": "c1_0246",
   "who": "nanoha",
   "ja": "笑ってたよ。",
   "en": "\"You smiled.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0246",
+  "id": "c1_0247",
   "who": "kohei",
   "ja": "いつ。",
   "en": "\"When?\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0247",
+  "id": "c1_0248",
   "who": "nanoha",
   "ja": "受け入れてくれる道場を探してる、って言ったとき。こうへい、いつもの……",
   "en": "\"When she said she was looking for a dojo that would put up with her. You did your—\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0249",
+  "id": "c1_0250",
   "who": "kohei",
   "ja": "俺に、そんな顔はない。",
   "en": "\"I don't have a face.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0250",
+  "id": "c1_0251",
   "who": "nanoha",
   "ja": "いっぱいあるよ。全部カタログにしてある。あれは四番。「誰かが俺とやり合いたがってる」の顔。",
   "en": "\"You have several. I've catalogued them. That one's number four. 'Somebody wants to fight me.'\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0251",
+  "id": "c1_0252",
   "who": "kohei",
   "ja": "一番は？",
   "en": "\"What's number one?\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0252",
+  "id": "c1_0253",
   "who": "nanoha",
   "ja": "ひみつ。",
   "en": "\"Secret.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0254",
+  "id": "c1_0255",
   "who": "nanoha",
   "ja": "おやすみ、こうちゃん。",
   "en": "\"Good night, Kō-chan.\"",
   "scene": "c1_night"
  },
  {
-  "id": "c1_0255",
+  "id": "c1_0256",
   "who": "kohei",
   "ja": "おやすみ。",
   "en": "\"Night.\"",

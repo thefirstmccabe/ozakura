@@ -1,5 +1,5 @@
 """Automated playthrough of a VN build in Chromium at iPad sizes.
-Steps through every line, screenshots each scene start and every line listed in --shots, checks that every
+Steps through every line (and lists any line it never saw on screen), screenshots each scene start and every line listed in --shots, checks that every
 voiced line decodes, that every image/video/audio request succeeds, and that no script errors occur.
 Usage: python3 qa_play.py URL OUTDIR [--size 1180x820] [--every] [--shots id1,id2]"""
 import sys, json, time, argparse
@@ -12,7 +12,8 @@ ap.add_argument("--shots", default="")
 a = ap.parse_args()
 W, H = map(int, a.size.split("x"))
 shots = set(filter(None, a.shots.split(",")))
-report = {"errors": [], "bad_requests": [], "voice_missing": [], "shots": []}
+report = {"errors": [], "bad_requests": [], "voice_missing": [], "shots": [], "missed_lines": []}
+seen = []
 with sync_playwright() as p:
     b = p.chromium.launch(args=["--autoplay-policy=no-user-gesture-required"])
     ctx = b.new_context(viewport={"width": W, "height": H}, device_scale_factor=2, has_touch=True)
@@ -44,6 +45,7 @@ with sync_playwright() as p:
         scene = pg.evaluate("window.__vn.state.scene")
         if st.get("cur") in ("say", "nar") and not st["typing"]:
             n += 1
+            if cur and (not seen or seen[-1] != cur): seen.append(cur)
             tag = None
             if scene != last_scene:
                 tag = f"{n:03d}_{scene}_start"; last_scene = scene
@@ -61,6 +63,8 @@ with sync_playwright() as p:
             if st["cards"]:
                 pg.evaluate("window.__vn.advance()")
     report["lines_seen"] = n
+    all_ids = pg.evaluate("window.__vn.S.filter(c=>c.t==='say'||c.t==='nar').map(c=>c.id)")
+    report["missed_lines"] = [i for i in all_ids if i not in set(seen)]
     b.close()
 json.dump(report, open(f"{a.out}/report.json", "w"), indent=1)
 print(json.dumps({k: (v if not isinstance(v, list) else (len(v) if k == "shots" else v[:12])) for k, v in report.items()}, indent=1, ensure_ascii=False))

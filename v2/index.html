@@ -351,12 +351,12 @@ const CHAR = {
   akane:{h:60,v:.733,c:'#b9a5e8',t:'#ede6fa'}, ryosuke:{h:67,v:.714,c:'#62c1b8',t:'#daf2ef'}, rika:{h:61,v:.669,c:'#f38ba3',t:'#fde2e9'},
   yuzu:{h:61,v:.67,c:'#ec6067',t:'#fcdedf'}, kirishima:{h:71,v:.70,c:'#8a92e0',t:'#e3e5f9'}, takatsuki:{h:68,v:.70,c:'#93a6c2',t:'#e4eaf2'},
   emi:{h:62,v:.70,c:'#e4b745',t:'#f8eed2'}, mio:{h:48,v:.75,c:'#86c983',t:'#e3f3e2'},
-  teacher:{c:'#c9c2b0',t:'#f1ebe0'}, manager:{c:'#c9c2b0',t:'#f1ebe0'}, past_natsuki:{c:'#d4b472',t:'#f3ead3'}
+  teacher:{h:72,v:.71,c:'#c9c2b0',t:'#f1ebe0'}, manager:{c:'#c9c2b0',t:'#f1ebe0'}, past_natsuki:{c:'#d4b472',t:'#f3ead3'}
 };
 /* every on-stage character shares one floor F inches below the bottom of the screen */
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
-const NOWIN = new Set(['teacher','manager','past_natsuki']);       // no face window: no sprite, or a hidden face
-const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki']};
+const NOWIN = new Set(['manager','past_natsuki']);       // no face window: no sprite, or a hidden face
+const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki']};
 /* sprites take on the light of the scene: night and evening backgrounds tint them */
 const BG_LIGHT = {bg_houses_night:'brightness(.8) saturate(.82) hue-rotate(-6deg)', bg_houses_night_lit:'brightness(.82) saturate(.84) hue-rotate(-6deg)', bg_classroom_evening:'sepia(.18) saturate(1.08) brightness(.97)'};
 const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4'};   // living stills (2–4 s loops)
@@ -568,6 +568,7 @@ function faceFor(c){
   if(w==='kohei') return `img/face/kohei_${c.face||'neutral'}.webp`;
   if(NOWIN.has(w) || state.spr[w]) return null;
   if(state.cg && (CG_CAST[state.cg]||[]).includes(w)) return null;
+  if(c.face) return `img/face/${w}_${c.face}.webp`;      // face-window-only lines (an interlude's POV character)
   return `img/face/${lastSpr[w]||w+'_school_smile'}.webp`;
 }
 function showFace(url, who){

@@ -101,6 +101,12 @@ def compile_files(paths):
                 cmds.append({"t": "show", "who": who, "spr": spr})
             if who == "kohei" and face not in FACES:
                 errors.append(f"{where}: Kōhei line needs a face from {sorted(FACES)}")
+            if face and who != "kohei":
+                if expr:
+                    errors.append(f"{where}: use either <expr> (sprite) or (face) (face window), not both")
+                if who in shown:
+                    errors.append(f"{where}: {who}({face}) is a face-window line, but {who} is on stage")
+                face = f"{outfit.get(who, 'school')}_{face}"   # crop of that sprite expression
             lid = line_id(prefix)
             c = {"t": "say", "id": lid, "who": who, "text": text}
             if face:
