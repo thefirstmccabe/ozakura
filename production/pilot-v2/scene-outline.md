@@ -4,10 +4,11 @@
 
 ---
 
-## Cold open (added Oct 18; canon §2)
-**P.0** Before the dream: the misty walk from the climax, as a flash-forward. Two or three images: the same landmark passing twice, his breath, a hand on a wrapped sword grip, something huge moving in the mist. No faces, no voices, no text beyond a line or two of his narration at most. Cut to black, then the dream.
-- **CGs (new):** two or three, in a cold, dark treatment distinct from both era palettes (it's the present, at night, in mist). **Living still:** the mist moving. About $1–3.
-- **Music:** none, or wind only.
+## Cold open (added Oct 18; canon §2; independent check applied)
+**P.0** (**placement under discussion, Oct 18:** the author finds the cold open straight into the dream too much at once) A flash-forward to the present-day walk into the distortion (Ch40, a misty morning). Two or three images, one figure only: a male hand in a modern sleeve on a sword grip; a modern landmark, such as a convex curve mirror at a bend [P], passing a second time; the mist moving as if something huge is in it. No face, no eyes, no mask or wolf shape, never the tree or the boulder, and nothing that reads as the past (no kimono, no petals, no visible breath). No voices and no narration. Cut to black, then the dream.
+- **CGs (new):** two or three, in misty early-morning light, a treatment distinct from both era palettes [P]. **Living still:** the mist moving. About $1–3. The cold-read packet includes them.
+- **Music [P]:** none, or wind only.
+- **Why so constrained:** coming straight before a sword-and-petals dream, anything period-looking would read as the past life and give away how it ended, and the beast thread stays separate from past-life clues (canon §2).
 
 ## Prologue — the dream
 **P.1** River sound, a branch overhead, petals. A woman in a simple everyday kimono binds a cut on his wrist after he comes back late and hurt from training, scolding him: "You're late." Her face stays out of frame. He wakes with only the feeling. (12, 22, 23)
@@ -64,7 +65,7 @@
 - **CG:** the catch, redrawn for her hair (16). **Animated moment:** the fall and catch, 2–3 seconds; the living still (her hair settling, the tear, dust in the light) is the fallback if it doesn't pass review.
 - **Backgrounds (reuse):** restaurant, classroom, dojo, bridge at dusk, river evening.
 - **Sprites (new):** Natsuki in kendo gear plus a teacher-mode pair (glasses, shinai pointer); male Kirishima; Takatsuki with slate-blue hair. Rika reused.
-- **Music:** daily, practice, memory (fading in from practice at the catch), natsuki, night.
+- **Music:** daily, practice, memory (fading in from practice at the catch; Oct 18: `memory` also plays at Kōhei's fragment in 3.5, with Nanoha there, so the past-life cue isn't Natsuki's alone), natsuki, night.
 
 ---
 
@@ -77,7 +78,7 @@
 
 **3.4 Saturday practice.** Casual sparring. Kōhei usually has the edge; she reads him, and he can't read her. No best of five, no draw. (5, 6)
 
-**3.5 The Great Cherry.** Sweeping with Nanoha; her grandfather's "very convenient back." Natsuki arrives with her camera. Under the low branch Kōhei gets a fragment only. **[P]** For a second the air smells like snow, in April, and the branch sits lower than it should; then it's gone. No girl, no recognition. A point of light drifts past, and only Nanoha sees it: "…You came back." Natsuki's "Did you just hear someone?" is cut. (1, 2)
+**3.5 The Great Cherry.** Sweeping with Nanoha; her grandfather's "very convenient back." Natsuki arrives with her camera. Under the low branch Kōhei gets a fragment only. **[P]** For a second the air smells like snow, in April, and the branch sits lower than it should; then it's gone. No girl, no recognition. **[P, Oct 18]** In the same moment Natsuki lowers her camera and doesn't take the shot; asked later, she says the light changed. Deniable, and it keeps the tree from being Nanoha's alone. A point of light drifts past, and only Nanoha sees it: "…You came back." Natsuki's "Did you just hear someone?" is cut. (1, 2)
 
 **3.6 Tea at the shrine.** The bitter tea; Natsuki drinks the whole cup. (Keep.)
 
@@ -89,7 +90,7 @@
 - **Retired:** `cg_pastlife` (the flash becomes a sensory fragment, no art) and `cg_yuzu_counter` (moves to Ch8).
 - **Backgrounds:** the window view from his room (finish the Oct 10 plate so Nanoha's sprite stands in her own window); the Oct 10 houses plate; **new:** the Tachibana living room. Reused: restaurant, street at night, Fujisawa living room at night, Kōhei's room at night, dojo, shrine tree.
 - **Sprites (new):** Mio; Natsuki casual. Nanoha's shipped sets reused with her skin tone corrected.
-- **Music:** daily, night, practice, nanoha (then silence at the light), daily → title.
+- **Music:** daily, night, practice, memory (under Kōhei's fragment at the branch, Oct 18), nanoha (then silence at the light), daily → title.
 
 ---
 
@@ -129,37 +130,44 @@
 
 ---
 
-## Reader-knowledge targets (re-derived Oct 18 under canon §5's reader targets)
-Replaces the Story thread's Oct 17 targets, which the author overruled. Cold readers (style guide §9) report three numbers at every checkpoint: **who Kōhei ends up with**, **who they want him to end up with**, and **who the dream woman is** (with confidence). They read text only, so anything a player sees but the packet lacks gets a bracketed staging line.
+## Reader-knowledge targets (re-derived Oct 18 under canon §5's reader targets; independent check applied)
+Replaces the Story thread's Oct 17 targets, which the author overruled. Cold readers (style guide §9) report three numbers at **every checkpoint**: **who Kōhei ends up with**, **who they want him to end up with**, and **who the dream woman is** (each girl, with confidence). They get the reader-visible text plus the CGs, so anything else a player sees or hears goes in as a bracketed staging line.
 
-**Through-line for the pilot:** all three questions stay divided. Ending: about 50-50, or slightly toward Nanoha. Wanting: about 50-50. The dream woman: divided, leaning Natsuki at most about 60%, never obvious. Strange things visibly happen to both girls (Natsuki's body remembers him; Nanoha has the tree and the light), so it's hard to say whose past the dream is. Both girls are obviously the love interests, and the reader can see Kōhei is drawn to both even where he doesn't admit it. The cold open promises from the first minute that this is also a dark story.
+**Measured over windows of 3–4 chapters, not every chapter (author, Oct 18).** Single chapters can swing; the marks apply at the end of each window, which for the pilot is the end of Ch4. The one per-checkpoint rule: no reader should be sure (70% or more) of any of the three at any point. Readers still report every checkpoint, because the swings are useful to see.
+
+**Through-line for the pilot:** all three questions stay divided. Ending: about 50-50, or slightly toward Nanoha. Wanting: about 50-50. The dream woman: divided, at most about 60% for either girl at any checkpoint, leaning Natsuki slightly or even (canon §5: the lean drifts up later in the story). Strange things visibly happen to both girls (Natsuki's body seems to remember him; Nanoha has the tree and the light), so it's hard to say whose past the dream is. Both girls are obviously the love interests: the reader sees Kōhei drawn to both, romantically, even where he doesn't name it. The cold open promises from the first minute that this is also a dark story.
+
+**Where Ch1 stands:** at the end of the Oct 17 reads it was Nanoha 50/55/35 against Natsuki 40/35/60, an even split already tilted slightly toward Nanoha, and reader 3 hit 65% Nanoha at checkpoint 2. Dropping Natsuki's voice from the dream removes a clue for players too. So Ch1 needs rebalancing toward Natsuki, not only softening.
 
 ### Cold open + Prologue + Ch1
-- **Know:** something dangerous waits in this story (the cold open). Kōhei carries the house (Dad died last spring, Mom stays behind the fusuma, Akane is unwell) and won't admit he's tired. Nanoha loves him and hides it; she's part of his home; he notices more than he lets himself think about. His recurring dream is of another life: a swordsman, a woman binding his cut wrist, "You're late," a branch and petals overhead, a river. The Ōzakura is a huge old cherry tree on the hill at Nanoha's grandfather's shrine. He and Natsuki reacted to each other on sight, and neither explains it.
+- **Know:** something dangerous waits in this story. Kōhei carries the house (Dad died last spring, Mom stays behind the fusuma, Akane is unwell) and won't admit he's tired. Nanoha loves him and hides it; she's part of his home; he notices more than he lets himself think about. His recurring dream is of another life: a swordsman, a woman binding his cut wrist, "You're late," a branch and petals overhead, a river. The Ōzakura is a huge old cherry tree on the hill. He and Natsuki reacted to each other on sight, and neither explains it.
 - **Suspect:** the dream is a past life with a wife or lover; one of the two girls is tied to it, and it could be either. The Ōzakura may be the dream's tree.
-- **Not yet:** what's in the mist; whether either girl remembers anything; how that life ended.
-- **Pass mark:** the dream woman divided (no reader above about 60% for either girl; the average even or leaning Natsuki slightly); the ending and the wanting split, with no reader sure; every reader expects danger beyond the romance; all read the dream as a past life with a wife or lover; none says the premise was stated outright. The Oct 17 reads (Natsuki 35–60%) were already near this, so Ch1 needs softening, not rebalancing.
+- **Not yet:** what's in the mist; whether either girl remembers anything; how that life ended; that it ended in winter.
+- **Direction for Ch1 (not a gate; the window is Ch1–4):** don't leave Ch1 tilted toward Nanoha as the dream woman, since Ch3–4 tilt that way on their own. Every reader expects danger beyond the romance; all read the dream as a past life with a wife or lover; none says the premise was stated outright.
 
 **Decisions for the Ch1 revision:**
-1. **Add the cold open** (above).
-2. **The wrist simile becomes a plain action [P].** At lunch Natsuki writes the kanji for Wednesday (水) on her wrist in ballpoint, small, under her cuff: a habit from six schools' worth of new timetables. No simile, no comment, no "inside."
+1. **Add the cold open** (P.0).
+2. **The wrist simile becomes a plain action [P].** At lunch Natsuki writes the kanji for Wednesday (水) on the inside of her wrist in ballpoint, small, under her cuff: a habit from six schools' worth of new timetables. Plain description, no simile, no comment.
 3. **"Someone you've met before?" becomes oblique [P].** She tries to place him the ordinary way (has he competed up north, around Sendai?); it feels like she's seen him somewhere. Drop "This is going to sound weird." Keep a "seen him before" hook so Nanoha's "Every day. For sixteen years" still lands. Her exit doesn't borrow Nanoha's deadpan (§3b).
-4. **The dream voice is recast** to a voice unlike either girl's (audition pending; the author picks). Re-voice the two dream lines only.
-5. **The Ōzakura's descriptive sentence stays neutral:** in Kōhei's narration on the river walk when Nanoha mentions it, not tied to either girl's reaction. (Supersedes the Oct 17 move to the interlude.) Natsuki's "Oh" at the mountain window stays as written.
-6. **Natsuki has to be as likable as Nanoha.** The Oct 17 readers loved Nanoha's lines and found Natsuki's padded and approval-seeking. The dialogue pass spends its effort on her charm (§3b: she asks, pokes, notices; no verdicts or self-labels), not on trimming Nanoha.
-7. **Cut "Probably a stubborn crease."** He notices her hands and lets it go without a joke. Keep the collar beat's quiet rhyme with the dream's hands; it's where Kōhei starts half-linking the dream's tenderness to Nanoha (canon §5), and he never comments on it.
-8. **Cut the river walk's snow simile** so Ch3's snow is the first and feels wrong.
-9. **Ryōsuke's argument is about taiyaki [P]** (head or tail first), not hot dogs.
+4. **The dream voice is recast** to a voice unlike either girl's (audition `production/voice-auditions/oct18-dream/`; the author picks). Re-voice the two dream lines only.
+5. **The Ōzakura's descriptive sentence goes in the river walk's opening paragraph,** before Nanoha speaks: the old tree on the hill above the cherry tunnel. Neutral, not tied to either girl. (Supersedes the Oct 17 move to the interlude.)
+6. **Cut "I don't remember when we decided that"** after "She always walks on the river side." It's a past-life wink with no true explanation in canon, and all three readers counted it for Nanoha.
+7. **Keep the collar CG (the author asked for it) but don't push its rhyme with the dream.** No close-up on her hands; the two-figure framing it has now is right. Kōhei's half-linking of the dream to Nanoha (canon §5) starts quietly here [P]; nothing in the text points at it.
+8. **Natsuki has to be as likable as Nanoha.** The Oct 17 readers loved Nanoha's lines and found Natsuki's padded. The dialogue pass spends its effort on her charm (§3b: she asks, pokes, notices; no verdicts or self-labels). Protect her smaller, "cost her something" smile and "never stayed anywhere long enough" line.
+9. **Cut "Probably a stubborn crease."** He notices her hands and lets it go without a joke.
+10. **Cut the river walk's snow simile** so Ch3's snow is the first and feels wrong.
+11. **Ryōsuke's argument is about taiyaki [P]** (head or tail first), not hot dogs.
 
 ### Ch2
-- **Know:** kendo's basics, enough to follow the match insert. Natsuki reads Kōhei in the match as if she knew his moves in advance; he can't read her; Takatsuki sees it. The catch brings a tear she can't explain. Under the cheer she's lonely (Chie) and unsettled by how well she read him. Kōhei is plainly drawn to her, as a sparring partner who fascinates him, and wants her at Saturday practice.
-- **Suspect:** Natsuki is tied to the dream (the lean can reach about 60%, no higher).
+- **Know:** kendo's basics, enough to follow the match insert. In the match Natsuki is already there when he moves; Takatsuki sees she read him better than he ever has. The catch brings a tear she can't explain. Under the cheer she's lonely (Chie) and unsettled by how well she read him. The romantic pull between Kōhei and Natsuki is visible (the catch; the bridge invitation, half a date), though neither names it.
+- **Suspect:** the dream woman at most about 60% Natsuki (not "tied to the dream": the Oct 17 readers kept those apart).
+- **Acceptable wrong guess:** that she fought beside him in that life (a comrade or rival). It's what kept the Oct 17 readers under 60%; leave it open.
 - **Not yet:** past-life content beyond the Prologue; any sign of fragments of her own; anything supernatural on screen.
-- **Guard:** Nanoha is barely in Ch2. No reader should conclude Natsuki wins; the ending stays split.
+- **Check:** no reader concludes Natsuki wins.
 
 ### Ch3
-- **Know:** Nanoha's place in his life: Akane didn't call him about the dizzy spell; she texted Nanoha, who came and stayed. They talk across the windows at night. Nanoha is uneasy about Natsuki and steers away from it. Natsuki reads him in sparring every time. Under the Ōzakura's low branch Kōhei gets a moment that's wrong (snow on the air in April, the branch too low) and lets it go. Nanoha sees something the others don't and speaks to it ("…You came back"). The Tachibanas are his second family.
-- **Suspect:** the Ōzakura is the dream's tree, and that life happened here. Nanoha has her own line to something uncanny, older than Natsuki's arrival. **The dream-woman question swings back toward even.**
+- **Know:** Nanoha's place in his life: Akane didn't call him about the dizzy spell; she texted Nanoha [P, stage it in 3.2], who came and stayed. They talk across the windows at night. Nanoha is uneasy about Natsuki and steers away from it. Kōhei usually has the edge in sparring, but Natsuki reads him and he can't read her. Under the Ōzakura's low branch Kōhei gets a moment that's wrong (snow on the air in April, the branch too low), and in the same moment Natsuki lowers her camera without taking the shot [P]. Nanoha sees something the others don't and speaks to it ("…You came back"). The Tachibanas are his second family.
+- **Suspect:** the Ōzakura is the dream's tree, and that life happened here. Nanoha has her own line to something uncanny, older than Natsuki's arrival. The dream-woman question swings back toward even, but not past 60% Nanoha.
 - **Not yet:** what Nanoha saw, or any link to the past life; that the past life ended in winter.
 - **Staging:** the light is on screen but deniable (a sunlit petal, maybe); Kōhei's narration never mentions it; the cold-read packet gets a bracketed staging line. No "You're late" from Nanoha (fix 2).
 
@@ -167,4 +175,5 @@ Replaces the Story thread's Oct 17 targets, which the author overruled. Cold rea
 - **Know:** as a child, Nanoha's friend was a light that vanished; only Kōhei believed her and searched with her; so at the tree she was speaking to that friend. That's what they've been to each other all along. Kōhei's "We're not" comes too fast and hurts her (Usagi-san faces the wall). Natsuki now knows he isn't taken, and she saw something wrong at his house and didn't ask. Kōhei fights on instinct in a way Takatsuki can't account for.
 - **Suspect:** the light is real and has come back. The triangle is live, with him pulled both ways.
 - **Not yet:** what the light is or any link to the past life; any answer on the dream woman.
+- **Window pass mark (end of Ch4, the whole pilot):** the dream woman averaging about 45–55%, or leaning Natsuki slightly, never past 60% for either girl on average (FB1 and the light make Ch3–4 Nanoha's uncanny chapters, so watch for a Nanoha tilt); the ending averaging within about 40–60; the wanting averaging within about 40–60; no reader sure (70%+) of any of the three at any checkpoint.
 - **End of the pilot:** all three questions divided. The reader carries out: what is waking up at that tree, and which girl it's about.

@@ -11,7 +11,7 @@ Run **three** fresh agents with the same prompt and different personas. Build th
 >
 > Read the parts strictly in order. After each part, and before opening the next, write your checkpoint notes to `{READER_DIR}/notes-reader{N}.md`. Don't revise earlier checkpoints.
 >
-> At each checkpoint answer: {CHECKPOINT_QUESTIONS — derived from the chapter's reader-knowledge target, phrased neutrally, e.g. "Who do you think the woman in the opening dream is? Confidence 0–100%." "What do you think the relationship is or was?"}; what you think is going on and what kind of story this is becoming; which lines, images or moments drove your guesses (quote them).
+> At each checkpoint answer, always (canon §5, Oct 18): who do you think Kōhei ends up with, and how sure (0–100%)? Who do you want him to end up with, and how much? Who do you think the woman in the dream is, and how sure? Then: {CHECKPOINT_QUESTIONS — derived from the chapter's reader-knowledge target, phrased neutrally, e.g. "Who do you think the woman in the opening dream is? Confidence 0–100%." "What do you think the relationship is or was?"}; what you think is going on and what kind of story this is becoming; which lines, images or moments drove your guesses (quote them).
 >
 > After the final part, also answer: when (quote the line) you became fairly sure (70%+) of anything the checkpoints asked; any hint that felt heavy-handed, too obvious or too coy; dialogue that felt lively and up to 8 flat lines with why; with the names covered, could you tell the characters apart, and who sounds like whom; any mismatch between the text and the illustrations; would you keep reading, what hooked you, what would make you stop.
 >
