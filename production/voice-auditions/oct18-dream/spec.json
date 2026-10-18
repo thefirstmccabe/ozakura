@@ -1,0 +1,6 @@
+{"endpoint_id": "google/gemini-3.8-flash-tts",
+ "prompt": "……遅いですよ。　……　また怪我して。……手、見せてください。じっとして。",
+ "style_instructions": "A young married woman in Edo-era Japan, in her mid-twenties, heard in a dream. A grown woman, not a teenager: warm, gentle, a little lower and slower; scolding with love while half laughing, as if she has waited a very long time.",
+ "voices": ["Callirrhoe", "Despina", "Gacrux", "Pulcherrima", "Vindemiatrix"],
+ "post": {"dry": "loudnorm=I=-20:TP=-2", "echo": "aecho=0.85:0.6:70|140:0.22|0.12,loudnorm=I=-20:TP=-2 (the game's dream echo, voice_pack.py)"},
+ "refs": "ref-*.mp3 cut from the v2 build's voice packs (v2/voice/index.json)"}
