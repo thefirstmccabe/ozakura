@@ -27,7 +27,7 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 1. **[Fix] Scale back the Ch3 past-life flash.** In week one Kōhei gets a full vision and "recognizes the girl." Make it a fragment: a feeling and a detail, with no recognition. The author confirmed Oct 8 that the cherry-tree scene needs this rework because it tells too much too soon.
 2. **[Fix] Thin out the supernatural beats in week one.** Keep the catch and tear, the prologue dream, and the fairy's light. Move Natsuki's "Did you just hear someone?" at the tree, and most of the "You're late" uses (currently four), later in the story. **Added Oct 8:**
    - **Ch1 Natsuki intro:** cut the sensory flash and the narrated certainty ("rain on cedar… I am absolutely, completely certain… that I've kept her waiting"). Keep only the physical reaction: her grin stutters, and he grips his pen hard enough to hurt.
-   - **Ch1 ending:** cut the dream's return. The prologue already established it.
+   - **Ch1 ending:** cut the dream's return. The prologue already established it. **Superseded Oct 18:** the game now opens on the cold open, and the dream's first appearance is the end of Ch1.
    - **Ch2:** cut Kōhei's own flash mid-catch ("I'm somewhere outside… someone in my arms"), the "like I've put down something heavy" paragraph, and the bridge's last line ("Like a promise I don't remember making"). The tear and "cedar pollen" / "It's April" stay, unexplained.
    - **Fairy:** one mention in week one; feed more in later.
 3. **[Fix] Pull back Nanoha's near-confession.** "What if someone… was already just around?" / "Then they'd be you" / "I'll keep asking" is a month-three beat. In week one she's still hiding her feelings well.

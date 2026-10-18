@@ -381,7 +381,7 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Kōhei | Puck | calm, grounded, a little tired, dry; let warmth through | OK (author) |
 | Nanoha | **Erinome, +2 semitones** | 16; soft, relaxed, deadpan; "anime heroine" youth direction | **Picked Oct 11** |
 | Natsuki | Zephyr | bright, warm, confident (no longer "tomboyish") | OK (author) |
-| Natsuki (past life) | **To be recast** (was Zephyr + echo) | young Edo-era wife; softer, warmer | Picked Oct 11; **the author decided Oct 17 (evening) on a completely different voice**, unlike both girls', so the dream doesn't settle who she is (canon §5 reader targets). New audition pending |
+| Natsuki (past life), the dream woman | **Despina** (+ the game's dream echo) | a young Edo-era wife, mid-twenties; warm, gentle, a little lower and slower than a teen; scolding with love | **Picked Oct 18** (audition `production/voice-auditions/oct18-dream/`, candidate 2). Recast from Zephyr so the dream doesn't settle who she is (canon §5) |
 | Akane | **Aoede, +2 semitones** | 14; sweet, soft, playful, a little frail | **Picked Oct 11** |
 | Kirishima (male) | Charon | calm, low, quiet authority; bone-dry jokes | **Picked Oct 11** |
 | Ryōsuke | Achird | precise, a little smug, dry | **Picked Oct 11** |

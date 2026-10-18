@@ -5,13 +5,13 @@
 ---
 
 ## Cold open (added Oct 18; canon §2; independent check applied)
-**P.0** (**placement under discussion, Oct 18:** the author finds the cold open straight into the dream too much at once) A flash-forward to the present-day walk into the distortion (Ch40, a misty morning). Two or three images, one figure only: a male hand in a modern sleeve on a sword grip; a modern landmark, such as a convex curve mirror at a bend [P], passing a second time; the mist moving as if something huge is in it. No face, no eyes, no mask or wolf shape, never the tree or the boulder, and nothing that reads as the past (no kimono, no petals, no visible breath). No voices and no narration. Cut to black, then the dream.
+**P.0** (**Decided Oct 18:** the cold open opens the game and goes straight to Ch1's morning; the dream moves to the end of Ch1, scene 1.8, because cold open plus dream back to back was too much at once.) A flash-forward to the present-day walk into the distortion (Ch40, a misty morning). Two or three images, one figure only: a male hand in a modern sleeve on a sword grip; a modern landmark, such as a convex curve mirror at a bend [P], passing a second time; the mist moving as if something huge is in it. No face, no eyes, no mask or wolf shape, never the tree or the boulder, and nothing that reads as the past (no kimono, no petals, no visible breath). No voices and no narration. Cut to black, then the 5:40 alarm (1.1).
 - **CGs (new):** two or three, in misty early-morning light, a treatment distinct from both era palettes [P]. **Living still:** the mist moving. About $1–3. The cold-read packet includes them.
 - **Music [P]:** none, or wind only.
 - **Why so constrained:** coming straight before a sword-and-petals dream, anything period-looking would read as the past life and give away how it ended, and the beast thread stays separate from past-life clues (canon §2).
 
-## Prologue — the dream
-**P.1** River sound, a branch overhead, petals. A woman in a simple everyday kimono binds a cut on his wrist after he comes back late and hurt from training, scolding him: "You're late." Her face stays out of frame. He wakes with only the feeling. (12, 22, 23)
+## The dream (moved Oct 18: now scene 1.8, the night of Ch1, its first appearance)
+**1.8 (was P.1)** River sound, a branch overhead, petals. A woman in a simple everyday kimono binds a cut on his wrist after he comes back late and hurt from training, scolding him: "You're late." Her face stays out of frame. He wakes with only the feeling. (12, 22, 23)
 
 - **CG (new):** her hands binding his cut wrist, her sleeve, the branch above; no face. **Living still:** petals, the cord, her sleeve.
 - **Music:** memory.
@@ -31,7 +31,7 @@
 
 **1.6 Interlude: Nanoha.** She shows Natsuki around school and decides to like her "the way you shut a window against the wind." No manga comparison, no fairy. (26)
 
-**1.7 The trash walk.** Wrong-day garbage, following Dad's handwriting on the calendar ("from last spring"). Nanoha: "You smiled." The chapter ends there; the dream's return is cut. (2, 11)
+**1.7 The trash walk.** Wrong-day garbage, following Dad's handwriting on the calendar ("from last spring"). Nanoha: "You smiled." Her upstairs light comes on across the gap. **Then 1.8:** that night he falls asleep, and the dream comes. Ending the day he met both girls on it keeps it from pointing at either. (2, 11)
 
 **Needs**
 - **CG:** Natsuki's arrival, redrawn with her shoulder-length restyle (16).
@@ -80,7 +80,7 @@
 
 **3.5 The Great Cherry.** Sweeping with Nanoha; her grandfather's "very convenient back." Natsuki arrives with her camera. Under the low branch Kōhei gets a fragment only. **[P]** For a second the air smells like snow, in April, and the branch sits lower than it should; then it's gone. No girl, no recognition. **[P, Oct 18]** In the same moment Natsuki lowers her camera and doesn't take the shot; asked later, she says the light changed. Deniable, and it keeps the tree from being Nanoha's alone. A point of light drifts past, and only Nanoha sees it: "…You came back." Natsuki's "Did you just hear someone?" is cut. (1, 2)
 
-**3.6 Tea at the shrine.** The bitter tea; Natsuki drinks the whole cup. (Keep.)
+**3.6 Tea at the shrine.** The bitter tea; Natsuki drinks the whole cup. (Keep.) **[P, Oct 18: spring dread, a local custom]** Leaving down the shrine steps, someone stumbles, and Genji says without thinking, "Just stopping for a rest, just stopping for a rest"; Nanoha says it too, out of habit. Nobody explains. (It's an okuri-ōkami rule, paid off in Ch36; kept deniable and funny here, and separate from past-life clues.)
 
 **3.7 Lunch at the Tachibanas'.** Emi; Mio (replacing Sōta) orders Kōhei around as her retainer and trash-talks Natsuki at Street Brawlers. The walk home past the two houses ends Ch3.
 
@@ -95,7 +95,7 @@
 ---
 
 ## Ch4 — The Light at the Shrine (Sat Apr 12 night – Mon Apr 14) · new
-**4.1 FB1: the fairy leaves.** That night Kōhei keeps hearing "…You came back." He's heard her say it once before. Flashback, about age 7: her friend the light is gone without a goodbye, and the grown-ups smile at her. He's the one who believes her. He searches the shrine grounds with her, and every day for weeks they leave cookies on the boulder. **[P]** One evening she runs to a glint on the boulder, "…You came back," and it's only a bottle cap. That's the line he remembers. He never saw the light himself. Back in the present, her window is dark.
+**4.1 FB1: the fairy leaves.** That night Kōhei keeps hearing "…You came back." He's heard her say it once before. Flashback, about age 7: her friend the light is gone without a goodbye, and the grown-ups smile at her. He's the one who believes her. He searches the shrine grounds with her, and every day for weeks they leave cookies on the boulder. **[P]** One evening she runs to a glint on the boulder, "…You came back," and it's only a bottle cap. That's the line he remembers. He never saw the light himself. Back in the present, her window is dark. **[P, Oct 18: spring dread]** In the flashback, walking the kids home after dark, Genji has them thank the path behind them ("Thank you for seeing us home"). Sweet at seven; it reads differently later.
 
 **4.2 Group study at the Fujisawa house.** **[P]** Sunday, after his lunch shift, at his place because he has to make dinner and Akane is home. Natsuki's first visit. She notices Nanoha knows where his cups go and which window sticks: "Have you been coming here forever?" She notices the closed fusuma and the lowered voices, and doesn't ask. **[P]** Ryōsuke eats Kōhei's snacks and ranks them out loud instead of studying. Akane drifts through, openly Team Nanoha while being sweet to Natsuki.
 
