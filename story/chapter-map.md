@@ -6,7 +6,7 @@
 
 **Shape:** a ~40-chapter spine on canon's working allocation (Oct 7): 17 chapters April–August, 5 for the fight and September, 7 for October–December, 10 for January–March, 1 for the aftermath, plus the epilogue. Expandable daily-life chapters can be added later, first in the April–August stretch. **Decided Oct 12:** the 40-chapter spine; chapters run about 4,000–5,000 words where they cover a week or more (roughly 12–15 hours in all); slice-of-life and extra development added as needed.
 
-**Reader-knowledge targets (Oct 17):** when the Story thread outlines a chapter for production, it adds what the reader should *suspect* and *know* by the chapter's end (style guide §9, step 1). Cold readers measure each chapter against it. Ch1's cold reads (Oct 17) ended split on who the dream woman is (two readers leaned Nanoha, one Natsuki; none above 65%), with all three guessing wife or lover. **Ch1–4 targets (Story thread, Oct 17):** the reader leans Natsuki in Ch1, suspects her strongly after the Ch2 catch, and isn't told within the pilot; the story's question is whether the past gets a claim on this life, not who she was. Details in `production/pilot-v2/scene-outline.md`.
+**Reader-knowledge targets (Oct 17):** when the Story thread outlines a chapter for production, it adds what the reader should *suspect* and *know* by the chapter's end (style guide §9, step 1). Cold readers measure each chapter against it. Ch1's cold reads (Oct 17) ended split on who the dream woman is (two readers leaned Nanoha, one Natsuki; none above 65%), with all three guessing wife or lover. **Decided Oct 18 (canon §5):** cold readers report three things every chapter: who he ends up with (about 50-50 until Ch31), who they want him to end up with (about 50-50), and who the dream woman is (Natsuki at most about 60%, never obvious). The Story thread's Oct 17 Ch1–4 targets are superseded and being re-derived.
 
 **Running threads** (not repeated in every row):
 - **Fairy (canon §8):** April–August, a drifting light about once a month that only Nanoha notices, plus small things moved in her room. Autumn, a half-form at the edge of her vision. New Year, full and speaking. January–March, visible to the whole group.
@@ -35,7 +35,7 @@
 
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
-| 9 | June, rainy season | Umbrella | The umbrella scene (13), with Natsuki's sabotage shown in her interlude and Nanoha's own umbrella revealed at the end; both realize they're rivals. **FB3: the windows begin** (a thunderstorm that night). | |
+| 9 | June, rainy season | Umbrella | The umbrella scene (13), with Natsuki's sabotage shown in her interlude and Nanoha's own umbrella revealed at the end; the rivalry each already knew about becomes mutual knowledge (Oct 18). **FB3: the windows begin** (a thunderstorm that night). | |
 | 10 | June | Fever | Natsuki sick from soaking herself; Nanoha brings food; Natsuki admits she likes him; **the pact** (13a). An interlude without Kōhei. | |
 | 11 | Late June–July | Two Bentō | Dueling lunches begin (13c): two bentō on his desk, Emi teasing Nanoha, Ryōsuke and Rika keeping score. The nickname that suddenly hurts (6). | |
 | 12 | July | That Wasn't Kendo | The summer kendo meet: the blonde opponent mocks a faint Akane; Kōhei fights punitively; Takatsuki says it plainly. | Anger warning sign. |
@@ -60,7 +60,7 @@
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
 | 23 | Early October | Form | Back from suspension; he admits Takatsuki was right and starts learning form; Takatsuki starts improvising. Mom's bookkeeping, and a setback. | |
-| 24 | October | Cultural Festival | **FB5: the middle-school speech**, mirrored by Nanoha on stage now. They start dating. | |
+| 24 | October | Cultural Festival | **FB5: the middle-school speech**, mirrored by Nanoha on stage now. Kōhei decides, a real choice with real feelings for both (Oct 18); they start dating. | |
 | 25 | October–November | Dating | Dates shown, not announced. Natsuki's own pursuit (photography) and her repaired friendship with Nanoha. A hiker lost on a familiar trail turns up dazed. | Fairy half-form. |
 | 26 | November | What He Asked of You | Kazuo passes on Dad's regret and apologizes for not pressing his help. Kōhei asks for help on purpose (10) and lets Mom take something back. | |
 | 27 | November | Posters at the Station | A disappearance, posters at the station; an injury no one can explain. Nanoha senses something between Kōhei and Natsuki. Fragments intensify. | **Proposal:** the wataboshi image (Kōhei's fragment) lands here, while he's with Nanoha. |
@@ -72,7 +72,7 @@
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
 | 30 | Early January | What We Were | A substantial past-life sequence (the wedding, where the wataboshi pays off; the marriage; everyday happiness). Kōhei and Natsuki compare memories and grieve together; the farewell to their past selves at the tree (21a): "I don't want you to love me because of her." | |
-| 31 | Early January | Told | Kōhei tells Nanoha about the past life and reaffirms his choice; she'd already sensed it; hurt and time. The girls talk privately. | |
+| 31 | Early January | Told | Kōhei tells Nanoha about the past life and reaffirms his choice; she'd already sensed it; hurt and time. The girls talk privately: Nanoha realizes Natsuki knew and could have used it (Oct 18). Natsuki's interiority sequence replays the autumn from her side. | |
 | 32 | Mid-January | Found | The missing person is found dead: the escalation begins. The fairy is visible to the group; exposition with limits. | |
 | 33 | January | The Loop | Takatsuki trapped in a walk home that keeps looping; the group frees him; he believes, and he noticed how it works. | |
 | 34 | Late January | Okuri-ōkami | Genji and the old customs; the folk rules; the heirlooms in the Tachibana storehouse. More deaths. | |

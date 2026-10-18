@@ -52,6 +52,8 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - A genuinely enjoyable, mostly uplifting school romcom first: a major slow burn with familiar romcom tropes done well. The author's shorthand is "Blue Box with kendo," with a consequential love triangle, a more dangerous male lead and supernatural elements.
 - Ordinary chapters must be worth reading without clues or plot progress.
 - Gradual oddness and past-life fragments add mystery. Later danger is real and lethal but stays personal and local.
+- **The genre is promised from the start (Decided Oct 18):** the reader knows early that this is also a dark supernatural story, with many more threads of dread and horror throughout, in the Muv-Luv *Unlimited*/*Alternative* manner (Kōhei's fight flashbacks, local myths). Individual beats stay deniable. No new supernatural events are added for this; it comes from how the existing ones are told.
+  - **Frame devices the author likes (Oct 18; placement Open):** a flash-forward cold open, short vignettes between the Parts, and the title screen and music.
 - Readers should want to spend ordinary afternoons with this cast.
 - Keep the cosmology mysterious, and keep actions and consequences clear.
 - **Influences:** Tolkien, Muv-Luv, Baldr Sky and the earlier Fionavar ideas are influences, not structural obligations.
@@ -213,6 +215,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 **The past love stays complete and honored, not interrupted.** Kōhei never dismisses it.
 
 **The real risk is Nanoha.** Kōhei and Nanoha must be **the love story of this life on their own merits** (the windows, the familiarity, her private oddness, the fear of changing something precious). Otherwise readers will feel the wrong girl won, however kindly Natsuki is treated. The first-half chapters carry this.
+- **Restated (Decided Oct 18):** "my girl lost" is fine; it's a real triangle and half the readers may be disappointed. "The wrong girl won" (an unearned win) is not.
 
 **What follows from this:**
 - **Her kendo means something.** Natsuki was helpless while he died for her. Now she is a swordswoman, and in the climax she isn't helpless.
@@ -230,9 +233,10 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **The girls' pact (Decided Oct 7):**
   - The two girls come to recognize that they're both into him, and talk about it openly. They agree, at least tacitly, to compete fairly.
   - **This is part of why the kiss is a betrayal:** it breaks their agreement.
-  - **Working placement (Oct 10):** the umbrella scene (June) is where both realize it. The pact itself happens when **Nanoha brings food to a sick Natsuki** (scene bank 13a).
+  - **Working placement (Oct 10; sharpened Oct 18):** they're smart girls, and each already knows the other is a rival before June. The umbrella scene is where it becomes **mutual knowledge**: each knows the other knows. (Neither learns that the other also cheated; that joke is the reader's.) The pact itself happens when **Nanoha brings food to a sick Natsuki** (scene bank 13a).
 - **Proposal:** the romcom rivalry runs through summer. The festival, the backyard watermelon and outings get a competitive edge, and the girls' friendship stays sincere.
-- **The triangle isn't symmetrical.** Natsuki loves him. His affection, attraction and confusion toward her do not amount to equivalent present romantic love. Later, the memories can disturb him without reopening a girlfriend competition.
+- **A real triangle (Decided Oct 18; replaces "the triangle isn't symmetrical"):** Kōhei has real feelings for Natsuki, real but smaller than for Nanoha, and he comes to realize it. Choosing Nanoha is a real choice (the model is Muv-Luv *Extra*'s Sumika route), so Ch24 is a decision, not only a realization.
+  - **Author's concern (Oct 18):** the triangle is hot from Kōhei's side for a fairly short time; as canon stands he's barely aware until the kiss (Ch19–24, about six weeks) though the girls compete from June. **Proposal (pending):** he feels the pull from summer (the festival, sparring, moments he notices and doesn't want to look at) and avoids it rather than missing it.
 
 ### Anger: warning signs
 - **Warning signs** stay sparse: a too-intense practice, and a quiet, threatening confrontation.
@@ -345,7 +349,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Art needed:** child (about 7–8) and middle-school (about 13–14) versions of both. Proposal: reuse Akane's sailor uniform for middle-school Nanoha and a plain black gakuran for Kōhei (same local middle school). Placement goes in the chapter map.
 
 ### Dating
-- Kōhei sincerely chooses Nanoha, knowing he felt real attraction to Natsuki.
+- Kōhei sincerely chooses Nanoha, knowing he has real feelings for Natsuki too (Oct 18: a decision, not only a realization).
 - **Their dating life is shown, not announced**, roughly October to December, including Christmas.
 - Nanoha's latent spiritual sense and how well she knows Kōhei make her **aware that something strange, tied to the past life, is happening between Kōhei and Natsuki**, independent of the kiss. How much she perceives, and when, is Open.
 
@@ -353,6 +357,9 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Fragments accumulate all year** for both Kōhei and Natsuki. Substantial memories return around the New Year bloom, **after Kōhei and Nanoha are together**.
 - **What comes back:** recovery is selective. Vivid pivotal scenes, a few ordinary tender moments, and emotional recognition. No continuous total recall, and no adult identity replacing their modern selves.
 - **Remembering a past love is not automatically renewing it.**
+- **Structure stays (Decided Oct 18):** the choice comes in October, the reveal at New Year. Rejected: revealing before the choice, retiming the choice after the reveal, a two-year timeline.
+- **Natsuki knows before Kōhei (Decided Oct 18).** The reader doesn't learn that she knew until Ch31, where an interiority sequence from her side replays the autumn. When and how she comes to know is a Proposal (pending).
+- **The girls' Ch31 scene (Decided Oct 18):** Nanoha realizes Natsuki knew and could have used it. Natsuki's answer, in effect (not these words): she wanted him to pick her for this life.
 - **Disclosure sequence:**
   1. Kōhei and Natsuki compare memories, without a renewed romantic promise. **They grieve together rather than negotiate**: closure for the past life, not rivalry in this one. Natsuki makes clear she wants to be loved for who she is now (§5).
      - **Proposal:** a quiet farewell to their past selves at the tree, the mourning past-Natsuki did alone for a lifetime.
@@ -362,7 +369,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Her growth:** accepting that a part of him belongs to that past and isn't a threat.
   - **Proposal:** because she already sensed something, the disclosure confirms rather than blindsides her.
 - **What the reader sees:** a coherent past-life flashback for the reader doesn't imply the characters remember every day. Exact memory symmetry between Kōhei and Natsuki, and how much the reader knows relative to each, are Open.
-  - **Working (Oct 17, Story thread, delegated for the pilot, Ch1–4 only):** the reader leans toward Natsuki as the dream woman from Ch1 and suspects it strongly after the Ch2 catch, unconfirmed when the pilot ends. The question the story asks is whether the past gets a claim on this life, not who she was. Nanoha's care may echo the dream's tenderness; the past-life pull belongs to Natsuki. Later chapters set their own targets in their outlines (style guide §9); reader-ahead interludes stay Open.
+  - **Reader targets (Decided Oct 18; replaces the Story thread's Oct 17 Working line):** three questions stay divided until the story answers them. (1) **Who he ends up with:** about 50-50, or slightly toward Nanoha, until the Ch31 reaffirmation. (2) **Who readers want him to end up with:** about 50-50; it's fine if half the readers are disappointed. (3) **Who the dream woman is:** divided at the start, leaning Natsuki at most about 60%, never obvious. Strange things visibly happen to both girls, and it isn't clear whose past the visions are about. Cold readers report all three every chapter (style guide §9).
 - **Increased physical affection after disclosure** is possible. Her anxiety that Natsuki shares more with him is her feeling, not an objective scoreboard. Kept non-explicit.
 - **No second deception** when he is confronted.
 - **Open:** exact dialogue and scenes.
@@ -411,6 +418,8 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 
 ## 7. Ending
 - **Survival:** the group defeats the beast. **The principal young cast all survive**, and the town deaths keep the danger real.
+  - **Reconfirmed Oct 18: no one dies in the final battle.** Rejected: foreshadowing that one of the girls may die; Nanoha sacrificing her life.
+  - **Victory costs a real price (Decided Oct 18):** a serious injury, a loss of power or similar. What it is is Open.
 - **Aftermath:**
   - The tree grows quiet, extraordinary abilities diminish, and the fairy fades or says farewell. Its last appearance is Open; its death isn't required.
   - The cherry tree remains, and **memories remain.** Don't erase the triangle to solve it.
@@ -683,7 +692,7 @@ Select and adapt; this is not a checklist.
 **Past life:**
 22. **Past happiness and farewell:** childhood familiarity, the marriage, domestic teasing and affection, her watching him train, the misty walk, the trade, the promise, the tree's answer.
 23. **Image motifs (Working):** Natsuki waiting under the low branch; her hands binding a cut on his wrist (echoed in modern wound care); a distinctive sword hilt; the same landmark reappearing on the trapped walk; her face and unheard farewell over the wounded Kōhei. Mix the happy and tender with the dread.
-    - **The bride in the wataboshi (the author's idea, Oct 17; Working):** a single image of her in the white wedding hood (*wataboshi*) over a plain white kimono, simple rather than lavish to fit her family. It comes late, as one of the last fragments before the long dreams, and pays off when the wedding plays in full in the past-life sequence. The hood hides her face, which keeps the past-life face rule (§5) with no cropping tricks. **Proposal:** it's Kōhei's fragment, seen from the side, with petals on the white silk, or snow, he can't tell which; one copper strand escapes the hood.
+    - **The bride in the wataboshi (the author's idea, Oct 17; Working):** a single image of her in the white wedding hood (*wataboshi*) over a plain white kimono, simple rather than lavish to fit her family. It comes late, as one of the last fragments before the long dreams, and pays off when the wedding plays in full in the past-life sequence. The hood hides her face, which keeps the past-life face rule (§5) with no cropping tricks. **Proposal:** it's Kōhei's fragment, seen from the side, with petals on the white silk, or snow, he can't tell which. (Oct 18: no hair shows; the image mustn't settle who she is.)
 24. **Optional coda:** past Natsuki at the tree after his death.
 
 **Climax:**
@@ -841,3 +850,13 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Address guide decided** (§2; style guide §3c), with planned name changes: "Chibi" → "Nanoha" (the nickname that hurts in Ch11, the switch in Ch24), Nanoha's one cold "Fujisawa-kun" (Ch20), Natsuki's first "Kōhei" in her one voiced line in the kiss sequence (Ch19), his first "Natsuki" at the January farewell (Ch30), and Nanoha's "-san"/"-chan" shifts with Natsuki. Claude's choices, delegated by the author.
   - **Reader knowledge, pilot (Working, Ch1–4 only):** the reader leans Natsuki from Ch1, suspects her strongly after the Ch2 catch, and isn't told within the pilot (§5 "What the reader sees"); targets in `production/pilot-v2/scene-outline.md`.
   - **Ryōsuke's opening argument** is about taiyaki (head or tail first), not hot dogs (§2 openings rule).
+- **Oct 18** (the author's decisions from a separate discussion thread; Claude's proposals from it are pending):
+  - **Real triangle** (§6): Kōhei's feelings for Natsuki are real but smaller; Ch24 is a decision.
+  - **Reader targets** (§5 "What the reader sees"): who he ends up with about 50-50 until Ch31; who readers want, about 50-50; the dream woman leaning Natsuki at most about 60%. Replaces the Oct 17 Working line.
+  - **"My girl lost" is fine; "the wrong girl won" is not** (§5).
+  - **Structure stays:** the choice in October, the reveal at New Year (§6).
+  - **Natsuki knows before Kōhei;** the reader learns it in Ch31, with an interiority sequence; the girls' Ch31 scene (§6).
+  - **The genre is promised from the start,** with more dread throughout; frame devices liked, placement Open (§2).
+  - **No one dies in the final battle; victory costs a real price** (§7).
+  - **Umbrella scene:** the rivalry becomes mutual knowledge (§6).
+  - **The dream woman's voice** (decided Oct 17, evening): a completely different voice from Natsuki's (style guide §7).

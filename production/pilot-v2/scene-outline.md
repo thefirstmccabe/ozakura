@@ -125,7 +125,7 @@
 ---
 
 ## Reader-knowledge targets (Story thread, Oct 17; delegated by the author)
-**ON HOLD (Oct 17, evening):** the author disagrees with these targets. He wants the past life kept more mysterious and who Kōhei ends up with kept about 50-50 until it's revealed. The Story thread revises them Monday. Don't start the Ch1 revision's writing changes (part B) until then; part A work continues.
+**SUPERSEDED (Oct 18):** the author's decisions (canon §5 reader targets) replace the targets below: who he ends up with about 50-50, who readers want about 50-50, the dream woman leaning Natsuki at most about 60%, and the dream voice recast. The Story thread re-derives the Ch1–4 targets and the Ch1 levers from them. Don't start the Ch1 revision's writing changes (part B) until then; part A work continues.
 
 What the reader should **know** and **suspect** at the end of each chapter (style guide §9, step 1). Cold readers are measured against these. They read text only, so anything a player sees or hears but the cold-read packet lacks has to be added to the packet as a bracketed staging line.
 
