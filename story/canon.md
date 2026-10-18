@@ -140,7 +140,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **Start:** Natsuki arrives at the start of April in second year.
   - **End:** the Beast is defeated around the close of second year.
 - **The out-of-season bloom is tied to the start of the Beast phase, not to a date.** If that phase moves, the bloom moves with it. New Year is the working anchor.
-- **Kiss to dating:** needs weeks, about 4–8.
+- **Kiss to dating:** about ten weeks (changed Oct 18 from 4–8, so Kōhei's choice gets real time): the kiss in late August, the choice in early November.
 - **First deaths to battle:** must stay short, about 4–8 weeks at most. Once the characters understand the danger, they can't spend months ignoring deaths.
 
 | When | Beats |
@@ -148,8 +148,9 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 | Apr–Aug | Natsuki arrives. Slow burn and fragments; Nanoha's jealousy; anger warning signs. Rainy-season umbrella scene and the girls' pact (June–July, working). Summer festival, backyard watermelon, horror movie. |
 | **Late Aug** (end of summer break) | Karaoke, street fight, wound care, the kiss. |
 | **Within about a week** | Natsuki tells Nanoha. Kōhei owns his half. The fallout runs into September: the mentor arc with Nanoha's father begins, the flashback to Dad's death, and Emi's confrontation that starts Mom's recovery. |
-| **Oct** | Kōhei and Nanoha start dating. **Proposal:** the cultural festival hosts it. |
-| Oct–Dec | Visible couple time, including Christmas. Fragments intensify. Nanoha senses something about the past life (degree and timing Open). |
+| **Oct** | **The in-between (Oct 18):** Kōhei's real choice, with real feelings for both girls. Chapters about the triangle, not only the family. |
+| **Early Nov** | Kōhei and Nanoha start dating. The cultural festival hosts it, around Culture Day (Nov 3) (Oct 18; was October). |
+| Nov–Dec | Visible couple time, including Christmas. Fragments intensify. Nanoha senses something about the past life (degree and timing Open). |
 | **New Year** | The out-of-season bloom. The memories flood in. |
 | **Early Jan** | Kōhei and Natsuki compare memories. He tells Nanoha about the past life and reaffirms his choice. The girls talk. |
 | Mid-Jan → late Feb/early Mar | The deaths begin and escalate toward the battle. (Low-level activity — people lost, maybe injured, possibly one disappearance — starts earlier, in autumn background.) |
@@ -358,9 +359,10 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **What comes back:** recovery is selective. Vivid pivotal scenes, a few ordinary tender moments, and emotional recognition. No continuous total recall, and no adult identity replacing their modern selves.
 - **Remembering a past love is not automatically renewing it.**
 - **Structure stays (Decided Oct 18):** the choice comes in October, the reveal at New Year. Rejected: revealing before the choice, retiming the choice after the reveal, a two-year timeline.
-- **No early memories (Decided Oct 18, reversing the same day's "Natsuki knows before Kōhei"):** both get fragments all year, and both remember at the bloom.
+- **Natsuki knows before Kōhei (Decided Oct 18, after discussion; reconfirmed the same day).** In the days after the wound care, not during it, her fragments and the bandaging (an echo of binding his wrist) harden into a conviction: it was her. It's a conviction, not the full memory, and she doesn't know how that life ended; the bloom gives her his death, so it still breaks her. **She stays silent because she won't let the past be the reason** anyone chooses her. The reader doesn't learn that she knew until Ch31, where an interiority sequence replays the autumn from her side (**Proposal:** built from the drafts to Chie she never sent).
+  - **Rule (Working):** from then until Ch31, her interludes stay on what she does (photos, Chie, going to the tree alone), not inside her thoughts, so Ch31 never reads as a cheat. Each should read differently once you know.
 - **The bloom creates real uncertainty (Decided Oct 18):** after the memories return, it's genuinely unclear whether Kōhei stays with Nanoha. His reaffirmation isn't automatic. What it costs him is Open.
-- **The girls' Ch31 scene (Decided Oct 18; refit the same day):** Nanoha realizes that between the bloom and Kōhei's choice, Natsuki had the past on her side and didn't use it. Natsuki's answer, in effect (not these words): she wanted him to pick her for this life.
+- **The girls' Ch31 scene (Decided Oct 18):** Nanoha realizes Natsuki has known since summer and could have used it. Natsuki's answer, in effect (not these words): she wanted him to pick her for this life.
 - **Disclosure sequence:**
   1. Kōhei and Natsuki compare memories, without a renewed romantic promise. **They grieve together rather than negotiate**: closure for the past life, not rivalry in this one. Natsuki makes clear she wants to be loved for who she is now (§5).
      - **Proposal:** a quiet farewell to their past selves at the tree, the mourning past-Natsuki did alone for a lifetime.
@@ -856,7 +858,8 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Reader targets** (§5 "What the reader sees"): who he ends up with about 50-50 until Ch31; who readers want, about 50-50; the dream woman leaning Natsuki at most about 60%. Replaces the Oct 17 Working line.
   - **"My girl lost" is fine; "the wrong girl won" is not** (§5).
   - **Structure stays:** the choice in October, the reveal at New Year (§6).
-  - **Natsuki knows before Kōhei** (reversed the same day: no early memories; both remember at the bloom). **The bloom creates real uncertainty;** his reaffirmation isn't automatic. The girls' Ch31 scene, refit to that (§6).
+  - **Natsuki knows before Kōhei** (briefly reversed, then reconfirmed after discussion): a conviction in the days after the wound care, not the full memory; the bloom gives her his death; the reader learns in Ch31. **The bloom creates real uncertainty;** his reaffirmation isn't automatic (§6).
+  - **Kiss to dating: about ten weeks** (was 4–8, §4): he chooses at the cultural festival in early November, leaving about eight weeks of dating, with Christmas, before the bloom. The stretch between the kiss and the choice becomes his real choice.
   - **The genre is promised from the start,** with more dread throughout; frame devices liked, placement Open (§2).
   - **No one dies in the final battle; victory costs a real price** (§7).
   - **Umbrella scene:** the rivalry becomes mutual knowledge (§6).

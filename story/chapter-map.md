@@ -56,11 +56,12 @@
 | 22 | September | Nikujaga | Mom and Emi cook; Kōhei and Akane come home to the smell. Natsuki names Nanoha's feelings to him ("You really don't see it?"). | |
 
 ## Part 4 — Autumn (October–December)
+**Oct 18:** the choice moves to the cultural festival in early November (about ten weeks after the kiss), and October becomes the in-between, about the triangle. Rows 23–28 get re-planned (pending the author's answers on the confession and the school trip).
 
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
 | 23 | Early October | Form | Back from suspension; he admits Takatsuki was right and starts learning form; Takatsuki starts improvising. Mom's bookkeeping, and a setback. | |
-| 24 | October | Cultural Festival | **FB5: the middle-school speech**, mirrored by Nanoha on stage now. Kōhei decides, a real choice with real feelings for both (Oct 18); they start dating. | |
+| 24 | Early November (Culture Day) | Cultural Festival | **FB5: the middle-school speech**, mirrored by Nanoha on stage now. Kōhei decides, a real choice with real feelings for both (Oct 18); they start dating. | |
 | 25 | October–November | Dating | Dates shown, not announced. Natsuki's own pursuit (photography) and her repaired friendship with Nanoha. A hiker lost on a familiar trail turns up dazed. | Fairy half-form. |
 | 26 | November | What He Asked of You | Kazuo passes on Dad's regret and apologizes for not pressing his help. Kōhei asks for help on purpose (10) and lets Mom take something back. | |
 | 27 | November | Posters at the Station | A disappearance, posters at the station; an injury no one can explain. Nanoha senses something between Kōhei and Natsuki. Fragments intensify. | **Proposal:** the wataboshi image (Kōhei's fragment) lands here, while he's with Nanoha. |
