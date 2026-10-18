@@ -2,6 +2,8 @@
 
 Run **three** fresh agents with the same prompt and different personas. Build their material with `reader_view.py` (reader-visible text in parts, plus JPG copies of the CGs). Give them only that folder. Never give them canon, the outline or the reader-knowledge target; compare their checkpoints against the target yourself afterward.
 
+**Read from the start (Oct 18):** the three standing numbers are judged over windows of 3–4 chapters, so each round's fresh readers read from Ch1 through the chapter under test, in order, with checkpoints after every part. That's easy within the pilot; when the story outgrows a single read, decide how much earlier text to give them.
+
 **Personas:** (1) a casual reader; (2) "a reader who mostly reads manga and plays a few visual novels a year, not a genre expert"; (3) "an experienced reader of romance visual novels and romcom manga (Clannad, Steins;Gate, Horimiya, Blue Box), quick to spot genre conventions."
 
 **Prompt:**
