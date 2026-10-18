@@ -358,12 +358,13 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **What comes back:** recovery is selective. Vivid pivotal scenes, a few ordinary tender moments, and emotional recognition. No continuous total recall, and no adult identity replacing their modern selves.
 - **Remembering a past love is not automatically renewing it.**
 - **Structure stays (Decided Oct 18):** the choice comes in October, the reveal at New Year. Rejected: revealing before the choice, retiming the choice after the reveal, a two-year timeline.
-- **Natsuki knows before Kōhei (Decided Oct 18).** The reader doesn't learn that she knew until Ch31, where an interiority sequence from her side replays the autumn. When and how she comes to know is a Proposal (pending).
-- **The girls' Ch31 scene (Decided Oct 18):** Nanoha realizes Natsuki knew and could have used it. Natsuki's answer, in effect (not these words): she wanted him to pick her for this life.
+- **No early memories (Decided Oct 18, reversing the same day's "Natsuki knows before Kōhei"):** both get fragments all year, and both remember at the bloom.
+- **The bloom creates real uncertainty (Decided Oct 18):** after the memories return, it's genuinely unclear whether Kōhei stays with Nanoha. His reaffirmation isn't automatic. What it costs him is Open.
+- **The girls' Ch31 scene (Decided Oct 18; refit the same day):** Nanoha realizes that between the bloom and Kōhei's choice, Natsuki had the past on her side and didn't use it. Natsuki's answer, in effect (not these words): she wanted him to pick her for this life.
 - **Disclosure sequence:**
   1. Kōhei and Natsuki compare memories, without a renewed romantic promise. **They grieve together rather than negotiate**: closure for the past life, not rivalry in this one. Natsuki makes clear she wants to be loved for who she is now (§5).
      - **Proposal:** a quiet farewell to their past selves at the tree, the mourning past-Natsuki did alone for a lifetime.
-  2. Kōhei goes to Nanoha himself and tells her about the earlier relationship (the kiss is already known), immediately reaffirming that he wants her now.
+  2. Kōhei goes to Nanoha himself and tells her about the earlier relationship (the kiss is already known), and reaffirms that he wants her now. **Oct 18:** not immediately or automatically; it comes after real doubt (see "The bloom creates real uncertainty" above).
   3. Nanoha and Natsuki speak privately later.
 - **Nanoha's response:** she may be hurt, jealous or need time; reassurance doesn't instantly repair trust.
   - **Her growth:** accepting that a part of him belongs to that past and isn't a threat.
@@ -855,7 +856,7 @@ Anything else (geography details, care costs, club details, combat, shrine dutie
   - **Reader targets** (§5 "What the reader sees"): who he ends up with about 50-50 until Ch31; who readers want, about 50-50; the dream woman leaning Natsuki at most about 60%. Replaces the Oct 17 Working line.
   - **"My girl lost" is fine; "the wrong girl won" is not** (§5).
   - **Structure stays:** the choice in October, the reveal at New Year (§6).
-  - **Natsuki knows before Kōhei;** the reader learns it in Ch31, with an interiority sequence; the girls' Ch31 scene (§6).
+  - **Natsuki knows before Kōhei** (reversed the same day: no early memories; both remember at the bloom). **The bloom creates real uncertainty;** his reaffirmation isn't automatic. The girls' Ch31 scene, refit to that (§6).
   - **The genre is promised from the start,** with more dread throughout; frame devices liked, placement Open (§2).
   - **No one dies in the final battle; victory costs a real price** (§7).
   - **Umbrella scene:** the rivalry becomes mutual knowledge (§6).

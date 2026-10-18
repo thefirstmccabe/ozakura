@@ -72,7 +72,7 @@
 | # | When | Working title | Main beats | Also |
 |---|---|---|---|---|
 | 30 | Early January | What We Were | A substantial past-life sequence (the wedding, where the wataboshi pays off; the marriage; everyday happiness). Kōhei and Natsuki compare memories and grieve together; the farewell to their past selves at the tree (21a): "I don't want you to love me because of her." | |
-| 31 | Early January | Told | Kōhei tells Nanoha about the past life and reaffirms his choice; she'd already sensed it; hurt and time. The girls talk privately: Nanoha realizes Natsuki knew and could have used it (Oct 18). Natsuki's interiority sequence replays the autumn from her side. | |
+| 31 | Early January | Told | Kōhei tells Nanoha about the past life and reaffirms his choice; she'd already sensed it; hurt and time. Not automatic: real doubt first (Oct 18). The girls talk privately: Nanoha realizes Natsuki had the past on her side and didn't use it (Oct 18). | |
 | 32 | Mid-January | Found | The missing person is found dead: the escalation begins. The fairy is visible to the group; exposition with limits. | |
 | 33 | January | The Loop | Takatsuki trapped in a walk home that keeps looping; the group frees him; he believes, and he noticed how it works. | |
 | 34 | Late January | Okuri-ōkami | Genji and the old customs; the folk rules; the heirlooms in the Tachibana storehouse. More deaths. | |
