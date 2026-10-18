@@ -13,7 +13,9 @@ It flags things for a human or reviewer to look at; it doesn't rewrite anything.
 Usage: python3 script_lint.py --chapter N src1.ozs [src2.ozs ...]
 Exit code 1 if anything is flagged.
 """
-import argparse, re, sys
+import argparse, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from compile_script import split_id
 
 SAY = re.compile(r'^(\w+)(?:<(\w+)>)?(?:\((\w+)\))?:\s*"(.*?)"\s*(?:\|\|\s*(.*))?$')
 PRONOUNS = ["わたくし", "あたし", "わたし", "おれ", "ぼく", "わし", "俺", "僕", "私"]  # not うち: it hides inside こうちゃん etc.
@@ -43,7 +45,7 @@ def lint(paths, chapter):
     interlude = False
     for path in paths:
         for n, raw in enumerate(open(path, encoding="utf-8"), 1):
-            s = raw.rstrip("\n")
+            s = split_id(raw.rstrip("\n"))[0]   # drop the stable line ID tag
             if not s.strip() or s.lstrip().startswith("#"):
                 continue
             where = f"{path.split('/')[-1]}:{n}"

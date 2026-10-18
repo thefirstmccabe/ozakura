@@ -14,7 +14,7 @@ Usage: python3 reader_view.py OUT_DIR src1.ozs [src2.ozs ...] [--split ids] [--c
 import argparse, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from compile_script import SPEAKERS  # display names, kept in one place
+from compile_script import SPEAKERS, split_id  # display names, kept in one place
 
 SAY = re.compile(r'^(\w+)(?:<(\w+)>)?(?:\((\w+)\))?:\s*"(.*?)"\s*(?:\|\|.*)?$')
 GLOSS = re.compile(r'\{([^|}]+)\|([^}]+)\}')
@@ -45,7 +45,7 @@ def convert(paths, split):
     parts, cur, cgs = [], [], []
     for path in paths:
         for raw in open(path, encoding="utf-8"):
-            s = raw.rstrip("\n")
+            s = split_id(raw.rstrip("\n"))[0]   # drop the stable line ID tag
             if not s.strip() or s.lstrip().startswith("#"):
                 continue
             out = None
