@@ -214,7 +214,7 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
   - The garbage point is at the corner; her front door is about ten feet from his.
 - **Kōhei's week:** Saturday afternoons are his only free time; he gives them to the shrine sweep.
 - **The walk and school:**
-  - The Ōzakura shows from the river path, "older than anyone's records."
+  - The Ōzakura, "older than anyone's records," looks like a pink cloud on the hillside from the bridge.
   - Same class four years running. Kōhei spent five days in 1-C during last year's exchange program ("a scheduling error," per the minutes).
   - About 200 second-years; the class lists go up at the entrance; they arrive at 7:50.
   - Fukuda is in 2-E this year.

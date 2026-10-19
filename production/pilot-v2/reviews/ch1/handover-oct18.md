@@ -24,8 +24,14 @@
   - The intro CG: her hair at shoulder length and tucked behind one ear; four different classmates, none who looks like Kōhei.
   - The falter: now visible, and her eyes go to the window side where Kōhei sits.
   - The collar CG: the petal on her braid.
-- **Voices:** 55 changed lines re-voiced in batches, plus 5 single-line retakes; every clip was transcript-checked twice.
-- Records: `production/pilot-v2/reviews/ch1/` (continuity, diagnosis, rewrite log, overcorrection check, Japanese pass, cold reads round 1 and 2, on-model checks, QA).
+- **Voices:** 55 changed lines re-voiced in batches, plus 8 single-line retakes; every clip was transcript-checked twice.
+- **Engine fixes** (from the independent build review):
+  - The portrait blur bands now fade with each CG instead of cutting.
+  - Taps can't skip the cold open; fast-forward still can.
+  - The dream's white flash now actually flashes, and the fade to black is slow, with the text box hidden.
+  - Saves now carry the build and line, so an old save lands on its line instead of the wrong place.
+- **Your saves:** v2 now keeps its saves apart from the shipped pilot's, so a Continue from the Oct 17 build won't show up. Start Chapter 1 from the title screen or the chapter menu.
+- Records: `production/pilot-v2/reviews/ch1/` (continuity, diagnosis, rewrite log, overcorrection check, Japanese pass, cold reads round 1 and 2, on-model checks, QA, build review).
 
 ## How the cold readers came out (six readers over two rounds; target over the Ch1–4 window)
 | | Target | Result |
@@ -62,4 +68,4 @@ Listed in pilot-notes §3, "v2 Ch1 revision, Oct 18." Among them:
 - **For the Story thread:** every reader wanted one echo of the cold-open mirror or mist inside the chapter, and two wanted to see the Ōzakura once.
 
 ## Spend
-About $4.77 for the revision (art $4.12, voices and transcripts $0.65). Running total about $13.27 of $40 (`production/pilot-v2/ledger.md`).
+About $4.80 for the revision (art $4.12, voices and transcripts $0.68). Running total about $13.30 of $40 (`production/pilot-v2/ledger.md`).
