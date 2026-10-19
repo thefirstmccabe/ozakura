@@ -6,6 +6,8 @@
 
 ## Cold open (added Oct 18; canon §2; independent check applied)
 **P.0** (**Decided Oct 18:** the cold open opens the game and goes straight to Ch1's morning; the dream moves to the end of Ch1, scene 1.8, because cold open plus dream back to back was too much at once.) A flash-forward to the present-day walk into the distortion (Ch40, a misty morning). Two or three images, one figure only: a male hand in a modern sleeve on a sword grip; a modern landmark, such as a convex curve mirror at a bend [P], passing a second time; the mist moving as if something huge is in it. No face, no eyes, no mask or wolf shape, never the tree or the boulder, and nothing that reads as the past (no kimono, no petals, no visible breath). No voices and no narration. Cut to black, then the 5:40 alarm (1.1).
+
+**Parked Oct 19 (author):** the cold open needs improvement but waits until the very end of the project, when the author decides what goes there and whether it's animated or music over CGs. The Ch1 build keeps this version until then.
 - **CGs (new):** two or three, in misty early-morning light, a treatment distinct from both era palettes [P]. **Living still:** the mist moving. About $1–3. The cold-read packet includes them.
 - **Music [P]:** none, or wind only.
 - **Why so constrained:** coming straight before a sword-and-petals dream, anything period-looking would read as the past life and give away how it ended, and the beast thread stays separate from past-life clues (canon §2).
@@ -44,6 +46,8 @@
 ---
 
 ## Ch2 — Kendo (Tue Apr 8 – Wed Apr 9)
+**Oct 19 (author):** the Story thread rewrites the Ch2–4 outline below, keeping the Ch1 cold-read findings in mind (the wanting leans Nanoha about 65; the cause is structural; `reviews/ch1/handover-oct18.md`). Ch2 production starts from that rewrite.
+
 **2.1 Tuesday.** A shift, and by Wednesday morning the whole class calls her "Nacchan." Short.
 
 **2.2 First practice.** Kirishima (now male, deadpan) runs warm-ups. Takatsuki arrives through his clean, exact form; no needling about missed practices. Natsuki joins. (7, 28)

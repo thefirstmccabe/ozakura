@@ -67,5 +67,9 @@ Listed in pilot-notes §3, "v2 Ch1 revision, Oct 18." Among them:
   - The dream's じっとして (the Japanese pass wanted it polite; it's the take you picked).
 - **For the Story thread:** every reader wanted one echo of the cold-open mirror or mist inside the chapter, and two wanted to see the Ōzakura once.
 
+## After handover (author, Oct 19)
+- **The Story thread writes the Ch2–4 outline** with the reader findings above in mind.
+- **The cold open is parked** until the very end of the project. It needs improvement, and the author will then decide what goes there and whether it's animated or music over CGs. Until then the build keeps this version.
+
 ## Spend
 About $4.80 for the revision (art $4.12, voices and transcripts $0.68). Running total about $13.30 of $40 (`production/pilot-v2/ledger.md`).
