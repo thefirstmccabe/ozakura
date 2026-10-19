@@ -27,7 +27,7 @@
 - **Voices:** 55 changed lines re-voiced in batches, plus 8 single-line retakes; every clip was transcript-checked twice.
 - **Engine fixes** (from the independent build review):
   - The portrait blur bands now fade with each CG instead of cutting.
-  - Taps can't skip the cold open; fast-forward still can.
+  - The cold open plays through the first time; after that, a tap skips it (fix round 2, after this note was first written).
   - The dream's white flash now actually flashes, and the fade to black is slow, with the text box hidden.
   - Saves now carry the build and line, so an old save lands on its line instead of the wrong place.
 - **Your saves:** v2 now keeps its saves apart from the shipped pilot's, so a Continue from the Oct 17 build won't show up. Start Chapter 1 from the title screen or the chapter menu.
@@ -43,7 +43,7 @@
 The wanting lean is structural, not a matter of lines. The first third of the chapter has only Nanoha in it, and she also gets the interlude's inner life and the night scene. The readers like Natsuki more after the fixes, but still call her "the thinner heroine." Closing that gap in Ch1 would take more Natsuki on screen, or her interiority earlier than Ch2's interlude. That's the Story thread's call. Ch2 (the catch, her texts with Chie) may carry it, since the target is a window.
 
 ## Questions for you (canon or design)
-1. **Nanoha's hair clip.** Style guide §2 gives her none (the clip in canon is Akane's), but the shipped sprites and the collar CG draw one. Keep it (and add it to §2) or remove it?
+1. **Nanoha's hair clip.** Style guide §2 gave her none (the clip in canon is Akane's), but the shipped sprites and the collar CG draw one. **Settled Oct 19 (Production's call under the new decide-or-ask rule):** kept, and added to §2 as [P].
 2. **The sword grip.** The cold-open grip matches the dream's sword (the same black diamond wrap). All six readers connected the two and read it as the past life's sword in the present, and called it the best clue in the chapter. Canon lists "a distinctive sword hilt" as a Working motif. If the present-day sword isn't meant to be that blade, the cold-open grip needs a different wrap.
 
 ## Provisional inventions
@@ -69,7 +69,8 @@ Listed in pilot-notes §3, "v2 Ch1 revision, Oct 18." Among them:
 
 ## After handover (author, Oct 19)
 - **The Story thread writes the Ch2–4 outline** with the reader findings above in mind.
-- **The cold open is parked** until the very end of the project. It needs improvement, and the author will then decide what goes there and whether it's animated or music over CGs. Until then the build keeps this version.
+- **The cold open is deferred** until most of the story is written (refined the same evening from "the very end of the project"). It needs improvement, and the author will then decide what goes there and whether it's animated or music over CGs. Until then the build keeps this version.
+- **Punch list, round 1** (`punch-oct19.md`): translator's notes on Japanese words, two interlude lines cut, the height lines eased to match the collar CG.
 
 ## Spend
 About $4.80 for the revision (art $4.12, voices and transcripts $0.68). Running total about $13.30 of $40 (`production/pilot-v2/ledger.md`).

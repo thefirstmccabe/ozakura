@@ -228,6 +228,10 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
 - **Rika:** a different novelty clip every day; matching keychains.
 - **Shrine:** the Saturday sweep; Genji's back.
 - **Engine:** the chapter menu starts Chapter 1 at the cold open (no separate Prologue entry); the developer scene chart labels it "COLD OPEN."
+- **Ch1 punch list, Oct 19:**
+  - Translator's notes on Japanese words (tap the underlined term; Settings → Notes lists them): karaage, fusuma, kinpira, taiyaki, shodan. The wording of each note is [P] (`production/pilot-v2/script/notes.txt`).
+  - Nanoha's small hair clip (left side) is kept as the sprites draw it (style guide §2).
+  - Her height is played as one kitchen joke plus "Chibi"; the collar scene no longer has her on her toes.
 
 ## 4. Address guide
 **Superseded Oct 17 by style guide §3c** (address forms, Japanese pronouns and the planned name changes). The pilot's table matched it except: Sōta is now Mio ("Kō-nii" kept), and Kōhei teases Nanoha as "Chibi."
