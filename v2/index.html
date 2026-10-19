@@ -371,7 +371,7 @@ const CHAPTERS = [
   {k:'CHAPTER 1', t:'The House Next Door', start:'cold_open', th:'cg_natsuki_intro'},   // the cold open plays first, then the chapter card
 ];
 const KANJI = ['','第一話','第二話','第三話','第四話'];
-let SIG='';   // fingerprint of the loaded script.json; saves carry it
+let SIG='', holdT=0;   // fingerprint of the loaded script.json; saves carry it
 function sigOf(S){ let h=5381; const t=JSON.stringify(S); for(let k=0;k<t.length;k++) h=((h<<5)+h+t.charCodeAt(k))|0; return (h>>>0).toString(36)+'.'+S.length; }
 const store = {
   get(k,d){try{const v=localStorage.getItem('ozk.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},
@@ -511,7 +511,7 @@ function setBg(name, tr){
 const cgLive=$('#cgLive');
 function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
 function liveOn(name, delay){
-  liveOff(); if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
+  liveOff(); cgLive.style.transition=''; if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
   cgLive.src=LIVE[name]; cgLive.muted=true;
   cgLive.onplaying=()=>{ if(tok===setCg.tok) setTimeout(()=>{ if(tok===setCg.tok) cgLive.classList.add('on'); }, delay); };
   const p=cgLive.play(); if(p&&p.catch) p.catch(()=>{});      // if autoplay is refused, the still simply stays
@@ -519,7 +519,7 @@ function liveOn(name, delay){
 const cgFills=[...document.querySelectorAll('#cg .cgfill')];   // portrait: each CG image has its own blurred fill and fades with it
 function setCg(name, tr){
   state.cg=name;
-  if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.concat(cgFills).forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); return; }
+  if(!name){ setCg.tok++; cgLive.style.transition = tr==='cut'?'none':''; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.concat(cgFills).forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); return; }
   const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], nextF=cgFills[1-cgFront], curF=cgFills[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
   const over=cur.classList.contains('on');   // a CG is already up: the new one fades in on top of it
   if(next.classList.contains('on') && next.src.endsWith(`/img/bg/${name}.webp`)){
@@ -623,7 +623,7 @@ function run(){
         case 'hideall': hideAll(); break;
         case 'mode': setMode(c.mode,c.label); break;
         case 'flash': if(!skipOn) flash(); break;
-        case 'hold': state.hold=!!c.on; if(!c.on) store.set('v2coldSeen',true); break;
+        case 'hold': state.hold=!!c.on; if(c.on) holdT=Date.now(); else { const seen=store.get('v2holdSeen',{})||{}; seen[state.scene]=true; store.set('v2holdSeen',seen); } break;
         case 'shake': if(!skipOn) shake(); break;
         case 'wait': return pause(skipOn?40:c.s*1000);
         case 'card': return dateCard(c.text);
@@ -658,7 +658,8 @@ function line(c){
 function advance(){
   if(overlayOpen()) return;
   if(state.hold && !skipOn){   // the wordless cold open plays through the first time; after that a tap skips to its end
-    if(store.get('v2coldSeen',false)){ const j=S.findIndex((c,k)=>k>=state.i-1 && c.t==='hold' && !c.on); if(j>0){ clearTimeout(waitTimer); startAt(j); } }
+    const seen=store.get('v2holdSeen',{})||{};
+    if(seen[state.scene] && Date.now()-holdT>600){ const j=S.findIndex((c,k)=>k>=state.i-1 && c.t==='hold' && !c.on); if(j>0){ clearTimeout(waitTimer); startAt(j); } }
     return; }
   if(typing){ finishType(); return; }
   if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }

@@ -89,7 +89,11 @@ def compile_files(paths):
                 elif op == "flash":
                     cmds.append({"t": "bg", "name": "white", "tr": "flash"})
                 elif op == "hold":     # @hold on / @hold off: taps don't skip waits or crossfades in between (the wordless cold open)
-                    cmds.append({"t": "hold", "on": (args[0] if args else "on") != "off"})
+                    arg = (args[0] if args else "on").lower()
+                    if arg not in ("on", "off") or len(args) > 1:
+                        errors.append(f"{where}: @hold takes 'on' or 'off', got {' '.join(args)!r}")
+                    else:
+                        cmds.append({"t": "hold", "on": arg == "on"})
                 elif op == "card":
                     cmds.append({"t": "card", "text": s[len("@card "):].strip()})
                 elif op == "chapter":
@@ -149,6 +153,15 @@ def compile_files(paths):
                 voice.append({"id": lid, "who": who, "ja": ja.strip(), "en": text, "scene": scene})
             elif not ja:
                 errors.append(f"{where}: spoken line without Japanese (use '|| -' for unvoiced)")
+    # a hold that never closes would swallow every tap for the rest of a first playthrough
+    held = cur_scene = None
+    for c in cmds:
+        if c["t"] == "scene" and held:
+            errors.append(f"@hold on in scene {held} is never closed (add @hold off before the next scene)"); held = None
+        if c["t"] == "scene": cur_scene = c["id"]
+        if c["t"] == "hold": held = cur_scene if c["on"] else None
+    if held:
+        errors.append(f"@hold on in scene {held} is never closed")
     return cmds, voice, errors, new_ids
 
 

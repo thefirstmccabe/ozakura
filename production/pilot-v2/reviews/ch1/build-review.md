@@ -47,3 +47,22 @@ New findings and what was done:
 | 8 | Tooling: `@hold` with no argument crashed the compiler; the default visual-diff threshold missed a portrait expression change | `@hold` defaults to on. The README notes `--threshold 0.05` for fix rounds |
 
 Confirmed as intended: 2.6 s of empty black between c1_0264 and the dream.
+
+## Fix-round check 2 (fresh agent, on 81f995a)
+All seven checks pass at both sizes:
+- **Flash:** pure white under the flash in every frame; no flash in skip mode.
+- **Cold open:** plays through the first time; once seen, a tap at any point cuts cleanly to the chapter card and the chapter then plays normally.
+- **Load previews:** match where each save loads.
+- **Jumps out of white:** no brightening afterwards.
+- **Dev strip and dev flag:** correct; the pilot's keys are untouched.
+- **`qa_play`:** clean at both sizes.
+
+Latent issues it found, now fixed:
+| Finding | Done |
+|---|---|
+| `@hold` with a mistyped argument compiled to "on" (an unending hold would swallow every tap) | The compiler accepts only on or off (any case) and reports anything else, plus any hold left open at a scene change or the end |
+| The "seen" flag was global, so a later wordless sequence would be skippable on first viewing | Seen holds are remembered per scene |
+| Safari might keep the living still's last frame visible during the 0.9 s fade when a CG is cut (Chromium drops it at once) | A cut also cuts the living still; its fade comes back for the next CG |
+| A double-tap on Begin skipped the cold open for returning players | A 600 ms guard after the hold starts |
+
+Left as is: load thumbnails for saves from another build still show the old save's picture; the compiler still allows `@bg <image> flash` (unused); Continue resumes from the last scene entered (older behavior).
