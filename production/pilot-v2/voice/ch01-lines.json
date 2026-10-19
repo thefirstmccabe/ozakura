@@ -1,19 +1,5 @@
 [
  {
-  "id": "p_0007",
-  "who": "past_natsuki",
-  "ja": "……遅いですよ。",
-  "en": "\"You're late.\"",
-  "scene": "prologue"
- },
- {
-  "id": "p_0010",
-  "who": "past_natsuki",
-  "ja": "また怪我して。……手、見せてください。じっとして。",
-  "en": "\"Hurt again. Give me your hand… Hold still.\"",
-  "scene": "prologue"
- },
- {
   "id": "c1_0011",
   "who": "akane",
   "ja": "おはよ、お兄ちゃん……",
@@ -30,8 +16,8 @@
  {
   "id": "c1_0014",
   "who": "akane",
-  "ja": "それ、昨日も聞いた。",
-  "en": "\"You asked me that yesterday.\"",
+  "ja": "もー、お兄ちゃん！ 毎朝それ聞くー！",
+  "en": "\"Geez, Onii-chan! Every single morning!\"",
   "scene": "c1_morning"
  },
  {
@@ -44,43 +30,43 @@
  {
   "id": "c1_0016",
   "who": "akane",
-  "ja": "昨日もちゃんと寝たよ。二晩連続。医学界もびっくりだね。",
-  "en": "\"And I slept yesterday too. Two nights in a row. Medical science is baffled.\"",
+  "ja": "寝たよー！ ぐっすり！ 朝まで一回も起きなかったもん！",
+  "en": "\"And I slept! Super well! I didn't wake up once!\"",
   "scene": "c1_morning"
  },
  {
   "id": "c1_0018",
   "who": "akane",
-  "ja": "その顔、やめて。",
-  "en": "\"Stop doing the face.\"",
+  "ja": "お兄ちゃん、また見張ってるー。",
+  "en": "\"Onii-chan, you're hovering again.\"",
   "scene": "c1_morning"
  },
  {
   "id": "c1_0019",
   "who": "kohei",
-  "ja": "どの顔だよ。",
-  "en": "\"What face?\"",
+  "ja": "自分ちの台所に立ってるだけだ。",
+  "en": "\"I'm standing in my own kitchen.\"",
   "scene": "c1_morning"
  },
  {
   "id": "c1_0020",
   "who": "akane",
-  "ja": "お医者さんの顔。お兄ちゃん、免許持ってないでしょ。",
-  "en": "\"The doctor face. You don't have a license, Onii-chan.\"",
+  "ja": "じゃあ、卵焼きでも見張っててよー！",
+  "en": "\"Then go hover over the eggs!\"",
   "scene": "c1_morning"
  },
  {
   "id": "c1_0021",
   "who": "kohei",
-  "ja": "お前の名前入りの卵焼きがある。ほぼ免許だろ。",
-  "en": "\"I've got an egg with your name on it. That's basically a license.\"",
+  "ja": "お前の分なら、もう焼いてある。",
+  "en": "\"There's an egg with your name on it.\"",
   "scene": "c1_morning"
  },
  {
   "id": "c1_0022",
   "who": "akane",
-  "ja": "お弁当くらい、自分で作れるよ？ 私、けっこう器用なんだから。",
-  "en": "\"I could make my own lunch, you know. I'm very talented.\"",
+  "ja": "やったー。……お弁当くらい、自分で作れるのにー。",
+  "en": "\"Yaaay. …I could make my own lunch, you know.\"",
   "scene": "c1_morning"
  },
  {
@@ -93,8 +79,8 @@
  {
   "id": "c1_0024",
   "who": "akane",
-  "ja": "……そういうとこだよ、お兄ちゃん。",
-  "en": "\"…That's sort of my point.\"",
+  "ja": "……いつも、そうだよね。",
+  "en": "\"…You always are.\"",
   "scene": "c1_morning"
  },
  {
@@ -142,8 +128,8 @@
  {
   "id": "c1_0034",
   "who": "nanoha",
-  "ja": "また。ごぼうを量るのが、ほんとに苦手なの。もう病気だね。",
-  "en": "\"Again. She's very bad at measuring burdock. It's a sickness.\"",
+  "ja": "また。ごぼうだけは、どうしても量れない人なの。もう病気だね。",
+  "en": "\"Again. She can't measure burdock. It's a sickness.\"",
   "scene": "c1_morning"
  },
  {
@@ -151,13 +137,6 @@
   "who": "kohei",
   "ja": "おばさんに、ありがとうって伝えといて。",
   "en": "\"Tell her thanks.\"",
-  "scene": "c1_morning"
- },
- {
-  "id": "c1_0037",
-  "who": "nanoha",
-  "ja": "心を込めて言ってたって、伝えておくね。",
-  "en": "\"I'll tell her you said it like you meant it.\"",
   "scene": "c1_morning"
  },
  {
@@ -184,22 +163,22 @@
  {
   "id": "c1_0044",
   "who": "akane",
-  "ja": "考えてたよ。顔に出てた。",
-  "en": "\"He did. I saw his face.\"",
+  "ja": "考えてた、考えてたー。",
+  "en": "\"He totally did.\"",
   "scene": "c1_morning"
  },
  {
   "id": "c1_0045",
   "who": "kohei",
-  "ja": "お前、どっちの味方なんだよ。",
-  "en": "\"Whose side are you on?\"",
+  "ja": "裏切り者。",
+  "en": "\"Traitor.\"",
   "scene": "c1_morning"
  },
  {
   "id": "c1_0046",
   "who": "akane",
-  "ja": "なのはちゃん。きんぴら持ってきてくれたもん。",
-  "en": "\"Hers. She brought kinpira.\"",
+  "ja": "なのはちゃんが、きんぴら持ってきてくれたんだもん！",
+  "en": "\"Nanoha-chan brought kinpira!\"",
   "scene": "c1_morning"
  },
  {
@@ -213,7 +192,7 @@
   "id": "c1_0055",
   "who": "nanoha",
   "ja": "さて。クラス分け。",
-  "en": "\"So. Class assignments.\"",
+  "en": "\"Now then. Class assignments.\"",
   "scene": "c1_river"
  },
  {
@@ -289,8 +268,8 @@
  {
   "id": "c1_0066",
   "who": "nanoha",
-  "ja": "……そう思わされてるだけ。",
-  "en": "\"That's what they want you to think.\"",
+  "ja": "議事録には、そう書いてある。",
+  "en": "\"That's what it says in the minutes.\"",
   "scene": "c1_river"
  },
  {
@@ -331,15 +310,8 @@
  {
   "id": "c1_0079",
   "who": "kohei",
-  "ja": "見た目にだまされるなよ。",
-  "en": "\"Looks can be deceiving.\"",
-  "scene": "c1_river"
- },
- {
-  "id": "c1_0080",
-  "who": "nanoha",
-  "ja": "だから、私が直すの。",
-  "en": "\"That's why I fix them.\"",
+  "ja": "……ありがとな。",
+  "en": "\"…Thanks.\"",
   "scene": "c1_river"
  },
  {
@@ -366,7 +338,7 @@
  {
   "id": "c1_0085",
   "who": "kohei",
-  "ja": "月、水、金、土曜の朝。バイトが火曜、木曜、日曜。",
+  "ja": "月曜、水曜、金曜、土曜の朝。バイトが火曜、木曜、日曜。",
   "en": "\"Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Thursday, Sunday.\"",
   "scene": "c1_river"
  },
@@ -394,8 +366,8 @@
  {
   "id": "c1_0090",
   "who": "kohei",
-  "ja": "平気だって。忙しいの、嫌いじゃないし。",
-  "en": "\"It's fine. I like being busy.\"",
+  "ja": "平気だって。土曜の午後は空いてるし。",
+  "en": "\"It's fine. Saturday afternoons are free.\"",
   "scene": "c1_river"
  },
  {
@@ -408,8 +380,8 @@
  {
   "id": "c1_0093",
   "who": "nanoha",
-  "ja": "あ。おじいちゃんがね、今年の大桜は、何年かぶりの見頃なんだって。土曜日、上の神社の掃除を手伝うの。",
-  "en": "\"Oh. Grandpa says the Ōzakura's the best it's been in years. I'm helping him sweep up there Saturday.\"",
+  "ja": "あ。おじいちゃんがね、今年は神社の桜が、何年かぶりの見頃なんだって。土曜日、掃除を手伝うの。",
+  "en": "\"Oh. Grandpa says the shrine's cherries are the best they've been in years. I'm helping him sweep up there Saturday.\"",
   "scene": "c1_river"
  },
  {
@@ -464,8 +436,8 @@
  {
   "id": "c1_0105",
   "who": "rika",
-  "ja": "で、ふじさわくんも二のBなんだ。ふーん。ふーーーん。",
-  "en": "\"And Fujisawa-kun's in Two-B too. Hm. Hmmm.\"",
+  "ja": "で、ふじさわくんと一緒に来たんだ。ふーん。ふーーーん。",
+  "en": "\"And you walked in with Fujisawa-kun. Hm. Hmmm.\"",
   "scene": "c1_entrance"
  },
  {
@@ -478,15 +450,15 @@
  {
   "id": "c1_0107",
   "who": "rika",
-  "ja": "なんでもない！ ぜーんぜん！ 完全に中立な「ふーん」だから！",
-  "en": "\"Nothing! Nothing at all. A completely neutral hmmm.\"",
+  "ja": "なんでもない！ なんでもない！ ただの鼻歌だから！ ふんふふーん！",
+  "en": "\"Nothing! Nothing! I'm just humming! Hmm-hmm-hmmm!\"",
   "scene": "c1_entrance"
  },
  {
   "id": "c1_0108",
   "who": "ryosuke",
-  "ja": "……だから構造的に言えば、ホットドッグはサンドイッチなんだよ。",
-  "en": "\"—which is why, structurally, a hot dog is a sandwich.\"",
+  "ja": "……だから、たい焼きは頭から食べるのが正しいんだよ。",
+  "en": "\"—which is why the correct way to eat a taiyaki is head first.\"",
   "scene": "c1_entrance"
  },
  {
@@ -499,8 +471,8 @@
  {
   "id": "c1_0111",
   "who": "ryosuke",
-  "ja": "両側にパン。真ん中に具。つながっていても失格にはならない。サブマリンサンドだってつながってるけど、誰もあれをサンドイッチじゃないとは言わない。",
-  "en": "\"Bread on two sides. Filling in the middle. A hinge doesn't disqualify it. A sub roll has a hinge, and nobody says a sub isn't a sandwich.\"",
+  "ja": "頭が一番あんこが多い。熱いうちに一番おいしいところを食べて、しっぽで口直しをする。これは意見じゃない。熱力学だ。",
+  "en": "\"The head has the most bean paste. You eat the best part while it's still hot, and the tail cleans your palate. That isn't an opinion. It's thermodynamics.\"",
   "scene": "c1_entrance"
  },
  {
@@ -511,31 +483,24 @@
   "scene": "c1_entrance"
  },
  {
-  "id": "c1_0113",
-  "who": "ryosuke",
-  "ja": "それは反論じゃない。ただの時刻だ。",
-  "en": "\"That's not a counterargument. That's a timestamp.\"",
-  "scene": "c1_entrance"
- },
- {
   "id": "c1_0114",
   "who": "rika",
-  "ja": "ホットドッグだよ！ 名前に書いてあるじゃん！",
-  "en": "\"It's a hot DOG! It says so in the name!\"",
+  "ja": "しっぽからでしょ！ 一番おいしいとこは最後に取っとくの！ 常識じゃん！",
+  "en": "\"Tail first! You save the best part for last! Everybody knows that!\"",
   "scene": "c1_entrance"
  },
  {
   "id": "c1_0115",
   "who": "ryosuke",
-  "ja": "その理屈だと、ホットケーキはケーキってことになるね。",
-  "en": "\"By that logic, a pancake is a cake.\"",
+  "ja": "それだと、たどり着く頃には冷めてる。",
+  "en": "\"Then by the time you get there, it's cold.\"",
   "scene": "c1_entrance"
  },
  {
   "id": "c1_0116",
   "who": "rika",
-  "ja": "……違うの？",
-  "en": "\"…Isn't it?\"",
+  "ja": "……うそ。",
+  "en": "\"…Oh no.\"",
   "scene": "c1_entrance"
  },
  {
@@ -550,27 +515,6 @@
   "who": "kohei",
   "ja": "やめてくれ。",
   "en": "\"Please don't.\"",
-  "scene": "c1_entrance"
- },
- {
-  "id": "c1_0119",
-  "who": "ryosuke",
-  "ja": "ちなみに、全員二のBだ。席はもう決めてある。",
-  "en": "\"Also, we're all in Two-B. I've already chosen my seat.\"",
-  "scene": "c1_entrance"
- },
- {
-  "id": "c1_0120",
-  "who": "kohei",
-  "ja": "まだ教室も見てないだろ。",
-  "en": "\"We haven't seen the room yet.\"",
-  "scene": "c1_entrance"
- },
- {
-  "id": "c1_0121",
-  "who": "ryosuke",
-  "ja": "理論上で決めたんだよ。三列目の窓際。先生の自然な視線から外れつつ、冬はストーブに近い。",
-  "en": "\"I chose it theoretically. Third row, by the window, out of the teacher's natural sightline but close enough to the heater for winter.\"",
   "scene": "c1_entrance"
  },
  {
@@ -625,8 +569,8 @@
  {
   "id": "c1_0130",
   "who": "nanoha",
-  "ja": "こうへいのほうが簡単だったの。いつも、ふくだくんのすぐ下だから。ふくだくんは、すごく見つけやすい。",
-  "en": "\"Yours was easier. It's always right under Fukuda's. Fukuda is very easy to find.\"",
+  "ja": "こうへいのほうが簡単だったの。いつも、ふくだくんのすぐ下だから。ふくだくんは、見つけやすいし。",
+  "en": "\"Yours was easier. It's always right under Fukuda-kun's. Fukuda-kun is easy to find.\"",
   "scene": "c1_entrance"
  },
  {
@@ -660,22 +604,22 @@
  {
   "id": "c1_0143",
   "who": "natsuki",
-  "ja": "……六回目、かな？ なので、もうほぼプロです。手加減はいりません。",
-  "en": "\"…six times now? So I'm basically a professional. Please don't go easy on me.\"",
+  "ja": "……六回目、かな？ なので、手加減はいりません。",
+  "en": "\"…six times now? So please don't go easy on me.\"",
   "scene": "c1_intro"
  },
  {
   "id": "c1_0145",
   "who": "natsuki",
-  "ja": "剣道をやっていて、私を受け入れてくれる道場を探してます。あと、ホラー映画が大好きなので、一緒に観てくれる人がいたら、一生感謝します。",
-  "en": "\"I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, I'll be grateful forever.\"",
+  "ja": "剣道をやっていて、私の相手をしてくれる道場を探してます。あと、ホラー映画が大好きで、B級っぽいほど燃えます。一緒に観てくれる人がいたら、声をかけてください。",
+  "en": "\"I do kendo, and I'm looking for a dojo that'll put up with me. I also love horror movies, the cheesier the better, so if anyone wants to watch a bad one with me, come find me.\"",
   "scene": "c1_intro"
  },
  {
   "id": "c1_0148",
   "who": "natsuki",
   "ja": "よろしくお願いします。",
-  "en": "\"Please take care of me.\"",
+  "en": "\"Looking forward to this year.\"",
   "scene": "c1_intro"
  },
  {
@@ -702,7 +646,7 @@
  {
   "id": "c1_0156",
   "who": "natsuki",
-  "ja": "左の手のひら。つかが当たるところに、ちょうどタコがある。そこまで厚くなるには、何年もかかるんだよね。",
+  "ja": "左の手のひら。つかが当たるところに、ちょうど竹刀ダコがある。そこまで厚くなるには、何年もかかるんだよね。",
   "en": "\"Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick.\"",
   "scene": "c1_intro"
  },
@@ -737,15 +681,15 @@
  {
   "id": "c1_0169",
   "who": "kohei",
-  "ja": "それ、転校生向けの案内に載ってるのか？",
-  "en": "\"Is that in the welcome packet?\"",
+  "ja": "誰に聞いたんだよ。",
+  "en": "\"Who told you that?\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0170",
   "who": "natsuki",
-  "ja": "下駄箱に靴を入れる前に、もう聞かされたよ。ほんとだって。ドアの近くの子が、すっごく熱く語ってた。",
-  "en": "\"Someone told me before I'd even put my shoes in my locker. I'm not kidding. The girl by the door was very passionate about it.\"",
+  "ja": "ドアのとこの子。下駄箱に靴を入れる前に、もう聞かされた。",
+  "en": "\"The girl by the door, before I'd even put my shoes in my locker.\"",
   "scene": "c1_lunch"
  },
  {
@@ -758,8 +702,8 @@
  {
   "id": "c1_0172",
   "who": "natsuki",
-  "ja": "全員に「彼女を作る時間がない」って言ったんだって。ほんと？",
-  "en": "\"She said you told every one of them you didn't have time for a girlfriend. Is that true?\"",
+  "ja": "三人全員に「彼女を作る時間がない」って言ったんだって。ほんと？",
+  "en": "\"She said you told all three of them you didn't have time for a girlfriend. True?\"",
   "scene": "c1_lunch"
  },
  {
@@ -777,31 +721,24 @@
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0176",
+  "id": "c1_0261",
   "who": "natsuki",
-  "ja": "それって、すっごく正直なのか、すっごく寂しいのか。決められないなあ。",
-  "en": "\"That's either really honest or really sad. I can't decide.\"",
+  "ja": "いつもそんなに背筋伸ばして座ってるの？",
+  "en": "\"Do you always sit this straight?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0177",
+  "id": "c1_0262",
   "who": "kohei",
-  "ja": "決まったら教えてくれ。",
-  "en": "\"Let me know when you do.\"",
-  "scene": "c1_lunch"
- },
- {
-  "id": "c1_0178",
-  "who": "natsuki",
-  "ja": "うん、教える。私、決断力あるから。……だいたいは。",
-  "en": "\"I will. I'm very decisive. Usually.\"",
+  "ja": "俺は……",
+  "en": "\"I—\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0180",
   "who": "natsuki",
-  "ja": "ふふ、きみ、面白いね。で、段は？ 初段？",
-  "en": "\"Okay, you're fun. So what are you, {shodan|first dan}?\"",
+  "ja": "段は？ 初段？",
+  "en": "\"What are you, {shodan|first dan}?\"",
   "scene": "c1_lunch"
  },
  {
@@ -814,8 +751,8 @@
  {
   "id": "c1_0182",
   "who": "natsuki",
-  "ja": "おっ、自信家だ。いいね。礼儀正しいだけの相手と稽古するの、苦手なんだ。",
-  "en": "\"Oh, he's cocky. Good. I hate practicing with polite people.\"",
+  "ja": "審査されてるみたいな座り方してるくせに、言うじゃん。",
+  "en": "\"Big talk for someone who sits like he's being graded.\"",
   "scene": "c1_lunch"
  },
  {
@@ -842,50 +779,50 @@
  {
   "id": "c1_0188",
   "who": "natsuki",
-  "ja": "あ、どうも。えっと、きみは……",
+  "ja": "あ、どうも。えっと……",
   "en": "\"Oh—hi. You're…\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0189",
   "who": "nanoha",
-  "ja": "たちばななのはです。二列向こうの席。去年、学級委員の補佐をやってたから……今もクリップボードを持ってます。",
-  "en": "\"Tachibana Nanoha. I sit two rows over. I was the class representative's assistant last year, so I still own a clipboard.\"",
+  "ja": "たちばな、なのはです。えっと……二列向こうの席です。",
+  "en": "\"Tachibana Nanoha. Um— I sit two rows over.\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0190",
   "who": "nanoha",
-  "ja": "よかったら、放課後に校内を案内しようか？ 図書室とか、音楽室とか。どの下駄箱がひっかかるか。どの自販機がお金を食べるか。そういうの。",
-  "en": "\"If you'd like, I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing.\"",
+  "ja": "よかったら……放課後、校内を案内しましょうか？ 図書室とか、音楽室とか。どの下駄箱がひっかかるか。どの自販機がお金を食べるか。そういうのです。",
+  "en": "\"If you'd like… I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing.\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0192",
   "who": "natsuki",
-  "ja": "……ほんとに？ 案内してくれるの？",
-  "en": "\"…Really? You'd do that?\"",
+  "ja": "……ほんとに？",
+  "en": "\"…Really?\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0193",
   "who": "nanoha",
-  "ja": "大したツアーじゃないよ。自販機のところが、一番大事。",
+  "ja": "大したツアーじゃないですよ。自販機のところが、一番大事です。",
   "en": "\"It's not a big tour. The vending machine part is the most important.\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0194",
   "who": "natsuki",
-  "ja": "すっごく嬉しい。ほんとに。ありがとう。",
-  "en": "\"I would love that. Really. Thank you.\"",
+  "ja": "うん、ぜひ。で、お金を食べる自販機って、どれ？",
+  "en": "\"I'd love that. Which one eats coins?\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0195",
   "who": "natsuki",
-  "ja": "あ、それと、なつきって呼んで。いいかな？ 押しが強いって、よく言われるんだけど。",
-  "en": "\"Oh, and call me Natsuki. Is that okay? People tell me I'm pushy.\"",
+  "ja": "あ、それと、なつきって呼んで。",
+  "en": "\"Oh, and call me Natsuki.\"",
   "scene": "c1_lunch"
  },
  {
@@ -905,15 +842,15 @@
  {
   "id": "c1_0198",
   "who": "nanoha",
-  "ja": "段階を踏んでるの。慣れるのに、時間がいるから。",
-  "en": "\"I'm working up to it. I need time to adjust.\"",
+  "ja": "段階を踏んでるの。",
+  "en": "\"I'm working up to it.\"",
   "scene": "c1_lunch"
  },
  {
   "id": "c1_0199",
   "who": "natsuki",
   "ja": "わかった、わかった。じゃあ、私は「なのは」って呼ぶね。いい？ どっちにしろ呼ぶけど。",
-  "en": "\"Okay, okay. Then I'll just call you Nanoha. Is that all right? I'm going to do it anyway.\"",
+  "en": "\"Okay, okay. Then I'll call you Nanoha. All right? I'm doing it anyway.\"",
   "scene": "c1_lunch"
  },
  {
@@ -926,29 +863,29 @@
  {
   "id": "c1_0206",
   "who": "natsuki",
-  "ja": "この学校、いいね。なんか……使い込まれてる感じがする。わかる？",
-  "en": "\"This school's nice. It feels… lived in. Does that make sense?\"",
+  "ja": "ねえ、真面目な質問。この校舎って、出る？ 音楽室で、なんかコンコン鳴ってたんだけど。",
+  "en": "\"Okay, real question. Is this building haunted? Something in the music room was knocking.\"",
   "scene": "c1_interlude"
  },
  {
   "id": "c1_0207",
   "who": "nanoha",
-  "ja": "すごく古いからね。暖房の音が、おばけみたいなの。",
-  "en": "\"It's very old. The heating sounds like a ghost.\"",
+  "ja": "古いからね。暖房の音が、おばけみたいなの。",
+  "en": "\"It's old. The heating sounds like a ghost.\"",
   "scene": "c1_interlude"
  },
  {
   "id": "c1_0208",
   "who": "natsuki",
-  "ja": "最高。もう好きになっちゃった。",
-  "en": "\"Perfect. I love it already.\"",
+  "ja": "最高。",
+  "en": "\"Perfect.\"",
   "scene": "c1_interlude"
  },
  {
   "id": "c1_0209",
   "who": "natsuki",
-  "ja": "で。なのはと、ふじさわって。",
-  "en": "\"So. You and Fujisawa.\"",
+  "ja": "で。なのはと、ふじさわって？",
+  "en": "\"So. What about you and Fujisawa?\"",
   "scene": "c1_interlude"
  },
  {
@@ -975,8 +912,8 @@
  {
   "id": "c1_0213",
   "who": "natsuki",
-  "ja": "うそ。じゃあ、ほんとの幼なじみなんだ。",
-  "en": "\"No way. So you're real childhood friends.\"",
+  "ja": "うそ。ほんとの幼なじみ？ 赤ちゃんの頃の写真とかも？",
+  "en": "\"No way. Real childhood friends? Baby pictures and everything?\"",
   "scene": "c1_interlude"
  },
  {
@@ -984,13 +921,6 @@
   "who": "nanoha",
   "ja": "ほんとの幼なじみ。",
   "en": "\"Real childhood friends.\"",
-  "scene": "c1_interlude"
- },
- {
-  "id": "c1_0216",
-  "who": "natsuki",
-  "ja": "……いいなあ、そういうの。",
-  "en": "\"That's really nice.\"",
   "scene": "c1_interlude"
  },
  {
@@ -1003,22 +933,22 @@
  {
   "id": "c1_0219",
   "who": "natsuki",
-  "ja": "ねえ。変なこと言うけど。",
-  "en": "\"Hey. This is going to sound weird.\"",
+  "ja": "ねえ。ふじさわって、東北のほうの大会に出たことある？ 仙台のあたりとか。",
+  "en": "\"Hey. Does Fujisawa ever compete up north? Around Sendai?\"",
   "scene": "c1_interlude"
  },
  {
   "id": "c1_0220",
   "who": "nanoha",
-  "ja": "変なの、好きだよ。",
-  "en": "\"I like weird.\"",
+  "ja": "聞いたことないけど……どうして？",
+  "en": "\"Not that I know of. Why?\"",
   "scene": "c1_interlude"
  },
  {
   "id": "c1_0221",
   "who": "natsuki",
-  "ja": "ふじさわってさ……前にも会ったことがあるような……そんな感じ、しない？",
-  "en": "\"Does he ever seem like… someone you've met before?\"",
+  "ja": "どこかで会ったことある気がするんだよね。どこだったか、思い出せないんだけど。",
+  "en": "\"I feel like I've met him somewhere before. I just can't place it.\"",
   "scene": "c1_interlude"
  },
  {
@@ -1031,22 +961,8 @@
  {
   "id": "c1_0224",
   "who": "natsuki",
-  "ja": "だよね！ そりゃそうだ！ 忘れて。時差ボケのせい。",
-  "en": "\"Okay, fair! Fair. Forget it. It's the jet lag talking.\"",
-  "scene": "c1_interlude"
- },
- {
-  "id": "c1_0225",
-  "who": "nanoha",
-  "ja": "仙台から来たんでしょ。電車でたった三時間くらいだよ。",
-  "en": "\"You moved from Sendai. That's barely three hours by train.\"",
-  "scene": "c1_interlude"
- },
- {
-  "id": "c1_0226",
-  "who": "natsuki",
-  "ja": "すっごく強烈な時差ボケなの。",
-  "en": "\"Very intense jet lag.\"",
+  "ja": "あはは、そっか。じゃあ、ふじさわがよくある顔なだけだね。本人には内緒ね。",
+  "en": "\"Ha— okay. Then he's just got a very ordinary face. Don't tell him I said that.\"",
   "scene": "c1_interlude"
  },
  {
@@ -1115,7 +1031,7 @@
  {
   "id": "c1_0245",
   "who": "kohei",
-  "ja": "……普通に、いいやつなんじゃないか。",
+  "ja": "……悪いやつじゃ、なさそうだな。",
   "en": "\"She seems fine.\"",
   "scene": "c1_night"
  },
@@ -1136,7 +1052,7 @@
  {
   "id": "c1_0248",
   "who": "nanoha",
-  "ja": "受け入れてくれる道場を探してる、って言ったとき。こうへい、いつもの……",
+  "ja": "相手をしてくれる道場を探してる、って言ったとき。こうへい、いつもの……",
   "en": "\"When she said she was looking for a dojo that would put up with her. You did your—\"",
   "scene": "c1_night"
  },
@@ -1178,8 +1094,22 @@
  {
   "id": "c1_0256",
   "who": "kohei",
-  "ja": "おやすみ。",
-  "en": "\"Night.\"",
+  "ja": "おやすみ、チビ。",
+  "en": "\"Night, Chibi.\"",
   "scene": "c1_night"
+ },
+ {
+  "id": "p_0007",
+  "who": "past_natsuki",
+  "ja": "……遅いですよ。",
+  "en": "\"You're late.\"",
+  "scene": "c1_dream"
+ },
+ {
+  "id": "p_0010",
+  "who": "past_natsuki",
+  "ja": "また怪我して。……手、見せてください。じっとして。",
+  "en": "\"Hurt again. Give me your hand… Hold still.\"",
+  "scene": "c1_dream"
  }
 ]

@@ -809,5 +809,369 @@
   ],
   "note": "re-voiced Oct 17 after the second independent review",
   "direction": "friendly and casual, at conversational volume, a little self-aware about being pushy"
+ },
+ {
+  "key": "retake.c1_dream.despina",
+  "ids": [
+   "p_0007",
+   "p_0010"
+  ],
+  "texts": [
+   "……遅いですよ。",
+   "また怪我して。……手、見せてください。じっとして。"
+  ],
+  "note": "Oct 18: the audition take the author picked (production/voice-auditions/oct18-dream/dream-2-Despina.mp3, voice Despina), reused as is; the echo is added by voice_pack.py"
+ },
+ {
+  "key": "rev1018.c1_morning.akane.1",
+  "ids": [
+   "c1_0014",
+   "c1_0016",
+   "c1_0018",
+   "c1_0020",
+   "c1_0022",
+   "c1_0024",
+   "c1_0044",
+   "c1_0046"
+  ],
+  "texts": [
+   "もー、お兄ちゃん！ 毎朝それ聞くー！",
+   "寝たよー！ ぐっすり！ 朝まで一回も起きなかったもん！",
+   "お兄ちゃん、また見張ってるー。",
+   "じゃあ、卵焼きでも見張っててよー！",
+   "やったー。……お弁当くらい、自分で作れるのにー。",
+   "……いつも、そうだよね。",
+   "考えてた、考えてたー。",
+   "なのはちゃんが、きんぴら持ってきてくれたんだもん！"
+  ],
+  "input": {
+   "prompt": "もー、お兄ちゃん！ 毎朝それ聞くー！\n\n寝たよー！ ぐっすり！ 朝まで一回も起きなかったもん！\n\nお兄ちゃん、また見張ってるー。\n\nじゃあ、卵焼きでも見張っててよー！\n\nやったー。……お弁当くらい、自分で作れるのにー。\n\n……いつも、そうだよね。\n\n考えてた、考えてたー。\n\nなのはちゃんが、きんぴら持ってきてくれたんだもん！",
+   "voice": "Aoede",
+   "style_instructions": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman. These are separate lines of dialogue from a morning scene at home: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_morning.kohei.1",
+  "ids": [
+   "c1_0019",
+   "c1_0021",
+   "c1_0045"
+  ],
+  "texts": [
+   "自分ちの台所に立ってるだけだ。",
+   "お前の分なら、もう焼いてある。",
+   "裏切り者。"
+  ],
+  "input": {
+   "prompt": "自分ちの台所に立ってるだけだ。\n\nお前の分なら、もう焼いてある。\n\n裏切り者。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. These are separate lines of dialogue from a morning scene at home: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_morning.nanoha.1",
+  "ids": [
+   "c1_0034"
+  ],
+  "texts": [
+   "また。ごぼうだけは、どうしても量れない人なの。もう病気だね。"
+  ],
+  "input": {
+   "prompt": "また。ごぼうだけは、どうしても量れない人なの。もう病気だね。",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. A line of dialogue from a morning scene at home."
+  }
+ },
+ {
+  "key": "rev1018.c1_river.nanoha.1",
+  "ids": [
+   "c1_0066",
+   "c1_0093"
+  ],
+  "texts": [
+   "議事録には、そう書いてある。",
+   "あ。おじいちゃんがね、今年は神社の桜が、何年かぶりの見頃なんだって。土曜日、掃除を手伝うの。"
+  ],
+  "input": {
+   "prompt": "議事録には、そう書いてある。\n\nあ。おじいちゃんがね、今年は神社の桜が、何年かぶりの見頃なんだって。土曜日、掃除を手伝うの。",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. These are separate lines of dialogue from a walk to school along the river: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_river.kohei.1",
+  "ids": [
+   "c1_0079",
+   "c1_0085",
+   "c1_0090"
+  ],
+  "texts": [
+   "……ありがとな。",
+   "月曜、水曜、金曜、土曜の朝。バイトが火曜、木曜、日曜。",
+   "平気だって。土曜の午後は空いてるし。"
+  ],
+  "input": {
+   "prompt": "……ありがとな。\n\n月曜、水曜、金曜、土曜の朝。バイトが火曜、木曜、日曜。\n\n平気だって。土曜の午後は空いてるし。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. These are separate lines of dialogue from a walk to school along the river: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_entrance.rika.1",
+  "ids": [
+   "c1_0105",
+   "c1_0107",
+   "c1_0114",
+   "c1_0116"
+  ],
+  "texts": [
+   "で、ふじさわくんと一緒に来たんだ。ふーん。ふーーーん。",
+   "なんでもない！ なんでもない！ ただの鼻歌だから！ ふんふふーん！",
+   "しっぽからでしょ！ 一番おいしいとこは最後に取っとくの！ 常識じゃん！",
+   "……うそ。"
+  ],
+  "input": {
+   "prompt": "で、ふじさわくんと一緒に来たんだ。ふーん。ふーーーん。\n\nなんでもない！ なんでもない！ ただの鼻歌だから！ ふんふふーん！\n\nしっぽからでしょ！ 一番おいしいとこは最後に取っとくの！ 常識じゃん！\n\n……うそ。",
+   "voice": "Laomedeia",
+   "style_instructions": "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright. These are separate lines of dialogue from a busy school entrance: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_entrance.ryosuke.1",
+  "ids": [
+   "c1_0108",
+   "c1_0111",
+   "c1_0115"
+  ],
+  "texts": [
+   "……だから、たい焼きは頭から食べるのが正しいんだよ。",
+   "頭が一番あんこが多い。熱いうちに一番おいしいところを食べて、しっぽで口直しをする。これは意見じゃない。熱力学だ。",
+   "それだと、たどり着く頃には冷めてる。"
+  ],
+  "input": {
+   "prompt": "……だから、たい焼きは頭から食べるのが正しいんだよ。\n\n頭が一番あんこが多い。熱いうちに一番おいしいところを食べて、しっぽで口直しをする。これは意見じゃない。熱力学だ。\n\nそれだと、たどり着く頃には冷めてる。",
+   "voice": "Achird",
+   "style_instructions": "A 16-year-old male high-school student. Precise, a little smug, dry and amused know-it-all. These are separate lines of dialogue from a busy school entrance: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_entrance.nanoha.1",
+  "ids": [
+   "c1_0130"
+  ],
+  "texts": [
+   "こうへいのほうが簡単だったの。いつも、ふくだくんのすぐ下だから。ふくだくんは、見つけやすいし。"
+  ],
+  "input": {
+   "prompt": "こうへいのほうが簡単だったの。いつも、ふくだくんのすぐ下だから。ふくだくんは、見つけやすいし。",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. A line of dialogue from a busy school entrance."
+  }
+ },
+ {
+  "key": "rev1018.c1_intro.natsuki.1",
+  "ids": [
+   "c1_0143",
+   "c1_0145",
+   "c1_0156"
+  ],
+  "texts": [
+   "……六回目、かな？ なので、手加減はいりません。",
+   "剣道をやっていて、私の相手をしてくれる道場を探してます。あと、ホラー映画が大好きで、B級っぽいほど燃えます。一緒に観てくれる人がいたら、声をかけてください。",
+   "左の手のひら。つかが当たるところに、ちょうど竹刀ダコがある。そこまで厚くなるには、何年もかかるんだよね。"
+  ],
+  "input": {
+   "prompt": "……六回目、かな？ なので、手加減はいりません。\n\n剣道をやっていて、私の相手をしてくれる道場を探してます。あと、ホラー映画が大好きで、B級っぽいほど燃えます。一緒に観てくれる人がいたら、声をかけてください。\n\n左の手のひら。つかが当たるところに、ちょうど竹刀ダコがある。そこまで厚くなるには、何年もかかるんだよね。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Warm, bright and quietly confident; charismatic, friendly and a little playful, never loud. Must sound like a teenager. These are separate lines of dialogue from a classroom: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_lunch.kohei.1",
+  "ids": [
+   "c1_0169",
+   "c1_0262"
+  ],
+  "texts": [
+   "誰に聞いたんだよ。",
+   "俺は……"
+  ],
+  "input": {
+   "prompt": "誰に聞いたんだよ。\n\n俺は……",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. These are separate lines of dialogue from lunch in the classroom: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_lunch.natsuki.1",
+  "ids": [
+   "c1_0170",
+   "c1_0172",
+   "c1_0261",
+   "c1_0180",
+   "c1_0182",
+   "c1_0188",
+   "c1_0192",
+   "c1_0194",
+   "c1_0195"
+  ],
+  "texts": [
+   "ドアのとこの子。下駄箱に靴を入れる前に、もう聞かされた。",
+   "三人全員に「彼女を作る時間がない」って言ったんだって。ほんと？",
+   "いつもそんなに背筋伸ばして座ってるの？",
+   "段は？ 初段？",
+   "審査されてるみたいな座り方してるくせに、言うじゃん。",
+   "あ、どうも。えっと……",
+   "……ほんとに？",
+   "うん、ぜひ。で、お金を食べる自販機って、どれ？",
+   "あ、それと、なつきって呼んで。"
+  ],
+  "input": {
+   "prompt": "ドアのとこの子。下駄箱に靴を入れる前に、もう聞かされた。\n\n三人全員に「彼女を作る時間がない」って言ったんだって。ほんと？\n\nいつもそんなに背筋伸ばして座ってるの？\n\n段は？ 初段？\n\n審査されてるみたいな座り方してるくせに、言うじゃん。\n\nあ、どうも。えっと……\n\n……ほんとに？\n\nうん、ぜひ。で、お金を食べる自販機って、どれ？\n\nあ、それと、なつきって呼んで。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Warm, bright and quietly confident; charismatic, friendly and a little playful, never loud. Must sound like a teenager. These are separate lines of dialogue from lunch in the classroom: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_lunch.nanoha.1",
+  "ids": [
+   "c1_0189",
+   "c1_0190",
+   "c1_0193",
+   "c1_0198"
+  ],
+  "texts": [
+   "たちばな、なのはです。えっと……二列向こうの席です。",
+   "よかったら……放課後、校内を案内しましょうか？ 図書室とか、音楽室とか。どの下駄箱がひっかかるか。どの自販機がお金を食べるか。そういうのです。",
+   "大したツアーじゃないですよ。自販機のところが、一番大事です。",
+   "段階を踏んでるの。"
+  ],
+  "input": {
+   "prompt": "たちばな、なのはです。えっと……二列向こうの席です。\n\nよかったら……放課後、校内を案内しましょうか？ 図書室とか、音楽室とか。どの下駄箱がひっかかるか。どの自販機がお金を食べるか。そういうのです。\n\n大したツアーじゃないですよ。自販機のところが、一番大事です。\n\n段階を踏んでるの。",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. These are separate lines of dialogue from lunch in the classroom: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_interlude.natsuki.1",
+  "ids": [
+   "c1_0206",
+   "c1_0208",
+   "c1_0209",
+   "c1_0213",
+   "c1_0219",
+   "c1_0221",
+   "c1_0224"
+  ],
+  "texts": [
+   "この学校、いいね。なんか……いろんな人が過ごしてきた感じがする。わかる？",
+   "最高。",
+   "で。なのはと、ふじさわって？",
+   "うそ。ほんとの幼なじみ？ 赤ちゃんの頃の写真とかも？",
+   "ねえ。ふじさわって、東北のほうの大会に出たことある？ 仙台のあたりとか。",
+   "どこかで会ったことある気がするんだよね。どこだったか、思い出せないんだけど。",
+   "あはは、そっか。きっと、よくある顔なんだね。"
+  ],
+  "input": {
+   "prompt": "この学校、いいね。なんか……いろんな人が過ごしてきた感じがする。わかる？\n\n最高。\n\nで。なのはと、ふじさわって？\n\nうそ。ほんとの幼なじみ？ 赤ちゃんの頃の写真とかも？\n\nねえ。ふじさわって、東北のほうの大会に出たことある？ 仙台のあたりとか。\n\nどこかで会ったことある気がするんだよね。どこだったか、思い出せないんだけど。\n\nあはは、そっか。きっと、よくある顔なんだね。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Warm, bright and quietly confident; charismatic, friendly and a little playful, never loud. Must sound like a teenager. These are separate lines of dialogue from an empty classroom after school: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_interlude.nanoha.1",
+  "ids": [
+   "c1_0207",
+   "c1_0220"
+  ],
+  "texts": [
+   "古いからね。暖房の音が、おばけみたいなの。",
+   "聞いたことないけど……どうして？"
+  ],
+  "input": {
+   "prompt": "古いからね。暖房の音が、おばけみたいなの。\n\n聞いたことないけど……どうして？",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. These are separate lines of dialogue from an empty classroom after school: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_night.kohei.1",
+  "ids": [
+   "c1_0245",
+   "c1_0256"
+  ],
+  "texts": [
+   "……悪いやつじゃ、なさそうだな。",
+   "おやすみ、チビ。"
+  ],
+  "input": {
+   "prompt": "……悪いやつじゃ、なさそうだな。\n\nおやすみ、チビ。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. These are separate lines of dialogue from a quiet street at night: give each line its own natural emotion, and leave a clear pause between lines."
+  }
+ },
+ {
+  "key": "rev1018.c1_night.nanoha.1",
+  "ids": [
+   "c1_0248"
+  ],
+  "texts": [
+   "相手をしてくれる道場を探してる、って言ったとき。こうへい、いつもの……"
+  ],
+  "input": {
+   "prompt": "相手をしてくれる道場を探してる、って言ったとき。こうへい、いつもの……",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. A line of dialogue from a quiet street at night."
+  }
+ },
+ {
+  "key": "retake.c1_0021",
+  "ids": [
+   "c1_0021"
+  ],
+  "texts": [
+   "お前の分なら、もう焼いてある。"
+  ],
+  "note": "re-voiced Oct 18: kana やいて to avoid a misread"
+ },
+ {
+  "key": "retake.c1_0024",
+  "ids": [
+   "c1_0024"
+  ],
+  "texts": [
+   "……いつも、そうだよね。"
+  ],
+  "note": "re-voiced Oct 18: first take had a stray もう"
+ },
+ {
+  "key": "retake.c1_0066",
+  "ids": [
+   "c1_0066"
+  ],
+  "texts": [
+   "議事録には、そう書いてある。"
+  ],
+  "note": "re-voiced Oct 18: kana ぎじろく; the first take was heard as きじろく"
+ },
+ {
+  "key": "retake.c1_0206",
+  "ids": [
+   "c1_0206"
+  ],
+  "texts": [
+   "ねえ、真面目な質問。この校舎って、出る？ 音楽室で、なんかコンコン鳴ってたんだけど。"
+  ],
+  "note": "re-voiced Oct 18: new line after cold-read round 2"
+ },
+ {
+  "key": "retake.c1_0224",
+  "ids": [
+   "c1_0224"
+  ],
+  "texts": [
+   "あはは、そっか。じゃあ、ふじさわがよくある顔なだけだね。本人には内緒ね。"
+  ],
+  "note": "re-voiced Oct 18: new line after cold-read round 2"
  }
 ]

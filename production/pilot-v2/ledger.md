@@ -25,5 +25,8 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-18 | Ch1 revision, fixes: dream CG inside-wrist edit (NB Pro 2K ×2) and a new dream living still (4 s); intro CG hair and classmates (NB Pro 2K ×2) and its falter face (NB Pro 2K ×2) | 7 | $1.46 |
 | 10-18 | After the cold read: intro CG classmate (NB Pro 2K ×2) and a stronger falter (NB Pro 2K ×2) | 4 | $0.60 |
 | 10-18 | On-model fix: one petal on Nanoha's braid in the collar CG (NB Pro 2K ×2) | 2 | $0.30 |
+| 10-18 | After cold read round 2: the falter's gaze turned to the window side (NB Pro 2K ×2) | 2 | $0.30 |
+| 10-18 | Voices: 16 batched Gemini TTS takes for 55 changed lines (~5,900 characters) and 5 single-line retakes; the dream reuses the Despina audition take (no cost) | 21 | $0.33 |
+| 10-18 | Voice QA: three ElevenLabs transcripts (the joined new takes, the retakes, the final packed clips; ~11 min) | 3 | $0.32 |
 
-**Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18) so far: about $3.82; running total about $12.32.
+**Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18): about $4.77; running total about $13.27.
