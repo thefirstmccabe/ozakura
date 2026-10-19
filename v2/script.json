@@ -714,7 +714,7 @@
 {
 "t": "nar",
 "id": "c1_0075",
-"text": "She's had to reach up for it since middle school."
+"text": "She's needed the extra inches since middle school."
 },
 {
 "t": "nar",
@@ -1834,13 +1834,13 @@
 "t": "say",
 "id": "c1_0206",
 "who": "natsuki",
-"text": "\"Okay, real question. Is this building haunted? Something in the music room was knocking.\""
+"text": "\"Serious question. Is this building haunted? Something in the music room was knocking.\""
 },
 {
 "t": "say",
 "id": "c1_0207",
 "who": "nanoha",
-"text": "\"It's old. The heating sounds like a ghost.\"",
+"text": "\"It's old. The pipes sound like a ghost.\"",
 "face": "school_smile"
 },
 {
@@ -1981,7 +1981,7 @@
 "t": "say",
 "id": "c1_0224",
 "who": "natsuki",
-"text": "\"Ha— okay. Then he's just got a very ordinary face. Don't tell him I said that.\""
+"text": "\"Ha— okay. Then it's his face. He's got kind of a normal one, right? Don't tell him I said that.\""
 },
 {
 "t": "nar",
@@ -2065,7 +2065,7 @@
 {
 "t": "nar",
 "id": "c1_0236",
-"text": "That's when Nanoha comes up the street with her school bag over her shoulder, back from walking Mizuno home. Mizuno lives by the station."
+"text": "That's when Nanoha comes up the street with her school bag over her shoulder, back from walking Mizuno home to her place by the station."
 },
 {
 "t": "show",

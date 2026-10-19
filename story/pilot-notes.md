@@ -223,7 +223,7 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
 - **Natsuki:**
   - Loves horror movies, "the cheesier the better."
   - Two club invitations and karaoke on her first morning; the gossip about Kōhei's three turned-down confessions came from "the girl by the door."
-  - Asks Nanoha whether the building is haunted (something knocking in the music room); "the heating sounds like a ghost."
+  - Asks Nanoha whether the building is haunted (something knocking in the music room); "the pipes sound like a ghost."
   - She lives by the station; Nanoha walked her home after the tour.
 - **Ryōsuke:** argues that taiyaki are eaten head first ("thermodynamics").
 - **Rika:** a different novelty clip every day; matching keychains.
