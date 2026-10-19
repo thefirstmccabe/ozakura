@@ -1,0 +1,11 @@
+# Translator's notes (style guide §5). One per line:  term | note
+# A term written {term|gloss} in the script gets a dotted underline; tapping it opens this note without advancing
+# the text, and the menu's Notes page collects every note the reader has met. Terms match case-insensitively.
+# Keep notes to one or two plain sentences. They explain the word, never the story (no clue hints).
+# The compiler puts the notes the script uses into v2/script.json and lists any that are unused.
+
+karaage | Japanese fried chicken: bite-size pieces marinated in soy sauce, ginger and garlic, dusted in starch and deep-fried. A lunch-box staple, because it's still good cold.
+fusuma | A sliding door of heavy paper on a wooden frame, used between rooms in a Japanese house. It doesn't lock, and you can hear through it.
+kinpira | Kinpira gobō: burdock root and carrot cut into thin strips, stir-fried, then simmered in soy sauce, sugar and mirin. An everyday side dish that keeps for days, so it's easy to make too much of.
+taiyaki | A fish-shaped griddle cake (the name means "baked sea bream"), usually filled with sweet red-bean paste and sold hot from street stalls. Whether to start with the head or the tail is an old argument in Japan.
+shodan | The first dan grade in kendo, the first rank above the beginner grades, earned at a formal grading exam. Kendo has no belts; the rank comes as a certificate. Serious high-school players usually hold first or second dan.

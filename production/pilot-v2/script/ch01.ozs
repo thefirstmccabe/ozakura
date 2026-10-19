@@ -13,7 +13,8 @@
 #   @bgm name  @bgm -   @sfx name   @wait seconds   @flash white
 #   @card text   @chapter n | title   @mode interlude Label   @mode normal   @endchapter n
 #   @hold on / @hold off   taps don't skip the waits and crossfades in between (the wordless cold open)
-#   {term|gloss}  Japanese term shown with a small English gloss (style guide §5)
+#   {term|gloss}  Japanese term shown with a small English gloss (style guide §5); if notes.txt has the term,
+#                 it's also underlined and opens a translator's note when tapped
 #
 # Names in the Japanese lines are in kana until their kanji are chosen (pilot-notes fix 14).
 
@@ -47,11 +48,11 @@
 > Second year of high school starts today. It doesn't feel like anything starts. It feels like Monday.  #c1_0004
 > I get up.  #c1_0005
 @bg bg_fujisawa_kitchen
-> The rice was on the timer last night, so the kitchen already smells like steam. Eggs, the leftover spinach, the last of the frozen karaage. Two lunch boxes, side by side on the counter.  #c1_0006
+> The rice was on the timer last night, so the kitchen already smells like steam. Eggs, the leftover spinach, the last of the frozen {karaage|fried chicken}. Two lunch boxes, side by side on the counter.  #c1_0006
 > I've gotten fast at this. Fast enough to do it while reading the whiteboard on the fridge.  #c1_0007
 > Kendo: Monday, Wednesday, Friday and Saturday morning. Hoshino Kitchen: Tuesday, Thursday and Sunday. A red circle around the 18, Akane's clinic day. All of it in my handwriting.  #c1_0008
 > All of it except the bottom line, which still says "Garbage: burnables, Mon/Thu" in Dad's. He wrote it last spring. I've never written over it.  #c1_0009
-> The fusuma to Mom's room is closed. It usually is.  #c1_0010
+> The {fusuma|sliding door} to Mom's room is closed. It usually is.  #c1_0010
 @wait 0.6
 @show akane school_sleepy c
 akane: "Morning, Onii-chan…" || おはよ、お兄ちゃん……  #c1_0011
@@ -78,7 +79,7 @@ kohei(deadpan): "You're already in." || もう入ってるだろ。  #c1_0028
 nanoha<happy>: "Then I've arrived. Good morning, Akane-chan." || じゃあ、到着しました。おはよう、あかねちゃん。  #c1_0029
 akane<happy>: "Morning, Nanoha-chan!" || おはよ、なのはちゃん！  #c1_0030
 > She sets a plastic container on the table.  #c1_0031
-nanoha<smile>: "Kinpira. Mom made too much again." || きんぴら。お母さんが、また作りすぎちゃって。  #c1_0032
+nanoha<smile>: "{Kinpira|braised burdock}. Mom made too much again." || きんぴら。お母さんが、また作りすぎちゃって。  #c1_0032
 kohei(neutral): "Again." || また、か。  #c1_0033
 nanoha<deadpan>: "Again. She can't measure burdock. It's a sickness." || また。ごぼうだけは、どうしても量れない人なの。もう病気だね。  #c1_0034
 > She's been bringing food over for about a year now. I used to argue. Somewhere around last summer, I gave up.  #c1_0035
@@ -94,7 +95,7 @@ kohei(annoyed): "Traitor." || 裏切り者。  #c1_0045
 akane<happy>: "Nanoha-chan brought kinpira!" || なのはちゃんが、きんぴら持ってきてくれたんだもん！  #c1_0046
 @hideall
 > I wrap the lunches. I knock twice on the fusuma.  #c1_0047
-kohei(neutral): "Mom, we're heading out. There's rice in the cooker and miso on the stove. Just heat it up." || 母さん、行ってくる。ご飯は炊飯器、味噌汁はコンロにあるから。温めて食べて。  #c1_0048
+kohei(neutral): "Mom, we're heading out. There's rice in the cooker and miso soup on the stove. Just heat it up." || 母さん、行ってくる。ご飯は炊飯器、味噌汁はコンロにあるから。温めて食べて。  #c1_0048
 > Nothing.  #c1_0049
 > Then a small shift of weight on the other side of the paper. A creak of floorboard.  #c1_0050
 > That's an answer. Sort of.  #c1_0051
@@ -127,8 +128,7 @@ nanoha<smile>: "We've always been keeping score. You're losing." || ずっとつ
 > I don't mention it. It suits her.  #c1_0072
 nanoha<deadpan>: "Kō-chan. Your collar." || こうちゃん。襟。  #c1_0073
 @cg cg_collar
-> Before I can do anything about it, she's stopped in front of me, up on her toes, folding my shirt collar back down over my tie.  #c1_0074
-> She's needed the extra inches since middle school.  #c1_0075
+> Before I can do anything about it, she's stopped in front of me, folding my shirt collar back down over my tie.  #c1_0074
 > Her hands stay a second longer than the collar strictly needs.  #c1_0076
 nanoha<smile>: "There. Now you look like someone who has his life together." || はい、できた。これで、人生ちゃんとしてる人に見えるよ。  #c1_0078
 @cg -
@@ -167,7 +167,7 @@ rika<scheme>: "And you walked in with Fujisawa-kun. Hm. Hmmm." || で、ふじ�
 kohei(deadpan): "What's 'hmmm'?" || なんだよ、その「ふーん」。  #c1_0106
 rika<grin>: "Nothing! Nothing! I'm just humming! Hmm-hmm-hmmm!" || なんでもない！ なんでもない！ ただの鼻歌だから！ ふんふふーん！  #c1_0107
 @show ryosuke school_smug c
-ryosuke: "—which is why the correct way to eat a taiyaki is head first." || ……だから、たい焼きは頭から食べるのが正しいんだよ。  #c1_0108
+ryosuke: "—which is why the correct way to eat a {taiyaki|fish-shaped cake} is head first." || ……だから、たい焼きは頭から食べるのが正しいんだよ。  #c1_0108
 > Tokiwa has arrived the way he usually does, in the middle of an argument nobody else knew had started.  #c1_0109
 kohei(deadpan): "Good morning, Tokiwa." || おはよう、ときわ。  #c1_0110
 ryosuke<neutral>: "The head has the most bean paste. You eat the best part while it's still hot, and the tail cleans your palate. That isn't an opinion. It's thermodynamics." || 頭が一番あんこが多い。熱いうちに一番おいしいところを食べて、しっぽで口直しをする。これは意見じゃない。熱力学だ。  #c1_0111
@@ -182,7 +182,7 @@ nanoha<surprised>: "A transfer student?" || 転校生？  #c1_0123
 rika<grin>: "A girl! From somewhere! Far!" || 女の子！ どこか……遠いところから！  #c1_0124
 ryosuke<sigh>: "'Somewhere far' covers most of the planet." || 「遠いところ」って、地球のほとんどが当てはまるよ。  #c1_0125
 rika<scheme>: "Then we've already narrowed it down!" || じゃあ、もうだいぶ絞れてるじゃん！  #c1_0126
-> While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through somewhere at elbow height and is pointing up at a line I can't see yet.  #c1_0127
+> While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through the crowd somehow and is pointing up at a line I can't see yet.  #c1_0127
 @hide ryosuke
 @hide rika
 @move nanoha c
@@ -310,8 +310,6 @@ natsuki<wistful>: "I feel like I've met him somewhere before. I just can't place
 nanoha(surprised): "…" || -  #c1_0222
 nanoha(tease): "I have met him before. Every day. For sixteen years." || 会ったこと、あるよ。毎日。十六年間。  #c1_0223
 natsuki<laugh>: "Ha— okay. Then it's his face. He's got kind of a normal one, right? Don't tell him I said that." || あはは、そっか。じゃあ、顔のせいだ。ふじさわって、わりとふつうの顔してるよね？ 本人には内緒ね。  #c1_0224
-> Natsuki laughed first. The moment closed up, and it was fine.  #c1_0227
-> It was fine.  #c1_0228
 natsuki<smile>: "Thanks for today, Nanoha. Seriously. First days are usually…" || 今日はありがとね、なのは。ほんとに。転校初日って、いつもは……  #c1_0229
 > She didn't finish. She just smiled, and it was a different smile from the one she'd used in front of the class. Smaller. It looked like it cost her something.  #c1_0230
 natsuki<wistful>: "Anyway. Thanks." || ……とにかく。ありがと。  #c1_0231

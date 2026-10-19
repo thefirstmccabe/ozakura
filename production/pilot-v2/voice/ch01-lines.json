@@ -115,7 +115,7 @@
   "id": "c1_0032",
   "who": "nanoha",
   "ja": "きんぴら。お母さんが、また作りすぎちゃって。",
-  "en": "\"Kinpira. Mom made too much again.\"",
+  "en": "\"{Kinpira|braised burdock}. Mom made too much again.\"",
   "scene": "c1_morning"
  },
  {
@@ -185,7 +185,7 @@
   "id": "c1_0048",
   "who": "kohei",
   "ja": "母さん、行ってくる。ご飯は炊飯器、味噌汁はコンロにあるから。温めて食べて。",
-  "en": "\"Mom, we're heading out. There's rice in the cooker and miso on the stove. Just heat it up.\"",
+  "en": "\"Mom, we're heading out. There's rice in the cooker and miso soup on the stove. Just heat it up.\"",
   "scene": "c1_morning"
  },
  {
@@ -458,7 +458,7 @@
   "id": "c1_0108",
   "who": "ryosuke",
   "ja": "……だから、たい焼きは頭から食べるのが正しいんだよ。",
-  "en": "\"—which is why the correct way to eat a taiyaki is head first.\"",
+  "en": "\"—which is why the correct way to eat a {taiyaki|fish-shaped cake} is head first.\"",
   "scene": "c1_entrance"
  },
  {

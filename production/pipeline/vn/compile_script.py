@@ -7,9 +7,13 @@ uses the written ID, so adding or removing lines never renumbers the others (voi
 stay keyed to the same IDs). Lines without one get the next free number for their scene's prefix;
 --write-ids writes those new IDs back into the source.
 
+Translator's notes: if a `notes.txt` (`term | note` per line) sits next to the first source, the notes for terms the
+script glosses as {term|gloss} go into the output as "notes" (lowercase term -> note); the engine underlines those
+terms and opens the note on a tap.
+
 Usage: python3 compile_script.py OUT_SCRIPT_JSON OUT_VOICE_JSON src1.ozs [src2.ozs ...] [--write-ids]
 """
-import json, re, sys
+import json, os, re, sys
 
 SPEAKERS = {"kohei": "Kōhei", "nanoha": "Nanoha", "natsuki": "Natsuki", "akane": "Akane", "rika": "Rika",
             "ryosuke": "Ryōsuke", "teacher": "Ōno-sensei", "kirishima": "Kirishima", "takatsuki": "Takatsuki",
@@ -165,6 +169,40 @@ def compile_files(paths):
     return cmds, voice, errors, new_ids
 
 
+GLOSS = re.compile(r"\{([^|}]+)\|([^}]+)\}")
+
+
+def read_notes(path):
+    """Translator's notes (style guide §5): `term | note` per line, '#' comments. Keys are lowercase terms."""
+    notes, errors = {}, []
+    for n, raw in enumerate(open(path, encoding="utf-8"), 1):
+        s = raw.strip()
+        if not s or s.startswith("#"):
+            continue
+        term, sep, note = s.partition("|")
+        term, note = term.strip(), note.strip()
+        if not sep or not term or not note:
+            errors.append(f"{path}:{n}: expected 'term | note'")
+        elif "{" in note or "}" in note:
+            errors.append(f"{path}:{n}: braces aren't allowed in a note")
+        elif term.lower() in notes:
+            errors.append(f"{path}:{n}: duplicate note for {term!r}")
+        else:
+            notes[term.lower()] = note
+    return notes, errors
+
+
+def notes_for(cmds, notes):
+    """The notes the script's glossed terms use, in first-use order, and the notes nothing uses."""
+    used = {}
+    for c in cmds:
+        for term, _ in GLOSS.findall(c.get("text", "")):
+            k = term.strip().lower()
+            if k in notes and k not in used:
+                used[k] = notes[k]
+    return used, sorted(set(notes) - set(used))
+
+
 def write_ids(new_ids):
     """Append newly assigned IDs to their source lines."""
     by_path = {}
@@ -181,6 +219,13 @@ if __name__ == "__main__":
     args = [x for x in sys.argv[1:] if x != "--write-ids"]
     out_script, out_voice, srcs = args[0], args[1], args[2:]
     cmds, voice, errors, new_ids = compile_files(srcs)
+    # translator's notes: notes.txt next to the first source, if there is one
+    notes_path = os.path.join(os.path.dirname(os.path.abspath(srcs[0])), "notes.txt")
+    used_notes, unused_notes = {}, []
+    if os.path.exists(notes_path):
+        notes, note_errors = read_notes(notes_path)
+        errors += note_errors
+        used_notes, unused_notes = notes_for(cmds, notes)
     if errors:
         print("\n".join(errors))
         sys.exit(1)
@@ -189,7 +234,13 @@ if __name__ == "__main__":
             write_ids(new_ids); print(f"wrote {len(new_ids)} new line IDs into the source")
         else:
             print(f"note: {len(new_ids)} lines have no written ID (run with --write-ids to fix them in the source)")
-    json.dump({"speakers": SPEAKERS, "script": cmds}, open(out_script, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    out = {"speakers": SPEAKERS, "script": cmds}
+    if used_notes:
+        out["notes"] = used_notes
+    json.dump(out, open(out_script, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
+    if used_notes or unused_notes:
+        print(f"translator's notes: {len(used_notes)} used ({', '.join(used_notes)})"
+              + (f"; not used by these sources: {', '.join(unused_notes)}" if unused_notes else ""))
     json.dump(voice, open(out_voice, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     n_say = sum(c["t"] == "say" for c in cmds); n_nar = sum(c["t"] == "nar" for c in cmds)
     words = sum(len(re.sub(r"\{([^|}]+)\|[^}]+\}", r"\1", c["text"]).split()) for c in cmds if c["t"] in ("say", "nar"))

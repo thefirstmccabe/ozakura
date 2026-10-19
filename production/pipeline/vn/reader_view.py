@@ -7,6 +7,9 @@ and chapter cards. No expression tags, Japanese, line IDs or comments. CGs are n
 listing and knew a falter was coming), so the readers
 can be handed JPG copies.
 
+Translator's notes (notes.txt next to the first source): a reader in the game can tap a noted term, so the first
+time a noted term appears, its note follows the line in brackets.
+
 Split points: by default one part per scene. Pass --split scene_a,scene_b,... to start a new part at those scenes
 (the Oct 17 Ch1 cold read split at prologue | c1_morning | c1_intro | c1_interlude).
 
@@ -16,7 +19,7 @@ Usage: python3 reader_view.py OUT_DIR src1.ozs [src2.ozs ...] [--split ids] [--c
 import argparse, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from compile_script import SPEAKERS, split_id  # display names, kept in one place
+from compile_script import SPEAKERS, split_id, read_notes  # display names, kept in one place
 
 SAY = re.compile(r'^(\w+)(?:<(\w+)>)?(?:\((\w+)\))?:\s*"(.*?)"\s*(?:\|\|.*)?$')
 GLOSS = re.compile(r'\{([^|}]+)\|([^}]+)\}')
@@ -45,6 +48,9 @@ BG_LABELS = {
 
 def convert(paths, split):
     parts, cur, cgs, alias = [], [], [], {}
+    notes_path = os.path.join(os.path.dirname(os.path.abspath(paths[0])), "notes.txt")
+    notes = read_notes(notes_path)[0] if os.path.exists(notes_path) else {}
+    noted = set()
     for path in paths:
         for raw in open(path, encoding="utf-8"):
             s = split_id(raw.rstrip("\n"))[0]   # drop the stable line ID tag
@@ -88,6 +94,10 @@ def convert(paths, split):
                     print("unparsed:", s, file=sys.stderr)
             if out:
                 cur.append(GLOSS.sub(r"\1 (\2)", out))
+                for term, _ in GLOSS.findall(out):
+                    k = term.strip().lower()
+                    if k in notes and k not in noted:
+                        noted.add(k); cur.append(f"[Translator's note, {term.strip()}: {notes[k]}]")
     if cur:
         parts.append(cur)
     return parts, cgs, alias
