@@ -9,9 +9,9 @@ VOICE = {  # style guide §7 (author-picked cast); pitch shifts are applied afte
  "rika": ("Laomedeia", "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright."),
  "ryosuke": ("Achird", "A 16-year-old male high-school student. Precise, a little smug, dry and amused know-it-all."),
  "teacher": ("Schedar", "A tired male homeroom teacher in his 40s, droopy, mild and long-suffering, speaking to his class."),
- "past_natsuki": ("Zephyr", "A young married woman in Edo-era Japan, heard in a dream. Softer, warmer and a little more mature than a teenager; tender, scolding with love."),
+ "past_natsuki": ("Despina", "A young married woman in Edo-era Japan, in her mid-twenties, heard in a dream. A grown woman, not a teenager: warm, gentle, a little lower and slower; scolding with love while half laughing, as if she has waited a very long time."),  # recast Oct 18 (style guide §7; audition oct18-dream, candidate 2)
 }
-PLACE = {"prologue": "a dream", "c1_morning": "a morning scene at home", "c1_river": "a walk to school along the river",
+PLACE = {"prologue": "a dream", "c1_dream": "a dream", "c1_morning": "a morning scene at home", "c1_river": "a walk to school along the river",
          "c1_entrance": "a busy school entrance", "c1_intro": "a classroom", "c1_lunch": "lunch in the classroom",
          "c1_interlude": "an empty classroom after school", "c1_night": "a quiet street at night"}
 lines = json.load(open(sys.argv[1]))

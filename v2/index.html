@@ -363,13 +363,12 @@ const NOWIN = new Set(['manager','past_natsuki']);       // no face window: no s
 const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki']};
 /* sprites take on the light of the scene: night and evening backgrounds tint them */
 const BG_LIGHT = {bg_houses_night:'brightness(.8) saturate(.82) hue-rotate(-6deg)', bg_houses_night_lit:'brightness(.82) saturate(.84) hue-rotate(-6deg)', bg_classroom_evening:'sepia(.18) saturate(1.08) brightness(.97)'};
-const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4'};   // living stills (2–4 s loops)
+const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4', cg_cold_mist:'img/live/cg_cold_mist.mp4'};   // living stills (2–4 s loops)
 const POSX_W = {l:20, lc:34, c:50, rc:66, r:80}, POSX_N = {l:27, lc:38, c:50, rc:62, r:73};
 const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?POSX_N:POSX_W)[k]});
 const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
 const CHAPTERS = [
-  {k:'PROLOGUE', t:'The Dream', start:'prologue', th:'cg_dream'},
-  {k:'CHAPTER 1', t:'The House Next Door', start:'c1_morning', th:'cg_natsuki_intro'},
+  {k:'CHAPTER 1', t:'The House Next Door', start:'cold_open', th:'cg_natsuki_intro'},   // the cold open plays first, then the chapter card
 ];
 const KANJI = ['','第一話','第二話','第三話','第四話'];
 const store = {
@@ -698,7 +697,7 @@ function restore(s){
   playBgm(s.bgm||null); state.bgm=s.bgm||null; setMode(s.mode||'normal',s.ilabel); state.scene=s.scene;
   state.i=s.i; if(s.cg) box.classList.add('hidden'); run();
 }
-function sceneStart(id){ return S.findIndex(c=>c.t==='scene'&&c.id===id); }
+function sceneStart(id){ const i=S.findIndex(c=>c.t==='scene'&&c.id===id); return i<0?0:i; }   // unknown scene: start from the top
 function startAt(idx){
   hideTitle();
   // rebuild visual state by scanning back to most recent bg
@@ -772,8 +771,8 @@ async function soundCheck(){
   out.textContent=L.join('\n');
 }
 /* ---------- developer mode: scene chart and line stepper ---------- */
-let SCENE_T = {prologue:'The Dream', c1_morning:'Mornings at the Fujisawas', c1_river:'The river walk', c1_entrance:'The class lists',
-  c1_intro:'The transfer student', c1_lunch:'Lunch with Mizuno', c1_interlude:'Nanoha: the tour', c1_night:'Wrong day for the trash',
+let SCENE_T = {cold_open:'Cold open', c1_morning:'Mornings at the Fujisawas', c1_river:'The river walk', c1_entrance:'The class lists',
+  c1_intro:'The transfer student', c1_lunch:'Lunch with Mizuno', c1_interlude:'Nanoha: the tour', c1_night:'Wrong day for the trash', c1_dream:'The dream',
   c2_tuesday:'A Tuesday shift', c2_dojo:'The dojo', c2_jigeiko:'Jigeiko', c2_after:'After the match', c2_mop:'The catch',
   c2_bridge:'The bridge', c2_interlude:'Natsuki: texting Chie', c3_shift:'Training Yuzu', c3_home:'Home late', c3_window:'Windows',
   c3_saturday:'Best of five', c3_shrine:'The Great Cherry', c3_lunch:'Tea at the shrine', c3_end:'Lunch at the Tachibanas’'};
@@ -785,10 +784,10 @@ const isLine = c => c && (c.t==='say'||c.t==='nar'||c.t==='phone');
 let DX=null;
 function devIndex(){
   if(DX) return DX;
-  const scenes=[], at=new Array(S.length).fill(0); let cur=null, ch=0, chT=CHAPTERS[0].t, bg='black', perCh=0;
+  const scenes=[], at=new Array(S.length).fill(0); let cur=null, ch=0, chT='', bg='black', perCh=0;
   S.forEach((c,i)=>{
     if(c.t==='chapter'){ ch=c.n; chT=c.title; perCh=0; }
-    if(c.t==='scene'){ perCh++; cur={id:c.id, i, ch, chT, no: ch? ch+'.'+perCh : 'P', date:'', lines:[], who:[], cgs:[], bgFirst:null, inh:bg}; scenes.push(cur); }
+    if(c.t==='scene'){ perCh++; cur={id:c.id, i, ch, chT, no: ch? ch+'.'+perCh : 'P.'+(perCh-1), date:'', lines:[], who:[], cgs:[], bgFirst:null, inh:bg}; scenes.push(cur); }
     if(cur) at[i]=scenes.length-1; if(!cur) return;
     if(c.t==='card' && !cur.date) cur.date=c.text;
     if(c.t==='bg'){ bg=c.name; if(!cur.bgFirst && c.name!=='black' && c.name!=='white') cur.bgFirst=c.name; }
@@ -837,7 +836,7 @@ function thumb(name){ const im=el('img'); im.alt=''; im.loading='lazy'; im.decod
 function chartGrid(body, X, csk){
   let lastCh=-1, grid=null;
   X.scenes.forEach((s,k)=>{
-    if(s.ch!==lastCh){ lastCh=s.ch; const h=el('div','cch'); h.append(el('span','k', s.ch?'CHAPTER '+s.ch:'PROLOGUE'), el('span','tt', s.ch?s.chT:CHAPTERS[0].t)); grid=el('div','scg'); body.append(h,grid); }
+    if(s.ch!==lastCh){ lastCh=s.ch; const h=el('div','cch'); h.append(el('span','k', s.ch?'CHAPTER '+s.ch:'COLD OPEN'), el('span','tt', s.ch?s.chT:'')); grid=el('div','scg'); body.append(h,grid); }
     const b=el('button','sc'+(k===csk?' now':'')); b.type='button'; b.dataset.scene=s.id;
     const m=el('div','meta'); m.append(el('div','n', s.no+'  '+s.id), el('div','tt', SCENE_T[s.id]||s.id), el('div','s', (s.date?s.date+' · ':'')+s.lines.length+' lines'));
     if(s.who.length) m.append(whoDots(s.who));
@@ -966,7 +965,7 @@ function loadScript(){
 }
 loadScript().catch(showErr);   // load immediately, independent of the viewer's hot-reload hook
 // warm the image cache for the first scenes
-['cg_dream','bg_kohei_room_day','bg_fujisawa_kitchen'].forEach(n=>{const i=new Image(); i.src=`img/bg/${n}.webp`;});
+['cg_cold_mirror','cg_cold_hand','cg_cold_mist','bg_kohei_room_day','bg_fujisawa_kitchen'].forEach(n=>{const i=new Image(); i.src=`img/bg/${n}.webp`;});
 let restoredHot=false;
 function start(data){
   if(!data||!data.snap||restoredHot) return;
