@@ -138,7 +138,7 @@ kohei(neutral): "Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Th
 nanoha<sad>: "I know." || ……知ってる。  #c1_0086
 kohei(surprised): "Then why'd you ask?" || じゃあ、なんで聞いたんだよ。  #c1_0087
 nanoha<sad>: "So you'd hear yourself say it." || 自分で言ってるの、聞いてほしかったから。  #c1_0088
-kohei(smile): "It's fine. I like being busy." || 平気だって。忙しいの、嫌いじゃないし。  #c1_0090
+kohei(smile): "It's fine. Sundays are short shifts." || 平気だって。日曜のシフトは短いし。  #c1_0090
 nanoha<smile>: "Mm." || ……うん。  #c1_0091
 > A few steps of nothing. The river is loud this time of year, fat with spring rain off the Tanzawa.  #c1_0092
 nanoha<happy>: "Oh. Grandpa says the shrine's cherries are the best they've been in years. I'm helping him sweep up there Saturday." || あ。おじいちゃんがね、今年は神社の桜が、何年かぶりの見頃なんだって。土曜日、掃除を手伝うの。  #c1_0093
@@ -187,8 +187,8 @@ rika<scheme>: "Then we've already narrowed it down!" || じゃあ、もうだい
 nanoha: "Fujisawa Kōhei. Two-B. About halfway down." || ふじさわこうへい。二年B組。真ん中あたり。  #c1_0128
 kohei(surprised): "You found mine before yours?" || 自分のより先に、俺の見つけたのか？  #c1_0129
 nanoha<smile>: "Yours was easier. It's always right under Fukuda-kun's. Fukuda-kun is easy to find." || こうへいのほうが簡単だったの。いつも、ふくだくんのすぐ下だから。ふくだくんは、見つけやすいし。  #c1_0130
-> When I finally get to the board, there's no Fukuda in Two-B this year.  #c1_0131
-> It stays with me all through the opening ceremony.  #c1_0132
+> When I finally get to the board, there's no Fukuda in Two-B this year. She went looking for mine before her own.  #c1_0131
+> I don't know why that's the thing that sticks with me all through the opening ceremony.  #c1_0132
 @hide nanoha
 
 == c1_intro | The transfer student
@@ -208,10 +208,9 @@ teacher: "Come on in." || 入っていいぞ。  #c1_0136
 > Copper hair, cut neat at her shoulders and tucked behind one ear. Her uniform looks like it was ironed by someone who meant it.  #c1_0139
 natsuki: "I'm Mizuno Natsuki. It's nice to meet you all." || はじめまして。みずのなつきです。  #c1_0140
 natsuki: "My dad's job moves us around a lot, so I've been the new girl…" || 父の仕事の都合で引っ越しが多くて、転校生をやるのは……  #c1_0141
-> She counts on her fingers.  #c1_0142
 natsuki: "…six times now? So please don't go easy on me." || ……六回目、かな？ なので、手加減はいりません。  #c1_0143
 > A ripple of laughter. Someone in the front row actually claps.  #c1_0144
-natsuki: "I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, come find me." || 剣道をやっていて、私の相手をしてくれる道場を探してます。あと、ホラー映画が大好きなので、一緒に観てくれる人がいたら、声をかけてください。  #c1_0145
+natsuki: "I do kendo, and I'm looking for a dojo that'll put up with me. I also love horror movies, the cheesier the better, so if anyone wants to watch a bad one with me, come find me." || 剣道をやっていて、私の相手をしてくれる道場を探してます。あと、ホラー映画が大好きです。B級であればあるほど好きなので、一緒に観てくれる人がいたら、声をかけてください。  #c1_0145
 > Her eyes go along the rows while she says it. Then they get to me.  #c1_0146
 @bgm -
 @wait 0.8
@@ -249,7 +248,7 @@ natsuki<smirk>: "The guy who turned down three confessions last year." || 去年
 kohei(annoyed): "Who told you that?" || 誰に聞いたんだよ。  #c1_0169
 natsuki<laugh>: "The girl by the door, before I'd even put my shoes in my locker." || ドアのとこの子。下駄箱に靴を入れる前に、もう聞かされた。  #c1_0170
 kohei(deadpan): "Great." || ……最高だな。  #c1_0171
-natsuki<smile>: "She said you told every one of them you didn't have time for a girlfriend. Is that true?" || 全員に「彼女を作る時間がない」って言ったんだって。ほんと？  #c1_0172
+natsuki<smile>: "She said you told all three you didn't have time for a girlfriend. True?" || 三人とも「彼女を作る時間がない」って断ったんだって。ほんと？  #c1_0172
 kohei(neutral): "It's true that I don't have time." || 時間がないのは、本当だ。  #c1_0173
 natsuki<smile>: "Huh." || へえ。  #c1_0174
 > She props her chin on her hand and looks me over. Shoulders. Hands. Like she's working out my reach.  #c1_0175
@@ -290,14 +289,14 @@ nanoha<blush>: "That's—yes. That's fine." || それは……うん。いいよ
 > That was the first thing Nanoha learned on the tour. Natsuki noticed that the stairs by the art room squeaked on the fourth step and the eleventh. She noticed that the third-floor girls' bathroom had a window that looked straight at the mountains, and she said "Oh," softly, like she'd been handed something.  #c1_0204
 > They ended the tour in their own empty classroom, the evening sun coming in sideways and turning every desk gold. Natsuki leaned back against the desk in front of her own.  #c1_0205
 @show natsuki school_smile c
-natsuki: "How old is this place? There's a pale square on the wall downstairs where something used to hang." || ここ、どれくらい古いの？ 下の階の壁に、何か掛かってたみたいな白い四角い跡があったけど。  #c1_0206
+natsuki: "This school's nice. It feels… lived in. Does that make sense?" || この学校、いいね。なんか……ずっと人がいた感じがする。わかる？  #c1_0206
 nanoha(smile): "It's old. The heating sounds like a ghost." || 古いからね。暖房の音が、おばけみたいなの。  #c1_0207
 natsuki<laugh>: "Perfect." || 最高。  #c1_0208
 natsuki<smirk>: "So. What about you and Fujisawa?" || で。なのはと、ふじさわって？  #c1_0209
 nanoha(surprised): "Me and Kōhei?" || 私と、こうへい？  #c1_0210
 natsuki<smile>: "You live next door, right? Somebody said." || お隣さんなんでしょ？ 誰かが言ってた。  #c1_0211
 nanoha(smile): "Since we were born." || 生まれた時からね。  #c1_0212
-natsuki<surprised>: "No way. So you're real childhood friends." || うそ。じゃあ、ほんとの幼なじみなんだ。  #c1_0213
+natsuki<surprised>: "No way. Real childhood friends? I thought those were made up." || うそ。ほんとの幼なじみ？ そんなの、作り話の中だけだと思ってた。  #c1_0213
 nanoha(smile): "Real childhood friends." || ほんとの幼なじみ。  #c1_0214
 > Nanoha said it as lightly as she knew how. She'd had practice.  #c1_0215
 natsuki<wistful>: "I've never stayed anywhere long enough to have one of those. You know? Someone who knows which drawer sticks in your kitchen." || 私、そういうのができるほど、ひとつの場所にいたことないんだ。わかる？ 台所のどの引き出しがひっかかるか、知ってるような人。  #c1_0217
@@ -322,8 +321,8 @@ natsuki<wistful>: "Anyway. Thanks." || ……とにかく。ありがと。  #c1
 == c1_night | Wrong day for the trash
 @bg bg_houses_night
 @bgm night
-> I'm taking the burnables out to the corner. Pickup is Tuesdays and Fridays now. Dad's handwriting on the whiteboard still says Monday, and tonight I went with the handwriting.  #c1_0235
-> That's when Nanoha comes up the street with her school bag over her shoulder, back from walking Mizuno to the station.  #c1_0236
+> I'm taking the burnables out to the corner. Pickup moved to Tuesdays and Fridays in the fall. Dad's handwriting on the whiteboard still says Monday, and tonight I went with the handwriting.  #c1_0235
+> That's when Nanoha comes up the street with her school bag over her shoulder, back from walking Mizuno home, over by the station.  #c1_0236
 @show nanoha school_smile c
 nanoha: "You're taking out the trash on the wrong day." || ゴミの日、間違ってるよ。  #c1_0237
 kohei(smile): "I'm moving it closer to the right day. How was the tour?" || 正しい日に近づけてるだけだ。案内、どうだった？  #c1_0238
