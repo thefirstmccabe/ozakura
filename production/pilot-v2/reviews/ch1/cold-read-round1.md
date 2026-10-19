@@ -51,3 +51,17 @@ Ends up with / wants / dream woman (leading answer, %).
 - "Every day. For sixteen years."
 - The face catalogue.
 - Dad's handwriting on the whiteboard, which all three called the best line in the chapter.
+
+## Diff check of these fixes (fresh agent, Oct 18)
+| ID | Finding | Done |
+|---|---|---|
+| c1_0090 | "Sundays are short shifts" contradicts canon §8 (Sunday is his 4–5 hour shift) | "It's fine. Saturday afternoons are free." [P] (true under canon; he gives that time away two lines later) |
+| c1_0213 | "I thought those were made up" is a genre wink, close to manga self-reference | "No way. Real childhood friends? Baby pictures and everything?" |
+| c1_0206 | ずっと人がいた感じ can sound haunted right before Nanoha's おばけ line | いろんな人が過ごしてきた感じがする |
+| c1_0131 | "no Fukuda in Two-B" still leaves "where did he go?" open | "Fukuda's not in Two-B this year. He's in Two-E." [P] |
+| c1_0172 | 三人とも…断った reads as "all three refused" | 三人全員に「…」って言ったんだって; English "told all three of them" |
+| c1_0145 | 好き twice; long for a voiced self-introduction | …ホラー映画が大好きで、B級っぽいほど燃えます。 |
+| c1_0235 | "in the fall" → "last fall" (matches "He wrote it last spring") | Done |
+| c1_0236 | "over" twice | "…back from walking Mizuno home. She lives by the station." |
+
+Fine as changed: c1_0132, the c1_0142 cut, the English of c1_0145 and c1_0206, address forms throughout.
