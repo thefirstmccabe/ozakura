@@ -1,6 +1,6 @@
 # Cold readers (§9 step 3e)
 
-Run **three** fresh agents with the same prompt and different personas. Build their material with `reader_view.py` (reader-visible text in parts, plus JPG copies of the CGs). Give them only that folder. Never give them canon, the outline or the reader-knowledge target; compare their checkpoints against the target yourself afterward.
+Run **three** fresh agents with the same prompt and different personas. Build their material with `reader_view.py` (reader-visible text in parts, plus JPG copies of the CGs named `image_01.jpg`, `image_02.jpg`… so a folder listing gives nothing away; the key is written next to the folder, not in it). Give them only that folder. Never give them canon, the outline or the reader-knowledge target; compare their checkpoints against the target yourself afterward.
 
 **Read from the start (Oct 18):** the three standing numbers are judged over windows of 3–4 chapters, so each round's fresh readers read from Ch1 through the chapter under test, in order, with checkpoints after every part. That's easy within the pilot; when the story outgrows a single read, decide how much earlier text to give them.
 
