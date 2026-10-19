@@ -21,5 +21,7 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-17 | Fourth review: collar CG redrawn again (NB Pro 2K ×2) plus one braid edit | 3 | $0.45 |
 | 10-17 | Fifth check: collar CG from a layout sketch (NB Pro 2K ×2) plus one fence edit | 3 | $0.45 |
 | 10-17 | Sixth check: collar CG head-size edit (NB Pro 2K) | 1 | $0.15 |
+| 10-18 | Ch1 revision, cold open: 3 CGs (NB Pro 2K ×2 each) and the mist living still (Kling v3 Pro, 4 s) | 7 | $1.46 |
+| 10-18 | Ch1 revision, fixes: dream CG inside-wrist edit (NB Pro 2K ×2) and a new dream living still (4 s); intro CG hair and classmates (NB Pro 2K ×2) and its falter face (NB Pro 2K ×2) | 7 | $1.46 |
 
-**Total after Ch1: about $8.50 of $40.**
+**Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18) so far: about $2.92; running total about $11.42.

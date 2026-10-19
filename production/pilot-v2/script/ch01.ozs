@@ -61,7 +61,7 @@ akane<happy>: "And I slept! Super well! I didn't wake up once!" || 寝たよー�
 akane<pout>: "Onii-chan, you're hovering again." || お兄ちゃん、また見張ってるー。  #c1_0018
 kohei(deadpan): "I'm standing in my own kitchen." || 自分ちの台所に立ってるだけだ。  #c1_0019
 akane<tease>: "Then go hover over the eggs!" || じゃあ、卵焼きでも見張っててよー！  #c1_0020
-kohei(smile): "There's an egg with your name on it." || お前の名前入りの卵焼きがある。  #c1_0021
+kohei(smile): "There's an egg with your name on it." || お前の分なら、もう焼いてある。  #c1_0021
 akane<smile>: "Yaaay. …I could make my own lunch, you know." || やったー。……お弁当くらい、自分で作れるのにー。  #c1_0022
 kohei(smile): "I'm already making two." || どうせ二つ作ってるし。  #c1_0023
 akane<pout>: "…You always are." || ……いつも、そうだよね。  #c1_0024
@@ -134,7 +134,7 @@ kohei(neutral): "…Thanks." || ……ありがとな。  #c1_0079
 nanoha<smile>: "Practice today?" || 今日、部活？  #c1_0082
 kohei(neutral): "Club doesn't start until Wednesday. First week." || 部活は水曜から。最初の週だし。  #c1_0083
 nanoha<smile>: "And after that?" || そのあとは？  #c1_0084
-kohei(neutral): "Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Thursday, Sunday." || 月、水、金、土曜の朝。バイトが火曜、木曜、日曜。  #c1_0085
+kohei(neutral): "Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Thursday, Sunday." || 月曜、水曜、金曜、土曜の朝。バイトが火曜、木曜、日曜。  #c1_0085
 nanoha<sad>: "I know." || ……知ってる。  #c1_0086
 kohei(surprised): "Then why'd you ask?" || じゃあ、なんで聞いたんだよ。  #c1_0087
 nanoha<sad>: "So you'd hear yourself say it." || 自分で言ってるの、聞いてほしかったから。  #c1_0088
@@ -211,7 +211,7 @@ natsuki: "My dad's job moves us around a lot, so I've been the new girl…" || �
 > She counts on her fingers.  #c1_0142
 natsuki: "…six times now? So please don't go easy on me." || ……六回目、かな？ なので、手加減はいりません。  #c1_0143
 > A ripple of laughter. Someone in the front row actually claps.  #c1_0144
-natsuki: "I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, come find me." || 剣道をやっていて、私を受け入れてくれる道場を探してます。あと、ホラー映画が大好きなので、一緒に観てくれる人がいたら、声をかけてください。  #c1_0145
+natsuki: "I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, come find me." || 剣道をやっていて、私の相手をしてくれる道場を探してます。あと、ホラー映画が大好きなので、一緒に観てくれる人がいたら、声をかけてください。  #c1_0145
 > Her eyes go along the rows while she says it. Then they get to me.  #c1_0146
 @bgm -
 @wait 0.8
@@ -229,7 +229,7 @@ teacher: "Thank you, Mizuno. Let's see… the empty seat behind Fujisawa, by the
 > When she passes my desk, she slows down just enough to lean in.  #c1_0153
 natsuki: "Hey. Kendo, right?" || ねえ。剣道、やってるでしょ？  #c1_0154
 kohei(surprised): "…How did you—" || ……なんで……  #c1_0155
-natsuki<smile>: "Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick." || 左の手のひら。つかが当たるところに、ちょうどタコがある。そこまで厚くなるには、何年もかかるんだよね。  #c1_0156
+natsuki<smile>: "Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick." || 左の手のひら。つかが当たるところに、ちょうど竹刀ダコがある。そこまで厚くなるには、何年もかかるんだよね。  #c1_0156
 > I look down at my hand like it's betrayed me.  #c1_0157
 natsuki<smirk>: "Takes one to know one." || 見ればわかるよ。私もそうだから。  #c1_0158
 > And then she's past me, settling into the seat at my back, and I can feel the whole classroom's attention swing toward the window like a weathervane.  #c1_0159
@@ -257,7 +257,7 @@ natsuki<smirk>: "Do you always sit this straight?" || いつもそんなに背�
 kohei(flustered): "I—" || 俺は……  #c1_0262
 natsuki<smirk>: "What are you, {shodan|first dan}?" || 段は？ 初段？  #c1_0180
 kohei(smile): "We'll find out on the floor." || 竹刀を交えればわかる。  #c1_0181
-natsuki<laugh>: "Big talk for someone who sits like he's being graded." || 採点されてるみたいな座り方してるくせに、言うじゃん。  #c1_0182
+natsuki<laugh>: "Big talk for someone who sits like he's being graded." || 審査されてるみたいな座り方してるくせに、言うじゃん。  #c1_0182
 kohei(neutral): "Club starts Wednesday." || 部活は水曜からだ。  #c1_0183
 natsuki<smile>: "Wednesday." || 水曜日。  #c1_0184
 > She takes a ballpoint out of her blazer pocket, turns her left hand over and writes {水|Wednesday} on the inside of her wrist, small, just under her cuff.  #c1_0185
@@ -266,12 +266,12 @@ natsuki<smile>: "Wednesday." || 水曜日。  #c1_0184
 nanoha: "Excuse me. Mizuno-san?" || あの……みずのさん？  #c1_0186
 > Nanoha's standing by my desk with her lunch held in front of her in both hands, the way she holds things when she's about to do something brave.  #c1_0187
 natsuki<surprised>: "Oh—hi. You're…" || あ、どうも。えっと……  #c1_0188
-nanoha<smile>: "Tachibana Nanoha. Um— I sit two rows over." || たちばななのはです。えっと……二列向こうの席です。  #c1_0189
+nanoha<smile>: "Tachibana Nanoha. Um— I sit two rows over." || たちばな、なのはです。えっと……二列向こうの席です。  #c1_0189
 nanoha<smile>: "If you'd like… I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing." || よかったら……放課後、校内を案内しましょうか？ 図書室とか、音楽室とか。どの下駄箱がひっかかるか。どの自販機がお金を食べるか。そういうのです。  #c1_0190
 > For a second Mizuno doesn't say anything.  #c1_0191
 natsuki<blush>: "…Really?" || ……ほんとに？  #c1_0192
-nanoha<smile>: "It's not a big tour. The vending machine part is the most important." || 大したツアーじゃないよ。自販機のところが、一番大事。  #c1_0193
-natsuki<smile>: "I'd love that. Which one eats coins?" || すっごく嬉しい。で、お金を飲み込む自販機って、どれ？  #c1_0194
+nanoha<smile>: "It's not a big tour. The vending machine part is the most important." || 大したツアーじゃないですよ。自販機のところが、一番大事です。  #c1_0193
+natsuki<smile>: "I'd love that. Which one eats coins?" || うん、ぜひ。で、お金を食べる自販機って、どれ？  #c1_0194
 natsuki<smile>: "Oh, and call me Natsuki." || あ、それと、なつきって呼んで。  #c1_0195
 nanoha<blush>: "…Natsuki-san." || ……なつき、さん。  #c1_0196
 natsuki<surprised>: "Eh, 'san'? We're the same age!" || えー、「さん」？ 同い年じゃん！  #c1_0197
@@ -332,10 +332,10 @@ kohei(surprised): "Nobody notices the eleventh step." || 十一段目に気づ�
 nanoha<smile>: "She did." || なつきさんは、気づいた。  #c1_0241
 nanoha<smile>: "She's nice, Kōhei. I like her." || いい子だよ、こうへい。私、あの子好き。  #c1_0242
 nanoha<smile>: "What did you think of her?" || こうへいは、どう思った？  #c1_0244
-kohei(neutral): "She seems fine." || ……普通に、いいやつなんじゃないか。  #c1_0245
+kohei(neutral): "She seems fine." || ……悪いやつじゃ、なさそうだな。  #c1_0245
 nanoha<tease>: "You smiled." || 笑ってたよ。  #c1_0246
 kohei(surprised): "When?" || いつ。  #c1_0247
-nanoha<tease>: "When she said she was looking for a dojo that would put up with her. You did your—" || 受け入れてくれる道場を探してる、って言ったとき。こうへい、いつもの……  #c1_0248
+nanoha<tease>: "When she said she was looking for a dojo that would put up with her. You did your—" || 相手をしてくれる道場を探してる、って言ったとき。こうへい、いつもの……  #c1_0248
 > She drops her chin and narrows her eyes. I think it's supposed to be me.  #c1_0249
 kohei(annoyed): "I don't have a face." || 俺に、そんな顔はない。  #c1_0250
 nanoha<deadpan>: "You have several. I've catalogued them. That one's number four. 'Somebody wants to fight me.'" || いっぱいあるよ。全部カタログにしてある。あれは四番。「誰かが俺とやり合いたがってる」の顔。  #c1_0251
