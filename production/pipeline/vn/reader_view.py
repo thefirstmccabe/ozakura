@@ -2,7 +2,9 @@
 
 What a reader sees, and nothing more: narration, spoken English with speaker names as displayed (the compiler's
 SPEAKERS table, so the dream voice shows as "???"), and [bracketed] staging for backgrounds, CGs, sprites, captions
-and chapter cards. No expression tags, Japanese, line IDs or comments. CGs are named as image files so the readers
+and chapter cards. No expression tags, Japanese, line IDs or comments. CGs are named as neutral image files
+(image_01.jpg, image_02.jpg, … in order of first appearance; Oct 18: a reader saw "cg_natsuki_intro_falter" in a folder
+listing and knew a falter was coming), so the readers
 can be handed JPG copies.
 
 Split points: by default one part per scene. Pass --split scene_a,scene_b,... to start a new part at those scenes
@@ -42,7 +44,7 @@ BG_LABELS = {
 
 
 def convert(paths, split):
-    parts, cur, cgs = [], [], []
+    parts, cur, cgs, alias = [], [], [], {}
     for path in paths:
         for raw in open(path, encoding="utf-8"):
             s = split_id(raw.rstrip("\n"))[0]   # drop the stable line ID tag
@@ -64,7 +66,8 @@ def convert(paths, split):
                     if w[1] == "-":
                         out = "[Full-screen illustration ends]"
                     else:
-                        out = f"[Full-screen illustration shown: image file {w[1]}.jpg]"; cgs.append(w[1])
+                        alias.setdefault(w[1], f"image_{len(alias) + 1:02d}")
+                        out = f"[Full-screen illustration shown: image file {alias[w[1]]}.jpg]"; cgs.append(w[1])
                 elif c == "@show":
                     out = f"[{SPEAKERS.get(w[1], w[1].capitalize())} appears on screen]"
                 elif c == "@card":
@@ -87,7 +90,7 @@ def convert(paths, split):
                 cur.append(GLOSS.sub(r"\1 (\2)", out))
     if cur:
         parts.append(cur)
-    return parts, cgs
+    return parts, cgs, alias
 
 
 if __name__ == "__main__":
@@ -97,7 +100,7 @@ if __name__ == "__main__":
     ap.add_argument("--cg-dir", default="")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
-    parts, cgs = convert(a.src, set(filter(None, a.split.split(","))))
+    parts, cgs, alias = convert(a.src, set(filter(None, a.split.split(","))))
     for i, p in enumerate(parts, 1):
         open(os.path.join(a.out, f"part{i}.txt"), "w", encoding="utf-8").write("\n".join(p).strip() + "\n")
     if a.cg_dir:
@@ -105,7 +108,9 @@ if __name__ == "__main__":
         for n in dict.fromkeys(cgs):
             src = next((os.path.join(a.cg_dir, n + e) for e in (".webp", ".png", ".jpg") if os.path.exists(os.path.join(a.cg_dir, n + e))), None)
             if src:
-                im = Image.open(src).convert("RGB"); im.thumbnail((1280, 1280)); im.save(os.path.join(a.out, n + ".jpg"), quality=85)
+                im = Image.open(src).convert("RGB"); im.thumbnail((1280, 1280)); im.save(os.path.join(a.out, alias[n] + ".jpg"), quality=85)
             else:
                 print("missing CG:", n, file=sys.stderr)
-    print(f"{len(parts)} parts, {len(set(cgs))} CGs -> {a.out}")
+    import json  # the key stays outside the readers' folder
+    json.dump(alias, open(a.out.rstrip("/") + ".cg-key.json", "w"), indent=1)
+    print(f"{len(parts)} parts, {len(set(cgs))} CGs -> {a.out} (key: {a.out.rstrip('/')}.cg-key.json)")
