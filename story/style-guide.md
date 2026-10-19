@@ -289,26 +289,7 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 **Lessons from the jigeiko test (Oct 12):** state "wearing the men helmet, no bare faces" for every kendo panel; say "absolutely no text" or the model letters SFX itself; kendo bows normally happen with men on; one style anchor and one location plate per scene keep panels consistent.
 
 ## 4. Manga art (black and white; legacy Vol. 1)
-**Engine:** `fal-ai/nano-banana-pro/edit` at `resolution: '2K'`. Pro gave real screentone; NB2 gave a gray wash. Use `fal-ai/nano-banana-pro` (no `/edit`) for panels with no characters.
-
-**Base prompt (verbatim, prepended to every panel):**
-> Draw a single panel for a black-and-white Japanese manga, at the quality of a professionally published romance/drama tankōbon. Clean, confident G-pen inking with varied line weight; screentone shading (dot tones and gradient tones); spotted solid blacks for contrast; white highlights in hair; backgrounds drawn with fine ruled lines in correct perspective. Strictly black ink, white paper and gray screentone — absolutely no color. Anatomically correct hands and faces; expressive manga acting. No text of any kind: no speech bubbles, no captions, no sound-effect lettering, no signature, no watermark, no panel borders or frames. The art fills the entire image edge to edge.
-
-**Then the prompt structure:**
-- `Characters:` one line per character: descriptor; wearing {outfit}; {B&W rendering}; "(match the face, hairstyle and proportions in Image N)".
-- `Setting:` the location + "Image N shows this location — keep its architecture and props consistent, redrawn in black-and-white manga ink with screentone."
-- `Scene:` the acting.
-- `Framing:` see §6.
-
-**References per panel:** the character sprites plus a background crop, ordered to match "Image N."
-
-**Page geometry:**
-- **Page:** B6 tankōbon, page master 1600×2272 px.
-- **Panel aspect ratio:** computed from the layout, then snapped to an accepted ratio: 21:9, 16:9, 3:2, 4:3, 5:4, 1:1, 4:5, 3:4, 2:3, 9:16.
-
-**Color pages:** used sparingly at chapter openers and key beats. Dream pages are in color.
-
-**Reading order:** right to left; the reader defaults to single page.
+Moved to `story/archive/style-guide-legacy.md` (Oct 19). Current inserts are full color (§4a).
 
 ## 5. Lettering
 | Use | Font |
@@ -442,11 +423,14 @@ The goal is to spend the author's review time on taste, not on finding errors. I
 6. **Build and technical QA:** `qa_play.py` at iPad landscape and portrait, plus a **visual snapshot of every line** (`qa_play.py --every`) compared against the last approved build with `snapshot_diff.py`, so reviewers look only at what changed. Keep the approved build's shots and `script.json` as the next baseline.
 7. **Independent review of the whole build** (`review/build-review.md`). After each fix: a check scoped to the diff, plus the regression run (step 6). Fix rounds introduced new bugs in Ch1, so this is mandatory.
 8. **Handover:** a playable link and one short note: the [P] inventions, known compromises and spend. The author plays on his iPad (nothing here can test Safari or listen by ear) and flags only what doesn't work.
-9. **Punch-list rounds:** each gets a diff-scoped independent check plus the regression run.
+9. **Punch-list rounds:** each gets a diff-scoped independent check plus the regression run. **Dialogue and voice items from the author's punch lists also go to the Story thread**, which updates the speech and address sheets (§3b–§3c) so later chapters learn from them.
+10. **Approval:** when the author approves a chapter, tag the commit `v2-chN-approved` (for later deliverables, `<deliverable>-chN-approved`) and update the status board. The tag is the regression baseline for any later fix: rebuild its shots with `qa_play.py --every` from that commit; don't commit screenshots.
 
 **Standing rules:**
 - **Spending inside an approved cap:** no item-by-item check-ins. Report spend at handover; ask first only if a single item would cost more than about $5 or the total would pass the cap. If Claude tells the author something is "your call," it waits for his answer.
 - **[P] details invented in production** go in the handover note and pilot-notes; the author judges them by playing, and the Story thread folds them into canon afterward. No pre-review.
 - **Measure, don't eyeball:** proportions and ratios are measured on a pixel grid.
 - **Record prompts** for every generated piece, and commit pipeline code as you go.
+- **Status board:** update the production log's status board (§0) at the end of every work session.
+- **Handoffs:** write them as a file in the deliverable's folder; once the receiving thread has acted on one, move it to that folder's `archive/` so no one mistakes it for current instructions.
 - **Reference test:** `production/tests/oct17-dialogue-coldread/` (the first cold reads and dialogue pass, with the materials to rerun them).

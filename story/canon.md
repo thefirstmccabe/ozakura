@@ -4,7 +4,7 @@
 - the author's Oct 1 bible (`ozakura/source/story-bible-current.md`, now an archived snapshot);
 - the old working bible (`ozakura/story-bible.md`, retired).
 
-Every decision through Oct 8, 2026 is folded in. When the author decides something, edit this document in place, add a line to the revision record at the bottom, and log it in the production log.
+Every decision through Oct 8, 2026 is folded in. When the author decides something, edit this document in place, add a line to the revision record (`story/archive/canon-revision-record.md`), and log it in the production log.
 
 Last updated 2026-10-10 (family spine added).
 
@@ -784,91 +784,4 @@ These support plausibility. They don't dictate the fiction.
 Anything else (geography details, care costs, club details, combat, shrine duties) gets checked when a scene needs it.
 
 ## Revision record
-- **Sept 27–29:** smaller local story adopted. Cast, names, family, setting, shrine and the street-fight sequence established (see the archived Oct 1 bible for the detail).
-- **Oct 1:** author's consolidated bible.
-- **Oct 5:** Natsuki 5′3″ and shoulder-length hair; Kōhei 5′9″ with dark-brown hair; charcoal plaid skirt.
-- **Oct 6:**
-  - Kendo becomes setting, not sports manga.
-  - Full-year calendar (late-Aug kiss, Oct dating).
-  - The kiss is disclosed early by Natsuki, at her request to be the one to tell Nanoha.
-  - Nanoha senses the past-life connection.
-  - Length and reader-ahead interludes parked.
-  - Akane redesigned.
-  - Hair-color convention.
-  - Natsuki restyled.
-  - Houses about three feet apart, no alley.
-- **Oct 7:**
-  - Past life rewritten: rōnin, arranged marriage for an heir, she an ordinary, helpless woman, the deliberate trade, never sparred.
-  - Its consequences: one-sided recognition; the climax recast as instinct, not choice.
-  - Modestly propertied family; a simple real kimono.
-  - Romcom allocation (Working).
-  - Rival redesign; best friend kept.
-  - Umbrella scene; the girls' pact.
-  - Show-don't-tell note.
-- **Oct 8:**
-  - **What the reunion is for (§5):** she finds him, saves him and lets him go. Natsuki chooses not to be loved because of a past life. The January comparison becomes shared grieving. Nanoha must win as this life's love story on its own merits. Proposals: the "I'll find you" / "Live" promise; the farewell at the tree.
-  - Kiss song noted.
-  - The wrist motif becomes binding a cut on his wrist (from the pilot playthrough feedback; see pilot-notes §1b).
-  - Writing rules added to §1 (openings show rather than tell; no name-tag intros; no manga self-reference; subtle strangeness). The kendo senior is male.
-  - Docs consolidated: this canon replaces the Oct 1 bible and the working bible.
-- **Oct 10:**
-  - **The bloom's timing in both eras:** past = after his death and the promise (the assurance; the blossoms-and-blood CG); present = the beast ramping up after earlier low-level activity (rumors, people lost, a possible disappearance).
-  - **The family's recovery from Dad's death becomes a main spine** (§1 themes; §6 "The Fujisawa family").
-  - **September flashback to Dad's death:** the hospital request, his private request to Nanoha's father, and the bills scene.
-  - **Dad's regret** is revealed through Nanoha's father, who also apologizes for not pressing his offers of help.
-  - **Mom's recovery:** Emi confronts her, they cook the favorite dish, and she takes back some of the weight. Partial, with setbacks, this year. Supersedes "no substantial recovery arc."
-  - **Manga inserts are full color** in the VN style (§2); past-life color treatment is a proposal.
-  - **Anime cutscenes (Working):** the author is willing to pay for a few at pivotal moments (§2).
-  - **Animation:** the cutscene test passed; three-tier video plan (living stills, animated beats, a few full cutscenes plus an opening) is Working (§2).
-  - **The past-life death is in winter** (§5), so the tree blooms out of season at about the same time of year in both eras.
-  - **The beast is a little taller** (§6): about 4′3″ to the ear tips, back at a man's belt.
-  - **Units:** imperial only in all docs and art notes (author's rule).
-  - **Kiss song:** an original song with vocals allowed; the reference sets the feel only, and the rights question is dropped (§2).
-- **Oct 11:**
-  - **Shared-past flashbacks for Kōhei and Nanoha** (§6): childhood and middle-school scenes of them being there for each other. Candidate scenes are proposals.
-- **Oct 12:**
-  - The six shared-past flashbacks and their rules are accepted (§6).
-  - **The night before the battle** (scene bank 24a): "I love you" and, in effect, a marriage proposal; that's why they all have to live tomorrow.
-  - **Kōhei gets sick** (13b) from double shifts to buy Akane's birthday present; he works full time or close to it during school breaks (§8).
-  - **Dueling lunches** (13c), with Emi teasing Nanoha.
-  - Claude's staging proposals for 24a and 13c accepted; Akane's birthday is around May.
-  - **Hiding in Akane's room** (scene bank 13d).
-  - **Length decided:** 40-chapter spine, chapters float to ~4,000–5,000 words, slice-of-life added as needed (§4).
-  - **Cutscenes and longer animation dropped** (§2); pivotal moments use CGs and manga inserts. **Living stills on CGs and a few very short animated moments (e.g. the fall and catch) stay.**
-  - **Inserts stay full color** (reconfirmed after the B&W comparison), with no storyboard step: Claude self-reviews and presents only finished pages (§2).
-  - **The beach is cut;** a backyard watermelon day replaces it (13e). Where the reassurance scene (14) goes is Open.
-  - **Kendo explained** (13f): Natsuki teaches Rika the rules, openly as exposition; kendo calls and terms appear in Japanese and English.
-- **Oct 13:**
-  - **Insert presentation: panel by panel** (§2), locked as tested.
-  - **Reassurance scene cut** (scene bank 14); the author's call for this scene only.
-  - **Wound care and kiss** staged as a *Fragrant Flower*-style close-up sequence with half- and full-page images (§6); Natsuki's deleted text to Chie.
-  - **The fairy appears** in Natsuki's last scene, the epilogue (§7).
-  - **Style homages:** the kiss sequence in a *Fragrant Flower* style (Decided); the past-life beast fight in a *Vagabond* style (Working). The hug in the kiss sequence is shown.
-  - **Era:** contemporary, smartphones everywhere, before generative AI (§3).
-  - **Nanoha's sibling becomes a little sister** (§8), same personality, a little more girly; Kōhei as the son Kazuo never had. New name, design and voice needed.
-  - **The text** in the kiss sequence comes from Kōhei (§6).
-  - **Little sister's personality:** a blend of the gremlin and the tiny boss (§8).
-  - **Little sister's design:** D (style guide §2).
-  - **Little sister's name: Mio** (approved).
-- **Oct 17:**
-  - **Era treatments** decided (§2): past life cool and desaturated; childhood warm and faded.
-  - **Pilot v2 scene outline approved** with changes (`production/pilot-v2/scene-outline.md`).
-  - **Wataboshi image** added to the image motifs (scene bank 23), from the author; placement a Proposal.
-  - **Address guide decided** (§2; style guide §3c), with planned name changes: "Chibi" → "Nanoha" (the nickname that hurts in Ch11, the switch in Ch24), Nanoha's one cold "Fujisawa-kun" (Ch20), Natsuki's first "Kōhei" in her one voiced line in the kiss sequence (Ch19), his first "Natsuki" at the January farewell (Ch30), and Nanoha's "-san"/"-chan" shifts with Natsuki. Claude's choices, delegated by the author.
-  - **Reader knowledge, pilot (Working, Ch1–4 only):** the reader leans Natsuki from Ch1, suspects her strongly after the Ch2 catch, and isn't told within the pilot (§5 "What the reader sees"); targets in `production/pilot-v2/scene-outline.md`.
-  - **Ryōsuke's opening argument** is about taiyaki (head or tail first), not hot dogs (§2 openings rule).
-- **Oct 18** (the author's decisions from a separate discussion thread; Claude's proposals from it are pending):
-  - **Real triangle** (§6): Kōhei's feelings for Natsuki are real but smaller; Ch24 (Ch25 after the renumbering below) is a decision.
-  - **Reader targets** (§5 "What the reader sees"): who he ends up with about 50-50 until Ch31 (Ch32 after the renumbering below); who readers want, about 50-50; the dream woman leaning Natsuki at most about 60%. Replaces the Oct 17 Working line.
-  - **"My girl lost" is fine; "the wrong girl won" is not** (§5).
-  - **Structure stays:** the choice in October, the reveal at New Year (§6).
-  - **Natsuki knows before Kōhei** (briefly reversed, then reconfirmed after discussion): a conviction in the days after the wound care, not the full memory; the bloom gives her his death; the reader learns in Ch31 (Ch33 after the renumbering). **The bloom creates real uncertainty;** his reaffirmation isn't automatic (§6).
-  - **Kiss to dating: about ten weeks** (was 4–8, §4): he chooses at the cultural festival in early November, leaving about eight weeks of dating, with Christmas, before the bloom. The stretch between the kiss and the choice becomes his real choice.
-  - **The genre is promised from the start,** with more dread throughout; frame devices liked, placement Open (§2).
-  - **No one dies in the final battle; victory costs a real price** (§7).
-  - **Umbrella scene:** the rivalry becomes mutual knowledge (§6).
-  - **The dream woman's voice** (decided Oct 17, evening): a completely different voice from Natsuki's (style guide §7).
-  - **Accepted from the discussion (Oct 18):** the confession (scene bank 16) moves to late September; the school trip is Kyoto in late October, the girls rooming together; the past-life woman's hair stays hidden until the bloom; the cold open is in the pilot; Kōhei feels the pull from summer, and the reader sees both girls as the love interests early; red herrings for Nanoha with true explanations; Kōhei half-links the dream to Nanoha (his doubt after the bloom); Natsuki not surprised at the bloom; her thesis stated once; the Ch33 interiority from her unsent drafts; Ryōsuke and Chie as her advocates; the dread ramp by season; the spine grows to 42.
-  - **Dream-woman lean drifts up** over the year (about 50 in the pilot to about 65–70 before the bloom), never confirmed before Ch30 (§5).
-- **Oct 19:**
-  - **The cold open is parked** (§1, frame devices): it needs improvement; what it shows, and whether it's animated or music over CGs, is decided at the very end of the project (author).
+Kept in `story/archive/canon-revision-record.md` (moved Oct 19). Append a line there whenever canon changes.

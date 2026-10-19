@@ -4,12 +4,36 @@ This repo is the durable store for everything Ōzakura: game build, art, audio, 
 
 The repo is **public**, and GitHub Pages serves it at https://thefirstmccabe.github.io/ozakura/. The author decided on Oct 10 that the story docs can be public too. Still never commit credentials or anything personal.
 
+## Start here (every thread)
+1. **Read this file and the status board** (`story/production-log.md` §0). The board says what's in flight and who owns it.
+2. **Then read only what your job needs** (the docs are long; don't read everything every time):
+   - **Story thread:** `story/canon.md`, `story/chapter-map.md`, and style guide §3b–§3c (speech and address).
+   - **Production thread:** the deliverable's brief (`production/<deliverable>/README.md`) and outline, style guide §1–§9 (§9 is the process), `story/pilot-notes.md`, and the canon sections the chapter touches.
+   - **Music thread:** style guide §7 and the music cue list for the deliverable.
+   - **Planning:** the production log and style guide §9.
+3. Before changing a doc, read the section you're changing in full. `story/archive/` is history, not required reading.
+
+## Threads and who owns what
+| Thread | Owns (decides and edits) | Hands off to |
+|---|---|---|
+| **Story** | `canon.md`, `chapter-map.md`, chapter outlines and reader-knowledge targets, the speech and address sheets (style guide §3b–§3c), folding [P] details into canon | Production (outlines), via a handoff file in the deliverable's folder |
+| **Production** (one per deliverable) | Builds, scripts, art, voices, `production/<deliverable>/`, `production/pipeline/`, `pilot-notes.md` [P] entries, the status board's rows for its chapters | Story (punch-list dialogue items, [P] details), the author (handovers) |
+| **Music** | Style guide §7 (music), `production/music/` | Production (finished cues) |
+| **Planning** | Style guide §9 (the process), `production/pipeline/review/` prompts, the log's structure. Retires after Pilot v2; then Production owns these | Everyone (process changes) |
+
+Any thread may append to the decision log and update the status board. If a change belongs to another thread, write it down for that thread (a handoff file or a log row) instead of making it.
+
+## What a thread decides itself, and what it asks the author
+- **Decide, then tell him in a few lines and log it:** wording and clue calibration within the approved reader targets; speech, address and pronoun details; production logistics and [P] details (judged by playing); tool and pipeline choices; anything inside an approved spending cap (ask only for a single item over about $5 or if the total would pass the cap).
+- **Ask him first:** plot beats, character arcs and relationships, endings, anything canon marks Open at the story level, new spending, and blocked access.
+- **If unsure which side something is on, decide it, tell him plainly, and make it easy to reverse.**
+
 ## Story docs: `story/` (mirrored to the claude.ai Project)
 The living docs exist in two places: `story/` here (with git history) and the claude.ai Project "visual novel" under `ozakura/` (where the author reads them).
 - `story/canon.md` — the single story bible. It governs over everything else in this repo.
 - `story/pilot-notes.md` — the shipped pilot's inventions and the agreed fix list.
 - `story/style-guide.md` — designs, references, prompts, lettering, voices.
-- `story/production-log.md` — decisions, budget, issues, next steps.
+- `story/production-log.md` — the status board, recent decisions, the open budget, issues.
 - `story/chapter-map.md` — the chapter-by-chapter plan (Oct 12). Canon governs it.
 
 **How to edit them (every thread):**
@@ -17,6 +41,8 @@ The living docs exist in two places: `story/` here (with git history) and the cl
 2. Edit the file in `story/` with normal file edits; never retype a whole doc.
 3. Commit and push.
 4. Upload the same file to the Project: `project_write` with `path: ozakura/<name>.md` and `local_path: story/<name>.md`.
+
+`story/archive/` holds history (the old log, canon's revision record, legacy style-guide sections). It isn't mirrored to the Project; append canon's revision lines to `story/archive/canon-revision-record.md`.
 
 If someone edited the Project copy directly, `project_read` it first and fold that change into `story/` before editing.
 
