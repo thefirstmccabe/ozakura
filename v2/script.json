@@ -18,8 +18,8 @@
 "script": [
 {
 "t": "scene",
-"id": "prologue",
-"title": "The Dream"
+"id": "cold_open",
+"title": "Cold open"
 },
 {
 "t": "bg",
@@ -28,106 +28,61 @@
 },
 {
 "t": "bgm",
-"name": "memory"
+"name": null
 },
 {
 "t": "wait",
-"s": 0.7
-},
-{
-"t": "nar",
-"id": "p_0001",
-"text": "There's a dream I've had since I was small."
-},
-{
-"t": "nar",
-"id": "p_0002",
-"text": "I never remember it properly when I wake. Only pieces."
+"s": 1.2
 },
 {
 "t": "cg",
-"name": "cg_dream",
+"name": "cg_cold_mirror",
 "tr": "slow"
 },
 {
-"t": "nar",
-"id": "p_0003",
-"text": "The sound of a river, close by."
+"t": "wait",
+"s": 2.6
 },
 {
-"t": "nar",
-"id": "p_0004",
-"text": "My wrist stings. There's a cut on the inside of it from training, and I've held it closed the whole way home."
+"t": "cg",
+"name": "cg_cold_hand",
+"tr": "fade"
 },
 {
-"t": "nar",
-"id": "p_0005",
-"text": "Somewhere above us, a branch moving in the wind."
+"t": "wait",
+"s": 2.6
 },
 {
-"t": "nar",
-"id": "p_0006",
-"text": "Petals."
+"t": "cg",
+"name": "cg_cold_mist",
+"tr": "fade"
 },
 {
-"t": "say",
-"id": "p_0007",
-"who": "past_natsuki",
-"text": "\"You're late.\""
+"t": "wait",
+"s": 3.4
 },
 {
-"t": "nar",
-"id": "p_0008",
-"text": "She says it like a scolding. She says it like she's laughing."
+"t": "cg",
+"name": "cg_cold_mirror",
+"tr": "fade"
 },
 {
-"t": "nar",
-"id": "p_0009",
-"text": "She says it like she's been waiting a very long time."
+"t": "wait",
+"s": 2.6
 },
 {
-"t": "say",
-"id": "p_0010",
-"who": "past_natsuki",
-"text": "\"Hurt again. Give me your hand… Hold still.\""
-},
-{
-"t": "nar",
-"id": "p_0011",
-"text": "Hands that aren't mine wind a strip of cloth around a wrist that is. Slow and careful, like the knot matters more than anything else in the world."
-},
-{
-"t": "bg",
-"name": "white",
-"tr": "flash"
-},
-{
-"t": "nar",
-"id": "p_0012",
-"text": "And then I wake up, and the only thing left is a feeling I can't put a name to."
-},
-{
-"t": "nar",
-"id": "p_0013",
-"text": "That someone was waiting for me."
-},
-{
-"t": "nar",
-"id": "p_0014",
-"text": "That I kept them waiting far too long."
-},
-{
-"t": "bgm",
-"name": null
+"t": "cg",
+"name": null,
+"tr": "cut"
 },
 {
 "t": "bg",
 "name": "black",
-"tr": "slow"
+"tr": "cut"
 },
 {
 "t": "wait",
-"s": 1.0
+"s": 1.4
 },
 {
 "t": "chapter",
@@ -165,7 +120,7 @@
 {
 "t": "nar",
 "id": "c1_0003",
-"text": "The water heater ticking. A crow on the power line. Nothing from the room down the hall."
+"text": "The water heater ticking. A crow on the power line. Nothing from downstairs."
 },
 {
 "t": "nar",
@@ -190,12 +145,12 @@
 {
 "t": "nar",
 "id": "c1_0007",
-"text": "I've gotten fast at this. Fast enough to do it while reading the calendar on the wall."
+"text": "I've gotten fast at this. Fast enough to do it while reading the whiteboard on the fridge."
 },
 {
 "t": "nar",
 "id": "c1_0008",
-"text": "Kendo: Monday, Wednesday, Friday and Saturday morning. Hoshino Kitchen: Tuesday, Thursday and Sunday. A red circle around the eighteenth, Akane's clinic day. All of it in my handwriting."
+"text": "Kendo: Monday, Wednesday, Friday and Saturday morning. Hoshino Kitchen: Tuesday, Thursday and Sunday. A red circle around the 18, Akane's clinic day. All of it in my handwriting."
 },
 {
 "t": "nar",
@@ -244,7 +199,7 @@
 "t": "say",
 "id": "c1_0014",
 "who": "akane",
-"text": "\"You asked me that yesterday.\""
+"text": "\"Geez, Onii-chan! Every single morning!\""
 },
 {
 "t": "say",
@@ -256,13 +211,13 @@
 {
 "t": "show",
 "who": "akane",
-"spr": "akane_school_tease"
+"spr": "akane_school_happy"
 },
 {
 "t": "say",
 "id": "c1_0016",
 "who": "akane",
-"text": "\"And I slept yesterday too. Two nights in a row. Medical science is baffled.\""
+"text": "\"And I slept! Super well! I didn't wake up once!\""
 },
 {
 "t": "nar",
@@ -278,14 +233,14 @@
 "t": "say",
 "id": "c1_0018",
 "who": "akane",
-"text": "\"Stop doing the face.\""
+"text": "\"Onii-chan, you're hovering again.\""
 },
 {
 "t": "say",
 "id": "c1_0019",
 "who": "kohei",
-"text": "\"What face?\"",
-"face": "neutral"
+"text": "\"I'm standing in my own kitchen.\"",
+"face": "deadpan"
 },
 {
 "t": "show",
@@ -296,13 +251,13 @@
 "t": "say",
 "id": "c1_0020",
 "who": "akane",
-"text": "\"The doctor face. You don't have a license, Onii-chan.\""
+"text": "\"Then go hover over the eggs!\""
 },
 {
 "t": "say",
 "id": "c1_0021",
 "who": "kohei",
-"text": "\"I've got an egg with your name on it. That's basically a license.\"",
+"text": "\"There's an egg with your name on it.\"",
 "face": "smile"
 },
 {
@@ -314,7 +269,7 @@
 "t": "say",
 "id": "c1_0022",
 "who": "akane",
-"text": "\"I could make my own lunch, you know. I'm very talented.\""
+"text": "\"Yaaay. …I could make my own lunch, you know.\""
 },
 {
 "t": "say",
@@ -332,7 +287,7 @@
 "t": "say",
 "id": "c1_0024",
 "who": "akane",
-"text": "\"…That's sort of my point.\""
+"text": "\"…You always are.\""
 },
 {
 "t": "nar",
@@ -427,7 +382,7 @@
 "t": "say",
 "id": "c1_0034",
 "who": "nanoha",
-"text": "\"Again. She's very bad at measuring burdock. It's a sickness.\""
+"text": "\"Again. She can't measure burdock. It's a sickness.\""
 },
 {
 "t": "nar",
@@ -440,17 +395,6 @@
 "who": "kohei",
 "text": "\"Tell her thanks.\"",
 "face": "smile"
-},
-{
-"t": "show",
-"who": "nanoha",
-"spr": "nanoha_school_smile"
-},
-{
-"t": "say",
-"id": "c1_0037",
-"who": "nanoha",
-"text": "\"I'll tell her you said it like you meant it.\""
 },
 {
 "t": "nar",
@@ -505,13 +449,13 @@
 "t": "say",
 "id": "c1_0044",
 "who": "akane",
-"text": "\"He did. I saw his face.\""
+"text": "\"He totally did.\""
 },
 {
 "t": "say",
 "id": "c1_0045",
 "who": "kohei",
-"text": "\"Whose side are you on?\"",
+"text": "\"Traitor.\"",
 "face": "annoyed"
 },
 {
@@ -523,7 +467,7 @@
 "t": "say",
 "id": "c1_0046",
 "who": "akane",
-"text": "\"Hers. She brought kinpira.\""
+"text": "\"Nanoha-chan brought kinpira!\""
 },
 {
 "t": "hideall"
@@ -580,6 +524,11 @@
 "text": "This week it's the best walk in Shirasawa. The cherry trees along the embankment are in full bloom, so heavy with flowers the branches sag over the path, and every time the wind comes down off the mountains the whole tunnel lets go at once."
 },
 {
+"t": "nar",
+"id": "c1_0260",
+"text": "Up on the hill above it all, where the shrine is, the Ōzakura is blooming too: one cherry tree older than anyone's records, so big that from down here it looks like a pink cloud caught on the hillside."
+},
+{
 "t": "show",
 "who": "nanoha",
 "spr": "nanoha_school_smile",
@@ -588,13 +537,13 @@
 {
 "t": "nar",
 "id": "c1_0054",
-"text": "Nanoha walks on the river side. She always walks on the river side. I don't remember when we decided that."
+"text": "Nanoha walks on the river side."
 },
 {
 "t": "say",
 "id": "c1_0055",
 "who": "nanoha",
-"text": "\"So. Class assignments.\""
+"text": "\"Now then. Class assignments.\""
 },
 {
 "t": "say",
@@ -695,12 +644,12 @@
 "t": "say",
 "id": "c1_0066",
 "who": "nanoha",
-"text": "\"That's what they want you to think.\""
+"text": "\"That's what it says in the minutes.\""
 },
 {
 "t": "nar",
 "id": "c1_0067",
-"text": "I laugh. I can't help it."
+"text": "I laugh."
 },
 {
 "t": "show",
@@ -734,7 +683,7 @@
 {
 "t": "nar",
 "id": "c1_0071",
-"text": "A gust shakes the trees. Petals come down so thick it's like walking through snow that forgot to be cold. One lands in her hair, right on the clip, and stays there."
+"text": "A gust shakes the trees. Petals come down all at once, thick enough to lose the path in. One lands on her braid and stays there."
 },
 {
 "t": "nar",
@@ -765,17 +714,12 @@
 {
 "t": "nar",
 "id": "c1_0075",
-"text": "She has to stretch to reach. She's always had to stretch to reach."
+"text": "She's had to reach up for it since middle school."
 },
 {
 "t": "nar",
 "id": "c1_0076",
 "text": "Her hands stay a second longer than the collar strictly needs."
-},
-{
-"t": "nar",
-"id": "c1_0077",
-"text": "Probably a stubborn crease."
 },
 {
 "t": "show",
@@ -797,24 +741,13 @@
 "t": "say",
 "id": "c1_0079",
 "who": "kohei",
-"text": "\"Looks can be deceiving.\"",
-"face": "smile"
-},
-{
-"t": "show",
-"who": "nanoha",
-"spr": "nanoha_school_tease"
-},
-{
-"t": "say",
-"id": "c1_0080",
-"who": "nanoha",
-"text": "\"That's why I fix them.\""
+"text": "\"…Thanks.\"",
+"face": "neutral"
 },
 {
 "t": "nar",
 "id": "c1_0081",
-"text": "We walk on. A bike bell rings somewhere behind us and doesn't pass."
+"text": "We walk on."
 },
 {
 "t": "show",
@@ -882,15 +815,10 @@
 "text": "\"So you'd hear yourself say it.\""
 },
 {
-"t": "nar",
-"id": "c1_0089",
-"text": "She doesn't say it like a criticism. She says it like a weather report. That's somehow worse."
-},
-{
 "t": "say",
 "id": "c1_0090",
 "who": "kohei",
-"text": "\"It's fine. I like being busy.\"",
+"text": "\"It's fine. Saturday afternoons are free.\"",
 "face": "smile"
 },
 {
@@ -907,7 +835,7 @@
 {
 "t": "nar",
 "id": "c1_0092",
-"text": "A few steps of nothing. The river is loud this time of year, fat with snowmelt from the Tanzawa."
+"text": "A few steps of nothing. The river is loud this time of year, fat with spring rain off the Tanzawa."
 },
 {
 "t": "show",
@@ -918,7 +846,7 @@
 "t": "say",
 "id": "c1_0093",
 "who": "nanoha",
-"text": "\"Oh. Grandpa says the Ōzakura's the best it's been in years. I'm helping him sweep up there Saturday.\""
+"text": "\"Oh. Grandpa says the shrine's cherries are the best they've been in years. I'm helping him sweep up there Saturday.\""
 },
 {
 "t": "say",
@@ -1038,7 +966,7 @@
 "t": "say",
 "id": "c1_0105",
 "who": "rika",
-"text": "\"And Fujisawa-kun's in Two-B too. Hm. Hmmm.\""
+"text": "\"And you walked in with Fujisawa-kun. Hm. Hmmm.\""
 },
 {
 "t": "say",
@@ -1056,7 +984,7 @@
 "t": "say",
 "id": "c1_0107",
 "who": "rika",
-"text": "\"Nothing! Nothing at all. A completely neutral hmmm.\""
+"text": "\"Nothing! Nothing! I'm just humming! Hmm-hmm-hmmm!\""
 },
 {
 "t": "show",
@@ -1068,7 +996,7 @@
 "t": "say",
 "id": "c1_0108",
 "who": "ryosuke",
-"text": "\"—which is why, structurally, a hot dog is a sandwich.\""
+"text": "\"—which is why the correct way to eat a taiyaki is head first.\""
 },
 {
 "t": "nar",
@@ -1091,7 +1019,7 @@
 "t": "say",
 "id": "c1_0111",
 "who": "ryosuke",
-"text": "\"Bread on two sides. Filling in the middle. A hinge doesn't disqualify it. A sub roll has a hinge, and nobody says a sub isn't a sandwich.\""
+"text": "\"The head has the most bean paste. You eat the best part while it's still hot, and the tail cleans your palate. That isn't an opinion. It's thermodynamics.\""
 },
 {
 "t": "say",
@@ -1102,17 +1030,6 @@
 },
 {
 "t": "show",
-"who": "ryosuke",
-"spr": "ryosuke_school_smug"
-},
-{
-"t": "say",
-"id": "c1_0113",
-"who": "ryosuke",
-"text": "\"That's not a counterargument. That's a timestamp.\""
-},
-{
-"t": "show",
 "who": "rika",
 "spr": "rika_school_surprised"
 },
@@ -1120,7 +1037,7 @@
 "t": "say",
 "id": "c1_0114",
 "who": "rika",
-"text": "\"It's a hot DOG! It says so in the name!\""
+"text": "\"Tail first! You save the best part for last! Everybody knows that!\""
 },
 {
 "t": "show",
@@ -1131,18 +1048,18 @@
 "t": "say",
 "id": "c1_0115",
 "who": "ryosuke",
-"text": "\"By that logic, a pancake is a cake.\""
+"text": "\"Then by the time you get there, it's cold.\""
 },
 {
 "t": "show",
 "who": "rika",
-"spr": "rika_school_scheme"
+"spr": "rika_school_surprised"
 },
 {
 "t": "say",
 "id": "c1_0116",
 "who": "rika",
-"text": "\"…Isn't it?\""
+"text": "\"…Oh no.\""
 },
 {
 "t": "show",
@@ -1161,35 +1078,6 @@
 "who": "kohei",
 "text": "\"Please don't.\"",
 "face": "smile"
-},
-{
-"t": "show",
-"who": "ryosuke",
-"spr": "ryosuke_school_smug"
-},
-{
-"t": "say",
-"id": "c1_0119",
-"who": "ryosuke",
-"text": "\"Also, we're all in Two-B. I've already chosen my seat.\""
-},
-{
-"t": "say",
-"id": "c1_0120",
-"who": "kohei",
-"text": "\"We haven't seen the room yet.\"",
-"face": "neutral"
-},
-{
-"t": "show",
-"who": "ryosuke",
-"spr": "ryosuke_school_smug"
-},
-{
-"t": "say",
-"id": "c1_0121",
-"who": "ryosuke",
-"text": "\"I chose it theoretically. Third row, by the window, out of the teacher's natural sightline but close enough to the heater for winter.\""
 },
 {
 "t": "show",
@@ -1293,12 +1181,12 @@
 "t": "say",
 "id": "c1_0130",
 "who": "nanoha",
-"text": "\"Yours was easier. It's always right under Fukuda's. Fukuda is very easy to find.\""
+"text": "\"Yours was easier. It's always right under Fukuda-kun's. Fukuda-kun is easy to find.\""
 },
 {
 "t": "nar",
 "id": "c1_0131",
-"text": "When I finally get to the board, there's no Fukuda in Two-B this year. She went looking for mine before her own."
+"text": "When I finally get to the board, Fukuda's not in Two-B this year. He's in Two-E. She went looking for mine before her own."
 },
 {
 "t": "nar",
@@ -1326,7 +1214,7 @@
 {
 "t": "nar",
 "id": "c1_0133",
-"text": "Tokiwa gets his theoretical seat, which annoys me more than it should. I end up in the second-to-last row by the window. Nanoha's two rows over, which by the standards of the conspiracy is apparently acceptable."
+"text": "I end up in the second-to-last row by the window. Nanoha's two rows over, which by the standards of the conspiracy is apparently acceptable. Tokiwa's near the front, already drawing his diagram."
 },
 {
 "t": "nar",
@@ -1376,7 +1264,7 @@
 {
 "t": "nar",
 "id": "c1_0138",
-"text": "She walks to the front of a room full of strangers like she's walking onto a court she's already won on."
+"text": "She walks to the front of a room full of strangers like she's stepping onto a floor she's already won on."
 },
 {
 "t": "nar",
@@ -1396,15 +1284,10 @@
 "text": "\"My dad's job moves us around a lot, so I've been the new girl…\""
 },
 {
-"t": "nar",
-"id": "c1_0142",
-"text": "She counts on her fingers."
-},
-{
 "t": "say",
 "id": "c1_0143",
 "who": "natsuki",
-"text": "\"…six times now? So I'm basically a professional. Please don't go easy on me.\""
+"text": "\"…six times now? So please don't go easy on me.\""
 },
 {
 "t": "nar",
@@ -1415,7 +1298,7 @@
 "t": "say",
 "id": "c1_0145",
 "who": "natsuki",
-"text": "\"I do kendo, and I'm looking for a dojo that'll put up with me. I also really love horror movies, so if anyone wants to watch one with me, I'll be grateful forever.\""
+"text": "\"I do kendo, and I'm looking for a dojo that'll put up with me. I also love horror movies, the cheesier the better, so if anyone wants to watch a bad one with me, come find me.\""
 },
 {
 "t": "nar",
@@ -1449,7 +1332,7 @@
 "t": "say",
 "id": "c1_0148",
 "who": "natsuki",
-"text": "\"Please take care of me.\""
+"text": "\"Looking forward to this year.\""
 },
 {
 "t": "nar",
@@ -1474,7 +1357,7 @@
 {
 "t": "nar",
 "id": "c1_0152",
-"text": "I raise my hand. She walks down the aisle."
+"text": "I raise my left hand. She walks down the aisle."
 },
 {
 "t": "cg",
@@ -1547,11 +1430,6 @@
 "text": "I keep my eyes on the board for the entire first period."
 },
 {
-"t": "nar",
-"id": "c1_0161",
-"text": "I don't hear a single word of it."
-},
-{
 "t": "scene",
 "id": "c1_lunch",
 "title": "Lunch with Mizuno"
@@ -1569,11 +1447,6 @@
 "t": "nar",
 "id": "c1_0162",
 "text": "By lunch, Mizuno Natsuki has learned the names of half the class, answered \"Sendai, most recently\" about twenty times, been invited to two clubs, and agreed to go to karaoke with a group of girls whose names I don't think I've ever said out loud."
-},
-{
-"t": "nar",
-"id": "c1_0163",
-"text": "I'm impressed. I'm also slightly exhausted just watching."
 },
 {
 "t": "nar",
@@ -1619,7 +1492,7 @@
 "t": "say",
 "id": "c1_0169",
 "who": "kohei",
-"text": "\"Is that in the welcome packet?\"",
+"text": "\"Who told you that?\"",
 "face": "annoyed"
 },
 {
@@ -1631,7 +1504,7 @@
 "t": "say",
 "id": "c1_0170",
 "who": "natsuki",
-"text": "\"Someone told me before I'd even put my shoes in my locker. I'm not kidding. The girl by the door was very passionate about it.\""
+"text": "\"The girl by the door, before I'd even put my shoes in my locker.\""
 },
 {
 "t": "say",
@@ -1649,7 +1522,7 @@
 "t": "say",
 "id": "c1_0172",
 "who": "natsuki",
-"text": "\"She said you told every one of them you didn't have time for a girlfriend. Is that true?\""
+"text": "\"She said you told all three of them you didn't have time for a girlfriend. True?\""
 },
 {
 "t": "say",
@@ -1672,7 +1545,7 @@
 {
 "t": "nar",
 "id": "c1_0175",
-"text": "She props her chin on her hand and looks at me like she's reading a scorecard."
+"text": "She props her chin on her hand and looks me over. Shoulders. Hands. Like she's working out my reach."
 },
 {
 "t": "show",
@@ -1681,32 +1554,16 @@
 },
 {
 "t": "say",
-"id": "c1_0176",
+"id": "c1_0261",
 "who": "natsuki",
-"text": "\"That's either really honest or really sad. I can't decide.\""
+"text": "\"Do you always sit this straight?\""
 },
 {
 "t": "say",
-"id": "c1_0177",
+"id": "c1_0262",
 "who": "kohei",
-"text": "\"Let me know when you do.\"",
-"face": "smile"
-},
-{
-"t": "show",
-"who": "natsuki",
-"spr": "natsuki_school_smile"
-},
-{
-"t": "say",
-"id": "c1_0178",
-"who": "natsuki",
-"text": "\"I will. I'm very decisive. Usually.\""
-},
-{
-"t": "nar",
-"id": "c1_0179",
-"text": "Something about the way she says it makes me laugh."
+"text": "\"I—\"",
+"face": "flustered"
 },
 {
 "t": "show",
@@ -1717,7 +1574,7 @@
 "t": "say",
 "id": "c1_0180",
 "who": "natsuki",
-"text": "\"Okay, you're fun. So what are you, {shodan|first dan}?\""
+"text": "\"What are you, {shodan|first dan}?\""
 },
 {
 "t": "say",
@@ -1735,7 +1592,7 @@
 "t": "say",
 "id": "c1_0182",
 "who": "natsuki",
-"text": "\"Oh, he's cocky. Good. I hate practicing with polite people.\""
+"text": "\"Big talk for someone who sits like he's being graded.\""
 },
 {
 "t": "say",
@@ -1758,7 +1615,7 @@
 {
 "t": "nar",
 "id": "c1_0185",
-"text": "She repeats it like she's writing it on the inside of her wrist."
+"text": "She takes a ballpoint out of her blazer pocket, turns her left hand over and writes {水|Wednesday} on the inside of her wrist, small, just under her cuff."
 },
 {
 "t": "show",
@@ -1803,7 +1660,7 @@
 "t": "say",
 "id": "c1_0189",
 "who": "nanoha",
-"text": "\"Tachibana Nanoha. I sit two rows over. I was the class representative's assistant last year, so I still own a clipboard.\""
+"text": "\"Tachibana Nanoha. Um— I sit two rows over.\""
 },
 {
 "t": "show",
@@ -1814,12 +1671,12 @@
 "t": "say",
 "id": "c1_0190",
 "who": "nanoha",
-"text": "\"If you'd like, I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing.\""
+"text": "\"If you'd like… I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing.\""
 },
 {
 "t": "nar",
 "id": "c1_0191",
-"text": "For a second Mizuno doesn't say anything. She looks almost startled, like she isn't used to being the one who gets asked."
+"text": "For a second Mizuno doesn't say anything."
 },
 {
 "t": "show",
@@ -1830,7 +1687,7 @@
 "t": "say",
 "id": "c1_0192",
 "who": "natsuki",
-"text": "\"…Really? You'd do that?\""
+"text": "\"…Really?\""
 },
 {
 "t": "show",
@@ -1846,24 +1703,24 @@
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_laugh"
+"spr": "natsuki_school_smile"
 },
 {
 "t": "say",
 "id": "c1_0194",
 "who": "natsuki",
-"text": "\"I would love that. Really. Thank you.\""
+"text": "\"I'd love that. Which one eats coins?\""
 },
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_grin"
+"spr": "natsuki_school_smile"
 },
 {
 "t": "say",
 "id": "c1_0195",
 "who": "natsuki",
-"text": "\"Oh, and call me Natsuki. Is that okay? People tell me I'm pushy.\""
+"text": "\"Oh, and call me Natsuki.\""
 },
 {
 "t": "show",
@@ -1890,24 +1747,24 @@
 {
 "t": "show",
 "who": "nanoha",
-"spr": "nanoha_school_tease"
+"spr": "nanoha_school_smile"
 },
 {
 "t": "say",
 "id": "c1_0198",
 "who": "nanoha",
-"text": "\"I'm working up to it. I need time to adjust.\""
+"text": "\"I'm working up to it.\""
 },
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_smile"
+"spr": "natsuki_school_grin"
 },
 {
 "t": "say",
 "id": "c1_0199",
 "who": "natsuki",
-"text": "\"Okay, okay. Then I'll just call you Nanoha. Is that all right? I'm going to do it anyway.\""
+"text": "\"Okay, okay. Then I'll call you Nanoha. All right? I'm doing it anyway.\""
 },
 {
 "t": "show",
@@ -1923,15 +1780,15 @@
 {
 "t": "nar",
 "id": "c1_0201",
-"text": "They both laugh, and something about the two of them laughing in the window light, over the top of my head, makes me feel weirdly like furniture."
-},
-{
-"t": "hideall"
+"text": "Mizuno laughs, and after a second Nanoha does too, ducking her head over her lunch. The two of them in the window light, over the top of my head. I feel like furniture."
 },
 {
 "t": "nar",
 "id": "c1_0202",
-"text": "I eat my rice. It's very good rice. I made it myself."
+"text": "I eat my rice. It's good rice. I made it myself."
+},
+{
+"t": "hideall"
 },
 {
 "t": "scene",
@@ -1960,7 +1817,7 @@
 {
 "t": "nar",
 "id": "c1_0204",
-"text": "That was the first thing Nanoha learned on the tour. Natsuki noticed that the stairs by the art room squeaked on the fourth step and the eleventh. She noticed the faded rectangle on the wall where a trophy case used to be. She noticed that the third-floor girls' bathroom had a window that looked straight at the mountains, and she said \"Oh,\" very quietly, like she'd been handed something."
+"text": "That was the first thing Nanoha learned on the tour. Natsuki noticed that the stairs by the art room squeaked on the fourth step and the eleventh. She noticed that the third-floor girls' bathroom had a window that looked straight at the mountains, and she said \"Oh,\" softly, like she'd been handed something."
 },
 {
 "t": "nar",
@@ -1977,13 +1834,13 @@
 "t": "say",
 "id": "c1_0206",
 "who": "natsuki",
-"text": "\"This school's nice. It feels… lived in. Does that make sense?\""
+"text": "\"Okay, real question. Is this building haunted? Something in the music room was knocking.\""
 },
 {
 "t": "say",
 "id": "c1_0207",
 "who": "nanoha",
-"text": "\"It's very old. The heating sounds like a ghost.\"",
+"text": "\"It's old. The heating sounds like a ghost.\"",
 "face": "school_smile"
 },
 {
@@ -1995,7 +1852,7 @@
 "t": "say",
 "id": "c1_0208",
 "who": "natsuki",
-"text": "\"Perfect. I love it already.\""
+"text": "\"Perfect.\""
 },
 {
 "t": "show",
@@ -2006,7 +1863,7 @@
 "t": "say",
 "id": "c1_0209",
 "who": "natsuki",
-"text": "\"So. You and Fujisawa.\""
+"text": "\"So. What about you and Fujisawa?\""
 },
 {
 "t": "say",
@@ -2042,7 +1899,7 @@
 "t": "say",
 "id": "c1_0213",
 "who": "natsuki",
-"text": "\"No way. So you're real childhood friends.\""
+"text": "\"No way. Real childhood friends? Baby pictures and everything?\""
 },
 {
 "t": "say",
@@ -2055,17 +1912,6 @@
 "t": "nar",
 "id": "c1_0215",
 "text": "Nanoha said it as lightly as she knew how. She'd had practice."
-},
-{
-"t": "show",
-"who": "natsuki",
-"spr": "natsuki_school_wistful"
-},
-{
-"t": "say",
-"id": "c1_0216",
-"who": "natsuki",
-"text": "\"That's really nice.\""
 },
 {
 "t": "show",
@@ -2092,14 +1938,14 @@
 "t": "say",
 "id": "c1_0219",
 "who": "natsuki",
-"text": "\"Hey. This is going to sound weird.\""
+"text": "\"Hey. Does Fujisawa ever compete up north? Around Sendai?\""
 },
 {
 "t": "say",
 "id": "c1_0220",
 "who": "nanoha",
-"text": "\"I like weird.\"",
-"face": "school_smile"
+"text": "\"Not that I know of. Why?\"",
+"face": "school_surprised"
 },
 {
 "t": "show",
@@ -2110,7 +1956,7 @@
 "t": "say",
 "id": "c1_0221",
 "who": "natsuki",
-"text": "\"Does he ever seem like… someone you've met before?\""
+"text": "\"I feel like I've met him somewhere before. I just can't place it.\""
 },
 {
 "t": "say",
@@ -2135,25 +1981,7 @@
 "t": "say",
 "id": "c1_0224",
 "who": "natsuki",
-"text": "\"Okay, fair! Fair. Forget it. It's the jet lag talking.\""
-},
-{
-"t": "say",
-"id": "c1_0225",
-"who": "nanoha",
-"text": "\"You moved from Sendai. That's barely three hours by train.\"",
-"face": "school_deadpan"
-},
-{
-"t": "show",
-"who": "natsuki",
-"spr": "natsuki_school_blush"
-},
-{
-"t": "say",
-"id": "c1_0226",
-"who": "natsuki",
-"text": "\"Very intense jet lag.\""
+"text": "\"Ha— okay. Then he's just got a very ordinary face. Don't tell him I said that.\""
 },
 {
 "t": "nar",
@@ -2232,12 +2060,12 @@
 {
 "t": "nar",
 "id": "c1_0235",
-"text": "I'm taking the burnables out to the corner. Pickup is Tuesdays and Fridays now. Dad's handwriting on the calendar still says Monday, and tonight I went with the handwriting."
+"text": "I'm taking the burnables out to the corner. Pickup moved to Tuesdays and Fridays last fall. Dad's handwriting on the whiteboard still says Monday, and tonight I went with the handwriting."
 },
 {
 "t": "nar",
 "id": "c1_0236",
-"text": "That's when Nanoha comes up the street with her school bag over her shoulder."
+"text": "That's when Nanoha comes up the street with her school bag over her shoulder, back from walking Mizuno home. Mizuno lives by the station."
 },
 {
 "t": "show",
@@ -2299,11 +2127,6 @@
 "text": "\"She's nice, Kōhei. I like her.\""
 },
 {
-"t": "nar",
-"id": "c1_0243",
-"text": "She says it a little too clearly, the way you say something so it stays said."
-},
-{
 "t": "show",
 "who": "nanoha",
 "spr": "nanoha_school_smile"
@@ -2353,7 +2176,7 @@
 {
 "t": "nar",
 "id": "c1_0249",
-"text": "She drops her chin and narrows her eyes and does a frankly offensive impression of what I can only assume is my face."
+"text": "She drops her chin and narrows her eyes. I think it's supposed to be me."
 },
 {
 "t": "say",
@@ -2411,7 +2234,7 @@
 "t": "say",
 "id": "c1_0256",
 "who": "kohei",
-"text": "\"Night.\"",
+"text": "\"Night, Chibi.\"",
 "face": "smile"
 },
 {
@@ -2437,6 +2260,125 @@
 "t": "nar",
 "id": "c1_0259",
 "text": "I stand there for a while longer than the garbage requires."
+},
+{
+"t": "bgm",
+"name": null
+},
+{
+"t": "bg",
+"name": "black",
+"tr": "slow"
+},
+{
+"t": "nar",
+"id": "c1_0264",
+"text": "In bed I run my thumb over the callus on my left palm."
+},
+{
+"t": "scene",
+"id": "c1_dream",
+"title": "The dream"
+},
+{
+"t": "bg",
+"name": "black",
+"tr": "slow"
+},
+{
+"t": "bgm",
+"name": "memory"
+},
+{
+"t": "wait",
+"s": 0.7
+},
+{
+"t": "nar",
+"id": "p_0001",
+"text": "There's a dream I've had since I was small."
+},
+{
+"t": "nar",
+"id": "p_0002",
+"text": "I never remember it properly when I wake. Only pieces."
+},
+{
+"t": "nar",
+"id": "c1_0263",
+"text": "Tonight, it comes back."
+},
+{
+"t": "cg",
+"name": "cg_dream",
+"tr": "slow"
+},
+{
+"t": "nar",
+"id": "p_0003",
+"text": "The sound of a river, close by."
+},
+{
+"t": "nar",
+"id": "p_0004",
+"text": "My wrist stings. There's a cut on the inside of it, where a blade got past me in training, and I've held it closed the whole way home."
+},
+{
+"t": "nar",
+"id": "p_0005",
+"text": "Somewhere above us, a branch moving in the wind."
+},
+{
+"t": "nar",
+"id": "p_0006",
+"text": "Petals."
+},
+{
+"t": "say",
+"id": "p_0007",
+"who": "past_natsuki",
+"text": "\"You're late.\""
+},
+{
+"t": "nar",
+"id": "p_0008",
+"text": "She says it like a scolding. She says it like she's laughing."
+},
+{
+"t": "nar",
+"id": "p_0009",
+"text": "She says it like she's been waiting a very long time."
+},
+{
+"t": "say",
+"id": "p_0010",
+"who": "past_natsuki",
+"text": "\"Hurt again. Give me your hand… Hold still.\""
+},
+{
+"t": "nar",
+"id": "p_0011",
+"text": "Hands that aren't mine wind a strip of cloth around a wrist that is. Slow and careful, like the knot matters more than anything else in the world."
+},
+{
+"t": "bg",
+"name": "white",
+"tr": "flash"
+},
+{
+"t": "nar",
+"id": "p_0012",
+"text": "And then I wake up, and the only thing left is a feeling I can't put a name to."
+},
+{
+"t": "nar",
+"id": "p_0013",
+"text": "That someone was waiting for me."
+},
+{
+"t": "nar",
+"id": "p_0014",
+"text": "That I kept them waiting far too long."
 },
 {
 "t": "bgm",

@@ -197,7 +197,38 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 **Elsewhere [P]:**
 - **Chie:** Natsuki's confidant, by text only. Close to her in 4th and 8th grade. Sends zunda mochi every New Year.
 
-**The past-life girl:** speaker label "???". She waits under the low branch. Thatched roofs and flooded paddies; a stone and a shimenawa rope before the shrine existed. In the pilot she ties a strap around the dreamer's wrist; per fix 23 she binds a cut on his wrist. See fix 12 for her costume.
+**The past-life girl:** speaker label "???". She waits under the low branch. Thatched roofs and flooded paddies; a stone and a shimenawa rope before the shrine existed. In the pilot she ties a strap around the dreamer's wrist; per fix 23 she binds a cut on his wrist. See fix 12 for her costume. **v2 [P]:** she binds a strip of cloth around the inside of his left wrist, cut "where a blade got past me in training"; her voice is Despina (style guide §7).
+
+### v2 Ch1 revision, Oct 18: new provisional details [P]
+Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (continuity, cold reads round 1 and 2).
+- **Cold open (P.0):**
+  - A misty morning on a narrow modern road at a bend: an orange convex traffic mirror, a hedge, a block wall, utility poles.
+  - A hand in a dark navy zip-up jacket on the grip of a sheathed sword.
+  - The mist parting on both sides of the road, as if something huge were passing.
+  - Wordless, about 12 seconds, opening the game before Ch1's title card.
+- **Home:**
+  - Dad's line is on the whiteboard on the fridge (not a calendar). Pickup moved to Tuesday and Friday last fall.
+  - Kōhei asks Akane every morning how she slept.
+  - The kitchen: the back door, mugs in the cupboard left of the sink, the drawer that sticks, the window latch. Nanoha has known the drawer since she was six.
+  - He gave up arguing about the food around last summer.
+  - The garbage point is at the corner; her front door is about ten feet from his.
+- **Kōhei's week:** Saturday afternoons are his only free time; he gives them to the shrine sweep.
+- **The walk and school:**
+  - The Ōzakura shows from the river path, "older than anyone's records."
+  - Same class four years running. Kōhei spent five days in 1-C during last year's exchange program ("a scheduling error," per the minutes).
+  - About 200 second-years; the class lists go up at the entrance; they arrive at 7:50.
+  - Fukuda is in 2-E this year.
+  - The seating: Kōhei in the second-to-last row by the window, Natsuki behind him, Nanoha two rows over, Tokiwa near the front.
+  - The full timetable is handed out on day one.
+- **Natsuki:**
+  - Loves horror movies, "the cheesier the better."
+  - Two club invitations and karaoke on her first morning; the gossip about Kōhei's three turned-down confessions came from "the girl by the door."
+  - Asks Nanoha whether the building is haunted (something knocking in the music room); "the heating sounds like a ghost."
+  - She lives by the station; Nanoha walked her home after the tour.
+- **Ryōsuke:** argues that taiyaki are eaten head first ("thermodynamics").
+- **Rika:** a different novelty clip every day; matching keychains.
+- **Shrine:** the Saturday sweep; Genji's back.
+- **Engine:** the chapter menu starts Chapter 1 at the cold open (no separate Prologue entry); the developer scene chart labels it "COLD OPEN."
 
 ## 4. Address guide
 **Superseded Oct 17 by style guide §3c** (address forms, Japanese pronouns and the planned name changes). The pilot's table matched it except: Sōta is now Mio ("Kō-nii" kept), and Kōhei teases Nanoha as "Chibi."
