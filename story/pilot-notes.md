@@ -20,7 +20,6 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 
 **Status Oct 17:** Pilot v2 (`v2/` in the repo, separate from the shipped build) applies the Prologue and Ch1 share of the fixes: 2, 4, 8–14, 16, 20, 23, 25–27 and the term glosses from 32, plus Akane's new sprites (15) and the final cast (19), and keeps 21, 22 and 24. It's waiting on the author's review. The shipped pilot is unchanged; the fixes stay marked [Fix] until v2 replaces it.
 
-**Planned order before the revision pass:** lock the character designs, finalize the voices, then map the first chapters (production log §6).
 
 ### Agreed fixes, Oct 6–7 (updated Oct 8)
 **Story and script:**

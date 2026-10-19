@@ -57,7 +57,7 @@ All files are in `production/refs/design-oct10/`. They outrank every older image
 | Beast | fur #1f1f21 (light #565452) | — | glowing gold | mask #d2cbbe, mist #aca59a |
 
 ## 1b. Visual inventory, Oct 10 (self-reviewed by Claude; awaiting the author's review)
-Everything is in `production/refs/`. Review boards are listed in the production log. **[P]** marks a choice Claude made that the author hasn't confirmed.
+Everything is in `production/refs/`. Review boards are listed in the production log archive (`story/archive/production-log-to-oct14.md`, 10-10 rows). **[P]** marks a choice Claude made that the author hasn't confirmed.
 
 **Scale lineups** (`lineup/lineup-1-school.png`, `lineup/lineup-2-family-past.png`): composited in code from the full-body references, bottom-aligned on a 6-inch grid (code: `production/pipeline/layout/lineup.py`). **Units: imperial only** (author's rule, Oct 10). Heights: Kōhei 5′9″, Nanoha 4′11″, Natsuki 5′3″ and Akane 5′0″ are set; all others are **[P]**: Ryōsuke 5′7″, Rika 5′1″, Takatsuki 5′8″, Kirishima 5′11″, Yuzu 5′1″, Ōno 6′0″, adviser 5′6″, manager 5′5″, Kazuo 6′0″, Emi 5′2″, Sōta 4′0″, Genji 5′2″ (stooped), Kōhei's mom 5′2″, his dad 5′8″, the rōnin 5′9″, past Natsuki 5′2″, her father 5′5″, thug 5′10″, tournament opponent 5′8″. Beast: 4′3″ to the ear tips.
 
@@ -119,6 +119,8 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 **Backgrounds and CGs:** `fal-ai/nano-banana-pro/edit` (higher fidelity), 16:9. Pass the relevant sprites and the style anchor for CGs. **In portrait** (iPad held upright), CGs show whole over a blurred fill instead of being cropped to the middle; backgrounds still fill the screen (Pilot v2, Oct 17).
 
 **Current inventory:** 72 sprites (14 outfit sets), 16 backgrounds, 9 CGs (title, hands and strap, Natsuki intro, jigeiko, the catch, Yuzu at the counter, window night, shrine meeting, past life).
+
+**Short animations and living stills** (canon §2): living stills are Kling v3 Pro loops (start frame = end frame). For the few short animated moments (the Ch2 catch first): animate between approved stills, Kling for restrained moments (it stayed wide and on-model in the Oct 10 `cg_catch` test; MiniMax H3 Max pushed in and cropped), and give every shot its own approved start frame, because in-generation cuts drift (Oct 12). Tests: `production/cutscene-test/`.
 
 ## 3a. VN presentation: face windows and dialogue colors (locked Oct 10)
 **Face windows** (bottom left, beside the text box, Baldr Sky style). A face window stands in for a sprite that isn't on screen.
@@ -258,6 +260,8 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 6. **Takatsuki's register break:** *boku* and surnames always, except one *omae* in **Ch20**, when he tells Kōhei he'd rather they go to the adviser together ("You scared her. You scared me too.").
 
 ## 4a. Manga inserts (color, from Oct 12): workflow
+**Which scenes become manga (working rule of thumb):** sequence-dependent beats (sparring, the street fight, the beast, the near-wordless kiss, montages, the full-page Nanoha moment); dialogue stays with sprites; emotional peaks get CGs.
+
 **No storyboard step** (author, Oct 12): Vol. 1 was made from scratch and came out well. Claude builds each insert straight from the script and **presents only finished pages** that have passed the self-review below. The author's review time is the constraint, not cost.
 
 1. **Script** the insert (`production/<insert>/insert-script.md`): pages, panels, shot, dialogue, SFX.
@@ -322,6 +326,7 @@ Moved to `story/archive/style-guide-legacy.md` (Oct 19). Current inserts are ful
 - **Age drift:** prompts for a 14-year-old came back looking 16–17 (Akane, first pass). Spell out the age cues in §3, and check against `akane-v2/02-sailor-uniform.png`.
 - **Concept-art proportions leak in** (long legs): always state "natural realistic proportions for a {height} teen" and name what to correct.
 - **Content filter:** if a panel is refused (heavy blood, or teens kissing), reframe with silhouettes, a cropped close-up, implied impact or heavier ink, or try another model. Tell the author rather than quietly watering the scene down.
+- **Kiss and closeness images (Oct 13 test, `production/tests/kiss-oct13/`; none refused):** spell out modest clothes (one image drifted to a camisole and short shorts); keep compositions on faces (one framed his lap); match faces tightly to the designs. Video models are still untested for the kiss.
 - **QA cost:** review cropped or downscaled previews; open full size only where something looks wrong.
 
 ## 7. Audio
@@ -339,7 +344,7 @@ Moved to `story/archive/style-guide-legacy.md` (Oct 19). Current inserts are ful
 | comedy | Hoshino Kitchen | **Replace**, in the feel of the Muv-Luv main theme (not needed until Yuzu, Ch8) |
 | childhood | Shared-past flashbacks (FB1–FB6) | **New Oct 14:** take A (nylon guitar, toy piano, celesta) |
 
-**Music plan (approved Oct 11; on hold since that evening, kept for reference).** The author will likely keep almost all of the pilot tracks; see the production log.
+**Music plan (approved Oct 11; on hold since that evening, kept for reference).** Pilot music was closed Oct 16: the four short loops stay as they are (production log). The Oct 11 (eve) pause is in the log archive.
 - **House sound:** piano-led with strings, soft and warm. Every cue keeps piano or a string section at its core (the link between `title`, `nanoha`, `night` and the author's reference, Steins;Gate's "Gate of Steiner"). Each cue changes the mood and adds one color, never the whole band.
 - **Colors by story area:** everyday and romance add flute, glockenspiel and light acoustic guitar. Energy cues (Natsuki, practice, comedy) add light live drums and bass, acoustic, no synths. Sad and emotional cues strip back to solo piano and slow strings. The tree and the past life add koto (Japanese zither), shakuhachi (bamboo flute) and a wordless voice. Strangeness, then danger, add Steins;Gate-style electronic textures and pulses, plus Japanese drums for the beast, over the same piano and strings.
 - **Vocals:** no lyrics under voiced scenes. Vocal songs only for the opening theme, the kiss and the ending, which may use a different style. (No cutscenes since Oct 12; these play over stills and CGs.)
@@ -388,6 +393,8 @@ Moved to `story/archive/style-guide-legacy.md` (Oct 19). Current inserts are ful
 **Shared voices:** Charon (Kirishima, Kazuo) and Algenib (Genji, the thug) are each used twice; Leda is the fairy at +4. Those pairs rarely share a scene; if they do, add a slight pitch offset to one of them.
 
 ## 8. fal workflow notes
+**Pages for the author** (auditions, listening and review pages) go on the public site as plain web pages via GitHub Pages; the artifact player doesn't work for him (Oct 13).
+
 **Uploads:**
 1. Call `mcp__fal__upload_file` with `prepare_upload=true` to get a presigned URL.
 2. Send `curl -X PUT -H "Content-Type: image/jpeg"` (or the matching type) to that URL.
@@ -420,7 +427,7 @@ The goal is to spend the author's review time on taste, not on finding errors. I
    - **Three cold readers** (`review/cold-reader.md`; material from `reader_view.py`): casual, manga reader, genre-savvy. **At every checkpoint they give three numbers (canon §5, Oct 18):** who Kōhei ends up with, who they want him to end up with, and who the dream woman is, each with confidence. **Those three are judged over windows of about 3–4 chapters, not per chapter** (single chapters can swing); per checkpoint, only that no reader is sure (70%+). So each round's readers read from Ch1 through the chapter under test, not just the new chapter. They get only what a reader sees, in parts with checkpoints, and report what they infer (compared against the reader-knowledge target afterward), plus flat, confusing or heavy-handed lines and text/art mismatches. Fix here, while changes are free.
 4. **Art:** shot list from the final script; a true-height layout sketch (`production/pipeline/vn/cg_layout.py`) for every multi-character CG, planning one edit pass; **an on-model check of every image** (`review/on-model-image.md`) against the locked references *and* the script text around it (hair length, which wrist, who stretches to reach), with proportions measured; every piece logged in the deliverable's `art/prompts.md`.
 5. **Voices** as in the Pilot v2 README (transcript-checked cuts), plus `voice_levels.py` (speech level, clipping, too short, mostly silent). Its first run flagged the two dream lines at about 6 dB under the rest; whether that's intended softness is checked by ear.
-6. **Build and technical QA:** `qa_play.py` at iPad landscape and portrait, plus a **visual snapshot of every line** (`qa_play.py --every`) compared against the last approved build with `snapshot_diff.py`, so reviewers look only at what changed. Keep the approved build's shots and `script.json` as the next baseline.
+6. **Build and technical QA:** `qa_play.py` at iPad landscape and portrait, plus a **visual snapshot of every line** (`qa_play.py --every`) compared against the last approved build with `snapshot_diff.py`, so reviewers look only at what changed. The baseline is rebuilt from the last approval tag (step 10).
 7. **Independent review of the whole build** (`review/build-review.md`). After each fix: a check scoped to the diff, plus the regression run (step 6). Fix rounds introduced new bugs in Ch1, so this is mandatory.
 8. **Handover:** a playable link and one short note: the [P] inventions, known compromises and spend. The author plays on his iPad (nothing here can test Safari or listen by ear) and flags only what doesn't work.
 9. **Punch-list rounds:** each gets a diff-scoped independent check plus the regression run. **Dialogue and voice items from the author's punch lists also go to the Story thread**, which updates the speech and address sheets (§3b–§3c) so later chapters learn from them.

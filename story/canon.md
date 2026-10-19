@@ -4,9 +4,9 @@
 - the author's Oct 1 bible (`ozakura/source/story-bible-current.md`, now an archived snapshot);
 - the old working bible (`ozakura/story-bible.md`, retired).
 
-Every decision through Oct 8, 2026 is folded in. When the author decides something, edit this document in place, add a line to the revision record (`story/archive/canon-revision-record.md`), and log it in the production log.
+Every decision through Oct 8, 2026 is folded in. When the author decides something, edit this document in place, add a line to the revision record (`story/canon-revisions.md`), and log it in the production log.
 
-Last updated 2026-10-10 (family spine added).
+Last updated 2026-10-19 (the revision record moved to `story/canon-revisions.md`).
 
 **Related docs:**
 - `ozakura/pilot-notes.md`: what the shipped pilot invented (marked [P]), and the agreed fixes waiting on the revision hold.
@@ -784,4 +784,4 @@ These support plausibility. They don't dictate the fiction.
 Anything else (geography details, care costs, club details, combat, shrine duties) gets checked when a scene needs it.
 
 ## Revision record
-Kept in `story/archive/canon-revision-record.md` (moved Oct 19). Append a line there whenever canon changes.
+Kept in `story/canon-revisions.md` (moved Oct 19). Append a line there whenever canon changes.

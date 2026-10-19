@@ -3,7 +3,7 @@
 Draft from the Story thread, Oct 12. Scenes follow the revised pilot (pilot-notes fix list) plus the new Ch4 from `story/chapter-map.md`. Track names are working names. "Keep / Replace / New" is about the current pilot track, pending the author's listening pass and the style decision (Persona 3 direction or not).
 
 ## Minimum set (Oct 13, revised to fit the music pause)
-The author doesn't want weeks on music and will keep most pilot tracks (production log, Oct 11 eve). For Prologue + Ch1–4 the **must-haves** are only:
+The author doesn't want weeks on music and will keep most pilot tracks (production log archive, Oct 11 eve; pilot music closed Oct 16). For Prologue + Ch1–4 the **must-haves** are only:
 1. **Practice** cue to replace `kendo` (Ch2 practice, the Ch2 match, Ch3 Saturday, Ch4 Takatsuki).
 2. **Natsuki:** settle it (keep the pilot `natsuki`, or adopt one of the Oct 11 takes in `production/music/cue-natsuki/`).
 3. **Childhood** (new): for the Ch4 flashback (FB1). It must not sound like `memory`, which is the past life.

@@ -1,6 +1,6 @@
 # Ōzakura — Canon revision record
 
-Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When the author decides something, edit canon in place and append a line here** (newest date at the bottom). Not mirrored to the Project; git history has every version of canon.
+Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When the author decides something, edit canon in place and append a line here** (newest date at the bottom). Mirrored to the Project as `ozakura/canon-revisions.md`; not required reading.
 
 - **Sept 27–29:** smaller local story adopted. Cast, names, family, setting, shrine and the street-fight sequence established (see the archived Oct 1 bible for the detail).
 - **Oct 1:** author's consolidated bible.

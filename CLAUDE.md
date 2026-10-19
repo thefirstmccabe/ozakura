@@ -7,8 +7,8 @@ The repo is **public**, and GitHub Pages serves it at https://thefirstmccabe.git
 ## Start here (every thread)
 1. **Read this file and the status board** (`story/production-log.md` §0). The board says what's in flight and who owns it.
 2. **Then read only what your job needs** (the docs are long; don't read everything every time):
-   - **Story thread:** `story/canon.md`, `story/chapter-map.md`, and style guide §3b–§3c (speech and address).
-   - **Production thread:** the deliverable's brief (`production/<deliverable>/README.md`) and outline, style guide §1–§9 (§9 is the process), `story/pilot-notes.md`, and the canon sections the chapter touches.
+   - **Story thread:** `story/canon.md`, `story/chapter-map.md`, style guide §3b–§3c (speech and address) and §9 step 1 (what an outline contains), `story/pilot-notes.md` (the [P] details to fold in), the deliverable's `scene-outline.md`, and the latest handover note.
+   - **Production thread:** the deliverable's brief (`production/<deliverable>/README.md`) and outline, `story/chapter-map.md` (the chapter's row, running threads and reader windows), style guide §1–§9 (§9 is the process), `story/pilot-notes.md`, the decision-log rows since your last session, and the canon sections the chapter touches.
    - **Music thread:** style guide §7 and the music cue list for the deliverable.
    - **Planning:** the production log and style guide §9.
 3. Before changing a doc, read the section you're changing in full. `story/archive/` is history, not required reading.
@@ -16,9 +16,9 @@ The repo is **public**, and GitHub Pages serves it at https://thefirstmccabe.git
 ## Threads and who owns what
 | Thread | Owns (decides and edits) | Hands off to |
 |---|---|---|
-| **Story** | `canon.md`, `chapter-map.md`, chapter outlines and reader-knowledge targets, the speech and address sheets (style guide §3b–§3c), folding [P] details into canon | Production (outlines), via a handoff file in the deliverable's folder |
-| **Production** (one per deliverable) | Builds, scripts, art, voices, `production/<deliverable>/`, `production/pipeline/`, `pilot-notes.md` [P] entries, the status board's rows for its chapters | Story (punch-list dialogue items, [P] details), the author (handovers) |
-| **Music** | Style guide §7 (music), `production/music/` | Production (finished cues) |
+| **Story** | `canon.md`, `canon-revisions.md`, `chapter-map.md`; **drafts chapter outlines and reader-knowledge targets before production** (the author approves them; they live in `production/<deliverable>/scene-outline.md`, which Story owns); the speech and address sheets (style guide §3b–§3c); folding [P] details into canon | Production (outlines), via a handoff file in the deliverable's folder |
+| **Production** (one per deliverable) | Builds, scripts, art, voices; `production/<deliverable>/` (except the outline) and `production/pipeline/` (except `review/`); style guide §1–§6, §8 and the §7 voice cast; `pilot-notes.md` [P] entries; the status board's rows for its chapters | Story (punch-list dialogue items, [P] details), the author (handovers) |
+| **Music** | Style guide §7 (music), `production/music/`, the deliverable's `music-cues.md` | Production (finished cues) |
 | **Planning** | Style guide §9 (the process), `production/pipeline/review/` prompts, the log's structure. Retires after Pilot v2; then Production owns these | Everyone (process changes) |
 
 Any thread may append to the decision log and update the status board. If a change belongs to another thread, write it down for that thread (a handoff file or a log row) instead of making it.
@@ -26,7 +26,7 @@ Any thread may append to the decision log and update the status board. If a chan
 ## What a thread decides itself, and what it asks the author
 - **Decide, then tell him in a few lines and log it:** wording and clue calibration within the approved reader targets; speech, address and pronoun details; production logistics and [P] details (judged by playing); tool and pipeline choices; anything inside an approved spending cap (ask only for a single item over about $5 or if the total would pass the cap).
 - **Ask him first:** plot beats, character arcs and relationships, endings, anything canon marks Open at the story level, new spending, and blocked access.
-- **If unsure which side something is on, decide it, tell him plainly, and make it easy to reverse.**
+- **If unsure which side something is on, decide it, tell him plainly, and make it easy to reverse.** Record such a call as [P] or Working, never as Decided in canon, and never settle something canon marks Open.
 
 ## Story docs: `story/` (mirrored to the claude.ai Project)
 The living docs exist in two places: `story/` here (with git history) and the claude.ai Project "visual novel" under `ozakura/` (where the author reads them).
@@ -34,7 +34,8 @@ The living docs exist in two places: `story/` here (with git history) and the cl
 - `story/pilot-notes.md` — the shipped pilot's inventions and the agreed fix list.
 - `story/style-guide.md` — designs, references, prompts, lettering, voices.
 - `story/production-log.md` — the status board, recent decisions, the open budget, issues.
-- `story/chapter-map.md` — the chapter-by-chapter plan (Oct 12). Canon governs it.
+- `story/chapter-map.md` — the chapter-by-chapter plan (reworked Oct 18). Canon governs it.
+- `story/canon-revisions.md` — canon's revision record (append-only; not required reading).
 
 **How to edit them (every thread):**
 1. `git fetch origin main` and rebase, so you start from the latest commit.
@@ -42,7 +43,7 @@ The living docs exist in two places: `story/` here (with git history) and the cl
 3. Commit and push.
 4. Upload the same file to the Project: `project_write` with `path: ozakura/<name>.md` and `local_path: story/<name>.md`.
 
-`story/archive/` holds history (the old log, canon's revision record, legacy style-guide sections). It isn't mirrored to the Project; append canon's revision lines to `story/archive/canon-revision-record.md`.
+`story/archive/` holds history (the log through Oct 14, legacy style-guide sections). It isn't mirrored to the Project.
 
 If someone edited the Project copy directly, `project_read` it first and fold that change into `story/` before editing.
 
