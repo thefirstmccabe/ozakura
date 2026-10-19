@@ -66,3 +66,16 @@ Latent issues it found, now fixed:
 | A double-tap on Begin skipped the cold open for returning players | A 600 ms guard after the hold starts |
 
 Left as is: load thumbnails for saves from another build still show the old save's picture; the compiler still allows `@bg <image> flash` (unused); Continue resumes from the last scene entered (older behavior).
+
+## Fix-round check 3 (fresh agent, on 1b8b222)
+All five checks pass at both sizes:
+- **Compiler holds:** bad arguments and unclosed holds are reported; the real script compiles byte-identical.
+- **Cold open:** plays through first time, the double-tap guard holds, later taps cut cleanly. A tester with the old `v2coldSeen` key sees it play once more.
+- **Living stills:** fade in normally after cuts.
+- **The flash:** pure white in every frame.
+- **`qa_play`:** clean.
+
+Open, low priority, for the next engine pass (none is reachable in normal play):
+- A hand-damaged `ozk.v2holdSeen` value (not an object) throws at the hold's end and stops on black. Guard the read.
+- A cut straight to another CG (only loads and jumps do this) still fades the old living still. On Safari that could briefly show a stale frame. Set the transition to none and flush before `liveOn` on every cut.
+- The unclosed-hold compiler error doesn't give the file and line of the `@hold on`.
