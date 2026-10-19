@@ -498,15 +498,15 @@ function layoutSprites(){ document.querySelectorAll('.spr').forEach(el=>sizeSpr(
 setBg.tok=0; setCg.tok=0;
 function setBg(name, tr){
   state.bg=name; $('#sprites').style.setProperty('--bgf', BG_LIGHT[name]||'none');
-  if(name==='black'||name==='white'){ setBg.tok++; const d=tr==='cut'?0:tr==='slow'?1.8:.6, sol=$('#bgSolid'); sol.style.transition=`background ${d}s`; sol.style.background=name==='white'?'#fff':'#000';
-    bgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); if(tr==='flash') flash(); return; }
+  if(name==='black'||name==='white'){ setBg.tok++; const d=tr==='cut'||tr==='flash'?0:tr==='slow'?1.8:.6, sol=$('#bgSolid'); sol.style.transition=`background ${d}s`; sol.style.background=name==='white'?'#fff':'#000';
+    bgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); if(tr==='flash'&&!skipOn) flash(); return; }
   const next=bgImgs[1-bgFront], cur=bgImgs[bgFront];
   const dur = tr==='cut'?0: tr==='slow'?1.8: .9;
   next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
   const tok=++setBg.tok; next.onload=()=>{ if(tok!==setBg.tok) return; next.classList.add('on'); cur.classList.remove('on'); };
   next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload();
   bgFront=1-bgFront;
-  if(tr==='flash') flash();
+  if(tr==='flash'&&!skipOn) flash();
 }
 const cgLive=$('#cgLive');
 function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
@@ -614,7 +614,7 @@ function run(){
       if(c.t!=='phone' && c.t!=='say' && c.t!=='nar') {/* fallthrough */}
       switch(c.t){
         case 'scene': state.scene=c.id; store.set('v2cont',snap()); break;
-        case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.name==='black'||c.name==='white') box.classList.add('hidden'); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:(c.name==='black'||c.name==='white')&&c.tr==='slow'?1900:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
+        case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'||c.tr==='flash'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.name==='black'||c.name==='white') box.classList.add('hidden'); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:(c.name==='black'||c.name==='white')&&c.tr==='slow'?1900:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
         case 'cg': { const was=state.cg; setCg(c.name,c.tr); if(c.name && !was) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break; }
         case 'bgm': playBgm(c.name); state.bgm=c.name; break;
         case 'sfx': if(!skipOn) playSfx(c.name); break;
@@ -623,7 +623,7 @@ function run(){
         case 'hideall': hideAll(); break;
         case 'mode': setMode(c.mode,c.label); break;
         case 'flash': if(!skipOn) flash(); break;
-        case 'hold': state.hold=!!c.on; break;
+        case 'hold': state.hold=!!c.on; if(!c.on) store.set('v2coldSeen',true); break;
         case 'shake': if(!skipOn) shake(); break;
         case 'wait': return pause(skipOn?40:c.s*1000);
         case 'card': return dateCard(c.text);
@@ -657,7 +657,9 @@ function line(c){
 }
 function advance(){
   if(overlayOpen()) return;
-  if(state.hold && !skipOn) return;   // the wordless cold open plays through; skip mode still fast-forwards it
+  if(state.hold && !skipOn){   // the wordless cold open plays through the first time; after that a tap skips to its end
+    if(store.get('v2coldSeen',false)){ const j=S.findIndex((c,k)=>k>=state.i-1 && c.t==='hold' && !c.on); if(j>0){ clearTimeout(waitTimer); startAt(j); } }
+    return; }
   if(typing){ finishType(); return; }
   if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
   clearTimeout(autoTimer); clearTimeout(waitTimer);
@@ -697,11 +699,12 @@ function restore(s){
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
   // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes
   const keep=s.spr||{}; document.querySelectorAll('.spr').forEach(e=>{ if(!keep[e.dataset.who]) e.remove(); }); state.spr={};
+  { const sol=$('#bgSolid'); sol.style.transition='none'; sol.style.background='#000'; }   // a jump out of a white screen mustn't leave white under the next backgrounds
   setBg(s.bg||'black','cut'); setCg(s.cg||null,'cut');
   Object.entries(keep).forEach(([w,v])=>showSpr(w,v.spr,v.pos));
   (s.phone||[]).forEach(m=>phoneMsg(m.who,m.text));
   playBgm(s.bgm||null); state.bgm=s.bgm||null; setMode(s.mode||'normal',s.ilabel); state.scene=s.scene;
-  state.hold=!!s.hold; state.i=s.i; if(s.cg) box.classList.add('hidden'); run();
+  state.hold=!!s.hold; state.i=s.i; if(s.cg) box.classList.add('hidden'); run(); devUpdate();
 }
 /* a save from another build (the script changed underneath it): find its line by ID, else its scene, else start over */
 function resume(s){
@@ -734,7 +737,9 @@ function openSave(mode){
     const meta=document.createElement('div'); meta.className='meta';
     const nn=document.createElement('div'); nn.className='n'; nn.textContent='SLOT '+n;
     const ss=document.createElement('div'); ss.className='s';
-    if(d){ const c=S[d.i]; const txt=c&&c.text?plain(c.text).replace(/^"|"$/g,''):''; ss.textContent=`${new Date(d.t).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})} · ${txt.slice(0,64)}${txt.length>64?'…':''}`; }
+    if(d){ let c=S[d.i];
+      if(d.sig!==SIG){ const j=d.id?S.findIndex(x=>x.id===d.id):-1; c = j>=0 ? S[j] : (d.scene && S.some(x=>x.t==='scene'&&x.id===d.scene) ? {text:SCENE_T[d.scene]||d.scene} : {text:'Older version: starts over'}); }
+      const txt=c&&c.text?plain(c.text).replace(/^"|"$/g,''):''; ss.textContent=`${new Date(d.t).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})} · ${txt.slice(0,64)}${txt.length>64?'…':''}`; }
     else ss.textContent= mode==='save'?'Empty — tap to save here':'Empty';
     meta.append(nn,ss); b.append(th,meta);
     b.onclick=()=>{ if(mode==='save'){ store.set('v2slot'+n,snap()); toast('Saved to slot '+n); openSave('save'); } else if(d){ closePanels(); hideTitle(); resume(d); } };
@@ -792,9 +797,9 @@ let SCENE_T = {cold_open:'Cold open', c1_morning:'Mornings at the Fujisawas', c1
   c2_bridge:'The bridge', c2_interlude:'Natsuki: texting Chie', c3_shift:'Training Yuzu', c3_home:'Home late', c3_window:'Windows',
   c3_saturday:'Best of five', c3_shrine:'The Great Cherry', c3_lunch:'Tea at the shrine', c3_end:'Lunch at the Tachibanas’'};
 const HASH = new Set(location.hash.slice(1).split(/[&+,]/).filter(Boolean));
-let devOn = !!store.get('dev', false);
+let devOn = !!store.get('v2dev', false);
 if(HASH.has('dev')) devOn=true; if(HASH.has('nodev')) devOn=false;
-function setDev(v){ devOn=!!v; store.set('dev',devOn); app.classList.toggle('dev',devOn); devUpdate(); }
+function setDev(v){ devOn=!!v; store.set('v2dev',devOn); app.classList.toggle('dev',devOn); devUpdate(); }
 const isLine = c => c && (c.t==='say'||c.t==='nar'||c.t==='phone');
 let DX=null;
 function devIndex(){
@@ -913,7 +918,7 @@ $('#devOff').onclick=()=>{ setDev(false); closePanels(); toast('Developer mode o
 { let n=0, t=0; $('.tate').addEventListener('click', ()=>{ const now=Date.now(); n = now-t<800 ? n+1 : 1; t=now; if(n>=5){ n=0; setDev(!devOn); toast(devOn?'Developer mode on':'Developer mode off'); } }); }
 // keep the developer strip just above the dialogue box, whatever its height
 try{ new ResizeObserver(()=>app.style.setProperty('--boxh', box.offsetHeight+'px')).observe(box); }catch(e){}
-app.classList.toggle('dev', devOn); store.set('dev', devOn);
+app.classList.toggle('dev', devOn); store.set('v2dev', devOn);
 
 function closePanels(){ document.querySelectorAll('.panel.on').forEach(p=>p.classList.remove('on')); if(curLine&&!typing) scheduleAuto(); }
 function setAuto(v){ autoOn=v; $('#bAuto').classList.toggle('on',v); if(v){ setSkip(false); if(!typing) scheduleAuto(); } else clearTimeout(autoTimer); }

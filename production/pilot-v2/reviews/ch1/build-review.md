@@ -25,3 +25,25 @@ Fresh agent; prompt `production/pipeline/review/build-review.md`. The whole chap
 - Living-still alignment and loop seams (tested with a WebM copy).
 
 **Not checkable here:** Safari on the iPad, H.264 playback on the device, listening by ear.
+
+## Fix-round check (fresh agent, on d4b395f)
+All seven fixes pass:
+- **Portrait fills:** frame-by-frame, each fill tracks its own image.
+- **Cold open holds:** the hold ends at 16.1 s whether untouched or tapped; no snapped fades; skip mode works.
+- **Solid screens:** behave as intended.
+- **Saves:** same-build saves are unchanged; old-build saves resume by line, then scene, then from the top.
+- **Labels and script:** only the expected five command changes; `qa_play` is clean.
+
+New findings and what was done:
+| # | Finding | Done |
+|---|---|---|
+| 1 | The flash let the dream CG show back through for about 0.3 s: three fades at different speeds | The CG and the background cut to white under the flash |
+| 2 | The Load panel's preview for a save from another build came from the saved index | The preview comes from the line ID, else the scene title, else "Older version: starts over" |
+| 3 | The dev strip went stale after Begin from the title | `devUpdate()` at the end of every jump |
+| 4 | v2 shared the pilot's `ozk.dev` flag (and the prefs) | The dev flag is v2's own. Volume and text-speed prefs stay shared on purpose |
+| 5 | A jump out of the dream's white screen left white under later backgrounds | Every jump resets the solid layer to black |
+| 6 | The flash fired in skip mode | Guarded |
+| 7 | The cold open couldn't be skipped at all (16 s on every Begin) | It plays through the first time. After that, a tap cuts to its end and the chapter card |
+| 8 | Tooling: `@hold` with no argument crashed the compiler; the default visual-diff threshold missed a portrait expression change | `@hold` defaults to on. The README notes `--threshold 0.05` for fix rounds |
+
+Confirmed as intended: 2.6 s of empty black between c1_0264 and the dream.
