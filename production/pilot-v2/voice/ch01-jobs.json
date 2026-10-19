@@ -1173,5 +1173,35 @@
    "あはは、そっか。じゃあ、ふじさわがよくある顔なだけだね。本人には内緒ね。"
   ],
   "note": "re-voiced Oct 18: new line after cold-read round 2"
+ },
+ {
+  "key": "retake.c1_0206",
+  "ids": [
+   "c1_0206"
+  ],
+  "texts": [
+   "真面目に聞くけど。この校舎って、出る？ 音楽室で、なんかコンコン音がしてたんだけど。"
+  ],
+  "note": "re-voiced Oct 18 after the round-2 diff check"
+ },
+ {
+  "key": "retake.c1_0207",
+  "ids": [
+   "c1_0207"
+  ],
+  "texts": [
+   "古いからね。配管の音が、おばけみたいなの。"
+  ],
+  "note": "re-voiced Oct 18 after the round-2 diff check (pipes, not heating, in April)"
+ },
+ {
+  "key": "retake.c1_0224",
+  "ids": [
+   "c1_0224"
+  ],
+  "texts": [
+   "あはは、そっか。じゃあ、顔のせいだ。ふじさわって、わりとふつうの顔してるよね？ 本人には内緒ね。"
+  ],
+  "note": "re-voiced Oct 18 after the round-2 diff check"
  }
 ]

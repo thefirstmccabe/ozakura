@@ -38,3 +38,14 @@ Ends up with / wants / dream woman (leading answer, %).
 | Akane reads as stock apart from "…You always are" (readers 1 and 3) | Noted |
 
 Not re-read by a third round: the round-2 fixes are small, and they got a diff check (below).
+
+## Diff check of the round-2 fixes (fresh agent)
+| ID | Finding | Done |
+|---|---|---|
+| c1_0224 | "a very ordinary face" brings back the "very X" tic and is a verdict; the Japanese ふじさわがよくある顔 is slightly off | "Ha— okay. Then it's his face. He's got kind of a normal one, right? Don't tell him I said that." あはは、そっか。じゃあ、顔のせいだ。ふじさわって、わりとふつうの顔してるよね？ 本人には内緒ね。 |
+| c1_0206 | Too many "okay"s in the scene; 真面目な質問 sounds translated | "Serious question. Is this building haunted? Something in the music room was knocking." 真面目に聞くけど。…コンコン音がしてたんだけど。 |
+| c1_0207 | School heating is off by April 7 in Kanagawa, so "the heating" leaves the knocking unexplained | "It's old. The pipes sound like a ghost." 配管の音が、おばけみたいなの。 |
+| c1_0236 | "Mizuno" twice in a row | "…back from walking Mizuno home to her place by the station." |
+| c1_0075 | Repeats the "since… reach" frame of c1_0039 | "She's needed the extra inches since middle school." |
+
+Fine: c1_0148 ("Looking forward to this year."), and the tone of c1_0206, which gets a mundane answer straight away and reads as a horror fan's wish.

@@ -28,5 +28,6 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-18 | After cold read round 2: the falter's gaze turned to the window side (NB Pro 2K ×2) | 2 | $0.30 |
 | 10-18 | Voices: 16 batched Gemini TTS takes for 55 changed lines (~5,900 characters) and 5 single-line retakes; the dream reuses the Despina audition take (no cost) | 21 | $0.33 |
 | 10-18 | Voice QA: three ElevenLabs transcripts (the joined new takes, the retakes, the final packed clips; ~11 min) | 3 | $0.32 |
+| 10-18 | Round-2 diff check: 3 single-line retakes and their transcript | 4 | $0.03 |
 
-**Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18): about $4.77; running total about $13.27.
+**Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18): about $4.80; running total about $13.30.

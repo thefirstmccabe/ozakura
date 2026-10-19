@@ -125,7 +125,7 @@ nanoha<smile>: "We've always been keeping score. You're losing." || ずっとつ
 nanoha<deadpan>: "Kō-chan. Your collar." || こうちゃん。襟。  #c1_0073
 @cg cg_collar
 > Before I can do anything about it, she's stopped in front of me, up on her toes, folding my shirt collar back down over my tie.  #c1_0074
-> She's had to reach up for it since middle school.  #c1_0075
+> She's needed the extra inches since middle school.  #c1_0075
 > Her hands stay a second longer than the collar strictly needs.  #c1_0076
 nanoha<smile>: "There. Now you look like someone who has his life together." || はい、できた。これで、人生ちゃんとしてる人に見えるよ。  #c1_0078
 @cg -
@@ -289,8 +289,8 @@ nanoha<blush>: "That's—yes. That's fine." || それは……うん。いいよ
 > That was the first thing Nanoha learned on the tour. Natsuki noticed that the stairs by the art room squeaked on the fourth step and the eleventh. She noticed that the third-floor girls' bathroom had a window that looked straight at the mountains, and she said "Oh," softly, like she'd been handed something.  #c1_0204
 > They ended the tour in their own empty classroom, the evening sun coming in sideways and turning every desk gold. Natsuki leaned back against the desk in front of her own.  #c1_0205
 @show natsuki school_smile c
-natsuki: "Okay, real question. Is this building haunted? Something in the music room was knocking." || ねえ、真面目な質問。この校舎って、出る？ 音楽室で、なんかコンコン鳴ってたんだけど。  #c1_0206
-nanoha(smile): "It's old. The heating sounds like a ghost." || 古いからね。暖房の音が、おばけみたいなの。  #c1_0207
+natsuki: "Serious question. Is this building haunted? Something in the music room was knocking." || 真面目に聞くけど。この校舎って、出る？ 音楽室で、なんかコンコン音がしてたんだけど。  #c1_0206
+nanoha(smile): "It's old. The pipes sound like a ghost." || 古いからね。配管の音が、おばけみたいなの。  #c1_0207
 natsuki<laugh>: "Perfect." || 最高。  #c1_0208
 natsuki<smirk>: "So. What about you and Fujisawa?" || で。なのはと、ふじさわって？  #c1_0209
 nanoha(surprised): "Me and Kōhei?" || 私と、こうへい？  #c1_0210
@@ -306,7 +306,7 @@ nanoha(surprised): "Not that I know of. Why?" || 聞いたことないけど…�
 natsuki<wistful>: "I feel like I've met him somewhere before. I just can't place it." || どこかで会ったことある気がするんだよね。どこだったか、思い出せないんだけど。  #c1_0221
 nanoha(surprised): "…" || -  #c1_0222
 nanoha(tease): "I have met him before. Every day. For sixteen years." || 会ったこと、あるよ。毎日。十六年間。  #c1_0223
-natsuki<laugh>: "Ha— okay. Then he's just got a very ordinary face. Don't tell him I said that." || あはは、そっか。じゃあ、ふじさわがよくある顔なだけだね。本人には内緒ね。  #c1_0224
+natsuki<laugh>: "Ha— okay. Then it's his face. He's got kind of a normal one, right? Don't tell him I said that." || あはは、そっか。じゃあ、顔のせいだ。ふじさわって、わりとふつうの顔してるよね？ 本人には内緒ね。  #c1_0224
 > Natsuki laughed first. The moment closed up, and it was fine.  #c1_0227
 > It was fine.  #c1_0228
 natsuki<smile>: "Thanks for today, Nanoha. Seriously. First days are usually…" || 今日はありがとね、なのは。ほんとに。転校初日って、いつもは……  #c1_0229
@@ -322,7 +322,7 @@ natsuki<wistful>: "Anyway. Thanks." || ……とにかく。ありがと。  #c1
 @bg bg_houses_night
 @bgm night
 > I'm taking the burnables out to the corner. Pickup moved to Tuesdays and Fridays last fall. Dad's handwriting on the whiteboard still says Monday, and tonight I went with the handwriting.  #c1_0235
-> That's when Nanoha comes up the street with her school bag over her shoulder, back from walking Mizuno home. Mizuno lives by the station.  #c1_0236
+> That's when Nanoha comes up the street with her school bag over her shoulder, back from walking Mizuno home to her place by the station.  #c1_0236
 @show nanoha school_smile c
 nanoha: "You're taking out the trash on the wrong day." || ゴミの日、間違ってるよ。  #c1_0237
 kohei(smile): "I'm moving it closer to the right day. How was the tour?" || 正しい日に近づけてるだけだ。案内、どうだった？  #c1_0238

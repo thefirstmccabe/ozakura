@@ -34,7 +34,7 @@ Fresh agent; prompt `production/pipeline/review/continuity.md`; draft at commit 
 - The seating.
 - Rika's daily clips and the keychains.
 - The locker-side gossip; two club invitations and karaoke.
-- The tour stops; the trophy-case rectangle; the ghostly heating.
+- The tour stops; Natsuki asking whether the building is haunted; the pipes that sound like a ghost (revised after the cold reads).
 - The garbage point at the corner; her door about ten feet away.
 - The whiteboard on the fridge.
 - Walking Mizuno to the station.
