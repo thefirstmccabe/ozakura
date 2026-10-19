@@ -717,12 +717,12 @@
 {
 "t": "nar",
 "id": "c1_0074",
-"text": "Before I can do anything about it, she's stopped in front of me, folding my shirt collar back down over my tie."
+"text": "Before I can do anything about it, she's in front of me, folding my shirt collar back down over my tie."
 },
 {
 "t": "nar",
 "id": "c1_0076",
-"text": "Her hands stay a second longer than the collar strictly needs."
+"text": "Her hands stay a second longer than they strictly need to."
 },
 {
 "t": "show",
@@ -838,7 +838,7 @@
 {
 "t": "nar",
 "id": "c1_0092",
-"text": "A few steps of nothing. The river is loud this time of year, fat with spring rain off the Tanzawa."
+"text": "A few steps of nothing. The river is loud this time of year, fat with spring rain off the Tanzawa mountains."
 },
 {
 "t": "show",
@@ -1140,7 +1140,7 @@
 {
 "t": "nar",
 "id": "c1_0127",
-"text": "While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through the crowd somehow and is pointing up at a line I can't see yet."
+"text": "While they argue, I squeeze toward the board. I don't make it. Nanoha has already slipped through to the front and is pointing up at a line I can't see yet."
 },
 {
 "t": "hide",
@@ -2398,9 +2398,9 @@
 ],
 "notes": {
 "karaage": "Japanese fried chicken: bite-size pieces marinated in soy sauce, ginger and garlic, dusted in starch and deep-fried. A lunch-box staple, because it's still good cold.",
-"fusuma": "A sliding door of heavy paper on a wooden frame, used between rooms in a Japanese house. It doesn't lock, and you can hear through it.",
-"kinpira": "Kinpira gobō: burdock root and carrot cut into thin strips, stir-fried, then simmered in soy sauce, sugar and mirin. An everyday side dish that keeps for days, so it's easy to make too much of.",
+"fusuma": "A sliding door of thick paper over a wooden frame, used between rooms in a Japanese house.",
+"kinpira": "Kinpira gobō: thin strips of burdock root and carrot, stir-fried, then cooked down in soy sauce, sugar and mirin (sweet rice wine). A classic make-ahead side dish that keeps for several days.",
 "taiyaki": "A fish-shaped griddle cake (the name means \"baked sea bream\"), usually filled with sweet red-bean paste and sold hot from street stalls. Whether to start with the head or the tail is an old argument in Japan.",
-"shodan": "The first dan grade in kendo, the first rank above the beginner grades, earned at a formal grading exam. Kendo has no belts; the rank comes as a certificate. Serious high-school players usually hold first or second dan."
+"shodan": "First dan, the first rank above the beginner grades in kendo, earned at a formal grading exam (kendo has no belts; the rank comes as a certificate). Serious high-school players usually hold first or second dan."
 }
 }
