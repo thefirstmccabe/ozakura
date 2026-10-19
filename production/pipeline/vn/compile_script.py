@@ -88,6 +88,8 @@ def compile_files(paths):
                     cmds.append({"t": "wait", "s": float(args[0])})
                 elif op == "flash":
                     cmds.append({"t": "bg", "name": "white", "tr": "flash"})
+                elif op == "hold":     # @hold on / @hold off: taps don't skip waits or crossfades in between (the wordless cold open)
+                    cmds.append({"t": "hold", "on": args[0] == "on"})
                 elif op == "card":
                     cmds.append({"t": "card", "text": s[len("@card "):].strip()})
                 elif op == "chapter":

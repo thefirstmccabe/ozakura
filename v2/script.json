@@ -22,6 +22,10 @@
 "title": "Cold open"
 },
 {
+"t": "hold",
+"on": true
+},
+{
 "t": "bg",
 "name": "black",
 "tr": "cut"
@@ -83,6 +87,10 @@
 {
 "t": "wait",
 "s": 1.4
+},
+{
+"t": "hold",
+"on": false
 },
 {
 "t": "chapter",
@@ -526,7 +534,7 @@
 {
 "t": "nar",
 "id": "c1_0260",
-"text": "Up on the hill above it all, where the shrine is, the Ōzakura is blooming too: one cherry tree older than anyone's records, so big that from down here it looks like a pink cloud caught on the hillside."
+"text": "Up on the hill above it all, where the shrine is, the Ōzakura is blooming too: one cherry tree older than anyone's records, so big that from the bridge it looks like a pink cloud caught on the hillside."
 },
 {
 "t": "show",
@@ -683,7 +691,7 @@
 {
 "t": "nar",
 "id": "c1_0071",
-"text": "A gust shakes the trees. Petals come down all at once, thick enough to lose the path in. One lands on her braid and stays there."
+"text": "A gust shakes the trees. Petals come down all at once, thick enough to lose the path in. One lands on her braid."
 },
 {
 "t": "nar",
@@ -2172,6 +2180,11 @@
 "id": "c1_0248",
 "who": "nanoha",
 "text": "\"When she said she was looking for a dojo that would put up with her. You did your—\""
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_deadpan"
 },
 {
 "t": "nar",

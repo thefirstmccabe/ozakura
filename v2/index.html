@@ -43,9 +43,9 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 .spr.dim{filter:var(--bgf,) brightness(.78) saturate(.9)}
 #cg{isolation:isolate}   /* keeps the CG images' z-order inside the CG layer, under the text box */
 #cg .bgimg{transition:opacity 1s ease}
-#cgFill{position:absolute;inset:-48px;background:center/cover no-repeat;filter:blur(28px) brightness(.5) saturate(1.1);opacity:0;transition:opacity 1s ease;display:none}
-#cgFill.on{opacity:1}
-@media (orientation:portrait){ #cg .bgimg, #cg .live{object-fit:contain;object-position:50% 36%} #cgFill{display:block} }
+.cgfill{position:absolute;inset:-48px;background:center/cover no-repeat;filter:blur(28px) brightness(.5) saturate(1.1);opacity:0;transition:opacity 1s ease;display:none}
+.cgfill.on{opacity:1}
+@media (orientation:portrait){ #cg .bgimg, #cg .live{object-fit:contain;object-position:50% 36%} .cgfill{display:block} }
 #tint{pointer-events:none;opacity:0;transition:opacity .8s;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(20,10,30,.45) 100%)}
 #tint.on{opacity:1}
 #flash{pointer-events:none;background:#fff;opacity:0}
@@ -262,7 +262,7 @@ input{-webkit-user-select:text;user-select:text}
   <div id="bgSolid" class="layer"></div>
   <div id="bg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""></div>
   <div id="sprites" class="layer"></div>
-  <div id="cg" class="layer"><div id="cgFill"></div><img class="bgimg" alt=""><img class="bgimg" alt=""><video class="live" id="cgLive" muted playsinline loop preload="auto" aria-hidden="true"></video></div>
+  <div id="cg" class="layer"><div class="cgfill"></div><div class="cgfill"></div><img class="bgimg" alt=""><img class="bgimg" alt=""><video class="live" id="cgLive" muted playsinline loop preload="auto" aria-hidden="true"></video></div>
   <div id="tint" class="layer"></div>
   <div id="ilabel"></div>
   <div id="phone"><div class="ph">Chie</div></div>
@@ -297,7 +297,7 @@ input{-webkit-user-select:text;user-select:text}
       <div class="tate" aria-hidden="true">大桜</div>
       <div class="stack">
         <h1>Ōzakura</h1>
-        <div class="sub">Pilot v2 · Prologue &amp; Chapter 1</div>
+        <div class="sub">Pilot v2 · Chapter 1</div>
         <nav class="menu">
           <button class="mi" id="mStart" type="button">Begin</button>
           <button class="mi" id="mCont" type="button">Continue</button>
@@ -371,6 +371,8 @@ const CHAPTERS = [
   {k:'CHAPTER 1', t:'The House Next Door', start:'cold_open', th:'cg_natsuki_intro'},   // the cold open plays first, then the chapter card
 ];
 const KANJI = ['','第一話','第二話','第三話','第四話'];
+let SIG='';   // fingerprint of the loaded script.json; saves carry it
+function sigOf(S){ let h=5381; const t=JSON.stringify(S); for(let k=0;k<t.length;k++) h=((h<<5)+h+t.charCodeAt(k))|0; return (h>>>0).toString(36)+'.'+S.length; }
 const store = {
   get(k,d){try{const v=localStorage.getItem('ozk.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},
   set(k,v){try{localStorage.setItem('ozk.'+k,JSON.stringify(v))}catch(e){}}
@@ -496,7 +498,8 @@ function layoutSprites(){ document.querySelectorAll('.spr').forEach(el=>sizeSpr(
 setBg.tok=0; setCg.tok=0;
 function setBg(name, tr){
   state.bg=name; $('#sprites').style.setProperty('--bgf', BG_LIGHT[name]||'none');
-  if(name==='black'||name==='white'){ setBg.tok++; $('#bgSolid').style.background=name==='white'?'#fff':'#000'; bgImgs.forEach(i=>i.classList.remove('on')); return; }
+  if(name==='black'||name==='white'){ setBg.tok++; const d=tr==='cut'?0:tr==='slow'?1.8:.6, sol=$('#bgSolid'); sol.style.transition=`background ${d}s`; sol.style.background=name==='white'?'#fff':'#000';
+    bgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); if(tr==='flash') flash(); return; }
   const next=bgImgs[1-bgFront], cur=bgImgs[bgFront];
   const dur = tr==='cut'?0: tr==='slow'?1.8: .9;
   next.style.transition=`opacity ${dur}s ease`; cur.style.transition=`opacity ${dur}s ease`;
@@ -513,23 +516,23 @@ function liveOn(name, delay){
   cgLive.onplaying=()=>{ if(tok===setCg.tok) setTimeout(()=>{ if(tok===setCg.tok) cgLive.classList.add('on'); }, delay); };
   const p=cgLive.play(); if(p&&p.catch) p.catch(()=>{});      // if autoplay is refused, the still simply stays
 }
+const cgFills=[...document.querySelectorAll('#cg .cgfill')];   // portrait: each CG image has its own blurred fill and fades with it
 function setCg(name, tr){
   state.cg=name;
-  const fill=$('#cgFill');
-  if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); fill.style.transition=`opacity ${d}s ease`; fill.classList.remove('on'); return; }
-  const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
+  if(!name){ setCg.tok++; liveOff(); const d=tr==='cut'?0:tr==='slow'?1.8:1; cgImgs.concat(cgFills).forEach(i=>{ i.style.transition=`opacity ${d}s ease`; i.classList.remove('on'); }); return; }
+  const next=cgImgs[1-cgFront], cur=cgImgs[cgFront], nextF=cgFills[1-cgFront], curF=cgFills[cgFront], dur=tr==='cut'?0:tr==='slow'?1.8:1;
   const over=cur.classList.contains('on');   // a CG is already up: the new one fades in on top of it
   if(next.classList.contains('on') && next.src.endsWith(`/img/bg/${name}.webp`)){
     // a tap mid-fade (or before the new image has even loaded) back to the image still underneath: fade the top one back out, no cut
-    ++setCg.tok; cur.style.transition=`opacity ${dur}s ease`; cur.classList.remove('on');
-    fill.style.backgroundImage=`url(img/bg/${name}.webp)`; cgFront=1-cgFront; liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150); return;
+    ++setCg.tok; cur.style.transition=curF.style.transition=`opacity ${dur}s ease`; cur.classList.remove('on'); curF.classList.remove('on');
+    cgFront=1-cgFront; liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150); return;
   }
-  if(next.classList.contains('on')){ next.style.transition='none'; next.classList.remove('on'); void next.offsetWidth; }
-  next.style.zIndex=2; cur.style.zIndex=1; cgLive.style.zIndex=3;
-  next.style.transition=`opacity ${dur}s ease`; cur.style.transition= over ? 'none' : `opacity ${dur}s ease`;
-  const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on');
-    fill.style.transition=`opacity ${dur}s ease`; fill.style.backgroundImage=`url(img/bg/${name}.webp)`; fill.classList.add('on');
-    if(over) setTimeout(()=>{ if(tok===setCg.tok) cur.classList.remove('on'); }, dur*1000+60); else cur.classList.remove('on'); };
+  if(next.classList.contains('on')){ next.style.transition=nextF.style.transition='none'; next.classList.remove('on'); nextF.classList.remove('on'); void next.offsetWidth; }
+  nextF.style.zIndex=1; curF.style.zIndex=0; next.style.zIndex=3; cur.style.zIndex=2; cgLive.style.zIndex=4;
+  next.style.transition=nextF.style.transition=`opacity ${dur}s ease`; cur.style.transition=curF.style.transition= over ? 'none' : `opacity ${dur}s ease`;
+  nextF.style.backgroundImage=`url(img/bg/${name}.webp)`;
+  const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); nextF.classList.add('on');
+    if(over) setTimeout(()=>{ if(tok===setCg.tok){ cur.classList.remove('on'); curF.classList.remove('on'); } }, dur*1000+60); else { cur.classList.remove('on'); curF.classList.remove('on'); } };
   next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload(); cgFront=1-cgFront;
   liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150);
 }
@@ -605,13 +608,13 @@ function overlayOpen(){ return !!document.querySelector('.panel.on') || !$('#tit
 function run(){
   if(running) return; running=true;
   try{
-    if(state.i>=S.length){ store.set('cont',null); return endPilot(); }
+    if(state.i>=S.length){ store.set('v2cont',null); return endPilot(); }
     while(state.i<S.length){
       const c=S[state.i++];
       if(c.t!=='phone' && c.t!=='say' && c.t!=='nar') {/* fallthrough */}
       switch(c.t){
-        case 'scene': state.scene=c.id; store.set('cont',snap()); break;
-        case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
+        case 'scene': state.scene=c.id; store.set('v2cont',snap()); break;
+        case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.name==='black'||c.name==='white') box.classList.add('hidden'); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:(c.name==='black'||c.name==='white')&&c.tr==='slow'?1900:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
         case 'cg': { const was=state.cg; setCg(c.name,c.tr); if(c.name && !was) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break; }
         case 'bgm': playBgm(c.name); state.bgm=c.name; break;
         case 'sfx': if(!skipOn) playSfx(c.name); break;
@@ -620,18 +623,19 @@ function run(){
         case 'hideall': hideAll(); break;
         case 'mode': setMode(c.mode,c.label); break;
         case 'flash': if(!skipOn) flash(); break;
+        case 'hold': state.hold=!!c.on; break;
         case 'shake': if(!skipOn) shake(); break;
         case 'wait': return pause(skipOn?40:c.s*1000);
         case 'card': return dateCard(c.text);
         case 'chapter': return chapterCard(c);
         case 'endchapter': showFace(null); return pause(200);
-        case 'endpilot': store.set('cont',null); return endPilot();
+        case 'endpilot': store.set('v2cont',null); return endPilot();
         case 'video': break; // future cutscenes: falls back to continuing
         case 'phone': if(!skipOn) playSfx('notif'); showFace(null); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); devUpdate(); return waitTap(0);
         case 'say': case 'nar': return line(c);
       }
     }
-    store.set('cont',null); return endPilot();
+    store.set('v2cont',null); return endPilot();
   } finally { running=false; }
 }
 function pause(ms, keepHidden){ running=false; clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(!keepHidden) {} run(); }, ms); }
@@ -653,6 +657,7 @@ function line(c){
 }
 function advance(){
   if(overlayOpen()) return;
+  if(state.hold && !skipOn) return;   // the wordless cold open plays through; skip mode still fast-forwards it
   if(typing){ finishType(); return; }
   if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
   clearTimeout(autoTimer); clearTimeout(waitTimer);
@@ -682,7 +687,8 @@ function snap(){ // state at current command index (rewind to the line being sho
   // text messages already on the phone (minus the one being shown, which replays on load)
   const phone = $('#phone').classList.contains('on') ? [...document.querySelectorAll('#phone .msg')].map(m=>({who:m.classList.contains('me')?'me':'them', text:m.textContent})) : [];
   if(curLine && curLine.t==='phone') phone.pop();
-  return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene, phone};
+  return {i, bg:state.bg, cg:state.cg, spr:JSON.parse(JSON.stringify(state.spr)), bgm:state.bgm, mode:state.mode, ilabel:state.ilabel, t:Date.now(), scene:state.scene, phone,
+    sig:SIG, id:(S[i]&&S[i].id)||null, hold:!!state.hold};   // sig: which build wrote it; id: the line, so another build can find it
 }
 function restore(s){
   log.length=0;
@@ -695,7 +701,16 @@ function restore(s){
   Object.entries(keep).forEach(([w,v])=>showSpr(w,v.spr,v.pos));
   (s.phone||[]).forEach(m=>phoneMsg(m.who,m.text));
   playBgm(s.bgm||null); state.bgm=s.bgm||null; setMode(s.mode||'normal',s.ilabel); state.scene=s.scene;
-  state.i=s.i; if(s.cg) box.classList.add('hidden'); run();
+  state.hold=!!s.hold; state.i=s.i; if(s.cg) box.classList.add('hidden'); run();
+}
+/* a save from another build (the script changed underneath it): find its line by ID, else its scene, else start over */
+function resume(s){
+  if(!s) return;
+  if(s.sig===SIG) return restore(s);
+  let j = s.id ? S.findIndex(c=>c.id===s.id) : -1;
+  if(j<0 && s.scene) j = S.findIndex(c=>c.t==='scene'&&c.id===s.scene);
+  if(j<0){ j=0; toast('That save is from an older version, so the story starts over'); }
+  startAt(j);
 }
 function sceneStart(id){ const i=S.findIndex(c=>c.t==='scene'&&c.id===id); return i<0?0:i; }   // unknown scene: start from the top
 function startAt(idx){
@@ -705,7 +720,7 @@ function startAt(idx){
   for(let k=0;k<idx;k++){ const c=S[k];
     if(c.t==='bg'){s.bg=c.name;s.spr={};s.cg=null;s.phone=[];} else if(c.t==='cg'){s.cg=c.name;} else if(c.t==='bgm'){s.bgm=c.name;}
     else if(c.t==='show'){ s.spr[c.who]={spr:c.spr,pos:c.pos||(s.spr[c.who]&&s.spr[c.who].pos)||'c'}; } else if(c.t==='hide'){ delete s.spr[c.who]; }
-    else if(c.t==='hideall'){s.spr={};} else if(c.t==='mode'){ s.mode=c.mode; s.ilabel=c.label; } else if(c.t==='scene'){ s.scene=c.id; }
+    else if(c.t==='hideall'){s.spr={};} else if(c.t==='mode'){ s.mode=c.mode; s.ilabel=c.label; } else if(c.t==='scene'){ s.scene=c.id; } else if(c.t==='hold'){ s.hold=c.on; }
     // the phone stays up through one line after the last text, then clears (same rule as advance())
     else if(c.t==='phone'){ s.phone.push({who:c.who,text:c.text}); } else if((c.t==='say'||c.t==='nar') && !(S[k+1]&&S[k+1].t==='phone')){ s.phone=[]; } }
   restore(s);
@@ -714,7 +729,7 @@ function openSave(mode){
   $('#saveH').textContent = mode==='save'?'Save':'Load';
   const wrap=$('#slots'); wrap.innerHTML='';
   for(let n=1;n<=9;n++){
-    const d=store.get('slot'+n,null); const b=document.createElement('button'); b.className='slot'; b.type='button';
+    const d=store.get('v2slot'+n,null); const b=document.createElement('button'); b.className='slot'; b.type='button';
     const th=document.createElement('div'); th.className='th'; if(d) th.style.backgroundImage=`url(img/bg/${d.cg||(['black','white'].includes(d.bg)?'cg_title':d.bg)}.webp)`;
     const meta=document.createElement('div'); meta.className='meta';
     const nn=document.createElement('div'); nn.className='n'; nn.textContent='SLOT '+n;
@@ -722,7 +737,7 @@ function openSave(mode){
     if(d){ const c=S[d.i]; const txt=c&&c.text?plain(c.text).replace(/^"|"$/g,''):''; ss.textContent=`${new Date(d.t).toLocaleString([], {month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})} · ${txt.slice(0,64)}${txt.length>64?'…':''}`; }
     else ss.textContent= mode==='save'?'Empty — tap to save here':'Empty';
     meta.append(nn,ss); b.append(th,meta);
-    b.onclick=()=>{ if(mode==='save'){ store.set('slot'+n,snap()); toast('Saved to slot '+n); openSave('save'); } else if(d){ closePanels(); hideTitle(); restore(d); } };
+    b.onclick=()=>{ if(mode==='save'){ store.set('v2slot'+n,snap()); toast('Saved to slot '+n); openSave('save'); } else if(d){ closePanels(); hideTitle(); resume(d); } };
     if(mode==='load'&&!d) b.disabled=true;
     wrap.appendChild(b);
   }
@@ -803,7 +818,7 @@ function devUpdate(){
   if(!devOn || !S) return;
   const X=devIndex(), ci=curIdx(), s=X.scenes[X.at[ci]], c=S[ci];
   $('#devId').textContent = isLine(c) ? c.id : '—';
-  $('#devSc').textContent = s ? `${s.no} · ${Math.max(1, s.lines.filter(j=>j<=ci).length)}/${s.lines.length}` : '';
+  $('#devSc').textContent = s ? (s.lines.length ? `${s.no} · ${Math.max(1, s.lines.filter(j=>j<=ci).length)}/${s.lines.length}` : s.no) : '';
 }
 /* jump straight to any command: rebuilds the stage (background, CG, characters, music, phone) as it would be at that point */
 function devJump(j){
@@ -858,7 +873,7 @@ function lineRow(j, ci, withScene){
 function chartScene(body, X, k, ci){
   const s=X.scenes[k], head=el('div','sd-head'), info=el('div','info');
   const voiced=s.lines.filter(j=>S[j].t==='say' && vIndex && vIndex[S[j].id]).length;
-  info.append(el('div','n', `${s.no} · ${s.ch?'Chapter '+s.ch+', '+s.chT:'Prologue'}${s.date?' · '+s.date:''} · ${s.id}`), el('div','tt', SCENE_T[s.id]||s.id),
+  info.append(el('div','n', `${s.no} · ${s.ch?'Chapter '+s.ch+', '+s.chT:'Cold open'}${s.date?' · '+s.date:''} · ${s.id}`), el('div','tt', SCENE_T[s.id]||s.id),
     el('div','s', `${s.lines.length} lines · ${voiced} voiced${s.who.length?' · '+s.who.map(w=>SPK[w]||w).join(', '):''}`));
   const acts=el('div','sd-acts'); const btn=(t,f,dis)=>{ const b=el('button','x',t); b.type='button'; b.onclick=f; if(dis) b.disabled=true; acts.appendChild(b); };
   btn('▶ Play from scene start', ()=>devJump(s.i));
@@ -913,7 +928,7 @@ function hideTitle(){ $('#title').hidden=true; }
 function toTitle(){
   cardFinish=null; setSkip(false); setAuto(false); stopVoice(); clearTimeout(waitTimer); box.classList.add('hidden');
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); setCg(null); setMode('normal');
-  $('#title').hidden=false; $('#tapStart').hidden=true; $('#mCont').disabled=!store.get('cont',null); playBgm('title');
+  $('#title').hidden=false; $('#tapStart').hidden=true; $('#mCont').disabled=!store.get('v2cont',null); playBgm('title');
 }
 
 /* ---------- input ---------- */
@@ -940,7 +955,7 @@ document.querySelectorAll('[data-close]').forEach(b=>b.onclick=closePanels);
 function whenLoaded(fn){ return ()=>{ audioInit(); if(S){ fn(); return; } toast('Loading…'); loadScript().then(fn).catch(showErr); }; }
 $('#tapStart').onclick=()=>{ audioInit(); $('#tapStart').hidden=true; playBgm('title'); };
 $('#mStart').onclick=whenLoaded(()=>startAt(0));
-$('#mCont').onclick=whenLoaded(()=>{ const c=store.get('cont',null); if(c){ hideTitle(); restore(c);} });
+$('#mCont').onclick=whenLoaded(()=>{ const c=store.get('v2cont',null); if(c){ hideTitle(); resume(c);} });
 $('#mChap').onclick=whenLoaded(openChapters);
 $('#mLoad').onclick=whenLoaded(()=>openSave('load'));
 $('#mSet').onclick=()=>{ audioInit(); openSettings(); };
@@ -959,7 +974,7 @@ $('#err').onclick=()=>{ $('#err').hidden=true; };
 let scriptP=null;
 function loadScript(){
   if(!scriptP) scriptP=fetch('script.json').then(r=>{ if(!r.ok) throw new Error('could not load the story (script.json '+r.status+')'); return r.json(); })
-    .then(j=>{ S=j.script; SPK=j.speakers; S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; }); $('#mCont').disabled=!store.get('cont',null); return j; })
+    .then(j=>{ S=j.script; SPK=j.speakers; SIG=sigOf(S); S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; }); $('#mCont').disabled=!store.get('v2cont',null); return j; })
     .catch(e=>{ scriptP=null; throw e; });
   return scriptP;
 }
@@ -970,7 +985,7 @@ let restoredHot=false;
 function start(data){
   if(!data||!data.snap||restoredHot) return;
   restoredHot=true;
-  loadScript().then(()=>{ if(!$('#title').hidden && !$('#tapStart').hidden){ $('#tapStart').hidden=true; hideTitle(); restore(data.snap); } }).catch(showErr);
+  loadScript().then(()=>{ if(!$('#title').hidden && !$('#tapStart').hidden){ $('#tapStart').hidden=true; hideTitle(); resume(data.snap); } }).catch(showErr);
 }
 if(HASH.has('qa')) window.__vn={get devOn(){return devOn}, setDev, devJump, stepLine, stepScene, openChart, curIdx, get DX(){return devIndex()}, startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, diag, soundCheck,
   meter:()=>{ if(!ac) return null; const mk=g=>{ if(!g._an){ g._an=ac.createAnalyser(); g._an.fftSize=2048; g.connect(g._an); } const d=new Float32Array(2048); g._an.getFloatTimeDomainData(d); let s=0; for(const x of d) s+=x*x; return Math.sqrt(s/d.length); };

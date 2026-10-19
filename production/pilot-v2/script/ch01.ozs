@@ -12,12 +12,14 @@
 #   @bg name [cut|fade|slow]  @cg name [cut|fade|slow]  @cg -
 #   @bgm name  @bgm -   @sfx name   @wait seconds   @flash white
 #   @card text   @chapter n | title   @mode interlude Label   @mode normal   @endchapter n
+#   @hold on / @hold off   taps don't skip the waits and crossfades in between (the wordless cold open)
 #   {term|gloss}  Japanese term shown with a small English gloss (style guide §5)
 #
 # Names in the Japanese lines are in kana until their kanji are chosen (pilot-notes fix 14).
 
 == cold_open | Cold open
 # P.0 (outline, Oct 18): a flash-forward to the misty walk into the distortion. No voices, no narration.
+@hold on
 @bg black cut
 @bgm -
 @wait 1.2
@@ -32,6 +34,7 @@
 @cg - cut
 @bg black cut
 @wait 1.4
+@hold off
 @chapter 1 | The House Next Door
 
 == c1_morning | Mornings at the Fujisawas
@@ -101,7 +104,7 @@ kohei(neutral): "Mom, we're heading out. There's rice in the cooker and miso on 
 @bgm nanoha
 > The path to school follows the river for a while before it turns toward town.  #c1_0052
 > This week it's the best walk in Shirasawa. The cherry trees along the embankment are in full bloom, so heavy with flowers the branches sag over the path, and every time the wind comes down off the mountains the whole tunnel lets go at once.  #c1_0053
-> Up on the hill above it all, where the shrine is, the Ōzakura is blooming too: one cherry tree older than anyone's records, so big that from down here it looks like a pink cloud caught on the hillside.  #c1_0260
+> Up on the hill above it all, where the shrine is, the Ōzakura is blooming too: one cherry tree older than anyone's records, so big that from the bridge it looks like a pink cloud caught on the hillside.  #c1_0260
 @show nanoha school_smile c
 > Nanoha walks on the river side.  #c1_0054
 nanoha: "Now then. Class assignments." || さて。クラス分け。  #c1_0055
@@ -120,7 +123,7 @@ nanoha<deadpan>: "That's what it says in the minutes." || 議事録には、そ�
 nanoha<happy>: "You laughed. That's two points for me this morning." || 笑った。今朝はこれで、私に二ポイント。  #c1_0068
 kohei(grin): "We're keeping score now?" || 点数つけてたのかよ。  #c1_0069
 nanoha<smile>: "We've always been keeping score. You're losing." || ずっとつけてるよ。こうへいの負け越し。  #c1_0070
-> A gust shakes the trees. Petals come down all at once, thick enough to lose the path in. One lands on her braid and stays there.  #c1_0071
+> A gust shakes the trees. Petals come down all at once, thick enough to lose the path in. One lands on her braid.  #c1_0071
 > I don't mention it. It suits her.  #c1_0072
 nanoha<deadpan>: "Kō-chan. Your collar." || こうちゃん。襟。  #c1_0073
 @cg cg_collar
@@ -335,6 +338,7 @@ kohei(neutral): "She seems fine." || ……悪いやつじゃ、なさそうだ�
 nanoha<tease>: "You smiled." || 笑ってたよ。  #c1_0246
 kohei(surprised): "When?" || いつ。  #c1_0247
 nanoha<tease>: "When she said she was looking for a dojo that would put up with her. You did your—" || 相手をしてくれる道場を探してる、って言ったとき。こうへい、いつもの……  #c1_0248
+@show nanoha school_deadpan
 > She drops her chin and narrows her eyes. I think it's supposed to be me.  #c1_0249
 kohei(annoyed): "I don't have a face." || 俺に、そんな顔はない。  #c1_0250
 nanoha<deadpan>: "You have several. I've catalogued them. That one's number four. 'Somebody wants to fight me.'" || いっぱいあるよ。全部カタログにしてある。あれは四番。「誰かが俺とやり合いたがってる」の顔。  #c1_0251
