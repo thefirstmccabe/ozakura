@@ -43,7 +43,7 @@
 The wanting lean is structural, not a matter of lines. The first third of the chapter has only Nanoha in it, and she also gets the interlude's inner life and the night scene. The readers like Natsuki more after the fixes, but still call her "the thinner heroine." Closing that gap in Ch1 would take more Natsuki on screen, or her interiority earlier than Ch2's interlude. That's the Story thread's call. Ch2 (the catch, her texts with Chie) may carry it, since the target is a window.
 
 ## Questions for you (canon or design)
-1. **Nanoha's hair clip.** Style guide §2 gave her none (the clip in canon is Akane's), but the shipped sprites and the collar CG draw one. **Settled Oct 19 (Production's call under the new decide-or-ask rule):** kept, and added to §2 as [P].
+1. **Nanoha's hair clip.** Style guide §2 gave her none (the clip in canon is Akane's), but the shipped sprites and the collar CG draw one. **Settled:** kept and added to §2 (Production's call Oct 19; the author approved it Oct 20).
 2. **The sword grip.** The cold-open grip matches the dream's sword (the same black diamond wrap). All six readers connected the two and read it as the past life's sword in the present, and called it the best clue in the chapter. Canon lists "a distinctive sword hilt" as a Working motif. If the present-day sword isn't meant to be that blade, the cold-open grip needs a different wrap.
 
 ## Provisional inventions

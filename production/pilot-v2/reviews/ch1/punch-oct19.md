@@ -9,7 +9,7 @@
 | The cold open is deferred until most of the story is written | Logged; the build keeps the Oct 18 version |
 | Test sizes: "as long as a phone, iPad, or desktop can see it in landscape mode pretty well, that's good enough" | Landscape only from now on (Pilot v2 README): full runs at iPad landscape, spot checks on phone and desktop |
 
-Also, by Production's call: Nanoha's hair clip kept as drawn (style guide §2, [P]).
+Also, by Production's call: Nanoha's hair clip kept as drawn (style guide §2; the author approved it Oct 20).
 
 No line changed is voiced (the Japanese is unchanged), so no new takes and no spend.
 

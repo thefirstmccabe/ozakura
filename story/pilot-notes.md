@@ -230,7 +230,7 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
 - **Engine:** the chapter menu starts Chapter 1 at the cold open (no separate Prologue entry); the developer scene chart labels it "COLD OPEN."
 - **Ch1 punch list, Oct 19:**
   - Translator's notes on Japanese words (tap the underlined term; Settings → Notes lists them): karaage, fusuma, kinpira, taiyaki, shodan. The wording of each note is [P] (`production/pilot-v2/script/notes.txt`).
-  - Nanoha's small hair clip (left side) is kept as the sprites draw it (style guide §2).
+  - Nanoha's small hair clip (left side) is kept as the sprites draw it; the author approved it Oct 20, so it's no longer [P] (style guide §2).
   - Her height is played as one kitchen joke plus "Chibi"; the collar scene no longer has her on her toes.
 
 ## 4. Address guide
