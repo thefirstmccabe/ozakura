@@ -88,11 +88,13 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 /* translator's notes (style guide §5): a glossed term with a note is underlined; a tap opens the note without advancing */
 .tn{cursor:pointer;text-decoration:underline dotted rgba(201,164,106,.8);text-decoration-thickness:1.5px;text-underline-offset:.24em;-webkit-tap-highlight-color:transparent;border-radius:2px}
 .tn:hover,.tn:focus-visible{background:rgba(201,164,106,.14);outline:none}
+#text.typing .tn{pointer-events:none}
 #note{position:absolute;z-index:26;left:50%;transform:translateX(-50%);width:min(600px,calc(100% - 32px));
   bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 58px);
   background:rgba(16,19,31,.97);border:1px solid rgba(201,164,106,.5);border-radius:4px;padding:14px 18px 12px;
   box-shadow:0 8px 30px rgba(0,0,0,.45);display:none;cursor:pointer;font-size:clamp(15px,2.1vh,21px)}
 #app.dev #note{bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 66px)}
+@media (max-aspect-ratio:1/1){ #note,#app.dev #note{bottom:auto;top:calc(max(16px,env(safe-area-inset-top,0px)) + 16px)} }
 #note.on{display:block;animation:noteIn .18s ease-out}
 @keyframes noteIn{from{opacity:0;transform:translate(-50%,6px)}to{opacity:1;transform:translate(-50%,0)}}
 #note .nt,.note-row .nt{font-family:var(--f-display);font-weight:700;color:var(--gilt);letter-spacing:.04em}
@@ -599,11 +601,12 @@ function renderTo(n){ textEl.textContent=''; let left=n, wrap=null;
     if(x.g){ const sp=document.createElement('span'); sp.className='gl'; sp.textContent=piece; parent.appendChild(sp); } else parent.appendChild(document.createTextNode(piece)); } }
 const noteEl=$('#note');
 function noteOn(){ return noteEl.classList.contains('on'); }
-function openNote(k){ const body=NOTES[k]; if(!body) return; setSkip(false); clearTimeout(autoTimer);
+let noteKey=null;
+function openNote(k){ const body=NOTES[k]; if(!body) return; setSkip(false); clearTimeout(autoTimer); noteKey=k;
   const s=NOTE_T[k]||{}; noteEl.querySelector('.nt').textContent=s.term||k; noteEl.querySelector('.ng').textContent=s.gloss||'';
   noteEl.querySelector('.nb').textContent=body; noteEl.classList.add('on'); }
-function closeNote(){ if(!noteOn()) return; noteEl.classList.remove('on'); if(curLine&&!typing) scheduleAuto(); }
-function markNotes(){ let dirty=false; curSegs.forEach(x=>{ if(x.n&&!x.g&&!seenNotes[x.n]){ seenNotes[x.n]=1; dirty=true; } }); if(dirty) store.set('v2notes',seenNotes); }
+function closeNote(){ if(!noteOn()) return; noteEl.classList.remove('on'); noteKey=null; if(curLine&&!typing) scheduleAuto(); }
+function markNotes(){ if(skipOn) return; let dirty=false; curSegs.forEach(x=>{ if(x.n&&!x.g&&!seenNotes[x.n]){ seenNotes[x.n]=1; dirty=true; } }); if(dirty) store.set('v2notes',seenNotes); }
 function openNotes(){ const body=$('#notesBody'); body.innerHTML='';
   const keys=Object.keys(NOTES).filter(k=>devOn||seenNotes[k]);
   if(!keys.length) body.appendChild(el('div','chart-note','Notes on Japanese words show up here once you\u2019ve met them in the story.'));
@@ -614,11 +617,11 @@ function typeOut(t, cls){
   curSegs=segs(t); curLen=curSegs.reduce((a,x)=>a+x.t.length,0); fullText=plain(t); markNotes();
   textEl.className=cls+(state.mode==='interlude'?' interlude':''); textEl.textContent='';
   if(skipOn||cps()>1e8){ renderTo(curLen); typing=false; addCur(); return; }
-  typing=true; let n=0; const step=Math.max(1,Math.round(cps()/60));
-  clearInterval(typeTimer); typeTimer=setInterval(()=>{ n+=step; renderTo(n); if(n>=curLen){ clearInterval(typeTimer); typing=false; addCur(); scheduleAuto(); } },1000/60);
+  typing=true; textEl.classList.add('typing'); let n=0; const step=Math.max(1,Math.round(cps()/60));
+  clearInterval(typeTimer); typeTimer=setInterval(()=>{ n+=step; renderTo(n); if(n>=curLen){ clearInterval(typeTimer); typing=false; textEl.classList.remove('typing'); addCur(); scheduleAuto(); } },1000/60);
 }
 function addCur(){ const c=document.createElement('span'); c.className='cur'; c.textContent='▾'; textEl.appendChild(c); }
-function finishType(){ clearInterval(typeTimer); typing=false; renderTo(curLen); addCur(); scheduleAuto(); }
+function finishType(){ clearInterval(typeTimer); typing=false; textEl.classList.remove('typing'); renderTo(curLen); addCur(); scheduleAuto(); }
 /* face windows (style guide §3a): Kōhei on every spoken line; others only when their sprite isn't on screen */
 const faceEl=$('#face'), faceImg=faceEl.querySelector('img');
 function faceFor(c){
@@ -956,7 +959,7 @@ $('#dPrevS').onclick=()=>stepScene(-1); $('#dNextS').onclick=()=>stepScene(1);
 $('#dPrevL').onclick=()=>stepLine(-1); $('#dNextL').onclick=()=>stepLine(1);
 $('#dChart').onclick=()=>{ if(!S) return; setAuto(false); setSkip(false); openChart(); };
 $('#setChart').onclick=()=>{ closePanels(); if(S) openChart(); };
-$('#setNotes').onclick=()=>{ audioInit(); const go=()=>{ closePanels(); openNotes(); }; if(S) go(); else loadScript().then(go).catch(showErr); };
+$('#setNotes').onclick=()=>{ audioInit(); const go=()=>{ closePanels(); openNotes(); }; if(S) go(); else { toast('Loading…'); loadScript().then(go).catch(showErr); } };
 $('#devOff').onclick=()=>{ setDev(false); closePanels(); toast('Developer mode off'); };
 // hidden switch that also works from a home-screen icon: tap 大桜 on the title five times
 { let n=0, t=0; $('.tate').addEventListener('click', ()=>{ const now=Date.now(); n = now-t<800 ? n+1 : 1; t=now; if(n>=5){ n=0; setDev(!devOn); toast(devOn?'Developer mode on':'Developer mode off'); } }); }
@@ -983,18 +986,26 @@ function toTitle(){
 /* ---------- input ---------- */
 // translator's notes: a tap on an underlined term opens its note (while the line is still typing, the tap finishes it as usual);
 // while a note is open, the next tap anywhere closes it, and only a button or panel tap goes on to do its own job
-textEl.addEventListener('click',e=>{ const t=e.target&&e.target.closest&&e.target.closest('.tn'); if(!t||typing) return; e.stopPropagation(); openNote(t.dataset.n); });
-document.addEventListener('click',e=>{ if(!noteOn()) return; const t=e.target; if(t&&t.closest&&t.closest('.tn')) return;
+// a press that began while the line was typing only finishes the line, even if typing ends before the click arrives
+let downTyping=false;
+app.addEventListener('pointerdown',()=>{ downTyping=typing; }, true);
+textEl.addEventListener('click',e=>{ const t=e.target&&e.target.closest&&e.target.closest('.tn'); if(!t||typing||downTyping) return;
+  e.stopPropagation(); openNote(t.dataset.n); if(e.detail) t.blur(); });   // a pointer tap leaves no keyboard focus on the term
+document.addEventListener('click',e=>{ if(!noteOn()) return; const t=e.target, tn=t&&t.closest&&t.closest('.tn');
+  if(tn && tn.dataset.n!==noteKey) return;   // a different term opens its own note
   closeNote(); if(!(t&&t.closest&&t.closest('button,input,.panel'))) e.stopPropagation(); }, true);
 app.addEventListener('click',e=>{
   resumeAudio();
+  const wasTyping=downTyping; downTyping=false;
   if(e.target&&e.target.closest&&e.target.closest('button,.panel,#title,input,#devbar')) return;
   if($('#endCard').classList.contains('on')) return;
+  if(wasTyping && !typing && curLine && !skipOn) return;   // the line finished between press and release: that tap was the finishing tap
   if(skipOn){ setSkip(false); return; }
   advance();
 });
 document.addEventListener('keydown',e=>{
   if(noteOn() && (e.key==='Escape'||e.key===' '||e.key==='Enter'||e.key==='ArrowRight')){ e.preventDefault(); closeNote(); return; }
+  if(noteOn() && devOn && (e.key==='ArrowLeft'||e.key==='PageUp'||e.key==='PageDown')) closeNote();
   const tn=e.target&&e.target.closest&&e.target.closest('.tn');
   if(tn && (e.key===' '||e.key==='Enter') && !typing){ e.preventDefault(); openNote(tn.dataset.n); return; }
   if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){ if(!overlayOpen()&&!(e.target&&e.target.closest&&e.target.closest('button,input'))){ e.preventDefault(); if(skipOn) setSkip(false); else advance(); } }
