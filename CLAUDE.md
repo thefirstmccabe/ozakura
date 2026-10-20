@@ -20,7 +20,7 @@ The repo is **public**, and GitHub Pages serves it at https://thefirstmccabe.git
 | **Production** (one per deliverable) | Builds, scripts, art, voices; `production/<deliverable>/` (except the outline) and `production/pipeline/` (except `review/`); style guide §1–§6, §8 and the §7 voice cast; `pilot-notes.md` [P] entries; the status board's rows for its chapters | Story (punch-list dialogue items, [P] details), the author (handovers) |
 | **Music** | Style guide §7 (music), `production/music/`, the deliverable's `music-cues.md` | Production (finished cues) |
 | **Design pass** (only when a big visual job comes up: a style homage, a batch of new characters or locations; small one-offs stay in whichever thread the author raises them) | Its exploration in `production/design/<pass>/`; the approved results go into style guide §1–§2. Starts from a short brief and closes when the author approves | Production (approved designs and references) |
-| **Planning** | Style guide §9 (the process), `production/pipeline/review/` prompts, the log's structure. Retires after Pilot v2; then Production owns these | Everyone (process changes) |
+| **Planning** | Style guide §9 (the process), `production/pipeline/review/` prompts, the log's structure. A standing thread (it doesn't retire after Pilot v2) | Everyone (process changes) |
 
 Any thread may append to the decision log and update the status board. If a change belongs to another thread, write it down for that thread (a handoff file or a log row) instead of making it.
 
