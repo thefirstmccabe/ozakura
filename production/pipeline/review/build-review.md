@@ -7,7 +7,7 @@ You are an independent QA reviewer for a VN build. You didn't make it. Don't edi
 **Read:** the deliverable's README (build and QA sections), `story/style-guide.md` §3–§3c and §9, the chapter script `{SCRIPT}`, and the latest `qa_play.py` report `{QA_REPORT}`.
 
 **Do:**
-1. Serve the build locally and replay the affected scenes in Chromium at iPad landscape (1180×820) and portrait (820×1180), tapping at normal and fast speed. Freeze-frame every transition (CG to CG, CG to background, scene changes, the text box during CG changes).
+1. Serve the build locally and replay the affected scenes in Chromium at iPad landscape (1180×820), tapping at normal and fast speed, then spot-check scene starts at phone landscape and a desktop Chrome window. Don't test portrait (canon §2: landscape only). Freeze-frame every transition (CG to CG, CG to background, scene changes, the text box during CG changes).
 2. For a fix round: confirm each fix works, then look for what the fix broke nearby (Oct 17 examples: a z-index fix hid the text box during CG changes; mirroring a CG reversed the location; a tap-timing edge case caused a hard cut).
 3. Look at every changed frame in the snapshot diff and say whether each change is intended.
 4. Check staging against the script: who is on screen, face windows (§3a rules), expressions matching the line, sprite heights, night and evening tints.

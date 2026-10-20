@@ -90,3 +90,5 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Dream-woman lean drifts up** over the year (about 50 in the pilot to about 65–70 before the bloom), never confirmed before Ch30 (§5).
 - **Oct 19:**
   - **The cold open is parked** (§1, frame devices): it needs improvement; what it shows, and whether it's animated or music over CGs, is decided at the very end of the project (author).
+- **Oct 20:**
+  - **Landscape only on every device** (§2): iPad primary, phones and desktop Chrome supported; portrait shows a rotate-your-device screen.

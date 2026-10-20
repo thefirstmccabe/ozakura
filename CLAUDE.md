@@ -58,6 +58,7 @@ If someone edited the Project copy directly, `project_read` it first and fold th
 
 ## Habits
 - **Chapter production follows `story/style-guide.md` §9** (writing gates before art, fresh-agent checks, cold readers, a Japanese pass, regression runs, handover note), using the reviewer prompts in `production/pipeline/review/` and the tools in `production/pipeline/vn/`. Dialogue follows the speech sheets and address sheet in §3b–§3c.
+- **Landscape only** (canon §2): the iPad is the primary target, phones and desktop Chrome are supported, and there's no portrait layout on any device (a rotate-your-device screen instead). Don't build or test for portrait.
 - **Imperial units only** (feet and inches) in docs, art notes, lineups and prompts. The author doesn't want metric anywhere.
 - Commit at checkpoints, not only at the end. Keep large intermediate renders out unless they're needed to rebuild.
 - Before pushing, run `git fetch origin main` and rebase. The clone is shallow.

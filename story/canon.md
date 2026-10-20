@@ -74,6 +74,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Keep the strangeness subtle** across the long runtime, and drip-feed the fairy. (Oct 8)
 
 ## 2. Format and presentation
+- **Screens (Decided Oct 20):** landscape only, on every device. The iPad is the primary target; phones and desktop Chrome are supported. No portrait layout: held upright, a phone or tablet shows a "rotate your device" screen.
 - **Format (Working, the author's leaning):** VN-primary, with frequent interludes, CGs and occasional manga pages for scenes that only work as manga. The author thinks the story works best as manga, but full manga production is too costly and inconsistent at his quality bar.
   - **Inserts are full color** (Decided Oct 10; reconfirmed Oct 12 after a side-by-side B&W test), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone.
   - **No storyboard step (Decided Oct 12).** Claude makes inserts from the script directly, runs a robust self-review, and presents only finished pages (style guide §4a).
