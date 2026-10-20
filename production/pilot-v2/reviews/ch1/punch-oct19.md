@@ -1,0 +1,20 @@
+# Ch1 punch list, round 1 (§9 step 9), Oct 19
+
+## The author's items, and what was done
+| Item (author) | Done |
+|---|---|
+| "I honestly don't even know what some of these Japanese foods are… I just want a little more information." | **Translator's notes** (style guide §5). A glossed term with a note is underlined; a tap opens a one- or two-sentence note without advancing; Settings → Notes ("Japanese words") lists the notes met so far (all of them in developer mode). Ch1 notes: karaage, fusuma, kinpira, taiyaki, shodan (`script/notes.txt`). "Miso" became "miso soup" (味噌汁). |
+| Cut "The moment closed up, and it was fine." and "It was fine." from the interlude | Cut (c1_0227, c1_0228) |
+| "Maybe too much is made of the Nanoha height difference… maybe we just change some of the lines" | Lines changed, CG kept. At 4′11″ to 5′9″ her head comes to about his chin, which is what `cg_collar` shows. Cut "She's needed the extra inches since middle school." (c1_0075); "up on her toes" out of c1_0074; "at elbow height" out of c1_0127. Kept as the chapter's height beats: the kitchen joke and "Night, Chibi." |
+| The cold open is deferred until most of the story is written | Logged; the build keeps the Oct 18 version |
+| Test sizes: "as long as a phone, iPad, or desktop can see it in landscape mode pretty well, that's good enough" | Landscape only from now on (Pilot v2 README): full runs at iPad landscape, spot checks on phone and desktop |
+
+Also, by Production's call: Nanoha's hair clip kept as drawn (style guide §2, [P]).
+
+No line changed is voiced (the Japanese is unchanged), so no new takes and no spend.
+
+## Checks
+1. **Text check** (fresh agent, on c935919). No blockers. Applied in 1bdfe2f: the fusuma note no longer says "you can hear through it" (it primed the beat at Mom's door); the kinpira note no longer winks at Nanoha's line and glosses mirin; the shodan note is down to two sentences; c1_0074 "she's in front of me" (the cut had left "stopped… folding"); c1_0076 "than they strictly need to" ("collar" three lines running); c1_0127 "slipped through to the front"; c1_0092 "the Tanzawa Mountains." Judged fine as is: the interlude flows without a bridge (Natsuki's "Ha—" already closes the moment, and 0232–0234 still carry Nanoha's unease); the CG matches the heights; the glosses sit on first use; "Chibi" stays unglossed (a gloss on the chapter's last tender line would add a height beat).
+2. **Build review** (fresh agent, on c935919). No blockers. Fixed in dc2bf09: a pointer tap left keyboard focus on the term, so Space reopened the note; a mouse press held on the term while typing did nothing (the span is rebuilt every frame; presses now land on the text box); in portrait the card covered faces (now at the top); tapping the same term didn't close its note; developer keys didn't close it; no "Loading…" feedback on Notes before the script loads; Skip counted notes as met. Also fixed for every line: a press that began while a line was typing and ended after it finished skipped to the next line unread; now it only finishes the line.
+3. **Diff check of the fix round** (fresh agent, on dc2bf09; about 600 touch and mouse taps across ordinary lines, the cold open, the falter, the dream flash, Auto and Skip). Nothing broken by the typing-press change. Fixed in f96971e: closing a note by tapping its term again still left focus on it; a note opened on a line reached by Skip wasn't recorded. Third check: below.
+4. **Regression** (iPad landscape, every line, against the handed-over build): 0 frames changed; the 9 reworded lines and the 3 cut lines are exactly the expected set; 256 of 256 lines seen, every voiced line decodes, no bad requests. **Spot checks** at phone landscape (844×390) and desktop (1440×900): every scene start reads cleanly, and the note card fits at phone size.

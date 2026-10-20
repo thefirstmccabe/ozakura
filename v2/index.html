@@ -92,8 +92,9 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 #note{position:absolute;z-index:26;left:50%;transform:translateX(-50%);width:min(600px,calc(100% - 32px));
   bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 58px);
   background:rgba(16,19,31,.97);border:1px solid rgba(201,164,106,.5);border-radius:4px;padding:14px 18px 12px;
-  box-shadow:0 8px 30px rgba(0,0,0,.45);display:none;cursor:pointer;font-size:clamp(15px,2.1vh,21px)}
-#app.dev #note{bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 66px)}
+  box-shadow:0 8px 30px rgba(0,0,0,.45);display:none;cursor:pointer;font-size:clamp(15px,2.1vh,21px);box-sizing:border-box;
+  max-height:calc(100% - max(14px,env(safe-area-inset-bottom,0px)) - var(--boxh,150px) - 66px);overflow-y:auto}
+#app.dev #note{bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 66px);max-height:calc(100% - max(14px,env(safe-area-inset-bottom,0px)) - var(--boxh,150px) - 74px)}
 @media (max-aspect-ratio:1/1){ #note,#app.dev #note{bottom:auto;top:calc(max(16px,env(safe-area-inset-top,0px)) + 16px)} }
 #note.on{display:block;animation:noteIn .18s ease-out}
 @keyframes noteIn{from{opacity:0;transform:translate(-50%,6px)}to{opacity:1;transform:translate(-50%,0)}}
@@ -992,7 +993,7 @@ let downTyping=false;
 app.addEventListener('pointerdown',()=>{ downTyping=typing; }, true);
 textEl.addEventListener('click',e=>{ const t=e.target&&e.target.closest&&e.target.closest('.tn'); if(!t||typing||downTyping) return;
   e.stopPropagation(); openNote(t.dataset.n); if(e.detail) t.blur(); });   // a pointer tap leaves no keyboard focus on the term
-textEl.addEventListener('mousedown',e=>{ if(e.target&&e.target.closest&&e.target.closest('.tn')) e.preventDefault(); });   // pointer presses don't focus a term (keyboard Tab still does)
+textEl.addEventListener('mousedown',e=>{ if(e.target&&e.target.closest&&e.target.closest('.tn')){ e.preventDefault(); const a=document.activeElement; if(a&&a!==document.body&&a.blur) a.blur(); } });   // pointer presses don't focus a term (keyboard Tab still does)
 document.addEventListener('click',e=>{ if(!noteOn()) return; const t=e.target, tn=t&&t.closest&&t.closest('.tn');
   if(tn && tn.dataset.n!==noteKey) return;   // a different term opens its own note
   if(tn && e.detail) tn.blur();
