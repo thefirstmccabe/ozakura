@@ -4,11 +4,11 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 
 ---
 
-## 0. Status board (updated Oct 19)
+## 0. Status board (updated Oct 20)
 **Pilot v2** (Prologue + Ch1–4; brief `production/pilot-v2/README.md`; play https://thefirstmccabe.github.io/ozakura/v2/). Stages (style guide §9): outline and targets → draft → writing gates → art → voices → build and QA → handover → approved (tagged `v2-chN-approved`).
 | Chapter | Stage | Owner | Next |
 |---|---|---|---|
-| Ch1 (with the dream at 1.8) | **Handover** (revised under §9; note `production/pilot-v2/reviews/ch1/handover-oct18.md`, then fix rounds 2–3 in `reviews/ch1/build-review.md`, so the cold open is now skippable once seen). **Punch list round 1 done Oct 19** (`reviews/ch1/punch-oct19.md`) | Production | The author's next punch list, or approval; then tag `v2-ch1-approved` (the regression baseline for later fixes) |
+| Ch1 (with the dream at 1.8) | **Handover** (revised under §9; note `production/pilot-v2/reviews/ch1/handover-oct18.md`, then fix rounds 2–3 in `reviews/ch1/build-review.md`, so the cold open is now skippable once seen). **Punch list round 1 done Oct 19** (`reviews/ch1/punch-oct19.md`) | Production | **First, install Natsuki's Oct 20 look** (below). Then the author's next punch list, or approval; then tag `v2-ch1-approved` (the regression baseline for later fixes) |
 | Ch2–4 | **Outline and reader targets** | Story | The Story thread revises the Ch2–4 outline (`production/pilot-v2/scene-outline.md`) with the Ch1 cold-read findings in mind; Production starts Ch2 under §9 once the author approves it |
 | Cold open | **Deferred** until most of the story is written (Oct 19) | — | The author returns to it then: what goes there, and whether it's animated or music over CGs. The build keeps the Oct 18 version |
 
@@ -17,6 +17,8 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 |---|---|---|
 | Music | Pilot music closed (Oct 16: the four short loops as they are). Kiss theme take B kept in mind for the late-August chapter | Music thread |
 | Shipped pilot (site root) and Manga Vol. 1 | On hold; `v2/` replaces the shipped pilot once Ch1–4 are approved | — |
+
+**Natsuki's Oct 20 look into the v2 build (Production, before Ch1 approval):** the design is decided and the assets are ready in `production/design/natsuki-oct20/` (README there). (1) Swap in `sprites/` → `v2/img/ch/` and `faces/` → `v2/img/face/` (same names; check her engine height and position against Kōhei, since the hair widens her silhouette). (2) Redraw `cg_natsuki_intro` with `natsuki-lock-uniform.png` and the smile sprite as references, then its falter variant by face composite as before. (3) Redraw Natsuki in `cg_title` and remake its living still. (4) Rewrite c1_0139 ("cut neat at her shoulders and tucked behind one ear"); a suggestion, [P]: "Copper hair, long and softly waved, brushed until it shines." (5) On-model checks, snapshot regression, and the spend in the ledger (about $2.10 so far).
 
 **Carry into Ch2 (Production):** a **rotate-your-device screen** for portrait on phones and tablets (canon §2, Oct 20; leave the old portrait code unused); translator's notes for any new Japanese words (style guide §5; `script/notes.txt`); port the panel-by-panel insert viewer into the v2 engine before the Ch2 insert (reference `production/insert-presentation-test/`, approved as is; style guide §4a); compose insert pages at 2×; the Ch2–3 address-line fixes (c2_0127, c3_0228: Kōhei's お前 to Natsuki → "Mizuno"; c3_0109, c3_0146, c3_0264: his なのは → *omae*, no name or "Chibi"; c2_0035: Takatsuki's 俺 → 僕); the three low-priority engine items at the end of `reviews/ch1/build-review.md`; Ch1's Oct 17 layout compromises still to verify (log §4).
 
@@ -91,11 +93,12 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | 10-20 | **Decided (author): landscape only on every device** (canon §2). The iPad is the primary target; phones and desktop Chrome are supported; no portrait layout anywhere. Held upright, phones and tablets show a rotate-your-device screen (carried to Production for Ch2). Portrait came out of the process doc's QA step, the build-review prompt and the style guide; QA runs at iPad landscape with spot checks at phone landscape and desktop Chrome. |
 | 10-20 | **No standing visuals thread (author agreed).** Small design calls stay wherever they come up. A big visual job (the *Fragrant Flower* and *Vagabond* style homages, child and middle-school Kōhei and Nanoha, the beast's ethereal pass, Kyoto locations) gets a short-lived **design-pass thread** that works from a brief, records approved results in style guide §1–§2, hands them to Production and closes. Added as a row in CLAUDE.md's ownership table. |
 | 10-20 | **The Planning thread stays after Pilot v2** (author; reverses the Oct 19 "retires after Pilot v2"). It keeps §9, the reviewer prompts and the log's structure (CLAUDE.md). |
+| 10-20 | **Decided (author): Natsuki gets long, soft waves and green eyes**, replacing the shoulder-length cut and amber-brown eyes (canon §8; style guide §1–§2). He felt her model wasn't pretty enough; of eight looks (`production/design/natsuki-oct20/options.jpg`) he and Claude both picked the long, brushed-out waves. **Assets** in `production/design/natsuki-oct20/`: a full-body lock, the seven school sprites with face windows (hair identical across expressions: only the faces were composited in), and a 2K master. **Claude's calls [P]:** the green is a natural jade, not vivid; the athletic ponytail is now a longer one, since her hair is long. **Handed to Production** (status board): install into the v2 build before Ch1 approval, redraw the intro CG, its falter and the title CG, and rewrite line c1_0139. About $2.10. |
 
 ## 3. Budget (open lines)
 | Line | Cap | Spent | Notes |
 |---|---|---|---|
-| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | about $13.30 after the Ch1 revision (Oct 18) | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
+| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | about $15.40 (Oct 20: + about $2.10 for Natsuki's restyle) | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
 | Manga Vol. 1 | $50 | $33.01 | **On hold**, about $17 left; 8 known issues (§4) |
 
 Closed lines (tests, the shipped pilot, design passes, music cues): see the archive.

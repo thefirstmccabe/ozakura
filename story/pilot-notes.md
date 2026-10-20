@@ -51,7 +51,7 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 **Art:**
 
 15. **[Fix] Akane:** a full redesign (lavender-silver hair, sailor uniform, cute outfits, younger look). New sprites are needed. Refs: `production/refs/akane-v2/`.
-16. **[Fix] Natsuki:** shoulder-length hair restyled per `production/refs/natsuki-v2/01-restyle-uniform.png`, at 5′3″ with corrected proportions. **Added Oct 8:** her CGs show long hair too and need redrawing (`cg_natsuki_intro`, `cg_catch`, `cg_jigeiko` where visible, `cg_shrine_meeting`, `cg_pastlife`, and the title art).
+16. **[Fix] Natsuki:** shoulder-length hair restyled per `production/refs/natsuki-v2/01-restyle-uniform.png`, at 5′3″ with corrected proportions. **Superseded Oct 20:** long soft waves and green eyes (style guide §1–§2). **Added Oct 8:** her CGs show long hair too and need redrawing (`cg_natsuki_intro`, `cg_catch`, `cg_jigeiko` where visible, `cg_shrine_meeting`, `cg_pastlife`, and the title art).
 17. **[Fix] Kōhei:** dark-brown hair at about 5′9″. The manga's black, spiky hair at 5′10″ is drift.
 18. **[Fix] Houses:** `bg_street_houses` (the alley and stairs between the houses) and `cg_window_night` (the wide gap). Redraw both with the houses about three feet apart, Muv-Luv Extra style. **Replacements made Oct 10** (style guide §1b). Text prompts failed four times; build a layout sketch for the model to paint over. **This also fixes the window-scene bug (fix 31).**
 
