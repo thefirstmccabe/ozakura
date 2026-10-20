@@ -603,6 +603,7 @@ const noteEl=$('#note');
 function noteOn(){ return noteEl.classList.contains('on'); }
 let noteKey=null;
 function openNote(k){ const body=NOTES[k]; if(!body) return; setSkip(false); clearTimeout(autoTimer); noteKey=k;
+  if(!seenNotes[k]){ seenNotes[k]=1; store.set('v2notes',seenNotes); }   // reading a note always counts as meeting it
   const s=NOTE_T[k]||{}; noteEl.querySelector('.nt').textContent=s.term||k; noteEl.querySelector('.ng').textContent=s.gloss||'';
   noteEl.querySelector('.nb').textContent=body; noteEl.classList.add('on'); }
 function closeNote(){ if(!noteOn()) return; noteEl.classList.remove('on'); noteKey=null; if(curLine&&!typing) scheduleAuto(); }
@@ -991,8 +992,10 @@ let downTyping=false;
 app.addEventListener('pointerdown',()=>{ downTyping=typing; }, true);
 textEl.addEventListener('click',e=>{ const t=e.target&&e.target.closest&&e.target.closest('.tn'); if(!t||typing||downTyping) return;
   e.stopPropagation(); openNote(t.dataset.n); if(e.detail) t.blur(); });   // a pointer tap leaves no keyboard focus on the term
+textEl.addEventListener('mousedown',e=>{ if(e.target&&e.target.closest&&e.target.closest('.tn')) e.preventDefault(); });   // pointer presses don't focus a term (keyboard Tab still does)
 document.addEventListener('click',e=>{ if(!noteOn()) return; const t=e.target, tn=t&&t.closest&&t.closest('.tn');
   if(tn && tn.dataset.n!==noteKey) return;   // a different term opens its own note
+  if(tn && e.detail) tn.blur();
   closeNote(); if(!(t&&t.closest&&t.closest('button,input,.panel'))) e.stopPropagation(); }, true);
 app.addEventListener('click',e=>{
   resumeAudio();
