@@ -392,7 +392,7 @@ const POSX_W = {l:20, lc:34, c:50, rc:66, r:80}, POSX_N = {l:27, lc:38, c:50, rc
 const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?POSX_N:POSX_W)[k]});
 const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
 const CHAPTERS = [
-  {k:'CHAPTER 1', t:'The House Next Door', start:'cold_open', th:'cg_natsuki_intro'},   // the cold open plays first, then the chapter card
+  {k:'CHAPTER 1', t:'The House Next Door', start:'c1_morning', th:'cg_natsuki_intro'},   // the cold open is out for now (Oct 20; production/pilot-v2/script/cold_open.ozs)
 ];
 const KANJI = ['','第一話','第二話','第三話','第四話'];
 let SIG='', holdT=0;   // fingerprint of the loaded script.json; saves carry it
@@ -855,7 +855,8 @@ function devIndex(){
   if(DX) return DX;
   const scenes=[], at=new Array(S.length).fill(0); let cur=null, ch=0, chT='', bg='black', perCh=0;
   S.forEach((c,i)=>{
-    if(c.t==='chapter'){ ch=c.n; chT=c.title; perCh=0; }
+    if(c.t==='chapter'){ ch=c.n; chT=c.title; perCh=0;
+      if(cur && cur.i===i-1){ cur.ch=ch; cur.chT=chT; perCh=1; cur.no=ch+'.1'; } }   // a chapter card that opens a scene puts that scene in the chapter
     if(c.t==='scene'){ perCh++; cur={id:c.id, i, ch, chT, no: ch? ch+'.'+perCh : 'P.'+(perCh-1), date:'', lines:[], who:[], cgs:[], bgFirst:null, inh:bg}; scenes.push(cur); }
     if(cur) at[i]=scenes.length-1; if(!cur) return;
     if(c.t==='card' && !cur.date) cur.date=c.text;
@@ -1055,7 +1056,7 @@ function loadScript(){
 }
 loadScript().catch(showErr);   // load immediately, independent of the viewer's hot-reload hook
 // warm the image cache for the first scenes
-['cg_cold_mirror','cg_cold_hand','cg_cold_mist','bg_kohei_room_day','bg_fujisawa_kitchen'].forEach(n=>{const i=new Image(); i.src=`img/bg/${n}.webp`;});
+['bg_kohei_room_day','bg_fujisawa_kitchen','bg_river_morning'].forEach(n=>{const i=new Image(); i.src=`img/bg/${n}.webp`;});
 let restoredHot=false;
 function start(data){
   if(!data||!data.snap||restoredHot) return;

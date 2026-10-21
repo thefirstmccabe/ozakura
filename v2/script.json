@@ -18,89 +18,13 @@
 "script": [
 {
 "t": "scene",
-"id": "cold_open",
-"title": "Cold open"
-},
-{
-"t": "hold",
-"on": true
-},
-{
-"t": "bg",
-"name": "black",
-"tr": "cut"
-},
-{
-"t": "bgm",
-"name": null
-},
-{
-"t": "wait",
-"s": 1.2
-},
-{
-"t": "cg",
-"name": "cg_cold_mirror",
-"tr": "slow"
-},
-{
-"t": "wait",
-"s": 2.6
-},
-{
-"t": "cg",
-"name": "cg_cold_hand",
-"tr": "fade"
-},
-{
-"t": "wait",
-"s": 2.6
-},
-{
-"t": "cg",
-"name": "cg_cold_mist",
-"tr": "fade"
-},
-{
-"t": "wait",
-"s": 3.4
-},
-{
-"t": "cg",
-"name": "cg_cold_mirror",
-"tr": "fade"
-},
-{
-"t": "wait",
-"s": 2.6
-},
-{
-"t": "cg",
-"name": null,
-"tr": "cut"
-},
-{
-"t": "bg",
-"name": "black",
-"tr": "cut"
-},
-{
-"t": "wait",
-"s": 1.4
-},
-{
-"t": "hold",
-"on": false
+"id": "c1_morning",
+"title": "Mornings at the Fujisawas"
 },
 {
 "t": "chapter",
 "n": 1,
 "title": "The House Next Door"
-},
-{
-"t": "scene",
-"id": "c1_morning",
-"title": "Mornings at the Fujisawas"
 },
 {
 "t": "card",
@@ -1272,7 +1196,7 @@
 {
 "t": "nar",
 "id": "c1_0139",
-"text": "Copper hair, cut neat at her shoulders and tucked behind one ear. Her uniform looks like it was ironed by someone who meant it."
+"text": "Her hair falls long and softly waved, brushed until it shines. Her uniform looks like it was ironed by someone who meant it."
 },
 {
 "t": "say",

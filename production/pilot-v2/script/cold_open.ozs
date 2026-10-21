@@ -1,0 +1,24 @@
+# Ōzakura pilot v2 — the cold open (P.0), removed from the build on Oct 20 (author: "remove the cold intro for now; we'll add it back in later").
+# NOT compiled. To restore: paste the scene below back in front of `== c1_morning` in ch01.ozs, move the `@chapter 1` card
+# back to its end (delete the one at the top of c1_morning), and set the chapter menu's start to 'cold_open' in v2/index.html (CHAPTERS).
+# Its images stay in v2/img/bg (cg_cold_mirror, cg_cold_hand, cg_cold_mist), v2/img/live/cg_cold_mist.mp4 and art/masters; prompts in art/prompts.md.
+
+== cold_open | Cold open
+# P.0 (outline, Oct 18): a flash-forward to the misty walk into the distortion. No voices, no narration.
+@hold on
+@bg black cut
+@bgm -
+@wait 1.2
+@cg cg_cold_mirror slow
+@wait 2.6
+@cg cg_cold_hand
+@wait 2.6
+@cg cg_cold_mist
+@wait 3.4
+@cg cg_cold_mirror
+@wait 2.6
+@cg - cut
+@bg black cut
+@wait 1.4
+@hold off
+@chapter 1 | The House Next Door
