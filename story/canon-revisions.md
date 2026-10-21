@@ -93,3 +93,5 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
 - **Oct 20:**
   - **Landscape only on every device** (§2): iPad primary, phones and desktop Chrome supported; portrait shows a rotate-your-device screen.
   - **Natsuki's look** (§8): long, soft brushed-out waves (nearly to her waist in front) and green eyes, replacing the shoulder-length cut and amber-brown eyes. The author chose it from eight options (`production/design/natsuki-oct20/`).
+- **Oct 21:**
+  - **The 70% rule's exception** (§5): in Ch26–29 some readers may pass 70% on the dream woman, as long as nothing confirms it before the bloom (the author accepted the Story thread's recommendation).

@@ -113,7 +113,7 @@ Cold readers give three numbers at every checkpoint; the marks are judged per wi
 | W9 | 34–36 | settled | settled | still asked: did Nanoha's win feel earned? | The last place "the wrong girl won" can be caught |
 | W10 | 37–42 | settled | settled | no longer measured | Dread and stakes; readers fear for the cast without being promised a death |
 
-**Ending** bands follow canon's "about 50-50, or slightly toward Nanoha." **Per checkpoint:** no reader sure (70% or more) of any of the three before the story settles it (canon §5). **Question for the author:** W7's 65–70 average means some readers will pass 70% on the dream woman in Ch26–29; the proposal is to allow that there, as long as nothing confirms it.
+**Ending** bands follow canon's "about 50-50, or slightly toward Nanoha." **Per checkpoint:** no reader sure (70% or more) of any of the three before the story settles it (canon §5). **Exception (author, Oct 21):** in W7 some readers may pass 70% on the dream woman, as long as nothing confirms it.
 
 ## Clue ledger: who the dream woman is
 Every pointer, so the balance can be checked at a glance. Shared-past flashbacks are evidence that "Nanoha has this life," not dream clues, so they aren't listed, except where one shows the uncanny (FB1's light).
