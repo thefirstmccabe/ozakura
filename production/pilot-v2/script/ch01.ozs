@@ -18,8 +18,27 @@
 #
 # Names in the Japanese lines are in kana until their kanji are chosen (pilot-notes fix 14).
 
-== c1_morning | Mornings at the Fujisawas
+== cold_open | Cold open
+# P.0 (outline, Oct 18): a flash-forward to the misty walk into the distortion. No voices, no narration.
+@hold on
+@bg black cut
+@bgm -
+@wait 1.2
+@cg cg_cold_mirror slow
+@wait 2.6
+@cg cg_cold_hand
+@wait 2.6
+@cg cg_cold_mist
+@wait 3.4
+@cg cg_cold_mirror
+@wait 2.6
+@cg - cut
+@bg black cut
+@wait 1.4
+@hold off
 @chapter 1 | The House Next Door
+
+== c1_morning | Mornings at the Fujisawas
 @card Monday, April 7
 @bg bg_kohei_room_day
 @bgm daily

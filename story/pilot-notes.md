@@ -200,7 +200,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 
 ### v2 Ch1 revision, Oct 18: new provisional details [P]
 Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (continuity, cold reads round 1 and 2).
-- **Cold open (P.0)** (removed from the build Oct 20, kept in `production/pilot-v2/script/cold_open.ozs` for later):
+- **Cold open (P.0):**
   - A misty morning on a narrow modern road at a bend: an orange convex traffic mirror, a hedge, a block wall, utility poles.
   - A hand in a dark navy zip-up jacket on the grip of a sheathed sword.
   - The mist parting on both sides of the road, as if something huge were passing.
@@ -227,7 +227,7 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
 - **Ryōsuke:** argues that taiyaki are eaten head first ("thermodynamics").
 - **Rika:** a different novelty clip every day; matching keychains.
 - **Shrine:** the Saturday sweep; Genji's back.
-- **Engine:** the chapter menu starts Chapter 1 at its first scene (no separate Prologue entry; the cold open is out of the build since Oct 20).
+- **Engine:** the chapter menu starts Chapter 1 at the cold open (no separate Prologue entry); the developer scene chart labels it "COLD OPEN."
 - **Ch1 punch list, Oct 19:**
   - Translator's notes on Japanese words (tap the underlined term; Settings → Notes lists them): karaage, fusuma, kinpira, taiyaki, shodan. The wording of each note is [P] (`production/pilot-v2/script/notes.txt`).
   - Nanoha's small hair clip (left side) is kept as the sprites draw it; the author approved it Oct 20, so it's no longer [P] (style guide §2).
