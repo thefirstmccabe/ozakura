@@ -30,7 +30,7 @@ How Ōzakura looks and sounds, and how to generate it. Read this before any art,
 **Design rules:**
 - **Proportions:** natural, compact and age-appropriate.
 - **Appeal:** comes from personality, expression, styling and presence. **Never design or frame the school-age cast for figure or sex appeal.**
-- **Hair color:** a medium convention, never commented on in-world.
+- **Hair color:** a medium convention, and never mentioned in story text at all, in narration or dialogue, for any character (author, Oct 20; it's just there). Length, cut and style can be described. Art prompts still name colors.
 
 ## 1a. Design lock, Oct 10 (humans APPROVED by the author; the beast is approved for scale, with an ethereal tweak pending)
 All files are in `production/refs/design-oct10/`. They outrank every older image for these characters.
