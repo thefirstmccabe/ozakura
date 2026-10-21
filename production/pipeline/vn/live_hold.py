@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+"""Hold parts of a living-still loop still: inside the given boxes every frame shows the loop's first frame, so people
+can't morph mid-loop (Kling redrew a bag on Natsuki and opened Nanoha's eyes in the Oct 20 title loop), while petals,
+branches and sky keep moving. Boxes are x0,y0,x1,y1 fractions of the frame; edges are feathered.
+
+  live_hold.py IN.mp4 OUT.mp4 --size 1920x1072 --box 0.22,0.53,0.31,1 --box ... [--feather 28] [--crf 20]
+"""
+import argparse, subprocess
+import numpy as np
+from PIL import Image, ImageFilter
+
+ap = argparse.ArgumentParser()
+ap.add_argument("inp"); ap.add_argument("out")
+ap.add_argument("--size", default="1920x1072"); ap.add_argument("--box", action="append", default=[])
+ap.add_argument("--feather", type=float, default=28); ap.add_argument("--crf", default="20")
+a = ap.parse_args()
+W, H = map(int, a.size.split("x"))
+m = Image.new("L", (W, H), 0)
+px = np.zeros((H, W), np.uint8)
+for b in a.box:
+    x0, y0, x1, y1 = map(float, b.split(","))
+    px[int(y0 * H):int(y1 * H), int(x0 * W):int(x1 * W)] = 255
+mask = np.array(Image.fromarray(px).filter(ImageFilter.GaussianBlur(a.feather))).astype(np.float32)[..., None] / 255
+dec = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "error", "-i", a.inp, "-vf", f"scale={W}:{H}:flags=lanczos", "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
+enc = subprocess.Popen(["ffmpeg", "-nostdin", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", "24", "-i", "-",
+                        "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p", "-crf", a.crf, "-preset", "slow", "-movflags", "+faststart", "-an", a.out], stdin=subprocess.PIPE)
+first, n = None, 0
+while True:
+    buf = dec.stdout.read(W * H * 3)
+    if len(buf) < W * H * 3:
+        break
+    f = np.frombuffer(buf, np.uint8).reshape(H, W, 3).astype(np.float32)
+    if first is None:
+        first = f
+    enc.stdin.write((mask * first + (1 - mask) * f).round().astype(np.uint8).tobytes()); n += 1
+enc.stdin.close(); enc.wait(); dec.wait()
+print(f"{n} frames -> {a.out}")
