@@ -92,4 +92,4 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **The cold open is parked** (§1, frame devices): it needs improvement; what it shows, and whether it's animated or music over CGs, is decided at the very end of the project (author).
 - **Oct 20:**
   - **Landscape only on every device** (§2): iPad primary, phones and desktop Chrome supported; portrait shows a rotate-your-device screen.
-  - **Natsuki's look** (§8): long, soft brushed-out waves (a little below the chest, mid-back) and green eyes, replacing the shoulder-length cut and amber-brown eyes. The author chose it from eight options (`production/design/natsuki-oct20/`).
+  - **Natsuki's look** (§8): long, soft brushed-out waves (nearly to her waist in front) and green eyes, replacing the shoulder-length cut and amber-brown eyes. The author chose it from eight options (`production/design/natsuki-oct20/`).

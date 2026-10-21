@@ -512,7 +512,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 ### Mizuno Natsuki
 - **Basics:** second year, 16, transfers in at the start of April. **5′3″.**
 - **Look:**
-  - **Hair (Decided Oct 20):** bright burnished copper, **long** (a little below the chest in front, to the middle of the back), in **soft, brushed-out waves** with a side-swept fringe. Replaces the shoulder-length cut.
+  - **Hair (Decided Oct 20):** bright burnished copper, **long** (in front, nearly to her waist), in **soft, brushed-out waves** with a side-swept fringe. Replaces the shoulder-length cut.
   - **Face:** **green eyes** (Decided Oct 20, replacing amber-brown), expressive brows.
 - **Restyle (Decided Oct 6):** more feminine and self-assured, less red-haired tomboy.
   - **Styling:** soft and neat: polished, glossy waves, never tousled or windswept.
@@ -521,7 +521,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Still the kendo girl:** a ponytail for athletics (longer now that her hair is long [P]). The athletic-outfit mockup is approved as a direction.
   - **Initial reference:** Chinatsu Nagisa.
   - **Build:** athletic; the exact build is Open.
-  - **Reference:** `production/design/natsuki-oct20/natsuki-lock-uniform.png` locks the look (Oct 20); the Oct 6 restyle image now governs only pose, build and styling direction.
+  - **Reference (Oct 20):** in `production/design/natsuki-oct20/`, **her school sprites govern hair and color**, and the full-body lock governs pose, build and scale (its hair runs a little shorter and darker). The Oct 6 restyle image now governs only styling direction.
 - **Personality:**
   - Warm, genuinely confident, outgoing, competitive. Charismatic rather than loud or boisterous. Her sociability isn't entirely an act.
   - She wants lasting closeness and to be someone's first choice, but finds asking for it hard.
