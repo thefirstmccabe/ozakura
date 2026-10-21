@@ -1,6 +1,7 @@
 # Ōzakura pilot v2 — the cold open (P.0), removed from the build on Oct 20 (author: "remove the cold intro for now; we'll add it back in later").
 # NOT compiled. To restore: paste the scene below back in front of `== c1_morning` in ch01.ozs, move the `@chapter 1` card
-# back to its end (delete the one at the top of c1_morning), and set the chapter menu's start to 'cold_open' in v2/index.html (CHAPTERS).
+# back to its end (delete the one at the top of c1_morning), set the chapter menu's start to 'cold_open' in v2/index.html (CHAPTERS),
+# and put cg_cold_mirror, cg_cold_hand and cg_cold_mist back at the front of the image warm-up list near the end of v2/index.html.
 # Its images stay in v2/img/bg (cg_cold_mirror, cg_cold_hand, cg_cold_mist), v2/img/live/cg_cold_mist.mp4 and art/masters; prompts in art/prompts.md.
 
 == cold_open | Cold open

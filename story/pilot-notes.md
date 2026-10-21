@@ -233,7 +233,7 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
   - Nanoha's small hair clip (left side) is kept as the sprites draw it; the author approved it Oct 20, so it's no longer [P] (style guide §2).
   - Her height is played as one kitchen joke plus "Chibi"; the collar scene no longer has her on her toes.
 - **Natsuki's Oct 20 look in Ch1:**
-  - Her arrival line, with no hair color (author, Oct 20): "Her hair falls long and softly waved, brushed until it shines."
+  - Her arrival line, with no hair color (author, Oct 20): "Her hair falls long, in soft waves, brushed until it shines."
   - In the title art she no longer carries her school bag (both redraws dropped it).
 
 ## 4. Address guide

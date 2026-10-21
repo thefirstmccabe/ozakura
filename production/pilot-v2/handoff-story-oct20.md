@@ -6,7 +6,7 @@ The author decided both of these in the Ch1 Production thread on Oct 20 (evening
 The author: "I've also decided I never want to actually mention hair color. This is a difference. Previously I said it shouldn't be commented on, but now I don't want to mention it at all. It's just there. That's pretty common in manga and anime."
 - **Canon §2** still says hair color is "never commented on in-world", with the Working default that "narration may describe a color plainly as visual description". The new rule is stricter: no hair color in narration or dialogue, for any character. Hair length, cut and style can still be described.
 - **Also stale:** style guide §1a ("Hair color: a medium convention, never commented on in-world"; Production will align that line, since §1 is Production's) and anything in the speech sheets (§3b–§3c) or the Ch2–4 outline that names a hair color.
-- **Ch1 is done:** the only mention was c1_0139 ("Copper hair, cut neat at her shoulders…"), now "Her hair falls long and softly waved, brushed until it shines." [P]. Art prompts still name colors; that's production data, not story text.
+- **Ch1 is done:** the only mention was c1_0139 ("Copper hair, cut neat at her shoulders…"), now "Her hair falls long, in soft waves, brushed until it shines." [P]. Art prompts still name colors; that's production data, not story text.
 
 ## 2. The cold open is out of the build for now
 The author: "I also want you to completely remove the cold intro for now. We'll add it back in later." (This goes further than the Oct 19 deferral, when it stayed in the build.)
