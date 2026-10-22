@@ -100,3 +100,4 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **The pact scene** (scene bank 13a): what they like about him; "a little dangerous"; "it wasn't always like that."
   - **Reversed: the foreshadowing that a girl may die** (§7): Nanoha's eve-of-battle cost and Natsuki's promise (scene bank 24b). She lives; **her cost is her spiritual abilities.**
   - **Counterweight** (§6): present-day closeness and compatibility between Natsuki and Kōhei.
+  - **Hair color never mentioned in story text** (§2; the author's Oct 20 rule, via Production's handoff).
