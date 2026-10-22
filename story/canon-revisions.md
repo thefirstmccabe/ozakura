@@ -95,3 +95,8 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Natsuki's look** (§8): long, soft brushed-out waves (nearly to her waist in front) and green eyes, replacing the shoulder-length cut and amber-brown eyes. The author chose it from eight options (`production/design/natsuki-oct20/`).
 - **Oct 21:**
   - **The 70% rule's exception** (§5): in Ch26–29 some readers may pass 70% on the dream woman, as long as nothing confirms it before the bloom (the author accepted the Story thread's recommendation).
+  - **Nanoha's side of the shared past** (§6): some flashbacks told from her point of view with her thoughts (FB1, FB4, FB6); FB1 implies she fell in love then; FB6 includes the funeral, which Kōhei's mom doesn't attend.
+  - **Nanoha wants to be needed** (§8).
+  - **The pact scene** (scene bank 13a): what they like about him; "a little dangerous"; "it wasn't always like that."
+  - **Reversed: the foreshadowing that a girl may die** (§7): Nanoha's eve-of-battle cost and Natsuki's promise (scene bank 24b). She lives; **her cost is her spiritual abilities.**
+  - **Counterweight** (§6): present-day closeness and compatibility between Natsuki and Kōhei.

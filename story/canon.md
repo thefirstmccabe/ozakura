@@ -242,6 +242,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **A real triangle (Decided Oct 18; replaces "the triangle isn't symmetrical"):** Kōhei has real feelings for Natsuki, real but smaller than for Nanoha, and he comes to realize it. Choosing Nanoha is a real choice (the model is Muv-Luv *Extra*'s Sumika route), so the festival chapter (Ch25 since Oct 18) is a decision, not only a realization.
   - **Author's concern (Oct 18):** the triangle is hot from Kōhei's side for a fairly short time; as canon stands he's barely aware until the kiss (Ch19–24 in the Oct 12 map, about six weeks) though the girls compete from June. **Decided Oct 18:** he feels the pull from summer (the festival, sparring, moments he notices and doesn't want to look at) and avoids it rather than missing it. **It's obvious to the reader early that both girls are the love interests and that he likely has feelings for both;** he himself doesn't admit it until late September, when Natsuki nearly accepts someone else's confession and it hurts more than he expected (scene bank 16, now Ch22). Then he has about five weeks with feelings for both before he chooses.
   - **Natsuki's in-world advocate (Oct 18):** Ryōsuke backs her in the lunch scoring; Chie gets more room.
+  - **Counterweight to Nanoha's flashbacks (Decided Oct 21):** plenty of present-day closeness and compatibility between Natsuki and Kōhei, so readers' wanting stays near 50-50 even as Nanoha's interiority deepens. **Working:** Natsuki's interludes before Ch20 get equal depth.
 
 ### Anger: warning signs
 - **Warning signs** stay sparse: a too-intense practice, and a quiet, threatening confrontation.
@@ -345,12 +346,15 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 **Accepted Oct 12 (all six scenes and the rules; Claude's proposals):**
 - **Rules:** short (one scene each), about one per seasonal arc, each triggered by something in the present (the cups, the window latch, the collar, Usagi-san). Every one shows something being *done* for the other, not explained. A visual treatment distinct from the past-life flashbacks so the eras never blur.
 - **Candidate scenes:**
-  1. **The fairy leaves (childhood, about 7):** Nanoha's "imaginary" friend vanishes without a goodbye. Kōhei is the one who believes her, searches the shrine grounds with her and leaves cookies out with her for weeks. Sets up the fairy's real goodbye at the end (§8).
+  1. **The fairy leaves (childhood, about 7):** Nanoha's "imaginary" friend vanishes without a goodbye. The grown-ups humor her and the other kids make fun of her. Kōhei is the one who believes her, searches the shrine grounds with her and leaves cookies out with her for weeks. Sets up the fairy's real goodbye at the end (§8).
   2. **Usagi-san (childhood):** Kōhei saves up and buys her the white rabbit plush to cheer her up, maybe after the fairy is gone. Explains why that rabbit, of all her plushies, gets the time-outs.
   3. **The windows begin (childhood or early middle school):** a thunderstorm; she's scared, and he talks to her across the gap until she falls asleep. The origin of the window conversations; pays off in the horror-movie night (scene bank 11) and the night before the battle (24a).
   4. **Akane's first scare (Kōhei about 10–11):** little Akane is rushed to the hospital; Nanoha sits with Kōhei in the waiting room and holds his hand without saying anything. Her being there for him.
   5. **Middle school, her turn to be stuck (about 13–14):** she freezes during a speech or a class presentation, and he gets her through it quietly, no confrontation. Him being there for her, and a counterweight to his anger.
   6. **After the funeral (about 15):** the night Kōhei sits at the kitchen table with the bills (§6, the September flashback), Nanoha comes in through the kitchen without knocking for the first time, sets down food and does her homework across the table until he's done. The origin of her bringing food over and walking in without knocking (pilot-notes fix 20).
+- **Nanoha's side (Decided Oct 21):** some of these are told from Nanoha's point of view, as her third-person interludes with her thoughts, especially the heavier ones: FB1, FB4 (the hospital) and FB6 (now including the funeral). Her heart is breaking for him; she wants to support him; she wants him to rely on her and need her.
+  - **FB1:** it's implied, never stated, that this is when she fell in love with him: he believed her and left the cookies out while everyone else made fun of her.
+  - **FB6 includes the funeral (Decided Oct 21):** Kōhei's mom doesn't go, and people murmur about it. **[P]:** with his mother absent, the 15-year-old stands as chief mourner. It must read as her collapse, not coldness; it becomes her deepest shame, which Emi can name in Ch21 [P].
 - **Art needed:** child (about 7–8) and middle-school (about 13–14) versions of both. Proposal: reuse Akane's sailor uniform for middle-school Nanoha and a plain black gakuran for Kōhei (same local middle school). Placement goes in the chapter map.
 
 ### Dating
@@ -417,7 +421,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Proposal:** the plan needs both styles, Takatsuki's precision and Kōhei's instinct.
 - **Nanoha's role (Working):**
   - She protects people near the tree and senses the beast or its location.
-  - She can exhaust herself holding it within one path so it can't escape, at the risk of losing herself.
+  - She can exhaust herself holding it within one path so it can't escape, at the risk of losing herself. **Oct 21:** she believes it could kill her; what it actually takes is her spiritual abilities, and she lives.
   - While the others confront it there, they're beyond outside help.
   - Details are unfinalized; guiding or anchoring safe paths through the tree is a proposal.
 - **Don't let the mentor's job solve the threat.** Neither the father's profession nor the authorities settle the beast.
@@ -427,8 +431,8 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 
 ## 7. Ending
 - **Survival:** the group defeats the beast. **The principal young cast all survive**, and the town deaths keep the danger real.
-  - **Reconfirmed Oct 18: no one dies in the final battle.** Rejected: foreshadowing that one of the girls may die; Nanoha sacrificing her life.
-  - **Victory costs a real price (Decided Oct 18):** a serious injury, a loss of power or similar. What it is is Open.
+  - **Reconfirmed Oct 18: no one dies in the final battle.** Nanoha sacrificing her life stays out. **Reversed Oct 21 (author):** the foreshadowing that one of the girls may die is now in: on the eve of the battle Nanoha believes her part could kill her (scene bank 24b). She lives.
+  - **Victory costs a real price (Decided Oct 18):** a serious injury, a loss of power or similar. **Decided Oct 21: Nanoha's cost is her spiritual abilities.** Whether the victory costs anything more is Open.
 - **Aftermath:**
   - The tree grows quiet, extraordinary abilities diminish, and the fairy fades or says farewell. Its last appearance is Open; its death isn't required.
   - The cherry tree remains, and **memories remain.** Don't erase the triangle to solve it.
@@ -501,6 +505,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - She wants Kōhei as a boyfriend and is hurt when their childhood familiarity is treated as permanently nonromantic.
   - She's jealous of Natsuki and sincerely enjoys her company. Her kindness and her unfair feelings coexist.
   - She has a same-sex best friend and attachments beyond Kōhei.
+  - **She wants to be needed (Decided Oct 21):** to support him and have him rely on her. **Working:** it mirrors Natsuki's wish to be chosen, and it meets Kōhei's flaw head-on, since he won't lean on anyone.
 - **Why she and Natsuki click:** Nanoha remembers small details, follows up and initiates contact, so Natsuki feels welcomed without having to perform.
 - **Supernatural:**
   - A special connection to the tree; she knew the fairy as a childhood imaginary friend.
@@ -614,7 +619,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
     - **Autumn (low-level beast activity):** more frequent; a small half-form at the edge of Nanoha's vision; fragments of speech at most; agitated near places where people got lost. An alarm only Nanoha registers.
     - **New Year bloom:** fully visible to Nanoha and speaking. Kōhei and Natsuki can see her as their memories flood in. **She recognizes them ("You two. Again.")**; she was there at the old bloom.
     - **Jan–Mar:** visible to the whole group, Takatsuki included after his trap. Exposition with limits: the distortion, what the tree can and can't do. She doesn't know everything about the beast, so the friends still have to work it out.
-    - **After:** she fades, with **a real goodbye to Nanoha.** As a child, Nanoha's friend vanished without one; this time she gets to say goodbye.
+    - **After:** she fades, with **a real goodbye to Nanoha.** **Proposal (Oct 21):** the goodbye is the last thing Nanoha sees before her sight goes, so the price and the goodbye are one moment. As a child, Nanoha's friend vanished without one; this time she gets to say goodbye.
   - **Proposal: Usagi-san.** Sometimes it isn't Kōhei who turns the time-out rabbit back around (scene bank #1). Nanoha blames him; he's innocent; much later she realizes who has been pardoning it.
   - **Personality (Proposal):** old but childlike. Curious, a little vain, food-motivated (cookies; the biscuit trial), mischievous with Nanoha. She remembers what she cared about, not what would be useful, so her limited knowledge reads as character.
   - **Gender (Working, Oct 10):** female (the author refers to her as "her").
@@ -667,6 +672,7 @@ Select and adapt; this is not a checklist.
 13a. **Natsuki sick; Nanoha brings food: the pact scene (requested Oct 10).** An interlude without Kōhei.
     - **Setup:** Natsuki's parents are away and she's alone and sick in the apartment. Nanoha notices and comes, because she remembers and follows up.
     - **The pact:** feverish and vulnerable, Natsuki admits she likes Kōhei. Nanoha says she already knows. They agree to stay friends and compete fairly.
+    - **What they like about him (Decided Oct 21):** they talk about it: he's tall, strong, handsome, kind, strong but also fragile. Natsuki says he's a little dangerous, but it doesn't really fit him. Nanoha says it wasn't always like that. **Working:** she stops there; Natsuki asks why and Nanoha changes the subject, so the why (Dad's death and the anger since) is kept for Ch21.
     - **Proposal:** Natsuki caught the cold soaking herself in the umbrella scene, so the comic scheme leads straight into the sincere scene.
 13b. **Kōhei sick at home; both girls bring food (requested Oct 10).** Classic romcom, and it serves his arc, because he's bad at being cared for.
     - **Proposals:**
@@ -709,6 +715,8 @@ Select and adapt; this is not a checklist.
     - **Decided Oct 12:** he tells her "I love you" plainly for the first time and, in effect, asks her to marry him. **That's why they all have to live tomorrow.**
     - **Accepted Oct 12:** framed as a promise for after graduation, no ring (or something makeshift), so it reads as two teenagers meaning it rather than an engagement plot. It answers the past life on purpose: that marriage was arranged for an heir; this one is freely chosen, and the rōnin's last word, "Live," becomes their plan for the morning.
     - They fall asleep leaning on each other, then walk into the fight in the morning. Blue Box restraint: the closeness carries the weight.
+24b. **Nanoha's cost (Decided Oct 21):** on the eve of the battle, Nanoha tells Natsuki she has a way to make sure they all come out alive, at a cost to herself that could be very high, implying it could kill her. She makes Natsuki promise to watch over Kōhei if she can't. Natsuki bitterly protests, then reluctantly agrees. Nanoha lives; the cost is her spiritual abilities (§7).
+    - **Working (Claude):** it comes before Kōhei's "I love you" that night (24a), so she hears "that's why we all have to live tomorrow" knowing she might not. Natsuki's bitterness is her own wound: being left him as the fallback. Nanoha carrying a fatal load alone mirrors Kōhei's flaw; **Proposal:** he finds out afterward, and the aftermath reckons with it.
 25. **Armor before battle:** Natsuki helps Kōhei into his armor (armor as an heirloom is provisional), knowing how from the past life. An intimate framing widens to reveal Nanoha in the room, annoyed ("You guys, I'm right here"). The joke reveals their feelings without undercutting the danger.
 26. **Pre-battle respect:** Kōhei to the Rival, something like "I'm trusting you with the women I love." The Rival: "And I'm trusting you to let me handle my part, keep your cool, and not fuck it up and die." The wording is Open, and "both of them" is an optional alternative.
 27. **Rival cooperation:** a task Kōhei must actually trust him with. No redundant helper Kōhei secretly plans to rescue.

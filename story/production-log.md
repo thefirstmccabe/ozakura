@@ -25,7 +25,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 **Waiting on the author:**
 - Ch1 approval.
 - The cold-open sword grip (deferred with the cold open): should the present-day grip match the dream's sword? (`reviews/ch1/handover-oct18.md`; the hair clip is settled: kept, approved Oct 20.)
-- Approval of the chapter map (its header still marks it a Proposal), including the W7 question: allow some readers past 70% on the dream woman in Ch26–29, as long as nothing confirms it (chapter map, canon §5).
+- Approval of the chapter map (its header still marks it a Proposal). The W7 question was answered Oct 21 (yes).
 - The Prologue/Ch1 dream music (`memory`, silence, or a new cue at about $2), after he hears the Ch2 catch.
 - Pilot names, kanji and POV (pilot-notes §1).
 
@@ -99,6 +99,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | 10-20 | **Natsuki's Oct 20 look installed in Ch1 (Production; `production/pilot-v2/reviews/ch1/punch-oct20.md`).** New school sprites and face windows; the arrival CG, its falter (eyes toward the window side) and the title art redrawn with her long waves and green eyes, each pasted back only around her; a new title living still with the three figures held on its first frame (Kling had redrawn a bag and opened Nanoha's eyes mid-loop); thumbnails. c1_0139: "Her hair falls long, in soft waves, brushed until it shines." [P]. About $1.46 (the design pass's $2.25 is now in the ledger too); running total about $17.00 of $40. |
 | 10-20 (night) | **Reversed (author): the cold open stays in the build.** He'd taken it out only so he wouldn't have to watch it every time; he wants the reader to have it, and a tap skips it once seen. Put back exactly as it was (Oct 18 version); still deferred for improvement until most of the story is written. Canon §1 needs no change, and the genre-promise worry is moot. |
 | 10-21 | **Decided (author): the 70% rule's one exception.** In Ch26–29 some readers may pass 70% on the dream woman, as long as nothing confirms it before the bloom (canon §5; chapter map W7). |
+| 10-21 | **Decided (author; canon §6–§8, scene bank 13a and 24b; chapter map):** (1) the pact scene includes what the girls like about Kōhei ("a little dangerous" / "It wasn't always like that"); (2) the heavier shared-past flashbacks (FB1, FB4, FB6) are told from Nanoha's side with her thoughts; FB1 implies she fell in love then; FB6 includes the funeral his mom doesn't attend; Nanoha wants to be needed; (3) **reversed the Oct 18 rejection:** on the eve of the battle Nanoha believes her part could kill her and makes Natsuki promise to watch over Kōhei; she lives, and her cost is her spiritual abilities; (4) counterweight: plenty of present-day closeness and compatibility between Natsuki and Kōhei. **Pilot impact:** Ch4's FB1 becomes Nanoha's memory (restaged in the Ch2–4 outline revision). |
 
 ## 3. Budget (open lines)
 | Line | Cap | Spent | Notes |
