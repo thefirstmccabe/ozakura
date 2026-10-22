@@ -101,6 +101,6 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Reversed: the foreshadowing that a girl may die** (§7): Nanoha's eve-of-battle cost and Natsuki's promise (scene bank 24b). She lives; **her cost is her spiritual abilities.**
   - **Counterweight** (§6): present-day closeness and compatibility between Natsuki and Kōhei.
   - **Hair color never mentioned in story text** (§2; the author's Oct 20 rule, via Production's handoff).
-  - **Wanting target refined** (§5): about 40% or better for Natsuki over the long run; stretches can favor one girl.
+  - **Wanting target refined** (§5): about 40% or better for Natsuki over the long run; it fluctuates with whichever girl a stretch focuses on.
   - **What each girl offers** (§6): Nanoha wants to help him carry the load, Natsuki wants him to put it down; Natsuki's directness and her ease with his edge.
   - **Nanoha's flaw is reserve** (§6), paid off on the festival stage (Ch25).
