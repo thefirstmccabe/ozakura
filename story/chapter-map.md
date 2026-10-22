@@ -103,8 +103,8 @@ Cold readers give three numbers at every checkpoint; the marks are judged per wi
 
 | Window | Chapters | Dream woman (Natsuki) | Ending (Nanoha) | Wanting (Nanoha) | What has to land |
 |---|---|---|---|---|---|
-| W1 | 1–4 (pilot) | about 50, never past 60 either way | 45–60 | 40–60 | Both girls clearly the love interests; danger promised by the cold open |
-| W2 | 5–8 | 45–60 | 45–60 | 40–60 | Natsuki in the group and as likable as Nanoha; the porridge war |
+| W1 | 1–4 (pilot) | about 50, never past 60 either way | 45–60 | may lean Nanoha, up to about 65 (author, Oct 21), if W2 brings it back | Both girls clearly the love interests; danger promised by the cold open |
+| W2 | 5–8 | 45–60 | 45–60 | back to about 50 | **Natsuki's window:** she plans the Golden Week day, the porridge war, the plushie lawyer, uniting with Nanoha against Yuzu. Readers have to like her as much as Nanoha by Ch8 |
 | W3 | 9–12 | 45–60 | 45–60 | 40–60 | The rivalry becomes mutual; the pact; his pull visible |
 | W4 | 13–17 | 45–60 | 45–60 | 40–60 | Summer at full tilt; "You're late" against the memorial; the legend told as a story |
 | W5 | 18–21 | 55–65 | 45–60 | 40–60 | The kiss costs neither girl the reader's sympathy: she stops it and tells, he owns it |
