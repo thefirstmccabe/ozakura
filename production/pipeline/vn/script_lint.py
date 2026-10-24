@@ -9,6 +9,9 @@ It flags things for a human or reviewer to look at; it doesn't rewrite anything.
   4. Name timing (--chapter N): before Ch24 Kōhei doesn't say "Nanoha"/なのは aloud; before Ch30 he doesn't say
      "Natsuki" aloud and his narration calls her "Mizuno" (interludes are exempt; "Mizuno Natsuki" is fine).
   5. Retired forms: "Nano" as a name (なの is also a sentence ending; "Nano-chan" from Rika is fine).
+  6. Held expressions (style guide §3, Oct 24): a deadpan or smirk sprite plays its punchline and the one line that
+     answers it, then changes back. Flagged if it's still on screen on the second line after the line that set it
+     (lines under a full-screen CG don't count; setting it again starts over).
 
 Usage: python3 script_lint.py --chapter N src1.ozs [src2.ozs ...]
 Exit code 1 if anything is flagged.
@@ -38,8 +41,26 @@ def first_person(ja):
     return found
 
 
+HELD = {"deadpan", "smirk"}
+
+
 def lint(paths, chapter):
     flags = []
+    held = {}          # who -> [expr, lines since it was set, where it was set, already flagged]
+    under_cg = False
+
+    def tick(speaker=None, expr=None, where=None):
+        if under_cg:
+            return
+        for w, h in held.items():
+            if w == speaker and expr:
+                continue
+            h[1] += 1
+            if h[0] in HELD and h[1] >= 2 and not h[3]:
+                flags.append((h[2], f"{w}'s {h[0]} is still on screen two lines later (§3: punchline and its answer only; change back)"))
+                h[3] = True
+        if speaker and expr:
+            held[speaker] = [expr, 0, where, False]
     very, says_like, way_you, something_about = [], [], [], []
     prev_speaker = None
     interlude = False
@@ -53,9 +74,21 @@ def lint(paths, chapter):
                 interlude = "interlude" in s
                 continue
             if s.startswith("=="):
-                prev_speaker = None
+                prev_speaker = None; held.clear(); under_cg = False
+                continue
+            if s.startswith("@"):
+                op = s[1:].split()
+                if op[0] == "show" and len(op) > 2:
+                    held[op[1]] = [op[2].split("_", 1)[-1], -1, where, False]   # the next line is the first one it shows on
+                elif op[0] == "hide" and len(op) > 1:
+                    held.pop(op[1], None)
+                elif op[0] in ("hideall", "bg"):
+                    held.clear()
+                elif op[0] == "cg":
+                    under_cg = len(op) > 1 and op[1] != "-"
                 continue
             if s.startswith(">"):
+                tick()
                 t = s[1:]
                 if re.search(r"\bsays it like\b", t, re.I): says_like.append(where)
                 if re.search(r"\bthe way you\b", t, re.I): way_you.append(where)
@@ -67,6 +100,7 @@ def lint(paths, chapter):
             if not m:
                 continue
             who, en, ja = m.group(1), m.group(4), (m.group(5) or "")
+            tick(who, m.group(2), where)
             if re.search(r"\bvery\b", en, re.I): very.append(f"{where} ({who})")
             if ja and ja != "-":
                 if who in ALLOWED_I:

@@ -384,7 +384,7 @@
 {
 "t": "show",
 "who": "nanoha",
-"spr": "nanoha_school_deadpan"
+"spr": "nanoha_school_dry"
 },
 {
 "t": "say",
@@ -440,7 +440,7 @@
 {
 "t": "show",
 "who": "nanoha",
-"spr": "nanoha_school_deadpan"
+"spr": "nanoha_school_dry"
 },
 {
 "t": "say",
@@ -598,14 +598,14 @@
 "t": "say",
 "id": "c1_0060",
 "who": "nanoha",
-"text": "\"However. We've been in the same class four years running. A teacher somewhere has noticed. A file has been opened. There have been meetings.\""
+"text": "\"But we've been in the same class four years running. At this point it's not luck. It's paperwork.\""
 },
 {
 "t": "say",
 "id": "c1_0061",
 "who": "kohei",
-"text": "\"Meetings.\"",
-"face": "deadpan"
+"text": "\"Paperwork.\"",
+"face": "neutral"
 },
 {
 "t": "show",
@@ -616,43 +616,54 @@
 "t": "say",
 "id": "c1_0062",
 "who": "nanoha",
-"text": "\"In a small room with no windows. They've realized that if we're separated, something terrible happens. The school's feng shui collapses. The pool turns green.\""
+"text": "\"A folder in the staff room. Both our names on the front. 'Do not separate,' underlined twice.\""
 },
 {
 "t": "say",
 "id": "c1_0063",
 "who": "kohei",
-"text": "\"The pool is green.\"",
-"face": "deadpan"
-},
-{
-"t": "show",
-"who": "nanoha",
-"spr": "nanoha_school_deadpan"
-},
-{
-"t": "say",
-"id": "c1_0064",
-"who": "nanoha",
-"text": "\"Because last year they put you in 1-C for five days during the exchange program. You remember.\""
-},
-{
-"t": "say",
-"id": "c1_0065",
-"who": "kohei",
-"text": "\"That was a scheduling error.\"",
+"text": "\"Why would the staff room care?\"",
 "face": "smile"
 },
 {
 "t": "show",
 "who": "nanoha",
+"spr": "nanoha_school_smile"
+},
+{
+"t": "say",
+"id": "c1_0064",
+"who": "nanoha",
+"text": "\"Safety. If they split us up, I'd have to make new friends. Nobody wants that.\""
+},
+{
+"t": "show",
+"who": "nanoha",
 "spr": "nanoha_school_deadpan"
 },
 {
 "t": "say",
-"id": "c1_0066",
+"id": "c1_0065",
 "who": "nanoha",
-"text": "\"That's what it says in the minutes.\""
+"text": "\"Least of all the new friends.\""
+},
+{
+"t": "say",
+"id": "c1_0265",
+"who": "kohei",
+"text": "\"You have friends.\"",
+"face": "grin"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_smile"
+},
+{
+"t": "say",
+"id": "c1_0266",
+"who": "nanoha",
+"text": "\"I have Rika-chan. Rika-chan counts as several.\""
 },
 {
 "t": "nar",
@@ -701,7 +712,7 @@
 {
 "t": "show",
 "who": "nanoha",
-"spr": "nanoha_school_deadpan"
+"spr": "nanoha_school_smile"
 },
 {
 "t": "say",
@@ -1217,7 +1228,7 @@
 {
 "t": "nar",
 "id": "c1_0133",
-"text": "I end up in the second-to-last row by the window. Nanoha's two rows over, which by the standards of the conspiracy is apparently acceptable. Tokiwa's near the front, already drawing his diagram."
+"text": "I end up in the second-to-last row by the window. Nanoha's two rows over, which apparently satisfies the folder. Tokiwa's near the front, already drawing his diagram."
 },
 {
 "t": "nar",
@@ -1272,7 +1283,12 @@
 {
 "t": "nar",
 "id": "c1_0139",
-"text": "Her hair falls long, in soft waves, brushed until it shines. Her uniform looks like it was ironed by someone who meant it."
+"text": "Her hair falls long, in soft waves, brushed until it shines. She smiles at the whole room at once, which shouldn't be possible."
+},
+{
+"t": "nar",
+"id": "c1_0267",
+"text": "Whispering starts up around the room before she's said a word. \"Whoa.\" \"She's so pretty.\" \"Is she an idol or something?\" Somebody two rows up leans out into the aisle for a better look."
 },
 {
 "t": "say",
@@ -1370,13 +1386,18 @@
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_smirk",
+"spr": "natsuki_school_smile",
 "pos": "c"
 },
 {
 "t": "nar",
 "id": "c1_0153",
 "text": "When she passes my desk, she slows down just enough to lean in."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smirk"
 },
 {
 "t": "say",
@@ -1459,7 +1480,7 @@
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_smirk",
+"spr": "natsuki_school_smile",
 "pos": "c"
 },
 {
@@ -1478,60 +1499,19 @@
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_smirk"
+"spr": "natsuki_school_curious"
 },
 {
 "t": "say",
-"id": "c1_0167",
+"id": "c1_0268",
 "who": "natsuki",
-"text": "\"The guy who turned down three confessions last year.\""
-},
-{
-"t": "nar",
-"id": "c1_0168",
-"text": "I put my chopsticks down."
+"text": "\"How long have you been doing kendo?\""
 },
 {
 "t": "say",
-"id": "c1_0169",
+"id": "c1_0269",
 "who": "kohei",
-"text": "\"Who told you that?\"",
-"face": "annoyed"
-},
-{
-"t": "show",
-"who": "natsuki",
-"spr": "natsuki_school_laugh"
-},
-{
-"t": "say",
-"id": "c1_0170",
-"who": "natsuki",
-"text": "\"The girl by the door, before I'd even put my shoes in my locker.\""
-},
-{
-"t": "say",
-"id": "c1_0171",
-"who": "kohei",
-"text": "\"Great.\"",
-"face": "deadpan"
-},
-{
-"t": "show",
-"who": "natsuki",
-"spr": "natsuki_school_smile"
-},
-{
-"t": "say",
-"id": "c1_0172",
-"who": "natsuki",
-"text": "\"She said you told all three of them you didn't have time for a girlfriend. True?\""
-},
-{
-"t": "say",
-"id": "c1_0173",
-"who": "kohei",
-"text": "\"It's true that I don't have time.\"",
+"text": "\"Since I was little.\"",
 "face": "neutral"
 },
 {
@@ -1541,9 +1521,84 @@
 },
 {
 "t": "say",
-"id": "c1_0174",
+"id": "c1_0270",
 "who": "natsuki",
-"text": "\"Huh.\""
+"text": "\"And you stuck with it. What's the best part?\""
+},
+{
+"t": "nar",
+"id": "c1_0271",
+"text": "Nobody's asked me that before. I answer before I've decided to."
+},
+{
+"t": "say",
+"id": "c1_0272",
+"who": "kohei",
+"text": "\"Having a sword in my hand.\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious"
+},
+{
+"t": "say",
+"id": "c1_0273",
+"who": "natsuki",
+"text": "\"Just that?\""
+},
+{
+"t": "say",
+"id": "c1_0274",
+"who": "kohei",
+"text": "\"I've always been comfortable holding one. Since the first time I picked one up.\"",
+"face": "neutral"
+},
+{
+"t": "nar",
+"id": "c1_0275",
+"text": "I don't say the rest: that with one in my hands, everything else goes quiet for a while."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c1_0276",
+"who": "natsuki",
+"text": "\"Mine's the bow at the start.\""
+},
+{
+"t": "say",
+"id": "c1_0277",
+"who": "kohei",
+"text": "\"The bow?\"",
+"face": "surprised"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_wistful"
+},
+{
+"t": "say",
+"id": "c1_0278",
+"who": "natsuki",
+"text": "\"Six new schools. Every dojo bows the same way.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_laugh"
+},
+{
+"t": "say",
+"id": "c1_0279",
+"who": "natsuki",
+"text": "\"Also, you get to yell in a room full of people and nobody calls your parents.\""
 },
 {
 "t": "nar",
@@ -1553,7 +1608,7 @@
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_smirk"
+"spr": "natsuki_school_curious"
 },
 {
 "t": "say",
@@ -1860,7 +1915,7 @@
 {
 "t": "show",
 "who": "natsuki",
-"spr": "natsuki_school_smirk"
+"spr": "natsuki_school_curious"
 },
 {
 "t": "say",

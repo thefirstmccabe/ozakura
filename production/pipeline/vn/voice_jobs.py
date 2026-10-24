@@ -4,7 +4,7 @@ import json, sys, collections
 VOICE = {  # style guide §7 (author-picked cast); pitch shifts are applied afterwards
  "kohei": ("Puck", "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff."),
  "nanoha": ("Erinome", "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman."),
- "natsuki": ("Zephyr", "A 16-year-old Japanese high-school girl. Warm, bright and quietly confident; charismatic, friendly and a little playful, never loud. Must sound like a teenager."),
+ "natsuki": ("Zephyr", "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman."),  # Oct 24, Audio thread pick: brighter direction, +1 semitone (voice_pack.py)
  "akane": ("Aoede", "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman."),
  "rika": ("Laomedeia", "A 16-year-old high-school girl. Genki, loud, bubbly, no indoor voice. Young and bright."),
  "ryosuke": ("Achird", "A 16-year-old male high-school student. Precise, a little smug, dry and amused know-it-all."),
