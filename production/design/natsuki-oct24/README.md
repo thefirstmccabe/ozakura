@@ -1,8 +1,30 @@
-# Natsuki sprite tweaks, Oct 24 (exploration; nothing installed)
+# Natsuki sprite tweaks, Oct 24
 
-**Asked (author, Oct 24):** fix the waist mismatch with Nanoha ("option 1 works"), and "explore revised sprites for her in general… i find nanaho prettier currently and wonder if we need some natsuki tweaks." **Status: options only.** Nothing here is in the build or on `main` (the author's Ch1 hold: "dont commit or make changes yet").
+**Asked (author, Oct 24):** fix the waist mismatch with Nanoha ("option 1 works"), and "explore revised sprites for her in general… i find nanaho prettier currently and wonder if we need some natsuki tweaks."
 
-## Files
+**Decided (author, Oct 24 afternoon): face A, her original scale and body.** "i like a for nat face"; "maybe original scale with the new face us fine". No waist fix for either girl. **Status: the face-A set is built here and waits to go in with the author's Ch1 batch** (his hold: "dont commit or make changes yet"). Nothing is in the build or on `main`.
+
+## The face-A set (drop-in)
+| Folder | Goes to | What |
+|---|---|---|
+| `sprites/` | `v2/img/ch/` | The seven school expressions with face A, plus **`natsuki_school_curious`** (new; the Ch1 batch's approved "curious" face). Same size, crop and cutout as the shipped set; outside the face oval every pixel is the shipped sprite's. |
+| `faces/` | `v2/img/face/` | Face windows, `faces.py h0.25 0.04 0` (reproduces the shipped smile window exactly). |
+| `game/img/bg/`, `game/img/th/` | `v2/img/bg/`, `v2/img/th/` | `cg_natsuki_intro`, `cg_natsuki_intro_falter`, `cg_title`, exported with `export_cg.py` (which reproduces the shipped files exactly from the shipped masters). |
+| `cg/*_faceA.webp` | `production/pilot-v2/art/masters/` (as `.webp`) | The three 2752×1536 masters. |
+| `live/cg_title.mp4` | `v2/img/live/` | The title loop with her face replaced (an oval on the face only, from the new title still: `live_hold.py --oval 0.6868,0.5715,0.0150,0.0262 --feather 4 --crf 20 --still cg/cg_title_faceA.png (now saved as .webp)`). Re-encoded once; elsewhere the frames match the shipped loop within encoding noise. |
+| `master/natsuki-school-base-faceA.png` | `../natsuki-oct20/master/` | The 2K base master with face A. Future Natsuki images start from it. |
+
+### How it was made
+All `fal-ai/nano-banana-pro/edit`, 2K, 1:1, on head crops (sprite space: x 91–622, y 0–531 of the 714×1800 sprite; the master crop is x 474–1220, y 0–746), each pasted back through a face oval only, so hair outside the face is the shipped hair.
+- **Smile (the base):** seed 254 (below), through `face_composite.py --center 0.495 0.15 --radius 0.112 0.093 --feather 24` on the master; into the sprite through the same oval in sprite space (center 351, 270; radii 155, 187; feather 10).
+- **The six other expressions:** image 1 = the shipped expression's head, image 2 = `refs/faceA-head-crop.png`. "Image 1 and image 2 show the same anime girl. Redraw ONLY her face in image 1 in exactly the drawing style of image 2: the same eye shape and size, lash line, iris rendering and highlights, face shape and chin, nose, soft blush style and line work. Keep image 1's facial expression exactly… Keep her hair, the framing… Green eyes. No text." Kept: laugh 262, smirk 263, surprised 264. Retaken: grin (261 added sweat drops; **271** with "Do not add sweat drops, tears or any other marks"), wistful (266 added a sweat drop and a worried brow; **272** spelled out "relaxed eyebrows… a faint, gentle closed-mouth smile; quietly wistful, not sad"), blush (265 lost most of the blush; **273** asked to keep "its strong red blush… and its two small sweat drops").
+- **Curious (new):** image 1 = the face-A head. Seed 267's change was too small to see; **274**: "eyebrows clearly raised, eyes open wide, bright and attentive, looking straight ahead, lips slightly parted as if she's about to ask a question, with a hint of a smile. Interested, not surprised or shocked."
+- **Arrival CG:** seed 268 on the CG's head crop (x 1100–1700, y 180–780), image 2 the face-A head; `face_composite.py --center 0.507 0.33 --radius 0.05 0.092 --feather 16`. Changed area x 0.45–0.56, y 0.23–0.43.
+- **Falter:** seed 275 on the shipped falter's head crop, with the new arrival head as image 2 (so the two match), keeping "her smile half gone, lips slightly parted, eyes a little wider… the irises sitting in the left corners"; pasted onto the **new** arrival CG through the Oct 18 falter oval (`--center 0.503 0.318 --radius 0.042 0.082 --feather 16`). The two differ only at x 0.47–0.54, y 0.24–0.40, so the crossfade moves nothing else.
+- **Title:** seed 276 on a 300-px crop (x 1735–2035, y 710–1010). The edit also turned her hair redder, so only the face is kept (`face_composite.py --center 0.6868 0.5715 --radius 0.0155 0.027 --feather 6`).
+- Her small ear stud in the arrival CG is gone in the new face (the sprites never had it).
+
+## Exploration files
 | File | What it is |
 |---|---|
 | `sheet_waist.jpg` | The same line (c1_0194) at iPad landscape: as built; option 1, Natsuki's waist lowered 1.7 in; option 2, Nanoha's raised 2 in instead. |
@@ -58,10 +80,14 @@ Batch 1 (same day, not kept): two whole-body proportion edits (241, 242) barely 
 
 **The real fix would be a redraw of her base sprite**, not a tweak: face A, a slightly bigger head, broader shoulders, a boxier blazer, a shorter neck, a relaxed pose, and Nanoha's pencil-hatched rendering; then her six other expressions, the face windows and the three CGs she's in. Asked the author before starting.
 
-## If one is picked
-1. Waist: run `torso_warp.py` with the same setting on every school sprite of whoever moves (Nanoha's set for option 2, Natsuki's seven for option 1). The face windows don't change.
-2. Face: the six other expressions have to be remade from the new base (the Oct 20 recipe, `../natsuki-oct20/README.md` step 3: NB2 edits, about $0.60), then the face windows (`faces.py h0.25 0.04 0`), then the arrival CG, its falter and the title art get the same face (region edits, about $0.45).
-3. A punch-list batch check (snapshot diff, one independent check).
+**The author's call:** "like maybe original scale with the new face us fine." The redraw isn't happening now; revisit only if she still reads too tall and lean once face A is in and he plays it, or when a later chapter needs new Natsuki art anyway (casual and kendo outfits have to be regenerated regardless).
+
+**Tool fix:** the first `torso_warp.py` ran one cubic through all four points, so the rows it promised to keep moved by up to 26 px in the master (the face-A previews in `sheet_faces.jpg`, `sheet_build.jpg` and `preview_recommended.jpg` sit about 18 px higher in the sprite than they should; the face itself is the same). Fixed: rows above the line are now exact. The face-A set above was built on the unwarped master.
+
+## Installing (with the Ch1 batch)
+1. Copy the folders above into `v2/` and the masters into `art/masters/`; copy the base master next to the Oct 20 one.
+2. Style guide §2 (Natsuki's face), `art/prompts.md`, the ledger, the status board.
+3. Punch-list batch check: snapshot diff against the handed-over build (only frames with Natsuki's face should change), the automatic checks, one independent check.
 
 ## Spend
-About $1.50: 10 NB Pro edits at 2K (the declined one produced nothing). Not yet in `../../pilot-v2/ledger.md` (that's on `main`, which is on hold); add it when this is installed or dropped.
+About $3.60, all NB Pro 2K edits at about $0.15: 10 for the options (the declined one produced nothing) and 14 for the set (6 retakes and the new curious face included). Not yet in `../../pilot-v2/ledger.md` (that's on `main`, which is on hold); add it at install.
