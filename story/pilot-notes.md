@@ -214,14 +214,14 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
 - **Kōhei's week:** Saturday afternoons are his only free time; he gives them to the shrine sweep.
 - **The walk and school:**
   - The Ōzakura, "older than anyone's records," looks like a pink cloud on the hillside from the bridge.
-  - Same class four years running. Kōhei spent five days in 1-C during last year's exchange program ("a scheduling error," per the minutes).
+  - Same class four years running. ~~Kōhei spent five days in 1-C during last year's exchange program ("a scheduling error," per the minutes).~~ Cut Oct 24 with the rest of the old bit; Nanoha's theory is now a staff-room folder (see Oct 24 below).
   - About 200 second-years; the class lists go up at the entrance; they arrive at 7:50.
   - Fukuda is in 2-E this year.
   - The seating: Kōhei in the second-to-last row by the window, Natsuki behind him, Nanoha two rows over, Tokiwa near the front.
   - The full timetable is handed out on day one.
 - **Natsuki:**
   - Loves horror movies, "the cheesier the better."
-  - Two club invitations and karaoke on her first morning; the gossip about Kōhei's three turned-down confessions came from "the girl by the door."
+  - Two club invitations and karaoke on her first morning. ~~The gossip about Kōhei's three turned-down confessions came from "the girl by the door."~~ Out of Ch1 since Oct 24 (author): the confessions come up later, between Nanoha and Rika (Story thread).
   - Asks Nanoha whether the building is haunted (something knocking in the music room); "the pipes sound like a ghost."
   - She lives by the station; Nanoha walked her home after the tour.
 - **Ryōsuke:** argues that taiyaki are eaten head first ("thermodynamics").
@@ -235,6 +235,13 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
 - **Natsuki's Oct 20 look in Ch1:**
   - Her arrival line, with no hair color (author, Oct 20): "Her hair falls long, in soft waves, brushed until it shines."
   - In the title art she no longer carries her school bag (both redraws dropped it).
+- **Ch1 punch list, Oct 24** (record: `production/pilot-v2/reviews/ch1/punch-oct24.md`):
+  - Her arrival line, second sentence (author picked it from three): "She smiles at the whole room at once, which shouldn't be possible."
+  - The classroom whispers when she walks in (author's request; the wording is [P]): "Whoa." "She's so pretty." "Is she an idol or something?" Someone two rows up leans into the aisle.
+  - Nanoha's class theory (author approved the rewrite): a staff-room folder with both their names on it, "Do not separate," underlined twice; "If they split us up, I'd have to make new friends… Least of all the new friends"; "Rika-chan counts as several." Kōhei's narration later: Nanoha two rows over "apparently satisfies the folder."
+  - Lunch (author's direction; the wording is [P]): what they like about kendo. Kōhei has done kendo "since I was little"; the best part is "having a sword in my hand… I've always been comfortable holding one. Since the first time I picked one up"; in narration, with one in his hands everything else goes quiet for a while. Natsuki's favorite part is the bow at the start: "Six new schools. Every dojo bows the same way." Also, you can yell in a room full of people and nobody calls your parents.
+  - New faces: Nanoha's `dry` (a deadpan joke with a hidden smile) and Natsuki's `curious`; deadpan and smirk now go on punchlines only (style guide §3).
+  - Natsuki's face A and her new voice (Zephyr, brighter direction, +1 semitone) are author decisions, not [P].
 
 ## 4. Address guide
 **Superseded Oct 17 by style guide §3c** (address forms, Japanese pronouns and the planned name changes). The pilot's table matched it except: Sōta is now Mio ("Kō-nii" kept), and Kōhei teases Nanoha as "Chibi."

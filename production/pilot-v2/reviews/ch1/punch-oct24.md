@@ -1,0 +1,21 @@
+# Ch1 punch-list batch, Oct 24 (§9 "punch-list batch")
+
+The author: "go ahead and do the redo of chapter one now with everything we talked about," and "keep everything we didn't decide to change intact." Branch `ch1-punch-oct24` (merged to `main` after the check). Everything not listed here is unchanged.
+
+## The author's items, and what was done
+| Item (author, Oct 21–24) | Done |
+|---|---|
+| Natsuki's face: "i like a for nat face"; "maybe original scale with the new face us fine" | Face A on all seven school sprites and face windows, in the arrival CG, its falter and the title art and title loop. Her hair, body, waist and scale are the shipped ones. Record: `production/design/natsuki-oct24/README.md`. |
+| Natsuki's voice: changed in the Audio thread (option 6: Zephyr, brighter direction, +1 semitone) | All 36 of her Ch1 lines re-voiced, one line per take, each take's style instruction carrying the line's expression. `voice_jobs.py` and `voice_pack.py` updated. The dream woman (Despina) is unchanged. |
+| c1_0139: "the line about the jacket being ironed like someone meant it doesn't really land" (picked option a) | "Her hair falls long, in soft waves, brushed until it shines. She smiles at the whole room at once, which shouldn't be possible." |
+| "General classroom murmuring when she's introduced about how pretty she is" | New narration after c1_0139 (c1_0267): "Whispering starts up around the room before she's said a word. "Whoa." "She's so pretty." "Is she an idol or something?" Somebody two rows up leans out into the aisle for a better look." [P] wording; unvoiced, like the rest of the narration. |
+| The class-assignment banter: "I like the idea… but the dialogue as it stands currently doesn't really land" (rewrite approved: "much better") | c1_0060–c1_0066 replaced by the approved rewrite (the staff-room folder, "Do not separate," "Least of all the new friends," "Rika-chan counts as several"); new IDs c1_0265–0266. c1_0133's callback: "which apparently satisfies the folder." Two Japanese lines were adjusted before voicing: 二重線 reads as a strike-through in Japanese, so "underlined twice" is 下線が二本; "counts as several" is 一人で何人分にもカウントされます. |
+| Lunch: "drop the bit about the three confessions here… Instead, they should just talk about what they like about Kendo… He talks about always feeling comfortable with a sword in his hand" | c1_0167–c1_0174 replaced by new lines c1_0268–c1_0279 (wording [P]): how long he's done kendo ("Since I was little"), the best part ("Having a sword in my hand… I've always been comfortable holding one. Since the first time I picked one up"), narration that with one in his hands everything else goes quiet; her favorite is the bow at the start ("Six new schools. Every dojo bows the same way") and yelling in a room full of people without anyone calling your parents. Then the scene continues as before ("She props her chin on her hand…"). The confessions go to the Story thread to place later (`../../handoff-story-oct24.md`). Kōhei's 礼？ became 礼って？ after two takes were heard as "re". |
+| Expressions: "the smirk and deadpan may be used too much. it makes non tense conversations read that way" (the suggestions approved, "and i like the optional too") | Deadpan and smirk now play the punchline and its answer only. Changes: Nanoha's burdock line and "short-person direction" use her new `dry` face; "Kō-chan. Your collar." is a smile; Natsuki arrives at his desk smiling and smirks only on "Hey. Kendo, right?"; her lunch opener is a smile; "Do you always sit this straight?" and the interlude's "So. What about you and Fujisawa?" use her new `curious` face. Kept: Nanoha's deadpans on punchlines (the theory, the folder, "Least of all the new friends," Genji's back, the face catalog) and Natsuki's smirks on competitive beats ("Takes one to know one," "What are you, shodan?"). |
+| The optional new faces | Nanoha `dry` (seed 281) and Natsuki `curious` (seed 274), with face windows. |
+| The rule | Style guide §3 ("Using expressions in scripts") and `script_lint.py` check 6 (a deadpan or smirk still on screen two lines after it was set). Ch1 passes; the Oct 20 script had five. |
+
+**Not changed (decided Oct 24):** no waist fix for either girl; no redraw of Natsuki's body. Spend about $4.65 (`../../ledger.md`).
+
+## Checks
+(Filled in below as they run.)

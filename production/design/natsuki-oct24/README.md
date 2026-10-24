@@ -2,7 +2,7 @@
 
 **Asked (author, Oct 24):** fix the waist mismatch with Nanoha ("option 1 works"), and "explore revised sprites for her in general… i find nanaho prettier currently and wonder if we need some natsuki tweaks."
 
-**Decided (author, Oct 24 afternoon): face A, her original scale and body.** "i like a for nat face"; "maybe original scale with the new face us fine". No waist fix for either girl. **Status: the face-A set is built here and waits to go in with the author's Ch1 batch** (his hold: "dont commit or make changes yet"). Nothing is in the build or on `main`.
+**Decided (author, Oct 24 afternoon): face A, her original scale and body.** "i like a for nat face"; "maybe original scale with the new face us fine". No waist fix for either girl. **Status: installed** in the Ch1 Oct 24 batch (`production/pilot-v2/reviews/ch1/punch-oct24.md`).
 
 ## The face-A set (drop-in)
 | Folder | Goes to | What |

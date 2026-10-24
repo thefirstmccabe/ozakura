@@ -31,5 +31,9 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-18 | Round-2 diff check: 3 single-line retakes and their transcript | 4 | $0.03 |
 | 10-20 | Natsuki restyle, design pass (`production/design/natsuki-oct20/`): 11 NB Pro edits, 6 NB2 edits, 1 bria cutout; counted against this cap | 18 | $2.25 |
 | 10-20 | Natsuki's new look in Ch1: intro CG (NB Pro 2K ×2), its falter (NB Pro 2K ×2), title CG (NB Pro 2K ×2), title living still (Kling v3 Pro, 4 s) | 7 | $1.46 |
+| 10-24 | Natsuki tweaks, exploration (`production/design/natsuki-oct24/`): face and proportion options (NB Pro 2K; one more was declined and not charged) | 10 | $1.50 |
+| 10-24 | Natsuki face A, the set: 6 expressions with 3 retakes, the new curious face (2 takes), the arrival CG, its falter and the title (NB Pro 2K) | 14 | $2.10 |
+| 10-24 | Nanoha's dry face (NB Pro 2K ×2) | 2 | $0.30 |
+| 10-24 | Voices: Natsuki's 36 Ch1 lines re-voiced and 12 new or changed lines, one line per take (Gemini TTS, ~15,000 characters), 5 retakes; 3 transcripts (Wizper, ~5 min) | 56 | $0.75 |
 
-**Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18): about $4.80; running total about $13.30. Natsuki's new look (Oct 20, design pass and Ch1 art): about $3.70; running total about $17.00.
+**Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18): about $4.80; running total about $13.30. Natsuki's new look (Oct 20, design pass and Ch1 art): about $3.70; running total about $17.00. Oct 24 batch (Natsuki's face A and new voice, the Ch1 punch list): about $4.65; running total about $21.65.
