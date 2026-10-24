@@ -49,7 +49,7 @@ button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outl
 <div class="wrap">
   <header>
     <h1>Natsuki Voice Audition</h1>
-    <p class="lead">Options for Natsuki's voice: her current voice raised slightly in pitch, and a few different voices reading the same lines. Mark each one, then tap <strong>Copy results</strong> and paste them into the chat.</p>
+    <p class="lead">Options for Natsuki's voice: her current takes raised slightly in pitch, and Zephyr re-read with a brighter direction at the same pitch steps. Mark each one, then tap <strong>Copy results</strong> and paste them into the chat.</p>
   </header>
   <div class="status" id="status">Answers save on this device.</div>
   <button class="copy" id="copy">Copy results</button>
@@ -64,15 +64,16 @@ const GROUPS=[
   {id:"current-up1_5",label:"2 · +1.5 semitones",d:"Between the two."},
   {id:"current-up2",label:"3 · +2 semitones",d:"Same step as Nanoha, Akane and Rika."},
   {id:"current-up3",label:"4 · +3 semitones",d:"The largest step; may start to sound processed."}]},
- {title:"Different voices",note:"The same lines read fresh by other voices. Callirrhoe and Pulcherrima aren't used by anyone else in the cast. Kore is Mio's voice (at +4), so picking it means a shared voice. Zephyr with a brighter, younger direction is her current voice re-read with new instructions. Any of these can also be pitched up.",
-  scenes:["Same three lines for every voice: \"Kendo, right?… Takes one to know one\" · \"Eh, 'san'?… I'm doing it anyway\" · the wistful kitchen-drawer line."],takes:[
-  {id:"alt-zephyr-bright",label:"5 · Zephyr, brighter direction",d:"Her current voice, asked for a lighter, younger, sunnier read."},
-  {id:"alt-callirrhoe",label:"6 · Callirrhoe",d:"New voice, unused in the cast."},
-  {id:"alt-pulcherrima",label:"7 · Pulcherrima",d:"New voice, unused in the cast."},
-  {id:"alt-kore",label:"8 · Kore",d:"Shared with Mio (who uses it at +4)."}]}
+ {title:"Zephyr, brighter direction, slightly higher",note:"Her same voice (Zephyr) re-read with a lighter, younger, sunnier direction, then raised in pitch by the same method. Changing to any of these means re-voicing her Ch1 lines.",
+  scenes:["Same lines: \"Kendo, right?… Takes one to know one\" · \"Eh, 'san'?… I'm doing it anyway\" · the wistful kitchen-drawer line."],takes:[
+  {id:"alt-zephyr-bright",label:"5 · brighter direction",d:"No pitch change."},
+  {id:"bright-up1",label:"6 · brighter, +1 semitone",d:""},
+  {id:"bright-up1_5",label:"7 · brighter, +1.5 semitones",d:""},
+  {id:"bright-up2",label:"8 · brighter, +2 semitones",d:""},
+  {id:"bright-up3",label:"9 · brighter, +3 semitones",d:"May start to sound processed."}]}
 ];
 
-const $=s=>document.querySelector(s); const KEY="ozk-voice-natsuki-oct24";
+const $=s=>document.querySelector(s); const KEY="ozk-voice-natsuki-oct24b";
 let state={}; try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
 const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};

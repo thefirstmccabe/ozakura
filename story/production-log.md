@@ -16,7 +16,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | Item | State | Owner |
 |---|---|---|
 | Music | Pilot music closed (Oct 16: the four short loops as they are). Kiss theme take B kept in mind for the late-August chapter | Audio thread |
-| Natsuki's voice | **Audition out (Oct 24)**: current Zephyr at +1/+1.5/+2/+3 semitones, plus Zephyr (brighter direction), Callirrhoe, Pulcherrima, Kore. Page `production/voice-auditions/oct24-natsuki/`. Waiting on the author's pick; a change means re-voicing her Ch1 lines (Production) | Audio thread |
+| Natsuki's voice | **Audition out (Oct 24)**: current Zephyr at +1/+1.5/+2/+3 semitones, and Zephyr with a brighter direction at 0/+1/+1.5/+2/+3 (the other voices dropped at the author's request). Page `production/voice-auditions/oct24-natsuki/`. Waiting on the author's pick; a change means re-voicing her Ch1 lines (Production) | Audio thread |
 | Shipped pilot (site root) and Manga Vol. 1 | On hold; `v2/` replaces the shipped pilot once Ch1–4 are approved | — |
 
 **Natsuki's Oct 20 look into the v2 build:** done Oct 20 (sprites, face windows, the arrival CG and its falter, the title art and its living still, thumbnails, c1_0139). **For Story:** `production/pilot-v2/handoff-story-oct20.md` (the hair-color rule and the stale outline CG note).
