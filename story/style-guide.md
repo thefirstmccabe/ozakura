@@ -12,7 +12,7 @@ How Ōzakura looks and sounds, and how to generate it. Read this before any art,
      - `02-sailor-uniform.png`: **the age and proportion target**, and her school-day uniform.
      - `03-bedroom-plushies.png`: her room and at-home clothes. She reads slightly too young here, and her hair drifted gray.
      - `x-rejected-*`: the color options that weren't chosen.
-   - **Natsuki (Oct 20):** everything is in `production/design/natsuki-oct20/` (the author chose the look from `options.jpg` there): long, soft brushed-out waves and green eyes. **Her school sprite set** (`sprites/`, `faces/`, 2K master in `master/`) **governs hair length, hair color and the face.** `natsuki-lock-uniform.png` is the full-body reference for pose, build and scale; its hair runs a little shorter and darker than the sprites', so follow the sprites. Her legs still run a bit long for 5′3″. Method and pitfalls: that folder's README.
+   - **Natsuki (Oct 20):** everything is in `production/design/natsuki-oct20/` (the author chose the look from `options.jpg` there): long, soft brushed-out waves and green eyes. **Her school sprite set governs hair length, hair color and the face:** since Oct 24 the face is **face A** (`production/design/natsuki-oct24/`: the installed set, and the 2K base master `master/natsuki-school-base-faceA.png`, which new Natsuki images start from); hair, body and scale are still the Oct 20 set's (`sprites/`, `faces/`, `master/` there). `natsuki-lock-uniform.png` is the full-body reference for pose, build and scale; its hair runs a little shorter and darker than the sprites', so follow the sprites. Her legs still run a bit long for 5′3″. Method and pitfalls: that folder's README.
      - `production/refs/natsuki-v2/01-restyle-uniform.png` (Oct 6): pose and styling direction only; its shoulder-length hair and amber eyes are retired.
      - `02-restyle-casual.png`: the styling idea only. **Do not use** its outfit, which reads as a twenty-something.
 3. **The author's concept references** (`production/refs/handoff/`):
@@ -120,7 +120,7 @@ Everything is in `production/refs/`. Review boards are listed in the production 
 
 **Backgrounds and CGs:** `fal-ai/nano-banana-pro/edit` (higher fidelity), 16:9. Pass the relevant sprites and the style anchor for CGs. **Screens:** landscape only (canon §2); no portrait layout.
 
-**Current inventory:** 72 sprites (14 outfit sets), 16 backgrounds, 9 CGs (title, hands and strap, Natsuki intro, jigeiko, the catch, Yuzu at the counter, window night, shrine meeting, past life).
+**Current inventory:** 74 sprites (14 outfit sets; Oct 24 added Nanoha's `dry` and Natsuki's `curious`), 16 backgrounds, 9 CGs (title, hands and strap, Natsuki intro, jigeiko, the catch, Yuzu at the counter, window night, shrine meeting, past life).
 
 **Short animations and living stills** (canon §2): living stills are Kling v3 Pro loops (start frame = end frame). For the few short animated moments (the Ch2 catch first): animate between approved stills, Kling for restrained moments (it stayed wide and on-model in the Oct 10 `cg_catch` test; MiniMax H3 Max pushed in and cropped), and give every shot its own approved start frame, because in-generation cuts drift (Oct 12). Tests: `production/cutscene-test/`.
 

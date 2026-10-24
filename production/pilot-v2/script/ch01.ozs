@@ -115,12 +115,12 @@ kohei(smile): "Of course you have." || だろうな。  #c1_0058
 nanoha<smile>: "There are six second-year classes. On paper, our odds of being in the same one are one in six." || 二年生は六クラス。計算上、私たちが同じクラスになる確率は、六分の一。  #c1_0059
 nanoha<tease>: "But we've been in the same class four years running. At this point it's not luck. It's paperwork." || でも、四年連続で同じクラス。ここまで来ると、もう運じゃない。書類の問題です。  #c1_0060
 kohei(neutral): "Paperwork." || 書類。  #c1_0061
-nanoha<deadpan>: "A folder in the staff room. Both our names on the front. 'Do not separate,' underlined twice." || 職員室にファイルがあるの。表紙に私たちの名前。『引き離さないこと』って書いてあって、下線が二本。  #c1_0062
+nanoha<deadpan>: "A folder in the staff room. Both our names on the front. 'Do not separate,' underlined twice." || 職員室にファイルがあるの。表紙に私たちの名前。『引き離さないこと』って書いてあって、その下に線が二本引いてある。  #c1_0062
 kohei(smile): "Why would the staff room care?" || なんで職員室がそこまで気にするんだよ。  #c1_0063
 nanoha<smile>: "Safety. If they split us up, I'd have to make new friends. Nobody wants that." || 安全のため。離されたら、私、新しい友だちを作らなきゃいけなくなる。誰も得しない。  #c1_0064
 nanoha<deadpan>: "Least of all the new friends." || 特に、その新しい友だちが。  #c1_0065
 kohei(grin): "You have friends." || 友だちならいるだろ。  #c1_0265
-nanoha<smile>: "I have Rika-chan. Rika-chan counts as several." || りかちゃんがいる。りかちゃんは、一人で何人分にもカウントされます。  #c1_0266
+nanoha<smile>: "I have Rika-chan. Rika-chan counts as several." || りかちゃんがいる。りかちゃんは、一人で何人分にも数えられます。  #c1_0266
 > I laugh.  #c1_0067
 nanoha<happy>: "You laughed. That's two points for me this morning." || 笑った。今朝はこれで、私に二ポイント。  #c1_0068
 kohei(grin): "We're keeping score now?" || 点数つけてたのかよ。  #c1_0069
@@ -260,6 +260,7 @@ natsuki<smile>: "Mine's the bow at the start." || 私はね、最初の礼。  #
 kohei(surprised): "The bow?" || 礼って？  #c1_0277
 natsuki<wistful>: "Six new schools. Every dojo bows the same way." || 新しい学校は、これで六つ目。でも、どこの道場でも、礼は同じなんだ。  #c1_0278
 natsuki<laugh>: "Also, you get to yell in a room full of people and nobody calls your parents." || それに、大勢の前で思いっきり叫んでも、誰にも親を呼ばれないし。  #c1_0279
+@show natsuki school_curious
 > She props her chin on her hand and looks me over. Shoulders. Hands. Like she's working out my reach.  #c1_0175
 natsuki<curious>: "Do you always sit this straight?" || いつもそんなに背筋伸ばして座ってるの？  #c1_0261
 kohei(flustered): "I—" || 俺は……  #c1_0262
