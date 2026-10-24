@@ -4,7 +4,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 
 ---
 
-## 0. Status board (updated Oct 20)
+## 0. Status board (updated Oct 24)
 **Pilot v2** (Prologue + Ch1–4; brief `production/pilot-v2/README.md`; play https://thefirstmccabe.github.io/ozakura/v2/). Stages (style guide §9): outline and targets → draft → writing gates → art → voices → build and QA → handover → approved (tagged `v2-chN-approved`).
 | Chapter | Stage | Owner | Next |
 |---|---|---|---|
@@ -16,7 +16,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | Item | State | Owner |
 |---|---|---|
 | Music | Pilot music closed (Oct 16: the four short loops as they are). Kiss theme take B kept in mind for the late-August chapter | Audio thread |
-| Natsuki's voice | **Picked Oct 24: Zephyr, brighter direction, +1 semitone** (option 6). Re-voice her lines: handoff `production/voice-auditions/oct24-natsuki/handoff-production.md` | Production (re-voice Ch1 and onward) |
+| Natsuki's voice | **Picked Oct 24: Zephyr, brighter direction, +1 semitone** (option 6). **Ch1 re-voiced Oct 24** (all 36 lines); Ch2 onward use it from the start (`voice_jobs.py`, `voice_pack.py`) | Production |
 | Shipped pilot (site root) and Manga Vol. 1 | On hold; `v2/` replaces the shipped pilot once Ch1–4 are approved | — |
 
 **Natsuki's Oct 20 look into the v2 build:** done Oct 20 (sprites, face windows, the arrival CG and its falter, the title art and its living still, thumbnails, c1_0139). **For Story:** `production/pilot-v2/handoff-story-oct20.md` (the hair-color rule and the stale outline CG note).
@@ -105,11 +105,13 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | 10-21 | **Decided (author; canon §6–§8, scene bank 13a and 24b; chapter map):** (1) the pact scene includes what the girls like about Kōhei ("a little dangerous" / "It wasn't always like that"); (2) the heavier shared-past flashbacks (FB1, FB4, FB6) are told from Nanoha's side with her thoughts; FB1 implies she fell in love then; FB6 includes the funeral his mom doesn't attend; Nanoha wants to be needed; (3) **reversed the Oct 18 rejection:** on the eve of the battle Nanoha believes her part could kill her and makes Natsuki promise to watch over Kōhei; she lives, and her cost is her spiritual abilities; (4) counterweight: plenty of present-day closeness and compatibility between Natsuki and Kōhei. **Pilot impact:** Ch4's FB1 becomes Nanoha's memory (restaged in the Ch2–4 outline revision). |
 | 10-21 | **Canon §2 updated (Story, from Production's Oct 20 handoff):** hair color is never mentioned in story text at all. The handoff's outline fix (the arrival CG note) waits for the Ch2–4 outline revision, which the author has asked to hold. |
 | 10-21 | **Decided (author; canon §5–§6, chapter map):** readers' wanting needs about 40% or better for Natsuki over the long run, not a perfect 50-50, and stretches can favor one girl; **what each girl offers him:** Nanoha wants to help him carry the load, Natsuki wants him to put it down (directness, fun, rest, being sixteen, no fear of his edge), which makes the ending earned and still costly; **Nanoha's flaw is reserve,** paid off when she stops waiting on the festival stage (Ch25). |
+| 10-24 | **Natsuki's sprites (author): face A, with her original body and scale.** He found Nanoha prettier and the two girls' waists at different levels. Explored (`production/design/natsuki-oct24/`): face options drawn closer to Nanoha's sprite, waist fixes for either girl, a wider build and a shorter height. Two blind checks (fresh agents, shuffled labels) ranked face A first and the as-built bodies most natural; lowering Natsuki's waist looked worst. Measured: Natsuki is drawn about 6½ heads tall, Nanoha about 5½. **No waist fix; no body redraw for now** (revisit only if she still reads tall and lean in play, or when new Natsuki art is needed anyway). About $3.60. |
+| 10-24 | **Ch1 punch list (author), applied as one batch (Production; `production/pilot-v2/reviews/ch1/punch-oct24.md`); "keep everything we didn't decide to change intact."** Face A installed (sprites, face windows, arrival CG, falter, title art and loop); **Natsuki re-voiced** with the Audio thread's pick (all 36 Ch1 lines); c1_0139's second sentence is now "She smiles at the whole room at once, which shouldn't be possible."; classroom whispers about how pretty she is [P]; the river-walk class theory rewritten (approved draft); **the three confessions leave the lunch**, replaced by kendo talk with Kōhei "comfortable holding one. Since the first time I picked one up" [P] (the confessions go to Story to place in a later Nanoha–Rika scene: `production/pilot-v2/handoff-story-oct24.md`); **deadpan and smirk on punchlines only** (style guide §3; `script_lint.py` check 6), with two new faces, Nanoha `dry` and Natsuki `curious`. Check: CHECK_PENDING. About $1.05 beyond the exploration; running total about $21.65 of $40. |
 
 ## 3. Budget (open lines)
 | Line | Cap | Spent | Notes |
 |---|---|---|---|
-| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | about $17.00 (Oct 20: + about $2.25 for Natsuki's restyle and about $1.46 for her Ch1 art) | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
+| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 | about $21.65 (Oct 20: + about $2.25 for Natsuki's restyle and about $1.46 for her Ch1 art; Oct 24: + about $4.65 for her face A, the Ch1 punch list and her re-voice) | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
 | Manga Vol. 1 | $50 | $33.01 | **On hold**, about $17 left; 8 known issues (§4) |
 
 Closed lines (tests, the shipped pilot, design passes, music cues): see the archive.
