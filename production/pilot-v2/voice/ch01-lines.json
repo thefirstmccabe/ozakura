@@ -226,50 +226,57 @@
  {
   "id": "c1_0060",
   "who": "nanoha",
-  "ja": "しかし。私たちは四年連続で同じクラスです。どこかの先生が気づいてる。ファイルが作られてる。会議も、開かれてる。",
-  "en": "\"However. We've been in the same class four years running. A teacher somewhere has noticed. A file has been opened. There have been meetings.\"",
+  "ja": "でも、四年連続で同じクラス。ここまで来ると、もう運じゃない。書類の問題です。",
+  "en": "\"But we've been in the same class four years running. At this point it's not luck. It's paperwork.\"",
   "scene": "c1_river"
  },
  {
   "id": "c1_0061",
   "who": "kohei",
-  "ja": "会議。",
-  "en": "\"Meetings.\"",
+  "ja": "書類。",
+  "en": "\"Paperwork.\"",
   "scene": "c1_river"
  },
  {
   "id": "c1_0062",
   "who": "nanoha",
-  "ja": "窓のない小さな部屋で。私たちを離すと、恐ろしいことが起きるって気づいたの。学校の風水が崩れて、プールが緑色になる。",
-  "en": "\"In a small room with no windows. They've realized that if we're separated, something terrible happens. The school's feng shui collapses. The pool turns green.\"",
+  "ja": "職員室にファイルがあるの。表紙に私たちの名前。『引き離さないこと』って書いてあって、下線が二本。",
+  "en": "\"A folder in the staff room. Both our names on the front. 'Do not separate,' underlined twice.\"",
   "scene": "c1_river"
  },
  {
   "id": "c1_0063",
   "who": "kohei",
-  "ja": "プールは緑だぞ。",
-  "en": "\"The pool is green.\"",
+  "ja": "なんで職員室がそこまで気にするんだよ。",
+  "en": "\"Why would the staff room care?\"",
   "scene": "c1_river"
  },
  {
   "id": "c1_0064",
   "who": "nanoha",
-  "ja": "去年、交流プログラムの間、こうへいを五日間だけ一年C組にしたからだよ。覚えてるでしょ。",
-  "en": "\"Because last year they put you in 1-C for five days during the exchange program. You remember.\"",
+  "ja": "安全のため。離されたら、私、新しい友だちを作らなきゃいけなくなる。誰も得しない。",
+  "en": "\"Safety. If they split us up, I'd have to make new friends. Nobody wants that.\"",
   "scene": "c1_river"
  },
  {
   "id": "c1_0065",
-  "who": "kohei",
-  "ja": "あれは日程のミスだって。",
-  "en": "\"That was a scheduling error.\"",
+  "who": "nanoha",
+  "ja": "特に、その新しい友だちが。",
+  "en": "\"Least of all the new friends.\"",
   "scene": "c1_river"
  },
  {
-  "id": "c1_0066",
+  "id": "c1_0265",
+  "who": "kohei",
+  "ja": "友だちならいるだろ。",
+  "en": "\"You have friends.\"",
+  "scene": "c1_river"
+ },
+ {
+  "id": "c1_0266",
   "who": "nanoha",
-  "ja": "議事録には、そう書いてある。",
-  "en": "\"That's what it says in the minutes.\"",
+  "ja": "りかちゃんがいる。りかちゃんは、一人で何人分にもカウントされます。",
+  "en": "\"I have Rika-chan. Rika-chan counts as several.\"",
   "scene": "c1_river"
  },
  {
@@ -672,52 +679,73 @@
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0167",
+  "id": "c1_0268",
   "who": "natsuki",
-  "ja": "去年、告白を三回断った人。",
-  "en": "\"The guy who turned down three confessions last year.\"",
+  "ja": "剣道、いつからやってるの？",
+  "en": "\"How long have you been doing kendo?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0169",
+  "id": "c1_0269",
   "who": "kohei",
-  "ja": "誰に聞いたんだよ。",
-  "en": "\"Who told you that?\"",
+  "ja": "小さい頃から。",
+  "en": "\"Since I was little.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0170",
+  "id": "c1_0270",
   "who": "natsuki",
-  "ja": "ドアのとこの子。下駄箱に靴を入れる前に、もう聞かされた。",
-  "en": "\"The girl by the door, before I'd even put my shoes in my locker.\"",
+  "ja": "で、ずっと続けてるんだ。一番いいとこって、何？",
+  "en": "\"And you stuck with it. What's the best part?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0171",
+  "id": "c1_0272",
   "who": "kohei",
-  "ja": "……最高だな。",
-  "en": "\"Great.\"",
+  "ja": "剣を握ってる時だな。",
+  "en": "\"Having a sword in my hand.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0172",
+  "id": "c1_0273",
   "who": "natsuki",
-  "ja": "三人全員に「彼女を作る時間がない」って言ったんだって。ほんと？",
-  "en": "\"She said you told all three of them you didn't have time for a girlfriend. True?\"",
+  "ja": "それだけ？",
+  "en": "\"Just that?\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0173",
+  "id": "c1_0274",
   "who": "kohei",
-  "ja": "時間がないのは、本当だ。",
-  "en": "\"It's true that I don't have time.\"",
+  "ja": "昔から、握ってると落ち着くんだ。初めて持った時から。",
+  "en": "\"I've always been comfortable holding one. Since the first time I picked one up.\"",
   "scene": "c1_lunch"
  },
  {
-  "id": "c1_0174",
+  "id": "c1_0276",
   "who": "natsuki",
-  "ja": "へえ。",
-  "en": "\"Huh.\"",
+  "ja": "私はね、最初の礼。",
+  "en": "\"Mine's the bow at the start.\"",
+  "scene": "c1_lunch"
+ },
+ {
+  "id": "c1_0277",
+  "who": "kohei",
+  "ja": "礼って？",
+  "en": "\"The bow?\"",
+  "scene": "c1_lunch"
+ },
+ {
+  "id": "c1_0278",
+  "who": "natsuki",
+  "ja": "新しい学校は、これで六つ目。でも、どこの道場でも、礼は同じなんだ。",
+  "en": "\"Six new schools. Every dojo bows the same way.\"",
+  "scene": "c1_lunch"
+ },
+ {
+  "id": "c1_0279",
+  "who": "natsuki",
+  "ja": "それに、大勢の前で思いっきり叫んでも、誰にも親を呼ばれないし。",
+  "en": "\"Also, you get to yell in a room full of people and nobody calls your parents.\"",
   "scene": "c1_lunch"
  },
  {
