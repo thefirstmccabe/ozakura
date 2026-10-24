@@ -27,6 +27,7 @@ All `fal-ai/nano-banana-pro/edit`, 2K, 1:1, on head crops (sprite space: x 91–
 ## Exploration files
 | File | What it is |
 |---|---|
+| `sheet_set.jpg` | The face-A set: the shipped expressions above, face A below (with the new curious), and the arrival CG and falter before and after. |
 | `sheet_waist.jpg` | The same line (c1_0194) at iPad landscape: as built; option 1, Natsuki's waist lowered 1.7 in; option 2, Nanoha's raised 2 in instead. |
 | `sheet_build.jpg` | Face A at the same line: as built, 7% wider, played at 5′1½″. |
 | `preview_recommended.jpg` | The recommendation at the same line: face A on Natsuki's as-built body, Nanoha raised 2 in. |
@@ -83,6 +84,11 @@ Batch 1 (same day, not kept): two whole-body proportion edits (241, 242) barely 
 **The author's call:** "like maybe original scale with the new face us fine." The redraw isn't happening now; revisit only if she still reads too tall and lean once face A is in and he plays it, or when a later chapter needs new Natsuki art anyway (casual and kendo outfits have to be regenerated regardless).
 
 **Tool fix:** the first `torso_warp.py` ran one cubic through all four points, so the rows it promised to keep moved by up to 26 px in the master (the face-A previews in `sheet_faces.jpg`, `sheet_build.jpg` and `preview_recommended.jpg` sit about 18 px higher in the sprite than they should; the face itself is the same). Fixed: rows above the line are now exact. The face-A set above was built on the unwarped master.
+
+## Pre-check (Oct 24, in a test copy of today's build with the set swapped in)
+- `qa_play.py` at iPad landscape, every line, on both builds: 256 of 256 lines, every voiced line decodes, no bad requests (one blocked outside request in both, from the sandbox).
+- `snapshot_diff.py --threshold 0.05`: 68 frames changed, each only at Natsuki's face (center slot, right slot, or the CG face), plus c1_0102, where Nanoha is caught at a different point of her slide when Rika hits her (timing; Natsuki isn't on screen). The title screen changes only at her face.
+- `sheet_set.jpg`: every expression before and after, and the two arrival CGs.
 
 ## Installing (with the Ch1 batch)
 1. Copy the folders above into `v2/` and the masters into `art/masters/`; copy the base master next to the Oct 20 one.
