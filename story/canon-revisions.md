@@ -104,3 +104,9 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Wanting target refined** (§5): about 40% or better for Natsuki over the long run; it fluctuates with whichever girl a stretch focuses on.
   - **What each girl offers** (§6): Nanoha wants to help him carry the load, Natsuki wants him to put it down; Natsuki's directness and her ease with his edge.
   - **Nanoha's flaw is reserve** (§6), paid off on the festival stage (Ch25).
+- **Oct 24:**
+  - **The eve of the battle** (scene bank 24a): he says "I love you" and starts to propose; she says it back and "Ask me again after tomorrow"; he asks again in Ch42, and she says yes.
+  - **Nanoha's inner voice** in the later shared-past flashbacks (§6), with her jealousy of Natsuki's ability to act in the present-day frame.
+  - **Competition ban** (§8 Takatsuki arc): no outside matches for the rest of the school year; practice allowed after the suspension.
+  - **Kazuo's first talk at dawn after the fight** (§6 Mentor).
+  - **Kōhei's three recurring dreams** (§6): her, it, and the trap; anger flashes awake.
