@@ -1,0 +1,6 @@
+{"endpoint_id":"google/gemini-3.8-flash-tts",
+ "prompt":"ねえ。剣道、やってるでしょ？　……　見ればわかるよ。私もそうだから。　……　えー、「さん」？ 同い年じゃん！ わかった、わかった。じゃあ、私は「なのは」って呼ぶね。いい？ どっちにしろ呼ぶけど。　……　私、そういうのができるほど、ひとつの場所にいたことないんだ。わかる？ 台所のどの引き出しがひっかかるか、知ってるような人。",
+ "style_alt":"A 16-year-old Japanese high-school girl. Warm, bright and quietly confident; charismatic, friendly and a little playful, never loud. The last line is softer and a little wistful. Must sound like a teenager.",
+ "style_zephyr_bright":"A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. The last line is softer and a little wistful. Must sound like a teenager, never a grown woman.",
+ "current":"current-*.mp3 = her actual Ch1 takes from v2/voice (c1_0154, c1_0158, c1_0197, c1_0199, c1_0217), pitch-shifted by the style guide §7 method: +1 (1.0595), +1.5 (1.0905), +2 (1.1225), +3 (1.1892)",
+ "jobs":{"callirrhoe":"01a16f6a-338f-7811-b800-05961789f72d","pulcherrima":"01a16f6a-33c9-7980-8c87-583623040f4c","kore":"01a16f6a-33c6-7ba0-89c1-5c42937e365c","zephyr_bright":"01a16f6a-33c3-7330-ae98-7f2eae40ac0d"}}

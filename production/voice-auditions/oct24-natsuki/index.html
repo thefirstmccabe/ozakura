@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Natsuki Voice Audition</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#f3f1f5; --sheet:#ffffff; --ink:#22202b; --muted:#6b6676; --rule:#e2dee8; --accent:#b8456b; --track:#d9d4e0;
+  --yes:#2f7d57; --yes-soft:#e0f1e8; --maybe:#a8741a; --maybe-soft:#f7ecd6; --no:#b23a3a; --no-soft:#f6e1e1;
+  --f-display:"Shippori Mincho","Hiragino Mincho ProN",Georgia,serif; --f-body:"Zen Kaku Gothic New","Hiragino Sans",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#17151d; --sheet:#211e29; --ink:#ece8f2; --muted:#a39dae; --rule:#34303d; --accent:#e98aa9; --track:#3b3646;
+  --yes:#6fcf9b; --yes-soft:#1f3a2c; --maybe:#e3b35c; --maybe-soft:#3b301b; --no:#ec8585; --no-soft:#3d2323; color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--f-body)}
+.wrap{max-width:680px;margin:0 auto;padding:28px 16px 64px;display:flex;flex-direction:column;gap:16px}
+h1{font-family:var(--f-display);font-size:28px;line-height:1.2;margin:0}
+h2{font-family:var(--f-display);font-size:22px;margin:18px 0 0}
+.lead,.gnote{color:var(--muted);margin:4px 0 0;max-width:62ch}
+.status{font-size:13px;color:var(--muted)}
+.copy{align-self:flex-start;font:500 14px var(--f-body);padding:8px 16px;border-radius:99px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.take{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.take.ref{border-style:dashed}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:6px 12px}
+.name{font-weight:700;font-size:16px}
+.name small{font-weight:400;color:var(--muted);font-size:13px;margin-left:6px}
+.verdict{display:flex;gap:6px}
+.verdict button{font:500 14px var(--f-body);padding:6px 13px;border-radius:99px;border:1px solid var(--rule);background:transparent;color:var(--ink);cursor:pointer;min-width:58px}
+.verdict button[aria-pressed="true"][data-v="yes"]{background:var(--yes-soft);border-color:var(--yes);color:var(--yes)}
+.verdict button[aria-pressed="true"][data-v="maybe"]{background:var(--maybe-soft);border-color:var(--maybe);color:var(--maybe)}
+.verdict button[aria-pressed="true"][data-v="no"]{background:var(--no-soft);border-color:var(--no);color:var(--no)}
+.player{display:flex;align-items:center;gap:12px}
+.play{flex:none;width:42px;height:42px;border-radius:50%;border:none;background:var(--accent);color:#fff;cursor:pointer;font-size:14px}
+.bar{flex:1;min-width:0;height:26px;display:flex;align-items:center;cursor:pointer}
+.bar i{display:block;height:6px;width:100%;border-radius:3px;background:var(--track);position:relative;overflow:hidden}
+.bar b{position:absolute;inset:0 auto 0 0;width:0;background:var(--accent)}
+.time{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:84px;text-align:right}
+.scenes{background:var(--sheet);border:1px solid var(--rule);border-radius:10px;padding:10px 14px;margin-top:10px;font-size:14px}
+.scenes strong{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.scenes ul{margin:0;padding-left:18px}
+.desc{margin:0;font-size:14px;color:var(--muted)}
+textarea{width:100%;box-sizing:border-box;min-height:40px;resize:vertical;font:14px var(--f-body);color:var(--ink);background:var(--bg);border:1px solid var(--rule);border-radius:6px;padding:8px}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Natsuki Voice Audition</h1>
+    <p class="lead">Options for Natsuki's voice: her current voice raised slightly in pitch, and a few different voices reading the same lines. Mark each one, then tap <strong>Copy results</strong> and paste them into the chat.</p>
+  </header>
+  <div class="status" id="status">Answers save on this device.</div>
+  <button class="copy" id="copy">Copy results</button>
+  <div id="list"></div>
+</div>
+<script>
+const GROUPS=[
+ {title:"Current voice, slightly higher",note:"Her actual Ch1 lines from the game (Zephyr), raised in pitch by the same method used for Nanoha, Akane and Rika. Timing is unchanged; only pitch moves.",
+  scenes:["Lines: \"Kendo, right?\" · \"Takes one to know one\" · \"Eh, 'san'?\" and \"I'm doing it anyway\" · the wistful kitchen-drawer line."],takes:[
+  {id:"current-zephyr",label:"Current (as in the game)",d:"Zephyr, unchanged. For comparison.",ref:true,src:"current-zephyr.mp3"},
+  {id:"current-up1",label:"1 · +1 semitone",d:"The smallest step; just a touch younger."},
+  {id:"current-up1_5",label:"2 · +1.5 semitones",d:"Between the two."},
+  {id:"current-up2",label:"3 · +2 semitones",d:"Same step as Nanoha, Akane and Rika."},
+  {id:"current-up3",label:"4 · +3 semitones",d:"The largest step; may start to sound processed."}]},
+ {title:"Different voices",note:"The same lines read fresh by other voices. Callirrhoe and Pulcherrima aren't used by anyone else in the cast. Kore is Mio's voice (at +4), so picking it means a shared voice. Zephyr with a brighter, younger direction is her current voice re-read with new instructions. Any of these can also be pitched up.",
+  scenes:["Same three lines for every voice: \"Kendo, right?… Takes one to know one\" · \"Eh, 'san'?… I'm doing it anyway\" · the wistful kitchen-drawer line."],takes:[
+  {id:"alt-zephyr-bright",label:"5 · Zephyr, brighter direction",d:"Her current voice, asked for a lighter, younger, sunnier read."},
+  {id:"alt-callirrhoe",label:"6 · Callirrhoe",d:"New voice, unused in the cast."},
+  {id:"alt-pulcherrima",label:"7 · Pulcherrima",d:"New voice, unused in the cast."},
+  {id:"alt-kore",label:"8 · Kore",d:"Shared with Mio (who uses it at +4)."}]}
+];
+
+const $=s=>document.querySelector(s); const KEY="ozk-voice-natsuki-oct24";
+let state={}; try{state=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}};
+const fmt=s=>{s=Math.max(0,Math.floor(s||0));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+const els={}; let cur=null;
+const list=$("#list");
+for(const g of GROUPS){
+  const h=document.createElement("h2"); h.textContent=g.title; list.appendChild(h);
+  const p=document.createElement("p"); p.className="gnote"; p.textContent=g.note; list.appendChild(p);
+  const sc=document.createElement("div"); sc.className="scenes"; sc.innerHTML="<strong>Where it plays</strong><ul>"+g.scenes.map(x=>"<li>"+x+"</li>").join("")+"</ul>"; list.appendChild(sc);
+  for(const t of g.takes){
+    const s=document.createElement("section"); s.className="take"+(t.ref?" ref":""); s.style.marginTop="12px";
+    s.innerHTML=`<div class="top"><span class="name">${t.label}</span>${t.ref?"":`<div class="verdict" role="group" aria-label="${g.title} ${t.label}">
+      <button id="v-${t.id}-yes" data-v="yes" aria-pressed="false">Yes</button><button id="v-${t.id}-maybe" data-v="maybe" aria-pressed="false">Maybe</button><button id="v-${t.id}-no" data-v="no" aria-pressed="false">No</button></div>`}</div>
+      <div class="player"><button class="play" id="p-${t.id}" aria-label="Play ${t.label}">▶</button><div class="bar" id="b-${t.id}"><i><b></b></i></div><span class="time" id="t-${t.id}">0:00</span></div>
+      <p class="desc">${t.d}</p>${t.ref?"":`<textarea id="n-${t.id}" placeholder="Note (optional)"></textarea>`}`;
+    list.appendChild(s);
+    const a=new Audio(t.src||(t.id+".mp3")); a.loop=true; a.preload="metadata"; els[t.id]=a;
+    a.addEventListener("loadedmetadata",()=>{$(`#t-${t.id}`).textContent="0:00 / "+fmt(a.duration)});
+    $(`#p-${t.id}`).addEventListener("click",()=>toggle(t.id));
+    $(`#b-${t.id}`).addEventListener("click",e=>{const r=e.currentTarget.getBoundingClientRect(); if(isFinite(a.duration)){a.currentTime=(e.clientX-r.left)/r.width*a.duration; if(a.paused) toggle(t.id)}});
+    if(!t.ref){
+      for(const v of ["yes","maybe","no"]) $(`#v-${t.id}-${v}`).addEventListener("click",()=>{const x=state[t.id]||{}; x.v=x.v===v?null:v; state[t.id]=x; save(); paint(t.id)});
+      const n=$(`#n-${t.id}`); n.value=(state[t.id]||{}).n||""; n.addEventListener("input",()=>{const x=state[t.id]||{}; x.n=n.value; state[t.id]=x; save()});
+      paint(t.id);
+    }
+  }
+}
+function paint(id){const v=(state[id]||{}).v; for(const k of ["yes","maybe","no"]) $(`#v-${id}-${k}`).setAttribute("aria-pressed",String(v===k))}
+function btn(id,on){const b=$(`#p-${id}`); b.textContent=on?"❚❚":"▶"}
+async function toggle(id){
+  const a=els[id];
+  if(cur&&cur!==id){els[cur].pause(); btn(cur,false)}
+  if(!a.paused){a.pause(); btn(id,false); cur=null; return}
+  try{await a.play(); cur=id; btn(id,true)}catch(e){$("#status").textContent="Couldn't play that take. Check your connection and try again."}
+}
+(function tick(){ if(cur){const a=els[cur]; if(isFinite(a.duration)){$(`#b-${cur} b`).style.width=(a.currentTime/a.duration*100)+"%"; $(`#t-${cur}`).textContent=fmt(a.currentTime)+" / "+fmt(a.duration)}} requestAnimationFrame(tick) })();
+$("#copy").addEventListener("click",async()=>{
+  const L={yes:"YES",maybe:"MAYBE",no:"NO"};
+  const txt="Natsuki voice\n"+GROUPS.map(g=>g.title+"\n"+g.takes.filter(t=>!t.ref).map(t=>{const x=state[t.id]||{}; return `  ${t.label}: ${x.v?L[x.v]:"(not marked)"}${x.n?" — "+x.n:""}`}).join("\n")).join("\n");
+  try{await navigator.clipboard.writeText(txt); $("#status").textContent="Copied. Paste it into the chat."}
+  catch(e){const ta=document.createElement("textarea"); ta.value=txt; ta.style.minHeight="160px"; $("#copy").after(ta); ta.select(); $("#status").textContent="Copy blocked here. Select the text below and copy it."}
+});
+</script>
+</body>
+</html>

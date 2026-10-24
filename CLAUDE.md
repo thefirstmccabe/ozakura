@@ -9,7 +9,7 @@ The repo is **public**, and GitHub Pages serves it at https://thefirstmccabe.git
 2. **Then read only what your job needs** (the docs are long; don't read everything every time):
    - **Story thread:** `story/canon.md`, `story/chapter-map.md`, style guide §3b–§3c (speech and address) and §9 step 1 (what an outline contains), `story/pilot-notes.md` (the [P] details to fold in), the deliverable's `scene-outline.md`, and the latest handover note.
    - **Production thread:** the deliverable's brief (`production/<deliverable>/README.md`) and outline, `story/chapter-map.md` (the chapter's row, running threads and reader windows), style guide §1–§9 (§9 is the process), `story/pilot-notes.md`, the decision-log rows since your last session, and the canon sections the chapter touches.
-   - **Music thread:** style guide §7 and the music cue list for the deliverable.
+   - **Audio thread** (music, voices, SFX): style guide §7 and the music cue list for the deliverable.
    - **Planning:** the production log and style guide §9.
 3. Before changing a doc, read the section you're changing in full. `story/archive/` is history, not required reading.
 
@@ -17,8 +17,8 @@ The repo is **public**, and GitHub Pages serves it at https://thefirstmccabe.git
 | Thread | Owns (decides and edits) | Hands off to |
 |---|---|---|
 | **Story** | `canon.md`, `canon-revisions.md`, `chapter-map.md`; **drafts chapter outlines and reader-knowledge targets before production** (the author approves them; they live in `production/<deliverable>/scene-outline.md`, which Story owns); the speech and address sheets (style guide §3b–§3c); folding [P] details into canon | Production (outlines), via a handoff file in the deliverable's folder |
-| **Production** (one per deliverable) | Builds, scripts, art, voices; `production/<deliverable>/` (except the outline) and `production/pipeline/` (except `review/`); style guide §1–§6, §8 and the §7 voice cast; `pilot-notes.md` [P] entries; the status board's rows for its chapters | Story (punch-list dialogue items, [P] details), the author (handovers) |
-| **Music** | Style guide §7 (music), `production/music/`, the deliverable's `music-cues.md` | Production (finished cues) |
+| **Production** (one per deliverable) | Builds, scripts, art, voices; `production/<deliverable>/` (except the outline) and `production/pipeline/` (except `review/`); style guide §1–§6 and §8; re-voicing builds with the §7 cast (the Audio thread picks the cast); `pilot-notes.md` [P] entries; the status board's rows for its chapters | Story (punch-list dialogue items, [P] details), the author (handovers) |
+| **Audio** (was Music; widened Oct 24) | All of style guide §7: music, the voice cast and voice auditions, SFX; `production/music/`, `production/voice-auditions/`, the deliverable's `music-cues.md` | Production (finished cues; recast decisions to re-voice in the build) |
 | **Design pass** (only when a big visual job comes up: a style homage, a batch of new characters or locations; small one-offs stay in whichever thread the author raises them) | Its exploration in `production/design/<pass>/`; the approved results go into style guide §1–§2. Starts from a short brief and closes when the author approves | Production (approved designs and references) |
 | **Planning** | Style guide §9 (the process), `production/pipeline/review/` prompts, the log's structure. A standing thread (it doesn't retire after Pilot v2) | Everyone (process changes) |
 
