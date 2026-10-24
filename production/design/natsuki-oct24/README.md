@@ -6,6 +6,7 @@
 | File | What it is |
 |---|---|
 | `sheet_waist.jpg` | The same line (c1_0194) at iPad landscape: as built; option 1, Natsuki's waist lowered 1.7 in; option 2, Nanoha's raised 2 in instead. |
+| `sheet_build.jpg` | Face A at the same line: as built, 7% wider, played at 5′1½″. |
 | `preview_recommended.jpg` | The recommendation at the same line: face A on Natsuki's as-built body, Nanoha raised 2 in. |
 | `sheet_faces.jpg` | Head crops from the game screen: Nanoha for reference, Natsuki as built, option A (seed 254), option B (seed 251). Both options sit on the waist-fixed body. |
 | `heads_grid.jpg` | All four head edits as generated, before compositing. |
@@ -47,6 +48,15 @@ Batch 1 (same day, not kept): two whole-body proportion edits (241, 242) barely 
 ## Blind check (fresh agent, shuffled labels, Natsuki described in words only)
 - **Faces:** A first ("big and bright eyes… moderate blush… pretty and lively"; "balances confident and warm best"; "matches Nanoha's soft blush best"); B second (the cheeks "overpower the face… reads flushed"); as built last ("smaller, heavier-lidded… more mature and a bit plainer"; "cool rather than warm… drifts toward sleepy"). The difference shows at scene size, mostly in the blush. No seams. It flagged "a small dark dot" under the eye: on inspection that's the white cheek highlight the shipped sprite and Nanoha's both have, so nothing to fix.
 - **Bodies:** as built most natural, Nanoha raised second, Natsuki lowered last (see above). Also: "Nanoha's head looks noticeably bigger, as if she's closer to the camera." That's how her sprite is drawn, not something this pass changes; noted for the backlog.
+
+## Oct 24, afternoon: the author's read
+**Author:** "i like a for nat face. i dint love any waist fix that much maybe its best left alone… i agree that lowerinf natsuki waist looks bad. simething about the placement and scake just makenat seem kind of too tall / lean in all of them." **So: face A; no waist fix** (the first blind check also ranked the as-built bodies most natural).
+
+**Tall and lean** (`sheet_build.jpg`, all with face A): as built; 7% wider (a plain horizontal resize of the sprite); played shorter (the engine's `h` at 61.5 and 60). Measured on screen: Natsuki is drawn about 6.6 heads tall and Nanoha about 5.6; Nanoha's head is bigger in inches (10.5 vs 9.6) though she's 4 in shorter, and she's about an inch wider through the shoulders (16 vs 15 in). So Natsuki's eyes sit 6 in above Nanoha's while their crowns are 4 in apart.
+
+**Second blind check** (four shuffled scenes): 7% wider was best ("the least lean"); as built next; played shorter was worse ("a smaller head on a long body, which is more model-like, not less"). Its verdict: **"Mostly the drawing, not the scale"**: narrower than Nanoha though taller; a long lower face, pointed chin and long neck ("reads 19 or 20"); a straight stance with her arms behind her back next to Nanoha's tilt and hunch; a fitted, tapered blazer; smooth glossy shading next to Nanoha's pencil hatching. (It thought Nanoha's sprite changed in the shorter takes; it didn't, but lowering Natsuki's `h` lowers the engine's shared floor, so everyone shrank about 1%.)
+
+**The real fix would be a redraw of her base sprite**, not a tweak: face A, a slightly bigger head, broader shoulders, a boxier blazer, a shorter neck, a relaxed pose, and Nanoha's pencil-hatched rendering; then her six other expressions, the face windows and the three CGs she's in. Asked the author before starting.
 
 ## If one is picked
 1. Waist: run `torso_warp.py` with the same setting on every school sprite of whoever moves (Nanoha's set for option 2, Natsuki's seven for option 1). The face windows don't change.
