@@ -2,6 +2,7 @@
 # Built from production/pilot-v2/scene-outline.md (Ch2, approved Oct 24) and the pilot-notes fix list
 # (2, 5, 6, 7, 8, 13, 25, 28, 29, 30, 32, P1–P5). Chapter-2-only syntax:
 #   @phone me|chie text        a text message in the chat UI (unvoiced)
+#   @wear kohei kendo|work|school  the outfit Kōhei's face windows show from here on (default school)
 #   @shake                      screen shake
 #   @anim name                  a short animated moment: plays img/anim/name.mp4 once, then holds the CG `name`
 #   @insert name ... @insert end   a manga insert, shown panel by panel (style guide §4a). Inside it:
@@ -18,6 +19,7 @@
 > Every so often during class, the back of my neck prickles, the way it does on the floor when someone's measuring the distance between us.  #c2_0002
 > When I turn around, she's always looking at the board.  #c2_0003
 @bg bg_restaurant_night
+@wear kohei work
 > Tuesday is also a shift. Five-thirty to close at Hoshino Kitchen, the family restaurant by the station: the dish pit, the drink bar, and the register whenever the register needs a body.  #c2_0004
 manager: "Fujisawa-kun! Table four wants the check, table nine wants water, and the dishwasher's making the noise again!" || ふじさわくん！ 四番さんお会計、九番さんお水、あと食洗機がまたあの音出してる！  #c2_0005
 kohei(neutral): "On it." || 今、行きます。  #c2_0006
@@ -89,6 +91,7 @@ natsuki<smile>: "See you tomorrow, Fujisawa. Wednesday." || じゃあね、ふ�
 == c2_dojo | First practice
 @card Wednesday, April 9
 @bg bg_dojo
+@wear kohei kendo
 @bgm practice
 > The dojo smells like it always does in April: floor wax, old sweat, and the cedar walls warming up in the sun after a long winter.  #c2_0059
 > Four days a week, for two hours, there's exactly one problem in front of me, and I'm allowed to solve it with my whole body.  #c2_0060
@@ -294,6 +297,7 @@ kohei(annoyed): "Shut up." || うるさい。  #c2_0208
 
 == c2_bridge | The bridge at dusk
 @bg bg_bridge_dusk
+@wear kohei school
 @bgm natsuki
 > Her apartment's by the station. My house is the other way, up toward the hills. The river's where our routes split, so we walk as far as the bridge together.  #c2_0211
 @show natsuki school_smile c

@@ -11,7 +11,8 @@ Translator's notes: if a `notes.txt` (`term | note` per line) sits next to the f
 script glosses as {term|gloss} go into the output as "notes" (lowercase term -> note); the engine underlines those
 terms and opens the note on a tap.
 
-Ch2 ops (Oct 24): `@phone me|chie text` (a text message, unvoiced), `@shake`, `@anim name` (a short animated
+Ch2 ops (Oct 24): `@wear kohei kendo|work|school` (the outfit Kōhei's face windows show, until changed),
+`@phone me|chie text` (a text message, unvoiced), `@shake`, `@anim name` (a short animated
 moment: the engine plays img/anim/name.mp4 once and holds the CG `name`), and manga inserts:
 `@insert name` … `@panel description` … lines … `@insert end`. Lines inside an insert belong to the current panel:
 they're lettered on the page art, go to the backlog, and spoken ones are voiced when the panel opens.
@@ -45,6 +46,7 @@ def compile_files(paths):
     scene = None
     insert = None        # the open @insert command while inside one
     hold_at = {}         # command index -> file:line of each @hold, for error messages
+    kohei_wear = "school"  # Kōhei's face-window outfit (@wear)
     used = set()
     new_ids = {}         # (path, line number) -> ID assigned to a line that had none
     for path in paths:   # explicit IDs first, so new ones never collide
@@ -118,6 +120,12 @@ def compile_files(paths):
                         errors.append(f"{where}: @phone takes me|chie and a message")
                     else:
                         cmds.append({"t": "phone", "id": line_id(prefix, written, (path, n)), "who": who, "text": text})
+                    continue
+                if op == "wear":   # @wear kohei kendo|work|school: which outfit Kōhei's face windows show (Ch2 on)
+                    if len(args) != 2 or args[0] != "kohei":
+                        errors.append(f"{where}: @wear takes 'kohei' and an outfit")
+                    else:
+                        kohei_wear = args[1]
                     continue
                 if op == "shake":
                     cmds.append({"t": "shake"}); continue
@@ -201,7 +209,7 @@ def compile_files(paths):
             lid = line_id(prefix, written, (path, n))
             c = {"t": "say", "id": lid, "who": who, "text": text}
             if face and sink is cmds:
-                c["face"] = face
+                c["face"] = face if (who != "kohei" or kohei_wear == "school") else f"{kohei_wear}_{face}"
             sink.append(c)
             if ja and ja.strip() != "-":
                 voice.append({"id": lid, "who": who, "ja": ja.strip(), "en": text, "scene": scene})

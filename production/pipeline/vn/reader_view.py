@@ -82,6 +82,17 @@ def convert(paths, split):
                     out = f"[Chapter title card: Chapter {s[8:].strip()}]"
                 elif c == "@mode" and len(w) > 2:
                     out = f"[{' '.join(w[2:])}, told in third person]"
+                elif c == "@anim":
+                    alias.setdefault(w[1], f"image_{len(alias) + 1:02d}")
+                    out = f"[A two-second animated moment plays, ending on a full-screen illustration: image file {alias[w[1]]}.jpg]"; cgs.append(w[1])
+                elif c == "@phone":
+                    who = "Natsuki" if w[1] == "me" else "Chie"
+                    out = f'[Text message, {who}: "{s.split(None, 2)[2] if len(w) > 2 else ""}"]'
+                elif c == "@insert":
+                    out = ("[Manga insert ends; back to the visual novel]" if w[1:2] == ["end"] else
+                           "[Manga insert begins: the next part is a full-color comic, shown one panel at a time; lines in it are lettered on the art]")
+                elif c == "@panel":
+                    out = f"[Manga panel: {s[len('@panel'):].strip()}]"
                 elif c == "@flash":
                     out = "[White flash]"
                 elif c == "@endchapter":
