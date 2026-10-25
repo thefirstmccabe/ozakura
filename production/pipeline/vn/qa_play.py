@@ -14,13 +14,14 @@ W, H = map(int, a.size.split("x"))
 shots = set(filter(None, a.shots.split(",")))
 report = {"errors": [], "bad_requests": [], "voice_missing": [], "shots": [], "missed_lines": []}
 seen = []
+where = {"at": "start"}   # the last line or insert step reached, so a failed request says where it happened
 with sync_playwright() as p:
     b = p.chromium.launch(args=["--autoplay-policy=no-user-gesture-required"])
     ctx = b.new_context(viewport={"width": W, "height": H}, device_scale_factor=2, has_touch=True)
     pg = ctx.new_page()
     pg.on("pageerror", lambda e: report["errors"].append(str(e)))
     pg.on("console", lambda m: report["errors"].append(m.text) if m.type == "error" else None)
-    pg.on("response", lambda r: report["bad_requests"].append(f"{r.status} {r.url}") if r.status >= 400 else None)
+    pg.on("response", lambda r: report["bad_requests"].append(f"{r.status} {r.url} (at {where['at']})") if r.status >= 400 else None)
     pg.goto(a.url + "#qa&dev"); pg.wait_for_timeout(3500)
     pg.screenshot(path=f"{a.out}/00_title.png"); report["shots"].append("00_title")
     pg.click("#tapStart"); pg.wait_for_timeout(400)
@@ -44,6 +45,7 @@ with sync_playwright() as p:
             pg.wait_for_timeout(900); pg.screenshot(path=f"{a.out}/99_end.png"); report["shots"].append("99_end"); break
         cur = st.get("id")
         scene = pg.evaluate("window.__vn.state.scene")
+        where["at"] = f"{scene}/{cur}"
         if st.get("cur") == "insert" and st.get("ins"):
             # a manga insert: one stop per step (the whole page, then each panel); its lines count as seen when shown
             k = st["ins"]["k"]

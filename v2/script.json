@@ -13,7 +13,8 @@
 "yuzu": "Yuzu",
 "emi": "Emi",
 "mio": "Mio",
-"past_natsuki": "???"
+"past_natsuki": "???",
+"classmate": "Classmate"
 },
 "script": [
 {
@@ -2454,6 +2455,2383 @@
 {
 "t": "endchapter",
 "n": 1
+},
+{
+"t": "scene",
+"id": "c2_tuesday",
+"title": "Tuesday night at Hoshino Kitchen"
+},
+{
+"t": "chapter",
+"n": 2,
+"title": "Kendo"
+},
+{
+"t": "card",
+"text": "Tuesday, April 8"
+},
+{
+"t": "bg",
+"name": "bg_classroom_day",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "daily"
+},
+{
+"t": "nar",
+"id": "c2_0001",
+"text": "On Tuesday, Mizuno learns the other half of the class's names."
+},
+{
+"t": "nar",
+"id": "c2_0002",
+"text": "Every so often during class, the back of my neck prickles, the way it does on the floor when someone's measuring the distance between us."
+},
+{
+"t": "nar",
+"id": "c2_0003",
+"text": "When I turn around, she's always looking at the board."
+},
+{
+"t": "bg",
+"name": "bg_restaurant_night",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c2_0004",
+"text": "Tuesday is also a shift. Five-thirty to close at Hoshino Kitchen, the family restaurant by the station: the dish pit, the drink bar, and the register whenever the register needs a body."
+},
+{
+"t": "say",
+"id": "c2_0005",
+"who": "manager",
+"text": "\"Fujisawa-kun! Table four wants the check, table nine wants water, and the dishwasher's making the noise again!\""
+},
+{
+"t": "say",
+"id": "c2_0006",
+"who": "kohei",
+"text": "\"On it.\"",
+"face": "work_neutral"
+},
+{
+"t": "say",
+"id": "c2_0007",
+"who": "manager",
+"text": "\"Lifesaver!\""
+},
+{
+"t": "nar",
+"id": "c2_0008",
+"text": "That's one. The manager says it about nine times a night."
+},
+{
+"t": "nar",
+"id": "c2_0009",
+"text": "Akane's dinner is in the fridge at home with a note on the lid. At seven she sends me a photo of the empty container. A minute later she sends a second one, closer up, in case I had questions."
+},
+{
+"t": "sfx",
+"name": "door_slide"
+},
+{
+"t": "bgm",
+"name": "natsuki"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_laugh",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c2_0010",
+"text": "At eight, the automatic door slides open on five girls from Two-B, still in uniform and still loud from karaoke. Mizuno's in the middle of them."
+},
+{
+"t": "say",
+"id": "c2_0012",
+"who": "classmate",
+"text": "\"Nacchan, you have to get the strawberry parfait. Everybody gets the parfait.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_surprised"
+},
+{
+"t": "say",
+"id": "c2_0014",
+"who": "natsuki",
+"text": "\"…Fujisawa?\""
+},
+{
+"t": "nar",
+"id": "c2_0015",
+"text": "I'm holding a tray of empty glasses and wearing the Hoshino Kitchen apron, the one with a cartoon chef on the pocket."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0016",
+"who": "natsuki",
+"text": "\"You work here.\""
+},
+{
+"t": "say",
+"id": "c2_0017",
+"who": "kohei",
+"text": "\"Three nights a week.\"",
+"face": "work_neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious"
+},
+{
+"t": "say",
+"id": "c2_0018",
+"who": "natsuki",
+"text": "\"And you tie your apron like a {hakama|pleated kendo trousers}.\""
+},
+{
+"t": "nar",
+"id": "c2_0019",
+"text": "I look down. The strings cross in front and finish in a flat knot below my stomach."
+},
+{
+"t": "say",
+"id": "c2_0020",
+"who": "kohei",
+"text": "\"It stays tied.\"",
+"face": "work_deadpan"
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c2_0022",
+"text": "I put them in the big booth by the window. When I come back with the order tablet, Mizuno has the menu open to the very last page."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious",
+"pos": "c"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious"
+},
+{
+"t": "say",
+"id": "c2_0023",
+"who": "natsuki",
+"text": "\"Do you check ID for the kids' plate?\""
+},
+{
+"t": "say",
+"id": "c2_0024",
+"who": "kohei",
+"text": "\"…No.\"",
+"face": "work_surprised"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0025",
+"who": "natsuki",
+"text": "\"Then one kids' plate, please. With the flag.\""
+},
+{
+"t": "say",
+"id": "c2_0026",
+"who": "classmate",
+"text": "\"Nacchan, you're sixteen!\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0027",
+"who": "natsuki",
+"text": "\"He said they don't check.\""
+},
+{
+"t": "nar",
+"id": "c2_0028",
+"text": "She hands me the menu without looking away from me."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "nar",
+"id": "c2_0029",
+"text": "I laugh. Right there in the middle of the floor, with the tablet in one hand and her menu in the other."
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c2_0030",
+"text": "The kids' plate comes out with a little paper flag stuck in the dome of rice. Mizuno photographs it from three angles before she touches it."
+},
+{
+"t": "nar",
+"id": "c2_0033",
+"text": "Around eight-forty the girls pile out in a clump, waving at Mizuno through the window."
+},
+{
+"t": "say",
+"id": "c2_0034",
+"who": "classmate",
+"text": "\"Nacchan, aren't you coming?\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile",
+"pos": "c"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0035",
+"who": "natsuki",
+"text": "\"I live right by the station. I'm not done with my flag.\""
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c2_0036",
+"text": "At nine, the manager turns the sign on the door around and decides not to notice the one customer left in the booth."
+},
+{
+"t": "nar",
+"id": "c2_0037",
+"text": "She talks while I wipe tables. About the town, mostly."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious",
+"pos": "c"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious"
+},
+{
+"t": "say",
+"id": "c2_0038",
+"who": "natsuki",
+"text": "\"Is the mountain always that close? From the station it looks like you could walk there.\""
+},
+{
+"t": "say",
+"id": "c2_0039",
+"who": "kohei",
+"text": "\"It's farther than it looks.\"",
+"face": "work_neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0040",
+"who": "natsuki",
+"text": "\"What about the {taiyaki|fish-shaped cake} stand by the north exit?\""
+},
+{
+"t": "say",
+"id": "c2_0041",
+"who": "kohei",
+"text": "\"Red bean's good. Don't get the custard. They burn it.\"",
+"face": "work_neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_laugh"
+},
+{
+"t": "say",
+"id": "c2_0042",
+"who": "natsuki",
+"text": "\"Head first or tail first?\""
+},
+{
+"t": "say",
+"id": "c2_0043",
+"who": "kohei",
+"text": "\"Don't start.\"",
+"face": "work_deadpan"
+},
+{
+"t": "nar",
+"id": "c2_0044",
+"text": "So I tell her other things instead. Which convenience store has the drink fridge that freezes everything solid. How the river floods the lower path in June, and the herons stand on the bike racks like they're waiting for a train. Where the wind comes down off the mountains strongest, if you want petals in a picture."
+},
+{
+"t": "nar",
+"id": "c2_0046",
+"text": "She doesn't ask why a second-year works three shifts a week. People usually do, the first time. Then they get careful with me."
+},
+{
+"t": "nar",
+"id": "c2_0047",
+"text": "When I start putting chairs up on the tables, she gets up without a word and starts on the other side of the room."
+},
+{
+"t": "say",
+"id": "c2_0048",
+"who": "manager",
+"text": "\"Lifesaver!\""
+},
+{
+"t": "nar",
+"id": "c2_0053",
+"text": "That's nine."
+},
+{
+"t": "say",
+"id": "c2_0049",
+"who": "manager",
+"text": "\"…Wait. Do you work here?\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0050",
+"who": "natsuki",
+"text": "\"I'm new.\""
+},
+{
+"t": "nar",
+"id": "c2_0051",
+"text": "The manager nods like that settles it and goes back to the register."
+},
+{
+"t": "nar",
+"id": "c2_0052",
+"text": "I laugh so hard I have to put the chair down."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0054",
+"who": "natsuki",
+"text": "\"See you tomorrow, Fujisawa. Wednesday.\""
+},
+{
+"t": "nar",
+"id": "c2_0055",
+"text": "She goes out with the little paper flag in her blazer pocket."
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "bgm",
+"name": null
+},
+{
+"t": "nar",
+"id": "c2_0056",
+"text": "I finish the floor. I count out the register. I walk home up the hill."
+},
+{
+"t": "nar",
+"id": "c2_0057",
+"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about taiyaki and herons, to someone I met yesterday."
+},
+{
+"t": "nar",
+"id": "c2_0299",
+"text": "There's a plastic container on the kitchen table when I get in, with a sticky note on the lid in Nanoha's handwriting. It says \"Again.\""
+},
+{
+"t": "scene",
+"id": "c2_dojo",
+"title": "First practice"
+},
+{
+"t": "card",
+"text": "Wednesday, April 9"
+},
+{
+"t": "bg",
+"name": "bg_dojo",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "practice"
+},
+{
+"t": "nar",
+"id": "c2_0059",
+"text": "The dojo smells like it always does in April: old wood, old sweat, and the cedar walls warming up in the sun after a long winter."
+},
+{
+"t": "nar",
+"id": "c2_0060",
+"text": "Four days a week, for two hours, there's exactly one problem in front of me, and I'm allowed to solve it with my whole body."
+},
+{
+"t": "nar",
+"id": "c2_0061",
+"text": "Takatsuki is already on the floor when I come in, doing {suburi|practice swings} alone at the far end. Every swing is the same swing: same height, same speed, same snap at the bottom. Watching him is like watching a diagram of kendo."
+},
+{
+"t": "show",
+"who": "takatsuki",
+"spr": "takatsuki_kendo_calm",
+"pos": "r"
+},
+{
+"t": "say",
+"id": "c2_0062",
+"who": "takatsuki",
+"text": "\"Fujisawa.\""
+},
+{
+"t": "say",
+"id": "c2_0063",
+"who": "kohei",
+"text": "\"Takatsuki.\"",
+"face": "kendo_neutral"
+},
+{
+"t": "say",
+"id": "c2_0064",
+"who": "takatsuki",
+"text": "\"Your hakama is tied off center.\""
+},
+{
+"t": "say",
+"id": "c2_0065",
+"who": "kohei",
+"text": "\"It's the same knot as always.\"",
+"face": "kendo_deadpan"
+},
+{
+"t": "say",
+"id": "c2_0066",
+"who": "takatsuki",
+"text": "\"Yes. It has been off center for a year.\""
+},
+{
+"t": "hide",
+"who": "takatsuki"
+},
+{
+"t": "show",
+"who": "kirishima",
+"spr": "kirishima_kendo_calm",
+"pos": "l"
+},
+{
+"t": "say",
+"id": "c2_0068",
+"who": "kirishima",
+"text": "\"Line up.\""
+},
+{
+"t": "nar",
+"id": "c2_0069",
+"text": "Kirishima-senpai, the captain, is the only person I know who can quiet a room by not raising his voice. As far as anyone can tell, nothing has ever surprised him."
+},
+{
+"t": "say",
+"id": "c2_0070",
+"who": "kirishima",
+"text": "\"Welcome back. One new member, ahead of the first-years: a second-year transfer. Mizuno.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_smile",
+"pos": "r"
+},
+{
+"t": "say",
+"id": "c2_0071",
+"who": "natsuki",
+"text": "\"Mizuno Natsuki, second year. Kendo since I was seven. Who do I get to fight first?\""
+},
+{
+"t": "nar",
+"id": "c2_0072",
+"text": "A couple of the third-years laugh. She looks pleased about it."
+},
+{
+"t": "say",
+"id": "c2_0073",
+"who": "kirishima",
+"text": "\"Good.\""
+},
+{
+"t": "nar",
+"id": "c2_0074",
+"text": "She's in a faded indigo {keikogi|kendo jacket} and hakama, her hair up in a long ponytail. The gi has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
+},
+{
+"t": "say",
+"id": "c2_0076",
+"who": "kirishima",
+"text": "\"Warm-ups and suburi. Bogu after the break.\""
+},
+{
+"t": "say",
+"id": "c2_0077",
+"who": "kirishima",
+"text": "\"Fujisawa. You'll take Mizuno. Find out what she has.\""
+},
+{
+"t": "show",
+"who": "takatsuki",
+"spr": "takatsuki_kendo_surprised",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c2_0078",
+"who": "takatsuki",
+"text": "\"Captain, I could take her, if—\""
+},
+{
+"t": "say",
+"id": "c2_0079",
+"who": "kirishima",
+"text": "\"You'll take the first-years when they come, Takatsuki. They'll need someone with patience.\""
+},
+{
+"t": "say",
+"id": "c2_0080",
+"who": "takatsuki",
+"text": "\"…\""
+},
+{
+"t": "say",
+"id": "c2_0081",
+"who": "kirishima",
+"text": "\"That was a joke.\""
+},
+{
+"t": "nar",
+"id": "c2_0082",
+"text": "Nobody laughs. He seems satisfied anyway."
+},
+{
+"t": "hideall"
+},
+{
+"t": "scene",
+"id": "c2_lesson",
+"title": "Kendo, explained"
+},
+{
+"t": "bgm",
+"name": "daily"
+},
+{
+"t": "nar",
+"id": "c2_0083",
+"text": "At the water break after warm-ups, the dojo door slides open a few inches, and Hoshikawa Rika's head comes around it, followed by a sketchbook."
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_grin",
+"pos": "l"
+},
+{
+"t": "say",
+"id": "c2_0084",
+"who": "rika",
+"text": "\"Nacchan! Art club assignment! 'People in motion'! Can I draw you? Can I sit here? Is this a floor you're allowed to sit on?\""
+},
+{
+"t": "say",
+"id": "c2_0085",
+"who": "kirishima",
+"text": "\"Shoes off.\"",
+"face": "kendo_calm"
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_surprised"
+},
+{
+"t": "say",
+"id": "c2_0086",
+"who": "rika",
+"text": "\"Yes, sir!\""
+},
+{
+"t": "nar",
+"id": "c2_0087",
+"text": "She sits against the wall in her socks with the sketchbook on her knees."
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_scheme"
+},
+{
+"t": "say",
+"id": "c2_0088",
+"who": "rika",
+"text": "\"Okay. Explain everything. All I know is you guys yell.\""
+},
+{
+"t": "nar",
+"id": "c2_0090",
+"text": "Two minutes later she's wiped the practice schedule off the whiteboard by the door, borrowed a pair of glasses from the lost-and-found box, and picked up a {shinai|bamboo practice sword} to point with."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c2_0091",
+"who": "kohei",
+"text": "\"Whose glasses are those?\"",
+"face": "kendo_deadpan"
+},
+{
+"t": "say",
+"id": "c2_0092",
+"who": "natsuki",
+"text": "\"Lost and found. How do I look?\""
+},
+{
+"t": "say",
+"id": "c2_0293",
+"who": "kohei",
+"text": "\"Like a teacher.\"",
+"face": "kendo_neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0093",
+"who": "natsuki",
+"text": "\"Kendo, lesson one. There are four places you're allowed to hit.\""
+},
+{
+"t": "nar",
+"id": "c2_0094",
+"text": "She draws a stick figure on the board. It has an enormous head."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0095",
+"who": "natsuki",
+"text": "\"Men. The head.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0096",
+"who": "natsuki",
+"text": "\"Kote. The wrist. Usually the right one.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0097",
+"who": "natsuki",
+"text": "\"Dō. The side of the body.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0098",
+"who": "natsuki",
+"text": "\"And tsuki, the throat. Thrusts only. You're not allowed to use it until high school.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_surprised"
+},
+{
+"t": "say",
+"id": "c2_0099",
+"who": "rika",
+"text": "\"We're in high school!\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0100",
+"who": "natsuki",
+"text": "\"So be afraid.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_scheme"
+},
+{
+"t": "say",
+"id": "c2_0101",
+"who": "rika",
+"text": "\"How do you get a point? Do you just hit them really hard?\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0294",
+"who": "natsuki",
+"text": "\"Me-e-en!\""
+},
+{
+"t": "nar",
+"id": "c2_0295",
+"text": "Her front foot stamps the floor in the same instant, and the shinai stops an inch short of the stick figure's head."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0102",
+"who": "natsuki",
+"text": "\"Hitting isn't enough. Voice, sword and feet, all at once. {Ki-ken-tai-itchi|spirit, sword and body as one}.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0103",
+"who": "rika",
+"text": "\"So the yelling is you telling them where.\""
+},
+{
+"t": "say",
+"id": "c2_0105",
+"who": "kohei",
+"text": "\"That's not why you—\"",
+"face": "kendo_annoyed"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0106",
+"who": "natsuki",
+"text": "\"And afterward, you stay ready. {Zanshin|remaining mind}. No celebrating. You're still in the fight until somebody tells you you're not.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_surprised"
+},
+{
+"t": "say",
+"id": "c2_0107",
+"who": "rika",
+"text": "\"Who tells you?\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0108",
+"who": "natsuki",
+"text": "\"The referee. Pop quiz, Rika. I hit Fujisawa on the head. What does the referee say?\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0296",
+"who": "rika",
+"text": "\"'Ow!'\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0297",
+"who": "natsuki",
+"text": "\"'Men ari.' There was a head.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0109",
+"who": "rika",
+"text": "\"Somebody hits you in the head, and the referee goes, 'There was a head.'\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_scheme"
+},
+{
+"t": "say",
+"id": "c2_0111",
+"who": "rika",
+"text": "\"What's the hardest one?\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0112",
+"who": "natsuki",
+"text": "\"Debana. You hit them right as they start to attack. It's my favorite.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_surprised"
+},
+{
+"t": "say",
+"id": "c2_0113",
+"who": "rika",
+"text": "\"How do you know when they're starting?\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0114",
+"who": "natsuki",
+"text": "\"Mostly you don't. That's why it's hard.\""
+},
+{
+"t": "show",
+"who": "takatsuki",
+"spr": "takatsuki_kendo_calm",
+"pos": "r"
+},
+{
+"t": "say",
+"id": "c2_0115",
+"who": "takatsuki",
+"text": "\"It is the hardest thing in kendo to do on purpose.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0116",
+"who": "natsuki",
+"text": "\"Thank you, Takatsuki-kun. Which brings us to the correct stance. Takatsuki-kun, would you be our model?\""
+},
+{
+"t": "say",
+"id": "c2_0117",
+"who": "takatsuki",
+"text": "\"…If it's educational.\""
+},
+{
+"t": "nar",
+"id": "c2_0118",
+"text": "He steps out and settles into {kamae|stance} like a door swinging shut. Left heel just off the floor. Sword tip at the height of an imaginary throat. Not one thing out of place."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0119",
+"who": "natsuki",
+"text": "\"Beautiful. Look at that left heel. And now, for comparison: Fujisawa.\""
+},
+{
+"t": "say",
+"id": "c2_0120",
+"who": "kohei",
+"text": "\"No.\"",
+"face": "kendo_annoyed"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0121",
+"who": "natsuki",
+"text": "\"The class is waiting.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0122",
+"who": "rika",
+"text": "\"Fu-ji-sa-wa! Fu-ji-sa-wa!\""
+},
+{
+"t": "nar",
+"id": "c2_0123",
+"text": "I get up. I don't know why I get up."
+},
+{
+"t": "nar",
+"id": "c2_0124",
+"text": "I take kamae next to Takatsuki, and Mizuno walks a slow circle around me with the shinai, like a museum guide."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_point"
+},
+{
+"t": "say",
+"id": "c2_0125",
+"who": "natsuki",
+"text": "\"Left heel, a little low. The tip wanders. He hits men from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
+},
+{
+"t": "show",
+"who": "rika",
+"spr": "rika_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0126",
+"who": "rika",
+"text": "\"He's the 'before' picture!\""
+},
+{
+"t": "say",
+"id": "c2_0127",
+"who": "kohei",
+"text": "\"Hoshikawa. Don't draw that.\"",
+"face": "kendo_annoyed"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0128",
+"who": "natsuki",
+"text": "\"You're doing great, visual aid.\""
+},
+{
+"t": "say",
+"id": "c2_0130",
+"who": "takatsuki",
+"text": "\"Mizuno. For the record, your explanation of zanshin was incomplete.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0131",
+"who": "natsuki",
+"text": "\"Incomplete how?\""
+},
+{
+"t": "say",
+"id": "c2_0132",
+"who": "kirishima",
+"text": "\"Mizuno. The practice schedule was on that board.\"",
+"face": "kendo_calm"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0133",
+"who": "natsuki",
+"text": "\"…I'll put it back.\""
+},
+{
+"t": "say",
+"id": "c2_0134",
+"who": "kirishima",
+"text": "\"From memory.\"",
+"face": "kendo_calm"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_teach_smile"
+},
+{
+"t": "say",
+"id": "c2_0135",
+"who": "natsuki",
+"text": "\"From memory.\""
+},
+{
+"t": "hideall"
+},
+{
+"t": "scene",
+"id": "c2_match",
+"title": "The practice match"
+},
+{
+"t": "bgm",
+"name": "practice"
+},
+{
+"t": "nar",
+"id": "c2_0292",
+"text": "After the break, {bogu|armor}. The {men|helmet} goes on last: the {tenugui|cotton head cloth} tied tight over my hair, the helmet settled down over it, the cords pulled and knotted behind my head. The world narrows to a rectangle behind the grille."
+},
+{
+"t": "nar",
+"id": "c2_0136",
+"text": "An hour of {kirikaeshi|a drill of nonstop strikes} and {waza|technique} drills later, Kirishima-senpai calls the {shiai-geiko|practice matches}."
+},
+{
+"t": "nar",
+"id": "c2_0137",
+"text": "Mizuno faces me across the floor. Through the bars of her men I can see her eyes, and nothing else, and they're bright."
+},
+{
+"t": "nar",
+"id": "c2_0138",
+"text": "We bow. We step in. We crouch at the line, shinai tips crossing."
+},
+{
+"t": "insert",
+"id": "ins_match",
+"name": "ins_match",
+"panels": [
+{
+"desc": "Page 1, wide (21:9): the two of them crouched at the line, shinai tips crossed; Kirishima standing behind them as referee; club members kneeling along the wall.",
+"lines": [
+{
+"t": "say",
+"id": "c2_0139",
+"who": "kirishima",
+"text": "\"Hajime! (Begin!)\""
+}
+]
+},
+{
+"desc": "Page 1 (16:9): Kōhei, seen past Natsuki's shoulder, lifts his sword tip as if to strike her head. Natsuki hasn't moved at all; her tip stays on his throat.",
+"lines": [
+{
+"t": "nar",
+"id": "c2_0140",
+"text": "I show her men. She doesn't even blink."
+}
+]
+},
+{
+"desc": "Page 1, wide (21:9): Kōhei commits, stepping in hard with his arms going up for men. Natsuki's sword is already moving toward his wrist.",
+"lines": [
+{
+"t": "nar",
+"id": "c2_0141",
+"text": "Half a second, I stop to think. Then I go."
+}
+]
+},
+{
+"desc": "Page 2, large (16:9): her strike lands on his right wrist as his arms come up.",
+"lines": [
+{
+"t": "say",
+"id": "c2_0142",
+"who": "natsuki",
+"text": "\"Kote-e-e!\""
+}
+]
+},
+{
+"desc": "Page 2 (4:3): Kirishima's arm raised toward Natsuki's side.",
+"lines": [
+{
+"t": "say",
+"id": "c2_0143",
+"who": "kirishima",
+"text": "\"Kote ari! (Point: wrist!)\""
+}
+]
+},
+{
+"desc": "Page 2 (4:5): close on Kōhei's eyes behind his grille, a bead of sweat.",
+"lines": [
+{
+"t": "nar",
+"id": "c2_0144",
+"text": "She was there before I moved."
+}
+]
+},
+{
+"desc": "Page 2 (1:1): close on Natsuki behind her grille, laughing, out of breath.",
+"lines": [
+{
+"t": "nar",
+"id": "c2_0145",
+"text": "She's laughing behind her men."
+}
+]
+},
+{
+"desc": "Page 2 (3:2): back at the line, tips crossed again.",
+"lines": [
+{
+"t": "say",
+"id": "c2_0146",
+"who": "kirishima",
+"text": "\"Nihonme! (Second point!)\""
+},
+{
+"t": "nar",
+"id": "c2_0147",
+"text": "This time I don't think."
+}
+]
+},
+{
+"desc": "Page 3, large (most of the page): Natsuki comes in for his head; Kōhei drops under it as it comes, low, left foot forward (the wrong foot), cutting across her body as they pass.",
+"lines": [
+{
+"t": "say",
+"id": "c2_0148",
+"who": "kohei",
+"text": "\"Dō-o-o!\""
+}
+]
+},
+{
+"desc": "Page 3, wide (21:9): the two of them past each other; Kirishima's arm raised toward Kōhei's side.",
+"lines": [
+{
+"t": "say",
+"id": "c2_0149",
+"who": "kirishima",
+"text": "\"Dō ari! (Point: body!)\""
+},
+{
+"t": "say",
+"id": "c2_0150",
+"who": "kirishima",
+"text": "\"Yame! (Stop!) …That's time.\""
+}
+]
+}
+]
+},
+{
+"t": "nar",
+"id": "c2_0151",
+"text": "We step back to the line. We bow. I'm breathing like I just ran up the shrine stairs twice."
+},
+{
+"t": "scene",
+"id": "c2_debrief",
+"title": "One sentence each"
+},
+{
+"t": "bg",
+"name": "bg_dojo",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c2_0152",
+"text": "Practice ends the way it starts, with a bow. Bogu off, we kneel in a line while Kirishima-senpai walks down it, saying one sentence to each of us."
+},
+{
+"t": "show",
+"who": "kirishima",
+"spr": "kirishima_kendo_calm",
+"pos": "l"
+},
+{
+"t": "say",
+"id": "c2_0153",
+"who": "kirishima",
+"text": "\"Mizuno. Good kote. You drop your left shoulder before men. Fix it.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_surprised",
+"pos": "r"
+},
+{
+"t": "say",
+"id": "c2_0154",
+"who": "natsuki",
+"text": "\"Yes, Captain.\""
+},
+{
+"t": "say",
+"id": "c2_0155",
+"who": "kirishima",
+"text": "\"Fujisawa.\""
+},
+{
+"t": "say",
+"id": "c2_0156",
+"who": "kohei",
+"text": "\"Captain.\"",
+"face": "kendo_neutral"
+},
+{
+"t": "show",
+"who": "kirishima",
+"spr": "kirishima_kendo_stern"
+},
+{
+"t": "say",
+"id": "c2_0157",
+"who": "kirishima",
+"text": "\"You stopped for half a second. Don't.\""
+},
+{
+"t": "say",
+"id": "c2_0158",
+"who": "kohei",
+"text": "\"…Yes, Captain.\"",
+"face": "kendo_serious"
+},
+{
+"t": "hide",
+"who": "kirishima"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_grin"
+},
+{
+"t": "nar",
+"id": "c2_0159",
+"text": "He moves on down the line. Mizuno leans over before I can get up, her face still flushed from the men."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_smirk"
+},
+{
+"t": "say",
+"id": "c2_0160",
+"who": "natsuki",
+"text": "\"You didn't let me have that point, did you?\""
+},
+{
+"t": "say",
+"id": "c2_0161",
+"who": "kohei",
+"text": "\"No.\"",
+"face": "kendo_neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_grin"
+},
+{
+"t": "say",
+"id": "c2_0162",
+"who": "natsuki",
+"text": "\"I know. That's why I'm so happy.\""
+},
+{
+"t": "nar",
+"id": "c2_0163",
+"text": "Pure, clean joy at having hit someone on the wrist with a stick. I understand it completely."
+},
+{
+"t": "show",
+"who": "takatsuki",
+"spr": "takatsuki_kendo_calm",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c2_0164",
+"who": "takatsuki",
+"text": "\"That was debana-kote.\""
+},
+{
+"t": "say",
+"id": "c2_0166",
+"who": "takatsuki",
+"text": "\"You did not take his feint, and you were on his wrist the moment he lifted. I have faced Fujisawa for a year. I have never once been there first.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_laugh"
+},
+{
+"t": "say",
+"id": "c2_0167",
+"who": "natsuki",
+"text": "\"New-girl luck. It wears off by Friday.\""
+},
+{
+"t": "say",
+"id": "c2_0168",
+"who": "takatsuki",
+"text": "\"Luck is not a technique.\""
+},
+{
+"t": "nar",
+"id": "c2_0169",
+"text": "She laughs again and finds something on her hakama that needs fixing."
+},
+{
+"t": "say",
+"id": "c2_0300",
+"who": "takatsuki",
+"text": "\"Also, you laughed inside your men after the point. That was the part of zanshin you left out.\""
+},
+{
+"t": "say",
+"id": "c2_0170",
+"who": "takatsuki",
+"text": "\"And Fujisawa. Your left foot was forward on that dō.\""
+},
+{
+"t": "say",
+"id": "c2_0171",
+"who": "kohei",
+"text": "\"It scored.\"",
+"face": "kendo_neutral"
+},
+{
+"t": "say",
+"id": "c2_0172",
+"who": "takatsuki",
+"text": "\"Yes.\""
+},
+{
+"t": "hideall"
+},
+{
+"t": "scene",
+"id": "c2_mop",
+"title": "The mop race"
+},
+{
+"t": "bg",
+"name": "bg_dojo_evening",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c2_0174",
+"text": "Until the first-years join, the floor belongs to whoever stays after practice. It's usually me."
+},
+{
+"t": "nar",
+"id": "c2_0175",
+"text": "Today, Mizuno stays too."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_grin",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c2_0176",
+"who": "natsuki",
+"text": "\"New member. I'm supposed to do the grunt work, right?\""
+},
+{
+"t": "say",
+"id": "c2_0177",
+"who": "kohei",
+"text": "\"First-years are supposed to do the grunt work.\"",
+"face": "kendo_neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_smile"
+},
+{
+"t": "say",
+"id": "c2_0178",
+"who": "natsuki",
+"text": "\"Then I'm a spiritual first-year. Hand me a rag.\""
+},
+{
+"t": "nar",
+"id": "c2_0179",
+"text": "We do the floor the old way: wet {zōkin|floor cloths}, both hands flat on the wood, running bent double down the length of the dojo and back. She's fast at it. She's also, I notice, trying to beat me to the far wall."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_grin"
+},
+{
+"t": "say",
+"id": "c2_0180",
+"who": "natsuki",
+"text": "\"Fujisawa! Race you!\""
+},
+{
+"t": "say",
+"id": "c2_0181",
+"who": "kohei",
+"text": "\"It's not a race.\"",
+"face": "kendo_deadpan"
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c2_0182",
+"text": "She's already gone."
+},
+{
+"t": "nar",
+"id": "c2_0183",
+"text": "I go after her. Of course I go after her."
+},
+{
+"t": "nar",
+"id": "c2_0184",
+"text": "The light has gone long and orange through the high windows. The wet floor shines. Our feet slap on the wood, and she's laughing, and I'm almost laughing, and we hit the far wall at the same moment and turn—"
+},
+{
+"t": "sfx",
+"name": "slip"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_surprised",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c2_0185",
+"who": "natsuki",
+"text": "\"Ah—!\""
+},
+{
+"t": "nar",
+"id": "c2_0186",
+"text": "Her heel goes out from under her on the wet floor."
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "anim",
+"name": "cg_catch"
+},
+{
+"t": "bgm",
+"name": "memory"
+},
+{
+"t": "nar",
+"id": "c2_0188",
+"text": "I catch her."
+},
+{
+"t": "nar",
+"id": "c2_0189",
+"text": "One arm behind her back, my other hand around her forearm. Her weight comes down, and I hold it."
+},
+{
+"t": "nar",
+"id": "c2_0191",
+"text": "Her face is close. Close enough to see the sweat at her hairline, a strand of hair stuck to her cheek, the moment she breathes in."
+},
+{
+"t": "nar",
+"id": "c2_0192",
+"text": "I'm aware of exactly where my hand is on her back."
+},
+{
+"t": "nar",
+"id": "c2_0193",
+"text": "And she's crying."
+},
+{
+"t": "nar",
+"id": "c2_0194",
+"text": "One tear, sliding from the corner of her eye down her cheek. Her eyes are wide and confused, like she doesn't know where it came from either."
+},
+{
+"t": "say",
+"id": "c2_0195",
+"who": "kohei",
+"text": "\"…Mizuno?\"",
+"face": "kendo_surprised"
+},
+{
+"t": "say",
+"id": "c2_0196",
+"who": "natsuki",
+"text": "\"Ah—\""
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_tears",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c2_0197",
+"text": "She's up and out of my arms in one movement, wiping her face with her sleeve."
+},
+{
+"t": "say",
+"id": "c2_0198",
+"who": "natsuki",
+"text": "\"What— ugh, sorry. Sorry. That's so weird.\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_blush"
+},
+{
+"t": "say",
+"id": "c2_0199",
+"who": "natsuki",
+"text": "\"Allergies. It's allergies. Cedar pollen. Kanagawa's full of cedar, right?\""
+},
+{
+"t": "say",
+"id": "c2_0200",
+"who": "kohei",
+"text": "\"…It's April.\"",
+"face": "kendo_deadpan"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_grin"
+},
+{
+"t": "say",
+"id": "c2_0201",
+"who": "natsuki",
+"text": "\"Late bloomers. They're real. Look it up.\""
+},
+{
+"t": "nar",
+"id": "c2_0202",
+"text": "She laughs, too loud, and the laugh goes up into the high ceiling and comes back thin."
+},
+{
+"t": "nar",
+"id": "c2_0203",
+"text": "I should say something. Make a joke. Let her off the hook."
+},
+{
+"t": "nar",
+"id": "c2_0204",
+"text": "I can't find one."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_smile"
+},
+{
+"t": "say",
+"id": "c2_0205",
+"who": "natsuki",
+"text": "\"…Thanks for catching me, by the way.\""
+},
+{
+"t": "say",
+"id": "c2_0206",
+"who": "kohei",
+"text": "\"Yeah. You too. I mean— you're welcome.\"",
+"face": "kendo_flustered"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_curious"
+},
+{
+"t": "say",
+"id": "c2_0207",
+"who": "natsuki",
+"text": "\"Are your ears always that red?\""
+},
+{
+"t": "say",
+"id": "c2_0298",
+"who": "kohei",
+"text": "\"…No.\"",
+"face": "kendo_flustered"
+},
+{
+"t": "nar",
+"id": "c2_0209",
+"text": "She laughs again. It sounds more like her this time."
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c2_0210",
+"text": "We finish the floor. We don't race."
+},
+{
+"t": "scene",
+"id": "c2_bridge",
+"title": "The bridge at dusk"
+},
+{
+"t": "bg",
+"name": "bg_bridge_dusk",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "natsuki"
+},
+{
+"t": "nar",
+"id": "c2_0211",
+"text": "Her apartment's by the station. My house is the other way, up toward the hills. The river's where our routes split, so we walk as far as the bridge together."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c2_0212",
+"text": "The streetlights are coming on along the railing, one at a time. The mountains have gone dark blue. Under us, the river's catching the last orange of the sky."
+},
+{
+"t": "nar",
+"id": "c2_0213",
+"text": "She stops halfway across and takes a picture of it with her phone. Then one of the railing. Then one of a crow on a lamppost, which looks offended."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0214",
+"who": "natsuki",
+"text": "\"I take pictures of every town I live in.\""
+},
+{
+"t": "say",
+"id": "c2_0215",
+"who": "kohei",
+"text": "\"Why?\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_wistful"
+},
+{
+"t": "say",
+"id": "c2_0216",
+"who": "natsuki",
+"text": "\"So I have proof I was there.\""
+},
+{
+"t": "nar",
+"id": "c2_0217",
+"text": "She leans her elbows on the railing, over the water."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_laugh"
+},
+{
+"t": "say",
+"id": "c2_0218",
+"who": "natsuki",
+"text": "\"It's mostly vending machines.\""
+},
+{
+"t": "nar",
+"id": "c2_0219",
+"text": "A train goes by toward the station, a bright little chain of windows."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0220",
+"who": "natsuki",
+"text": "\"Hey. Fujisawa.\""
+},
+{
+"t": "say",
+"id": "c2_0221",
+"who": "kohei",
+"text": "\"Mm.\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0222",
+"who": "natsuki",
+"text": "\"If you ever want extra practice. Mornings, weekends, whenever. I'm around.\""
+},
+{
+"t": "nar",
+"id": "c2_0223",
+"text": "She's looking hard at the river."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_blush"
+},
+{
+"t": "say",
+"id": "c2_0224",
+"who": "natsuki",
+"text": "\"I just mean it was a good match. I haven't had one like that in a long time.\""
+},
+{
+"t": "say",
+"id": "c2_0225",
+"who": "kohei",
+"text": "\"I work Tuesdays and Thursdays. And Sundays.\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0226",
+"who": "natsuki",
+"text": "\"Right. You told me. Forget it, it was a random thought.\""
+},
+{
+"t": "nar",
+"id": "c2_0227",
+"text": "It wasn't. She's been carrying it since the dojo, like a cup filled too full."
+},
+{
+"t": "nar",
+"id": "c2_0228",
+"text": "So I say the only thing I've got."
+},
+{
+"t": "say",
+"id": "c2_0229",
+"who": "kohei",
+"text": "\"Saturday mornings. Club practice. You'll be there?\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_surprised"
+},
+{
+"t": "say",
+"id": "c2_0230",
+"who": "natsuki",
+"text": "\"…\""
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smirk"
+},
+{
+"t": "say",
+"id": "c2_0231",
+"who": "natsuki",
+"text": "\"Depends.\""
+},
+{
+"t": "say",
+"id": "c2_0232",
+"who": "kohei",
+"text": "\"On what?\"",
+"face": "surprised"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious"
+},
+{
+"t": "say",
+"id": "c2_0233",
+"who": "natsuki",
+"text": "\"Tell me one thing you do for fun.\""
+},
+{
+"t": "nar",
+"id": "c2_0234",
+"text": "I think about it for longer than I'd like her to see."
+},
+{
+"t": "say",
+"id": "c2_0235",
+"who": "kohei",
+"text": "\"…Saturday afternoons are free.\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious"
+},
+{
+"t": "say",
+"id": "c2_0236",
+"who": "natsuki",
+"text": "\"Doing what?\""
+},
+{
+"t": "say",
+"id": "c2_0237",
+"who": "kohei",
+"text": "\"Carrying trash bags up at a shrine.\"",
+"face": "neutral"
+},
+{
+"t": "nar",
+"id": "c2_0238",
+"text": "She looks at me for a long second, like she's waiting for the rest of the joke."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_laugh"
+},
+{
+"t": "say",
+"id": "c2_0239",
+"who": "natsuki",
+"text": "\"That's what you do for fun?\""
+},
+{
+"t": "say",
+"id": "c2_0240",
+"who": "kohei",
+"text": "\"It's what I do on Saturday afternoons.\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0241",
+"who": "natsuki",
+"text": "\"Okay. That's my project, then.\""
+},
+{
+"t": "say",
+"id": "c2_0242",
+"who": "kohei",
+"text": "\"What is?\"",
+"face": "surprised"
+},
+{
+"t": "nar",
+"id": "c2_0243",
+"text": "She doesn't answer. She's looking past me, up at the hill, where the Ōzakura is a pale smudge against the dark trees, still holding the last of the light."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_curious"
+},
+{
+"t": "say",
+"id": "c2_0244",
+"who": "natsuki",
+"text": "\"Is that the shrine? With the big tree?\""
+},
+{
+"t": "say",
+"id": "c2_0245",
+"who": "kohei",
+"text": "\"That's the Ōzakura.\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_grin"
+},
+{
+"t": "say",
+"id": "c2_0246",
+"who": "natsuki",
+"text": "\"I've been wanting to photograph that thing since Monday.\""
+},
+{
+"t": "nar",
+"id": "c2_0247",
+"text": "She backs away down the far side of the bridge, still grinning, and waves her whole arm over her head like I'm on the other side of a stadium."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_school_laugh"
+},
+{
+"t": "say",
+"id": "c2_0248",
+"who": "natsuki",
+"text": "\"See you tomorrow, Fujisawa!\""
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c2_0249",
+"text": "I watch her go until she's gone under the streetlights."
+},
+{
+"t": "nar",
+"id": "c2_0250",
+"text": "Halfway up the hill, it occurs to me that something's been decided, and I wasn't the one who decided it."
+},
+{
+"t": "nar",
+"id": "c2_0301",
+"text": "When I get to the house, the light's on in Nanoha's window across the gap."
+},
+{
+"t": "nar",
+"id": "c2_0251",
+"text": "It's only trash bags."
+},
+{
+"t": "scene",
+"id": "c2_interlude",
+"title": "Natsuki: the apartment"
+},
+{
+"t": "mode",
+"mode": "interlude",
+"label": "Interlude: Natsuki"
+},
+{
+"t": "bg",
+"name": "bg_natsuki_apartment_night",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "night"
+},
+{
+"t": "nar",
+"id": "c2_0252",
+"text": "The apartment was dark when Natsuki let herself in. It usually was."
+},
+{
+"t": "nar",
+"id": "c2_0253",
+"text": "There was a note on the counter in her mother's handwriting: curry in the fridge, back late, proud of you. Her mother wrote \"proud of you\" every first week. Natsuki had never asked what for."
+},
+{
+"t": "nar",
+"id": "c2_0254",
+"text": "Her father was in Yokohama until Friday."
+},
+{
+"t": "nar",
+"id": "c2_0255",
+"text": "She ate the curry standing up. Then she sat on the floor between the boxes that hadn't been unpacked yet. They said SAPPORO in marker, crossed out, and SENDAI, crossed out, and SHIRASAWA underneath in newer marker."
+},
+{
+"t": "nar",
+"id": "c2_0256",
+"text": "The little paper flag was still in her blazer pocket from last night. She stood it up in the pen cup on the low table."
+},
+{
+"t": "nar",
+"id": "c2_0257",
+"text": "Six schools. You learned names fast. You laughed first. You said yes to karaoke. You didn't buy anything that wouldn't fit in a box."
+},
+{
+"t": "nar",
+"id": "c2_0258",
+"text": "She had a line for it, for when people asked about the moves. She tried it out loud, to see if it still worked."
+},
+{
+"t": "say",
+"id": "c2_0259",
+"who": "natsuki",
+"text": "\"I'm amazing at first days. It's the second semesters I never get to.\"",
+"face": "school_smile"
+},
+{
+"t": "nar",
+"id": "c2_0260",
+"text": "It still worked. It always got a laugh. It just didn't get one from her."
+},
+{
+"t": "nar",
+"id": "c2_0261",
+"text": "She took out her phone and opened the chat at the top, the one pinned so long it had its own little gray tab. Chie."
+},
+{
+"t": "phone",
+"id": "c2_0262",
+"who": "me",
+"text": "first official kendo practice at the new school"
+},
+{
+"t": "phone",
+"id": "c2_0263",
+"who": "chie",
+"text": "AND???"
+},
+{
+"t": "phone",
+"id": "c2_0264",
+"who": "me",
+"text": "there's a guy"
+},
+{
+"t": "phone",
+"id": "c2_0265",
+"who": "chie",
+"text": "oh no"
+},
+{
+"t": "phone",
+"id": "c2_0266",
+"who": "me",
+"text": "not like that!!! he's good. like scary good"
+},
+{
+"t": "phone",
+"id": "c2_0267",
+"who": "me",
+"text": "i knew what he was going to do before he did it. every time"
+},
+{
+"t": "phone",
+"id": "c2_0302",
+"who": "me",
+"text": "except the last one. didn't see that one at all"
+},
+{
+"t": "phone",
+"id": "c2_0268",
+"who": "chie",
+"text": "ok that's actually kind of hot"
+},
+{
+"t": "phone",
+"id": "c2_0269",
+"who": "me",
+"text": "CHIE"
+},
+{
+"t": "phone",
+"id": "c2_0270",
+"who": "me",
+"text": "also i cried on him"
+},
+{
+"t": "phone",
+"id": "c2_0271",
+"who": "chie",
+"text": "NATSUKI"
+},
+{
+"t": "phone",
+"id": "c2_0272",
+"who": "me",
+"text": "pollen!!!!!"
+},
+{
+"t": "phone",
+"id": "c2_0273",
+"who": "chie",
+"text": "it's april"
+},
+{
+"t": "phone",
+"id": "c2_0274",
+"who": "me",
+"text": "why does everyone keep saying that"
+},
+{
+"t": "phone",
+"id": "c2_0275",
+"who": "chie",
+"text": "are you ok tho. for real"
+},
+{
+"t": "nar",
+"id": "c2_0276",
+"text": "Natsuki looked at that last message for a long time."
+},
+{
+"t": "nar",
+"id": "c2_0277",
+"text": "She didn't know why she'd cried. The fall, probably. First-week nerves."
+},
+{
+"t": "nar",
+"id": "c2_0278",
+"text": "The match was harder to explain. She'd fought people for nine years; you learned to read shoulders and feet, where the weight went before the sword did, and she'd watched him all through the drills. That should have covered it."
+},
+{
+"t": "nar",
+"id": "c2_0279",
+"text": "It didn't feel like it covered it, and she didn't like that."
+},
+{
+"t": "nar",
+"id": "c2_0280",
+"text": "Chie had been her best friend in fourth grade, and again last year, when her dad's work had swung them back through Sendai like a pendulum. Chie was the only person she'd ever managed to keep. Birthday calls. A box of {zunda mochi|sweet green soybean rice cakes} every New Year."
+},
+{
+"t": "nar",
+"id": "c2_0281",
+"text": "Chie was also more than two hundred miles away."
+},
+{
+"t": "nar",
+"id": "c2_0282",
+"text": "And there was Nanoha, who said \"I'm working up to it\" and meant it, and who had walked her all the way home on Monday without being asked. Natsuki liked her."
+},
+{
+"t": "nar",
+"id": "c2_0283",
+"text": "That was its own small problem. She put it away to look at later, with everything else that wouldn't fit in a box."
+},
+{
+"t": "phone",
+"id": "c2_0284",
+"who": "me",
+"text": "yeah i'm good! made a friend. a real one i think. she gave me the tour on monday and showed me the vending machine that eats coins"
+},
+{
+"t": "phone",
+"id": "c2_0285",
+"who": "chie",
+"text": "that's my girl"
+},
+{
+"t": "phone",
+"id": "c2_0286",
+"who": "chie",
+"text": "go to sleep. send me pics of the cherry trees"
+},
+{
+"t": "phone",
+"id": "c2_0287",
+"who": "me",
+"text": "ok ok. night!!"
+},
+{
+"t": "nar",
+"id": "c2_0288",
+"text": "Natsuki put the phone down and went out onto the little balcony."
+},
+{
+"t": "nar",
+"id": "c2_0289",
+"text": "The street outside ran along the river under a row of cherry trees, white under the streetlights."
+},
+{
+"t": "nar",
+"id": "c2_0290",
+"text": "She took eleven pictures. She sent Chie the best one."
+},
+{
+"t": "nar",
+"id": "c2_0291",
+"text": "The other ten she kept."
+},
+{
+"t": "mode",
+"mode": "normal"
+},
+{
+"t": "bgm",
+"name": null
+},
+{
+"t": "bg",
+"name": "black",
+"tr": "slow"
+},
+{
+"t": "wait",
+"s": 1.0
+},
+{
+"t": "endchapter",
+"n": 2
 }
 ],
 "notes": {
@@ -2461,6 +4839,21 @@
 "fusuma": "A sliding door of thick paper over a wooden frame, used between rooms in a Japanese house.",
 "kinpira": "Kinpira gobō: thin strips of burdock root and carrot, stir-fried, then cooked down in soy sauce, sugar and mirin (sweet rice wine). A classic make-ahead side dish that keeps for several days.",
 "taiyaki": "A fish-shaped griddle cake (the name means \"baked sea bream\"), usually filled with sweet red-bean paste and sold hot from street stalls. Whether to start with the head or the tail is an old argument in Japan.",
-"shodan": "First dan, the first rank above the beginner grades in kendo, earned at a formal grading exam (kendo has no belts; the rank comes as a certificate). Serious high-school players usually hold first or second dan."
+"shodan": "First dan, the first rank above the beginner grades in kendo, earned at a formal grading exam (kendo has no belts; the rank comes as a certificate). Serious high-school players usually hold first or second dan.",
+"hakama": "Wide, pleated trousers worn over the practice jacket in kendo and other traditional martial arts. They're tied with long cords that wrap around the waist and knot at the front.",
+"suburi": "Practice swings with the bamboo sword, done in the air, usually dozens or hundreds at a time to warm up and drill clean form.",
+"keikogi": "The thick cotton jacket worn for kendo practice, usually dyed indigo. The dye fades with years of washing.",
+"shinai": "The bamboo practice sword used in kendo: four slats of bamboo bound with leather and cord, about the length of a real sword.",
+"ki-ken-tai-itchi": "\"Spirit, sword and body as one\": in kendo, a point needs the shout, the strike and the stamp of the front foot to land at the same instant.",
+"zanshin": "Literally \"remaining mind\": staying alert and ready after a strike. In a match, a strike without it doesn't count.",
+"kamae": "A kendo stance, especially the basic one with the sword tip held at the opponent's throat.",
+"bogu": "Kendo armor: the helmet (men), padded gloves (kote), chest protector (dō) and a waist guard (tare).",
+"men": "The kendo helmet, with a steel grille over the face and padded flaps over the shoulders. It's also the name of the strike to the top of the head.",
+"tenugui": "A thin cotton cloth tied over the hair under the kendo helmet, to soak up sweat and keep the helmet snug.",
+"kirikaeshi": "A basic kendo drill: a big strike to the head, then a fast run of alternating strikes to the left and right side of the head while stepping forward and back, all at full voice.",
+"waza": "Technique. In kendo, waza drills practice specific attacks and counters with a partner.",
+"shiai-geiko": "Practice matches: a real kendo match fought in practice, with someone calling the points.",
+"zōkin": "A cleaning rag, usually a folded and stitched towel. Japanese schools clean their own floors, and dojos are wiped down by hand.",
+"zunda mochi": "Rice cakes covered in a sweet, bright-green paste of mashed edamame; a specialty of Sendai."
 }
 }

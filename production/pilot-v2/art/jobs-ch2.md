@@ -52,3 +52,16 @@
 | cg_catch animated moment (Kling v3 Pro, 3 s, start 452 → end 441) | kling-video/v3/pro/image-to-video | 01a170e7-4b76-7350-90aa-7153f7566265 |
 | ins_match retakes (no balloon reservations): p1-2 470, p1-3 471, p2-1 472, p2-2 473, p2-5 474, p3-1 475, p3-2 476 | nano-banana-pro/edit | 01a170ea-7770-79a3-b2f5-b9606f337366, 01a170ea-7771-7e93-a027-2f52a1358a7e, 01a170ea-7771-72a1-beb3-21710e891a32, 01a170ea-7771-71d2-8ab6-2323cfa2f55a, 01a170ea-7772-7870-bedf-474992dd87e3, 01a170ea-77b1-7332-ab7d-3ca12fcb0437, 01a170ea-77ac-7df3-b799-3f795661119b |
 | ins_match retakes 2: p2-5 484 (sonkyo), p3-1 485 (no inset) | nano-banana-pro/edit | 01a170ec-f6a2-7c11-b2da-ccf2bbbc08a9, 01a170ec-f6a4-7c93-9b1f-03d8650dad72 |
+| Kling animated catch (first take, superseded Oct 24 after the on-model check) | kling-video/v3/pro/image-to-video | (above) |
+| cg_catch hair edit, head crop, seeds 491/492 (too timid, unused) | fal-ai/nano-banana-pro/edit | 01a17105-0584-76b0-b6a7-cc4045b6f0d7, 01a17105-0584-7500-8501-4930dd0e4e1c |
+| cg_catch hair edit with the short-A head crop, seeds 493 (picked)/494 | fal-ai/nano-banana-pro/edit | 01a1710b-4b97-7813-8c0d-f31c1c935c50, 01a1710b-4b99-71f1-9d0c-f3dfe0629702 |
+| Natsuki kendo ponytail top outpaint, seeds 501/502 (picked) | fal-ai/nano-banana-pro/edit | 01a1710d-00cd-7002-af24-2d787754dc91, 01a1710d-0152-72d2-a886-ed96bca6b0a8 |
+| Natsuki teach ponytail top outpaint, seeds 503/504 (unused: the kendo top was mapped in instead) | fal-ai/nano-banana-pro/edit | 01a1710d-0149-74f1-ab64-425eb8c69d4c, 01a1710d-014c-7ca0-be74-d42944d4692b |
+| cg_catch start frame v2, seeds 511 (picked)/512 | fal-ai/nano-banana-pro/edit | 01a17118-2461-7d52-bd81-c6ce9cf1ed51, 01a17118-249f-7cf3-9479-c43dcd5ae0c1 |
+| ins_match p1-1 reroll, seeds 521 (picked)/522 | fal-ai/nano-banana-pro/edit | 01a17119-4d61-70c2-8e75-61c05cae3d6b, 01a17119-4d96-7063-8588-0dc678f458d5 |
+| ins_match p2-1 reroll, seeds 523/524 | fal-ai/nano-banana-pro/edit | 01a17119-4d9f-7103-8fd6-4734d114c762, 01a17119-4d9e-79b0-bdea-6bf8208b45a2 |
+| ins_match p2-4 face-A edit, seeds 525 (picked)/526 | fal-ai/nano-banana-pro/edit | 01a17119-4da3-75d2-9d79-441a017c60e2, 01a17119-4d9b-76e2-b065-df519782902d |
+| ins_match p2-1 from p1-3, seeds 531/532 | fal-ai/nano-banana-pro/edit | 01a17121-6afd-7b30-a301-bd4f89078bb9, 01a17121-6afb-7512-887d-2add6e0ea549 |
+| ins_match p2-1 impact edit on 523, seeds 541/542 | fal-ai/nano-banana-pro/edit | 01a17125-7be0-7573-b7ba-739578f4d8fb, 01a17125-7bdf-70c3-ad69-3fa097959bc7 |
+| ins_match p2-1 hands at chin height, seeds 551 (picked)/552 | fal-ai/nano-banana-pro/edit | 01a17126-9086-7521-9607-6f025cac2402, 01a17126-9080-7e50-a445-0a86ad345ddd |
+| cg_catch animated moment v2 (Kling v3 Pro, 3 s, start 511 → end the fixed CG), takes 1 (picked)/2 | kling-video/v3/pro/image-to-video | 01a1711b-bf05-7100-8fe8-4cf1ebc977ec, 01a1711b-bf80-7bf0-957c-e746e25fbfb8 |

@@ -243,6 +243,18 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
   - New faces: Nanoha's `dry` (a deadpan joke with a hidden smile) and Natsuki's `curious`; deadpan and smirk now go on punchlines only (style guide §3).
   - Natsuki's face A and her new voice (Zephyr, brighter direction, +1 semitone) are author decisions, not [P].
 
+### v2 Ch2 "Kendo", Oct 24: new provisional details [P]
+Production thread; the line-by-line list is in `production/pilot-v2/reviews/ch2/continuity.md` ("New [P] details"), the handover in `reviews/ch2/handover-oct25.md`.
+- **Hoshino Kitchen:** closes at 9; Tuesday shift 5:30 to close; Kōhei on dish pit, drink bar and register; numbered tables, a window booth, a noisy dishwasher, an automatic door; the brown apron with a cartoon chef on the pocket, tied like a hakama. The manager mistakes Natsuki for staff ("Lifesaver" ×9). Kōhei's work clothes are drawn as a T-shirt and bib apron (style guide §2 says white shirt and waist apron; the author picks).
+- **Home:** on shift nights Akane's dinner waits in the fridge with a note, and she texts a photo of the empty container at seven.
+- **Natsuki at the restaurant:** with five 2-B girls after karaoke ("everybody gets the strawberry parfait"); the kids' plate isn't ID-checked; she photographs it from three angles and keeps the paper flag (later in her pen cup).
+- **Town:** the mountain looks walkable from the station; a taiyaki stand at the north exit (good red bean, burnt custard); the convenience-store drink fridge that freezes everything; the lower river path floods in June, herons on the bike racks; the bridge lies between the station and his hill, with streetlights along the railing and trains toward the station; the Ōzakura shows at dusk as a small pale tree on the hill.
+- **Club:** practices run two hours; Takatsuki does suburi alone before them; Kōhei's hakama knot has been off center for a year, and he and Takatsuki have trained together that long; Kirishima quiets a room without raising his voice; the session order (warm-ups, kirikaeshi, waza, break, shiai-geiko); a schedule whiteboard by the door and a lost-and-found box (Natsuki's borrowed glasses); first-years mop, Kōhei usually stays.
+- **Kendo details:** form faults (Kōhei's low left heel, wandering tip, men from the wrong distance, left foot forward on dō; Natsuki's dropped left shoulder before men); the practice match ends 1–1, kote then nuki-dō, on time.
+- **Rika:** her art-club assignment is "People in motion."
+- **Natsuki:** "my bow is excellent"; she photographs every town she lives in, "mostly vending machines"; she's wanted to photograph the Ōzakura since Monday; she offers extra practice "mornings, weekends." Home: her mother's first-week notes ("curry in the fridge, back late, proud of you"); her father in Yokohama until Friday; unpacked boxes labeled SAPPORO→SENDAI→SHIRASAWA; Chie's pinned chat and their birthday calls; a small balcony over a cherry-lined street that runs along the river; eleven photos, one sent.
+- **Production:** the match insert runs 3 pages (the outline said 2) so the dō is a page-turn reveal; the opening panel shows them crouched at the line (not full sonkyo); the kote panel has his hands at chin height as he starts to lift; the classmate at the restaurant is voiced by Callirrhoe (for the Audio thread); Natsuki's teach sprite holds the shinai up past her head.
+
 ## 4. Address guide
 **Superseded Oct 17 by style guide §3c** (address forms, Japanese pronouns and the planned name changes). The pilot's table matched it except: Sōta is now Mio ("Kō-nii" kept), and Kōhei teases Nanoha as "Chibi."
 

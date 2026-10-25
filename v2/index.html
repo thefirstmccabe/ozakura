@@ -565,7 +565,8 @@ function setBg(name, tr){
 const cgLive=$('#cgLive');
 function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
 function liveOn(name, delay, cut){
-  if(cut){ cgLive.style.transition='none'; } liveOff(); void cgLive.offsetWidth; cgLive.style.transition='';   // a cut drops the old living still at once (Safari kept its last frame through the fade) if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
+  if(cut){ cgLive.style.transition='none'; } liveOff(); void cgLive.offsetWidth; cgLive.style.transition='';   // a cut drops the old living still at once (Safari kept its last frame through the fade)
+  if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
   cgLive.src=LIVE[name]; cgLive.muted=true;
   cgLive.onplaying=()=>{ if(tok===setCg.tok) setTimeout(()=>{ if(tok===setCg.tok) cgLive.classList.add('on'); }, delay); };
   const p=cgLive.play(); if(p&&p.catch) p.catch(()=>{});      // if autoplay is refused, the still simply stays
