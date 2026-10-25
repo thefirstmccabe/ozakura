@@ -16,7 +16,7 @@ Split points: by default one part per scene. Pass --split scene_a,scene_b,... to
 Usage: python3 reader_view.py OUT_DIR src1.ozs [src2.ozs ...] [--split ids] [--cg-dir v2/img/bg]
        With --cg-dir, every CG the script shows is copied into OUT_DIR as a JPG (1280 px long side).
 """
-import argparse, os, re, sys
+import argparse, json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from compile_script import SPEAKERS, split_id, read_notes  # display names, kept in one place
@@ -119,9 +119,16 @@ if __name__ == "__main__":
     ap.add_argument("out"); ap.add_argument("src", nargs="+")
     ap.add_argument("--split", default="")
     ap.add_argument("--cg-dir", default="")
+    ap.add_argument("--planned", default="", help="JSON {cg name: description} for CGs not drawn yet (pre-art reads)")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     parts, cgs, alias = convert(a.src, set(filter(None, a.split.split(","))))
+    planned = json.load(open(a.planned, encoding="utf-8")) if a.planned else {}
+    def drawn(n):
+        return a.cg_dir and any(os.path.exists(os.path.join(a.cg_dir, n + e)) for e in (".webp", ".png", ".jpg"))
+    for n in dict.fromkeys(cgs):   # a CG that isn't drawn yet is described in words instead
+        if not drawn(n) and n in planned:
+            parts = [[l.replace(f"image file {alias[n]}.jpg", f"(not drawn yet; described) {planned[n]}") for l in p] for p in parts]
     for i, p in enumerate(parts, 1):
         open(os.path.join(a.out, f"part{i}.txt"), "w", encoding="utf-8").write("\n".join(p).strip() + "\n")
     if a.cg_dir:
@@ -130,8 +137,8 @@ if __name__ == "__main__":
             src = next((os.path.join(a.cg_dir, n + e) for e in (".webp", ".png", ".jpg") if os.path.exists(os.path.join(a.cg_dir, n + e))), None)
             if src:
                 im = Image.open(src).convert("RGB"); im.thumbnail((1280, 1280)); im.save(os.path.join(a.out, alias[n] + ".jpg"), quality=85)
-            else:
+            elif n not in planned:
                 print("missing CG:", n, file=sys.stderr)
-    import json  # the key stays outside the readers' folder
+    # the key stays outside the readers' folder
     json.dump(alias, open(a.out.rstrip("/") + ".cg-key.json", "w"), indent=1)
     print(f"{len(parts)} parts, {len(set(cgs))} CGs -> {a.out} (key: {a.out.rstrip('/')}.cg-key.json)")
