@@ -122,7 +122,7 @@ Every pointer, so the balance can be checked at a glance. Shared-past flashbacks
 
 | Ch | Toward Natsuki | Toward Nanoha | Neutral |
 |---|---|---|---|
-| 1 | Her falter and his pen grip; 水 on the inside of her wrist; she tries to place him | The collar scene's quiet rhyme with the dream's hands (Kōhei's half-link begins) | The cold open |
+| 1 | Her falter and his pen grip; 水 on the inside of her wrist; she tries to place him | The collar scene's quiet rhyme with the dream's hands (Kōhei's half-link begins) | The cold open; Kōhei at peace with a sword in his hand (his own past-life hint, Oct 24) |
 | 2 | She reads him in the match; the catch and the tear | | |
 | 3 | She reads him in sparring; she lowers her camera at his fragment [P] | The Ōzakura is her family's tree; the light; "…You came back" | |
 | 4 | "You worked a shift. Sit." [P] | FB1: the light was her childhood friend | |
