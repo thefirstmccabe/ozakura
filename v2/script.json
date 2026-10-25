@@ -476,7 +476,7 @@
 "t": "say",
 "id": "c1_0046",
 "who": "akane",
-"text": "\"Nanoha-chan brought kinpira!\""
+"text": "\"Nanoha-chan brought {kinpira|braised burdock}!\""
 },
 {
 "t": "hideall"
@@ -484,7 +484,7 @@
 {
 "t": "nar",
 "id": "c1_0047",
-"text": "I wrap the lunches. I knock twice on the fusuma."
+"text": "I wrap the lunches. I knock twice on the {fusuma|sliding door}."
 },
 {
 "t": "say",
@@ -2885,23 +2885,219 @@
 "text": "I finish the floor. I count out the register. I walk home up the hill."
 },
 {
-"t": "nar",
-"id": "c2_0057",
-"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about taiyaki and herons, to someone I met yesterday."
+"t": "bg",
+"name": "bg_houses_night",
+"tr": "fade"
 },
 {
 "t": "nar",
-"id": "c2_0299",
-"text": "There's a plastic container on the kitchen table when I get in, with a sticky note on the lid in Nanoha's handwriting. It says \"Again.\""
+"id": "c2_0057",
+"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about {taiyaki|fish-shaped cake} and herons, to someone I met yesterday."
+},
+{
+"t": "scene",
+"id": "c2_morning",
+"title": "Wednesday morning"
+},
+{
+"t": "card",
+"text": "Wednesday, April 9"
+},
+{
+"t": "bg",
+"name": "bg_fujisawa_kitchen",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "daily"
+},
+{
+"t": "nar",
+"id": "c2_0303",
+"text": "Wednesday. Two lunch boxes, the eggs, the last of the spinach. Akane is upstairs, losing an argument with her hair."
+},
+{
+"t": "sfx",
+"name": "door_slide"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_smile",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c2_0304",
+"who": "nanoha",
+"text": "\"Good morning. I'm coming in.\""
+},
+{
+"t": "nar",
+"id": "c2_0305",
+"text": "She sets a plastic container on the table."
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_dry"
+},
+{
+"t": "say",
+"id": "c2_0306",
+"who": "nanoha",
+"text": "\"Again.\""
+},
+{
+"t": "say",
+"id": "c2_0307",
+"who": "kohei",
+"text": "\"Morning. Tell your mom thanks.\"",
+"face": "smile"
+},
+{
+"t": "nar",
+"id": "c2_0308",
+"text": "It comes out rough. I clear my throat."
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_surprised"
+},
+{
+"t": "say",
+"id": "c2_0309",
+"who": "nanoha",
+"text": "\"You sound like you've been talking.\""
+},
+{
+"t": "say",
+"id": "c2_0310",
+"who": "kohei",
+"text": "\"I work at a restaurant.\"",
+"face": "deadpan"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_dry"
+},
+{
+"t": "say",
+"id": "c2_0311",
+"who": "nanoha",
+"text": "\"You work in the dish pit.\""
+},
+{
+"t": "nar",
+"id": "c2_0312",
+"text": "She has a point. The dishwasher only makes the one noise."
+},
+{
+"t": "say",
+"id": "c2_0313",
+"who": "kohei",
+"text": "\"Mizuno came in after karaoke, with some girls from class. She stayed till close.\"",
+"face": "neutral"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0314",
+"who": "nanoha",
+"text": "\"Mm.\""
+},
+{
+"t": "nar",
+"id": "c2_0315",
+"text": "She takes down two mugs without looking and bumps the drawer shut with her hip. Then she turns around and looks at me properly."
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_deadpan"
+},
+{
+"t": "say",
+"id": "c2_0316",
+"who": "nanoha",
+"text": "\"That one's new.\""
+},
+{
+"t": "say",
+"id": "c2_0317",
+"who": "kohei",
+"text": "\"A new what?\"",
+"face": "surprised"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_dry"
+},
+{
+"t": "say",
+"id": "c2_0318",
+"who": "nanoha",
+"text": "\"Face. I'll have to give it a number.\""
+},
+{
+"t": "say",
+"id": "c2_0319",
+"who": "kohei",
+"text": "\"What number?\"",
+"face": "smile"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0320",
+"who": "nanoha",
+"text": "\"I'll tell you when I've decided.\""
+},
+{
+"t": "nar",
+"id": "c2_0321",
+"text": "She sets something down next to my lunch box: a throat lozenge, the honey kind, still in its wrapper."
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_school_smile"
+},
+{
+"t": "say",
+"id": "c2_0322",
+"who": "nanoha",
+"text": "\"For the talking.\""
+},
+{
+"t": "hideall"
+},
+{
+"t": "nar",
+"id": "c2_0323",
+"text": "On the walk to school she's quiet for a while, which isn't unusual, and then for a little longer than that, which is."
+},
+{
+"t": "nar",
+"id": "c2_0324",
+"text": "Then she asks how many first-years the club is expecting, and we talk about that until the gates."
 },
 {
 "t": "scene",
 "id": "c2_dojo",
 "title": "First practice"
-},
-{
-"t": "card",
-"text": "Wednesday, April 9"
 },
 {
 "t": "bg",
@@ -2915,7 +3111,7 @@
 {
 "t": "nar",
 "id": "c2_0059",
-"text": "The dojo smells like it always does in April: old wood, old sweat, and the cedar walls warming up in the sun after a long winter."
+"text": "After school, the dojo smells like it always does in April: old wood, old sweat, and the cedar walls warming up in the sun after a long winter."
 },
 {
 "t": "nar",
@@ -2950,7 +3146,7 @@
 "t": "say",
 "id": "c2_0064",
 "who": "takatsuki",
-"text": "\"Your hakama is tied off center.\""
+"text": "\"Your {hakama|pleated kendo trousers} is tied off center.\""
 },
 {
 "t": "say",
@@ -3018,13 +3214,13 @@
 {
 "t": "nar",
 "id": "c2_0074",
-"text": "She's in a faded indigo {keikogi|kendo jacket} and hakama, her hair up in a long ponytail. The gi has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
+"text": "She's in a faded indigo {keikogi|kendo jacket} and {hakama|pleated kendo trousers}, her hair up in a long ponytail. The {gi|kendo jacket|keikogi} has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
 },
 {
 "t": "say",
 "id": "c2_0076",
 "who": "kirishima",
-"text": "\"Warm-ups and suburi. Bogu after the break.\""
+"text": "\"Warm-ups and {suburi|practice swings}. {Bogu|armor} after the break.\""
 },
 {
 "t": "say",
@@ -3131,15 +3327,15 @@
 "text": "\"Okay. Explain everything. All I know is you guys yell.\""
 },
 {
-"t": "nar",
-"id": "c2_0090",
-"text": "Two minutes later she's wiped the practice schedule off the whiteboard by the door, borrowed a pair of glasses from the lost-and-found box, and picked up a {shinai|bamboo practice sword} to point with."
-},
-{
 "t": "show",
 "who": "natsuki",
 "spr": "natsuki_teach_smile",
 "pos": "c"
+},
+{
+"t": "nar",
+"id": "c2_0090",
+"text": "Two minutes later Mizuno has wiped the practice schedule off the whiteboard by the door, borrowed a pair of glasses from the lost-and-found box, and picked up a {shinai|bamboo practice sword} to point with."
 },
 {
 "t": "say",
@@ -3244,6 +3440,21 @@
 "text": "\"So be afraid.\""
 },
 {
+"t": "cg",
+"name": "cg_whiteboard",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c2_0325",
+"text": "When she steps back, the stick figure has four targets on it, all labeled, and an expression of deep concern."
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
+},
+{
 "t": "show",
 "who": "rika",
 "spr": "rika_school_scheme"
@@ -3263,12 +3474,12 @@
 "t": "say",
 "id": "c2_0294",
 "who": "natsuki",
-"text": "\"Me-e-en!\""
+"text": "\"{Me-e-en!|Head!|men}\""
 },
 {
 "t": "nar",
 "id": "c2_0295",
-"text": "Her front foot stamps the floor in the same instant, and the shinai stops an inch short of the stick figure's head."
+"text": "Her front foot stamps the floor in the same instant, and the {shinai|bamboo practice sword} stops an inch short of the stick figure's head."
 },
 {
 "t": "show",
@@ -3491,7 +3702,7 @@
 {
 "t": "nar",
 "id": "c2_0124",
-"text": "I take kamae next to Takatsuki, and Mizuno walks a slow circle around me with the shinai, like a museum guide."
+"text": "I take {kamae|stance} next to Takatsuki, and Mizuno walks a slow circle around me with the {shinai|bamboo practice sword}, like a museum guide."
 },
 {
 "t": "show",
@@ -3502,7 +3713,7 @@
 "t": "say",
 "id": "c2_0125",
 "who": "natsuki",
-"text": "\"Left heel, a little low. The tip wanders. He hits men from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
+"text": "\"Left heel, a little low. The tip wanders. He hits {men|head strikes} from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
 },
 {
 "t": "show",
@@ -3537,7 +3748,7 @@
 "t": "say",
 "id": "c2_0130",
 "who": "takatsuki",
-"text": "\"Mizuno. For the record, your explanation of zanshin was incomplete.\""
+"text": "\"Mizuno. For the record, your explanation of {zanshin|staying alert after the strike} was incomplete.\""
 },
 {
 "t": "show",
@@ -3611,12 +3822,12 @@
 {
 "t": "nar",
 "id": "c2_0137",
-"text": "Mizuno faces me across the floor. Through the bars of her men I can see her eyes, and nothing else, and they're bright."
+"text": "Mizuno faces me across the floor. Through the bars of her {men|helmet} I can see her eyes, and nothing else, and they're bright."
 },
 {
 "t": "nar",
 "id": "c2_0138",
-"text": "We bow. We step in. We crouch at the line, shinai tips crossing."
+"text": "We bow. We step in. We crouch at the line, {shinai|bamboo practice sword} tips crossing."
 },
 {
 "t": "insert",
@@ -3640,7 +3851,7 @@
 {
 "t": "nar",
 "id": "c2_0140",
-"text": "I show her men. She doesn't even blink."
+"text": "I show her {men|a head strike}. She doesn't even blink."
 }
 ]
 },
@@ -3661,7 +3872,7 @@
 "t": "say",
 "id": "c2_0142",
 "who": "natsuki",
-"text": "\"Kote-e-e!\""
+"text": "\"{Kote-e-e!|Wrist!|kote}\""
 }
 ]
 },
@@ -3692,7 +3903,7 @@
 {
 "t": "nar",
 "id": "c2_0145",
-"text": "She's laughing behind her men."
+"text": "She's laughing behind her {men|helmet}."
 }
 ]
 },
@@ -3719,7 +3930,7 @@
 "t": "say",
 "id": "c2_0148",
 "who": "kohei",
-"text": "\"Dō-o-o!\""
+"text": "\"{Dō-o-o!|Body!|dō}\""
 }
 ]
 },
@@ -3753,6 +3964,10 @@
 "title": "One sentence each"
 },
 {
+"t": "bgm",
+"name": null
+},
+{
 "t": "bg",
 "name": "bg_dojo",
 "tr": "fade"
@@ -3760,7 +3975,7 @@
 {
 "t": "nar",
 "id": "c2_0152",
-"text": "Practice ends the way it starts, with a bow. Bogu off, we kneel in a line while Kirishima-senpai walks down it, saying one sentence to each of us."
+"text": "Practice ends the way it starts, with a bow. {Bogu|armor} off, we kneel in a line while Kirishima-senpai walks down it, saying one sentence to each of us."
 },
 {
 "t": "show",
@@ -3772,7 +3987,7 @@
 "t": "say",
 "id": "c2_0153",
 "who": "kirishima",
-"text": "\"Mizuno. Good kote. You drop your left shoulder before men. Fix it.\""
+"text": "\"Mizuno. Good {kote|wrist strike}. You drop your left shoulder before {men|head strikes}. Fix it.\""
 },
 {
 "t": "show",
@@ -3829,7 +4044,7 @@
 {
 "t": "nar",
 "id": "c2_0159",
-"text": "He moves on down the line. Mizuno leans over before I can get up, her face still flushed from the men."
+"text": "He moves on down the line. Mizuno leans over before I can get up, her face still flushed from the {men|helmet}."
 },
 {
 "t": "show",
@@ -3875,7 +4090,7 @@
 "t": "say",
 "id": "c2_0164",
 "who": "takatsuki",
-"text": "\"That was debana-kote.\""
+"text": "\"That was {debana-kote|a wrist strike as the attack starts|debana}.\""
 },
 {
 "t": "say",
@@ -3903,19 +4118,19 @@
 {
 "t": "nar",
 "id": "c2_0169",
-"text": "She laughs again and finds something on her hakama that needs fixing."
+"text": "She laughs again and finds something on her {hakama|pleated kendo trousers} that needs fixing."
 },
 {
 "t": "say",
 "id": "c2_0300",
 "who": "takatsuki",
-"text": "\"Also, you laughed inside your men after the point. That was the part of zanshin you left out.\""
+"text": "\"Also, you laughed inside your {men|helmet} after the point. That was the part of {zanshin|staying alert after the strike} you left out.\""
 },
 {
 "t": "say",
 "id": "c2_0170",
 "who": "takatsuki",
-"text": "\"And Fujisawa. Your left foot was forward on that dō.\""
+"text": "\"And Fujisawa. Your left foot was forward on that {dō|body strike}.\""
 },
 {
 "t": "say",
@@ -3946,7 +4161,7 @@
 {
 "t": "nar",
 "id": "c2_0174",
-"text": "Until the first-years join, the floor belongs to whoever stays after practice. It's usually me."
+"text": "Until the first-years join, whoever stays after practice cleans the floor. It's usually me."
 },
 {
 "t": "nar",
@@ -4295,7 +4510,7 @@
 "t": "say",
 "id": "c2_0218",
 "who": "natsuki",
-"text": "\"It's mostly vending machines.\""
+"text": "\"Sapporo is four hundred pictures of snow.\""
 },
 {
 "t": "nar",
@@ -4558,6 +4773,11 @@
 "text": "Halfway up the hill, it occurs to me that something's been decided, and I wasn't the one who decided it."
 },
 {
+"t": "bg",
+"name": "bg_houses_night_lit",
+"tr": "fade"
+},
+{
 "t": "nar",
 "id": "c2_0301",
 "text": "When I get to the house, the light's on in Nanoha's window across the gap."
@@ -4761,12 +4981,12 @@
 {
 "t": "nar",
 "id": "c2_0282",
-"text": "And there was Nanoha, who said \"I'm working up to it\" and meant it, and who had walked her all the way home on Monday without being asked. Natsuki liked her."
+"text": "And there was Nanoha, who had walked her all the way home on Monday without being asked. Natsuki liked her, and not the first-week way, where you like everyone."
 },
 {
 "t": "nar",
 "id": "c2_0283",
-"text": "That was its own small problem. She put it away to look at later, with everything else that wouldn't fit in a box."
+"text": "Nanoha lived next door to Fujisawa. Natsuki decided that was none of her business, and didn't quite believe herself."
 },
 {
 "t": "phone",
@@ -4843,16 +5063,19 @@
 "hakama": "Wide, pleated trousers worn over the practice jacket in kendo and other traditional martial arts. They're tied with long cords that wrap around the waist and knot at the front.",
 "suburi": "Practice swings with the bamboo sword, done in the air, usually dozens or hundreds at a time to warm up and drill clean form.",
 "keikogi": "The thick cotton jacket worn for kendo practice, usually dyed indigo. The dye fades with years of washing.",
+"bogu": "Kendo armor: the helmet (men), padded gloves (kote), chest protector (dō) and a waist guard (tare).",
 "shinai": "The bamboo practice sword used in kendo: four slats of bamboo bound with leather and cord, about the length of a real sword.",
+"men": "The kendo helmet, with a steel grille over the face and padded flaps over the shoulders. It's also the name of the strike to the top of the head.",
 "ki-ken-tai-itchi": "\"Spirit, sword and body as one\": in kendo, a point needs the shout, the strike and the stamp of the front foot to land at the same instant.",
 "zanshin": "Literally \"remaining mind\": staying alert and ready after a strike. In a match, a strike without it doesn't count.",
 "kamae": "A kendo stance, especially the basic one with the sword tip held at the opponent's throat.",
-"bogu": "Kendo armor: the helmet (men), padded gloves (kote), chest protector (dō) and a waist guard (tare).",
-"men": "The kendo helmet, with a steel grille over the face and padded flaps over the shoulders. It's also the name of the strike to the top of the head.",
 "tenugui": "A thin cotton cloth tied over the hair under the kendo helmet, to soak up sweat and keep the helmet snug.",
 "kirikaeshi": "A basic kendo drill: a big strike to the head, then a fast run of alternating strikes to the left and right side of the head while stepping forward and back, all at full voice.",
 "waza": "Technique. In kendo, waza drills practice specific attacks and counters with a partner.",
 "shiai-geiko": "Practice matches: a real kendo match fought in practice, with someone calling the points.",
+"kote": "The padded kendo gloves, and the strike to the wrist they protect (usually the right wrist). As a call, \"Kote!\" names the target as the strike lands.",
+"debana": "Striking at the very moment the opponent starts an attack, before it lands. Debana-kote is that strike to the wrist.",
+"dō": "The kendo chest protector, and the strike to the side of the body it protects. As a call, \"Dō!\" names the target as the strike lands.",
 "zōkin": "A cleaning rag, usually a folded and stitched towel. Japanese schools clean their own floors, and dojos are wiped down by hand.",
 "zunda mochi": "Rice cakes covered in a sweet, bright-green paste of mashed edamame; a specialty of Sendai."
 }

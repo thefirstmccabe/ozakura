@@ -20,7 +20,7 @@ VOICE.update({
 PLACE.update({"c2_tuesday": "a busy family restaurant at night", "c2_dojo": "a school kendo dojo before practice",
               "c2_lesson": "a school kendo dojo during a water break", "c2_match": "a kendo practice match",
               "c2_debrief": "a school kendo dojo right after a practice match", "c2_mop": "an empty kendo dojo in the evening, wiping the floor",
-              "c2_bridge": "a bridge over a river at dusk", "c2_interlude": "a quiet apartment at night"})
+              "c2_bridge": "a bridge over a river at dusk", "c2_morning": "a family kitchen early on a school morning", "c2_interlude": "a quiet apartment at night"})
 MOOD = {"smile": "smiling", "grin": "grinning, cheeky", "laugh": "laughing", "smirk": "smug, teasing", "surprised": "surprised",
         "blush": "embarrassed, flustered", "curious": "curious", "wistful": "soft and a little wistful", "tears": "flustered and embarrassed, laughing it off",
         "point": "explaining brightly, like a teacher", "calm": "calm", "stern": "stern and level", "neutral": "even, neutral", "deadpan": "deadpan, dry",
@@ -29,7 +29,10 @@ MOOD = {"smile": "smiling", "grin": "grinning, cheeky", "laugh": "laughing", "sm
 EXTRA = {"c2_0259": " She says it aloud to herself, alone, trying out a practiced joke about always moving schools: bright on the surface, a little hollow underneath.",
          "c2_0185": " She is slipping on a wet floor: a short, startled gasp.",
          "c2_0133": " Sheepish, caught out by the captain.", "c2_0135": " A small, dismayed echo of what the captain just said.",
-         "c2_0226": " Brushing it off quickly and lightly: a quick smile covering a little disappointment."}
+         "c2_0226": " Brushing it off quickly and lightly: a quick smile covering a little disappointment.",
+         "c2_0307": " His voice is a little hoarse this morning from talking a lot last night.",
+         "c2_0316": " She has just noticed something new in his face; quiet, matter-of-fact.",
+         "c2_0322": " Gentle and matter-of-fact, setting a throat lozenge down for him."}
 REF = " He is refereeing the match: a loud, clear, crisp call that carries across the dojo."
 KIAI = {"めぇぇんっ！", "こてぇぇっ！", "どぉぉっ！"}
 lines_path, src_path, prefix, out = sys.argv[1:5]

@@ -99,10 +99,10 @@ nanoha<surprised>: "You sound like you've been talking." || ……なんか、�
 kohei(deadpan): "I work at a restaurant." || ファミレスでバイトしてるからな。  #c2_0310
 nanoha<dry>: "You work in the dish pit." || 担当は皿洗いでしょ。  #c2_0311
 > She has a point. The dishwasher only makes the one noise.  #c2_0312
-kohei(neutral): "Mizuno came in with the karaoke group. She stayed till close." || みずのが、カラオケの連中と来たんだ。閉店までいた。  #c2_0313
+kohei(neutral): "Mizuno came in after karaoke, with some girls from class. She stayed till close." || みずのが、クラスの女子とカラオケ帰りに来た。閉店までいた。  #c2_0313
 nanoha<smile>: "Mm." || ……そっか。  #c2_0314
-> She takes down two mugs without looking and bumps the drawer shut with her hip. Then she looks at me for a second longer than the mugs needed.  #c2_0315
-nanoha<deadpan>: "That's a new one." || ……それ、新しいね。  #c2_0316
+> She takes down two mugs without looking and bumps the drawer shut with her hip. Then she turns around and looks at me properly.  #c2_0315
+nanoha<deadpan>: "That one's new." || ……それ、初めて見るやつ。  #c2_0316
 kohei(surprised): "A new what?" || 何が。  #c2_0317
 nanoha<dry>: "Face. I'll have to give it a number." || 顔。番号、つけなきゃ。  #c2_0318
 kohei(smile): "What number?" || 何番？  #c2_0319
@@ -166,11 +166,11 @@ natsuki<point>: "Men. The head." || めん。あたま。  #c2_0095
 natsuki<point>: "Kote. The wrist. Usually the right one." || 小手。手首。ふつうは右。  #c2_0096
 natsuki<point>: "Dō. The side of the body." || 胴。おなかの横。  #c2_0097
 natsuki<point>: "And tsuki, the throat. Thrusts only. You're not allowed to use it until high school." || それから、突き。のど。突くだけ。高校生になるまで、使っちゃだめなの。  #c2_0098
+rika<surprised>: "We're in high school!" || あたしたち、高校生じゃん！  #c2_0099
+natsuki<smile>: "So be afraid." || だから、こわがってね。  #c2_0100
 @cg cg_whiteboard
 > When she steps back, the stick figure has four targets on it, all labeled, and an expression of deep concern.  #c2_0325
 @cg -
-rika<surprised>: "We're in high school!" || あたしたち、高校生じゃん！  #c2_0099
-natsuki<smile>: "So be afraid." || だから、こわがってね。  #c2_0100
 rika<scheme>: "How do you get a point? Do you just hit them really hard?" || どうやったら点になるの？ 思いっきり叩けばいいの？  #c2_0101
 natsuki<point>: "{Me-e-en!|Head!|men}" || めぇぇんっ！  #c2_0294
 > Her front foot stamps the floor in the same instant, and the {shinai|bamboo practice sword} stops an inch short of the stick figure's head.  #c2_0295
@@ -202,7 +202,7 @@ natsuki<point>: "Left heel, a little low. The tip wanders. He hits {men|head str
 rika<grin>: "He's the 'before' picture!" || ビフォーアフターの、ビフォーだ！  #c2_0126
 kohei(annoyed): "Hoshikawa. Don't draw that." || ほしかわ。それは描くな。  #c2_0127
 natsuki<smile>: "You're doing great, visual aid." || いい感じだよ、教材。  #c2_0128
-takatsuki: "Mizuno. For the record, your explanation of {zanshin|remaining mind} was incomplete." || みずの。念のため言っておくが、残心の説明が不十分だった。  #c2_0130
+takatsuki: "Mizuno. For the record, your explanation of {zanshin|staying alert after the strike} was incomplete." || みずの。念のため言っておくが、残心の説明が不十分だった。  #c2_0130
 natsuki<smile>: "Incomplete how?" || どこが不十分？  #c2_0131
 kirishima(calm): "Mizuno. The practice schedule was on that board." || みずの。そのホワイトボードには、練習の予定が書いてあった。  #c2_0132
 natsuki<smile>: "…I'll put it back." || ……戻しておきます。  #c2_0133
@@ -267,7 +267,7 @@ takatsuki: "You did not take his feint, and you were on his wrist the moment he 
 natsuki<laugh>: "New-girl luck. It wears off by Friday." || 転校生のビギナーズラックだよ。金曜には切れるから。  #c2_0167
 takatsuki: "Luck is not a technique." || 運は、技ではない。  #c2_0168
 > She laughs again and finds something on her {hakama|pleated kendo trousers} that needs fixing.  #c2_0169
-takatsuki: "Also, you laughed inside your {men|helmet} after the point. That was the part of {zanshin|remaining mind} you left out." || それと、一本のあと、めんの中で笑っていた。残心の説明で抜けていたのは、そこだ。  #c2_0300
+takatsuki: "Also, you laughed inside your {men|helmet} after the point. That was the part of {zanshin|staying alert after the strike} you left out." || それと、一本のあと、めんの中で笑っていた。残心の説明で抜けていたのは、そこだ。  #c2_0300
 takatsuki: "And Fujisawa. Your left foot was forward on that {dō|body strike}." || それと、ふじさわ。あの胴、左足が前に出ていた。  #c2_0170
 kohei(neutral): "It scored." || 一本は一本だ。  #c2_0171
 takatsuki: "Yes." || そうだ。  #c2_0172
@@ -275,7 +275,7 @@ takatsuki: "Yes." || そうだ。  #c2_0172
 
 == c2_mop | The mop race
 @bg bg_dojo_evening
-> Until the first-years join, whoever stays after practice mops the floor. It's usually me.  #c2_0174
+> Until the first-years join, whoever stays after practice cleans the floor. It's usually me.  #c2_0174
 > Today, Mizuno stays too.  #c2_0175
 @show natsuki kendo_grin c
 natsuki: "New member. I'm supposed to do the grunt work, right?" || 新入りだからね。雑用はやる決まりでしょ？  #c2_0176
@@ -406,7 +406,7 @@ natsuki(smile): "I'm amazing at first days. It's the second semesters I never ge
 > It didn't feel like it covered it, and she didn't like that.  #c2_0279
 > Chie had been her best friend in fourth grade, and again last year, when her dad's work had swung them back through Sendai like a pendulum. Chie was the only person she'd ever managed to keep. Birthday calls. A box of {zunda mochi|sweet green soybean rice cakes} every New Year.  #c2_0280
 > Chie was also more than two hundred miles away.  #c2_0281
-> And there was Nanoha, who had walked her all the way home on Monday without being asked. Natsuki liked her. They were going to be real friends; she could tell already.  #c2_0282
+> And there was Nanoha, who had walked her all the way home on Monday without being asked. Natsuki liked her, and not the first-week way, where you like everyone.  #c2_0282
 > Nanoha lived next door to Fujisawa. Natsuki decided that was none of her business, and didn't quite believe herself.  #c2_0283
 @phone me yeah i'm good! made a friend. a real one i think. she gave me the tour on monday and showed me the vending machine that eats coins  #c2_0284
 @phone chie that's my girl  #c2_0285

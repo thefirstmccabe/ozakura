@@ -1878,5 +1878,185 @@
   "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said in a bridge over a river at dusk, curious. It means: \"Doing what?\"",
   "tts_prompt": "なにしてるの？",
   "note": "Oct 24 check: 何 heard as め"
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0304",
+  "ids": [
+   "c2_0304"
+  ],
+  "texts": [
+   "おはよう。おじゃましまーす。"
+  ],
+  "take": 276,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning, smiling. It means: \"Good morning. I'm coming in.\""
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0306",
+  "ids": [
+   "c2_0306"
+  ],
+  "texts": [
+   "また。"
+  ],
+  "take": 277,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning. It means: \"Again.\""
+ },
+ {
+  "key": "c2_morning.kohei.c2_0307",
+  "ids": [
+   "c2_0307"
+  ],
+  "texts": [
+   "おはよう。おばさんに、ありがとうって。"
+  ],
+  "take": 278,
+  "voice": "Puck",
+  "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a family kitchen early on a school morning, smiling. It means: \"Morning. Tell your mom thanks.\" His voice is a little hoarse this morning from talking a lot last night."
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0309",
+  "ids": [
+   "c2_0309"
+  ],
+  "texts": [
+   "……なんか、いっぱいしゃべった声してる。"
+  ],
+  "take": 279,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning, surprised. It means: \"You sound like you've been talking.\""
+ },
+ {
+  "key": "c2_morning.kohei.c2_0310",
+  "ids": [
+   "c2_0310"
+  ],
+  "texts": [
+   "ファミレスでバイトしてるからな。"
+  ],
+  "take": 280,
+  "voice": "Puck",
+  "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a family kitchen early on a school morning, deadpan, dry. It means: \"I work at a restaurant.\""
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0311",
+  "ids": [
+   "c2_0311"
+  ],
+  "texts": [
+   "担当は皿洗いでしょ。"
+  ],
+  "take": 281,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning. It means: \"You work in the dish pit.\""
+ },
+ {
+  "key": "c2_morning.kohei.c2_0313",
+  "ids": [
+   "c2_0313"
+  ],
+  "texts": [
+   "みずのが、クラスの女子とカラオケ帰りに来た。閉店までいた。"
+  ],
+  "take": 282,
+  "voice": "Puck",
+  "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a family kitchen early on a school morning, even, neutral. It means: \"Mizuno came in after karaoke, with some girls from class. She stayed till close.\""
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0314",
+  "ids": [
+   "c2_0314"
+  ],
+  "texts": [
+   "……そっか。"
+  ],
+  "take": 283,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning, smiling. It means: \"Mm.\""
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0316",
+  "ids": [
+   "c2_0316"
+  ],
+  "texts": [
+   "……それ、初めて見るやつ。"
+  ],
+  "take": 284,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning, deadpan, dry. It means: \"That one's new.\" She has just noticed something new in his face; quiet, matter-of-fact."
+ },
+ {
+  "key": "c2_morning.kohei.c2_0317",
+  "ids": [
+   "c2_0317"
+  ],
+  "texts": [
+   "何が。"
+  ],
+  "take": 285,
+  "voice": "Puck",
+  "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a family kitchen early on a school morning, surprised. It means: \"A new what?\""
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0318",
+  "ids": [
+   "c2_0318"
+  ],
+  "texts": [
+   "顔。番号、つけなきゃ。"
+  ],
+  "take": 286,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning. It means: \"Face. I'll have to give it a number.\""
+ },
+ {
+  "key": "c2_morning.kohei.c2_0319",
+  "ids": [
+   "c2_0319"
+  ],
+  "texts": [
+   "何番？"
+  ],
+  "take": 287,
+  "voice": "Puck",
+  "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a family kitchen early on a school morning, smiling. It means: \"What number?\""
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0320",
+  "ids": [
+   "c2_0320"
+  ],
+  "texts": [
+   "決めたら、教えてあげる。"
+  ],
+  "take": 288,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning, smiling. It means: \"I'll tell you when I've decided.\""
+ },
+ {
+  "key": "c2_morning.nanoha.c2_0322",
+  "ids": [
+   "c2_0322"
+  ],
+  "texts": [
+   "しゃべった分ね。"
+  ],
+  "take": 289,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in a family kitchen early on a school morning, smiling. It means: \"For the talking.\" Gentle and matter-of-fact, setting a throat lozenge down for him."
+ },
+ {
+  "key": "c2_bridge.natsuki.c2_0218",
+  "ids": [
+   "c2_0218"
+  ],
+  "texts": [
+   "札幌なんて、雪の写真ばっかり四百枚。"
+  ],
+  "take": 290,
+  "voice": "Zephyr",
+  "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said in a bridge over a river at dusk, laughing. It means: \"Sapporo is four hundred pictures of snow.\""
  }
 ]
