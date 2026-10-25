@@ -26,7 +26,8 @@ with sync_playwright() as p:
     pg.click("#tapStart"); pg.wait_for_timeout(400)
     pg.evaluate("window.__vn.audioInit()")
     # voice check
-    ids = pg.evaluate("window.__vn.S.filter(c=>c.t==='say').map(c=>c.id)")
+    # spoken lines, including those inside manga inserts (Ch2 on)
+    ids = pg.evaluate("window.__vn.S.flatMap(c=>c.t==='insert'?c.panels.flatMap(p=>p.lines):[c]).filter(c=>c.t==='say').map(c=>c.id)")
     for i in ids:
         d = pg.evaluate(f"window.__vn.vprobe('{i}')")
         if not d and pg.evaluate(f"!!(window.__vn.vIndex||{{}})['{i}']"):
@@ -43,6 +44,28 @@ with sync_playwright() as p:
             pg.wait_for_timeout(900); pg.screenshot(path=f"{a.out}/99_end.png"); report["shots"].append("99_end"); break
         cur = st.get("id")
         scene = pg.evaluate("window.__vn.state.scene")
+        if st.get("cur") == "insert" and st.get("ins"):
+            # a manga insert: one stop per step (the whole page, then each panel); its lines count as seen when shown
+            k = st["ins"]["k"]
+            if not seen or seen[-1] != f"ins:{st['ins']['name']}:{k}":
+                seen.append(f"ins:{st['ins']['name']}:{k}")
+                if scene != last_scene or a.every:
+                    tag = f"{n:03d}_{st['ins']['name']}_{k:02d}" if scene == last_scene else f"{n:03d}_{scene}_start"
+                    last_scene = scene
+                    pg.wait_for_timeout(900); pg.screenshot(path=f"{a.out}/{tag}.png"); report["shots"].append(tag)
+                pg.evaluate("window.__vn.advance()"); pg.wait_for_timeout(120)
+            else:
+                pg.wait_for_timeout(150)
+            continue
+        if st.get("cur") == "phone":
+            n += 1
+            if cur and (not seen or seen[-1] != cur): seen.append(cur)
+            if scene != last_scene or a.every or cur in shots:
+                tag = f"{n:03d}_{scene}_start" if scene != last_scene else f"{n:03d}_{cur}"
+                last_scene = scene
+                pg.wait_for_timeout(500); pg.screenshot(path=f"{a.out}/{tag}.png"); report["shots"].append(tag)
+            pg.evaluate("window.__vn.advance()"); pg.wait_for_timeout(60)
+            continue
         if st.get("cur") in ("say", "nar") and not st["typing"]:
             n += 1
             if cur and (not seen or seen[-1] != cur): seen.append(cur)
@@ -64,8 +87,11 @@ with sync_playwright() as p:
             if st["cards"]:
                 pg.evaluate("window.__vn.advance()")
     report["lines_seen"] = n
-    all_ids = pg.evaluate("window.__vn.S.filter(c=>c.t==='say'||c.t==='nar').map(c=>c.id)")
+    all_ids = pg.evaluate("window.__vn.S.filter(c=>c.t==='say'||c.t==='nar'||c.t==='phone').map(c=>c.id)")
     report["missed_lines"] = [i for i in all_ids if i not in set(seen)]
+    # every step of every insert should have been shown
+    ins = pg.evaluate("window.__vn.S.filter(c=>c.t==='insert').map(c=>c.name)")
+    report["insert_steps_seen"] = {nm: sum(1 for x in seen if x.startswith(f"ins:{nm}:")) for nm in ins}
     b.close()
 json.dump(report, open(f"{a.out}/report.json", "w"), indent=1)
 print(json.dumps({k: (v if not isinstance(v, list) else (len(v) if k == "shots" else v[:12])) for k, v in report.items()}, indent=1, ensure_ascii=False))

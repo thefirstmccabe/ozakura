@@ -102,7 +102,7 @@ def compile_files(paths):
                     elif insert is not None:
                         errors.append(f"{where}: @insert inside @insert")
                     else:
-                        insert = {"t": "insert", "name": args[0], "panels": []}
+                        insert = {"t": "insert", "id": args[0], "name": args[0], "panels": []}
                         cmds.append(insert)
                     continue
                 if op == "panel":

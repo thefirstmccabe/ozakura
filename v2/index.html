@@ -46,6 +46,23 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 .cgfill{position:absolute;inset:-48px;background:center/cover no-repeat;filter:blur(28px) brightness(.5) saturate(1.1);opacity:0;transition:opacity 1s ease;display:none}
 .cgfill.on{opacity:1}
 @media (orientation:portrait){ #cg .bgimg, #cg .live{object-fit:contain;object-position:50% 36%} .cgfill{display:block} }
+/* short animated moments (canon §2): played once over the CG layer, then the still holds */
+#animV{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;z-index:6}
+#animV.on{opacity:1}
+/* manga inserts, panel by panel (style guide §4a; reference production/insert-presentation-test/, approved as is) */
+#ins{background:var(--ink);opacity:0;pointer-events:none;transition:opacity .6s ease;overflow:hidden}
+#ins.on{opacity:1}
+#ins .ipg{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform,opacity;opacity:0}
+#ins .ipg.on{opacity:1}
+#ins .ipg img{display:block;width:100%;height:100%}
+#ins .hl{position:absolute;box-shadow:0 0 0 9000px rgba(16,19,31,.86);transition:all .55s cubic-bezier(.4,.1,.2,1);pointer-events:none}
+#ins .hl.none{box-shadow:0 0 0 9000px rgba(16,19,31,0)}
+/* landscape only (canon §2): a phone or tablet held upright gets this instead of a portrait layout */
+#rotate{display:none;position:fixed;inset:0;z-index:100;background:var(--ink);color:var(--paper);flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:24px}
+#rotate svg{width:64px;height:64px;fill:none;stroke:var(--gilt);stroke-width:1.6;animation:rot 2.4s ease-in-out infinite}
+#rotate .rt{font:500 18px/1.5 var(--f-body)} #rotate .rs{font:400 14px/1.5 var(--f-body);color:var(--paper-dim)}
+@keyframes rot{0%,20%{transform:rotate(0)}50%,70%{transform:rotate(-90deg)}100%{transform:rotate(0)}}
+@media (orientation:portrait) and (pointer:coarse){ #rotate{display:flex} }
 #tint{pointer-events:none;opacity:0;transition:opacity .8s;background:radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(20,10,30,.45) 100%)}
 #tint.on{opacity:1}
 #flash{pointer-events:none;background:#fff;opacity:0}
@@ -283,8 +300,9 @@ input{-webkit-user-select:text;user-select:text}
   <div id="bgSolid" class="layer"></div>
   <div id="bg" class="layer"><img class="bgimg" alt=""><img class="bgimg" alt=""></div>
   <div id="sprites" class="layer"></div>
-  <div id="cg" class="layer"><div class="cgfill"></div><div class="cgfill"></div><img class="bgimg" alt=""><img class="bgimg" alt=""><video class="live" id="cgLive" muted playsinline loop preload="auto" aria-hidden="true"></video></div>
+  <div id="cg" class="layer"><div class="cgfill"></div><div class="cgfill"></div><img class="bgimg" alt=""><img class="bgimg" alt=""><video class="live" id="cgLive" muted playsinline loop preload="auto" aria-hidden="true"></video><video id="animV" muted playsinline preload="auto" aria-hidden="true"></video></div>
   <div id="tint" class="layer"></div>
+  <div id="ins" class="layer" aria-hidden="true"></div>
   <div id="ilabel"></div>
   <div id="phone"><div class="ph">Chie</div></div>
   <div id="box" class="hidden" role="region" aria-live="polite">
@@ -319,7 +337,7 @@ input{-webkit-user-select:text;user-select:text}
       <div class="tate" aria-hidden="true">大桜</div>
       <div class="stack">
         <h1>Ōzakura</h1>
-        <div class="sub">Pilot v2 · Chapter 1</div>
+        <div class="sub">Pilot v2 · Chapters 1–2</div>
         <nav class="menu">
           <button class="mi" id="mStart" type="button">Begin</button>
           <button class="mi" id="mCont" type="button">Continue</button>
@@ -366,6 +384,7 @@ input{-webkit-user-select:text;user-select:text}
   <div id="toast"></div>
   <div id="err" role="alert" hidden></div>
 </div>
+<div id="rotate" role="alert"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="6" width="20" height="36" rx="3"/><path d="M21 37h6"/></svg><div class="rt">Turn your device sideways</div><div class="rs">Ōzakura plays in landscape.</div></div>
 
 <script>
 (()=>{
@@ -379,21 +398,24 @@ const CHAR = {
   akane:{h:60,v:.733,c:'#b9a5e8',t:'#ede6fa'}, ryosuke:{h:67,v:.714,c:'#62c1b8',t:'#daf2ef'}, rika:{h:61,v:.669,c:'#f38ba3',t:'#fde2e9'},
   yuzu:{h:61,v:.67,c:'#ec6067',t:'#fcdedf'}, kirishima:{h:71,v:.70,c:'#8a92e0',t:'#e3e5f9'}, takatsuki:{h:68,v:.70,c:'#93a6c2',t:'#e4eaf2'},
   emi:{h:62,v:.70,c:'#e4b745',t:'#f8eed2'}, mio:{h:48,v:.75,c:'#86c983',t:'#e3f3e2'},
-  teacher:{h:72,v:.71,c:'#c9c2b0',t:'#f1ebe0'}, manager:{c:'#c9c2b0',t:'#f1ebe0'}, past_natsuki:{c:'#d4b472',t:'#f3ead3'}
+  teacher:{h:72,v:.71,c:'#c9c2b0',t:'#f1ebe0'}, manager:{c:'#c9c2b0',t:'#f1ebe0'}, classmate:{c:'#c9c2b0',t:'#f1ebe0'}, past_natsuki:{c:'#d4b472',t:'#f3ead3'}
 };
 /* every on-stage character shares one floor F inches below the bottom of the screen */
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
-const NOWIN = new Set(['manager','past_natsuki']);       // no face window: no sprite, or a hidden face
-const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki']};
+const NOWIN = new Set(['manager','classmate','past_natsuki']);       // no face window: no sprite, or a hidden face
+const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki'], cg_catch:['natsuki','kohei']};
 /* sprites take on the light of the scene: night and evening backgrounds tint them */
-const BG_LIGHT = {bg_houses_night:'brightness(.8) saturate(.82) hue-rotate(-6deg)', bg_houses_night_lit:'brightness(.82) saturate(.84) hue-rotate(-6deg)', bg_classroom_evening:'sepia(.18) saturate(1.08) brightness(.97)'};
+const BG_LIGHT = {bg_houses_night:'brightness(.8) saturate(.82) hue-rotate(-6deg)', bg_houses_night_lit:'brightness(.82) saturate(.84) hue-rotate(-6deg)', bg_classroom_evening:'sepia(.18) saturate(1.08) brightness(.97)',
+  bg_dojo_evening:'sepia(.2) saturate(1.1) brightness(.96)', bg_bridge_dusk:'sepia(.16) saturate(1.04) brightness(.9) hue-rotate(-4deg)'};
 const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4', cg_cold_mist:'img/live/cg_cold_mist.mp4'};   // living stills (2–4 s loops)
 const POSX_W = {l:20, lc:34, c:50, rc:66, r:80}, POSX_N = {l:27, lc:38, c:50, rc:62, r:73};
 const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?POSX_N:POSX_W)[k]});
 const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
 const CHAPTERS = [
   {k:'CHAPTER 1', t:'The House Next Door', start:'cold_open', th:'cg_natsuki_intro'},   // the cold open plays first, then the chapter card
+  {k:'CHAPTER 2', t:'Kendo', start:'c2_tuesday', th:'cg_catch'},
 ];
+const NEXT_CH = {1:'Chapter 2, “Kendo,” comes next.', 2:'Chapter 3, “Windows,” comes next.', 3:'Chapter 4, “The Light at the Shrine,” comes next.'};
 const KANJI = ['','第一話','第二話','第三話','第四話'];
 let SIG='', holdT=0;   // fingerprint of the loaded script.json; saves carry it
 function sigOf(S){ let h=5381; const t=JSON.stringify(S); for(let k=0;k<t.length;k++) h=((h<<5)+h+t.charCodeAt(k))|0; return (h>>>0).toString(36)+'.'+S.length; }
@@ -642,6 +664,81 @@ function showFace(url, who){
   if(!faceImg.src.endsWith(url)) faceImg.src=url; faceEl.classList.add('on'); box.classList.add('withface');
 }
 
+/* ---------- short animated moments (canon §2, the Ch2 catch): img/anim/NAME.mp4 plays once over the stage, then the
+   CG NAME (its last frame) holds. A tap finishes it; if the video can't play, the CG simply fades in. ---------- */
+const animV=$('#animV'); let animDone=null, animTok=0;
+const ANIM_EXT = animV.canPlayType('video/mp4; codecs="avc1.42E01E"') ? 'mp4' : 'webm';   // Safari and Chrome: H.264; browsers without it get a VP9 copy
+function animOff(){ animTok++; animDone=null; animV.onplaying=animV.onended=animV.onerror=null; animV.style.transition='none'; animV.classList.remove('on');
+  try{animV.pause()}catch(e){} animV.removeAttribute('src'); try{animV.load()}catch(e){} }
+function playAnim(c){
+  running=false; curLine=c; showFace(null); box.classList.add('hidden'); stopVoice(); devUpdate();
+  if(skipOn){ setCg(c.name,'cut'); curLine=null; return pause(60); }
+  const tok=++animTok; let t=null;
+  const go=(ms)=>{ curLine=null; later(ms, run); };
+  const fail=()=>{ if(tok!==animTok) return; clearTimeout(t); animOff(); setCg(c.name,'fade'); go(1100); };
+  animDone=()=>{ if(tok!==animTok) return; clearTimeout(t); animDone=null; setCg(c.name,'cut'); animV.onended=null;
+    animV.style.transition='opacity .2s ease'; animV.classList.remove('on'); setTimeout(()=>{ if(tok===animTok) animOff(); }, 260); go(skipOn?40:420); };
+  t=setTimeout(fail, 4500);   // never strand the player if the video stalls
+  animV.style.transition='none'; animV.classList.remove('on'); animV.muted=true; animV.src=`img/anim/${c.name}.${ANIM_EXT}`;
+  animV.onplaying=()=>{ if(tok!==animTok) return; clearTimeout(t); t=setTimeout(()=>animDone&&animDone(), 9000); animV.style.transition='opacity .25s ease'; animV.classList.add('on'); };
+  animV.onended=()=>animDone&&animDone();
+  animV.onerror=fail;
+  const p=animV.play(); if(p&&p.catch) p.catch(fail);
+}
+/* ---------- manga inserts, panel by panel (style guide §4a). Geometry: img/ins/NAME.json = {w, h, pages:[{src, panels:[[x0,y0,x1,y1], …]}]}
+   in page pixels; the script's insert command carries each panel's lines (lettered on the art; logged and voiced here). ---------- */
+const insEl=$('#ins'), INS={}; let insS=null;
+function insData(name){ if(!INS[name]) INS[name]=fetch(`img/ins/${name}.json`).then(r=>{ if(!r.ok) throw new Error(`insert ${name} (${r.status})`); return r.json(); }).catch(e=>{ delete INS[name]; throw e; }); return INS[name]; }
+function insFit(b,W,H,pad){ const bw=b[2]-b[0], bh=b[3]-b[1], k=Math.min((W-2*pad)/bw,(H-2*pad)/bh); return {k, tx:W/2-(b[0]+bw/2)*k, ty:H/2-(b[1]+bh/2)*k}; }
+function insLog(x){ if(x.t==='say'){ log.push({who:SPK[x.who]||x.who, t:plain(x.text), id:x.id, w:x.who}); } else log.push({who:'', t:plain(x.text)}); state.read[x.id]=1; if(log.length>400) log.shift(); }
+function insOff(cut){ insertStart.tok++; if(insS){ clearTimeout(insS.timer); insS.vtok++; } insS=null; insEl.style.transition=cut?'none':''; insEl.classList.remove('on');
+  const t=insertStart.tok; setTimeout(()=>{ if(t===insertStart.tok && !insEl.classList.contains('on')) insEl.innerHTML=''; }, cut?0:650); }
+function insertStart(c){
+  running=false; curLine=c; showFace(null); box.classList.add('hidden'); stopVoice(); phoneClear(); devUpdate();
+  const tok=++insertStart.tok;
+  if(skipOn){ c.panels.forEach(p=>p.lines.forEach(insLog)); curLine=null; return pause(60); }
+  insData(c.name).then(d=>{
+    if(tok!==insertStart.tok || curLine!==c) return;
+    const steps=[]; let g=0;
+    d.pages.forEach((p,pi)=>{ steps.push({pg:pi, box:null, g:-1}); p.panels.forEach(b=>steps.push({pg:pi, box:b, g:g++})); });
+    if(g!==c.panels.length) note('insert', `${c.name}: ${g} panel boxes for ${c.panels.length} scripted panels`);
+    insEl.innerHTML=''; insEl.style.transition='';
+    const pages=d.pages.map(p=>{ const e=document.createElement('div'); e.className='ipg'; e.style.width=d.w+'px'; e.style.height=d.h+'px';
+      const im=new Image(); im.alt=''; im.decoding='async'; im.src=p.src; const hl=document.createElement('div'); hl.className='hl none'; e.append(im,hl); insEl.appendChild(e); return e; });
+    insS={c, d, steps, pages, k:0, cur:-1, seen:{}, vtok:0, timer:null};
+    insRender(false); requestAnimationFrame(()=>insEl.classList.add('on'));
+    insStep();
+  }).catch(e=>{ if(tok!==insertStart.tok) return; note('insert',e); c.panels.forEach(p=>p.lines.forEach(insLog)); insOff(true); curLine=null; run(); });
+}
+insertStart.tok=0;
+function insRender(anim){
+  if(!insS) return; const st=insS.steps[insS.k], d=insS.d, W=app.clientWidth, H=app.clientHeight, pe=insS.pages[st.pg];
+  const b=st.box||[0,0,d.w,d.h], f=insFit(b, W, H, st.box?Math.min(W,H)*0.04:8), tf=`translate(${f.tx}px,${f.ty}px) scale(${f.k})`;
+  const hl=pe.querySelector('.hl'), pad=st.box?24:0;
+  if(insS.cur!==st.pg){   // a new page: place it without a zoom, then cross-fade from the old one
+    const old=insS.pages[insS.cur]; pe.style.transition='none'; hl.style.transition='none'; pe.style.transform=tf; void pe.offsetWidth;
+    pe.style.transition='opacity .6s ease'; hl.style.transition=''; pe.classList.add('on'); if(old){ old.style.transition='opacity .6s ease'; old.classList.remove('on'); } insS.cur=st.pg;
+  } else { pe.style.transition = anim ? 'transform .55s cubic-bezier(.4,.1,.2,1), opacity .6s ease' : 'opacity .6s ease'; pe.style.transform=tf; if(!anim) hl.style.transition='none'; }
+  hl.classList.toggle('none', !st.box);
+  Object.assign(hl.style,{left:(b[0]-pad)+'px', top:(b[1]-pad)+'px', width:(b[2]-b[0]+2*pad)+'px', height:(b[3]-b[1]+2*pad)+'px'});
+  if(!anim) requestAnimationFrame(()=>{ hl.style.transition=''; });
+}
+function insStep(){   // the step just shown: log its lines once, voice them in order, then auto-advance if Auto is on
+  const st=insS.steps[insS.k], p=st.g>=0 ? insS.c.panels[st.g] : null, tok=++insS.vtok; clearTimeout(insS.timer); stopVoice();
+  const lines=p?p.lines:[]; if(p && !insS.seen[st.g]){ insS.seen[st.g]=1; lines.forEach(insLog); } devUpdate();
+  const says=lines.filter(x=>x.t==='say'); let i=0;
+  const done=()=>{ if(!insS||tok!==insS.vtok) return; if(autoOn) insS.timer=setTimeout(()=>{ if(insS&&tok===insS.vtok&&autoOn&&!overlayOpen()) advance(); }, (st.g<0?1400:900)+(100-prefs.auto)*14); };
+  const next=()=>{ if(!insS||tok!==insS.vtok) return; if(i>=says.length) return done(); const x=says[i++];
+    if(!ac||skipOn) return next(); playVoice(x.id,x.who,next).then(ok=>{ if(!ok && insS && tok===insS.vtok) next(); }); };
+  setTimeout(next, st.g<0?0:380);   // let the zoom land before the voice
+}
+function insNext(){
+  if(!insS) return;
+  if(skipOn){ for(let k=insS.k;k<insS.steps.length;k++){ const g=insS.steps[k].g; if(g>=0&&!insS.seen[g]){ insS.seen[g]=1; insS.c.panels[g].lines.forEach(insLog); } } insS.k=insS.steps.length; }
+  else insS.k++;
+  if(insS.k>=insS.steps.length){ stopVoice(); insOff(false); curLine=null; later(skipOn?40:620, run); return; }
+  insRender(true); insStep();
+}
 /* ---------- runner ---------- */
 function scheduleAuto(){
   clearTimeout(autoTimer); if(!autoOn||skipOn) return;
@@ -678,6 +775,8 @@ function run(){
         case 'endchapter': showFace(null); return pause(200);
         case 'endpilot': store.set('v2cont',null); return endPilot();
         case 'video': break; // future cutscenes: falls back to continuing
+        case 'anim': return playAnim(c);
+        case 'insert': return insertStart(c);
         case 'phone': if(!skipOn) playSfx('notif'); showFace(null); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); devUpdate(); return waitTap(0);
         case 'say': case 'nar': return line(c);
       }
@@ -709,6 +808,9 @@ function advance(){
     if(seen[state.scene] && Date.now()-holdT>600){ const j=S.findIndex((c,k)=>k>=state.i-1 && c.t==='hold' && !c.on); if(j>0){ clearTimeout(waitTimer); startAt(j); } }
     return; }
   if(typing){ finishType(); return; }
+  if(animDone){ animDone(); return; }
+  if(insS && curLine===insS.c){ insNext(); return; }
+  if(curLine && (curLine.t==='insert'||curLine.t==='anim')) return;   // still loading
   if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
   clearTimeout(autoTimer); clearTimeout(waitTimer);
   if(curLine && curLine.t!=='phone' && S[state.i] && S[state.i].t!=='phone') phoneClear();
@@ -729,7 +831,9 @@ function chapterCard(c){
   d.classList.add('on'); cardFinish=()=>d.classList.remove('on'); cardT=Date.now();
   later(skipOn?400:3200, ()=>{ finishCard(); later(700, run); });
 }
-function endPilot(){ running=false; showFace(null); box.classList.add('hidden'); setSkip(false); setAuto(false); $('#endCard').classList.add('on'); playBgm('title'); }
+function endPilot(){ running=false; showFace(null); box.classList.add('hidden'); setSkip(false); setAuto(false);
+  const n=Math.max(1, ...S.filter(c=>c.t==='chapter').map(c=>c.n)); $('#endNum').textContent='END OF CHAPTER '+n; $('#endText').textContent=NEXT_CH[n]||'';
+  $('#endCard').classList.add('on'); playBgm('title'); }
 
 /* ---------- save/load ---------- */
 function snap(){ // state at current command index (rewind to the line being shown)
@@ -744,7 +848,7 @@ function restore(s){
   log.length=0;
   Object.keys(lastSpr).forEach(k=>delete lastSpr[k]); S.slice(0,s.i).forEach(c=>{ if(c.t==='show') lastSpr[c.who]=c.spr; });   // a jump (load, continue, chapters) starts a fresh backlog
   showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
-  noteEl.classList.remove('on');
+  noteEl.classList.remove('on'); animOff(); insOff(true);
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
   // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes
   const keep=s.spr||{}; document.querySelectorAll('.spr').forEach(e=>{ if(!keep[e.dataset.who]) e.remove(); }); state.spr={};
@@ -770,7 +874,7 @@ function startAt(idx){
   // rebuild visual state by scanning back to most recent bg
   const s={i:idx,bg:'black',cg:null,spr:{},bgm:null,mode:'normal',phone:[],scene:undefined};
   for(let k=0;k<idx;k++){ const c=S[k];
-    if(c.t==='bg'){s.bg=c.name;s.spr={};s.cg=null;s.phone=[];} else if(c.t==='cg'){s.cg=c.name;} else if(c.t==='bgm'){s.bgm=c.name;}
+    if(c.t==='bg'){s.bg=c.name;s.spr={};s.cg=null;s.phone=[];} else if(c.t==='cg'||c.t==='anim'){s.cg=c.name;} else if(c.t==='bgm'){s.bgm=c.name;}
     else if(c.t==='show'){ s.spr[c.who]={spr:c.spr,pos:c.pos||(s.spr[c.who]&&s.spr[c.who].pos)||'c'}; } else if(c.t==='hide'){ delete s.spr[c.who]; }
     else if(c.t==='hideall'){s.spr={};} else if(c.t==='mode'){ s.mode=c.mode; s.ilabel=c.label; } else if(c.t==='scene'){ s.scene=c.id; } else if(c.t==='hold'){ s.hold=c.on; }
     // the phone stays up through one line after the last text, then clears (same rule as advance())
@@ -849,7 +953,7 @@ const HASH = new Set(location.hash.slice(1).split(/[&+,]/).filter(Boolean));
 let devOn = !!store.get('v2dev', false);
 if(HASH.has('dev')) devOn=true; if(HASH.has('nodev')) devOn=false;
 function setDev(v){ devOn=!!v; store.set('v2dev',devOn); app.classList.toggle('dev',devOn); devUpdate(); }
-const isLine = c => c && (c.t==='say'||c.t==='nar'||c.t==='phone');
+const isLine = c => c && (c.t==='say'||c.t==='nar'||c.t==='phone'||c.t==='insert');
 let DX=null;
 function devIndex(){
   if(DX) return DX;
@@ -861,7 +965,7 @@ function devIndex(){
     if(cur) at[i]=scenes.length-1; if(!cur) return;
     if(c.t==='card' && !cur.date) cur.date=c.text;
     if(c.t==='bg'){ bg=c.name; if(!cur.bgFirst && c.name!=='black' && c.name!=='white') cur.bgFirst=c.name; }
-    if(c.t==='cg' && c.name) cur.cgs.push(c.name);
+    if((c.t==='cg'||c.t==='anim') && c.name) cur.cgs.push(c.name);
     if(isLine(c)){ cur.lines.push(i); if(c.t==='say' && !cur.who.includes(c.who)) cur.who.push(c.who); }
   });
   let d=''; scenes.forEach((s,k)=>{ if(s.date) d=s.date; else s.date=d; s.end=k<scenes.length-1?scenes[k+1].i:S.length;
@@ -916,11 +1020,11 @@ function chartGrid(body, X, csk){
 }
 function lineRow(j, ci, withScene){
   const c=S[j], row=el('div','ln-row'+(j===ci?' now':'')), b=el('button','ln'+(c.t==='say'?'':' nar')); b.type='button'; b.dataset.i=j;
-  const who = c.t==='say' ? (SPK[c.who]||c.who) : c.t==='phone' ? (c.who==='me'?'Natsuki':'Chie')+' ✉' : '';
+  const who = c.t==='say' ? (SPK[c.who]||c.who) : c.t==='phone' ? (c.who==='me'?'Natsuki':'Chie')+' ✉' : c.t==='insert' ? 'Manga' : '';
   const lw=el('span','lw', who); if(c.t==='say') lw.style.setProperty('--nc', (CHAR[c.who]||{}).c||'var(--sakura)');
   const lt=el('span','lt');
   if(withScene){ const X=devIndex(), s=X.scenes[X.at[j]]; lt.appendChild(el('span','scl', s.no+' · '+(SCENE_T[s.id]||s.id))); }
-  lt.append(plain(c.text)); if(c.t==='say' && jaText && jaText[c.id]){ const ja=el('span','ja', jaText[c.id]); ja.lang='ja'; lt.appendChild(ja); }
+  lt.append(c.t==='insert' ? `Insert · ${c.panels.length} panels: `+c.panels.flatMap(p=>p.lines).map(x=>plain(x.text)).join(' / ') : plain(c.text)); if(c.t==='say' && jaText && jaText[c.id]){ const ja=el('span','ja', jaText[c.id]); ja.lang='ja'; lt.appendChild(ja); }
   b.append(el('span','lid', c.id||''), lw, lt); b.onclick=()=>devJump(j);
   const v=el('div'); if(c.t==='say' && vIndex && vIndex[c.id]){ const p=el('button','vb','♪'); p.type='button'; p.setAttribute('aria-label','Play voice'); p.onclick=()=>{ audioInit(); playVoice(c.id, null); }; v.appendChild(p); }
   row.append(b, v); return row;
@@ -940,6 +1044,7 @@ function chartScene(body, X, k, ci){
     let label=null, minor=false;
     if(c.t==='bg') label = c.name==='black' ? 'Fade to black' : c.name==='white' ? 'Flash to white' : 'Background · '+nice(c.name);
     else if(c.t==='cg') label = c.name ? 'CG · '+nice(c.name) : 'CG ends';
+    else if(c.t==='anim') label = 'Animated moment · '+nice(c.name);
     else if(c.t==='card') label = 'Date card · '+c.text;
     else if(c.t==='mode' && c.mode==='interlude') label = c.label || 'Interlude';
     else if(c.t==='bgm'){ label = c.name ? 'Music · '+c.name : 'Music stops'; minor=true; }
@@ -982,7 +1087,7 @@ function setSkip(v){ skipOn=v; $('#bSkip').classList.toggle('on',v); clearInterv
 /* ---------- title ---------- */
 function hideTitle(){ $('#title').hidden=true; }
 function toTitle(){
-  cardFinish=null; setSkip(false); setAuto(false); stopVoice(); clearTimeout(waitTimer); box.classList.add('hidden'); noteEl.classList.remove('on');
+  cardFinish=null; setSkip(false); setAuto(false); stopVoice(); clearTimeout(waitTimer); box.classList.add('hidden'); noteEl.classList.remove('on'); animOff(); insOff(true); curLine=null;
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); setCg(null); setMode('normal');
   $('#title').hidden=false; $('#tapStart').hidden=true; $('#mCont').disabled=!store.get('v2cont',null); playBgm('title');
 }
@@ -1036,7 +1141,7 @@ $('#mSet').onclick=()=>{ audioInit(); openSettings(); };
 $('#mChart').onclick=whenLoaded(()=>openChart());
 $('#endBack').onclick=()=>toTitle();
 $('#sndBtn').onclick=soundCheck;
-window.addEventListener('resize',()=>{ layoutSprites(); Object.entries(state.spr).forEach(([w,v])=>{ const el=document.querySelector(`.spr[data-who="${w}"]`); if(el) el.style.left=POSX[v.pos]+'%'; }); });
+window.addEventListener('resize',()=>{ if(insS) insRender(false); layoutSprites(); Object.entries(state.spr).forEach(([w,v])=>{ const el=document.querySelector(`.spr[data-who="${w}"]`); if(el) el.style.left=POSX[v.pos]+'%'; }); });
 document.addEventListener('visibilitychange',()=>{ if(!ac) return; try{ if(document.hidden){ const p=ac.suspend(); if(p&&p.catch) p.catch(e=>note('suspend',e)); if(silentEl) silentEl.pause(); } else { resumeAudio(); if(silentEl){ const q=silentEl.play(); if(q&&q.catch) q.catch(()=>{}); } } }catch(e){ note('visibility',e); } });
 
 /* ---------- boot ---------- */
@@ -1065,7 +1170,7 @@ function start(data){
 }
 if(HASH.has('qa')) window.__vn={get devOn(){return devOn}, setDev, openNote, closeNote, openNotes, noteOn, get NOTES(){return NOTES}, get NOTE_T(){return NOTE_T}, devJump, stepLine, stepScene, openChart, curIdx, get DX(){return devIndex()}, startAt,sceneStart,advance,state,get S(){return S},audioInit,setSkip,get ac(){return ac&&ac.state},probe:async(u)=>{const b=await loadBuf(u); return b?b.duration:null},vprobe:async(id)=>{const b=await voiceBuf(id); return b?b.duration:null},get vIndex(){return vIndex}, get voicePlaying(){return !!vNode}, diag, soundCheck,
   meter:()=>{ if(!ac) return null; const mk=g=>{ if(!g._an){ g._an=ac.createAnalyser(); g._an.fftSize=2048; g.connect(g._an); } const d=new Float32Array(2048); g._an.getFloatTimeDomainData(d); let s=0; for(const x of d) s+=x*x; return Math.sqrt(s/d.length); };
-    return {state:ac.state, bgm:mk(gBgm), voice:mk(gVoice), sfx:mk(gSfx)}; }, check:()=>({i:state.i, cur:curLine&&curLine.t, id:curLine&&curLine.id, typing, box:!box.classList.contains('hidden'), cards:[...document.querySelectorAll('.card.on')].map(e=>e.id), title:!$('#title').hidden, text:textEl.textContent.length, phone:$('#phone').classList.contains('on'), cg:state.cg, bg:state.bg})};
+    return {state:ac.state, bgm:mk(gBgm), voice:mk(gVoice), sfx:mk(gSfx)}; }, check:()=>({i:state.i, cur:curLine&&curLine.t, id:curLine&&curLine.id, typing, box:!box.classList.contains('hidden'), cards:[...document.querySelectorAll('.card.on')].map(e=>e.id), title:!$('#title').hidden, text:textEl.textContent.length, phone:$('#phone').classList.contains('on'), cg:state.cg, bg:state.bg, ins:insS?{name:insS.c.name,k:insS.k,n:insS.steps.length}:null, anim:!!animDone})};
 try{
   const hot=window.claude&&window.claude.hot;
   if(hot&&hot.snapshot) hot.snapshot(()=>({snap: $('#title').hidden ? snap() : null}));
