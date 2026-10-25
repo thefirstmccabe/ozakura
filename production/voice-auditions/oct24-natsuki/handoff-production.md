@@ -2,6 +2,8 @@
 
 The author picked **option 6**: Zephyr with a brighter direction, raised **+1 semitone**.
 
+**Update Oct 25: lowered to +0.5 semitone.** Use `asetrate=24000*1.0293,aresample=24000,atempo=0.9715` instead of the +1 filter below. The author will raise it with Production in the next round of edits; re-voice (or re-pitch from the unshifted takes, if kept) all of her lines.
+
 **Re-voice all of Natsuki's lines** (Ch1 now; Ch2 onward from the start):
 - Voice: `Zephyr` (google/gemini-3.8-flash-tts)
 - Style instruction (replace the `natsuki` entry in `production/pipeline/vn/voice_jobs.py`):

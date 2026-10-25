@@ -17,7 +17,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | Item | State | Owner |
 |---|---|---|
 | Music | Pilot music closed (Oct 16: the four short loops as they are). Kiss theme take B kept in mind for the late-August chapter | Audio thread |
-| Natsuki's voice | **Picked Oct 24: Zephyr, brighter direction, +1 semitone** (option 6). **Ch1 re-voiced Oct 24** (all 36 lines); Ch2 onward use it from the start (`voice_jobs.py`, `voice_pack.py`) | Production |
+| Natsuki's voice | **Lowered to +0.5 semitone Oct 25** (Zephyr, brighter direction; was +1, Ch1 re-voiced at +1 on Oct 24). The author raises it with Production in the next round of edits; handoff `production/voice-auditions/oct24-natsuki/handoff-production.md` | Production (re-pitch her lines) |
 | Shipped pilot (site root) and Manga Vol. 1 | On hold; `v2/` replaces the shipped pilot once Ch1–4 are approved | — |
 
 **Natsuki's Oct 20 look into the v2 build:** done Oct 20 (sprites, face windows, the arrival CG and its falter, the title art and its living still, thumbnails, c1_0139). **For Story:** `production/pilot-v2/handoff-story-oct20.md` (the hair-color rule and the stale outline CG note).
@@ -57,6 +57,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | 10-17 | **Kiss theme: take B kept in mind for the kiss scene** (violin and cello duet from the author's humming, `production/music/kiss-hum/a/B-duet.mp3`). Not final; revisit when the late-August chapter is produced. |
 | 10-24 | **The Music thread becomes the Audio thread** (author): music, the voice cast and voice auditions, SFX (CLAUDE.md updated). **Natsuki's voice reopened:** the author isn't fully sold on Zephyr; audition posted with pitch-ups of her actual Ch1 takes and four alternative reads (Gemini TTS, a few cents). |
 | 10-24 | **Natsuki's voice: Zephyr with a brighter, younger direction, +1 semitone** (author's pick, option 6). Style guide §7 updated; Production re-voices her Ch1 lines (handoff in the audition folder). Past-life Natsuki stays Despina. |
+| 10-25 | **Natsuki's voice lowered to +0.5 semitone** (author, after reading Ch2: slightly too high in a few scenes). Measured in the build at +1: about 269 Hz, level with Akane (265) and about 2.4 semitones above Nanoha (230); +0.5 brings her to about 261 Hz. Style guide §7 and the handoff updated. |
 | 10-16 | **Pilot v2 goes to its own Production thread** (brief: `production/pilot-v2/README.md`). **Review rule:** the author reviews only finished, playable chapters (art, voice, music included), never script-only drafts; produce all four chapters before handing over. Budget cap pending (proposed $40). |
 | 10-16 | **Pilot v2 review flow approved:** the author approves a one-page-per-chapter scene outline (scenes, CGs, inserts, backgrounds) first, then gets all four chapters as a finished build. **Budget: $40 cap** for the whole pilot. |
 | 10-17 | **Pilot v2 scene outline approved** (review delegated to the Story thread). All six [P] stagings kept. **Era treatments decided:** past life cool and desaturated, childhood warm and faded (canon §2). Changes: Ryōsuke's hot-dog argument moves to 1.3; the catch gets its short animated moment; FB1 shows the earlier "…You came back"; child Kōhei is a face window only. |

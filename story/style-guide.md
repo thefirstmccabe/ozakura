@@ -373,7 +373,7 @@ Moved to `story/archive/style-guide-legacy.md` (Oct 19). Current inserts are ful
 |---|---|---|---|
 | Kōhei | Puck | calm, grounded, a little tired, dry; let warmth through | OK (author) |
 | Nanoha | **Erinome, +2 semitones** | 16; soft, relaxed, deadpan; "anime heroine" youth direction | **Picked Oct 11** |
-| Natsuki | **Zephyr, brighter direction, +1 semitone** | young, light, clear; bright, sunny, quietly confident; playful and teasing, a smile in every line (exact instruction in `production/voice-auditions/oct24-natsuki/handoff-production.md`) | **Picked Oct 24** (audition `production/voice-auditions/oct24-natsuki/`, option 6). Was plain Zephyr |
+| Natsuki | **Zephyr, brighter direction, +0.5 semitone** (lowered from +1 on Oct 25) | young, light, clear; bright, sunny, quietly confident; playful and teasing, a smile in every line (exact instruction in `production/voice-auditions/oct24-natsuki/handoff-production.md`) | **Picked Oct 24** (audition `production/voice-auditions/oct24-natsuki/`, option 6); **lowered to +0.5 Oct 25** (at +1 she measured level with Akane and about 2.4 semitones above Nanoha). Was plain Zephyr |
 | Natsuki (past life), the dream woman | **Despina** (+ the game's dream echo) | a young Edo-era wife, mid-twenties; warm, gentle, a little lower and slower than a teen; scolding with love | **Picked Oct 18** (audition `production/voice-auditions/oct18-dream/`, candidate 2). Recast from Zephyr so the dream doesn't settle who she is (canon §5) |
 | Akane | **Aoede, +2 semitones** | 14; sweet, soft, playful, a little frail | **Picked Oct 11** |
 | Kirishima (male) | Charon | calm, low, quiet authority; bone-dry jokes | **Picked Oct 11** |
@@ -396,7 +396,7 @@ Moved to `story/archive/style-guide-legacy.md` (Oct 19). Current inserts are ful
 | Thug | Algenib | sneering, rough | **Picked Oct 11** |
 | Tournament opponent | Zubenelgenubi | cocky, mocking | **Picked Oct 11** |
 
-**Pitch shift:** "+2 semitones" means every generated line is post-processed with `ffmpeg -af "asetrate=24000*1.1225,aresample=24000,atempo=0.8909"` (raises pitch and formants, keeps timing); "+4" uses 1.2599 / 0.7937; "+1" uses 1.0595 / 0.9439.
+**Pitch shift:** "+2 semitones" means every generated line is post-processed with `ffmpeg -af "asetrate=24000*1.1225,aresample=24000,atempo=0.8909"` (raises pitch and formants, keeps timing); "+4" uses 1.2599 / 0.7937; "+1" uses 1.0595 / 0.9439; "+0.5" uses 1.0293 / 0.9715.
 **Shared voices:** Charon (Kirishima, Kazuo) and Algenib (Genji, the thug) are each used twice; Leda is the fairy at +4. Those pairs rarely share a scene; if they do, add a slight pitch offset to one of them.
 
 ## 8. fal workflow notes
