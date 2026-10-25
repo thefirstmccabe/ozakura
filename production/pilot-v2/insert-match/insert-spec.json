@@ -1,0 +1,351 @@
+{
+ "name": "ins_match",
+ "note": "Ch2 practice match (c2_match). Boxes and lettering in 1600x2272 page units; VN pages render at 2x. Reading order right to left, top to bottom; panel order here = script order.",
+ "pages": [
+  {
+   "n": 1,
+   "panels": [
+    {
+     "id": "p1-1",
+     "box": [
+      70,
+      70,
+      1530,
+      696
+     ],
+     "letters": [
+      {
+       "t": "shout",
+       "text": "Hajime!",
+       "at": [
+        0.74,
+        0.13
+       ],
+       "size": 40,
+       "tail": [
+        0.56,
+        0.13
+       ]
+      },
+      {
+       "t": "gloss",
+       "text": "(Begin!)",
+       "at": [
+        0.74,
+        0.28
+       ]
+      }
+     ],
+     "shot": "WIDE 21:9. Sonkyo at the line, tips crossed; Kirishima behind them, arm raised; the club kneeling along the wall. (Oct 12 test panel p1-1.)"
+    },
+    {
+     "id": "p1-2",
+     "box": [
+      70,
+      718,
+      1530,
+      1539
+     ],
+     "letters": [
+      {
+       "t": "nar",
+       "text": "I show her men. She doesn't even blink.",
+       "at": [
+        0.2,
+        0.14
+       ],
+       "maxw": 420,
+       "size": 30
+      }
+     ],
+     "shot": "16:9. Over her shoulder: Kōhei lifts his tip as if for men; her tip stays on his throat."
+    },
+    {
+     "id": "p1-3",
+     "box": [
+      70,
+      1561,
+      1530,
+      2187
+     ],
+     "letters": [
+      {
+       "t": "nar",
+       "text": "Half a second, I stop to think. Then I go.",
+       "at": [
+        0.8,
+        0.15
+       ],
+       "maxw": 420,
+       "size": 30
+      }
+     ],
+     "shot": "21:9. Kōhei commits, arms going up for men; her sword already moving to his wrist."
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "panels": [
+    {
+     "id": "p2-1",
+     "box": [
+      70,
+      70,
+      1530,
+      891
+     ],
+     "letters": [
+      {
+       "t": "shout",
+       "text": "Kote-e-e!",
+       "at": [
+        0.86,
+        0.14
+       ],
+       "size": 44,
+       "tail": [
+        0.74,
+        0.2
+       ]
+      },
+      {
+       "t": "sfx",
+       "text": "PAN!",
+       "at": [
+        0.4,
+        0.82
+       ],
+       "size": 110,
+       "angle": -10
+      }
+     ],
+     "shot": "16:9, large. Her kote lands on his right wrist as his arms come up."
+    },
+    {
+     "id": "p2-2",
+     "box": [
+      631,
+      913,
+      1530,
+      1587
+     ],
+     "letters": [
+      {
+       "t": "shout",
+       "text": "Kote ari!",
+       "at": [
+        0.22,
+        0.15
+       ],
+       "size": 40,
+       "tail": [
+        0.4,
+        0.14
+       ]
+      },
+      {
+       "t": "gloss",
+       "text": "(Point: wrist!)",
+       "at": [
+        0.22,
+        0.32
+       ]
+      }
+     ],
+     "shot": "4:3. Kirishima's arm raised toward her side."
+    },
+    {
+     "id": "p2-3",
+     "box": [
+      70,
+      913,
+      609,
+      1587
+     ],
+     "letters": [
+      {
+       "t": "nar",
+       "text": "She was there before I moved.",
+       "at": [
+        0.5,
+        0.89
+       ],
+       "maxw": 440,
+       "size": 30
+      }
+     ],
+     "shot": "4:5. Close on Kōhei's eyes behind his grille, a bead of sweat. (Oct 12 test panel p1-4.)",
+     "focus": [
+      0.5,
+      0.45
+     ]
+    },
+    {
+     "id": "p2-4",
+     "box": [
+      937,
+      1609,
+      1530,
+      2202
+     ],
+     "letters": [
+      {
+       "t": "nar",
+       "text": "She's laughing behind her men.",
+       "at": [
+        0.5,
+        0.9
+       ],
+       "maxw": 480,
+       "size": 30
+      }
+     ],
+     "shot": "1:1. Close on Natsuki behind her grille, laughing, out of breath. (Oct 12 test panel p2-2, eyes recolored green.)",
+     "focus": [
+      0.5,
+      0.45
+     ]
+    },
+    {
+     "id": "p2-5",
+     "box": [
+      70,
+      1609,
+      915,
+      2202
+     ],
+     "letters": [
+      {
+       "t": "shout",
+       "text": "Nihonme!",
+       "at": [
+        0.8,
+        0.14
+       ],
+       "size": 40,
+       "tail": [
+        0.95,
+        0.0
+       ]
+      },
+      {
+       "t": "gloss",
+       "text": "(Second point!)",
+       "at": [
+        0.8,
+        0.3
+       ]
+      },
+      {
+       "t": "nar",
+       "text": "This time I don't think.",
+       "at": [
+        0.24,
+        0.13
+       ],
+       "maxw": 320,
+       "size": 30
+      }
+     ],
+     "shot": "3:2. Back at the line in kamae, tips crossed again."
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "panels": [
+    {
+     "id": "p3-1",
+     "box": [
+      70,
+      70,
+      1530,
+      1554
+     ],
+     "letters": [
+      {
+       "t": "shout",
+       "text": "Dō-o-o!",
+       "at": [
+        0.2,
+        0.1
+       ],
+       "size": 48,
+       "tail": [
+        0.34,
+        0.4
+       ]
+      },
+      {
+       "t": "sfx",
+       "text": "BASHI!",
+       "at": [
+        0.62,
+        0.72
+       ],
+       "size": 150,
+       "angle": 8
+      }
+     ],
+     "shot": "1:1, large. She comes in for men; he drops under it, left foot forward (the wrong foot), and cuts across her dō as they pass."
+    },
+    {
+     "id": "p3-2",
+     "box": [
+      70,
+      1576,
+      1530,
+      2202
+     ],
+     "letters": [
+      {
+       "t": "shout",
+       "text": "Dō ari!",
+       "at": [
+        0.66,
+        0.12
+       ],
+       "size": 40,
+       "tail": [
+        0.53,
+        0.3
+       ]
+      },
+      {
+       "t": "gloss",
+       "text": "(Point: body!)",
+       "at": [
+        0.66,
+        0.27
+       ]
+      },
+      {
+       "t": "shout",
+       "text": "Yame! …That's time.",
+       "at": [
+        0.3,
+        0.12
+       ],
+       "size": 40,
+       "tail": [
+        0.47,
+        0.3
+       ],
+       "maxw": 560
+      },
+      {
+       "t": "gloss",
+       "text": "(Stop!)",
+       "at": [
+        0.3,
+        0.27
+       ]
+      }
+     ],
+     "shot": "21:9. Past each other, turned to face again; Kirishima's arm raised toward Kōhei's side."
+    }
+   ]
+  }
+ ]
+}

@@ -27,3 +27,28 @@
 | Kōhei work 371, bria cutout | bria/background/remove | 01a170cb-6e2e-7c12-af99-86a76fd8c992 |
 | Natsuki teach_point head crop, seed 391 | nano-banana-pro/edit | 01a170cc-e5d6-7a53-9779-129244d951bb |
 | Natsuki teach_point head crop, seed 392 | nano-banana-pro/edit | 01a170cc-e611-74c2-8a6b-43879470390a |
+| bg_restaurant_night, seed 401 | nano-banana-pro/edit | 01a170e0-53ac-7b43-9797-071a441e9ff4 |
+| bg_restaurant_night, seed 402 | nano-banana-pro/edit | 01a170e0-53a7-7c93-b2c5-627c7360afea |
+| bg_dojo_evening, seed 411 | nano-banana-pro/edit | 01a170e0-53a4-7303-a2cb-a689c780fc34 |
+| bg_dojo_evening, seed 412 | nano-banana-pro/edit | 01a170e0-53a8-70e3-9abd-df68b1fbbdf5 |
+| bg_bridge_dusk + Ōzakura, seed 421 | nano-banana-pro/edit | 01a170e0-53a6-7f52-a888-6cdd2a9b8ef5 |
+| bg_bridge_dusk + Ōzakura, seed 422 | nano-banana-pro/edit | 01a170e0-53a9-73a3-8bf5-629fb3d592bf |
+| bg_natsuki_apartment_night, seed 431 | nano-banana-pro/edit | 01a170e0-53ac-7be0-bb81-07ca8fb17b83 |
+| bg_natsuki_apartment_night, seed 432 | nano-banana-pro/edit | 01a170e0-53ca-7c31-acbc-157993074ba0 |
+| bg_bridge_dusk + Ōzakura (small), seed 423 | nano-banana-pro/edit | 01a170e1-7412-7790-9d68-59d0a2c8a255 |
+| bg_bridge_dusk + Ōzakura (small), seed 424 | nano-banana-pro/edit | 01a170e1-7410-72f0-a155-2149b26e71a1 |
+| cg_catch, seed 441 | nano-banana-pro/edit | 01a170e1-d5e6-7873-b9a1-1e899b600dbf |
+| cg_catch, seed 442 | nano-banana-pro/edit | 01a170e1-d621-7010-aa20-15e88eceed35 |
+| cg_catch start frame (the slip), seed 451 | nano-banana-pro/edit | 01a170e4-c3f8-7fe0-997e-bcfa4ca4476a |
+| cg_catch start frame (the slip), seed 452 | nano-banana-pro/edit | 01a170e4-c3f8-7301-9f96-878755ef13b5 |
+| ins_match p1-2 (feint), seed 460 | nano-banana-pro/edit | 01a170e6-c524-73c2-9624-a304855a0038 |
+| ins_match p1-3 (commit), seed 461 | nano-banana-pro/edit | 01a170e6-c526-74f3-a29b-f070dca9d3dd |
+| ins_match p2-1 (kote), seed 462 | nano-banana-pro/edit | 01a170e6-c608-7c91-a7f3-6a08d0e09934 |
+| ins_match p2-2 (Kirishima kote ari), seed 463 | nano-banana-pro/edit | 01a170e6-c5c8-7992-afa4-ec1e7908fc08 |
+| ins_match p2-5 (back at the line), seed 464 | nano-banana-pro/edit | 01a170e6-c5f4-7b71-9283-3ba3033b9ab4 |
+| ins_match p3-1 (dō), seed 465 | nano-banana-pro/edit | 01a170e6-c5c6-7030-8d2b-41d691b0497f |
+| ins_match p3-2 (dō ari), seed 466 | nano-banana-pro/edit | 01a170e6-c609-7511-8f24-aedf525ef458 |
+| ins_match p2-4 (Oct 12 p2-2, green eyes), seed 467 | nano-banana-pro/edit | 01a170e6-c5f5-7c00-a303-6ed6fa7c0cf4 |
+| cg_catch animated moment (Kling v3 Pro, 3 s, start 452 → end 441) | kling-video/v3/pro/image-to-video | 01a170e7-4b76-7350-90aa-7153f7566265 |
+| ins_match retakes (no balloon reservations): p1-2 470, p1-3 471, p2-1 472, p2-2 473, p2-5 474, p3-1 475, p3-2 476 | nano-banana-pro/edit | 01a170ea-7770-79a3-b2f5-b9606f337366, 01a170ea-7771-7e93-a027-2f52a1358a7e, 01a170ea-7771-72a1-beb3-21710e891a32, 01a170ea-7771-71d2-8ab6-2323cfa2f55a, 01a170ea-7772-7870-bedf-474992dd87e3, 01a170ea-77b1-7332-ab7d-3ca12fcb0437, 01a170ea-77ac-7df3-b799-3f795661119b |
+| ins_match retakes 2: p2-5 484 (sonkyo), p3-1 485 (no inset) | nano-banana-pro/edit | 01a170ec-f6a2-7c11-b2da-ccf2bbbc08a9, 01a170ec-f6a4-7c93-9b1f-03d8650dad72 |

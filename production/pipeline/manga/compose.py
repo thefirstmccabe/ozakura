@@ -1,6 +1,13 @@
 """Ōzakura manga page compositor (rebuilt Oct 12).
 
-Usage: python3 compose.py <spec.json> <panel_dir> <out_dir> [--suffix _bw] [--name]
+Usage: python3 compose.py <spec.json> <panel_dir> <out_dir> [--suffix _bw] [--name] [--scale 2] [--ins OUT.json --src PREFIX]
+
+--scale 2 renders the page at 2x (3200x4544, style guide 4a: VN pages are zoomed panel by panel) with every box,
+size and stroke scaled; the spec stays in 1600 px page units. --ins writes the VN engine's geometry file
+({w, h, pages: [{src, panels: [[x0,y0,x1,y1], ...]}]}, boxes in rendered px; src = PREFIX + page file name) and
+saves the pages as .webp (q88) instead of .jpg.
+Letter kinds: say, shout (balloons), nar (caption box), gloss (the small English caption beside a kendo call,
+style guide 5: "in manga inserts, the same pairing in a small caption beside the sound"), sfx.
 
 --name renders the storyboard ('name') for approval: per-panel shot notes ('shot'),
 optional stick figures ('figs': [[x, feet_y, height, label], ...] in panel fractions)
@@ -18,6 +25,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 FD = os.path.join(HERE, 'fonts')
 PW, PH = 1600, 2272
 BORDER = 5
+K = 1  # render scale (set by --scale); the spec stays in 1600 px units
 SS = 2  # supersample for lettering shapes
 
 
@@ -69,28 +77,28 @@ def balloon(layer, cx, cy, text, tail=None, kind='say', size=38, maxw=360):
     lh = size * SS * 1.12
     lines = wrap(text, f, maxw * SS, d)
     tw, th = text_block(d, lines, f, lh)
-    rx, ry = tw / 2 + 34 * SS, th / 2 + 26 * SS
+    rx, ry = tw / 2 + 34 * SS * K, th / 2 + 26 * SS * K
     X, Y = cx * SS, cy * SS
     if tail:
         tx, ty = tail[0] * SS, tail[1] * SS
         ang = math.atan2(ty - Y, tx - X)
         bx, by = X + rx * 0.7 * math.cos(ang), Y + ry * 0.7 * math.sin(ang)
         perp = ang + math.pi / 2
-        wv = 18 * SS
+        wv = 18 * SS * K
         pts = [(bx + wv * math.cos(perp), by + wv * math.sin(perp)), (tx, ty),
                (bx - wv * math.cos(perp), by - wv * math.sin(perp))]
-        d.polygon(pts, fill='white', outline='black', width=4 * SS)
+        d.polygon(pts, fill='white', outline='black', width=4 * SS * K)
     if kind == 'shout':
         pts, n = [], 22
         for i in range(n * 2):
             a = math.pi * i / n
             r = 1.0 if i % 2 == 0 else 0.84
             pts.append((X + rx * 1.12 * r * math.cos(a), Y + ry * 1.18 * r * math.sin(a)))
-        d.polygon(pts, fill='white', outline='black', width=4 * SS)
+        d.polygon(pts, fill='white', outline='black', width=4 * SS * K)
     else:
-        d.ellipse((X - rx, Y - ry, X + rx, Y + ry), fill='white', outline='black', width=4 * SS)
+        d.ellipse((X - rx, Y - ry, X + rx, Y + ry), fill='white', outline='black', width=4 * SS * K)
     if tail:  # cover the tail seam inside the balloon
-        d.ellipse((X - rx + 5 * SS, Y - ry + 5 * SS, X + rx - 5 * SS, Y + ry - 5 * SS), fill='white') if kind == 'say' else None
+        d.ellipse((X - rx + 5 * SS * K, Y - ry + 5 * SS * K, X + rx - 5 * SS * K, Y + ry - 5 * SS * K), fill='white') if kind == 'say' else None
     draw_lines(d, X, Y, lines, f, lh)
 
 
@@ -101,10 +109,24 @@ def narration(layer, cx, cy, text, size=32, maxw=400):
     lines = wrap(text, f, maxw * SS, d)
     tw, th = text_block(d, lines, f, lh)
     X, Y = cx * SS, cy * SS
-    pad = 18 * SS
+    pad = 18 * SS * K
     d.rectangle((X - tw / 2 - pad, Y - th / 2 - pad * 0.8, X + tw / 2 + pad, Y + th / 2 + pad * 0.8),
-                fill='white', outline='black', width=3 * SS)
+                fill='white', outline='black', width=3 * SS * K)
     draw_lines(d, X, Y, lines, f, lh)
+
+
+def gloss(layer, cx, cy, text, size=24, maxw=320):
+    """Small English gloss caption beside a kendo call: pale box, thin outline, italic-free regular face."""
+    d = ImageDraw.Draw(layer)
+    f = font(F_NAR, size * SS)
+    lh = size * SS * 1.12
+    lines = wrap(text, f, maxw * SS, d)
+    tw, th = text_block(d, lines, f, lh)
+    X, Y = cx * SS, cy * SS
+    pad = 10 * SS * K
+    d.rounded_rectangle((X - tw / 2 - pad, Y - th / 2 - pad * 0.7, X + tw / 2 + pad, Y + th / 2 + pad * 0.7),
+                        radius=8 * SS * K, fill=(255, 252, 240), outline=(60, 60, 60), width=max(1, int(2 * SS * K)))
+    draw_lines(d, X, Y, lines, f, lh, fill=(40, 40, 40))
 
 
 def sfx(page, cx, cy, text, size=120, angle=-8, fill='white'):
@@ -185,47 +207,58 @@ def name_sheet(page, pg):
     return sheet
 
 
-def render(spec, panel_dir, out_dir, suffix='', name=False):
+def render(spec, panel_dir, out_dir, suffix='', name=False, ins=None, src_prefix=''):
     os.makedirs(out_dir, exist_ok=True)
-    outs = []
+    outs, geo = [], {'w': PW * K, 'h': PH * K, 'pages': []}
+    sb = lambda b: [int(round(v * K)) for v in b]
     for pg in spec['pages']:
-        page = Image.new('RGBA', (PW, PH), 'white')
+        page = Image.new('RGBA', (PW * K, PH * K), 'white')
+        geo['pages'].append({'panels': [sb(p['box']) for p in pg['panels']]})
         # art + borders
         for p in pg['panels']:
-            x0, y0, x1, y1 = p['box']
+            x0, y0, x1, y1 = sb(p['box'])
             if name:
                 name_panel(page, p)
             else:
                 src = os.path.join(panel_dir, p['id'] + suffix + '.jpg')
                 art = cover(Image.open(src).convert('RGB'), x1 - x0, y1 - y0, *p.get('focus', (0.5, 0.5)))
                 page.paste(art, (x0, y0))
-            ImageDraw.Draw(page).rectangle((x0, y0, x1 - 1, y1 - 1), outline='black', width=BORDER)
+            ImageDraw.Draw(page).rectangle((x0, y0, x1 - 1, y1 - 1), outline='black', width=BORDER * K)
         # lettering on a supersampled layer, clipped per panel
         for p in pg['panels']:
-            x0, y0, x1, y1 = p['box']
+            x0, y0, x1, y1 = sb(p['box'])
             w, h = x1 - x0, y1 - y0
-            layer = Image.new('RGBA', (PW * SS, PH * SS), (0, 0, 0, 0))
+            layer = Image.new('RGBA', (PW * K * SS, PH * K * SS), (0, 0, 0, 0))
             for L in p.get('letters', []):
                 cx, cy = x0 + L['at'][0] * w, y0 + L['at'][1] * h
                 tail = None
                 if 'tail' in L:
                     tail = (x0 + L['tail'][0] * w, y0 + L['tail'][1] * h)
                 if L['t'] in ('say', 'shout'):
-                    balloon(layer, cx, cy, L['text'], tail, L['t'], L.get('size', 38), L.get('maxw', 360))
+                    balloon(layer, cx, cy, L['text'], tail, L['t'], L.get('size', 38) * K, L.get('maxw', 360) * K)
                 elif L['t'] == 'nar':
-                    narration(layer, cx, cy, L['text'], L.get('size', 32), L.get('maxw', 400))
-            layer = layer.resize((PW, PH), Image.LANCZOS)
-            mask = Image.new('L', (PW, PH), 0)
+                    narration(layer, cx, cy, L['text'], L.get('size', 32) * K, L.get('maxw', 400) * K)
+                elif L['t'] == 'gloss':
+                    gloss(layer, cx, cy, L['text'], L.get('size', 24) * K, L.get('maxw', 320) * K)
+            layer = layer.resize((PW * K, PH * K), Image.LANCZOS)
+            mask = Image.new('L', (PW * K, PH * K), 0)
             ImageDraw.Draw(mask).rectangle((x0, y0, x1, y1), fill=255)
-            clipped = Image.new('RGBA', (PW, PH), (0, 0, 0, 0))
-            clipped.paste(layer, (0, 0), Image.composite(layer.split()[3], Image.new('L', (PW, PH), 0), mask))
+            clipped = Image.new('RGBA', (PW * K, PH * K), (0, 0, 0, 0))
+            clipped.paste(layer, (0, 0), Image.composite(layer.split()[3], Image.new('L', (PW * K, PH * K), 0), mask))
             page.alpha_composite(clipped)
             for L in p.get('letters', []):
                 if L['t'] == 'sfx':
-                    sfx(page, x0 + L['at'][0] * w, y0 + L['at'][1] * h, L['text'], L.get('size', 120), L.get('angle', -8))
-        out = os.path.join(out_dir, f"page{pg['n']}{'_name' if name else suffix}.jpg")
-        (name_sheet(page, pg) if name else page.convert('RGB')).save(out, quality=92)
+                    sfx(page, x0 + L['at'][0] * w, y0 + L['at'][1] * h, L['text'], L.get('size', 120) * K, L.get('angle', -8))
+        ext = 'webp' if ins else 'jpg'
+        fn = f"page{pg['n']}{'_name' if name else suffix}.{ext}"
+        out = os.path.join(out_dir, fn)
+        img = name_sheet(page, pg) if name else page.convert('RGB')
+        img.save(out, quality=88 if ins else 92)
+        geo['pages'][-1]['src'] = src_prefix + fn
         outs.append(out)
+    if ins:
+        geo['pages'] = [{'src': g['src'], 'panels': g['panels']} for g in geo['pages']]
+        json.dump(geo, open(ins, 'w'), indent=1)
     return outs
 
 
@@ -235,5 +268,9 @@ if __name__ == '__main__':
     ap.add_argument('spec'); ap.add_argument('panel_dir'); ap.add_argument('out_dir')
     ap.add_argument('--suffix', default='', help='panel file suffix, e.g. _bw')
     ap.add_argument('--name', action='store_true', help='storyboard: shot notes and stick figures, no art')
+    ap.add_argument('--scale', type=int, default=1, help='render scale (2 for VN pages)')
+    ap.add_argument('--ins', help='write the VN engine geometry JSON here (pages saved as .webp)')
+    ap.add_argument('--src', default='', help='page src prefix in the geometry JSON, e.g. img/ins/ins_match/')
     a = ap.parse_args()
-    print(render(json.load(open(a.spec)), a.panel_dir, a.out_dir, a.suffix, a.name))
+    K = a.scale
+    print(render(json.load(open(a.spec)), a.panel_dir, a.out_dir, a.suffix, a.name, a.ins, a.src))
