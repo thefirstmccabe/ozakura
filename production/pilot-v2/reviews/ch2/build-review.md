@@ -31,3 +31,7 @@ Insert (13 steps, right-to-left, framing at all sizes, 7 voiced lines start 380�
 Backlog done: the animation re-encoded at 1920×1072, both files 4:2:0 (mp4 1.8 MB, webm 1.1 MB); Chapter 2's thumbnail is now `bg_dojo`; the stale [P] item removed. The rest stays on the backlog (status board carry list).
 
 Verified with a scripted run at iPad size under 8 Mbps throttling (`scratchpad/ch2/verify_fix.py`): the catch shows video then CG with no frame of the bare room in between; a tap 150 ms after the catch starts doesn't skip it; the insert never shows before page 1 has loaded; Takatsuki's re-entry at c2_0164 holds one x position (590 px) while fading in. Then the full regression run against the approved Ch1 (round 2 below).
+
+## Round 2: the fix round (e713f9a)
+- **Regression run** against the approved Ch1 (`qa_play.py --every` both builds, `snapshot_diff.py`): all 262 Ch1 frames compared; 13 differ, all by sub-pixel sprite position after a re-entry (c1_0054–0056 and c1_0186–0195: 0.35–0.45 CSS px, from setting `left` without the transition); nothing else changed. The new run's screenshot capture failed once at c2_0232 (a Chromium capture error after ~470 shots); the tail from c2_0229 to the end card was re-run separately: 65 lines, no errors, no failed requests.
+- **Scoped independent check:** see below.
