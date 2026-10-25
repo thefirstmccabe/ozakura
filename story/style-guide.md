@@ -171,6 +171,7 @@ Speech rules, not personality summaries; personalities are in canon §8. Address
 - **Japanese words** (Oct 19): name foods and things freely; Production glosses them with translator's notes (style guide §5). Nobody explains their own culture to each other.
 - **Nanoha's height** (Oct 19): one light height beat per chapter at most (Ch1's: the kitchen joke, plus "Chibi"), and never a height claim in a beat a CG shows unless the art shows it.
 - **Narration** (Oct 19): don't repeat a sentence as its own line for emphasis.
+- **Texting (author, Oct 25):** the girls use emoji often (not every message), along with kaomoji and stickers, as Japanese teens do. **Per character (Story thread):** Natsuki lots, playful, stacked (so a text with none stands out); Rika the most, in strings, plus stickers; Akane cute ones and kaomoji; Chie few and pointed ("AND???" 👀); Nanoha rarely and precisely, one well-chosen emoji (her reserve). The boys almost none; Kōhei a thumbs-up at most. Natsuki's unsent drafts to Chie can read differently for the missing emoji.
 - **Tics to avoid** (found in Ch1): the deadpan "I'm very X" joke across characters (keep "very" rare); narration's "She says it like…" and "the way you…" more than once a chapter; two girls reading Kōhei's face in the same chapter; American-internet bits that break the translated feel (the hot-dog-is-a-sandwich debate, "sub roll").
 
 | Character | Rhythm | Humor | Dodges feelings by | Never |
