@@ -6,7 +6,9 @@
 Tuesday at the restaurant, Wednesday's first practice, Natsuki's kendo lesson for Rika in teacher mode, the practice match as a 3-page manga insert, the debrief, the mop and the catch (an animated moment, then the CG), the bridge, and Natsuki's interlude. 152 voiced lines, new sprites (Natsuki kendo and teach, Kirishima, Takatsuki), Kōhei's kendo and work face windows, 4 backgrounds, 1 CG.
 
 ## Process (§9)
-Writing gates before art (continuity, lint, dialogue diagnosis → rewrite → overcorrection check, Japanese pass, two cold-read rounds; reports in this folder). Every image went through a fresh-agent on-model check (`*-onmodel-r1.md`), the fails were fixed and re-checked (`onmodel-r2.md`). Voices transcript-checked twice (the takes and the final packed clips); 4 lines retaken. iPad playthrough, phone and desktop spot checks, snapshot diff against the approved Ch1, and an independent build review (`build-review.md`).
+Writing gates before art (continuity, lint, dialogue diagnosis → rewrite → overcorrection check, Japanese pass, two cold-read rounds; reports in this folder). Every image went through a fresh-agent on-model check (`*-onmodel-r1.md`), the fails were fixed and re-checked (`onmodel-r2.md`). Voices transcript-checked twice (the takes and the final packed clips); 4 lines retaken. iPad playthrough, phone and desktop spot checks, snapshot diff against the approved Ch1, and an independent build review (`build-review.md`) with two fix rounds, each re-checked by a fresh agent.
+
+**Engine fixes from the review (they touch Ch1 too):** sprites that re-enter at a new spot now appear in place instead of sliding across the stage; the catch no longer flashes the empty dojo between the video and the CG, and a quick double tap can't skip it; manga inserts open only once their first page has loaded (or after 5 seconds). Ch1 otherwise plays exactly as approved (its frames differ only by sub-pixel sprite positions).
 
 ## Provisional details [P] (judge by playing; Story folds them into canon)
 From the script (full list with line IDs in `continuity.md`, "New [P] details"):
@@ -32,6 +34,7 @@ From production:
 - The catch CG's style is a little heavier in line and flatter in colour than the backgrounds and the Ch1 CGs; the windows are clear-glass grids rather than the dojo's wooden lattice.
 - Insert: dojo details (shrine shelf side, the club in or out of their men) shift a little from panel to panel; p2-5 and p3-1 had Natsuki's uniform colour corrected in code.
 - The catch CG hands off to the still image with a small difference (the video's last frame is close to, not identical to, the CG).
+- During the manga insert and the text messages the Log, Save and Menu buttons are hidden, and a save made mid-insert reloads at its first page (on the backlog for the next engine pass).
 
 ## Spend
 Ch2 about $15.30 (art $8.57; voices $2.55; on-model fixes $4.14); running total about $37.00 (going over $40 is approved). Details in `production/pilot-v2/ledger.md`.
