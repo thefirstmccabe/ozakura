@@ -80,6 +80,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **No storyboard step (Decided Oct 12).** Claude makes inserts from the script directly, runs a robust self-review, and presents only finished pages (style guide §4a).
   - **Presentation: panel by panel (Decided Oct 13).** Inside the VN, an insert opens on the whole page, then each tap zooms to the next panel while the rest of the page stays visible but dimmed. The author: "don't change a thing." Spec in style guide §4a. **Inserts are designed for this view from the start** (every panel reads alone, one beat per tap, landscape-friendly panel shapes, surprises on a new page), not adapted from print layouts.
   - **Era treatments (Decided Oct 17, with the pilot v2 outline):** the past life is cool and desaturated with softer edges (still color, never grayscale); childhood flashbacks are warm, sunlit and slightly faded, like an old photo, with a soft vignette. The two never share a palette, so the eras never blur.
+  - **Imagined scenes (Decided Oct 25):** a scene that plays out only in a character's mind, shown as if real, then a hard cut back to what actually happens. Mostly Nanoha's signature (her reserve made visible: the gap between what she feels and what she does), used three or four times; other characters sparingly and comic only; never Natsuki between Ch20 and Ch33. It needs its own look, distinct from both era treatments (Proposal: a soft white bloom at the edges and the music dropping out); Production designs it. **The one exception:** at the festival (Ch25) the imagined line dissolves into reality instead of cutting, because she actually says it.
   - **No cutscenes or longer animation (Decided Oct 12).** After two rounds of tests, getting them to commercial quality would cost too much in takes and review time; pivotal moments use CGs and manga inserts instead.
   - **Kept (Decided Oct 12):** subtle 2–4 s living-still loops on CGs (hair, petals, breathing, water), and **a few very short animated moments** of the kind the models handle well, such as the fall and catch (Ch2; tested Oct 10). Motion is punctuation, not the default.
 - **The feel:** a Japanese manga translated into English. Aim for manga plausibility rather than exhaustive realism.
@@ -295,6 +296,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 
 ### Telling Nanoha (Decided Oct 6; sharpened by the pact Oct 7)
 - **Natsuki tells Nanoha within about a week.** Telling her is about honor as much as kindness, because she broke their agreement.
+  - **The imagined slap (Decided Oct 25):** told as Nanoha's interlude. She imagines slapping Natsuki and screaming something like "He was mine"; then the cut back: she hasn't moved, and is even still smiling. But Natsuki's head turns a fraction and her hand drifts to her cheek; she says nothing, or "…Sorry. Go on." Nanoha's latent ability made her feel it. **Working:** this is the only time her power touches someone physically before the climax; Nanoha doesn't understand it, and it frightens her later. It mirrors Kōhei: his anger comes out as violence, hers stays inside and leaks anyway.
 - **Kōhei owns his half:** he has no duty to tell her first, since they aren't dating, and Natsuki is the one who tells her. When Nanoha then faces him, he says plainly that he kissed Natsuki back. He has some inkling she won't be happy; dense, not an idiot. Natsuki *knows* she'll be really unhappy.
 - **Nanoha's hurt** is "we said we'd do this fairly," not just "you kissed him."
 - **Nanoha dates him knowing about the kiss.**
@@ -362,7 +364,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Nanoha's side (Decided Oct 21):** some of these are told from Nanoha's point of view, as her third-person interludes with her thoughts, especially the heavier ones: FB1, FB4 (the hospital) and FB6 (now including the funeral). Her heart is breaking for him; she wants to support him; she wants him to rely on her and need her.
   - **FB1:** it's implied, never stated, that this is when she fell in love with him: he believed her and left the cookies out while everyone else made fun of her.
   - **FB6 includes the funeral (Decided Oct 21):** Kōhei's mom doesn't go, and people murmur about it. **[P]:** with his mother absent, the 15-year-old stands as chief mourner. It must read as her collapse, not coldness; it becomes her deepest shame, which Emi can name in Ch21 [P].
-  - **Her inner voice in the later ones (Decided Oct 24), above all the funeral:** she urges herself to say something to him, to hold him, to do more, and doesn't. The early ones (FB1, FB2) stay simple.
+  - **Her inner voice in the later ones (Decided Oct 24), above all the funeral:** she urges herself to say something to him, to hold him, to do more, and doesn't. **Oct 25:** at the funeral it plays as an imagined scene: she holds him, tells him she loves him and will do anything to support him; then the cut back to her across the kitchen table, pencil not moving. The early ones (FB1, FB2) stay simple.
   - **Mostly regret, turned inward (author, Oct 24):** she's jealous of Natsuki's ability to act, but the overwhelming feeling is regret at herself, short of self-loathing. It lives in the present-day Nanoha who is remembering, in the frame around the flashback (at 15, Natsuki wasn't in her life). In Ch21, which comes just after she learns of the kiss, the sharpest version: Natsuki held him the night of the fight; Nanoha, after the funeral, only sat across the table doing homework.
 - **Art needed:** child (about 7–8) and middle-school (about 13–14) versions of both. Proposal: reuse Akane's sailor uniform for middle-school Nanoha and a plain black gakuran for Kōhei (same local middle school). Placement goes in the chapter map.
 
@@ -525,6 +527,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Supernatural:**
   - A special connection to the tree; she knew the fairy as a childhood imaginary friend.
   - A latent spiritual sense; she perceives that something is happening between Kōhei and Natsuki.
+  - **Oct 25:** in one moment of anger her imagined slap reaches Natsuki physically (§6, Telling Nanoha); deniable, never repeated before the climax.
   - Inherited ability is a possibility, not a system.
   - She doesn't read Kōhei's private memories.
 - **Retired:** her dying rather than merging with the tree.

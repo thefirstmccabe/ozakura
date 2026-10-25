@@ -110,3 +110,5 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Competition ban** (§8 Takatsuki arc): no outside matches for the rest of the school year; practice allowed after the suspension.
   - **Kazuo's first talk at dawn after the fight** (§6 Mentor).
   - **Kōhei's three recurring dreams** (§6): her, it, and the trap; anger flashes awake.
+- **Oct 25:**
+  - **Imagined scenes** (§2): mostly Nanoha's; the slap at the telling (§6) that Natsuki still feels; the funeral embrace (FB6); a comic one early; at the festival her imagined line comes true.
