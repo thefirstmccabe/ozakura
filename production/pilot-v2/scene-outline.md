@@ -124,7 +124,7 @@ Ch4 ends the pilot. **Paired interludes** on the same night (one for each girl) 
 - **Ch2–4 new art:** CGs for the catch (plus its 2–3 s animated moment), the window, the shrine meeting and FB1; the Ch2 manga insert (about 9 panels); about 8 new or finished backgrounds (Hoshino Kitchen at night, Natsuki's apartment, the window view, the Tachibana living room, the shrine path, the Fujisawa living room by day, Nanoha's room at night, the houses at dusk with both windows lit); sprites for Natsuki (kendo gear, teacher pair, casual), Kirishima, Takatsuki, Mio, Genji and child Kōhei, plus child Nanoha's face windows.
 - **Kōhei on stage:** present-day Kōhei never is (face windows only). Child Kōhei is on stage in FB1, because FB1 is Nanoha's interlude (style guide §3a rule 3).
 - **Voice and music:** every line voiced with the final cast; the finished loops.
-- **Budget:** about $21.70 of the $40 cap is spent (ledger). **Rough estimate for Ch2–4: $15–22**, so the cap is tight: Ch2 alone (the insert, the catch and its animation, several sprite sets) is likely the most expensive at about $8–10. Production asks before passing the cap.
+- **Budget:** about $21.70 of the $40 cap is spent (ledger). **Rough estimate for Ch2–4: $15–22**, and **the author approved going over the $40 cap** (Oct 24; no new cap set). Ch2 alone (the insert, the catch and its animation, several sprite sets) is likely the most expensive at about $8–10.
 
 ## Settled Oct 17 (Story thread, delegated by the author; partly superseded)
 1. **[P] stagings kept** from the Oct 16 draft; the Oct 24 revision renumbered Ch3 and Ch4 and replaced some (see the sections above).

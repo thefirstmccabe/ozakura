@@ -17,6 +17,6 @@ The author approved the revised Ch2–4 outline on Oct 24 ("looks good!"). He pl
 - Cold readers give three numbers at every checkpoint (who he ends up with, who they want, who the dream woman is) and read from Ch1 through the chapter under test (style guide §9; `production/pipeline/review/cold-reader.md`).
 - Speech sheets (§3b) gained Oct 19/24 notes: Nanoha's height (one light beat per chapter), no repeated sentence lines, Japanese words named freely and glossed by Production.
 
-**Budget:** about $21.70 of the $40 cap is spent (ledger). The outline's rough estimate for Ch2–4 is $15–22, so the cap is tight; Ch2 (the insert, the catch and its animation, several sprite sets) is likely about $8–10. Ask the author before passing the cap.
+**Budget (author, Oct 24): going over the $40 cap is approved** for Ch2–4; no new cap was set. About $21.70 is spent (ledger); the rough estimate for Ch2–4 is $15–22. Keep reporting spend at each handover, and still ask before any single item over about $5.
 
 **Not in the pilot:** Kōhei's recurring dreams start in Ch5 (canon §6, chapter map); the confessions talk is in Ch5.
