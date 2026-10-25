@@ -40,4 +40,4 @@ From production:
 Ch2 about $15.30 (art $8.57; voices $2.55; on-model fixes $4.14); running total about $37.00 (going over $40 is approved). Details in `production/pilot-v2/ledger.md`.
 
 ## Waiting on you
-- A Nanoha scene in Ch2 (`cold-read-round2.md`): all six cold readers asked for one, and the casual reader reached 70% on Natsuki for the ending, which §9 counts as too sure. It's a plot beat, so it's your call; I'll send the options and my recommendation this morning. The build has no Nanoha scene yet.
+- A Nanoha scene in Ch2 (`cold-read-round2.md`): all six cold readers asked for one, and the casual reader reached 70% on Natsuki for the ending, which §9 counts as too sure. It's a plot beat, so it's your call. Asked Oct 25, 8:30 am: (1) a short Wednesday-morning kitchen scene, about 10 lines, no new art (recommended; wording [P]); (2) a smaller touch (a text, or a line in an existing scene); (3) leave Ch2 as is and let Ch3–4 rebalance. The build has no Nanoha scene yet.
