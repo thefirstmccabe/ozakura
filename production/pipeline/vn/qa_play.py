@@ -16,7 +16,7 @@ report = {"errors": [], "bad_requests": [], "voice_missing": [], "shots": [], "m
 seen = []
 where = {"at": "start"}   # the last line or insert step reached, so a failed request says where it happened
 with sync_playwright() as p:
-    b = p.chromium.launch(args=["--autoplay-policy=no-user-gesture-required"])
+    b = p.chromium.launch(args=["--autoplay-policy=no-user-gesture-required"], ignore_default_args=["--disable-dev-shm-usage"])   # shared memory in /dev/shm, not the (small) disk
     ctx = b.new_context(viewport={"width": W, "height": H}, device_scale_factor=2, has_touch=True)
     pg = ctx.new_page()
     pg.on("pageerror", lambda e: report["errors"].append(str(e)))

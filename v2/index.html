@@ -596,7 +596,7 @@ function showSpr(who, spr, pos){
   pos = pos || (prev&&prev.pos) || 'c';
   state.spr[who]={spr,pos};
   if(prev && el.classList.contains('on')) el.style.left=POSX[pos]+'%';   // on stage: a move slides
-  else { el.style.transition='none'; el.style.left=POSX[pos]+'%'; void el.offsetWidth; el.style.transition=''; }   // entering: appear in place (build review Oct 25)
+  else if(el.style.left!==POSX[pos]+'%'){ el.style.transition='none'; el.style.left=POSX[pos]+'%'; void el.offsetWidth; el.style.transition=''; }   // entering somewhere new: appear in place (build review Oct 25); same spot: the fade simply reverses
   lastSpr[who]=spr;
   const url=`img/ch/${spr}.webp`;
   if(!el.src.endsWith(url)){ const pre=new Image(); pre.onload=()=>{ el.src=url; el.dataset.spr=spr; sizeSpr(el, who); el.classList.add('on'); }; pre.src=url; }
@@ -720,7 +720,9 @@ function insertStart(c){
       insS={c, d, steps, pages, k:0, cur:-1, seen:{}, vtok:0, timer:null};
       insRender(false); requestAnimationFrame(()=>insEl.classList.add('on'));
       insStep(); };
-    const im0=pages[0].querySelector('img'); (im0.decode?im0.decode():Promise.resolve()).then(go,go);
+    let went=false; const go1=()=>{ if(went) return; went=true; clearTimeout(tmo); go(); };
+    const tmo=setTimeout(go1, 5000);   // never strand the player if page 1 stalls: open anyway (a dark page that can still be tapped through)
+    const im0=pages[0].querySelector('img'); (im0.decode?im0.decode():Promise.resolve()).then(go1,go1);
   }).catch(e=>{ if(tok!==insertStart.tok) return; note('insert',e); c.panels.forEach(p=>p.lines.forEach(insLog)); insOff(true); curLine=null; run(); });
 }
 insertStart.tok=0;
