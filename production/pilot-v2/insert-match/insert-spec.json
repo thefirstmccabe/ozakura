@@ -18,25 +18,26 @@
        "t": "shout",
        "text": "Hajime!",
        "at": [
-        0.74,
-        0.13
+        0.8,
+        0.12
        ],
        "size": 40,
        "tail": [
-        0.56,
-        0.13
+        0.57,
+        0.16
        ]
       },
       {
        "t": "gloss",
        "text": "(Begin!)",
        "at": [
-        0.74,
-        0.28
-       ]
+        0.8,
+        0.26
+       ],
+       "size": 27
       }
      ],
-     "shot": "WIDE 21:9. Sonkyo at the line, tips crossed; Kirishima behind them, arm raised; the club kneeling along the wall. (Oct 12 test panel p1-1.)"
+     "shot": "WIDE 21:9. Crouched at the line, tips crossed; Kirishima behind them, arm raised; the club kneeling along the wall. (Oct 24 reroll, seed 521.)"
     },
     {
      "id": "p1-2",
@@ -105,8 +106,8 @@
        ],
        "size": 44,
        "tail": [
-        0.74,
-        0.2
+        0.64,
+        0.22
        ]
       },
       {
@@ -120,7 +121,7 @@
        "angle": -10
       }
      ],
-     "shot": "16:9, large. Her kote lands on his right wrist as his arms come up."
+     "shot": "16:9, large. Both his hands on his shinai, raised for men; her tip lands on top of his right forearm. (Oct 24 reroll.)"
     },
     {
      "id": "p2-2",
@@ -150,7 +151,8 @@
        "at": [
         0.22,
         0.32
-       ]
+       ],
+       "size": 27
       }
      ],
      "shot": "4:3. Kirishima's arm raised toward her side."
@@ -169,7 +171,7 @@
        "text": "She was there before I moved.",
        "at": [
         0.5,
-        0.89
+        0.08
        ],
        "maxw": 440,
        "size": 30
@@ -201,7 +203,7 @@
        "size": 30
       }
      ],
-     "shot": "1:1. Close on Natsuki behind her grille, laughing, out of breath. (Oct 12 test panel p2-2, eyes recolored green.)",
+     "shot": "1:1. Close on Natsuki behind her grille, laughing, out of breath. (Oct 12 test panel p2-2, eyes recolored green, face redrawn to face A Oct 24, seed 525.)",
      "focus": [
       0.5,
       0.45
@@ -220,8 +222,8 @@
        "t": "shout",
        "text": "Nihonme!",
        "at": [
-        0.8,
-        0.14
+        0.63,
+        0.1
        ],
        "size": 40,
        "tail": [
@@ -233,9 +235,10 @@
        "t": "gloss",
        "text": "(Second point!)",
        "at": [
-        0.8,
-        0.3
-       ]
+        0.6,
+        0.245
+       ],
+       "size": 27
       },
       {
        "t": "nar",
@@ -303,7 +306,7 @@
        "t": "shout",
        "text": "Dō ari!",
        "at": [
-        0.66,
+        0.63,
         0.12
        ],
        "size": 40,
@@ -316,16 +319,17 @@
        "t": "gloss",
        "text": "(Point: body!)",
        "at": [
-        0.66,
+        0.63,
         0.27
-       ]
+       ],
+       "size": 27
       },
       {
        "t": "shout",
        "text": "Yame! …That's time.",
        "at": [
         0.3,
-        0.12
+        0.1
        ],
        "size": 40,
        "tail": [
@@ -340,7 +344,8 @@
        "at": [
         0.3,
         0.27
-       ]
+       ],
+       "size": 27
       }
      ],
      "shot": "21:9. Past each other, turned to face again; Kirishima's arm raised toward Kōhei's side."

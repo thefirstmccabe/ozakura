@@ -404,7 +404,8 @@ const CHAR = {
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
 /* sprites with empty space above the head (a shinai held up past it), as a fraction of the usual sprite height
    (outfit_sprite.py --headroom); they draw that much taller so the figure keeps its size and floor */
-const HEADROOM = {natsuki_teach_smile:.16, natsuki_teach_point:.16};
+const HEADROOM = {natsuki_teach_smile:.16, natsuki_teach_point:.16,
+  natsuki_kendo_smile:.035, natsuki_kendo_grin:.035, natsuki_kendo_laugh:.035, natsuki_kendo_smirk:.035, natsuki_kendo_surprised:.035, natsuki_kendo_blush:.035, natsuki_kendo_curious:.035, natsuki_kendo_wistful:.035, natsuki_kendo_tears:.035};
 const NOWIN = new Set(['manager','classmate','past_natsuki']);       // no face window: no sprite, or a hidden face
 const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki'], cg_catch:['natsuki','kohei']};
 /* sprites take on the light of the scene: night and evening backgrounds tint them */

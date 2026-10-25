@@ -14,19 +14,20 @@ VOICE = {  # style guide §7 (author-picked cast); pitch shifts are applied afte
 PLACE = {"prologue": "a dream", "c1_dream": "a dream", "c1_morning": "a morning scene at home", "c1_river": "a walk to school along the river",
          "c1_entrance": "a busy school entrance", "c1_intro": "a classroom", "c1_lunch": "lunch in the classroom",
          "c1_interlude": "an empty classroom after school", "c1_night": "a quiet street at night"}
-lines = json.load(open(sys.argv[1]))
-groups = collections.OrderedDict()
-for x in lines:
-    groups.setdefault((x["scene"], x["who"]), []).append(x)
-jobs = []
-for (scene, who), xs in groups.items():
-    k = max(1, -(-len(xs) // 10)); size = -(-len(xs) // k)
-    for c in range(k):
-        chunk = xs[c * size:(c + 1) * size]
-        voice, style = VOICE[who]
-        tail = (f" These are separate lines of dialogue from {PLACE[scene]}: give each line its own natural emotion, "
-                "and leave a clear pause between lines.") if len(chunk) > 1 else f" A line of dialogue from {PLACE[scene]}."
-        jobs.append({"key": f"{scene}.{who}.{c + 1}", "ids": [x["id"] for x in chunk], "texts": [x["ja"] for x in chunk],
-                     "input": {"prompt": "\n\n".join(x["ja"] for x in chunk), "voice": voice, "style_instructions": style + tail}})
-json.dump(jobs, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)
-print(len(jobs), "jobs,", sum(len(j["input"]["prompt"]) + len(j["input"]["style_instructions"]) for j in jobs), "chars")
+if __name__ == "__main__":
+    lines = json.load(open(sys.argv[1]))
+    groups = collections.OrderedDict()
+    for x in lines:
+        groups.setdefault((x["scene"], x["who"]), []).append(x)
+    jobs = []
+    for (scene, who), xs in groups.items():
+        k = max(1, -(-len(xs) // 10)); size = -(-len(xs) // k)
+        for c in range(k):
+            chunk = xs[c * size:(c + 1) * size]
+            voice, style = VOICE[who]
+            tail = (f" These are separate lines of dialogue from {PLACE[scene]}: give each line its own natural emotion, "
+                    "and leave a clear pause between lines.") if len(chunk) > 1 else f" A line of dialogue from {PLACE[scene]}."
+            jobs.append({"key": f"{scene}.{who}.{c + 1}", "ids": [x["id"] for x in chunk], "texts": [x["ja"] for x in chunk],
+                         "input": {"prompt": "\n\n".join(x["ja"] for x in chunk), "voice": voice, "style_instructions": style + tail}})
+    json.dump(jobs, open(sys.argv[2], "w"), ensure_ascii=False, indent=1)
+    print(len(jobs), "jobs,", sum(len(j["input"]["prompt"]) + len(j["input"]["style_instructions"]) for j in jobs), "chars")

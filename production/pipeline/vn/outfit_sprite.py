@@ -41,8 +41,8 @@ ref = Image.open(a.ref_sprite).convert("RGBA")
 fx, fy, fw, fh = map(float, a.face_box.split(","))
 tpl = gray(master)[int(fy - fh / 2):int(fy + fh / 2), int(fx - fw / 2):int(fx + fw / 2)]
 k = gray(on_white(cut))
-best = None
-for s in np.arange(0.85, 1.15, 0.0025):
+best = (float("nan"), 1.0, (0, 0)) if a.align else None
+for s in ([] if a.align else np.arange(0.85, 1.15, 0.0025)):
     ks = cv2.resize(k, (round(k.shape[1] * s), round(k.shape[0] * s)), interpolation=cv2.INTER_AREA)
     r = cv2.matchTemplate(ks, tpl, cv2.TM_CCOEFF_NORMED); _, mx, _, loc = cv2.minMaxLoc(r)
     if best is None or mx > best[0]: best = (mx, s, loc)
@@ -82,10 +82,12 @@ mask = mask.filter(ImageFilter.GaussianBlur(a.feather))
 for f in a.exprs:
     ex = Image.open(f).convert("RGBA")
     layer = Image.new("RGBA", sprite.size, (0, 0, 0, 0)); layer.alpha_composite(ex, (int(round(dx)), int(round(dy))))
-    out = Image.composite(layer, sprite, mask)
-    # keep the new outfit's alpha outside the face, the face's alpha inside
-    oa = np.asarray(sprite)[..., 3].astype(float); la = np.asarray(layer)[..., 3].astype(float); m = np.asarray(mask).astype(float) / 255
-    o = np.asarray(out).copy(); o[..., 3] = np.clip(oa * (1 - m) + la * m, 0, 255).astype(np.uint8)
+    # the face's colour inside the oval wherever the face layer is opaque; the new outfit's own alpha everywhere, so the
+    # old outfit's hair outside the new silhouette can't ghost through the feathered oval (Oct 24 on-model check)
+    sa = np.asarray(sprite).astype(float); la_ = np.asarray(layer).astype(float)
+    m = (np.asarray(mask).astype(float) / 255 * la_[..., 3] / 255)[..., None]
+    o = np.empty_like(np.asarray(sprite)); o[..., :3] = np.clip(la_[..., :3] * m + sa[..., :3] * (1 - m), 0, 255).astype(np.uint8)
+    o[..., 3] = sa[..., 3].astype(np.uint8)
     expr = os.path.basename(f).rsplit(".", 1)[0].split("_")[-1]
     Image.fromarray(o, "RGBA").save(os.path.join(a.out, f"{a.name}_{expr}.webp"), "WEBP", quality=90, method=6)
 info = {"align_score": round(float(score), 3), "scale": round(float(s), 4), "shift": [round(float(tx), 1), round(float(ty), 1)],
