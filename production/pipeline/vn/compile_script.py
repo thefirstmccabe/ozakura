@@ -11,13 +11,19 @@ Translator's notes: if a `notes.txt` (`term | note` per line) sits next to the f
 script glosses as {term|gloss} go into the output as "notes" (lowercase term -> note); the engine underlines those
 terms and opens the note on a tap.
 
+Ch2 ops (Oct 24): `@phone me|chie text` (a text message, unvoiced), `@shake`, `@anim name` (a short animated
+moment: the engine plays img/anim/name.mp4 once and holds the CG `name`), and manga inserts:
+`@insert name` … `@panel description` … lines … `@insert end`. Lines inside an insert belong to the current panel:
+they're lettered on the page art, go to the backlog, and spoken ones are voiced when the panel opens.
+
 Usage: python3 compile_script.py OUT_SCRIPT_JSON OUT_VOICE_JSON src1.ozs [src2.ozs ...] [--write-ids]
 """
 import json, os, re, sys
 
 SPEAKERS = {"kohei": "Kōhei", "nanoha": "Nanoha", "natsuki": "Natsuki", "akane": "Akane", "rika": "Rika",
             "ryosuke": "Ryōsuke", "teacher": "Ōno-sensei", "kirishima": "Kirishima", "takatsuki": "Takatsuki",
-            "manager": "Manager", "yuzu": "Yuzu", "emi": "Emi", "mio": "Mio", "past_natsuki": "???"}
+            "manager": "Manager", "yuzu": "Yuzu", "emi": "Emi", "mio": "Mio", "past_natsuki": "???",
+            "classmate": "Classmate"}
 FACES = {"smile", "neutral", "grin", "deadpan", "surprised", "flustered", "annoyed", "serious", "stillness", "sad"}
 ID_TAG = re.compile(r'\s+#((?:p|c\d+)_\d{4,})\s*$')
 
@@ -37,6 +43,7 @@ def compile_files(paths):
     shown = {}           # who -> current sprite name
     counters = {}
     scene = None
+    insert = None        # the open @insert command while inside one
     used = set()
     new_ids = {}         # (path, line number) -> ID assigned to a line that had none
     for path in paths:   # explicit IDs first, so new ones never collide
@@ -70,12 +77,51 @@ def compile_files(paths):
                 cmds.append({"t": "scene", "id": scene, "title": title.strip()})
                 continue
             prefix = "p" if scene == "prologue" else scene.split("_")[0]
+            # inside a manga insert, lines go to the current panel instead of the command list
+            sink = cmds
+            if insert is not None and not s.startswith("@"):
+                if not insert["panels"]:
+                    errors.append(f"{where}: line inside @insert before the first @panel"); continue
+                sink = insert["panels"][-1]["lines"]
             if s.startswith("> "):
-                cmds.append({"t": "nar", "id": line_id(prefix, written, (path, n)), "text": s[2:].strip()})
+                sink.append({"t": "nar", "id": line_id(prefix, written, (path, n)), "text": s[2:].strip()})
                 continue
             if s.startswith("@"):
                 parts = s[1:].split()
                 op, args = parts[0], parts[1:]
+                if insert is not None and op not in ("panel", "insert"):
+                    errors.append(f"{where}: @{op} inside @insert (only @panel and lines; close it with @insert end)")
+                    continue
+                if op == "insert":
+                    if args and args[0] == "end":
+                        if insert is None:
+                            errors.append(f"{where}: @insert end without @insert")
+                        elif not insert["panels"]:
+                            errors.append(f"{where}: @insert {insert['name']} has no panels")
+                        insert = None
+                    elif insert is not None:
+                        errors.append(f"{where}: @insert inside @insert")
+                    else:
+                        insert = {"t": "insert", "name": args[0], "panels": []}
+                        cmds.append(insert)
+                    continue
+                if op == "panel":
+                    if insert is None:
+                        errors.append(f"{where}: @panel outside @insert")
+                    else:
+                        insert["panels"].append({"desc": s[len("@panel"):].strip(), "lines": []})
+                    continue
+                if op == "phone":
+                    who, text = (args[0] if args else ""), s[len("@phone"):].strip()[len(args[0]) if args else 0:].strip()
+                    if who not in ("me", "chie") or not text:
+                        errors.append(f"{where}: @phone takes me|chie and a message")
+                    else:
+                        cmds.append({"t": "phone", "id": line_id(prefix, written, (path, n)), "who": who, "text": text})
+                    continue
+                if op == "shake":
+                    cmds.append({"t": "shake"}); continue
+                if op == "anim":
+                    cmds.append({"t": "anim", "name": args[0]}); continue
                 if op in ("bg", "cg"):
                     name = args[0]
                     if op == "cg" and name == "-":
@@ -134,15 +180,17 @@ def compile_files(paths):
             who, expr, face, text, ja = m.groups()
             if who not in SPEAKERS:
                 errors.append(f"{where}: unknown speaker {who}")
+            if expr and sink is not cmds:
+                errors.append(f"{where}: no sprite expressions inside an insert"); expr = None
             if expr:
                 if who not in shown:
                     errors.append(f"{where}: {who}<{expr}> but {who} is not on stage")
                 spr = f"{who}_{outfit.get(who, 'school')}_{expr}"
                 shown[who] = spr
                 cmds.append({"t": "show", "who": who, "spr": spr})
-            if who == "kohei" and face not in FACES:
+            if who == "kohei" and face not in FACES and sink is cmds:
                 errors.append(f"{where}: Kōhei line needs a face from {sorted(FACES)}")
-            if face and who != "kohei":
+            if face and who != "kohei" and sink is cmds:
                 if expr:
                     errors.append(f"{where}: use either <expr> (sprite) or (face) (face window), not both")
                 if who in shown:
@@ -150,13 +198,15 @@ def compile_files(paths):
                 face = f"{outfit.get(who, 'school')}_{face}"   # crop of that sprite expression
             lid = line_id(prefix, written, (path, n))
             c = {"t": "say", "id": lid, "who": who, "text": text}
-            if face:
+            if face and sink is cmds:
                 c["face"] = face
-            cmds.append(c)
+            sink.append(c)
             if ja and ja.strip() != "-":
                 voice.append({"id": lid, "who": who, "ja": ja.strip(), "en": text, "scene": scene})
             elif not ja:
                 errors.append(f"{where}: spoken line without Japanese (use '|| -' for unvoiced)")
+    if insert is not None:
+        errors.append(f"@insert {insert['name']} is never closed (add @insert end)")
     # a hold that never closes would swallow every tap for the rest of a first playthrough
     held = cur_scene = None
     for c in cmds:
@@ -242,8 +292,9 @@ if __name__ == "__main__":
         print(f"translator's notes: {len(used_notes)} used ({', '.join(used_notes)})"
               + (f"; not used by these sources: {', '.join(unused_notes)}" if unused_notes else ""))
     json.dump(voice, open(out_voice, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    n_say = sum(c["t"] == "say" for c in cmds); n_nar = sum(c["t"] == "nar" for c in cmds)
-    words = sum(len(re.sub(r"\{([^|}]+)\|[^}]+\}", r"\1", c["text"]).split()) for c in cmds if c["t"] in ("say", "nar"))
+    flat = [c for c in cmds if c["t"] != "insert"] + [x for c in cmds if c["t"] == "insert" for p in c["panels"] for x in p["lines"]]
+    n_say = sum(c["t"] == "say" for c in flat); n_nar = sum(c["t"] == "nar" for c in flat)
+    words = sum(len(re.sub(r"\{([^|}]+)\|[^}]+\}", r"\1", c["text"]).split()) for c in flat if c["t"] in ("say", "nar", "phone"))
     print(f"{len(cmds)} commands, {n_say} spoken + {n_nar} narration lines, ~{words} words, {len(voice)} voiced")
     print("sprites used:", sorted({c["spr"] for c in cmds if c["t"] == "show"}))
     print("bg/cg used:", sorted({c["name"] for c in cmds if c["t"] in ("bg", "cg") and c.get("name")}))
