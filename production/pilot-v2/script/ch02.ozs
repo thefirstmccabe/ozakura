@@ -35,7 +35,7 @@ classmate: "Nacchan, you have to get the strawberry parfait. Everybody gets the 
 natsuki<surprised>: "…Fujisawa?" || ……ふじさわ？  #c2_0014
 > I'm holding a tray of empty glasses and wearing the Hoshino Kitchen apron, the one with a cartoon chef on the pocket.  #c2_0015
 natsuki<grin>: "You work here." || ここでバイトしてるんだ。  #c2_0016
-kohei(neutral): "Tuesdays, Thursdays, Sundays." || 火曜、木曜、日曜。  #c2_0017
+kohei(neutral): "Three nights a week." || 週に三日な。  #c2_0017
 natsuki<curious>: "And you tie your apron like a {hakama|pleated kendo trousers}." || しかも、エプロンを袴みたいに結んでる。  #c2_0018
 > I look down. The strings cross in front and finish in a flat knot below my stomach.  #c2_0019
 kohei(deadpan): "It stays tied." || ほどけないんだよ。  #c2_0020
@@ -81,6 +81,7 @@ natsuki<smile>: "See you tomorrow, Fujisawa. Wednesday." || じゃあね、ふ�
 @bgm -
 > I finish the floor. I count out the register. I walk home up the hill.  #c2_0056
 > Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about taiyaki and herons, to someone I met yesterday.  #c2_0057
+> There's a plastic container on the kitchen table when I get in, with a sticky note on the lid in Nanoha's handwriting. It says "Again."  #c2_0299
 
 == c2_dojo | First practice
 @card Wednesday, April 9
@@ -100,13 +101,13 @@ takatsuki: "Yes. It has been off center for a year." || そうだ。一年前か
 @show kirishima kendo_calm l
 kirishima: "Line up." || 整列。  #c2_0068
 > Kirishima-senpai, the captain, is the only person I know who can quiet a room by not raising his voice. As far as anyone can tell, nothing has ever surprised him.  #c2_0069
-kirishima: "Welcome back. The first-years start trials next week. We have one new member already: a second-year transfer. Mizuno." || 久しぶりだな。一年の体験入部は来週からだ。一足先に、新入部員が一人入った。二年の転校生だ。みずの。  #c2_0070
+kirishima: "Welcome back. One new member, ahead of the first-years: a second-year transfer. Mizuno." || 久しぶりだな。一年生より一足先に、新入部員が一人入った。二年の転校生だ。みずの。  #c2_0070
 @show natsuki kendo_smile r
-natsuki: "Mizuno Natsuki, second year. Most recently from Sendai. I've done kendo since I was seven, and this is my sixth dojo. Who do I get to fight first?" || みずのなつき、二年です。この前までは仙台にいました。剣道は七歳からで、道場はここで六つ目です。で、最初の相手は誰ですか？  #c2_0071
+natsuki: "Mizuno Natsuki, second year. Kendo since I was seven. Who do I get to fight first?" || みずのなつき、二年です。剣道は七歳からです。で、最初の相手は誰ですか？  #c2_0071
 > A couple of the third-years laugh. She looks pleased about it.  #c2_0072
 kirishima: "Good." || いいだろう。  #c2_0073
 > She's in a faded indigo {keikogi|kendo jacket} and hakama, her hair up in a long ponytail. The gi has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved.  #c2_0074
-kirishima: "Warm-ups and suburi. After the break, bogu: {kirikaeshi|a drill of nonstop strikes}, {waza|technique} drills, then {shiai-geiko|practice matches}." || 準備運動と素振り。休憩のあと、防具をつけて、切り返し、技の稽古、それから試合稽古。  #c2_0076
+kirishima: "Warm-ups and suburi. Bogu after the break." || 準備運動と素振り。休憩のあとで防具。  #c2_0076
 kirishima: "Fujisawa. You'll take Mizuno. Find out what she has." || ふじさわ。みずのの相手をしろ。どれだけやるか、見てやれ。  #c2_0077
 @show takatsuki kendo_surprised c
 takatsuki: "Captain, I could take her, if—" || 主将、僕が相手をしても……  #c2_0078
@@ -118,7 +119,7 @@ kirishima: "That was a joke." || 今のは冗談だ。  #c2_0081
 
 == c2_lesson | Kendo, explained
 @bgm daily
-> At the water break after warm-ups, the dojo door slides open a few inches, and Hoshikawa's head comes around it, followed by a sketchbook.  #c2_0083
+> At the water break after warm-ups, the dojo door slides open a few inches, and Hoshikawa Rika's head comes around it, followed by a sketchbook.  #c2_0083
 @show rika school_grin l
 rika: "Nacchan! Art club assignment! 'People in motion'! Can I draw you? Can I sit here? Is this a floor you're allowed to sit on?" || なっちゃん！ 美術部の課題！「動いている人」！ 描いていい？ ここ座っていい？ この床って、座っていい床？  #c2_0084
 kirishima(calm): "Shoes off." || 上履きを脱げ。  #c2_0085
@@ -180,7 +181,7 @@ natsuki<smile>: "From memory." || 記憶で。  #c2_0135
 == c2_match | The practice match
 @bgm practice
 > After the break, {bogu|armor}. The {men|helmet} goes on last: the {tenugui|cotton head cloth} tied tight over my hair, the helmet settled down over it, the cords pulled and knotted behind my head. The world narrows to a rectangle behind the grille.  #c2_0292
-> An hour of kirikaeshi and waza drills later, Kirishima-senpai calls the matches.  #c2_0136
+> An hour of {kirikaeshi|a drill of nonstop strikes} and {waza|technique} drills later, Kirishima-senpai calls the {shiai-geiko|practice matches}.  #c2_0136
 > Mizuno faces me across the floor. Through the bars of her men I can see her eyes, and nothing else, and they're bright.  #c2_0137
 > We bow. We step in. We crouch at the line, shinai tips crossing.  #c2_0138
 @insert ins_match
@@ -189,7 +190,7 @@ kirishima: "Hajime! (Begin!)" || はじめ！  #c2_0139
 @panel Page 1 (4:3): Kōhei, seen past Natsuki's shoulder, lifts his sword tip as if to strike her head. Natsuki hasn't moved at all; her tip stays on his throat.
 > I show her men. She doesn't even blink.  #c2_0140
 @panel Page 1 (16:9): Kōhei commits, stepping in hard with his arms going up for men. Natsuki's sword is already moving toward his wrist.
-> I stop. Half a second. Then I go.  #c2_0141
+> Half a second, I stop to think. Then I go.  #c2_0141
 @panel Page 2, large (top half): her strike lands on his right wrist as his arms come up.
 natsuki: "Kote-e-e!" || こてぇぇっ！  #c2_0142
 @panel Page 2 (4:3): Kirishima's arm raised toward Natsuki's side.
@@ -233,6 +234,7 @@ takatsuki: "You did not take his feint, and you were on his wrist the moment he 
 natsuki<laugh>: "New-girl luck. It wears off by Friday." || 転校生のビギナーズラックだよ。金曜には切れるから。  #c2_0167
 takatsuki: "Luck is not a technique." || 運は、技ではない。  #c2_0168
 > She laughs again and finds something on her hakama that needs fixing.  #c2_0169
+takatsuki: "Also, you laughed inside your men after the point. That was the part of zanshin you left out." || それと、一本のあと、めんの中で笑っていた。残心の説明で抜けていたのは、そこだ。  #c2_0300
 takatsuki: "And Fujisawa. Your left foot was forward on that dō." || それと、ふじさわ。あの胴、左足が前に出ていた。  #c2_0170
 kohei(neutral): "It scored." || 一本は一本だ。  #c2_0171
 takatsuki: "Yes." || そうだ。  #c2_0172
@@ -332,6 +334,7 @@ natsuki<laugh>: "See you tomorrow, Fujisawa!" || また明日ね、ふじさわ�
 @hide natsuki
 > I watch her go until she's gone under the streetlights.  #c2_0249
 > Halfway up the hill, it occurs to me that something's been decided, and I wasn't the one who decided it.  #c2_0250
+> When I get to the house, the light's on in Nanoha's window across the gap.  #c2_0301
 > It's only trash bags.  #c2_0251
 
 == c2_interlude | Natsuki: the apartment
@@ -354,6 +357,7 @@ natsuki(smile): "I'm amazing at first days. It's the second semesters I never ge
 @phone chie oh no  #c2_0265
 @phone me not like that!!! he's good. like scary good  #c2_0266
 @phone me i knew what he was going to do before he did it. every time  #c2_0267
+@phone me except the last one. didn't see that one at all  #c2_0302
 @phone chie ok that's actually kind of hot  #c2_0268
 @phone me CHIE  #c2_0269
 @phone me also i cried on him  #c2_0270
@@ -364,8 +368,8 @@ natsuki(smile): "I'm amazing at first days. It's the second semesters I never ge
 @phone chie are you ok tho. for real  #c2_0275
 > Natsuki looked at that last message for a long time.  #c2_0276
 > She didn't know why she'd cried. It hadn't felt like crying. It had felt like her body doing something without asking her, the same as on the floor.  #c2_0277
-> She'd fought people for nine years. You learned to read shoulders and feet, where the weight went before the sword did. That wasn't what this had been. She hadn't read him. She'd just known.  #c2_0278
-> She didn't like not knowing how.  #c2_0279
+> She'd fought people for nine years. You learned to read shoulders and feet, where the weight went before the sword did. That wasn't what this had been.  #c2_0278
+> She didn't like not knowing what it had been.  #c2_0279
 > Chie had been her best friend in fourth grade, and again last year, when her dad's work had swung them back through Sendai like a pendulum. Chie was the only person she'd ever managed to keep. Birthday calls. A box of {zunda mochi|sweet green soybean rice cakes} every New Year.  #c2_0280
 > Chie was also more than two hundred miles away.  #c2_0281
 > And there was Nanoha, who said "I'm working up to it" and meant it, and who had walked her all the way home on Monday without being asked. Natsuki liked her.  #c2_0282
