@@ -33,6 +33,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 - Approval of the chapter map (its header still marks it a Proposal). The W7 question was answered Oct 21 (yes).
 - The Prologue/Ch1 dream music (`memory`, silence, or a new cue at about $2), after he hears the Ch2 catch.
 - Pilot names, kanji and POV (pilot-notes §1).
+- Whether Ch2 gets a short Nanoha scene: he leans no (Oct 25), not committed. Whether the reader windows widen from 3–4 to 4–8 chapters: after the pilot.
 
 **Threads and who owns what:** the repo's `CLAUDE.md`.
 
@@ -119,6 +120,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | 10-24 | **Decided (author): the pilot can go over its $40 cap** for Ch2–4; no new cap set. Spend is still reported at each handover, and any single item over about $5 still needs his OK. |
 | 10-25 | **Ch2 built and handed over** (Production; §9 in full): writing gates, art with on-model checks (two rounds), 152 voiced lines transcript-checked twice, iPad playthrough with phone and desktop spot checks, the snapshot diff against the approved Ch1, an independent build review (5 must-fix items fixed, then re-run). Handover `production/pilot-v2/reviews/ch2/handover-oct25.md`; [P] list in pilot-notes §3. Engine fixes that also touch Ch1: the living-still guard (broken on this branch only, Oct 24) and entering sprites no longer slide. |
 | 10-25 | **[P] (Production): Kōhei's work clothes are a white T-shirt and brown bib apron** (style guide §2; was white shirt and waist apron), matching the script's apron with the cartoon chef. Easy to reverse. |
+| 10-25 | **Decided (author): the "no reader sure" rule is loosened.** A cold reader may pass 70% at a single checkpoint, as long as it evens out as the chapters go (his words). The windows stay at about 3–4 chapters for now; whether they widen to 4–8 is open until after the pilot. **The Ch2 Nanoha scene:** he's inclined to leave Ch2 without one ("normal in manga," not both girls in every chapter), not yet committed. For Story (canon §5) and Planning (§9 step 3, `review/cold-reader.md`): `production/pilot-v2/handoff-story-oct25.md`. |
 
 ## 3. Budget (open lines)
 | Line | Cap | Spent | Notes |
