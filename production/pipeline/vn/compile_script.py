@@ -44,6 +44,7 @@ def compile_files(paths):
     counters = {}
     scene = None
     insert = None        # the open @insert command while inside one
+    hold_at = {}         # command index -> file:line of each @hold, for error messages
     used = set()
     new_ids = {}         # (path, line number) -> ID assigned to a line that had none
     for path in paths:   # explicit IDs first, so new ones never collide
@@ -144,6 +145,7 @@ def compile_files(paths):
                         errors.append(f"{where}: @hold takes 'on' or 'off', got {' '.join(args)!r}")
                     else:
                         cmds.append({"t": "hold", "on": arg == "on"})
+                        hold_at[len(cmds) - 1] = where
                 elif op == "card":
                     cmds.append({"t": "card", "text": s[len("@card "):].strip()})
                 elif op == "chapter":
@@ -209,13 +211,13 @@ def compile_files(paths):
         errors.append(f"@insert {insert['name']} is never closed (add @insert end)")
     # a hold that never closes would swallow every tap for the rest of a first playthrough
     held = cur_scene = None
-    for c in cmds:
+    for k, c in enumerate(cmds):
         if c["t"] == "scene" and held:
-            errors.append(f"@hold on in scene {held} is never closed (add @hold off before the next scene)"); held = None
+            errors.append(f"{held[1]}: @hold on in scene {held[0]} is never closed (add @hold off before the next scene)"); held = None
         if c["t"] == "scene": cur_scene = c["id"]
-        if c["t"] == "hold": held = cur_scene if c["on"] else None
+        if c["t"] == "hold": held = (cur_scene, hold_at.get(k, "?")) if c["on"] else None
     if held:
-        errors.append(f"@hold on in scene {held} is never closed")
+        errors.append(f"{held[1]}: @hold on in scene {held[0]} is never closed")
     return cmds, voice, errors, new_ids
 
 

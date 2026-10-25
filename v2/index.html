@@ -417,7 +417,8 @@ const CHAPTERS = [
 ];
 const NEXT_CH = {1:'Chapter 2, “Kendo,” comes next.', 2:'Chapter 3, “Windows,” comes next.', 3:'Chapter 4, “The Light at the Shrine,” comes next.'};
 const KANJI = ['','第一話','第二話','第三話','第四話'];
-let SIG='', holdT=0;   // fingerprint of the loaded script.json; saves carry it
+let SIG='', holdT=0;
+function holdSeen(){ const v=store.get('v2holdSeen',{}); return v&&typeof v==='object'&&!Array.isArray(v)?v:{}; }   // a damaged value must never stop the story   // fingerprint of the loaded script.json; saves carry it
 function sigOf(S){ let h=5381; const t=JSON.stringify(S); for(let k=0;k<t.length;k++) h=((h<<5)+h+t.charCodeAt(k))|0; return (h>>>0).toString(36)+'.'+S.length; }
 const store = {
   get(k,d){try{const v=localStorage.getItem('ozk.'+k);return v==null?d:JSON.parse(v)}catch(e){return d}},
@@ -559,8 +560,8 @@ function setBg(name, tr){
 }
 const cgLive=$('#cgLive');
 function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
-function liveOn(name, delay){
-  liveOff(); cgLive.style.transition=''; if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
+function liveOn(name, delay, cut){
+  if(cut){ cgLive.style.transition='none'; } liveOff(); void cgLive.offsetWidth; cgLive.style.transition='';   // a cut drops the old living still at once (Safari kept its last frame through the fade) if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
   cgLive.src=LIVE[name]; cgLive.muted=true;
   cgLive.onplaying=()=>{ if(tok===setCg.tok) setTimeout(()=>{ if(tok===setCg.tok) cgLive.classList.add('on'); }, delay); };
   const p=cgLive.play(); if(p&&p.catch) p.catch(()=>{});      // if autoplay is refused, the still simply stays
@@ -574,7 +575,7 @@ function setCg(name, tr){
   if(next.classList.contains('on') && next.src.endsWith(`/img/bg/${name}.webp`)){
     // a tap mid-fade (or before the new image has even loaded) back to the image still underneath: fade the top one back out, no cut
     ++setCg.tok; cur.style.transition=curF.style.transition=`opacity ${dur}s ease`; cur.classList.remove('on'); curF.classList.remove('on');
-    cgFront=1-cgFront; liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150); return;
+    cgFront=1-cgFront; liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150, tr==='cut'); return;
   }
   if(next.classList.contains('on')){ next.style.transition=nextF.style.transition='none'; next.classList.remove('on'); nextF.classList.remove('on'); void next.offsetWidth; }
   nextF.style.zIndex=1; curF.style.zIndex=0; next.style.zIndex=3; cur.style.zIndex=2; cgLive.style.zIndex=4;
@@ -583,7 +584,7 @@ function setCg(name, tr){
   const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); nextF.classList.add('on');
     if(over) setTimeout(()=>{ if(tok===setCg.tok){ cur.classList.remove('on'); curF.classList.remove('on'); } }, dur*1000+60); else { cur.classList.remove('on'); curF.classList.remove('on'); } };
   next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload(); cgFront=1-cgFront;
-  liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150);
+  liveOn(name, (tr==='cut'?0:tr==='slow'?1800:1000)+150, tr==='cut');
 }
 function showSpr(who, spr, pos){
   const el=sprImg(who); const prev=state.spr[who];
@@ -767,7 +768,7 @@ function run(){
         case 'hideall': hideAll(); break;
         case 'mode': setMode(c.mode,c.label); break;
         case 'flash': if(!skipOn) flash(); break;
-        case 'hold': state.hold=!!c.on; if(c.on) holdT=Date.now(); else { const seen=store.get('v2holdSeen',{})||{}; seen[state.scene]=true; store.set('v2holdSeen',seen); } break;
+        case 'hold': state.hold=!!c.on; if(c.on) holdT=Date.now(); else { const seen=holdSeen(); seen[state.scene]=true; store.set('v2holdSeen',seen); } break;
         case 'shake': if(!skipOn) shake(); break;
         case 'wait': return pause(skipOn?40:c.s*1000);
         case 'card': return dateCard(c.text);
@@ -804,7 +805,7 @@ function line(c){
 function advance(){
   if(overlayOpen()) return;
   if(state.hold && !skipOn){   // the wordless cold open plays through the first time; after that a tap skips to its end
-    const seen=store.get('v2holdSeen',{})||{};
+    const seen=holdSeen();
     if(seen[state.scene] && Date.now()-holdT>600){ const j=S.findIndex((c,k)=>k>=state.i-1 && c.t==='hold' && !c.on); if(j>0){ clearTimeout(waitTimer); startAt(j); } }
     return; }
   if(typing){ finishType(); return; }
