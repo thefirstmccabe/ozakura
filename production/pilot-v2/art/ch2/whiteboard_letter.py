@@ -14,7 +14,7 @@ RED = (196, 38, 44)      # the red marker of her circles
 # (text, size, colour, anchor point in 2752x1536 pixels, anchor, rotation in degrees)
 LABELS = [
     ("KENDO", 92, INK, (1030, 300), "ls", -3),
-    ("lesson 1", 62, INK, (1052, 370), "ls", -3),
+    ("lesson one", 62, INK, (1046, 370), "ls", -3),
     ("MEN", 84, INK, (1838, 262), "ls", -4),
     ("head", 58, RED, (1844, 326), "ls", -4),
     ("TSUKI", 80, INK, (1772, 700), "ls", -2),
