@@ -15,7 +15,7 @@ From the script (full list with line IDs in `continuity.md`, "New [P] details"):
 - The 2-B karaoke group and the strawberry parfait; the kids' plate isn't ID-checked, Natsuki photographs it and keeps the paper flag (it ends up in her pen cup); the manager mistakes her for staff ("Lifesaver" ×9).
 - Town: the mountain looks walkable from the station; the taiyaki stand at the north exit (good red bean, burnt custard); the convenience-store fridge; the lower river path floods in June; the bridge between the station and his hill.
 - Club: two-hour practices; Takatsuki's solo suburi; Kōhei's hakama knot off center for a year; Kirishima never raises his voice; the session order; the schedule whiteboard and lost-and-found box; Rika's art assignment "People in motion"; the form faults (Kōhei's low left heel, wandering tip, wrong distance, left foot forward on dō; Natsuki's dropped left shoulder); the match ends 1–1 (kote, then nuki-dō); first-years mop, Kōhei usually stays.
-- Natsuki: "my bow is excellent"; photos of every town, "mostly vending machines"; she's wanted to photograph the Ōzakura since Monday; her mother's notes; her father in Yokohama until Friday; the boxes SAPPORO→SENDAI→SHIRASAWA; Chie's pinned chat and birthday calls; eleven photos, one sent.
+- Natsuki: photos of every town, "mostly vending machines"; she's wanted to photograph the Ōzakura since Monday; her mother's notes; her father in Yokohama until Friday; the boxes SAPPORO→SENDAI→SHIRASAWA; Chie's pinned chat and birthday calls; eleven photos, one sent.
 - Her balcony looks over a cherry-lined street that runs **along** the river (c2_0289 reworded on Oct 24 to match the art).
 From production:
 - The match insert runs 3 pages, not the outline's 2 (so the dō is a page-turn reveal).

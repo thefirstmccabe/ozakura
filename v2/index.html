@@ -417,7 +417,7 @@ const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?P
 const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
 const CHAPTERS = [
   {k:'CHAPTER 1', t:'The House Next Door', start:'cold_open', th:'cg_natsuki_intro'},   // the cold open plays first, then the chapter card
-  {k:'CHAPTER 2', t:'Kendo', start:'c2_tuesday', th:'cg_catch'},
+  {k:'CHAPTER 2', t:'Kendo', start:'c2_tuesday', th:'bg_dojo'},   // not the catch CG: it would give away the chapter's peak
 ];
 const NEXT_CH = {1:'Chapter 2, “Kendo,” comes next.', 2:'Chapter 3, “Windows,” comes next.', 3:'Chapter 4, “The Light at the Shrine,” comes next.'};
 const KANJI = ['','第一話','第二話','第三話','第四話'];
@@ -595,7 +595,9 @@ function showSpr(who, spr, pos){
   const el=sprImg(who); const prev=state.spr[who];
   pos = pos || (prev&&prev.pos) || 'c';
   state.spr[who]={spr,pos};
-  el.style.left=POSX[pos]+'%'; lastSpr[who]=spr;
+  if(prev && el.classList.contains('on')) el.style.left=POSX[pos]+'%';   // on stage: a move slides
+  else { el.style.transition='none'; el.style.left=POSX[pos]+'%'; void el.offsetWidth; el.style.transition=''; }   // entering: appear in place (build review Oct 25)
+  lastSpr[who]=spr;
   const url=`img/ch/${spr}.webp`;
   if(!el.src.endsWith(url)){ const pre=new Image(); pre.onload=()=>{ el.src=url; el.dataset.spr=spr; sizeSpr(el, who); el.classList.add('on'); }; pre.src=url; }
   else { sizeSpr(el, who); el.classList.add('on'); }
@@ -672,21 +674,24 @@ function showFace(url, who){
 
 /* ---------- short animated moments (canon §2, the Ch2 catch): img/anim/NAME.mp4 plays once over the stage, then the
    CG NAME (its last frame) holds. A tap finishes it; if the video can't play, the CG simply fades in. ---------- */
-const animV=$('#animV'); let animDone=null, animTok=0;
+const animV=$('#animV'); let animDone=null, animTok=0, animShownT=0;
 const ANIM_EXT = animV.canPlayType('video/mp4; codecs="avc1.42E01E"') ? 'mp4' : 'webm';   // Safari and Chrome: H.264; browsers without it get a VP9 copy
 function animOff(){ animTok++; animDone=null; animV.onplaying=animV.onended=animV.onerror=null; animV.style.transition='none'; animV.classList.remove('on');
   try{animV.pause()}catch(e){} animV.removeAttribute('src'); try{animV.load()}catch(e){} }
 function playAnim(c){
   running=false; curLine=c; showFace(null); box.classList.add('hidden'); stopVoice(); devUpdate();
   if(skipOn){ setCg(c.name,'cut'); curLine=null; return pause(60); }
-  const tok=++animTok; let t=null;
+  const tok=++animTok; let t=null; animShownT=0;
+  const cgIm=new Image(); cgIm.src=`img/bg/${c.name}.webp`;
+  const cgReady=(cgIm.decode?cgIm.decode():new Promise(r=>{cgIm.onload=cgIm.onerror=r;})).catch(()=>{});
   const go=(ms)=>{ curLine=null; later(ms, run); };
   const fail=()=>{ if(tok!==animTok) return; clearTimeout(t); animOff(); setCg(c.name,'fade'); go(1100); };
-  animDone=()=>{ if(tok!==animTok) return; clearTimeout(t); animDone=null; setCg(c.name,'cut'); animV.onended=null;
-    animV.style.transition='opacity .2s ease'; animV.classList.remove('on'); setTimeout(()=>{ if(tok===animTok) animOff(); }, 260); go(skipOn?40:420); };
+  animDone=()=>{ if(tok!==animTok) return; clearTimeout(t); animDone=null; animV.onended=null;
+    cgReady.then(()=>{ if(tok!==animTok) return; setCg(c.name,'cut');   // the video's last frame stays up until the CG is ready, so the empty room never shows
+      animV.style.transition='opacity .2s ease'; animV.classList.remove('on'); setTimeout(()=>{ if(tok===animTok) animOff(); }, 260); go(skipOn?40:420); }); };
   t=setTimeout(fail, 4500);   // never strand the player if the video stalls
   animV.style.transition='none'; animV.classList.remove('on'); animV.muted=true; animV.src=`img/anim/${c.name}.${ANIM_EXT}`;
-  animV.onplaying=()=>{ if(tok!==animTok) return; clearTimeout(t); t=setTimeout(()=>animDone&&animDone(), 9000); animV.style.transition='opacity .25s ease'; animV.classList.add('on'); };
+  animV.onplaying=()=>{ if(tok!==animTok) return; clearTimeout(t); animShownT=Date.now(); t=setTimeout(()=>animDone&&animDone(), 9000); animV.style.transition='opacity .25s ease'; animV.classList.add('on'); };
   animV.onended=()=>animDone&&animDone();
   animV.onerror=fail;
   const p=animV.play(); if(p&&p.catch) p.catch(fail);
@@ -711,9 +716,11 @@ function insertStart(c){
     insEl.innerHTML=''; insEl.style.transition='';
     const pages=d.pages.map(p=>{ const e=document.createElement('div'); e.className='ipg'; e.style.width=d.w+'px'; e.style.height=d.h+'px';
       const im=new Image(); im.alt=''; im.decoding='async'; im.src=p.src; const hl=document.createElement('div'); hl.className='hl none'; e.append(im,hl); insEl.appendChild(e); return e; });
-    insS={c, d, steps, pages, k:0, cur:-1, seen:{}, vtok:0, timer:null};
-    insRender(false); requestAnimationFrame(()=>insEl.classList.add('on'));
-    insStep();
+    const go=()=>{ if(tok!==insertStart.tok || curLine!==c) return;
+      insS={c, d, steps, pages, k:0, cur:-1, seen:{}, vtok:0, timer:null};
+      insRender(false); requestAnimationFrame(()=>insEl.classList.add('on'));
+      insStep(); };
+    const im0=pages[0].querySelector('img'); (im0.decode?im0.decode():Promise.resolve()).then(go,go);
   }).catch(e=>{ if(tok!==insertStart.tok) return; note('insert',e); c.panels.forEach(p=>p.lines.forEach(insLog)); insOff(true); curLine=null; run(); });
 }
 insertStart.tok=0;
@@ -814,7 +821,7 @@ function advance(){
     if(seen[state.scene] && Date.now()-holdT>600){ const j=S.findIndex((c,k)=>k>=state.i-1 && c.t==='hold' && !c.on); if(j>0){ clearTimeout(waitTimer); startAt(j); } }
     return; }
   if(typing){ finishType(); return; }
-  if(animDone){ animDone(); return; }
+  if(animDone){ if(animShownT && Date.now()-animShownT>600) animDone(); return; }   // a quick double tap doesn't skip the moment before it shows
   if(insS && curLine===insS.c){ insNext(); return; }
   if(curLine && (curLine.t==='insert'||curLine.t==='anim')) return;   // still loading
   if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
@@ -1186,6 +1193,11 @@ try{
 setInterval(()=>{ if(!S) return; for(let k=state.i;k<Math.min(S.length,state.i+40);k++){ const c=S[k];
   if((c.t==='bg'||c.t==='cg')&&c.name&&!['black','white'].includes(c.name)){ const u=`img/bg/${c.name}.webp`; if(!preloaded.has(u)){preloaded.add(u); const i=new Image(); i.src=u;} }
   if(c.t==='show'){ const u=`img/ch/${c.spr}.webp`; if(!preloaded.has(u)){preloaded.add(u); const i=new Image(); i.src=u;} }
+  if(c.t==='anim'){ const u=`img/bg/${c.name}.webp`, v=`img/anim/${c.name}.${ANIM_EXT}`;
+    if(!preloaded.has(u)){preloaded.add(u); const i=new Image(); i.src=u;}
+    if(!preloaded.has(v)){preloaded.add(v); fetch(v).catch(()=>preloaded.delete(v));} }
+  if(c.t==='insert' && !preloaded.has('ins:'+c.name)){ preloaded.add('ins:'+c.name);
+    insData(c.name).then(d=>d.pages.forEach(p=>{ const i=new Image(); i.src=p.src; })).catch(()=>preloaded.delete('ins:'+c.name)); }
   if(c.t==='say'&&ac) voiceBuf(c.id); } },1500);
 })();
 </script>
