@@ -1,6 +1,6 @@
 """Cut voiced lines out of the batched takes, apply the cast's post-processing and pack them per scene.
 
-  pitch: style guide §7 ("+2" = asetrate x1.1225 then atempo 0.8909; "+4" = 1.2599 / 0.7937; "+1" = 1.0595 / 0.9439)
+  pitch: style guide §7 ("+2" = asetrate x1.1225 then atempo 0.8909; "+4" = 1.2599 / 0.7937; "+1" = 1.0595 / 0.9439; "+0.5" = 1.0293 / 0.9715)
   past_natsuki: a soft echo, so the dream voice sits apart from the present day
   every line: 50 ms pad in, 120 ms out, short fades, leveled per line to the same speech RMS (-21 dBFS), peaks limited
 
@@ -21,8 +21,13 @@ def speech_rms_db(path, a, b):
     v = e[e > max(e.max() * 0.1, 1e-4)]
     return 20 * np.log10(np.sqrt(np.mean(v ** 2)))
 
-PITCH = {"nanoha": 2, "akane": 2, "rika": 2, "yuzu": 2, "mio": 4, "natsuki": 1}   # rika +4 -> +2 (author, Oct 17); natsuki +1 (Oct 24)
-RATE = {1: (1.0595, 0.9439), 2: (1.1225, 0.8909), 4: (1.2599, 0.7937)}
+PITCH = {"nanoha": 2, "akane": 2, "rika": 2, "yuzu": 2, "mio": 4, "natsuki": 0.5}   # rika +4 -> +2 (author, Oct 17); natsuki +1 (Oct 24) -> +0.5 (Oct 25)
+PITCH_KEEP = {("natsuki", "c1_"): 1}   # the approved Ch1 keeps Natsuki at +1 until the author says otherwise (Oct 25)
+RATE = {0.5: (1.0293, 0.9715), 1: (1.0595, 0.9439), 2: (1.1225, 0.8909), 4: (1.2599, 0.7937)}
+def pitch_for(who, line_id):
+    for (w, prefix), v in PITCH_KEEP.items():
+        if w == who and line_id.startswith(prefix): return v
+    return PITCH.get(who)
 
 lines, jobs, segs, takes, out = (json.load(open(sys.argv[1])), json.load(open(sys.argv[2])),
                                  json.load(open(sys.argv[3])), sys.argv[4], sys.argv[5])
@@ -35,8 +40,8 @@ for x in lines:
     take, a, b, _ = segs[x["id"]]
     a = max(0.0, a - 0.05); b = b + 0.12
     f = [f"atrim={a:.3f}:{b:.3f}", "asetpts=PTS-STARTPTS"]
-    if x["who"] in PITCH:
-        r, t = RATE[PITCH[x["who"]]]
+    if pitch_for(x["who"], x["id"]):
+        r, t = RATE[pitch_for(x["who"], x["id"])]
         f += [f"asetrate=24000*{r}", "aresample=24000", f"atempo={t}"]
     if x["who"] == "past_natsuki":
         f += ["aecho=0.85:0.6:70|140:0.22|0.12"]

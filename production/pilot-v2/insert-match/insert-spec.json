@@ -57,6 +57,15 @@
        ],
        "maxw": 420,
        "size": 30
+      },
+      {
+       "t": "gloss",
+       "text": "(men: a head strike)",
+       "at": [
+        0.2,
+        0.27
+       ],
+       "size": 27
       }
      ],
      "shot": "16:9. Over her shoulder: Kōhei lifts his tip as if for men; her tip stays on his throat."
@@ -119,6 +128,15 @@
        ],
        "size": 110,
        "angle": -10
+      },
+      {
+       "t": "gloss",
+       "text": "(Wrist!)",
+       "at": [
+        0.86,
+        0.27
+       ],
+       "size": 27
       }
      ],
      "shot": "16:9, large. His hands on his shinai at chin height as he starts to lift; her tip lands on his right forearm. (Oct 24 reroll, seed 551, his men recolored navy.)"
@@ -197,10 +215,19 @@
        "text": "She's laughing behind her men.",
        "at": [
         0.5,
-        0.9
+        0.82
        ],
        "maxw": 480,
        "size": 30
+      },
+      {
+       "t": "gloss",
+       "text": "(men: helmet)",
+       "at": [
+        0.5,
+        0.925
+       ],
+       "size": 27
       }
      ],
      "shot": "1:1. Close on Natsuki behind her grille, laughing, out of breath. (Oct 12 test panel p2-2, eyes recolored green, face redrawn to face A Oct 24, seed 525.)",
@@ -289,6 +316,15 @@
        ],
        "size": 150,
        "angle": 8
+      },
+      {
+       "t": "gloss",
+       "text": "(Body!)",
+       "at": [
+        0.17,
+        0.18
+       ],
+       "size": 27
       }
      ],
      "shot": "1:1, large. She comes in for men; he drops under it, left foot forward (the wrong foot), and cuts across her dō as they pass."

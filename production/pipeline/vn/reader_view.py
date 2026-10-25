@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from compile_script import SPEAKERS, split_id, read_notes  # display names, kept in one place
 
 SAY = re.compile(r'^(\w+)(?:<(\w+)>)?(?:\((\w+)\))?:\s*"(.*?)"\s*(?:\|\|.*)?$')
-GLOSS = re.compile(r'\{([^|}]+)\|([^}]+)\}')
+GLOSS = re.compile(r'\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}')
 
 
 def bg_label(name):
@@ -105,8 +105,8 @@ def convert(paths, split):
                     print("unparsed:", s, file=sys.stderr)
             if out:
                 cur.append(GLOSS.sub(r"\1 (\2)", out))
-                for term, _ in GLOSS.findall(out):
-                    k = term.strip().lower()
+                for term, _, key in GLOSS.findall(out):
+                    k = (key or term).strip().lower()
                     if k in notes and k not in noted:
                         noted.add(k); cur.append(f"[Translator's note, {term.strip()}: {notes[k]}]")
     if cur:

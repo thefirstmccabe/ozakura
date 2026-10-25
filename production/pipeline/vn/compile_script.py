@@ -8,7 +8,7 @@ stay keyed to the same IDs). Lines without one get the next free number for thei
 --write-ids writes those new IDs back into the source.
 
 Translator's notes: if a `notes.txt` (`term | note` per line) sits next to the first source, the notes for terms the
-script glosses as {term|gloss} go into the output as "notes" (lowercase term -> note); the engine underlines those
+script glosses as {term|gloss} (or {term|gloss|note key}, for a spelling such as "Kote-e-e!" that uses another term's note) go into the output as "notes" (lowercase term -> note); the engine underlines those
 terms and opens the note on a tap.
 
 Ch2 ops (Oct 24): `@wear kohei kendo|work|school` (the outfit Kōhei's face windows show, until changed),
@@ -229,7 +229,7 @@ def compile_files(paths):
     return cmds, voice, errors, new_ids
 
 
-GLOSS = re.compile(r"\{([^|}]+)\|([^}]+)\}")
+GLOSS = re.compile(r"\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}")   # {term|gloss} or {term|gloss|note key} (Oct 25)
 
 
 def read_notes(path):
@@ -256,8 +256,8 @@ def notes_for(cmds, notes):
     """The notes the script's glossed terms use, in first-use order, and the notes nothing uses."""
     used = {}
     for c in cmds:
-        for term, _ in GLOSS.findall(c.get("text", "")):
-            k = term.strip().lower()
+        for term, _, key in GLOSS.findall(c.get("text", "")):
+            k = (key or term).strip().lower()
             if k in notes and k not in used:
                 used[k] = notes[k]
     return used, sorted(set(notes) - set(used))

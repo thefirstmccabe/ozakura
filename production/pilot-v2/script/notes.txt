@@ -24,3 +24,6 @@ men | The kendo helmet, with a steel grille over the face and padded flaps over 
 tenugui | A thin cotton cloth tied over the hair under the kendo helmet, to soak up sweat and keep the helmet snug.
 zōkin | A cleaning rag, usually a folded and stitched towel. Japanese schools clean their own floors, and dojos are wiped down by hand.
 zunda mochi | Rice cakes covered in a sweet, bright-green paste of mashed edamame; a specialty of Sendai.
+kote | The padded kendo gloves, and the strike to the wrist they protect (usually the right wrist). As a call, "Kote!" names the target as the strike lands.
+dō | The kendo chest protector, and the strike to the side of the body it protects. As a call, "Dō!" names the target as the strike lands.
+debana | Striking at the very moment the opponent starts an attack, before it lands. Debana-kote is that strike to the wrist.

@@ -143,6 +143,12 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
   background:rgba(240,236,228,.95);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.5);
   opacity:0;transform:translateY(12px);transition:opacity .35s,transform .35s;pointer-events:none;color:#1b1d26}
 #phone.on{opacity:1;transform:none}
+/* text messages hide the text box, so a small hint says what to do (author, Oct 25) */
+#tapHint{position:absolute;left:50%;bottom:clamp(18px,5vh,44px);transform:translateX(-50%);font:600 clamp(12px,1.7vh,15px)/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;
+  color:var(--paper-dim);background:rgba(16,19,31,.72);padding:9px 16px;border-radius:999px;opacity:0;transition:opacity .4s;pointer-events:none;z-index:6}
+#tapHint.on{opacity:1;animation:hintPulse 2.4s ease-in-out .4s infinite}
+@keyframes hintPulse{50%{opacity:.55}}
+#tapHint .k::before{content:'Tap'} @media (hover:hover) and (pointer:fine){ #tapHint .k::before{content:'Click'} }
 #phone .ph{font:700 13px/1 var(--f-body);color:#5b5f70;text-align:center;padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,.08);letter-spacing:.04em}
 .msg{max-width:82%;padding:8px 12px;border-radius:16px;font-size:clamp(14px,1.9vh,17px);line-height:1.4;animation:pop .25s ease-out}
 .msg.me{align-self:flex-end;background:#e98fa4;color:#fff;border-bottom-right-radius:5px}
@@ -305,6 +311,7 @@ input{-webkit-user-select:text;user-select:text}
   <div id="ins" class="layer" aria-hidden="true"></div>
   <div id="ilabel"></div>
   <div id="phone"><div class="ph">Chie</div></div>
+  <div id="tapHint" aria-hidden="true"><span class="k"></span> to continue ▾</div>
   <div id="box" class="hidden" role="region" aria-live="polite">
     <div id="face" aria-hidden="true"><img alt=""></div>
     <div id="name"></div>
@@ -613,17 +620,18 @@ function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('on'
 /* ---------- phone ---------- */
 function phoneMsg(who,text){ const p=$('#phone'); p.classList.add('on'); const m=document.createElement('div'); m.className='msg '+(who==='me'?'me':'them'); m.textContent=text; p.appendChild(m);
   while(p.scrollHeight>p.clientHeight && p.children.length>2) p.children[1].remove(); }
-function phoneClear(){ const p=$('#phone'); p.classList.remove('on'); setTimeout(()=>{ if(!p.classList.contains('on')) [...p.querySelectorAll('.msg')].forEach(m=>m.remove()); },400); }
+function tapHint(on){ const h=$('#tapHint'); clearTimeout(tapHint.t); if(!on||skipOn){ h.classList.remove('on'); return; } tapHint.t=setTimeout(()=>h.classList.add('on'), 600); }
+function phoneClear(){ tapHint(false); const p=$('#phone'); p.classList.remove('on'); setTimeout(()=>{ if(!p.classList.contains('on')) [...p.querySelectorAll('.msg')].forEach(m=>m.remove()); },400); }
 
 /* ---------- text ---------- */
 function cps(){ return prefs.text>=100?1e9: 18+prefs.text*1.1; }
 /* {term|gloss} shows a Japanese term with a small English gloss after it (style guide §5) */
 /* a term with a translator's note (script.json "notes", from production/pilot-v2/script/notes.txt) is underlined, and a tap opens the note */
-function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^}]+)\}/g;
-  while((m=re.exec(t))){ if(m.index>last) out.push({t:t.slice(last,m.index)}); const k=m[1].trim().toLowerCase(), n=NOTES[k]?k:null;
+function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g;   // {term|gloss} or {term|gloss|note key}
+  while((m=re.exec(t))){ if(m.index>last) out.push({t:t.slice(last,m.index)}); const k=(m[3]||m[1]).trim().toLowerCase(), n=NOTES[k]?k:null;
     out.push({t:m[1], n, gl:m[2]}); out.push({t:'\u00a0('+m[2]+')', g:1, n}); last=re.lastIndex; }
   if(last<t.length) out.push({t:t.slice(last)}); return out; }
-function plain(t){ return String(t||'').replace(/\{([^|}]+)\|([^}]+)\}/g,'$1 ($2)'); }
+function plain(t){ return String(t||'').replace(/\{([^|}]+)\|([^|}]+)(?:\|[^}]+)?\}/g,'$1 ($2)'); }
 let curSegs=[], curLen=0;
 function renderTo(n){ textEl.textContent=''; let left=n, wrap=null;
   for(const x of curSegs){ if(left<=0) break; const piece=x.t.slice(0,left); left-=x.t.length;
@@ -666,10 +674,16 @@ function faceFor(c){
   const spr=lastSpr[w]||firstSpr(w); return spr ? `img/face/${spr}.webp` : null;
 }
 function firstSpr(w){ const c=S&&S.find(c=>c.t==='show'&&c.who===w); return c?c.spr:null; }
+const faceIms={};
+function faceIm(url){ if(!faceIms[url]){ const i=new Image(); i.src=url; faceIms[url]=i; } return faceIms[url]; }
 function showFace(url, who){
+  const tok=showFace.tok=(showFace.tok||0)+1;
   if(!url){ faceEl.classList.remove('on'); box.classList.remove('withface'); return; }
-  faceEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--gilt)');
-  if(!faceImg.src.endsWith(url)) faceImg.src=url; faceEl.classList.add('on'); box.classList.add('withface');
+  faceEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--gilt)'); box.classList.add('withface');
+  if(faceImg.src.endsWith(url)){ faceEl.classList.add('on'); return; }
+  const im=faceIm(url), put=()=>{ if(tok!==showFace.tok) return; faceImg.src=url; faceEl.classList.add('on'); };
+  if(im.complete&&im.naturalWidth) put();
+  else { faceEl.classList.remove('on'); (im.decode?im.decode():new Promise(r=>{im.onload=im.onerror=r;})).then(put,put); }   // a face that hasn't loaded yet: the window waits for it instead of showing the last one
 }
 
 /* ---------- short animated moments (canon §2, the Ch2 catch): img/anim/NAME.mp4 plays once over the stage, then the
@@ -711,7 +725,7 @@ function insertStart(c){
   insData(c.name).then(d=>{
     if(tok!==insertStart.tok || curLine!==c) return;
     const steps=[]; let g=0;
-    d.pages.forEach((p,pi)=>{ steps.push({pg:pi, box:null, g:-1}); p.panels.forEach(b=>steps.push({pg:pi, box:b, g:g++})); });
+    d.pages.forEach((p,pi)=>{ p.panels.forEach(b=>steps.push({pg:pi, box:b, g:g++})); });   // no whole-page step: each page opens on its first panel (author, Oct 25)
     if(g!==c.panels.length) note('insert', `${c.name}: ${g} panel boxes for ${c.panels.length} scripted panels`);
     insEl.innerHTML=''; insEl.style.transition='';
     const pages=d.pages.map(p=>{ const e=document.createElement('div'); e.className='ipg'; e.style.width=d.w+'px'; e.style.height=d.h+'px';
@@ -770,7 +784,7 @@ function run(){
     if(state.i>=S.length){ store.set('v2cont',null); return endPilot(); }
     while(state.i<S.length){
       const c=S[state.i++];
-      if(c.t!=='phone' && c.t!=='say' && c.t!=='nar') {/* fallthrough */}
+      if(c.t!=='phone') tapHint(false);
       switch(c.t){
         case 'scene': state.scene=c.id; store.set('v2cont',snap()); break;
         case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'||c.tr==='flash'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.name==='black'||c.name==='white') box.classList.add('hidden'); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:(c.name==='black'||c.name==='white')&&c.tr==='slow'?1900:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
@@ -792,7 +806,7 @@ function run(){
         case 'video': break; // future cutscenes: falls back to continuing
         case 'anim': return playAnim(c);
         case 'insert': return insertStart(c);
-        case 'phone': if(!skipOn) playSfx('notif'); showFace(null); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); devUpdate(); return waitTap(0);
+        case 'phone': if(!skipOn) playSfx('notif'); showFace(null); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); tapHint(true); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); devUpdate(); return waitTap(0);
         case 'say': case 'nar': return line(c);
       }
     }
@@ -1170,7 +1184,7 @@ function loadScript(){
   if(!scriptP) scriptP=fetch('script.json').then(r=>{ if(!r.ok) throw new Error('could not load the story (script.json '+r.status+')'); return r.json(); })
     .then(j=>{ S=j.script; SPK=j.speakers; SIG=sigOf(S); S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; });
       NOTES=(j.notes&&typeof j.notes==='object')?j.notes:{}; NOTE_T={};
-      S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^}]+)\}/g)){ const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].trim()}; } }); $('#mCont').disabled=!store.get('v2cont',null); return j; })
+      S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g)){ if(m[3]) continue; const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].trim()}; } }); $('#mCont').disabled=!store.get('v2cont',null); return j; })
     .catch(e=>{ scriptP=null; throw e; });
   return scriptP;
 }
@@ -1200,6 +1214,8 @@ setInterval(()=>{ if(!S) return; for(let k=state.i;k<Math.min(S.length,state.i+4
     if(!preloaded.has(v)){preloaded.add(v); fetch(v).catch(()=>preloaded.delete(v));} }
   if(c.t==='insert' && !preloaded.has('ins:'+c.name)){ preloaded.add('ins:'+c.name);
     insData(c.name).then(d=>d.pages.forEach(p=>{ const i=new Image(); i.src=p.src; })).catch(()=>preloaded.delete('ins:'+c.name)); }
+  if(c.t==='say'&&c.face){ faceIm(c.who==='kohei'?`img/face/kohei_${c.face}.webp`:`img/face/${c.who}_${c.face}.webp`); }
+  if(c.t==='say'&&c.who==='kohei'&&!c.face) faceIm('img/face/kohei_neutral.webp');
   if(c.t==='say'&&ac) voiceBuf(c.id); } },1500);
 })();
 </script>
