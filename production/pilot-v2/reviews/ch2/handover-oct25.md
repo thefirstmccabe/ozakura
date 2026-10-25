@@ -41,3 +41,26 @@ Ch2 about $15.30 (art $8.57; voices $2.55; on-model fixes $4.14); running total 
 
 ## Waiting on you
 - A Nanoha scene in Ch2 (`cold-read-round2.md`): all six cold readers asked for one, and the casual reader reached 70% on Natsuki for the ending, which §9 counts as too sure. It's a plot beat, so it's your call. Asked Oct 25, 8:30 am: (1) a short Wednesday-morning kitchen scene, about 10 lines, no new art (recommended; wording [P]); (2) a smaller touch (a text, or a line in an existing scene); (3) leave Ch2 as is and let Ch3–4 rebalance. The build has no Nanoha scene yet.
+
+---
+
+# Punch list, Oct 25 (handed back the same evening)
+**Play:** the same link. Everything on your list is in; the item-by-item record is `punch-oct25.md`.
+
+**New [P] details** (the full list is in `story/pilot-notes.md` §3, v2 Ch2):
+- The Wednesday-morning scene: Akane upstairs "losing an argument with her hair"; the honey throat lozenge.
+- Nanoha's "That one's new… I'll have to give it a number."
+- The whiteboard labels ("KENDO / lesson one", "KOTE / wrist (right one!)", "TSUKI / throat / not until high school!!").
+- The board stands on legs by the door.
+- The walk to school now shows the river path.
+
+**Known compromises:**
+- The new catch animation is 5.1 s. The grab itself happens between two drawings (Kling animates at about 8 drawings a second), and her ponytail swings twice.
+- For a fraction of a second before the catch video starts, the empty dojo shows with her sprite fading.
+- On a very slow connection a face window can stay empty for a few seconds before its face loads (it never shows the wrong face now).
+
+**Spend:** about $3.20; running total about $40.20.
+
+**Waiting on you:**
+- The glosses. All three new cold readers called the every-use glosses the most tiring thing in Ch2, and two said they flatten emotional lines. The middle way: the English in brackets only on the first use in each scene, and the dotted underline (tap for the note) on every use. Keep it as it is, or switch?
+- Natsuki at +0.5 in Ch1 too, whenever you want it.

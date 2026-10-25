@@ -636,15 +636,15 @@ let curSegs=[], curLen=0;
 function renderTo(n){ textEl.textContent=''; let left=n, wrap=null;
   for(const x of curSegs){ if(left<=0) break; const piece=x.t.slice(0,left); left-=x.t.length;
     let parent=textEl;
-    if(x.n){ if(!x.g||!wrap){ wrap=document.createElement('span'); wrap.className='tn'; wrap.dataset.n=x.n; wrap.setAttribute('role','button'); wrap.tabIndex=0; textEl.appendChild(wrap); } parent=wrap; }
+    if(x.n){ if(!x.g||!wrap){ wrap=document.createElement('span'); wrap.className='tn'; wrap.dataset.n=x.n; if(x.gl){ wrap.dataset.t=x.t; wrap.dataset.g=x.gl; } wrap.setAttribute('role','button'); wrap.tabIndex=0; textEl.appendChild(wrap); } parent=wrap; }
     else wrap=null;
     if(x.g){ const sp=document.createElement('span'); sp.className='gl'; sp.textContent=piece; parent.appendChild(sp); } else parent.appendChild(document.createTextNode(piece)); } }
 const noteEl=$('#note');
 function noteOn(){ return noteEl.classList.contains('on'); }
 let noteKey=null;
-function openNote(k){ const body=NOTES[k]; if(!body) return; setSkip(false); clearTimeout(autoTimer); noteKey=k;
+function openNote(k, term, gloss){ const body=NOTES[k]; if(!body) return; setSkip(false); clearTimeout(autoTimer); noteKey=k;
   if(!seenNotes[k]){ seenNotes[k]=1; store.set('v2notes',seenNotes); }   // reading a note always counts as meeting it
-  const s=NOTE_T[k]||{}; noteEl.querySelector('.nt').textContent=s.term||k; noteEl.querySelector('.ng').textContent=s.gloss||'';
+  const s=NOTE_T[k]||{}; noteEl.querySelector('.nt').textContent=term||s.term||k; noteEl.querySelector('.ng').textContent=gloss||s.gloss||'';   // the tapped use's own spelling and gloss (Oct 25)
   noteEl.querySelector('.nb').textContent=body; noteEl.classList.add('on'); }
 function closeNote(){ if(!noteOn()) return; noteEl.classList.remove('on'); noteKey=null; if(curLine&&!typing) scheduleAuto(); }
 function markNotes(){ if(skipOn) return; let dirty=false; curSegs.forEach(x=>{ if(x.n&&!x.g&&!seenNotes[x.n]){ seenNotes[x.n]=1; dirty=true; } }); if(dirty) store.set('v2notes',seenNotes); }
@@ -1128,7 +1128,7 @@ function toTitle(){
 let downTyping=false;
 app.addEventListener('pointerdown',()=>{ downTyping=typing; }, true);
 textEl.addEventListener('click',e=>{ const t=e.target&&e.target.closest&&e.target.closest('.tn'); if(!t||typing||downTyping) return;
-  e.stopPropagation(); openNote(t.dataset.n); if(e.detail) t.blur(); });   // a pointer tap leaves no keyboard focus on the term
+  e.stopPropagation(); openNote(t.dataset.n, t.dataset.t, t.dataset.g); if(e.detail) t.blur(); });   // a pointer tap leaves no keyboard focus on the term
 textEl.addEventListener('mousedown',e=>{ if(e.target&&e.target.closest&&e.target.closest('.tn')){ e.preventDefault(); const a=document.activeElement; if(a&&a!==document.body&&a.blur) a.blur(); } });   // pointer presses don't focus a term (keyboard Tab still does)
 document.addEventListener('click',e=>{ if(!noteOn()) return; const t=e.target, tn=t&&t.closest&&t.closest('.tn');
   if(tn && tn.dataset.n!==noteKey) return;   // a different term opens its own note
@@ -1147,7 +1147,7 @@ document.addEventListener('keydown',e=>{
   if(noteOn() && (e.key==='Escape'||e.key===' '||e.key==='Enter'||e.key==='ArrowRight')){ e.preventDefault(); closeNote(); return; }
   if(noteOn() && devOn && (e.key==='ArrowLeft'||e.key==='PageUp'||e.key==='PageDown')) closeNote();
   const tn=e.target&&e.target.closest&&e.target.closest('.tn');
-  if(tn && (e.key===' '||e.key==='Enter') && !typing){ e.preventDefault(); openNote(tn.dataset.n); return; }
+  if(tn && (e.key===' '||e.key==='Enter') && !typing){ e.preventDefault(); openNote(tn.dataset.n, tn.dataset.t, tn.dataset.g); return; }
   if(e.key===' '||e.key==='Enter'||e.key==='ArrowRight'){ if(!overlayOpen()&&!(e.target&&e.target.closest&&e.target.closest('button,input'))){ e.preventDefault(); if(skipOn) setSkip(false); else advance(); } }
   if(e.key==='Escape') closePanels();
   if(devOn && S && $('#title').hidden && !overlayOpen()){ if(e.key==='ArrowLeft'){ e.preventDefault(); stepLine(-1); } else if(e.key==='PageUp'){ e.preventDefault(); stepScene(-1); } else if(e.key==='PageDown'){ e.preventDefault(); stepScene(1); } }
@@ -1184,7 +1184,8 @@ function loadScript(){
   if(!scriptP) scriptP=fetch('script.json').then(r=>{ if(!r.ok) throw new Error('could not load the story (script.json '+r.status+')'); return r.json(); })
     .then(j=>{ S=j.script; SPK=j.speakers; SIG=sigOf(S); S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; });
       NOTES=(j.notes&&typeof j.notes==='object')?j.notes:{}; NOTE_T={};
-      S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g)){ if(m[3]) continue; const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].trim()}; } }); $('#mCont').disabled=!store.get('v2cont',null); return j; })
+      S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g)){ if(m[3]) continue; const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].trim()}; } });
+      Object.keys(NOTES).forEach(k=>{ if(!NOTE_T[k]) NOTE_T[k]={term:k, gloss:''}; }); $('#mCont').disabled=!store.get('v2cont',null); return j; })
     .catch(e=>{ scriptP=null; throw e; });
   return scriptP;
 }

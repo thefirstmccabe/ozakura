@@ -9,8 +9,8 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | Chapter | Stage | Owner | Next |
 |---|---|---|---|
 | Ch1 (with the dream at 1.8) | **Approved** (author, Oct 24), **with the cold open as a placeholder** to be edited later (see its row); approved build = commit `05a993b`, kept on GitHub as the branch `approved/v2-ch1` (this session's git proxy refuses tag pushes; the local tag `v2-ch1-approved` points at the same commit, so push it from a session that can). It's the regression baseline for any later Ch1 fix (style guide §9 step 10). History: handover `production/pilot-v2/reviews/ch1/handover-oct18.md`, fix rounds 2–3 (`build-review.md`), punch lists Oct 19, Oct 20 and Oct 24 (`punch-oct*.md`) | Production | Done. Its [P] details go to the Story thread to fold into canon (pilot-notes §3, the Oct 18–24 lists) |
-| Ch2 "Kendo" | **Handed over** (Oct 25) for the author's playthrough; build = branch `v2-ch2` (also on `main` for the link). Handover `production/pilot-v2/reviews/ch2/handover-oct25.md` | Author | Play and flag what doesn't work; answer the Nanoha-scene question (cold reads: all six readers asked for one; the casual reader at 70% Natsuki on the ending) |
-| Ch3–4 | **Outline approved** (author, Oct 24) | Production | After Ch2's punch list. Going over the $40 cap is approved; about $37.00 spent |
+| Ch2 "Kendo" | **Punch list applied** (author's list of Oct 25; record `production/pilot-v2/reviews/ch2/punch-oct25.md`), handed back Oct 25 on the same link; build = branch `ch2-punch-oct25` (merged to `main`). First handover `reviews/ch2/handover-oct25.md` | Author | Play the changes; answer the gloss question (all three round-3 cold readers found the every-use glosses tiring: keep, or inline English once per scene with the tappable underline on every use) |
+| Ch3–4 | **Outline approved** (author, Oct 24) | Production | After Ch2 is approved (chapter-by-chapter review). Going over the $40 cap is approved; about $40.20 spent |
 | Cold open | **Deferred** until most of the story is written (Oct 19; briefly taken out on Oct 20, then put back the same evening) | — | The author returns to it then: what goes there, and whether it's animated or music over CGs. The build keeps the Oct 18 version, which a tap skips once seen |
 
 **Other work**
@@ -33,7 +33,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 - Approval of the chapter map (its header still marks it a Proposal). The W7 question was answered Oct 21 (yes).
 - The Prologue/Ch1 dream music (`memory`, silence, or a new cue at about $2), after he hears the Ch2 catch.
 - Pilot names, kanji and POV (pilot-notes §1).
-- Whether Ch2 gets a short Nanoha scene: he leans no (Oct 25), not committed. Whether the reader windows widen from 3–4 to 4–8 chapters: after the pilot.
+- Ch2's glosses: every use (as asked, Oct 25) or inline once per scene with the underline on every use (all three round-3 cold readers found every use tiring). Whether the reader windows widen from 3–4 to 4–8 chapters: after the pilot. Whether Ch1 also gets Natsuki at +0.5 (Ch1 stays at +1 for now, as asked).
 
 **Threads and who owns what:** the repo's `CLAUDE.md`.
 
@@ -122,16 +122,17 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | 10-25 | **Ch2 built and handed over** (Production; §9 in full): writing gates, art with on-model checks (two rounds), 152 voiced lines transcript-checked twice, iPad playthrough with phone and desktop spot checks, the snapshot diff against the approved Ch1, an independent build review (5 must-fix items fixed, then re-run). Handover `production/pilot-v2/reviews/ch2/handover-oct25.md`; [P] list in pilot-notes §3. Engine fixes that also touch Ch1: the living-still guard (broken on this branch only, Oct 24) and entering sprites no longer slide. |
 | 10-25 | **[P] (Production): Kōhei's work clothes are a white T-shirt and brown bib apron** (style guide §2; was white shirt and waist apron), matching the script's apron with the cartoon chef. Easy to reverse. |
 | 10-25 | **Decided (author): the "no reader sure" rule is loosened.** A cold reader may pass 70% at a single checkpoint, as long as it evens out as the chapters go (his words). The windows stay at about 3–4 chapters for now; whether they widen to 4–8 is open until after the pilot. **The Ch2 Nanoha scene:** he's inclined to leave Ch2 without one ("normal in manga," not both girls in every chapter), not yet committed. For Story (canon §5) and Planning (§9 step 3, `review/cold-reader.md`): `production/pilot-v2/handoff-story-oct25.md`. |
+| 10-25 | **Ch2 punch list (author, after playing Ch2; record `production/pilot-v2/reviews/ch2/punch-oct25.md`).** **Decided (author):** a short Nanoha scene in Ch2 after all ("I am kind of swinging around to your view"; the shape left to Production: Wednesday morning in his kitchen, `c2_morning`); Japanese terms get their gloss and tappable note on **every** use, not just the first (style guide §5); manga inserts open on the first panel with no whole-page view (§4a); Natsuki at +0.5 semitone for Ch2 only, Ch1 stays at +1 for now. **Also fixed:** the confusing container line cut; c2_0090 names Mizuno; a whiteboard CG of her drawing; clearer mop and interlude lines; the snow line replaces "mostly vending machines"; the practice music stops at the end of practice; the catch animation now shows the slip and the fall; a face-window bug that showed the previous face on a cold cache; a "Tap to continue" hint during texts. Checks: a writing check, cold read round 3 (no reader at 70% anywhere; ending Natsuki 58, wanting about even, dream woman Natsuki 55), an on-model check (two must-fix rounds on the catch and the whiteboard), playthroughs at all three sizes, the Ch1 regression diff, and an independent check (one must-fix, fixed). About $3.20; running total about $40.20. |
 
 ## 3. Budget (open lines)
 | Line | Cap | Spent | Notes |
 |---|---|---|---|
-| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 (going over approved Oct 24) | about $37.00 (Oct 20: + about $2.25 for Natsuki's restyle and about $1.46 for her Ch1 art; Oct 24: + about $4.70 for her face A, the Ch1 punch list and her re-voice; Oct 24–25: + about $15.30 for Ch2) | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
+| Pilot v2 (Prologue + Ch1–4), Oct 16 | $40 (going over approved Oct 24) | about $40.20 (Oct 20: + about $2.25 for Natsuki's restyle and about $1.46 for her Ch1 art; Oct 24: + about $4.70 for her face A, the Ch1 punch list and her re-voice; Oct 24–25: + about $15.30 for Ch2; Oct 25: + about $3.20 for the Ch2 punch list) | Ch1: ~37 images, 2 living stills, 40 voice takes, 4 rounds of transcript checks. Ledger: `production/pilot-v2/ledger.md` |
 | Manga Vol. 1 | $50 | $33.01 | **On hold**, about $17 left; 8 known issues (§4) |
 
 Closed lines (tests, the shipped pilot, design passes, music cues): see the archive.
 
-**Cumulative fal spend:** about $105–110 (Oct 25). fal's dashboard has the exact figure.
+**Cumulative fal spend:** about $108–113 (Oct 25). fal's dashboard has the exact figure.
 
 ## 4. Known issues
 **Manga Vol. 1, worst first:**

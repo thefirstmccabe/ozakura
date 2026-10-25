@@ -3085,6 +3085,11 @@
 "t": "hideall"
 },
 {
+"t": "bg",
+"name": "bg_river_morning",
+"tr": "fade"
+},
+{
 "t": "nar",
 "id": "c2_0323",
 "text": "On the walk to school she's quiet for a while, which isn't unusual, and then for a little longer than that, which is."
