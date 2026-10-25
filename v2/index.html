@@ -402,6 +402,9 @@ const CHAR = {
 };
 /* every on-stage character shares one floor F inches below the bottom of the screen */
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
+/* sprites with empty space above the head (a shinai held up past it), as a fraction of the usual sprite height
+   (outfit_sprite.py --headroom); they draw that much taller so the figure keeps its size and floor */
+const HEADROOM = {natsuki_teach_smile:.16, natsuki_teach_point:.16};
 const NOWIN = new Set(['manager','classmate','past_natsuki']);       // no face window: no sprite, or a hidden face
 const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki'], cg_catch:['natsuki','kohei']};
 /* sprites take on the light of the scene: night and evening backgrounds tint them */
@@ -542,8 +545,8 @@ function sprImg(who){
   return el;
 }
 function stageH(){ const w=app.clientWidth,h=app.clientHeight; return Math.min(h, w*0.92); }
-function sizeSpr(el, who){ const H=stageH(), c=CHAR[who]||{h:64,v:.7};
-  el.style.height=Math.round(H*SCALE*c.h*c.v)+'px'; el.style.bottom=Math.round(H*SCALE*(c.h*(1-c.v)-FLOOR))+'px'; }
+function sizeSpr(el, who, spr){ const H=stageH(), c=CHAR[who]||{h:64,v:.7}, p=HEADROOM[spr||el.dataset.spr]||0;
+  el.style.height=Math.round(H*SCALE*c.h*c.v*(1+p))+'px'; el.style.bottom=Math.round(H*SCALE*(c.h*(1-c.v)-FLOOR))+'px'; }
 function layoutSprites(){ document.querySelectorAll('.spr').forEach(el=>sizeSpr(el, el.dataset.who)); }
 setBg.tok=0; setCg.tok=0;
 function setBg(name, tr){
@@ -590,10 +593,10 @@ function showSpr(who, spr, pos){
   const el=sprImg(who); const prev=state.spr[who];
   pos = pos || (prev&&prev.pos) || 'c';
   state.spr[who]={spr,pos};
-  sizeSpr(el, who); el.style.left=POSX[pos]+'%'; lastSpr[who]=spr;
+  el.style.left=POSX[pos]+'%'; lastSpr[who]=spr;
   const url=`img/ch/${spr}.webp`;
-  if(!el.src.endsWith(url)){ const pre=new Image(); pre.onload=()=>{el.src=url; el.classList.add('on');}; pre.src=url; }
-  else el.classList.add('on');
+  if(!el.src.endsWith(url)){ const pre=new Image(); pre.onload=()=>{ el.src=url; el.dataset.spr=spr; sizeSpr(el, who); el.classList.add('on'); }; pre.src=url; }
+  else { sizeSpr(el, who); el.classList.add('on'); }
 }
 function hideSpr(who){ delete state.spr[who]; const el=document.querySelector(`.spr[data-who="${who}"]`); if(el) el.classList.remove('on'); }
 function hideAll(){ Object.keys(state.spr).forEach(hideSpr); }

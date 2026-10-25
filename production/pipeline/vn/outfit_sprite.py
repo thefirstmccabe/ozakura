@@ -13,7 +13,9 @@ Usage:
       --face-box cx,cy,w,h (master px) --oval cx,cy,rx,ry (sprite px, as for the existing set) --feather 10 \
       --out OUTDIR --name natsuki_kendo  EXISTING_EXPR_SPRITES...
 Writes OUTDIR/NAME_base.webp (the new outfit with its own face) and OUTDIR/NAME_EXPR.webp per expression sprite
-(EXPR = the last _part of each input name), plus OUTDIR/NAME_frame.json (the numbers, for the record)."""
+(EXPR = the last _part of each input name), plus OUTDIR/NAME_frame.json (the numbers, for the record).
+--headroom F adds empty space above the frame, F times its height (Ch2's teach pose: a shinai held up past her head). The
+sprite comes out (1+F) times as tall with the figure at the same scale, and v2/index.html's HEADROOM map must list it with F."""
 import argparse, json, os
 import cv2, numpy as np
 from PIL import Image, ImageDraw, ImageFilter
@@ -21,6 +23,9 @@ from PIL import Image, ImageDraw, ImageFilter
 ap = argparse.ArgumentParser()
 ap.add_argument("--master"); ap.add_argument("--ref-sprite"); ap.add_argument("--cutout")
 ap.add_argument("--face-box"); ap.add_argument("--oval"); ap.add_argument("--feather", type=float, default=10)
+ap.add_argument("--headroom", type=float, default=0)
+ap.add_argument("--align", help="s,tx,ty: skip the face search and use this alignment (from an earlier run's frame.json), "
+                "so a second expression of the same new outfit lands on exactly the same pixels")
 ap.add_argument("--out"); ap.add_argument("--name"); ap.add_argument("exprs", nargs="*")
 a = ap.parse_args()
 os.makedirs(a.out, exist_ok=True)
@@ -43,9 +48,12 @@ for s in np.arange(0.85, 1.15, 0.0025):
     if best is None or mx > best[0]: best = (mx, s, loc)
 score, s, loc = best
 tx, ty = (fx - fw / 2) - loc[0], (fy - fh / 2) - loc[1]
+if a.align: s, tx, ty = map(float, a.align.split(","))
+T = int(round(a.headroom * MH))                # extra rows above the master frame
+L = MW // 2                                    # side margin, so a held shinai past the frame's edge survives the warp
 arr = np.asarray(cut).astype(np.float32)
-M = np.float32([[s, 0, tx], [0, s, ty]])
-warped = cv2.warpAffine(arr, M, (MW, MH), flags=cv2.INTER_LANCZOS4, borderMode=cv2.BORDER_CONSTANT, borderValue=(0, 0, 0, 0))
+M = np.float32([[s, 0, tx + L], [0, s, ty + T]])
+warped = cv2.warpAffine(arr, M, (MW + 2 * L, MH + T), flags=cv2.INTER_LANCZOS4, borderMode=cv2.BORDER_CONSTANT, borderValue=(0, 0, 0, 0))
 warped = Image.fromarray(np.clip(warped, 0, 255).astype(np.uint8), "RGBA")
 
 # 2. how the existing sprites were cropped from the master
@@ -56,23 +64,24 @@ y0, y1, x0, x1 = int(rh * .08), int(rh * .25), int(rw * .28), int(rw * .72)   # 
 r = cv2.matchTemplate(mg, rs[y0:y1, x0:x1], cv2.TM_CCOEFF_NORMED); _, rscore, _, rloc = cv2.minMaxLoc(r)
 crop_x0 = (rloc[0] - x0) / sc                  # master x of the sprite's left edge
 center = crop_x0 + rw / sc / 2
-al = np.asarray(warped)[..., 3]; xs = np.where((al > 24).any(0))[0]
+al = np.asarray(warped)[..., 3]; xs = np.where((al > 24).any(0))[0] - L   # master x
 half = max(rw / sc / 2, center - xs.min() + 6, xs.max() - center + 6)
-box = (center - half, 0, center + half, MH)
-canvas = Image.new("RGBA", (int(np.ceil(2 * half)), MH), (0, 0, 0, 0))
-canvas.alpha_composite(warped, (int(round(-box[0])), 0)) if box[0] < 0 else canvas.alpha_composite(warped.crop((int(round(box[0])), 0, int(round(box[0])) + canvas.width, MH)))
-sprite = canvas.resize((round(canvas.width * sc), rh), Image.LANCZOS)
+box = (center - half, -T, center + half, MH)
+cx0 = int(round(box[0])) + L
+canvas = warped.crop((cx0, 0, cx0 + int(np.ceil(2 * half)), MH + T))
+dy = T * sc                                    # existing-sprite y -> new-sprite y
+sprite = canvas.resize((round(canvas.width * sc), round((MH + T) * sc)), Image.LANCZOS)
 dx = (crop_x0 - box[0]) * sc                   # existing-sprite x -> new-sprite x
 sprite.save(os.path.join(a.out, f"{a.name}_base.webp"), "WEBP", quality=90, method=6)
 
 # 3. faces
 ocx, ocy, orx, ory = map(float, a.oval.split(","))
 mask = Image.new("L", sprite.size, 0)
-ImageDraw.Draw(mask).ellipse((ocx + dx - orx, ocy - ory, ocx + dx + orx, ocy + ory), fill=255)
+ImageDraw.Draw(mask).ellipse((ocx + dx - orx, ocy + dy - ory, ocx + dx + orx, ocy + dy + ory), fill=255)
 mask = mask.filter(ImageFilter.GaussianBlur(a.feather))
 for f in a.exprs:
     ex = Image.open(f).convert("RGBA")
-    layer = Image.new("RGBA", sprite.size, (0, 0, 0, 0)); layer.alpha_composite(ex, (int(round(dx)), 0))
+    layer = Image.new("RGBA", sprite.size, (0, 0, 0, 0)); layer.alpha_composite(ex, (int(round(dx)), int(round(dy))))
     out = Image.composite(layer, sprite, mask)
     # keep the new outfit's alpha outside the face, the face's alpha inside
     oa = np.asarray(sprite)[..., 3].astype(float); la = np.asarray(layer)[..., 3].astype(float); m = np.asarray(mask).astype(float) / 255
@@ -81,6 +90,6 @@ for f in a.exprs:
     Image.fromarray(o, "RGBA").save(os.path.join(a.out, f"{a.name}_{expr}.webp"), "WEBP", quality=90, method=6)
 info = {"align_score": round(float(score), 3), "scale": round(float(s), 4), "shift": [round(float(tx), 1), round(float(ty), 1)],
         "ref_match": round(float(rscore), 3), "ref_crop_x0_master": round(float(crop_x0), 1), "new_box_master": [round(float(v), 1) for v in box],
-        "sprite_size": sprite.size, "face_dx_sprite": round(float(dx), 1)}
+        "sprite_size": sprite.size, "face_dx_sprite": round(float(dx), 1), "headroom": a.headroom, "face_dy_sprite": round(float(dy), 1)}
 json.dump(info, open(os.path.join(a.out, f"{a.name}_frame.json"), "w"), indent=1)
 print(json.dumps(info))

@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# Ch2 raw renders (keep out of git; the cutouts needed to rebuild are in art/ch2/masters/)
+production/pilot-v2/art/ch2/raw/
