@@ -25,6 +25,22 @@ SPEAKERS = {"kohei": "Kōhei", "nanoha": "Nanoha", "natsuki": "Natsuki", "akane"
             "ryosuke": "Ryōsuke", "teacher": "Ōno-sensei", "kirishima": "Kirishima", "takatsuki": "Takatsuki",
             "manager": "Manager", "yuzu": "Yuzu", "emi": "Emi", "mio": "Mio", "past_natsuki": "???",
             "classmate": "Classmate"}
+# A character's first spoken line in each chapter shows the full name, family name first (author, Oct 25; style guide
+# §3a). Anyone not listed keeps the short tag.
+SPEAKERS_FULL = {"kohei": "Fujisawa Kōhei", "nanoha": "Tachibana Nanoha", "natsuki": "Mizuno Natsuki",
+                 "akane": "Fujisawa Akane", "rika": "Hoshikawa Rika", "ryosuke": "Tokiwa Ryōsuke",
+                 "kirishima": "Kirishima Aoi", "takatsuki": "Takatsuki Shō", "yuzu": "Shiina Yuzu",
+                 "emi": "Tachibana Emi", "mio": "Tachibana Mio"}
+
+
+def mark_full_names(cmds):
+    """Mark each speaker's first spoken line per chapter (`@chapter`) with "full": true."""
+    seen = set()
+    for c in cmds:
+        if c["t"] == "chapter":
+            seen = set()
+        if c["t"] == "say" and c["who"] in SPEAKERS_FULL and c["who"] not in seen:
+            c["full"] = True; seen.add(c["who"])
 FACES = {"smile", "neutral", "grin", "deadpan", "surprised", "flustered", "annoyed", "serious", "stillness", "sad"}
 ID_TAG = re.compile(r'\s+#((?:p|c\d+)_\d{4,})\s*$')
 
@@ -232,6 +248,44 @@ def compile_files(paths):
 GLOSS = re.compile(r"\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}")   # {term|gloss} or {term|gloss|note key} (Oct 25)
 
 
+def _sense(gloss):
+    g = gloss.strip().lower().rstrip("!.")
+    for a in ("a ", "an ", "the "):
+        if g.startswith(a): g = g[len(a):]
+    return g[:-1] if g.endswith("s") else g
+
+
+def gloss_once(text, seen, notes):
+    """Style guide §5 (author, Oct 25): the English gloss shows on a term's first use in a scene; later uses in the same
+    scene, in the same sense, keep only the dotted underline (written {term||note key}). Terms without a translator's
+    note keep their gloss every time, since there's nothing to tap. `seen` is the scene's set of (key, sense)."""
+    def one(m):
+        term, gloss, key = m.group(1), m.group(2), m.group(3)
+        k = (key or term).strip().lower()
+        if k not in notes:
+            return m.group(0)
+        tag = (k, _sense(gloss))
+        if tag in seen:
+            return "{" + term + "||" + k + "}"
+        seen.add(tag)
+        return m.group(0)
+    return GLOSS.sub(one, text)
+
+
+def apply_gloss_once(cmds, notes):
+    seen = set()
+    for c in cmds:
+        if c["t"] == "scene":
+            seen = set()
+        if c.get("text"):
+            c["text"] = gloss_once(c["text"], seen, notes)
+        if c["t"] == "insert":
+            for pnl in c["panels"]:
+                for x in pnl["lines"]:
+                    if x.get("text"):
+                        x["text"] = gloss_once(x["text"], seen, notes)
+
+
 def read_notes(path):
     """Translator's notes (style guide §5): `term | note` per line, '#' comments. Keys are lowercase terms."""
     notes, errors = {}, []
@@ -286,6 +340,8 @@ if __name__ == "__main__":
         notes, note_errors = read_notes(notes_path)
         errors += note_errors
         used_notes, unused_notes = notes_for(cmds, notes)
+        apply_gloss_once(cmds, notes)
+    mark_full_names(cmds)
     if errors:
         print("\n".join(errors))
         sys.exit(1)
@@ -294,7 +350,7 @@ if __name__ == "__main__":
             write_ids(new_ids); print(f"wrote {len(new_ids)} new line IDs into the source")
         else:
             print(f"note: {len(new_ids)} lines have no written ID (run with --write-ids to fix them in the source)")
-    out = {"speakers": SPEAKERS, "script": cmds}
+    out = {"speakers": SPEAKERS, "speakers_full": SPEAKERS_FULL, "script": cmds}
     if used_notes:
         out["notes"] = used_notes
     json.dump(out, open(out_script, "w", encoding="utf-8"), ensure_ascii=False, indent=0)

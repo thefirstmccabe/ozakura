@@ -1,0 +1,9 @@
+# Ch2 punch list, second batch (author, Oct 25 evening)
+
+| # | Author's item | Done |
+|---|---|---|
+| 1 | Texts: the girls use more emoji and stickers, each in her own style (speech sheets §3b, texting, Oct 25) | The Natsuki–Chie thread (c2_0262–c2_0287) rewritten: Natsuki stacks hers (🥋✨🔥, 😤😤, 🤧🤧🌸); her two honest texts ("there's a guy", "i knew what he was going to do before he did it. every time") have none, so they stand out; Chie keeps hers few and pointed ("AND??? 👀", one 🌸) and her serious "are you ok tho. for real" plain; Natsuki ends on a sticker (c2_0326, 😴💤). The engine draws `@phone me sticker:…` as a large emoji with no bubble (no sticker art yet) [P wording] |
+| 2 | Glosses: the dotted underline instead of the English on every use | The English shows on a term's first use in each scene (in each sense); later uses keep only the dotted underline, which still opens the note. Done in the compiler (`gloss_once`), so the script keeps every gloss and the rule can change; the cold-reader material follows the same rule. The insert's repeated "(men: helmet)" caption on p2-4 is gone. Ch1: the repeats of kinpira and fusuma are underline-only |
+| 3 | Name tags (discussed: full names on every line, tags that follow the narration, or short tags with a full-name introduction; the author chose the last) | A character's first spoken line in each chapter shows the full name, family name first ("Mizuno Natsuki", "Tokiwa Ryōsuke", "Kirishima Aoi"); every later line uses the short tag as before. The same in the cold-reader material |
+
+Checks: lint (only the known Ch1 flag), compile, the name tags, stickers and glosses checked in the browser at iPad and phone sizes (an engine comment that swallowed code was caught and fixed in the same check). The full playthroughs and an independent check run when the rest of the author's changes are in.

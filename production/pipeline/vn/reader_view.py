@@ -19,7 +19,7 @@ Usage: python3 reader_view.py OUT_DIR src1.ozs [src2.ozs ...] [--split ids] [--c
 import argparse, json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from compile_script import SPEAKERS, split_id, read_notes  # display names, kept in one place
+from compile_script import SPEAKERS, SPEAKERS_FULL, split_id, read_notes, gloss_once  # display names and the gloss rule, kept in one place
 
 SAY = re.compile(r'^(\w+)(?:<(\w+)>)?(?:\((\w+)\))?:\s*"(.*?)"\s*(?:\|\|.*)?$')
 GLOSS = re.compile(r'\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}')
@@ -51,6 +51,8 @@ def convert(paths, split):
     notes_path = os.path.join(os.path.dirname(os.path.abspath(paths[0])), "notes.txt")
     notes = read_notes(notes_path)[0] if os.path.exists(notes_path) else {}
     noted = set()
+    named = set()  # speakers already shown with their full name in this chapter (style guide §3a, Oct 25)
+    seen = set()   # the scene's glossed (term, sense) pairs: later uses show the bare term (style guide §5, Oct 25)
     for path in paths:
         for raw in open(path, encoding="utf-8"):
             s = split_id(raw.rstrip("\n"))[0]   # drop the stable line ID tag
@@ -59,6 +61,7 @@ def convert(paths, split):
             out = None
             if s.startswith("=="):
                 sid = s[2:].split("|")[0].strip()
+                seen = set()
                 if cur and (not split or sid in split):
                     parts.append(cur); cur = []
                 continue
@@ -79,6 +82,7 @@ def convert(paths, split):
                 elif c == "@card":
                     out = f"[Caption: {s[5:].strip()}]"
                 elif c == "@chapter":
+                    named = set()
                     out = f"[Chapter title card: Chapter {s[8:].strip()}]"
                 elif c == "@mode" and len(w) > 2:
                     out = f"[{' '.join(w[2:])}, told in third person]"
@@ -86,8 +90,10 @@ def convert(paths, split):
                     alias.setdefault(w[1], f"image_{len(alias) + 1:02d}")
                     out = f"[A two-second animated moment plays, ending on a full-screen illustration: image file {alias[w[1]]}.jpg]"; cgs.append(w[1])
                 elif c == "@phone":
-                    who = "Natsuki" if w[1] == "me" else "Chie"
-                    out = f'[Text message, {who}: "{s.split(None, 2)[2] if len(w) > 2 else ""}"]'
+                    who = SPEAKERS["natsuki"] if w[1] == "me" else "Chie"
+                    msg = s.split(None, 2)[2] if len(w) > 2 else ""
+                    out = (f'[Sticker from {who}: {msg[8:].strip()}]' if msg.startswith("sticker:")
+                           else f'[Text message, {who}: "{msg}"]')
                 elif c == "@insert":
                     out = ("[Manga insert ends; back to the visual novel]" if w[1:2] == ["end"] else
                            "[Manga insert begins: the next part is a full-color comic, shown one panel at a time; lines in it are lettered on the art]")
@@ -100,11 +106,15 @@ def convert(paths, split):
             else:
                 m = SAY.match(s)
                 if m:
-                    out = f'{SPEAKERS.get(m.group(1), m.group(1).capitalize())}: "{m.group(4)}"'
+                    w0 = m.group(1)
+                    nm = SPEAKERS_FULL[w0] if (w0 in SPEAKERS_FULL and w0 not in named) else SPEAKERS.get(w0, w0.capitalize())
+                    named.add(w0)
+                    out = f'{nm}: "{m.group(4)}"'
                 else:
                     print("unparsed:", s, file=sys.stderr)
             if out:
-                cur.append(GLOSS.sub(r"\1 (\2)", out))
+                out = gloss_once(out, seen, notes)
+                cur.append(re.sub(r'\{([^|}]+)\|([^|}]*)(?:\|[^}]+)?\}', lambda m: f"{m.group(1)} ({m.group(2)})" if m.group(2) else m.group(1), out))
                 for term, _, key in GLOSS.findall(out):
                     k = (key or term).strip().lower()
                     if k in notes and k not in noted:

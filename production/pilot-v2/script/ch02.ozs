@@ -1,7 +1,7 @@
 # Ōzakura pilot v2 — Chapter 2 "Kendo" (source script; syntax in the header of ch01.ozs)
 # Built from production/pilot-v2/scene-outline.md (Ch2, approved Oct 24) and the pilot-notes fix list
 # (2, 5, 6, 7, 8, 13, 25, 28, 29, 30, 32, P1–P5). Chapter-2-only syntax:
-#   @phone me|chie text        a text message in the chat UI (unvoiced)
+#   @phone me|chie text        a text message in the chat UI (unvoiced); "@phone me sticker:😴" sends a sticker (a big emoji, no bubble)
 #   @wear kohei kendo|work|school  the outfit Kōhei's face windows show from here on (default school)
 #   @shake                      screen shake
 #   @anim name                  a short animated moment: plays img/anim/name.mp4 once, then holds the CG `name`
@@ -386,20 +386,20 @@ natsuki<laugh>: "See you tomorrow, Fujisawa!" || また明日ね、ふじさわ�
 natsuki(smile): "I'm amazing at first days. It's the second semesters I never get to." || 転校初日なら、誰にも負けないよ。二学期まで、いられたことがないだけで。  #c2_0259
 > It still worked. It always got a laugh. It just didn't get one from her.  #c2_0260
 > She took out her phone and opened the chat at the top, the one pinned so long it had its own little gray tab. Chie.  #c2_0261
-@phone me first official kendo practice at the new school  #c2_0262
-@phone chie AND???  #c2_0263
+@phone me first official kendo practice at the new school 🥋✨🔥  #c2_0262
+@phone chie AND??? 👀  #c2_0263
 @phone me there's a guy  #c2_0264
 @phone chie oh no  #c2_0265
-@phone me not like that!!! he's good. like scary good  #c2_0266
+@phone me not like that!!! 😤😤 he's good. like scary good 😱⚔️  #c2_0266
 @phone me i knew what he was going to do before he did it. every time  #c2_0267
-@phone me except the last one. didn't see that one at all  #c2_0302
+@phone me except the last one. didn't see that one at all 🫠  #c2_0302
 @phone chie ok that's actually kind of hot  #c2_0268
-@phone me CHIE  #c2_0269
-@phone me also i cried on him  #c2_0270
+@phone me CHIE 😤😤😤  #c2_0269
+@phone me also i cried on him 🙈🙈  #c2_0270
 @phone chie NATSUKI  #c2_0271
-@phone me pollen!!!!!  #c2_0272
+@phone me pollen!!!!! 🤧🤧🌸  #c2_0272
 @phone chie it's april  #c2_0273
-@phone me why does everyone keep saying that  #c2_0274
+@phone me why does everyone keep saying that 😩  #c2_0274
 @phone chie are you ok tho. for real  #c2_0275
 > Natsuki looked at that last message for a long time.  #c2_0276
 > She didn't know why she'd cried. The fall, probably. First-week nerves.  #c2_0277
@@ -409,10 +409,11 @@ natsuki(smile): "I'm amazing at first days. It's the second semesters I never ge
 > Chie was also more than two hundred miles away.  #c2_0281
 > And there was Nanoha, who had walked her all the way home on Monday without being asked. Natsuki liked her, and not the first-week way, where you like everyone.  #c2_0282
 > Nanoha lived next door to Fujisawa. Natsuki decided that was none of her business, and didn't quite believe herself.  #c2_0283
-@phone me yeah i'm good! made a friend. a real one i think. she gave me the tour on monday and showed me the vending machine that eats coins  #c2_0284
+@phone me yeah i'm good!! made a friend 🥹 a real one i think. she gave me the tour on monday and showed me the vending machine that eats coins 😂🪙  #c2_0284
 @phone chie that's my girl  #c2_0285
-@phone chie go to sleep. send me pics of the cherry trees  #c2_0286
-@phone me ok ok. night!!  #c2_0287
+@phone chie go to sleep. send me pics of the cherry trees 🌸  #c2_0286
+@phone me ok ok. night!! 🌙✨  #c2_0287
+@phone me sticker:😴💤  #c2_0326
 > Natsuki put the phone down and went out onto the little balcony.  #c2_0288
 > The street outside ran along the river under a row of cherry trees, white under the streetlights.  #c2_0289
 > She took eleven pictures. She sent Chie the best one.  #c2_0290

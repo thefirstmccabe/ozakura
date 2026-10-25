@@ -153,6 +153,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 .msg{max-width:82%;padding:8px 12px;border-radius:16px;font-size:clamp(14px,1.9vh,17px);line-height:1.4;animation:pop .25s ease-out}
 .msg.me{align-self:flex-end;background:#e98fa4;color:#fff;border-bottom-right-radius:5px}
 .msg.them{align-self:flex-start;background:#fff;border-bottom-left-radius:5px}
+.msg.sticker{background:none;padding:0 4px;font-size:clamp(34px,5.2vh,52px);line-height:1.1}
 @keyframes pop{from{transform:scale(.9);opacity:0}}
 
 /* full-screen cards */
@@ -542,7 +543,7 @@ async function playVoice(id, who, onEnd){
 async function playSfx(name){ if(!ac) return; const b=await loadBuf(`audio/sfx/${name}.mp3`); if(!b) return; const s=ac.createBufferSource(); s.buffer=b; s.connect(gSfx); s.start(); }
 
 /* ---------- state ---------- */
-let S=null, SP={}, SPK={}; const preloaded=new Set(), lastSpr={};
+let S=null, SP={}, SPK={}, SPKF={}; const preloaded=new Set(), lastSpr={};
 const state={i:0,bg:'black',cg:null,spr:{},bgm:null,mode:'normal',ilabel:'',read:{}};
 let busy=false, typing=false, typeTimer=null, fullText='', autoOn=false, skipOn=false, waitTimer=null, autoTimer=null, curLine=null, running=false;
 const log=[];
@@ -618,7 +619,8 @@ function setMode(m,label){ state.mode=m; state.ilabel=label||''; $('#tint').clas
 function toast(t){ const el=$('#toast'); el.textContent=t; el.classList.add('on'); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove('on'),1600); }
 
 /* ---------- phone ---------- */
-function phoneMsg(who,text){ const p=$('#phone'); p.classList.add('on'); const m=document.createElement('div'); m.className='msg '+(who==='me'?'me':'them'); m.textContent=text; p.appendChild(m);
+function phoneMsg(who,text){ const p=$('#phone'); p.classList.add('on'); const m=document.createElement('div'); const st=/^sticker:/.test(text);
+  m.className='msg '+(who==='me'?'me':'them')+(st?' sticker':''); m.textContent=st?text.slice(8).trim():text; p.appendChild(m);   // "sticker:😴" shows as a big emoji with no bubble (Oct 25)
   while(p.scrollHeight>p.clientHeight && p.children.length>2) p.children[1].remove(); }
 function tapHint(on){ const h=$('#tapHint'); clearTimeout(tapHint.t); if(!on||skipOn){ h.classList.remove('on'); return; } tapHint.t=setTimeout(()=>h.classList.add('on'), 600); }
 function phoneClear(){ tapHint(false); const p=$('#phone'); p.classList.remove('on'); setTimeout(()=>{ if(!p.classList.contains('on')) [...p.querySelectorAll('.msg')].forEach(m=>m.remove()); },400); }
@@ -627,11 +629,11 @@ function phoneClear(){ tapHint(false); const p=$('#phone'); p.classList.remove('
 function cps(){ return prefs.text>=100?1e9: 18+prefs.text*1.1; }
 /* {term|gloss} shows a Japanese term with a small English gloss after it (style guide §5) */
 /* a term with a translator's note (script.json "notes", from production/pilot-v2/script/notes.txt) is underlined, and a tap opens the note */
-function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g;   // {term|gloss} or {term|gloss|note key}
+function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^|}]*)(?:\|([^}]+))?\}/g;   // {term|gloss}, {term|gloss|note key}, or {term||note key} (a repeat in the scene: underline only, Oct 25)
   while((m=re.exec(t))){ if(m.index>last) out.push({t:t.slice(last,m.index)}); const k=(m[3]||m[1]).trim().toLowerCase(), n=NOTES[k]?k:null;
-    out.push({t:m[1], n, gl:m[2]}); out.push({t:'\u00a0('+m[2]+')', g:1, n}); last=re.lastIndex; }
+    if(m[2]){ out.push({t:m[1], n, gl:m[2]}); out.push({t:'\u00a0('+m[2]+')', g:1, n}); } else out.push({t:m[1], n}); last=re.lastIndex; }
   if(last<t.length) out.push({t:t.slice(last)}); return out; }
-function plain(t){ return String(t||'').replace(/\{([^|}]+)\|([^|}]+)(?:\|[^}]+)?\}/g,'$1 ($2)'); }
+function plain(t){ return String(t||'').replace(/\{([^|}]+)\|([^|}]*)(?:\|[^}]+)?\}/g,(a,t1,g)=>g?`${t1} (${g})`:t1); }
 let curSegs=[], curLen=0;
 function renderTo(n){ textEl.textContent=''; let left=n, wrap=null;
   for(const x of curSegs){ if(left<=0) break; const piece=x.t.slice(0,left); left-=x.t.length;
@@ -806,7 +808,7 @@ function run(){
         case 'video': break; // future cutscenes: falls back to continuing
         case 'anim': return playAnim(c);
         case 'insert': return insertStart(c);
-        case 'phone': if(!skipOn) playSfx('notif'); showFace(null); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); tapHint(true); nameEl.textContent=''; textEl.textContent=''; log.push({who:c.who==='me'?'Natsuki (text)':'Chie (text)',t:c.text}); devUpdate(); return waitTap(0);
+        case 'phone': if(!skipOn) playSfx('notif'); showFace(null); curLine=c; box.classList.add('hidden'); phoneMsg(c.who,c.text); tapHint(true); nameEl.textContent=''; textEl.textContent=''; log.push({who:(c.who==='me'?(SPK.natsuki||'Natsuki'):'Chie')+' (text)',t:/^sticker:/.test(c.text)?'[sticker] '+c.text.slice(8).trim():c.text}); devUpdate(); return waitTap(0);
         case 'say': case 'nar': return line(c);
       }
     }
@@ -820,7 +822,7 @@ function line(c){
   if(c.t==='say'||c.t==='nar'){ if(!$('#phone').classList.contains('on')) {} }
   box.classList.remove('hidden');
   const who=c.t==='say'?c.who:null;
-  if(who){ const nm=(SPK[who]||who); nameEl.innerHTML=''; nameEl.append(nm); const b=document.createElement('span'); b.className='bar'; nameEl.appendChild(b); nameEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--sakura)'); textEl.style.setProperty('--tc',(CHAR[who]||{}).t||'var(--paper)'); }
+  if(who){ const nm=(c.full&&SPKF[who])||SPK[who]||who;   /* full name on a character's first line in each chapter (Oct 25) */ nameEl.innerHTML=''; nameEl.append(nm); const b=document.createElement('span'); b.className='bar'; nameEl.appendChild(b); nameEl.style.setProperty('--nc',(CHAR[who]||{}).c||'var(--sakura)'); textEl.style.setProperty('--tc',(CHAR[who]||{}).t||'var(--paper)'); }
   else nameEl.textContent='';
   showFace(faceFor(c), who);
   dimFor(who);
@@ -1049,7 +1051,7 @@ function chartGrid(body, X, csk){
 }
 function lineRow(j, ci, withScene){
   const c=S[j], row=el('div','ln-row'+(j===ci?' now':'')), b=el('button','ln'+(c.t==='say'?'':' nar')); b.type='button'; b.dataset.i=j;
-  const who = c.t==='say' ? (SPK[c.who]||c.who) : c.t==='phone' ? (c.who==='me'?'Natsuki':'Chie')+' ✉' : c.t==='insert' ? 'Manga' : '';
+  const who = c.t==='say' ? (SPK[c.who]||c.who) : c.t==='phone' ? (c.who==='me'?(SPK.natsuki||'Natsuki'):'Chie')+' ✉' : c.t==='insert' ? 'Manga' : '';
   const lw=el('span','lw', who); if(c.t==='say') lw.style.setProperty('--nc', (CHAR[c.who]||{}).c||'var(--sakura)');
   const lt=el('span','lt');
   if(withScene){ const X=devIndex(), s=X.scenes[X.at[j]]; lt.appendChild(el('span','scl', s.no+' · '+(SCENE_T[s.id]||s.id))); }
@@ -1182,7 +1184,7 @@ $('#err').onclick=()=>{ $('#err').hidden=true; };
 let scriptP=null;
 function loadScript(){
   if(!scriptP) scriptP=fetch('script.json').then(r=>{ if(!r.ok) throw new Error('could not load the story (script.json '+r.status+')'); return r.json(); })
-    .then(j=>{ S=j.script; SPK=j.speakers; SIG=sigOf(S); S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; });
+    .then(j=>{ S=j.script; SPK=j.speakers; SPKF=j.speakers_full||{}; SIG=sigOf(S); S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; });
       NOTES=(j.notes&&typeof j.notes==='object')?j.notes:{}; NOTE_T={};
       S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g)){ if(m[3]) continue; const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].trim()}; } });
       Object.keys(NOTES).forEach(k=>{ if(!NOTE_T[k]) NOTE_T[k]={term:k, gloss:''}; }); $('#mCont').disabled=!store.get('v2cont',null); return j; })

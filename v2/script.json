@@ -16,6 +16,19 @@
 "past_natsuki": "???",
 "classmate": "Classmate"
 },
+"speakers_full": {
+"kohei": "Fujisawa Kōhei",
+"nanoha": "Tachibana Nanoha",
+"natsuki": "Mizuno Natsuki",
+"akane": "Fujisawa Akane",
+"rika": "Hoshikawa Rika",
+"ryosuke": "Tokiwa Ryōsuke",
+"kirishima": "Kirishima Aoi",
+"takatsuki": "Takatsuki Shō",
+"yuzu": "Shiina Yuzu",
+"emi": "Tachibana Emi",
+"mio": "Tachibana Mio"
+},
 "script": [
 {
 "t": "scene",
@@ -185,7 +198,8 @@
 "t": "say",
 "id": "c1_0011",
 "who": "akane",
-"text": "\"Morning, Onii-chan…\""
+"text": "\"Morning, Onii-chan…\"",
+"full": true
 },
 {
 "t": "nar",
@@ -197,7 +211,8 @@
 "id": "c1_0013",
 "who": "kohei",
 "text": "\"Morning. How'd you sleep?\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -328,7 +343,8 @@
 "t": "say",
 "id": "c1_0027",
 "who": "nanoha",
-"text": "\"Good morning. I'm coming in.\""
+"text": "\"Good morning. I'm coming in.\"",
+"full": true
 },
 {
 "t": "say",
@@ -476,7 +492,7 @@
 "t": "say",
 "id": "c1_0046",
 "who": "akane",
-"text": "\"Nanoha-chan brought {kinpira|braised burdock}!\""
+"text": "\"Nanoha-chan brought {kinpira||kinpira}!\""
 },
 {
 "t": "hideall"
@@ -484,7 +500,7 @@
 {
 "t": "nar",
 "id": "c1_0047",
-"text": "I wrap the lunches. I knock twice on the {fusuma|sliding door}."
+"text": "I wrap the lunches. I knock twice on the {fusuma||fusuma}."
 },
 {
 "t": "say",
@@ -937,7 +953,8 @@
 "t": "say",
 "id": "c1_0100",
 "who": "rika",
-"text": "\"Nano-chaaaan!\""
+"text": "\"Nano-chaaaan!\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1011,7 +1028,8 @@
 "t": "say",
 "id": "c1_0108",
 "who": "ryosuke",
-"text": "\"—which is why the correct way to eat a {taiyaki|fish-shaped cake} is head first.\""
+"text": "\"—which is why the correct way to eat a {taiyaki|fish-shaped cake} is head first.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1295,7 +1313,8 @@
 "t": "say",
 "id": "c1_0140",
 "who": "natsuki",
-"text": "\"I'm Mizuno Natsuki. It's nice to meet you all.\""
+"text": "\"I'm Mizuno Natsuki. It's nice to meet you all.\"",
+"full": true
 },
 {
 "t": "say",
@@ -2515,7 +2534,8 @@
 "id": "c2_0006",
 "who": "kohei",
 "text": "\"On it.\"",
-"face": "work_neutral"
+"face": "work_neutral",
+"full": true
 },
 {
 "t": "say",
@@ -2567,7 +2587,8 @@
 "t": "say",
 "id": "c2_0014",
 "who": "natsuki",
-"text": "\"…Fujisawa?\""
+"text": "\"…Fujisawa?\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2892,7 +2913,7 @@
 {
 "t": "nar",
 "id": "c2_0057",
-"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about {taiyaki|fish-shaped cake} and herons, to someone I met yesterday."
+"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about {taiyaki||taiyaki} and herons, to someone I met yesterday."
 },
 {
 "t": "scene",
@@ -2931,7 +2952,8 @@
 "t": "say",
 "id": "c2_0304",
 "who": "nanoha",
-"text": "\"Good morning. I'm coming in.\""
+"text": "\"Good morning. I'm coming in.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3138,7 +3160,8 @@
 "t": "say",
 "id": "c2_0062",
 "who": "takatsuki",
-"text": "\"Fujisawa.\""
+"text": "\"Fujisawa.\"",
+"full": true
 },
 {
 "t": "say",
@@ -3180,7 +3203,8 @@
 "t": "say",
 "id": "c2_0068",
 "who": "kirishima",
-"text": "\"Line up.\""
+"text": "\"Line up.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3219,13 +3243,13 @@
 {
 "t": "nar",
 "id": "c2_0074",
-"text": "She's in a faded indigo {keikogi|kendo jacket} and {hakama|pleated kendo trousers}, her hair up in a long ponytail. The {gi|kendo jacket|keikogi} has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
+"text": "She's in a faded indigo {keikogi|kendo jacket} and {hakama||hakama}, her hair up in a long ponytail. The {gi||keikogi} has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
 },
 {
 "t": "say",
 "id": "c2_0076",
 "who": "kirishima",
-"text": "\"Warm-ups and {suburi|practice swings}. {Bogu|armor} after the break.\""
+"text": "\"Warm-ups and {suburi||suburi}. {Bogu|armor} after the break.\""
 },
 {
 "t": "say",
@@ -3295,7 +3319,8 @@
 "t": "say",
 "id": "c2_0084",
 "who": "rika",
-"text": "\"Nacchan! Art club assignment! 'People in motion'! Can I draw you? Can I sit here? Is this a floor you're allowed to sit on?\""
+"text": "\"Nacchan! Art club assignment! 'People in motion'! Can I draw you? Can I sit here? Is this a floor you're allowed to sit on?\"",
+"full": true
 },
 {
 "t": "say",
@@ -3484,7 +3509,7 @@
 {
 "t": "nar",
 "id": "c2_0295",
-"text": "Her front foot stamps the floor in the same instant, and the {shinai|bamboo practice sword} stops an inch short of the stick figure's head."
+"text": "Her front foot stamps the floor in the same instant, and the {shinai||shinai} stops an inch short of the stick figure's head."
 },
 {
 "t": "show",
@@ -3707,7 +3732,7 @@
 {
 "t": "nar",
 "id": "c2_0124",
-"text": "I take {kamae|stance} next to Takatsuki, and Mizuno walks a slow circle around me with the {shinai|bamboo practice sword}, like a museum guide."
+"text": "I take {kamae||kamae} next to Takatsuki, and Mizuno walks a slow circle around me with the {shinai||shinai}, like a museum guide."
 },
 {
 "t": "show",
@@ -3827,7 +3852,7 @@
 {
 "t": "nar",
 "id": "c2_0137",
-"text": "Mizuno faces me across the floor. Through the bars of her {men|helmet} I can see her eyes, and nothing else, and they're bright."
+"text": "Mizuno faces me across the floor. Through the bars of her {men||men} I can see her eyes, and nothing else, and they're bright."
 },
 {
 "t": "nar",
@@ -3908,7 +3933,7 @@
 {
 "t": "nar",
 "id": "c2_0145",
-"text": "She's laughing behind her {men|helmet}."
+"text": "She's laughing behind her {men||men}."
 }
 ]
 },
@@ -4129,7 +4154,7 @@
 "t": "say",
 "id": "c2_0300",
 "who": "takatsuki",
-"text": "\"Also, you laughed inside your {men|helmet} after the point. That was the part of {zanshin|staying alert after the strike} you left out.\""
+"text": "\"Also, you laughed inside your {men||men} after the point. That was the part of {zanshin|staying alert after the strike} you left out.\""
 },
 {
 "t": "say",
@@ -4867,13 +4892,13 @@
 "t": "phone",
 "id": "c2_0262",
 "who": "me",
-"text": "first official kendo practice at the new school"
+"text": "first official kendo practice at the new school 🥋✨🔥"
 },
 {
 "t": "phone",
 "id": "c2_0263",
 "who": "chie",
-"text": "AND???"
+"text": "AND??? 👀"
 },
 {
 "t": "phone",
@@ -4891,7 +4916,7 @@
 "t": "phone",
 "id": "c2_0266",
 "who": "me",
-"text": "not like that!!! he's good. like scary good"
+"text": "not like that!!! 😤😤 he's good. like scary good 😱⚔️"
 },
 {
 "t": "phone",
@@ -4903,7 +4928,7 @@
 "t": "phone",
 "id": "c2_0302",
 "who": "me",
-"text": "except the last one. didn't see that one at all"
+"text": "except the last one. didn't see that one at all 🫠"
 },
 {
 "t": "phone",
@@ -4915,13 +4940,13 @@
 "t": "phone",
 "id": "c2_0269",
 "who": "me",
-"text": "CHIE"
+"text": "CHIE 😤😤😤"
 },
 {
 "t": "phone",
 "id": "c2_0270",
 "who": "me",
-"text": "also i cried on him"
+"text": "also i cried on him 🙈🙈"
 },
 {
 "t": "phone",
@@ -4933,7 +4958,7 @@
 "t": "phone",
 "id": "c2_0272",
 "who": "me",
-"text": "pollen!!!!!"
+"text": "pollen!!!!! 🤧🤧🌸"
 },
 {
 "t": "phone",
@@ -4945,7 +4970,7 @@
 "t": "phone",
 "id": "c2_0274",
 "who": "me",
-"text": "why does everyone keep saying that"
+"text": "why does everyone keep saying that 😩"
 },
 {
 "t": "phone",
@@ -4997,7 +5022,7 @@
 "t": "phone",
 "id": "c2_0284",
 "who": "me",
-"text": "yeah i'm good! made a friend. a real one i think. she gave me the tour on monday and showed me the vending machine that eats coins"
+"text": "yeah i'm good!! made a friend 🥹 a real one i think. she gave me the tour on monday and showed me the vending machine that eats coins 😂🪙"
 },
 {
 "t": "phone",
@@ -5009,13 +5034,19 @@
 "t": "phone",
 "id": "c2_0286",
 "who": "chie",
-"text": "go to sleep. send me pics of the cherry trees"
+"text": "go to sleep. send me pics of the cherry trees 🌸"
 },
 {
 "t": "phone",
 "id": "c2_0287",
 "who": "me",
-"text": "ok ok. night!!"
+"text": "ok ok. night!! 🌙✨"
+},
+{
+"t": "phone",
+"id": "c2_0326",
+"who": "me",
+"text": "sticker:😴💤"
 },
 {
 "t": "nar",
