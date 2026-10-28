@@ -756,6 +756,7 @@ function insRender(anim){
 }
 function insStep(){   // the step just shown: log its lines once, voice them in order, then auto-advance if Auto is on
   const st=insS.steps[insS.k], p=st.g>=0 ? insS.c.panels[st.g] : null, tok=++insS.vtok; clearTimeout(insS.timer); stopVoice();
+  artHold=Date.now()+(insS.k===0?INS_HOLD_OPEN:INS_HOLD);   // the zoom (or page turn) lands before a tap can move on
   const lines=p?p.lines:[]; if(p && !insS.seen[st.g]){ insS.seen[st.g]=1; lines.forEach(insLog); } devUpdate();
   const says=lines.filter(x=>x.t==='say'); let i=0;
   const done=()=>{ if(!insS||tok!==insS.vtok) return; if(autoOn) insS.timer=setTimeout(()=>{ if(insS&&tok===insS.vtok&&autoOn&&!overlayOpen()) advance(); }, (st.g<0?1400:900)+(100-prefs.auto)*14); };
@@ -790,7 +791,7 @@ function run(){
       switch(c.t){
         case 'scene': state.scene=c.id; store.set('v2cont',snap()); break;
         case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'||c.tr==='flash'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.name==='black'||c.name==='white') box.classList.add('hidden'); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:(c.name==='black'||c.name==='white')&&c.tr==='slow'?1900:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
-        case 'cg': { const was=state.cg; setCg(c.name,c.tr); if(c.name && !was) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break; }
+        case 'cg': { const was=state.cg; setCg(c.name,c.tr); if(c.name && !was) { box.classList.add('hidden'); return skipOn ? pause(60,true) : cgArrive(c.name, c.tr); } break; }
         case 'bgm': playBgm(c.name); state.bgm=c.name; break;
         case 'sfx': if(!skipOn) playSfx(c.name); break;
         case 'show': showSpr(c.who,c.spr,c.pos); break;
@@ -816,6 +817,17 @@ function run(){
   } finally { running=false; }
 }
 function pause(ms, keepHidden){ running=false; clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(!keepHidden) {} run(); }, ms); }
+/* art that is still arriving holds the taps (author, Oct 28: tapping quickly, the whiteboard CG was up for about 0.3 s and the match insert
+   ran past every panel before its zoom landed). A CG that comes up where none was waits for its image, then taps wait out its fade-in;
+   a manga panel holds for its zoom or page turn plus a beat. Taps in the hold are dropped, as at the animated catch. */
+let artHold=0;
+const CG_HOLD={fade:1000, slow:1400, cut:500}, INS_HOLD=800, INS_HOLD_OPEN=900;
+function cgArrive(name, tr){ running=false; clearTimeout(waitTimer); artHold=Infinity;
+  const tok=setCg.tok, t0=Date.now(), u=`/img/bg/${name}.webp`;
+  const tick=()=>{ if(tok!==setCg.tok){ artHold=0; return; }   // a jump or another CG took over
+    if(cgImgs.some(i=>i.classList.contains('on')&&i.src.endsWith(u)) || Date.now()-t0>5000){ artHold=Date.now()+(CG_HOLD[tr]||CG_HOLD.fade); return pause(1100, true); }
+    waitTimer=setTimeout(tick, 40); };
+  tick(); }
 function waitTap(ms){ running=false; }
 function line(c){
   running=false; curLine=c; stopVoice(); vNodeOnEnd=null;
@@ -840,6 +852,7 @@ function advance(){
     return; }
   if(typing){ finishType(); return; }
   if(animDone){ if(animShownT && Date.now()-animShownT>600) animDone(); return; }   // a quick double tap doesn't skip the moment before it shows
+  if(Date.now()<artHold && !skipOn) return;   // a CG or manga panel still arriving (see cgArrive)
   if(insS && curLine===insS.c){ insNext(); return; }
   if(curLine && (curLine.t==='insert'||curLine.t==='anim')) return;   // still loading
   if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
@@ -878,7 +891,7 @@ function snap(){ // state at current command index (rewind to the line being sho
 function restore(s){
   log.length=0;
   Object.keys(lastSpr).forEach(k=>delete lastSpr[k]); S.slice(0,s.i).forEach(c=>{ if(c.t==='show') lastSpr[c.who]=c.spr; });   // a jump (load, continue, chapters) starts a fresh backlog
-  showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
+  showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null; artHold=0;
   noteEl.classList.remove('on'); animOff(); insOff(true);
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
   // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes

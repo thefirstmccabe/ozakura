@@ -285,10 +285,11 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 6. **Independent check before delivery:** a separate reviewer agent, which hasn't seen the production, checks the finished pages against the script, canon and references. Fix what it finds.
 7. **Deliver** the finished pages with a short note of any known compromises.
 
-**Presentation in the VN (Decided Oct 13, locked as tested; the author said "don't change a thing"; one change Oct 25):** panel by panel, as built in `production/insert-presentation-test/index.html`. That file is the reference implementation, except for the first bullet below.
+**Presentation in the VN (Decided Oct 13, locked as tested; the author said "don't change a thing"; changes Oct 25 and Oct 28):** panel by panel, as built in `production/insert-presentation-test/index.html`. That file is the reference implementation, except for the first bullet below and the tap hold.
 - **No whole-page establishing view (author, Oct 25, Ch2 punch list):** the insert opens straight on its first panel, and each page turn cross-fades onto the next page's first panel; each tap moves to the next panel in reading order (right to left, top to bottom). (Until Oct 25 it opened on the whole page fitted to the screen.)
 - The current panel fills the screen with about 4% padding. The rest of the page stays visible around it, dimmed under the night-ink overlay (`rgba(16,19,31,.86)`), with about 24 px of page-space margin so SFX that break the border stay lit.
 - Zoom moves are animated (0.55 s ease). Pages cross-fade between each other and into and out of the VN scene.
+- **A panel lands before the next tap counts [P] (Oct 28):** taps are dropped for 0.8 s after each panel or page turn starts (0.9 s for the opening), so quick tapping can't run the camera past panels that never settle. The same rule holds a CG that comes up where none was: taps wait for its image and its fade-in (1 s). The author, tapping quickly, had seen the match insert "end after the first panel."
 - Panel boxes come from the insert's `insert-spec.json`, so lettering and the zoom share one source.
 
 **Design every insert for panel-by-panel reading (Oct 13).** Guided view on ordinary comics is clumsy because those pages were drawn for print. Ours are drawn for this view from the start; apply these rules at the script and layout steps (1–2):
