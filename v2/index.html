@@ -24,6 +24,7 @@
   --paper-dim:#bdb6a8;    /* secondary text */
   --sakura:#e8a7b5;       /* accent: blossom pink */
   --gilt:#c9a46a;         /* hairlines, chapter ornaments */
+  --term:#e6c283;         /* a Japanese word with a translator's note: tap to read it (author, Oct 28) */
   --veil:rgba(12,14,24,.82);
   --f-display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",Georgia,serif;
   --f-body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
@@ -98,12 +99,14 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 #name .bar{display:block;height:2px;margin-top:4px;border-radius:2px;background:var(--nc,var(--sakura))}
 #name{color:var(--nc,var(--paper))}
 #text{font-size:clamp(17px,2.55vh,27px);line-height:1.62;max-width:62em;min-height:3.2em;white-space:pre-wrap;
-  text-wrap:pretty;color:var(--paper)}
-#text.narr{color:#e4dfd6}
-#text.say{color:var(--tc,var(--paper))}
+  text-wrap:pretty;color:var(--lc,var(--paper))}
+#text.narr{--lc:#e4dfd6}
+#text.say{--lc:var(--tc,var(--paper))}
 .gl{font-size:.74em;opacity:.72;letter-spacing:.02em;white-space:nowrap}
-/* translator's notes (style guide §5): a glossed term with a note is underlined; a tap opens the note without advancing */
-.tn{cursor:pointer;text-decoration:underline dotted rgba(201,164,106,.8);text-decoration-thickness:1.5px;text-underline-offset:.24em;-webkit-tap-highlight-color:transparent;border-radius:2px}
+/* translator's notes (style guide §5): a term with a note is gold (it was a dotted underline until Oct 28); a tap opens the note without advancing.
+   Its English on first use stays in the line's own color. */
+.tn{cursor:pointer;color:var(--term);-webkit-tap-highlight-color:transparent;border-radius:2px}
+.tn .gl{color:var(--lc,var(--paper))}
 .tn:hover,.tn:focus-visible{background:rgba(201,164,106,.14);outline:none}
 #text.typing .tn{pointer-events:none}
 #note{position:absolute;z-index:26;left:50%;transform:translateX(-50%);width:min(638px,calc(100% - 32px));
@@ -123,7 +126,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 .note-row{padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
 .note-row .nt{font-size:1.1em}
 .note-row .nb{margin-top:.35em;line-height:1.6;color:#e4dfd6}
-#text.interlude.narr{color:#e4dccd}
+#text.interlude.narr{--lc:#e4dccd}
 #text .cur{display:inline-block;width:.5em;color:var(--sakura);animation:blink 1.1s infinite;margin-left:.15em}
 @keyframes blink{0%,60%{opacity:1}61%,100%{opacity:0}}
 #ilabel{position:absolute;top:max(16px,env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);
@@ -628,8 +631,8 @@ function phoneClear(){ tapHint(false); const p=$('#phone'); p.classList.remove('
 /* ---------- text ---------- */
 function cps(){ return prefs.text>=100?1e9: 18+prefs.text*1.1; }
 /* {term|gloss} shows a Japanese term with a small English gloss after it (style guide §5) */
-/* a term with a translator's note (script.json "notes", from production/pilot-v2/script/notes.txt) is underlined, and a tap opens the note */
-function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^|}]*)(?:\|([^}]+))?\}/g;   // {term|gloss}, {term|gloss|note key}, or {term||note key} (a repeat in the scene: underline only, Oct 25)
+/* a term with a translator's note (script.json "notes", from production/pilot-v2/script/notes.txt) is gold, and a tap opens the note */
+function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^|}]*)(?:\|([^}]+))?\}/g;   // {term|gloss}, {term|gloss|note key}, or {term||note key} (any use after the first in the story: the gold term only, Oct 28)
   while((m=re.exec(t))){ if(m.index>last) out.push({t:t.slice(last,m.index)}); const k=(m[3]||m[1]).trim().toLowerCase(), n=NOTES[k]?k:null;
     if(m[2]){ out.push({t:m[1], n, gl:m[2]}); out.push({t:'\u00a0('+m[2]+')', g:1, n}); } else out.push({t:m[1], n}); last=re.lastIndex; }
   if(last<t.length) out.push({t:t.slice(last)}); return out; }
@@ -1124,7 +1127,7 @@ function toTitle(){
 }
 
 /* ---------- input ---------- */
-// translator's notes: a tap on an underlined term opens its note (while the line is still typing, the tap finishes it as usual);
+// translator's notes: a tap on a gold term opens its note (while the line is still typing, the tap finishes it as usual);
 // while a note is open, the next tap anywhere closes it, and only a button or panel tap goes on to do its own job
 // a press that began while the line was typing only finishes the line, even if typing ends before the click arrives
 let downTyping=false;
