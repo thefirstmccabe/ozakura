@@ -50,22 +50,13 @@
      "letters": [
       {
        "t": "nar",
-       "text": "I show her men. She doesn't even blink.",
+       "text": "I fake a head strike. She doesn't even blink.",
        "at": [
         0.2,
         0.14
        ],
-       "maxw": 420,
+       "maxw": 310,
        "size": 30
-      },
-      {
-       "t": "gloss",
-       "text": "(men: a head strike)",
-       "at": [
-        0.2,
-        0.27
-       ],
-       "size": 27
       }
      ],
      "shot": "16:9. Over her shoulder: Kōhei lifts his tip as if for men; her tip stays on his throat."
@@ -212,7 +203,7 @@
      "letters": [
       {
        "t": "nar",
-       "text": "She's laughing behind her men.",
+       "text": "She's laughing behind her helmet.",
        "at": [
         0.5,
         0.9

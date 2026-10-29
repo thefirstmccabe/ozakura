@@ -492,7 +492,7 @@
 "t": "say",
 "id": "c1_0046",
 "who": "akane",
-"text": "\"Nanoha-chan brought {kinpira||kinpira}!\""
+"text": "\"Nanoha-chan brought {kinpira|~braised burdock}!\""
 },
 {
 "t": "hideall"
@@ -500,7 +500,7 @@
 {
 "t": "nar",
 "id": "c1_0047",
-"text": "I wrap the lunches. I knock twice on the {fusuma||fusuma}."
+"text": "I wrap the lunches. I knock twice on the {fusuma|~sliding door}."
 },
 {
 "t": "say",
@@ -2796,7 +2796,7 @@
 "t": "say",
 "id": "c2_0040",
 "who": "natsuki",
-"text": "\"What about the {taiyaki|fish-shaped cake} stand by the north exit?\""
+"text": "\"What about the {taiyaki|~fish-shaped cake} stand by the north exit?\""
 },
 {
 "t": "say",
@@ -2913,7 +2913,7 @@
 {
 "t": "nar",
 "id": "c2_0057",
-"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about {taiyaki||taiyaki} and herons, to someone I met yesterday."
+"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about {taiyaki|~fish-shaped cake} and herons, to someone I met yesterday."
 },
 {
 "t": "scene",
@@ -3148,7 +3148,7 @@
 {
 "t": "nar",
 "id": "c2_0061",
-"text": "Takatsuki is already on the floor when I come in, doing {suburi|practice swings} alone at the far end. Every swing is the same swing: same height, same speed, same snap at the bottom. Watching him is like watching a diagram of kendo."
+"text": "Takatsuki is already on the floor when I come in, doing practice swings alone at the far end. Every swing is the same swing: same height, same speed, same snap at the bottom. Watching him is like watching a diagram of kendo."
 },
 {
 "t": "show",
@@ -3174,7 +3174,7 @@
 "t": "say",
 "id": "c2_0064",
 "who": "takatsuki",
-"text": "\"Your {hakama|pleated kendo trousers} is tied off center.\""
+"text": "\"Your {hakama|~pleated kendo trousers} is tied off center.\""
 },
 {
 "t": "say",
@@ -3243,13 +3243,13 @@
 {
 "t": "nar",
 "id": "c2_0074",
-"text": "She's in a faded indigo {keikogi|kendo jacket} and {hakama||hakama}, her hair up in a long ponytail. The {gi||keikogi} has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
+"text": "She's in a faded indigo practice jacket and {hakama|~pleated kendo trousers}, her hair up in a long ponytail. The jacket has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
 },
 {
 "t": "say",
 "id": "c2_0076",
 "who": "kirishima",
-"text": "\"Warm-ups and {suburi||suburi}. {Bogu|armor} after the break.\""
+"text": "\"Warm-ups and swings. Armor after the break.\""
 },
 {
 "t": "say",
@@ -3509,7 +3509,7 @@
 {
 "t": "nar",
 "id": "c2_0295",
-"text": "Her front foot stamps the floor in the same instant, and the {shinai||shinai} stops an inch short of the stick figure's head."
+"text": "Her front foot stamps the floor in the same instant, and the {shinai|~bamboo practice sword} stops an inch short of the stick figure's head."
 },
 {
 "t": "show",
@@ -3682,7 +3682,7 @@
 {
 "t": "nar",
 "id": "c2_0118",
-"text": "He steps out and settles into {kamae|stance} like a door swinging shut. Left heel just off the floor. Sword tip at the height of an imaginary throat. Not one thing out of place."
+"text": "He steps out and settles into his stance like a door swinging shut. Left heel just off the floor. Sword tip at the height of an imaginary throat. Not one thing out of place."
 },
 {
 "t": "show",
@@ -3732,7 +3732,7 @@
 {
 "t": "nar",
 "id": "c2_0124",
-"text": "I take {kamae||kamae} next to Takatsuki, and Mizuno walks a slow circle around me with the {shinai||shinai}, like a museum guide."
+"text": "I take my stance next to Takatsuki, and Mizuno walks a slow circle around me with the {shinai|~bamboo practice sword}, like a museum guide."
 },
 {
 "t": "show",
@@ -3743,7 +3743,7 @@
 "t": "say",
 "id": "c2_0125",
 "who": "natsuki",
-"text": "\"Left heel, a little low. The tip wanders. He hits {men|head strikes} from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
+"text": "\"Left heel, a little low. The tip wanders. He hits {men|~head strikes} from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
 },
 {
 "t": "show",
@@ -3778,7 +3778,7 @@
 "t": "say",
 "id": "c2_0130",
 "who": "takatsuki",
-"text": "\"Mizuno. For the record, your explanation of {zanshin|staying alert after the strike} was incomplete.\""
+"text": "\"Mizuno. For the record, your explanation of {zanshin|~staying alert after the strike} was incomplete.\""
 },
 {
 "t": "show",
@@ -3842,22 +3842,22 @@
 {
 "t": "nar",
 "id": "c2_0292",
-"text": "After the break, {bogu|armor}. The {men|helmet} goes on last: the {tenugui|cotton head cloth} tied tight over my hair, the helmet settled down over it, the cords pulled and knotted behind my head. The world narrows to a rectangle behind the grille."
+"text": "After the break, armor. Last of all, I tie a cotton cloth tight over my hair and settle the helmet down over it, the cords pulled and knotted behind my head. The world narrows to a rectangle behind the grille."
 },
 {
 "t": "nar",
 "id": "c2_0136",
-"text": "An hour of {kirikaeshi|a drill of nonstop strikes} and {waza|technique} drills later, Kirishima-senpai calls the {shiai-geiko|practice matches}."
+"text": "An hour of drills later, Kirishima-senpai calls the practice matches."
 },
 {
 "t": "nar",
 "id": "c2_0137",
-"text": "Mizuno faces me across the floor. Through the bars of her {men||men} I can see her eyes, and nothing else, and they're bright."
+"text": "Mizuno faces me across the floor. Through the bars of her helmet I can see her eyes, and nothing else, and they're bright."
 },
 {
 "t": "nar",
 "id": "c2_0138",
-"text": "We bow. We step in. We crouch at the line, {shinai|bamboo practice sword} tips crossing."
+"text": "We bow. We step in. We crouch at the line, {shinai|~bamboo practice sword} tips crossing."
 },
 {
 "t": "insert",
@@ -3881,7 +3881,7 @@
 {
 "t": "nar",
 "id": "c2_0140",
-"text": "I show her {men|a head strike}. She doesn't even blink."
+"text": "I fake a head strike. She doesn't even blink."
 }
 ]
 },
@@ -3933,7 +3933,7 @@
 {
 "t": "nar",
 "id": "c2_0145",
-"text": "She's laughing behind her {men||men}."
+"text": "She's laughing behind her helmet."
 }
 ]
 },
@@ -4005,7 +4005,7 @@
 {
 "t": "nar",
 "id": "c2_0152",
-"text": "Practice ends the way it starts, with a bow. {Bogu|armor} off, we kneel in a line while Kirishima-senpai walks down it, saying one sentence to each of us."
+"text": "Practice ends the way it starts, with a bow. Armor off, we kneel in a line while Kirishima-senpai walks down it, saying one sentence to each of us."
 },
 {
 "t": "show",
@@ -4017,7 +4017,7 @@
 "t": "say",
 "id": "c2_0153",
 "who": "kirishima",
-"text": "\"Mizuno. Good {kote|wrist strike}. You drop your left shoulder before {men|head strikes}. Fix it.\""
+"text": "\"Mizuno. Good {kote|~wrist strike}. You drop your left shoulder before {men|~head strikes}. Fix it.\""
 },
 {
 "t": "show",
@@ -4074,7 +4074,7 @@
 {
 "t": "nar",
 "id": "c2_0159",
-"text": "He moves on down the line. Mizuno leans over before I can get up, her face still flushed from the {men|helmet}."
+"text": "He moves on down the line. Mizuno leans over before I can get up, her face still flushed from the helmet."
 },
 {
 "t": "show",
@@ -4148,19 +4148,19 @@
 {
 "t": "nar",
 "id": "c2_0169",
-"text": "She laughs again and finds something on her {hakama|pleated kendo trousers} that needs fixing."
+"text": "She laughs again and finds something on her {hakama|~pleated kendo trousers} that needs fixing."
 },
 {
 "t": "say",
 "id": "c2_0300",
 "who": "takatsuki",
-"text": "\"Also, you laughed inside your {men||men} after the point. That was the part of {zanshin|staying alert after the strike} you left out.\""
+"text": "\"Also, you laughed inside your helmet after the point. That was the part of {zanshin|~staying alert after the strike} you left out.\""
 },
 {
 "t": "say",
 "id": "c2_0170",
 "who": "takatsuki",
-"text": "\"And Fujisawa. Your left foot was forward on that {dō|body strike}.\""
+"text": "\"And Fujisawa. Your left foot was forward on that {dō|~body strike}.\""
 },
 {
 "t": "say",
@@ -4231,7 +4231,7 @@
 {
 "t": "nar",
 "id": "c2_0179",
-"text": "We do the floor the old way: wet {zōkin|floor cloths}, both hands flat on the wood, running bent double down the length of the dojo and back. She's fast at it. She's also, I notice, trying to beat me to the far wall."
+"text": "We do the floor the old way: wet rags, both hands flat on the wood, running bent double down the length of the dojo and back. She's fast at it. She's also, I notice, trying to beat me to the far wall."
 },
 {
 "t": "show",
@@ -4296,8 +4296,9 @@
 "who": "natsuki"
 },
 {
-"t": "anim",
-"name": "cg_catch"
+"t": "cg",
+"name": "cg_catch",
+"tr": "cut"
 },
 {
 "t": "bgm",
@@ -4995,11 +4996,6 @@
 },
 {
 "t": "nar",
-"id": "c2_0279",
-"text": "It didn't feel like it covered it, and she didn't like that."
-},
-{
-"t": "nar",
 "id": "c2_0280",
 "text": "Chie had been her best friend in fourth grade, and again last year, when her dad's work had swung them back through Sendai like a pendulum. Chie was the only person she'd ever managed to keep. Birthday calls. A box of {zunda mochi|sweet green soybean rice cakes} every New Year."
 },
@@ -5097,22 +5093,13 @@
 "taiyaki": "A fish-shaped griddle cake (the name means \"baked sea bream\"), usually filled with sweet red-bean paste and sold hot from street stalls. Whether to start with the head or the tail is an old argument in Japan.",
 "shodan": "First dan, the first rank above the beginner grades in kendo, earned at a formal grading exam (kendo has no belts; the rank comes as a certificate). Serious high-school players usually hold first or second dan.",
 "hakama": "Wide, pleated trousers worn over the practice jacket in kendo and other traditional martial arts. They're tied with long cords that wrap around the waist and knot at the front.",
-"suburi": "Practice swings with the bamboo sword, done in the air, usually dozens or hundreds at a time to warm up and drill clean form.",
-"keikogi": "The thick cotton jacket worn for kendo practice, usually dyed indigo. The dye fades with years of washing.",
-"bogu": "Kendo armor: the helmet (men), padded gloves (kote), chest protector (dō) and a waist guard (tare).",
 "shinai": "The bamboo practice sword used in kendo: four slats of bamboo bound with leather and cord, about the length of a real sword.",
 "men": "Two things in kendo: the strike to the top of the head, and the helmet that protects it (a steel grille over the face, padded flaps over the shoulders). As a shout, it names the target as the strike lands.",
 "ki-ken-tai-itchi": "\"Spirit, sword and body as one\": in kendo, a point needs the shout, the strike and the stamp of the front foot to land at the same instant.",
 "zanshin": "Literally \"remaining mind\": staying alert and ready after a strike. In a match, a strike without it doesn't count.",
-"kamae": "A kendo stance, especially the basic one with the sword tip held at the opponent's throat.",
-"tenugui": "A thin cotton cloth tied over the hair under the kendo helmet, to soak up sweat and keep the helmet snug.",
-"kirikaeshi": "A basic kendo drill: a big strike to the head, then a fast run of alternating strikes to the left and right side of the head while stepping forward and back, all at full voice.",
-"waza": "Technique. In kendo, waza drills practice specific attacks and counters with a partner.",
-"shiai-geiko": "Practice matches: a real kendo match fought in practice, with someone calling the points.",
 "kote": "The padded kendo gloves, and the strike to the wrist they protect (usually the right wrist). As a call, \"Kote!\" names the target as the strike lands.",
 "debana": "Striking at the very moment the opponent starts an attack, before it lands. Debana-kote is that strike to the wrist.",
 "dō": "The kendo chest protector, and the strike to the side of the body it protects. As a call, \"Dō!\" names the target as the strike lands.",
-"zōkin": "A cleaning rag, usually a folded and stitched towel. Japanese schools clean their own floors, and dojos are wiped down by hand.",
 "zunda mochi": "Rice cakes covered in a sweet, bright-green paste of mashed edamame; a specialty of Sendai."
 }
 }

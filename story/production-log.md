@@ -9,7 +9,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | Chapter | Stage | Owner | Next |
 |---|---|---|---|
 | Ch1 (with the dream at 1.8) | **Approved** (author, Oct 24), **with the cold open as a placeholder** to be edited later (see its row); approved build = commit `05a993b`, kept on GitHub as the branch `approved/v2-ch1` (this session's git proxy refuses tag pushes; the local tag `v2-ch1-approved` points at the same commit, so push it from a session that can). It's the regression baseline for any later Ch1 fix (style guide §9 step 10). History: handover `production/pilot-v2/reviews/ch1/handover-oct18.md`, fix rounds 2–3 (`build-review.md`), punch lists Oct 19, Oct 20 and Oct 24 (`punch-oct*.md`) | Production | Done. Its [P] details go to the Story thread to fold into canon (pilot-notes §3, the Oct 18–24 lists) |
-| Ch2 "Kendo" | **Punch lists applied** (author's two lists of Oct 25; records `production/pilot-v2/reviews/ch2/punch-oct25.md`, `punch-oct25b.md`), live on `main`. First handover `reviews/ch2/handover-oct25.md` | Author, Production | Oct 28: the author wants fewer untranslated kendo terms and finds the glosses still show almost every time; Production proposing (English for some terms, glosses once per chapter). Then any more changes; then approve Ch2 |
+| Ch2 "Kendo" | **Punch lists applied** (Oct 25 ×2 and Oct 28; records `production/pilot-v2/reviews/ch2/punch-oct25.md`, `punch-oct25b.md`, `punch-oct28b.md`). The author expects Oct 28 to be the last batch. First handover `reviews/ch2/handover-oct25.md` | Author | Play the Oct 28 changes; approve Ch2 (then Ch3 starts) |
 | Ch3–4 | **Outline approved** (author, Oct 24) | Production | After Ch2 is approved (chapter-by-chapter review). Going over the $40 cap is approved; about $40.20 spent |
 | Cold open | **Deferred** until most of the story is written (Oct 19; briefly taken out on Oct 20, then put back the same evening) | — | The author returns to it then: what goes there, and whether it's animated or music over CGs. The build keeps the Oct 18 version, which a tap skips once seen |
 
@@ -17,7 +17,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | Item | State | Owner |
 |---|---|---|
 | Music | Pilot music closed (Oct 16: the four short loops as they are). Kiss theme take B kept in mind for the late-August chapter | Audio thread |
-| Natsuki's voice | **Lowered to +0.5 semitone Oct 25** (Zephyr, brighter direction; was +1, Ch1 re-voiced at +1 on Oct 24). The author raises it with Production in the next round of edits; handoff `production/voice-auditions/oct24-natsuki/handoff-production.md` | Production (re-pitch her lines) |
+| Natsuki's voice | **+0.5 semitone in Ch1 and Ch2** (Zephyr, brighter direction; lowered from +1 on Oct 25 for Ch2, Ch1 followed Oct 28); handoff `production/voice-auditions/oct24-natsuki/handoff-production.md` | Done |
 | Shipped pilot (site root) and Manga Vol. 1 | On hold; `v2/` replaces the shipped pilot once Ch1–4 are approved | — |
 
 **Natsuki's Oct 20 look into the v2 build:** done Oct 20 (sprites, face windows, the arrival CG and its falter, the title art and its living still, thumbnails, c1_0139). **For Story:** `production/pilot-v2/handoff-story-oct20.md` (the hair-color rule and the stale outline CG note).
@@ -33,7 +33,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 - Approval of the chapter map (its header still marks it a Proposal). The W7 question was answered Oct 21 (yes).
 - The Prologue/Ch1 dream music (`memory`, silence, or a new cue at about $2), after he hears the Ch2 catch.
 - Pilot names, kanji and POV (pilot-notes §1).
-- Whether the reader windows widen from 3–4 to 4–8 chapters: after the pilot. Whether Ch1 also gets Natsuki at +0.5 (Ch1 stays at +1 for now, as asked).
+- Whether the reader windows widen from 3–4 to 4–8 chapters: after the pilot.
 
 **Threads and who owns what:** the repo's `CLAUDE.md`.
 
@@ -127,6 +127,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 | 10-25 | **Decided (author): imagined scenes** (canon §2, §6, §8; chapter map Ch11, 20, 21, 25): mostly Nanoha's; a comic bentō one in Ch11 to teach the device; the slap at the telling in Ch20 that Natsuki still feels (Nanoha's latent ability; deniable, once); the funeral embrace in Ch21; and at the festival in Ch25 her imagined "This is the happiest moment of my life" dissolves into reality. **For Production (style guide §3, theirs):** imagined scenes need their own look, distinct from both era treatments (proposal: soft white bloom, music drops out, hard cut back; the festival one dissolves instead). |
 | 10-25 | **Ch2 punch list, second batch (author, Oct 25 evening; record `production/pilot-v2/reviews/ch2/punch-oct25b.md`).** **Decided (author):** a term's English gloss shows on its first use in each scene, later uses keep only the dotted underline that opens the note (replaces "every use", style guide §5); name tags show a character's full name, family name first, on their first spoken line in each chapter, then the short tag (§3a; he chose this over full names on every line). Also: the Natsuki–Chie texts rewritten with emoji and a sticker per the speech sheets. |
 | 10-28 | **Not needed (author): a tap hold for art still arriving.** The author, tapping quickly in Safari, missed the new whiteboard CG and saw the match insert end after panel 1. Production reproduced it with fast taps (not caching, not Skip) and built a hold (taps wait for a new CG's fade-in and for each panel's zoom); on replaying, the author found it working and said not to change anything. The fix stays unmerged on branch `ch2-tap-hold`. Record `production/pilot-v2/reviews/ch2/punch-oct28.md`. |
+| 10-28 | **Ch2 punch list (author, Oct 28; record `production/pilot-v2/reviews/ch2/punch-oct28b.md`).** **Decided (author):** the catch is a still (`cg_catch`, cut in on the slip; the fall animation "doesn't really work"); a term's English shows on its **first use in the story** only, later uses show the term alone and still open the note (replaces once per scene; style guide §5); tappable terms are **gold**, not underlined; several kendo terms go into plain English (practice swings, practice jacket, armor, helmet, cotton cloth, stance, drills, practice matches, rags; kept: men/kote/dō as strikes, shinai, hakama, zanshin; list in §5 for later chapters); **Natsuki at +0.5 semitone in Ch1 too**. The morning scene and the texts stay as they are. No spend. |
 
 ## 3. Budget (open lines)
 | Line | Cap | Spent | Notes |

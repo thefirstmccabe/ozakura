@@ -22,7 +22,7 @@ def speech_rms_db(path, a, b):
     return 20 * np.log10(np.sqrt(np.mean(v ** 2)))
 
 PITCH = {"nanoha": 2, "akane": 2, "rika": 2, "yuzu": 2, "mio": 4, "natsuki": 0.5}   # rika +4 -> +2 (author, Oct 17); natsuki +1 (Oct 24) -> +0.5 (Oct 25)
-PITCH_KEEP = {("natsuki", "c1_"): 1}   # the approved Ch1 keeps Natsuki at +1 until the author says otherwise (Oct 25)
+PITCH_KEEP = {}   # per-chapter exceptions, e.g. {("natsuki", "c1_"): 1}; Ch1 kept Natsuki at +1 from Oct 25 until the author moved it to +0.5 (Oct 28)
 RATE = {0.5: (1.0293, 0.9715), 1: (1.0595, 0.9439), 2: (1.1225, 0.8909), 4: (1.2599, 0.7937)}
 def pitch_for(who, line_id):
     for (w, prefix), v in PITCH_KEEP.items():
