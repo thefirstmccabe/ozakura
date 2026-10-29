@@ -1,0 +1,17 @@
+# Ch2 punch list, Oct 28 (author; the last Ch2 batch, he hopes)
+
+Discussed first, then approved item by item ("Yes, and yes, please proceed", 8:20 pm). Branch `ch2-punch-oct28`.
+
+| # | Author's item | Done |
+|---|---|---|
+| 1 | The fall animation doesn't really work: "just do a still there" | `@anim cg_catch` → `@cg cg_catch cut`: a hard cut to the catch CG on the tap after "Her heel goes out from under her on the wet floor."; `memory` still comes in there. The clip stays in `v2/img/anim/` |
+| 2 | Glosses: drop the English "after the first use, period. The reader can always click" | The English in brackets shows on a term's first use in the story; every later use shows the term alone and still opens the note. One meaning per note key, however the gloss is worded (the compiler counted "head strike", "head strikes" and "Head!" as three). A later use keeps its own gloss for the note popup's header (`{term|~gloss|key}`). Ch2 now shows the English 19 times, each on a first appearance (it was 33). Ch1's text is unchanged. The manga's "(men: a head strike)" caption on p1-2 went, since men is explained in the lesson |
+| 3 | "Too many things untranslated" in the kendo scenes: Production's list, accepted as proposed | Plain English: practice swings (suburi), practice jacket / jacket (keikogi, gi), armor (bogu), helmet (men as the helmet, five lines), cotton cloth (tenugui), stance (kamae), "An hour of drills later, Kirishima-senpai calls the practice matches." (c2_0136), wet rags (zōkin), "I fake a head strike." (c2_0140). The manga lettering follows on p1-2 and p2-4 ("She's laughing behind her helmet."). Kept in Japanese: men, kote, dō as strikes and shouts, shinai, hakama, zanshin, ki-ken-tai-itchi, debana-kote; the referee's calls in the manga keep their small English. Nine notes no longer used were removed from `notes.txt`. The voices speak the Japanese, so nothing was re-voiced |
+| 4 | Japanese words in a different color, clickable, instead of the dotted underline (shown a side-by-side first) | Tappable terms are gold (`--term`, #e6c283) with no underline; their bracketed English stays in the line's own color. Touches Ch1's look too |
+| 5 | Natsuki's lower Ch2 voice into Ch1 | Ch1's 36 Natsuki lines repacked from the kept takes at +0.5 semitone (measured: median −0.50 semitone per line, durations within 0.015 s); the other Ch1 and all Ch2 packs are byte-identical |
+| — | The Wednesday-morning Nanoha scene and the texts' emoji | No changes (author: "good", "great") |
+
+**Not applied:** the tap hold built earlier the same evening (`punch-oct28.md`).
+
+## Checks
+- **Writing check** (fresh agent) on every changed line: no must-fix. Applied its two should-fix items: c2_0292 "Last of all, I tie a cotton cloth tight over my hair and settle the helmet down over it…" (helmet and head no longer repeat) and c2_0179 "wet rags" (picks up Natsuki's "Hand me a rag"); and its optional p1-2 caption break at the sentence. It confirmed every kept term is explained or glossed before its bare uses (Ch1 has none of them), and that no "men" left in the text means the helmet. For the author: the catch CG shows her tear from the first beat, four lines before "And she's crying." (the animation ended on the same frame; the cut just shows it sooner).
