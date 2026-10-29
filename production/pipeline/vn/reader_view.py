@@ -52,7 +52,7 @@ def convert(paths, split):
     notes = read_notes(notes_path)[0] if os.path.exists(notes_path) else {}
     noted = set()
     named = set()  # speakers already shown with their full name in this chapter (style guide §3a, Oct 25)
-    seen = set()   # the scene's glossed (term, sense) pairs: later uses show the bare term (style guide §5, Oct 25)
+    seen = set()   # glossed meanings so far in the story: later uses show the bare term (style guide §5, Oct 28)
     for path in paths:
         for raw in open(path, encoding="utf-8"):
             s = split_id(raw.rstrip("\n"))[0]   # drop the stable line ID tag
@@ -61,7 +61,6 @@ def convert(paths, split):
             out = None
             if s.startswith("=="):
                 sid = s[2:].split("|")[0].strip()
-                seen = set()
                 if cur and (not split or sid in split):
                     parts.append(cur); cur = []
                 continue

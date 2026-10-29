@@ -248,35 +248,28 @@ def compile_files(paths):
 GLOSS = re.compile(r"\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}")   # {term|gloss} or {term|gloss|note key} (Oct 25)
 
 
-def _sense(gloss):
-    g = gloss.strip().lower().rstrip("!.")
-    for a in ("a ", "an ", "the "):
-        if g.startswith(a): g = g[len(a):]
-    return g[:-1] if g.endswith("s") else g
-
-
 def gloss_once(text, seen, notes):
-    """Style guide §5 (author, Oct 25): the English gloss shows on a term's first use in a scene; later uses in the same
-    scene, in the same sense, keep only the dotted underline (written {term||note key}). Terms without a translator's
-    note keep their gloss every time, since there's nothing to tap. `seen` is the scene's set of (key, sense)."""
+    """Style guide §5 (author, Oct 28): the English gloss shows on a term's first use in the story, and every later use
+    keeps only the dotted underline (written {term||note key}), which still opens the note ("the reader can always click"). One meaning per note key, however the gloss is
+    worded ("Head!", "a head strike", "head strikes" are one); a second meaning is marked in the script as key#meaning
+    ({men|helmet|men#helmet}) and gets its own first use. The #meaning never reaches the build. Terms without a
+    translator's note keep their gloss every time, since there's nothing to tap. `seen` is the story's set of meanings."""
     def one(m):
         term, gloss, key = m.group(1), m.group(2), m.group(3)
-        k = (key or term).strip().lower()
+        tag = (key or term).strip().lower()
+        k = tag.split("#", 1)[0].strip()
         if k not in notes:
-            return m.group(0)
-        tag = (k, _sense(gloss))
+            return "{" + term + "|" + gloss + ("|" + k if key and k != term.strip().lower() else "") + "}"
         if tag in seen:
             return "{" + term + "||" + k + "}"
         seen.add(tag)
-        return m.group(0)
+        return "{" + term + "|" + gloss + ("|" + k if k != term.strip().lower() else "") + "}"
     return GLOSS.sub(one, text)
 
 
 def apply_gloss_once(cmds, notes):
-    seen = set()
+    seen = set()   # the whole build, Prologue on: no reset at scenes or chapters
     for c in cmds:
-        if c["t"] == "scene":
-            seen = set()
         if c.get("text"):
             c["text"] = gloss_once(c["text"], seen, notes)
         if c["t"] == "insert":
@@ -311,7 +304,7 @@ def notes_for(cmds, notes):
     used = {}
     for c in cmds:
         for term, _, key in GLOSS.findall(c.get("text", "")):
-            k = (key or term).strip().lower()
+            k = (key or term).strip().lower().split("#", 1)[0].strip()   # men#helmet uses the men note
             if k in notes and k not in used:
                 used[k] = notes[k]
     return used, sorted(set(notes) - set(used))
