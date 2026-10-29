@@ -64,3 +64,17 @@ Ch2 about $15.30 (art $8.57; voices $2.55; on-model fixes $4.14); running total 
 **Waiting on you:**
 - The glosses. All three new cold readers called the every-use glosses the most tiring thing in Ch2, and two said they flatten emotional lines. The middle way: the English in brackets only on the first use in each scene, and the dotted underline (tap for the note) on every use. Keep it as it is, or switch?
 - Natsuki at +0.5 in Ch1 too, whenever you want it.
+
+---
+
+# Punch list, Oct 28 (the last Ch2 batch, the author hopes)
+**Play:** the same link. Item-by-item record: `punch-oct28b.md`.
+- The catch is now a still (`cg_catch`), cut in on the slip.
+- A Japanese term's English shows once, on its first use in the story; later uses show the term alone, in gold, and a tap still opens the note. The dotted underline is gone.
+- In the kendo scenes these are now plain English: practice swings, practice jacket, armor, helmet, cotton cloth, stance, drills, practice matches, rags; "I fake a head strike." (also on the manga page).
+- c2_0279 cut; c2_0278 ends "That should have covered it."
+- Natsuki at +0.5 semitone in Ch1 too.
+
+**Worth a look:** the catch CG shows her tear from the first beat, four lines before "And she's crying." (the animation ended on the same frame; the cut shows it sooner).
+
+**Waiting on you:** approving Ch2, which starts Ch3.
