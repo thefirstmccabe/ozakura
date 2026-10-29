@@ -492,7 +492,7 @@
 "t": "say",
 "id": "c1_0046",
 "who": "akane",
-"text": "\"Nanoha-chan brought {kinpira||kinpira}!\""
+"text": "\"Nanoha-chan brought {kinpira|~braised burdock}!\""
 },
 {
 "t": "hideall"
@@ -500,7 +500,7 @@
 {
 "t": "nar",
 "id": "c1_0047",
-"text": "I wrap the lunches. I knock twice on the {fusuma||fusuma}."
+"text": "I wrap the lunches. I knock twice on the {fusuma|~sliding door}."
 },
 {
 "t": "say",
@@ -2796,7 +2796,7 @@
 "t": "say",
 "id": "c2_0040",
 "who": "natsuki",
-"text": "\"What about the {taiyaki||taiyaki} stand by the north exit?\""
+"text": "\"What about the {taiyaki|~fish-shaped cake} stand by the north exit?\""
 },
 {
 "t": "say",
@@ -2913,7 +2913,7 @@
 {
 "t": "nar",
 "id": "c2_0057",
-"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about {taiyaki||taiyaki} and herons, to someone I met yesterday."
+"text": "Somewhere around the bridge I notice my throat's a little rough, and it takes me most of the way home to work out why. I've been talking. For an hour, about {taiyaki|~fish-shaped cake} and herons, to someone I met yesterday."
 },
 {
 "t": "scene",
@@ -3174,7 +3174,7 @@
 "t": "say",
 "id": "c2_0064",
 "who": "takatsuki",
-"text": "\"Your {hakama||hakama} is tied off center.\""
+"text": "\"Your {hakama|~pleated kendo trousers} is tied off center.\""
 },
 {
 "t": "say",
@@ -3243,7 +3243,7 @@
 {
 "t": "nar",
 "id": "c2_0074",
-"text": "She's in a faded indigo practice jacket and {hakama||hakama}, her hair up in a long ponytail. The jacket has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
+"text": "She's in a faded indigo practice jacket and {hakama|~pleated kendo trousers}, her hair up in a long ponytail. The jacket has been washed so many times it's gone soft and pale at the seams. Old equipment. Well loved."
 },
 {
 "t": "say",
@@ -3509,7 +3509,7 @@
 {
 "t": "nar",
 "id": "c2_0295",
-"text": "Her front foot stamps the floor in the same instant, and the {shinai||shinai} stops an inch short of the stick figure's head."
+"text": "Her front foot stamps the floor in the same instant, and the {shinai|~bamboo practice sword} stops an inch short of the stick figure's head."
 },
 {
 "t": "show",
@@ -3732,7 +3732,7 @@
 {
 "t": "nar",
 "id": "c2_0124",
-"text": "I take my stance next to Takatsuki, and Mizuno walks a slow circle around me with the {shinai||shinai}, like a museum guide."
+"text": "I take my stance next to Takatsuki, and Mizuno walks a slow circle around me with the {shinai|~bamboo practice sword}, like a museum guide."
 },
 {
 "t": "show",
@@ -3743,7 +3743,7 @@
 "t": "say",
 "id": "c2_0125",
 "who": "natsuki",
-"text": "\"Left heel, a little low. The tip wanders. He hits {men||men} from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
+"text": "\"Left heel, a little low. The tip wanders. He hits {men|~head strikes} from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
 },
 {
 "t": "show",
@@ -3778,7 +3778,7 @@
 "t": "say",
 "id": "c2_0130",
 "who": "takatsuki",
-"text": "\"Mizuno. For the record, your explanation of {zanshin||zanshin} was incomplete.\""
+"text": "\"Mizuno. For the record, your explanation of {zanshin|~staying alert after the strike} was incomplete.\""
 },
 {
 "t": "show",
@@ -3842,7 +3842,7 @@
 {
 "t": "nar",
 "id": "c2_0292",
-"text": "After the break, armor. The helmet goes on last: a cotton head cloth tied tight over my hair, then the helmet settled down over it, the cords pulled and knotted behind my head. The world narrows to a rectangle behind the grille."
+"text": "After the break, armor. Last of all, I tie a cotton cloth tight over my hair and settle the helmet down over it, the cords pulled and knotted behind my head. The world narrows to a rectangle behind the grille."
 },
 {
 "t": "nar",
@@ -3857,7 +3857,7 @@
 {
 "t": "nar",
 "id": "c2_0138",
-"text": "We bow. We step in. We crouch at the line, {shinai||shinai} tips crossing."
+"text": "We bow. We step in. We crouch at the line, {shinai|~bamboo practice sword} tips crossing."
 },
 {
 "t": "insert",
@@ -4017,7 +4017,7 @@
 "t": "say",
 "id": "c2_0153",
 "who": "kirishima",
-"text": "\"Mizuno. Good {kote||kote}. You drop your left shoulder before {men||men}. Fix it.\""
+"text": "\"Mizuno. Good {kote|~wrist strike}. You drop your left shoulder before {men|~head strikes}. Fix it.\""
 },
 {
 "t": "show",
@@ -4148,19 +4148,19 @@
 {
 "t": "nar",
 "id": "c2_0169",
-"text": "She laughs again and finds something on her {hakama||hakama} that needs fixing."
+"text": "She laughs again and finds something on her {hakama|~pleated kendo trousers} that needs fixing."
 },
 {
 "t": "say",
 "id": "c2_0300",
 "who": "takatsuki",
-"text": "\"Also, you laughed inside your helmet after the point. That was the part of {zanshin||zanshin} you left out.\""
+"text": "\"Also, you laughed inside your helmet after the point. That was the part of {zanshin|~staying alert after the strike} you left out.\""
 },
 {
 "t": "say",
 "id": "c2_0170",
 "who": "takatsuki",
-"text": "\"And Fujisawa. Your left foot was forward on that {dō||dō}.\""
+"text": "\"And Fujisawa. Your left foot was forward on that {dō|~body strike}.\""
 },
 {
 "t": "say",
@@ -4231,7 +4231,7 @@
 {
 "t": "nar",
 "id": "c2_0179",
-"text": "We do the floor the old way: wet floor cloths, both hands flat on the wood, running bent double down the length of the dojo and back. She's fast at it. She's also, I notice, trying to beat me to the far wall."
+"text": "We do the floor the old way: wet rags, both hands flat on the wood, running bent double down the length of the dojo and back. She's fast at it. She's also, I notice, trying to beat me to the far wall."
 },
 {
 "t": "show",

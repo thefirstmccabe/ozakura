@@ -634,9 +634,9 @@ function cps(){ return prefs.text>=100?1e9: 18+prefs.text*1.1; }
 /* a term with a translator's note (script.json "notes", from production/pilot-v2/script/notes.txt) is gold, and a tap opens the note */
 function segs(t){ const out=[]; let m, last=0, re=/\{([^|}]+)\|([^|}]*)(?:\|([^}]+))?\}/g;   // {term|gloss}, {term|gloss|note key}, or {term||note key} (any use after the first in the story: the gold term only, Oct 28)
   while((m=re.exec(t))){ if(m.index>last) out.push({t:t.slice(last,m.index)}); const k=(m[3]||m[1]).trim().toLowerCase(), n=NOTES[k]?k:null;
-    if(m[2]){ out.push({t:m[1], n, gl:m[2]}); out.push({t:'\u00a0('+m[2]+')', g:1, n}); } else out.push({t:m[1], n}); last=re.lastIndex; }
+    if(m[2] && m[2][0]!=='~'){ out.push({t:m[1], n, gl:m[2]}); out.push({t:'\u00a0('+m[2]+')', g:1, n}); } else out.push({t:m[1], n, gl:m[2]?m[2].slice(1):''}); last=re.lastIndex; }   // "~gloss": a later use, the gloss only in its note
   if(last<t.length) out.push({t:t.slice(last)}); return out; }
-function plain(t){ return String(t||'').replace(/\{([^|}]+)\|([^|}]*)(?:\|[^}]+)?\}/g,(a,t1,g)=>g?`${t1} (${g})`:t1); }
+function plain(t){ return String(t||'').replace(/\{([^|}]+)\|([^|}]*)(?:\|[^}]+)?\}/g,(a,t1,g)=>g&&g[0]!=='~'?`${t1} (${g})`:t1); }
 let curSegs=[], curLen=0;
 function renderTo(n){ textEl.textContent=''; let left=n, wrap=null;
   for(const x of curSegs){ if(left<=0) break; const piece=x.t.slice(0,left); left-=x.t.length;
@@ -1189,7 +1189,7 @@ function loadScript(){
   if(!scriptP) scriptP=fetch('script.json').then(r=>{ if(!r.ok) throw new Error('could not load the story (script.json '+r.status+')'); return r.json(); })
     .then(j=>{ S=j.script; SPK=j.speakers; SPKF=j.speakers_full||{}; SIG=sigOf(S); S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; });
       NOTES=(j.notes&&typeof j.notes==='object')?j.notes:{}; NOTE_T={};
-      S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g)){ if(m[3]) continue; const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].trim()}; } });
+      S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g)){ if(m[3]) continue; const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].replace(/^~/,'').trim()}; } });
       Object.keys(NOTES).forEach(k=>{ if(!NOTE_T[k]) NOTE_T[k]={term:k, gloss:''}; }); $('#mCont').disabled=!store.get('v2cont',null); return j; })
     .catch(e=>{ scriptP=null; throw e; });
   return scriptP;

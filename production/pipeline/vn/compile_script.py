@@ -250,7 +250,8 @@ GLOSS = re.compile(r"\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}")   # {term|gloss} or 
 
 def gloss_once(text, seen, notes):
     """Style guide §5 (author, Oct 28): the English gloss shows on a term's first use in the story, and every later use
-    keeps only the dotted underline (written {term||note key}), which still opens the note ("the reader can always click"). One meaning per note key, however the gloss is
+    shows the term only, in the note color, and a tap still opens the note ("the reader can always click"). Written
+    {term|~gloss|note key}: the "~" gloss isn't shown in the line, only in the note popup's header. One meaning per note key, however the gloss is
     worded ("Head!", "a head strike", "head strikes" are one); a second meaning is marked in the script as key#meaning
     ({men|helmet|men#helmet}) and gets its own first use. The #meaning never reaches the build. Terms without a
     translator's note keep their gloss every time, since there's nothing to tap. `seen` is the story's set of meanings."""
@@ -260,8 +261,8 @@ def gloss_once(text, seen, notes):
         k = tag.split("#", 1)[0].strip()
         if k not in notes:
             return "{" + term + "|" + gloss + ("|" + k if key and k != term.strip().lower() else "") + "}"
-        if tag in seen:
-            return "{" + term + "||" + k + "}"
+        if tag in seen:   # a later use: the term only, with its own gloss kept for the note popup ("~" = not shown inline)
+            return "{" + term + "|~" + gloss + ("|" + k if k != term.strip().lower() else "") + "}"
         seen.add(tag)
         return "{" + term + "|" + gloss + ("|" + k if k != term.strip().lower() else "") + "}"
     return GLOSS.sub(one, text)

@@ -113,7 +113,7 @@ def convert(paths, split):
                     print("unparsed:", s, file=sys.stderr)
             if out:
                 out = gloss_once(out, seen, notes)
-                cur.append(re.sub(r'\{([^|}]+)\|([^|}]*)(?:\|[^}]+)?\}', lambda m: f"{m.group(1)} ({m.group(2)})" if m.group(2) else m.group(1), out))
+                cur.append(re.sub(r'\{([^|}]+)\|([^|}]*)(?:\|[^}]+)?\}', lambda m: f"{m.group(1)} ({m.group(2)})" if m.group(2) and not m.group(2).startswith("~") else m.group(1), out))
                 for term, _, key in GLOSS.findall(out):
                     k = (key or term).strip().lower()
                     if k in notes and k not in noted:
