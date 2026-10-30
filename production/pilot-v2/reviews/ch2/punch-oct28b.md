@@ -28,4 +28,5 @@ Discussed first, then approved item by item ("Yes, and yes, please proceed", 8:2
 1. **A CG that comes up where none was now waits for its image** (up to 5 s) before its 1.1 s beat; taps during the wait are ignored, as while an insert loads; after it, a tap ends the beat as before. Tested with the catch image held back 2.5 s: no text over the empty room, the picture first. Held back 7 s: the game goes on at 5 s without it (so it can't hang). Touches every such CG in Ch1 too, only when its image is slow.
 2. **Settings → Notes:** a note only ever met under another spelling takes that use's header ("debana-kote · a wrist strike as the attack starts").
 3. **Style guide §5:** "rags (zōkin)".
+Checks: full playthroughs at iPad and phone sizes on the fixed build: 556 lines, none missed, all 329 voiced lines, 10 insert steps, no failed requests or errors.
 Not done (author's call): showing a term's English to a reader who skipped the chapter where it was first explained.
