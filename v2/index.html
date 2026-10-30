@@ -793,7 +793,7 @@ function run(){
       switch(c.t){
         case 'scene': state.scene=c.id; store.set('v2cont',snap()); break;
         case 'bg': phoneClear(); if(state.cg) setCg(null, c.tr==='cut'||c.tr==='flash'?'cut':'fade'); setBg(c.name,c.tr); hideAll(); if(c.name==='black'||c.name==='white') box.classList.add('hidden'); if(c.tr==='slow'||c.tr==='flash') return pause(skipOn?80:(c.name==='black'||c.name==='white')&&c.tr==='slow'?1900:1100); if(c.name==='black'||c.name==='white') return pause(skipOn?60:600); break;
-        case 'cg': { const was=state.cg; setCg(c.name,c.tr); if(c.name && !was) { box.classList.add('hidden'); return pause(skipOn?60:1100,true); } break; }
+        case 'cg': { const was=state.cg; setCg(c.name,c.tr); if(c.name && !was) { box.classList.add('hidden'); return skipOn ? pause(60,true) : cgWait(c.name); } break; }
         case 'bgm': playBgm(c.name); state.bgm=c.name; break;
         case 'sfx': if(!skipOn) playSfx(c.name); break;
         case 'show': showSpr(c.who,c.spr,c.pos); break;
@@ -819,6 +819,16 @@ function run(){
   } finally { running=false; }
 }
 function pause(ms, keepHidden){ running=false; clearTimeout(waitTimer); waitTimer=setTimeout(()=>{ if(!keepHidden) {} run(); }, ms); }
+/* a CG that comes up where none was waits until its image is on screen (at most 5 s) before its usual 1.1 s beat, so a slow
+   connection never shows the empty room under the next line (Oct 30 independent check; the old animated catch waited the same way).
+   Taps during the wait are ignored, as while an insert or animation loads; after it, a tap ends the beat as before. */
+let cgWaiting=false;
+function cgWait(name){ running=false; clearTimeout(waitTimer); cgWaiting=true;
+  const tok=setCg.tok, t0=Date.now(), u=`/img/bg/${name}.webp`;
+  const tick=()=>{ if(tok!==setCg.tok){ cgWaiting=false; return; }   // a jump or another CG took over
+    if(cgImgs.some(i=>i.classList.contains('on')&&i.src.endsWith(u)) || Date.now()-t0>5000){ cgWaiting=false; return pause(1100, true); }
+    waitTimer=setTimeout(tick, 40); };
+  tick(); }
 function waitTap(ms){ running=false; }
 function line(c){
   running=false; curLine=c; stopVoice(); vNodeOnEnd=null;
@@ -843,6 +853,7 @@ function advance(){
     return; }
   if(typing){ finishType(); return; }
   if(animDone){ if(animShownT && Date.now()-animShownT>600) animDone(); return; }   // a quick double tap doesn't skip the moment before it shows
+  if(cgWaiting && !skipOn) return;   // a CG still loading (cgWait)
   if(insS && curLine===insS.c){ insNext(); return; }
   if(curLine && (curLine.t==='insert'||curLine.t==='anim')) return;   // still loading
   if(cardFinish){ if(Date.now()-cardT<450) return; finishCard(); }
@@ -881,7 +892,7 @@ function snap(){ // state at current command index (rewind to the line being sho
 function restore(s){
   log.length=0;
   Object.keys(lastSpr).forEach(k=>delete lastSpr[k]); S.slice(0,s.i).forEach(c=>{ if(c.t==='show') lastSpr[c.who]=c.spr; });   // a jump (load, continue, chapters) starts a fresh backlog
-  showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null;
+  showFace(null); cardFinish=null; stopVoice(); clearTimeout(waitTimer); clearTimeout(autoTimer); clearInterval(typeTimer); typing=false; curLine=null; cgWaiting=false;
   noteEl.classList.remove('on'); animOff(); insOff(true);
   ['#endCard','#chapterCard','#dateCard'].forEach(q=>$(q).classList.remove('on')); phoneClear(); document.querySelectorAll('#phone .msg').forEach(m=>m.remove());
   // characters who stay on stage keep their element (no flicker when stepping line by line); everyone else goes
@@ -1190,6 +1201,7 @@ function loadScript(){
     .then(j=>{ S=j.script; SPK=j.speakers; SPKF=j.speakers_full||{}; SIG=sigOf(S); S.forEach(c=>{ if(c.t==='scene'&&c.title) SCENE_T[c.id]=c.title; });
       NOTES=(j.notes&&typeof j.notes==='object')?j.notes:{}; NOTE_T={};
       S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}/g)){ if(m[3]) continue; const k=m[1].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].replace(/^~/,'').trim()}; } });
+      S.forEach(c=>{ if(c.text) for(const m of String(c.text).matchAll(/\{([^|}]+)\|([^|}]+)\|([^}]+)\}/g)){ const k=m[3].trim().toLowerCase(); if(NOTES[k]&&!NOTE_T[k]) NOTE_T[k]={term:m[1].trim(), gloss:m[2].replace(/^~/,'').trim()}; } });   // a note only ever met under another spelling (debana-kote → debana) takes that use's header (Oct 30)
       Object.keys(NOTES).forEach(k=>{ if(!NOTE_T[k]) NOTE_T[k]={term:k, gloss:''}; }); $('#mCont').disabled=!store.get('v2cont',null); return j; })
     .catch(e=>{ scriptP=null; throw e; });
   return scriptP;
