@@ -120,5 +120,5 @@ natsuki(smile): "I'm amazing at first days. It's the second semesters I never ge
 **Checks:**
 - Phone renders at 844×345 and 844×390 with a simulated notch on each side (the page's safe-area values set to the iPhone 12 Pro's 47 points): tap-to-start, title, chapters, dialogue with and without a face window, a long line, the texts with the interlude label, a translator's note, save, log, settings, a manga panel. One fix from them: the face window first kept its iPad size on phones and covered the start of the line; it now takes the phone size.
 - iPad (1180×820) and desktop (1440×900), a shot of every line before and after the change: the only differences are the "Tap to continue" pulse and fades caught at a different moment (timing; the frames match once settled). Layout identical.
-- Full playthroughs at 844×345 and 844×390: see below.
+- Full playthroughs at 844×345 and 844×390: 555 lines, none missed, all 329 voiced lines, 10 insert steps, no failed requests or errors. (iPad and desktop runs above: the same.)
 - **For the author:** a couple of minutes on his phone; this is the Ch1 phone-layout re-approval too.
