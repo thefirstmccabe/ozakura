@@ -259,6 +259,7 @@ Production thread; the line-by-line list is in `production/pilot-v2/reviews/ch2/
   - Natsuki's whiteboard (CG `cg_whiteboard`): a board on legs by the dojo door (the borrowed glasses on her face, not on the ledge), her stick figure with the enormous worried head, labels "KENDO / lesson one", "MEN / head", "KOTE / wrist (right one!)", "TSUKI / throat / not until high school!!", "DŌ / side".
   - Her interlude: "Natsuki liked her, and not the first-week way, where you like everyone." / "Nanoha lived next door to Fujisawa. Natsuki decided that was none of her business, and didn't quite believe herself."
   - Small wording: c2_0090 names "Mizuno"; "whoever stays after practice cleans the floor"; Wednesday's practice is "After school."
+- **Ch2 punch list, Oct 31** (record `production/pilot-v2/reviews/ch2/punch-oct31.md`): Natsuki's interlude puts her thought about Nanoha ("…none of her business.") before she opens Chie's chat, and Chie's backstory right after it; after the long look she has one line, "She didn't know why she'd cried. She didn't know how she'd known where he would move, either." The placement of the Nanoha pair is a judgment call, easy to move back after c2_0277.
 
 ## 4. Address guide
 **Superseded Oct 17 by style guide §3c** (address forms, Japanese pronouns and the planned name changes). The pilot's table matched it except: Sōta is now Mio ("Kō-nii" kept), and Kōhei teases Nanoha as "Chibi."

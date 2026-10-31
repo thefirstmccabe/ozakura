@@ -74,7 +74,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 
 /* dialogue panel */
 #box{position:absolute;left:50%;transform:translateX(-50%);bottom:max(14px,env(safe-area-inset-bottom,0px));
-  width:min(1180px,calc(100% - 32px));min-height:clamp(104px,19vh,176px);box-sizing:border-box;
+  width:min(1180px,calc(100% - 32px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)));margin-left:calc((env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)) / 2);min-height:clamp(104px,19vh,176px);box-sizing:border-box;
   background:linear-gradient(180deg,rgba(16,19,31,.80),rgba(16,19,31,.92));
   border-top:1px solid rgba(201,164,106,.55);border-radius:4px;
   box-shadow:0 10px 40px rgba(0,0,0,.45);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
@@ -109,7 +109,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 .tn .gl{color:var(--lc,var(--paper))}
 .tn:hover,.tn:focus-visible{background:rgba(201,164,106,.14);outline:none}
 #text.typing .tn{pointer-events:none}
-#note{position:absolute;z-index:26;left:50%;transform:translateX(-50%);width:min(638px,calc(100% - 32px));
+#note{position:absolute;z-index:26;left:50%;transform:translateX(-50%);width:min(638px,calc(100% - 32px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)));margin-left:calc((env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)) / 2);
   bottom:calc(max(14px,env(safe-area-inset-bottom,0px)) + var(--boxh,150px) + 58px);
   background:rgba(16,19,31,.97);border:1px solid rgba(201,164,106,.5);border-radius:4px;padding:14px 18px 12px;
   box-shadow:0 8px 30px rgba(0,0,0,.45);display:none;cursor:pointer;font-size:clamp(15px,2.1vh,21px);box-sizing:border-box;
@@ -141,7 +141,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 .cb.on{color:var(--sakura)}
 
 /* phone */
-#phone{position:absolute;right:clamp(16px,6vw,90px);top:clamp(16px,5vh,60px);width:min(360px,calc(100% - 32px));
+#phone{position:absolute;right:calc(clamp(16px,6vw,90px) + env(safe-area-inset-right,0px));top:clamp(16px,5vh,60px);width:min(360px,calc(100% - 32px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)));
   max-height:58vh;overflow:hidden;display:flex;flex-direction:column;gap:8px;padding:16px 14px;
   background:rgba(240,236,228,.95);border-radius:22px;box-shadow:0 18px 50px rgba(0,0,0,.5);
   opacity:0;transform:translateY(12px);transition:opacity .35s,transform .35s;pointer-events:none;color:#1b1d26}
@@ -194,7 +194,7 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 
 /* panels: log, save, settings, chapters */
 .panel{position:absolute;inset:0;z-index:30;background:rgba(10,12,20,.92);display:none;flex-direction:column;
-  padding:max(18px,env(safe-area-inset-top,0px)) 16px max(18px,env(safe-area-inset-bottom,0px))}
+  padding:max(18px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(18px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .panel.on{display:flex}
 .panel header{display:flex;align-items:center;justify-content:space-between;width:min(980px,100%);margin:0 auto 12px;gap:12px}
 .panel h2{margin:0;font-family:var(--f-display);font-weight:700;font-size:clamp(20px,3.2vh,30px);letter-spacing:.14em}
@@ -299,6 +299,21 @@ input{-webkit-user-select:text;user-select:text}
 .mk.now{background:rgba(232,167,181,.11)}
 .chart-note{color:var(--paper-dim);font-size:13px;letter-spacing:.04em;margin:2px 4px 10px}
 @media (max-width:700px){ .ln{grid-template-columns:1fr;gap:2px} .ln .lw{text-align:left} .mk{padding-left:6px} #devbar .dsc{display:none} }
+/* phones in landscape (under about 500 pt tall; author, Oct 31): a smaller box, the controls in a small row on its top edge
+   beside the name tag instead of a strip of their own, and the interlude label moved left, clear of the text-message panel.
+   iPad and desktop never match this. */
+@media (orientation:landscape) and (max-height:500px){
+  #box{min-height:0;padding:16px 18px 10px;--fw:76px}
+  #box.withface{padding-left:calc(var(--fw) + 22px)}
+  #box.withface #name{left:calc(var(--fw) + 18px)}
+  #face{--fw:76px;left:8px;bottom:8px}
+  #text{font-size:16px;line-height:1.45;min-height:2.9em}
+  #name{font-size:13px;padding:.24em .9em .28em;left:14px}
+  #name .bar{margin-top:3px}
+  #ctrl{top:0;bottom:auto;right:12px;transform:translateY(-58%);gap:0;background:var(--ink-2);border:1px solid rgba(201,164,106,.35);border-radius:3px}
+  .cb{font-size:10px;padding:.65em .62em;letter-spacing:.1em}
+  #ilabel{left:calc(16px + env(safe-area-inset-left,0px));transform:none}
+}
 @media (prefers-reduced-motion: reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 @media (max-aspect-ratio: 1/1){ #box{min-height:22vh} .spr{max-width:none} #face,#box{--fw:clamp(96px,15vh,150px)} }
 </style>
@@ -1177,7 +1192,8 @@ $('#bMenu').onclick=()=>{ setAuto(false); setSkip(false); openSettings(); };
 document.querySelectorAll('[data-close]').forEach(b=>b.onclick=closePanels);
 // every menu action waits for the script to be loaded, so a slow or late boot can never strand the player on a black stage
 function whenLoaded(fn){ return ()=>{ audioInit(); if(S){ fn(); return; } toast('Loading…'); loadScript().then(fn).catch(showErr); }; }
-$('#tapStart').onclick=()=>{ audioInit(); $('#tapStart').hidden=true; playBgm('title'); };
+function androidFull(){ try{ const d=document.documentElement; if(/Android/i.test(navigator.userAgent) && matchMedia('(pointer:coarse)').matches && d.requestFullscreen && !document.fullscreenElement){ const q=d.requestFullscreen({navigationUI:'hide'}); if(q&&q.catch) q.catch(()=>{}); } }catch(e){} }   // Android phones only (author, Oct 31) [P]
+$('#tapStart').onclick=()=>{ androidFull(); audioInit(); $('#tapStart').hidden=true; playBgm('title'); };
 $('#mStart').onclick=whenLoaded(()=>startAt(0));
 $('#mCont').onclick=whenLoaded(()=>{ const c=store.get('v2cont',null); if(c){ hideTitle(); resume(c);} });
 $('#mChap').onclick=whenLoaded(openChapters);

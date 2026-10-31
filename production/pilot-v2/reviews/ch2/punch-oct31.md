@@ -103,3 +103,22 @@ natsuki(smile): "I'm amazing at first days. It's the second semesters I never ge
 - The author looks at it on his phone for a couple of minutes.
 
 **Approval note:** this changes the approved Ch1 build at phone size. Proposed (not yet confirmed by the author): re-approve Ch1 together with Ch2, rather than a separate Ch1 round, with a new Ch1 baseline after.
+
+---
+
+## Done (Production, Oct 31; branch `ch2-punch-oct31`)
+**Approval note, answered (author, 3:06 pm):** Ch1 needs re-approval **for the phone layout only**; the rest of Ch1 stays approved as it was.
+
+**1. Interlude:** applied exactly as the block above (copied from it): c2_0257, c2_0277 and c2_0283 reworded, c2_0278 cut, the Nanoha pair and Chie's backstory moved. Lint clean; no voiced line changed.
+
+**2. Phone layout** (`v2/index.html`):
+- Notch margins: the box (and with it the face window, name tag and controls), the translator's note, the text-message panel and the menus keep clear of a notch on either side. Written so that with no notch (iPad, desktop) every value computes as before.
+- Phones in landscape under 500 points tall: box padding 16/18/10, no minimum height; text 16 points at line height 1.45; name tag 13 points; face window 76 points; the AUTO … MENU row as a small strip on the box's top edge (10-point labels). The box is about 73 points tall at 844×345 (about a fifth of the screen; it was about a third).
+- The interlude label moves to the left on phones, clear of the text-message panel.
+- Android phones: tap-to-start goes full-screen [P]. Tested with Android, iPhone, iPad and desktop browsers: only Android goes full-screen.
+
+**Checks:**
+- Phone renders at 844×345 and 844×390 with a simulated notch on each side (the page's safe-area values set to the iPhone 12 Pro's 47 points): tap-to-start, title, chapters, dialogue with and without a face window, a long line, the texts with the interlude label, a translator's note, save, log, settings, a manga panel. One fix from them: the face window first kept its iPad size on phones and covered the start of the line; it now takes the phone size.
+- iPad (1180×820) and desktop (1440×900), a shot of every line before and after the change: the only differences are the "Tap to continue" pulse and fades caught at a different moment (timing; the frames match once settled). Layout identical.
+- Full playthroughs at 844×345 and 844×390: 555 lines, none missed, all 329 voiced lines, 10 insert steps, no failed requests or errors. (iPad and desktop runs above: the same.)
+- **For the author:** a couple of minutes on his phone; this is the Ch1 phone-layout re-approval too.
