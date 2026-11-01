@@ -15,7 +15,7 @@ Flags (report.json "flags", also printed):
   overlap       name tag / control row / face window / text overlap each other; phone panel vs interlude label
   overflow      the text, the name tag or a panel body overflows its box (clipped)
   tall-box      the text box covers more than --max-box of the screen height (default 0.42)
-  small-tap     a control smaller than 28 points on either side
+  small-tap     a control whose tap area (measured with elementFromPoint, so invisible extensions count) is under 28 points either way
 Usage: python3 qa_phone.py URL OUT [--size 844x345] [--notch left] [--every] [--dsf 2] [--no-tour] [--from SCENE]
 """
 import argparse, json, re
@@ -57,6 +57,12 @@ MEASURE = r"""() => {
     out.textOverflow = t.scrollHeight - t.clientHeight;
     const nm = q('#name'); if (vis(nm) && nm.textContent.trim()) { out.nameText = nm.textContent; out.nameOverflow = nm.scrollWidth - nm.clientWidth; out.nameSize = parseFloat(getComputedStyle(nm).fontSize); }
     out.cb = [...document.querySelectorAll('#ctrl .cb')].map(b => r(b));
+    // the area a tap actually reaches (an invisible ::after can extend it): scan through the button's centre
+    out.cbHit = [...document.querySelectorAll('#ctrl .cb')].map(b => { const q = b.getBoundingClientRect(), cx = (q.left + q.right) / 2, cy = (q.top + q.bottom) / 2;
+      let t = 0, bt = 0, l = 0, rt = 0;
+      for (let y = q.top - 30; y <= q.bottom + 30; y++) { const e = document.elementFromPoint(cx, y); if (e && (e === b || b.contains(e))) { if (!t) t = y; bt = y; } }
+      for (let x = q.left - 30; x <= q.right + 30; x++) { const e = document.elementFromPoint(x, cy); if (e && (e === b || b.contains(e))) { if (!l) l = x; rt = x; } }
+      return [rt - l + 1, bt - t + 1]; });
     out.textLines = Math.round(t.getBoundingClientRect().height / parseFloat(getComputedStyle(t).lineHeight || '24'));
   }
   const ph = q('#phone'); if (vis(ph) && ph.classList.contains('on')) out.phoneOverflow = ph.scrollHeight - ph.clientHeight;
@@ -105,9 +111,9 @@ def flags_for(m, where):
         f.append(("overlap", f"phone panel {el['phone']} over tap hint {el['hint']}"))
     if "box" in el and not a.desktop and (el["box"][3] - el["box"][1]) / Hv > a.max_box:
         f.append(("tall-box", f"box is {(el['box'][3]-el['box'][1])/Hv:.0%} of the screen"))
-    for b in m.get("cb", []):
-        if not a.desktop and (b[2] - b[0] < 28 or b[3] - b[1] < 28):
-            f.append(("small-tap", f"control {b} is {b[2]-b[0]:.0f}x{b[3]-b[1]:.0f}")); break
+    for b, hit in zip(m.get("cb", []), m.get("cbHit", [])):
+        if not a.desktop and (hit[0] < 28 or hit[1] < 28):
+            f.append(("small-tap", f"control {b} reaches taps over {hit[0]:.0f}x{hit[1]:.0f}")); break
     return [(k, f"{where}: {v}") for k, v in f]
 
 
