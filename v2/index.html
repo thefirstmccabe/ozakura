@@ -437,7 +437,7 @@ const CHAR = {
 };
 /* sprite sets framed differently from the character's other sets (v measured the same way, by head size; Ch3, Nov 1) */
 const CG_PHONE_Y = {cg_window:'100%', cg_window_sill:'100%', cg_window_sill_turn:'100%'};   // phones only: vertical crop for CGs whose subject sits low (the rabbit would be under the text box at 35%); Nov 1
-const VSET = {nanoha_home:.82, emi_home:.66};
+const VSET = {nanoha_home:.82, emi_home:.665};
 /* every on-stage character shares one floor F inches below the bottom of the screen */
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
 /* sprites with empty space above the head (a shinai held up past it), as a fraction of the usual sprite height
@@ -460,6 +460,7 @@ const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
 const CHAPTERS = [
   {k:'CHAPTER 1', t:'The House Next Door', start:'cold_open', th:'cg_natsuki_intro'},   // the cold open plays first, then the chapter card
   {k:'CHAPTER 2', t:'Kendo', start:'c2_tuesday', th:'bg_dojo'},   // not the catch CG: it would give away the chapter's peak
+  {k:'CHAPTER 3', t:'Windows', start:'c3_home', th:'cg_window'},
 ];
 const NEXT_CH = {1:'Chapter 2, “Kendo,” comes next.', 2:'Chapter 3, “Windows,” comes next.', 3:'Chapter 4, “The Light at the Shrine,” comes next.'};
 const KANJI = ['','第一話','第二話','第三話','第四話'];

@@ -1,0 +1,44 @@
+# Ch3 "Windows": independent build review (Nov 1)
+
+**Scope:** all of Ch3 before handover (`v2-ch3` at `2e600de`, served from the working repo). Ch1–2 were only checked for starting from the chapter menu and for playing on into Ch3. Prompt: `production/pipeline/review/build-review.md`.
+**How:** Chromium/Playwright with the local fonts, landscape only. iPad 1180×820: one normal-speed pass through all 224 lines (each line types out, staging measured on every line, 44 transitions freeze-framed at about 150/600/1400 ms) and one fast-tap pass (real clicks every 110 ms). Phones: 844×345 with the notch on the left (scene and CG spot checks plus a fast touch pass every 120 ms) and 812×375 with the notch on the right (spot checks). Desktop 1440×900: spot checks. Also save/load on three CG lines and the living stills compared against their stills. Shots and scripts are in the session scratchpad (`review/`), not the repo.
+
+## Must-fix
+
+**1. The chapter menu has no Chapter 3.** All sizes. Title → Chapters lists only "The House Next Door" and "Kendo". `CHAPTERS` in `v2/index.html` (line 460) wasn't extended, but the title says "Chapters 1–3" and the handover tells the author "Menu → Chapters → Chapter 3". Having finished Ch2 (which clears Continue), his only ways in are replaying Ch1–2 or loading a late-Ch2 save. The QA runs missed it because they used a Ch3-only build started from Begin.
+*Fix:* add `{k:'CHAPTER 3', t:'Windows', start:'c3_home', th:'bg_shrine_steps'}`. Use a background plate, not a CG, the same spoiler rule Ch2 follows. I tested this entry in memory without touching the repo: three cards fit at 1180×820 and 844×345, and the entry plays the chapter card, the date card and c3_0309.
+
+**2. Usagi-san is still in her hands while the text has him on the sill.** c3_window, c3_0106–c3_0120 (13 lines), all sizes, any tap speed. c3_0106 says "She sets him on the corner of the sill with his back to me", but `cg_window` keeps him held under her chin until c3_0312. Kōhei reaching across to turn him (c3_0113) and Nanoha turning him back (c3_0119) both play over that picture. This is the scene's main bit.
+*Fix:* move `@cg cg_window_sill` up to just before c3_0106. That CG shows exactly what the line describes: his back to Kōhei, tail toward his window. c3_0312 ("She props her chin on her folded arms on the sill.") would then describe a pose that's already on screen, so cut or reword it. It's unvoiced narration.
+
+**3. After the "quarter turn" the rabbit faces Nanoha, not the curtain.** c3_0314 and c3_0164, all sizes. In `cg_window_sill_turn` his eye and nose are in profile pointing right, at her (zoomed comparison: `review/rabbit_dir.jpg`). Before the turn, in `cg_window_sill`, he already faced into the room toward the curtain. So "so he's facing the curtain instead" contradicts the art, and "instead" doesn't make sense.
+*Fix:* change the wording to match the art, for example c3_0314 "…a quarter turn, so he's facing her instead." and c3_0164 "…the rabbit is still turned toward her." Both are narration, so no retakes. As a pardon this arguably reads better than the curtain. Correct the handover note's [P] item ("the rabbit facing the curtain") and pilot-notes to match. Ch4's "facing the wall" still works as the next step.
+
+**4. "Her light goes out" plays over a plate where her window stays lit.** End of c3_window: c3_0163, c3_0164, c3_0323, and then the "Saturday, April 12" card over the same plate. All sizes. `bg_kohei_room_night` shows Nanoha's window glowing across the gap (`review/ipad_normal/c3_0322_to_c3_0163_1410.jpg`).
+*Fix:* make a dark-window variant of the plate in code (the reverse of `gap_glow.py`; no spend) and switch to it with a fade as c3_0163's light goes out. The date card then shows over the dark room.
+
+## Should fix (cheap; before handover if there's time)
+
+**5. Akane's eyes are open while the text says they're closed.** c3_home, c3_0070–c3_0074, iPad and up. The `akane_home_sleepy` sprite has half-open eyes, visibly open at iPad size (`review/akane_eyes.jpg`). Then comes c3_0071 "Her eyes are still closed." and c3_0074 "She opens her eyes and squints up at me."
+*Fix:* reword. For example, c3_0071 "She doesn't open her eyes any wider." and c3_0074 "She squints up at me."
+
+**6. Emi stands on the forest steps for a moment.** c3_0281 → c3_0282, normal speed, iPad. On that tap the background crossfades over 0.9 s after it loads, but Emi's sprite fades in over 0.35 s. At about 0.9 s she's fully drawn on the cedar stairway, and the house front arrives later (`review/ipad_normal/c3_0281_to_c3_0282_0878.jpg`). c3_0406 has a smaller version: Mio's voiced line starts over the house exterior for about half a second.
+*Fix:* move `@show emi home_smile c` after c3_0282 (the line that puts her in the doorway), or add `@wait 0.9` after the `@bg`. Add the same wait before c3_0406. Engine option for the carry list: delay a `show` that comes in the same step as a `bg` until the plate has faded in.
+
+## Backlog (carry list)
+- **Kōhei's face windows** show his school blazer after his shower at the window (c3_0102 on) and on Saturday. There's no casual face set; this has been the case since Ch1.
+- **Genji at 58 inches:** his face still reads about 15% wider than Natsuki's when they stand together (c3_tea, c3_0399: about 165 px vs 140 px at iPad size). It passes for a stooped old man. If the author flags it, the fix is the sprite's head-to-body proportion, not a lower height.
+- **On the sill CGs, Kōhei's face window and Nanoha's name tag cover the rabbit's lower half** at every size. His head and ears stay visible, and the key line (c3_0314) is narration, which has no window, so I'm calling this fine.
+- **Text vs. plates.** c3_0082 "your TV is bigger": the Fujisawa plate has a small CRT, and the Tachibana room seen at lunch has a big flat-screen, so the line reads as Nanoha's fib. That may be intended; it's Story's call. c3_0060 "asleep on the sofa" plays over an empty sofa; that's normal for a reused plate.
+- **Handover note** (`handover-nov1.md`): `{COMPROMISES}` and `{ONMODEL_SPEND}` are still unfilled, and its menu and rabbit lines change with items 1 and 3.
+
+## Checked and fine
+- **The three post-QA fixes.** (a) No Nanoha face window on `cg_window_sill_turn` (c3_0315, c3_0162) at all four sizes or after a save/load. Kōhei's window still shows on c3_0322, as rule 1 requires. (b) `CG_PHONE_Y`: on phones the three window CGs and their living stills both crop at 50% 100%. The rabbit's head and ears sit above the box at 844×345 (box top 251) and 812×375 (box top 281), and Nanoha's bun isn't clipped. On iPad and desktop nothing changes. (c) Genji at 58: he renders at the computed size and stands on the shared floor, 5 inches below Natsuki's head.
+- **Ch1 and Ch2 from the menu.** Ch1 opens on the cold open and Ch2 on its chapter card, then c2_0001. Playing on from c2_0291: fade to black, the Ch3 card, "Thursday, April 10", then c3_0309 with the night cue and the interlude label cleared.
+- **Staging against the script, every line at iPad size.** Who's on stage, positions and dimming match the script. Face windows follow §3a: Kōhei on every spoken line; no Nanoha window inside the window CGs; no Emi or Mio window inside `cg_lunch`; windows for Natsuki (c3_0381, 0284, 0409, 0289, 0291) and Nanoha (c3_0263, 0397, 0404) when they're off stage. Expressions fit their lines; smirks and deadpans clear on time. Sprite head tops are within 1 px of the values `CHAR`/`VSET`/`HEADROOM` give, so Natsuki's track and kendo sets match. The night tint is on the living room only.
+- **Transitions.** The text box stays up through every CG-to-CG change (window → sill → turn) and every CG-to-plate change, and hides only while a CG comes up from none, as designed. No hard cuts. The light in `cg_tree_light` reads as a small cool point under the branch at every size and sits above the box on phones. The lunch CG matches c3_0411–0413.
+- **Fast taps.** 466 mouse taps at iPad size and 461 touch taps at 844×345 showed all 224 lines. Nothing stuck, no CG or sprite left over, no box missing on a line, no errors.
+- **Voices.** All 126 lines are voiced, and every one was confirmed playing in the normal pass or by a direct probe (c3_0335, 1.6 s; c3_0363 is 0.5 s long). I accepted the `voice_levels.py` result (the two prologue lines are intended). Every BGM cue loads.
+- **Living stills** are the same aspect as their stills (1920×1072 vs 2400×1340) and line up with them. They fade in without a jump, only a little softer, as in Ch1–2.
+- **Save/load** at c3_0315, c3_0263 and c3_0413 restores the CG, the living still and the face windows. The end card reads "End of Chapter 3 · To be continued · Chapter 4, 'The Light at the Shrine,' comes next."
+- **No layout problems** at the phone or desktop scene starts. No console errors or failed requests at any size.

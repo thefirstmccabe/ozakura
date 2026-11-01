@@ -5519,7 +5519,7 @@
 {
 "t": "nar",
 "id": "c3_0071",
-"text": "Her eyes are still closed."
+"text": "Her eyes are barely open."
 },
 {
 "t": "say",
@@ -5544,7 +5544,7 @@
 {
 "t": "nar",
 "id": "c3_0074",
-"text": "She opens her eyes and squints up at me. She looks tired, but it's ten-at-night tired. Normal tired."
+"text": "She squints up at me. She looks tired, but it's ten-at-night tired. Normal tired."
 },
 {
 "t": "show",
@@ -5826,9 +5826,14 @@
 "full": true
 },
 {
+"t": "cg",
+"name": "cg_window_sill",
+"tr": "fade"
+},
+{
 "t": "nar",
 "id": "c3_0106",
-"text": "She sets him on the corner of the sill with his back to me. His little tail points straight at my window."
+"text": "She sets him on the corner of the sill with his back to me and props her chin on her folded arms. His little tail points straight at my window."
 },
 {
 "t": "say",
@@ -5911,16 +5916,6 @@
 "t": "nar",
 "id": "c3_0120",
 "text": "This is the version of her nobody else gets. Not Hoshikawa, not the first-years who bow to her in the hallway. Just me, across three feet of night."
-},
-{
-"t": "cg",
-"name": "cg_window_sill",
-"tr": "fade"
-},
-{
-"t": "nar",
-"id": "c3_0312",
-"text": "She props her chin on her folded arms on the sill."
 },
 {
 "t": "say",
@@ -6007,7 +6002,7 @@
 {
 "t": "nar",
 "id": "c3_0314",
-"text": "She looks at me for a second. Then she reaches over and turns {Usagi-san|~Mr. Rabbit} a quarter turn, so he's facing the curtain instead."
+"text": "She looks at me for a second. Then she reaches over and turns {Usagi-san|~Mr. Rabbit} a quarter turn, so he's facing her instead."
 },
 {
 "t": "say",
@@ -6042,6 +6037,11 @@
 "tr": "fade"
 },
 {
+"t": "bg",
+"name": "bg_kohei_room_night_dark",
+"tr": "fade"
+},
+{
 "t": "nar",
 "id": "c3_0163",
 "text": "She slides her window shut, and her light goes out."
@@ -6049,7 +6049,7 @@
 {
 "t": "nar",
 "id": "c3_0164",
-"text": "On her side of the glass, the rabbit is still facing the curtain."
+"text": "On her side of the glass, the rabbit is still sitting sideways, halfway out of trouble."
 },
 {
 "t": "nar",
@@ -7138,15 +7138,15 @@
 "name": "daily"
 },
 {
+"t": "nar",
+"id": "c3_0282",
+"text": "The Tachibanas' front door is already open when we get down the hill. Auntie Emi is standing in it in her yellow apron, as if she'd been expecting exactly this many people."
+},
+{
 "t": "show",
 "who": "emi",
 "spr": "emi_home_smile",
 "pos": "c"
-},
-{
-"t": "nar",
-"id": "c3_0282",
-"text": "The Tachibanas' front door is already open when we get down the hill. Auntie Emi is standing in it in her yellow apron, as if she'd been expecting exactly this many people."
 },
 {
 "t": "say",
@@ -7179,6 +7179,10 @@
 "t": "bg",
 "name": "bg_tachibana_living",
 "tr": "fade"
+},
+{
+"t": "wait",
+"s": 0.9
 },
 {
 "t": "show",
@@ -7294,7 +7298,7 @@
 {
 "t": "nar",
 "id": "c3_0413",
-"text": "Grandpa on my right. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work, so his place has the extra soup bowls."
+"text": "Grandpa on my right. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work."
 },
 {
 "t": "say",

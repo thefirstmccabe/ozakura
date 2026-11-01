@@ -27,10 +27,10 @@ nanoha<smile>: "She ate. She took them. We watched three episodes of a medical d
 @hide nanoha
 @show akane home_sleepy c
 akane: "Onii-chan, you're hovering again." || お兄ちゃん、また見張ってるー。  #c3_0070
-> Her eyes are still closed.  #c3_0071
+> Her eyes are barely open.  #c3_0071
 kohei(deadpan): "I'm kneeling." || しゃがんでるだけだ。  #c3_0072
 akane<sleepy>: "Then kneel somewhere else. I'm asleep." || じゃあ、よそでしゃがんで。寝てるんだから。  #c3_0073
-> She opens her eyes and squints up at me. She looks tired, but it's ten-at-night tired. Normal tired.  #c3_0074
+> She squints up at me. She looks tired, but it's ten-at-night tired. Normal tired.  #c3_0074
 akane<sleepy>: "I got a little dizzy after school. On the stairs at the station. I sat down for ten minutes, and it went away." || 学校の帰りに、ちょっとふらっとしただけ。駅の階段で。じゅっぷんくらい座ってたら、治ったよ。  #c3_0075
 kohei(serious): "Why didn't you call me?" || なんで電話しなかった。  #c3_0076
 akane<smile>: "You were at work." || お兄ちゃん、バイト中だったもん。  #c3_0077
@@ -70,7 +70,8 @@ kohei(neutral): "…Who's that." || ……誰だ、それ。  #c3_0102
 nanoha: "{Usagi-san|Mr. Rabbit}." || うさぎさん。  #c3_0103
 kohei(deadpan): "I know it's {Usagi-san|Mr. Rabbit}. I bought you {Usagi-san|Mr. Rabbit}." || うさぎさんだってことは知ってる。買ってやったの、俺だろ。  #c3_0104
 nanoha: "He's in time-out." || 今、反省中なの。  #c3_0105
-> She sets him on the corner of the sill with his back to me. His little tail points straight at my window.  #c3_0106
+@cg cg_window_sill
+> She sets him on the corner of the sill with his back to me and props her chin on her folded arms. His little tail points straight at my window.  #c3_0106
 kohei(neutral): "What did he do?" || 何やったんだ。  #c3_0107
 nanoha: "We don't discuss it." || その件については、お答えできません。  #c3_0108
 kohei(smile): "He's been in time-out on and off since you were ten." || お前が十歳の頃から、出たり入ったりしてるだろ。  #c3_0111
@@ -83,8 +84,6 @@ kohei(grin): "Your authority is a plushie." || お前の権威って、ぬいぐ
 nanoha: "My authority is absolute." || 私の権威は、絶対です。  #c3_0118
 > She turns him back around without looking away from me. Her face is perfectly straight. Her eyes are laughing.  #c3_0119
 > This is the version of her nobody else gets. Not Hoshikawa, not the first-years who bow to her in the hallway. Just me, across three feet of night.  #c3_0120
-@cg cg_window_sill
-> She props her chin on her folded arms on the sill.  #c3_0312
 nanoha: "…Don't be mad at her." || ……あかねちゃんのこと、怒らないであげてね。  #c3_0122
 kohei(neutral): "I'm not. I'd have come, that's all." || 怒ってない。行ったのに、ってだけだ。  #c3_0123
 nanoha: "I know. That's why." || 知ってる。だからだよ。  #c3_0124
@@ -97,14 +96,15 @@ nanoha: "You're not the only person who loves her, Kōhei." || あかねちゃ�
 > I don't say anything. Anything I could say to that is either an argument or something worse.  #c3_0131
 kohei(neutral): "…Thanks. For tonight." || ……ありがとな。今日のこと。  #c3_0313
 @cg cg_window_sill_turn
-> She looks at me for a second. Then she reaches over and turns {Usagi-san|Mr. Rabbit} a quarter turn, so he's facing the curtain instead.  #c3_0314
+> She looks at me for a second. Then she reaches over and turns {Usagi-san|Mr. Rabbit} a quarter turn, so he's facing her instead.  #c3_0314
 nanoha: "His sentence has been reduced. For good behavior." || げんけいです。模範囚なので。  #c3_0315
 > I think about mentioning that Mizuno might come up to photograph the tree. Then the cat down the lane starts up again, and she laughs, and it doesn't come up.  #c3_0321
 nanoha: "Good night, Kō-chan." || おやすみ、こうちゃん。  #c3_0162
 kohei(smile): "Night, {Chibi|shorty}." || おやすみ、チビ。  #c3_0322
 @cg -
+@bg bg_kohei_room_night_dark
 > She slides her window shut, and her light goes out.  #c3_0163
-> On her side of the glass, the rabbit is still facing the curtain.  #c3_0164
+> On her side of the glass, the rabbit is still sitting sideways, halfway out of trouble.  #c3_0164
 > I leave my window open a while longer.  #c3_0323
 
 == c3_saturday | Saturday practice
@@ -274,12 +274,13 @@ natsuki<curious>: "Who's Mio? Is she good?" || みおって誰？ 強いの？  
 == c3_lunch | Lunch at the Tachibanas'
 @bg bg_houses_day
 @bgm daily
-@show emi home_smile c
 > The Tachibanas' front door is already open when we get down the hill. Auntie Emi is standing in it in her yellow apron, as if she'd been expecting exactly this many people.  #c3_0282
+@show emi home_smile c
 emi: "Kōhei-kun, welcome home! And— oh! A new friend!" || こうへいくん、おかえり！ あら……まあ！ 新しいお友だち？  #c3_0283
 natsuki(smile): "Mizuno Natsuki! Sorry for barging in—" || みずのなつきです！ 急にお邪魔して、すみません……  #c3_0284
 emi<laugh>: "Barging? You're saving me. Come in, come in, there's {karaage|fried chicken} that needs eating. Akane-chan's already here." || お邪魔だなんて！ 助かるわ。さあ、上がって、上がって。からあげ、食べてもらわなきゃ。あかねちゃんも、もう来てるから。  #c3_0285
 @bg bg_tachibana_living
+@wait 0.9
 @show mio home_smug c
 mio: "Kō-nii. Sit there." || こうにい。そこ、すわって。  #c3_0406
 kohei(smile): "Yes, ma'am." || かしこまりました。  #c3_0407
@@ -294,7 +295,7 @@ mio<grin>: "You're ON." || ぜったい負けないもん！  #c3_0292
 @cg cg_lunch
 > Auntie Emi has made enough for twelve.  #c3_0411
 > {Karaage|fried chicken} piled up like a small mountain. A stack of {onigiri|rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|braised burdock}, which explains a lot of Monday mornings. Miso soup for everyone.  #c3_0412
-> Grandpa on my right. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work, so his place has the extra soup bowls.  #c3_0413
+> Grandpa on my right. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work.  #c3_0413
 emi: "Everyone, hands together!" || はい、みんな、手を合わせて！  #c3_0414
 mio: "{Itadakimasu|let's eat}!" || いただきまーす！  #c3_0415
 > Everybody says it a beat behind her. Mizuno says it loudest of all.  #c3_0416
