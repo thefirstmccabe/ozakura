@@ -35,9 +35,9 @@ The story details are listed in `story/pilot-notes.md` §3, "v2 Ch3 'Windows'" (
 - **On the sill CGs,** Kōhei's face window and the name tag cover the rabbit's lower half; his head and ears stay visible.
 - **Kōhei's face windows show his school blazer** after his shower and on Saturday (there's no casual set yet; true since Ch1). At the bottom edge of the lunch CG his sleeves are a sage-green top, mostly under the text box.
 - **Genji's face** still reads a little wider than Natsuki's when they stand together; it's his design's proportions, and he passes as a stooped old man.
-- **The dark-window plate** has a faint smudge under her sill at full zoom.
 - **Akane's home face windows** come out a little smaller than her school ones; Ch3 never shows them.
 - Natsuki's track shirt is close-fitting; the checker flagged it for your eye. It reads athletic at play size to me.
+- **Engine carry list** (from the build reviews; small, and each touches Ch1–2, so they wait for a regression run): a background change dims the room for about half a second as one plate fades out and the next fades in (most visible as her light goes out, mostly hidden by the CG fading); fast taps skip the short waits that let a background arrive before a sprite (Emi, Mio); a character's last line stays in the box during such a wait.
 
 ## Spend
 Ch3 about $9.10 (art $4.42; CGs and living stills $2.43; voices $2.25); running total about $49.30 (going over $40 is approved; Story's guard for Ch3 was $15). Details in `production/pilot-v2/ledger.md`.
