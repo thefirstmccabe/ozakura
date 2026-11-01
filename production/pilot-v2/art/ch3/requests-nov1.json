@@ -1,0 +1,715 @@
+[
+ {
+  "request_id": "01a19770-26ca-7750-98b6-e46b82d49c6b",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.031Z",
+  "seed": 731,
+  "prompt": "Keep him exactly as in image 1: Genji, an easygoing Japanese grandfather in his late seventies who looks after a small hilltop shrine: about 5'2\", a little stooped, wiry, deeply tanned and lined face, short white hair under a twisted white towel headband, kind crinkled eyes and a twinkly smile; dark navy cotton work clothes (a wrap-front work jacket and loose trousers). Draw him as a visual-novel sprite in the framing and style of image 2 (image 2 is only a reference for framing, line quality and coloring; do not copy that girl): front three-quarter view, from the head down to mid-thigh, centered, the same generous margin above the head as image 2. Pose: one hand pressed to the small of his back as if his back aches, the other hand holding a tall bamboo broom upright beside him. Expression: a warm, sly, twinkly smile. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/inventory/genji.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/akane-school-smile-white.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "2:3",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba5f/FK64c_Lgt7OCZKGS16bL0_kFOdKGSG.png"
+  ]
+ },
+ {
+  "request_id": "01a19770-26be-7be1-b422-5c56bd873f2b",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.041Z",
+  "seed": 722,
+  "prompt": "Keep her exactly as in image 1: Mio, a bossy 7-year-old Japanese girl, about 4 feet tall: a dark-brown bob with blunt bangs and one small side braid, a smug gap-toothed grin, a mint-green T-shirt with a yellow star print, a tiered brown plaid skirt over black bike shorts, a small bandage on her elbow; she stands with her arms crossed and holds a plain dark game controller (no logos). Draw her as a visual-novel sprite in the framing and style of image 2 (image 2 is only a reference for framing, line quality and coloring; do not copy that girl): front three-quarter view, from the head down to mid-thigh, centered, the same generous margin above the head as image 2. Natural, realistic proportions for a 7-year-old child: a big head relative to her small body, short limbs. Expression: smug and pleased with herself, a gap-toothed grin, chin up. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/inventory/sister-D.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/akane-school-smile-white.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "2:3",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba5f/NgLCY5vmMv84mclP6CQOp_CpVPCpGX.png"
+  ]
+ },
+ {
+  "request_id": "01a19770-26c8-7af0-b991-1e14bcb33de6",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.045Z",
+  "seed": 721,
+  "prompt": "Keep her exactly as in image 1: Mio, a bossy 7-year-old Japanese girl, about 4 feet tall: a dark-brown bob with blunt bangs and one small side braid, a smug gap-toothed grin, a mint-green T-shirt with a yellow star print, a tiered brown plaid skirt over black bike shorts, a small bandage on her elbow; she stands with her arms crossed and holds a plain dark game controller (no logos). Draw her as a visual-novel sprite in the framing and style of image 2 (image 2 is only a reference for framing, line quality and coloring; do not copy that girl): front three-quarter view, from the head down to mid-thigh, centered, the same generous margin above the head as image 2. Natural, realistic proportions for a 7-year-old child: a big head relative to her small body, short limbs. Expression: smug and pleased with herself, a gap-toothed grin, chin up. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/inventory/sister-D.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/akane-school-smile-white.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "2:3",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba5f/bheROK1SRS74xDXDwhM_u_A95VOdmL.png"
+  ]
+ },
+ {
+  "request_id": "01a19770-26e5-7b53-8372-4ae7b44733f6",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.075Z",
+  "seed": 711,
+  "prompt": "Edit image 1: change ONLY her clothes and her hands. She now wears the at-home outfit of the girl in image 2 (outfit only; ignore that girl's face, hair, age and body proportions): a soft, slightly oversized cream knit cardigan with ribbed cuffs, worn open over a pale pink top, and lavender lounge pants. Her hands are drawn up in front of her chest in sweater paws, the long cardigan sleeves covering most of her hands, like image 2. No school bag, no sailor uniform. Keep everything else exactly identical: her face, eyes, expression, her lavender-silver hair and small hair clip, her head size and its position in the frame, her small, slight build (clearly younger than a high-schooler: compact proportions, a round soft face), the thigh-up framing, the art style and colors, and the plain pure white background. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/akane-school-smile-white.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/design-oct10/r3/akane-teen-home.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "auto",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba60/_aMIslQ_dReyHSjq7WqUh_7hwf9E98.png"
+  ]
+ },
+ {
+  "request_id": "01a19770-26e5-7b53-8372-4afab1a31043",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.075Z",
+  "seed": 712,
+  "prompt": "Edit image 1: change ONLY her clothes and her hands. She now wears the at-home outfit of the girl in image 2 (outfit only; ignore that girl's face, hair, age and body proportions): a soft, slightly oversized cream knit cardigan with ribbed cuffs, worn open over a pale pink top, and lavender lounge pants. Her hands are drawn up in front of her chest in sweater paws, the long cardigan sleeves covering most of her hands, like image 2. No school bag, no sailor uniform. Keep everything else exactly identical: her face, eyes, expression, her lavender-silver hair and small hair clip, her head size and its position in the frame, her small, slight build (clearly younger than a high-schooler: compact proportions, a round soft face), the thigh-up framing, the art style and colors, and the plain pure white background. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/akane-school-smile-white.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/design-oct10/r3/akane-teen-home.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "auto",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba60/JKAU4UpMw0fe5smgMqnSI_bLyHqKQ3.png"
+  ]
+ },
+ {
+  "request_id": "01a19770-26e5-70b1-b087-82dbd11a3aa6",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.098Z",
+  "seed": 701,
+  "prompt": "Edit image 1: change ONLY her clothes and her arms. She now wears after-practice athletic clothes: a fitted navy long-sleeve track top with a short zip at the neck (plain, no logos, no text, no stripes of writing) and dark charcoal sweatpants. A compact black camera with a short lens hangs at her chest from a black strap around her neck; her right hand rests lightly under the camera, and her left arm hangs relaxed at her side. No shinai, no kendo clothes, no armor. Her long wavy hair stays tied up in exactly the same high ponytail with the same plain dark hair tie; her side-swept fringe and the two soft locks framing her face stay exactly as they are. Keep everything else exactly identical: her face, eyes, expression, head size and its position in the frame, her build and natural realistic proportions (an athletic 5'3\" sixteen-year-old), the thigh-up framing, the art style and colors, and the plain pure white background. Modest and age-appropriate. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/natsuki-kendo-301-white.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "auto",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba60/4aP8dYj0uQzl_f0oGwarw_Gk6exSyG.png"
+  ]
+ },
+ {
+  "request_id": "01a19770-26c6-7ec2-8b8c-757a911a79e3",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.144Z",
+  "seed": 702,
+  "prompt": "Edit image 1: change ONLY her clothes and her arms. She now wears after-practice athletic clothes: a fitted navy long-sleeve track top with a short zip at the neck (plain, no logos, no text, no stripes of writing) and dark charcoal sweatpants. A compact black camera with a short lens hangs at her chest from a black strap around her neck; her right hand rests lightly under the camera, and her left arm hangs relaxed at her side. No shinai, no kendo clothes, no armor. Her long wavy hair stays tied up in exactly the same high ponytail with the same plain dark hair tie; her side-swept fringe and the two soft locks framing her face stay exactly as they are. Keep everything else exactly identical: her face, eyes, expression, head size and its position in the frame, her build and natural realistic proportions (an athletic 5'3\" sixteen-year-old), the thigh-up framing, the art style and colors, and the plain pure white background. Modest and age-appropriate. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/natsuki-kendo-301-white.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "auto",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba60/BH0F6sMl2ENQB4yYmn1CL_0YPux9Ax.png"
+  ]
+ },
+ {
+  "request_id": "01a19770-2729-75f3-b169-58ea6d9987fc",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:07:52.185Z",
+  "seed": 732,
+  "prompt": "Keep him exactly as in image 1: Genji, an easygoing Japanese grandfather in his late seventies who looks after a small hilltop shrine: about 5'2\", a little stooped, wiry, deeply tanned and lined face, short white hair under a twisted white towel headband, kind crinkled eyes and a twinkly smile; dark navy cotton work clothes (a wrap-front work jacket and loose trousers). Draw him as a visual-novel sprite in the framing and style of image 2 (image 2 is only a reference for framing, line quality and coloring; do not copy that girl): front three-quarter view, from the head down to mid-thigh, centered, the same generous margin above the head as image 2. Pose: one hand pressed to the small of his back as if his back aches, the other hand holding a tall bamboo broom upright beside him. Expression: a warm, sly, twinkly smile. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric. Background: plain solid pure white, no shadow, no text, no border. Single character only.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/inventory/genji.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/ch3/refs/akane-school-smile-white.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "2:3",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba60/r_EUWXl7ENmTaB-zUeG3c_wlmuk6RP.png"
+  ]
+ },
+ {
+  "request_id": "01a19771-6532-7c12-8fcd-a11028b9e598",
+  "endpoint": "fal-ai/bria/background/remove",
+  "started": "2026-11-01T14:09:13.577Z",
+  "seed": null,
+  "prompt": null,
+  "negative_prompt": null,
+  "image_urls": "https://v3b.fal.media/files/b/0ab0ba5f/FK64c_Lgt7OCZKGS16bL0_kFOdKGSG.png",
+  "resolution": null,
+  "aspect_ratio": null,
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba67/QFWgE8ao9vOPMa3VRhTFr_28c5393e448b4ef085366d3f04a8795e.png"
+  ]
+ },
+ {
+  "request_id": "01a19771-652f-7151-8f94-6b5d749cc021",
+  "endpoint": "fal-ai/bria/background/remove",
+  "started": "2026-11-01T14:09:13.582Z",
+  "seed": null,
+  "prompt": null,
+  "negative_prompt": null,
+  "image_urls": "https://v3b.fal.media/files/b/0ab0ba60/BH0F6sMl2ENQB4yYmn1CL_0YPux9Ax.png",
+  "resolution": null,
+  "aspect_ratio": null,
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba67/2aEQuMYEoRcufiJRDUFbC_0b7bef439d3b43f89e124e62dae0be35.png"
+  ]
+ },
+ {
+  "request_id": "01a19771-6531-7dd2-a81d-1d161b502a21",
+  "endpoint": "fal-ai/bria/background/remove",
+  "started": "2026-11-01T14:09:13.583Z",
+  "seed": null,
+  "prompt": null,
+  "negative_prompt": null,
+  "image_urls": "https://v3b.fal.media/files/b/0ab0ba5f/bheROK1SRS74xDXDwhM_u_A95VOdmL.png",
+  "resolution": null,
+  "aspect_ratio": null,
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba67/fClMbjX5f63Zvm8d7JfPj_77d5d6d36c4c4f068b42cddfc6a985f2.png"
+  ]
+ },
+ {
+  "request_id": "01a19771-6534-76a3-967a-68a7def74a0d",
+  "endpoint": "fal-ai/bria/background/remove",
+  "started": "2026-11-01T14:09:13.598Z",
+  "seed": null,
+  "prompt": null,
+  "negative_prompt": null,
+  "image_urls": "https://v3b.fal.media/files/b/0ab0ba60/_aMIslQ_dReyHSjq7WqUh_7hwf9E98.png",
+  "resolution": null,
+  "aspect_ratio": null,
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba67/xIBKo7V3BUcJNYsjQP3DZ_bb9fc231a539490e96da68802bf58180.png"
+  ]
+ },
+ {
+  "request_id": "01a19772-0c61-7b00-8b9f-03cfa224009f",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:09:56.356Z",
+  "seed": 742,
+  "prompt": "Edit image 1: change ONLY her facial expression. She is now pouting like a sore loser: lower lip pushed out, cheeks a little puffed, eyebrows pulled down and together, eyes narrowed in a grumpy glare, the face of a little girl who just lost a game and wants a rematch. Keep everything else pixel-identical: every strand of her hair, the blunt bangs, the small side braid, the face outline, the ears, the T-shirt collar, the arms, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0ba69/hZlN5Pbes9UJgsdtUADdr_mio_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba6b/vnDPMSBPJARPw3NglFEEb_6DaiGJkv.png"
+  ]
+ },
+ {
+  "request_id": "01a19772-0c62-7c23-aef8-b1390a0bd4f2",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:09:56.363Z",
+  "seed": 741,
+  "prompt": "Edit image 1: change ONLY her facial expression. She now has a huge, delighted, triumphant open-mouthed grin showing her gap-toothed smile, eyes squeezed into happy crescents, cheeks pushed up, the face of a little girl who just won. Keep everything else pixel-identical: every strand of her hair, the blunt bangs, the small side braid, the face outline, the ears, the T-shirt collar, the arms, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0ba69/hZlN5Pbes9UJgsdtUADdr_mio_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba6b/RqRHzgnVrKcisEK6uJwZx_9DYuqPgs.png"
+  ]
+ },
+ {
+  "request_id": "01a19772-0d3b-7dc3-8320-f3ac93788bc9",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:09:56.571Z",
+  "seed": 752,
+  "prompt": "Edit image 1: change ONLY his facial expression. He has just stumbled: eyes wide with a startled look, eyebrows up, mouth open in a short 'oop', a little flustered but not frightened. Keep everything else pixel-identical: the white towel headband, every strand of his white hair, the face outline, the ears, the collar, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0ba69/7PpiWWFyrNMhmm-tdR4rk_genji_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba6b/iqstm5Uz6YaV-jUO06M9M_mlRJz908.png"
+  ]
+ },
+ {
+  "request_id": "01a19772-0d48-7c60-9fac-8b7907e6b5f4",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:09:56.579Z",
+  "seed": 743,
+  "prompt": "Edit image 1: change ONLY her facial expression. She looks surprised and curious, sizing up a stranger: eyes wide and round, eyebrows raised, mouth in a small open 'o'. Keep everything else pixel-identical: every strand of her hair, the blunt bangs, the small side braid, the face outline, the ears, the T-shirt collar, the arms, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0ba69/hZlN5Pbes9UJgsdtUADdr_mio_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba6b/4s_ujkk6OBNGNu1vR6ijl_cDaCBvaE.png"
+  ]
+ },
+ {
+  "request_id": "01a19772-0d39-7f63-b310-242f93dbf7c1",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:09:56.614Z",
+  "seed": 751,
+  "prompt": "Edit image 1: change ONLY his facial expression. He now laughs, a big warm open-mouthed old man's laugh, eyes crinkled almost shut, deep laugh lines. Keep everything else pixel-identical: the white towel headband, every strand of his white hair, the face outline, the ears, the collar, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0ba69/7PpiWWFyrNMhmm-tdR4rk_genji_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0ba6b/rljm2ucuNeACq0mc2mvrA_YirzFZxW.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4ac-7e73-bf44-5dac45d2ae1b",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.194Z",
+  "seed": 761,
+  "prompt": "Edit image 1: change ONLY her facial expression. She is sleepy and drowsy: eyelids heavy and half closed, a soft tired little smile, as if she has just woken up on the sofa. Keep everything else pixel-identical: every strand of her lavender-silver hair, the bangs, the small hair clip, the face outline, the ears, the cardigan sleeves and hands, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0baae/mjaCzox86CNEx2JdjCA_4_akane_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/a4QA0i4zjLYt3pYkmj6Da_31rZCgzN.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4e6-7b03-81bd-ae87af474ed9",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.257Z",
+  "seed": 782,
+  "prompt": "Use images 1 and 2 only as references for the art style, the rendering and the kind of older Japanese family house in this town; do not copy their layout, their furniture or their mood. Paint a new background illustration for a visual novel, no people: the living-dining room of the neighbors' house, a warm, busy, happy family home, at midday on a sunny spring Saturday. A large, low wooden table in the middle of a tatami room with flat floor cushions around it (room for seven people), the table still bare; a flat-screen TV on a low cabinet against the left wall with a game console and two game controllers on the floor in front of it; a sliding glass door at the back opening onto a small garden with potted plants and a glimpse of cherry blossom; a doorway at the right through to a bright kitchen; framed family photos and a child's crayon drawing on the wall, a few toys and a plush in a corner, a wall calendar, a bookshelf. Bright, sunny, cozy, cluttered in a loving way: everything the house next door is not. Wide 16:9 landscape composition with open floor space in the middle for characters to stand. Absolutely no text, no logos, no people, no animals. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga background illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/img/bg/bg_fujisawa_living_night.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/bg/bg_fujisawa_kitchen.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/mWCc5altN1P2zgCFYEAQh_jgWdLVfN.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4e5-7220-8e8d-b615fcc631d9",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.261Z",
+  "seed": 763,
+  "prompt": "Edit image 1: change ONLY her facial expression. She is teasing her big brother: one eye half closed in a playful wink, a mischievous little closed-mouth grin. Keep everything else pixel-identical: every strand of her lavender-silver hair, the bangs, the small hair clip, the face outline, the ears, the cardigan sleeves and hands, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0baae/mjaCzox86CNEx2JdjCA_4_akane_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/_vVUaqEyF3N_U1Rp8Phmf_KZGjIODY.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4e9-7173-8118-08f2a451d203",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.274Z",
+  "seed": 772,
+  "prompt": "Use images 1 and 2 only as references for the art style, the rendering, the light and the look of this small Japanese hillside town in spring; do not copy their layout. Paint a new background illustration for a visual novel, no people: the old stone stairway that climbs up through the woods to the small hilltop shrine in image 1. Looking up a long, steep flight of worn, mossy granite steps between tall, straight old cedar trees, with a small flat landing partway up and the steps continuing beyond it into the trees; an old weathered rope handrail strung on short wooden posts along the left side; ferns and moss at the edges; dappled late-morning spring sunlight slanting through the cedars; a few pale pink cherry petals drifting down the steps from somewhere above, but no cherry tree visible here (only cedars). Calm, quiet, slightly mysterious. Wide 16:9 landscape composition with open space in the middle third for characters to stand. Absolutely no text, no signs, no people, no animals. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga background illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/img/bg/bg_shrine_tree_day.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/locations/houses-street.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/OcWXp1B-kowKU-n2Cd6MO_VDuisIBz.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4ed-75e0-953b-6169989f9e4a",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.274Z",
+  "seed": 764,
+  "prompt": "Edit image 1: change ONLY her facial expression. She is bright and happy: a wide open-mouthed happy smile, eyes curved shut in joy, cheeks lifted. Keep everything else pixel-identical: every strand of her lavender-silver hair, the bangs, the small hair clip, the face outline, the ears, the cardigan sleeves and hands, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0baae/mjaCzox86CNEx2JdjCA_4_akane_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/Qw9z7wJyvzwER7QHPE1Ov_33u1jcXs.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4ef-7780-ab0b-c19a4c2a4b70",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.305Z",
+  "seed": 771,
+  "prompt": "Use images 1 and 2 only as references for the art style, the rendering, the light and the look of this small Japanese hillside town in spring; do not copy their layout. Paint a new background illustration for a visual novel, no people: the old stone stairway that climbs up through the woods to the small hilltop shrine in image 1. Looking up a long, steep flight of worn, mossy granite steps between tall, straight old cedar trees, with a small flat landing partway up and the steps continuing beyond it into the trees; an old weathered rope handrail strung on short wooden posts along the left side; ferns and moss at the edges; dappled late-morning spring sunlight slanting through the cedars; a few pale pink cherry petals drifting down the steps from somewhere above, but no cherry tree visible here (only cedars). Calm, quiet, slightly mysterious. Wide 16:9 landscape composition with open space in the middle third for characters to stand. Absolutely no text, no signs, no people, no animals. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga background illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/img/bg/bg_shrine_tree_day.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/locations/houses-street.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/XezAbGFsp4M-mDfO94HgP_4ESDF0Dm.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4e7-7903-9249-7475ec9afe0c",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.305Z",
+  "seed": 781,
+  "prompt": "Use images 1 and 2 only as references for the art style, the rendering and the kind of older Japanese family house in this town; do not copy their layout, their furniture or their mood. Paint a new background illustration for a visual novel, no people: the living-dining room of the neighbors' house, a warm, busy, happy family home, at midday on a sunny spring Saturday. A large, low wooden table in the middle of a tatami room with flat floor cushions around it (room for seven people), the table still bare; a flat-screen TV on a low cabinet against the left wall with a game console and two game controllers on the floor in front of it; a sliding glass door at the back opening onto a small garden with potted plants and a glimpse of cherry blossom; a doorway at the right through to a bright kitchen; framed family photos and a child's crayon drawing on the wall, a few toys and a plush in a corner, a wall calendar, a bookshelf. Bright, sunny, cozy, cluttered in a loving way: everything the house next door is not. Wide 16:9 landscape composition with open floor space in the middle for characters to stand. Absolutely no text, no logos, no people, no animals. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga background illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/img/bg/bg_fujisawa_living_night.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/bg/bg_fujisawa_kitchen.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/wVzE04kzFx_dUcAMFgs6X_wLHKjTcP.png"
+  ]
+ },
+ {
+  "request_id": "01a1977c-f4eb-7193-8669-bc7268b08063",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:21:51.365Z",
+  "seed": 762,
+  "prompt": "Edit image 1: change ONLY her facial expression. She is pouting cutely at her big brother: cheeks a little puffed, lips pushed into a small pout, eyebrows slightly lowered, eyes looking up, playful rather than angry. Keep everything else pixel-identical: every strand of her lavender-silver hair, the bangs, the small hair clip, the face outline, the ears, the cardigan sleeves and hands, the colors, the line art, the white background, the framing and the crop. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0baae/mjaCzox86CNEx2JdjCA_4_akane_head.png"
+  ],
+  "resolution": "1K",
+  "aspect_ratio": "1:1",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bab3/HS6FMJNEWr5TpAeXUhn3m_2EAL0hgH.png"
+  ]
+ },
+ {
+  "request_id": "01a1978c-6522-7e52-8e9b-46aa6d785323",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:38:43.023Z",
+  "seed": 801,
+  "prompt": "Image 1 is the exact layout of this visual novel CG: keep its camera position, composition, the boy's dark room and open window frame and curtain in the foreground, the very narrow gap (about three feet) between the two houses, the neighbor's lit window across the gap, the night sky and the colors exactly as they are. Paint Nanoha into that lit window across the gap: her window is slid open and she leans on her own windowsill from inside her warm, lamplit bedroom, forearms on the sill, her upper body framed by the window opening, facing us across the gap. She is the girl in image 3 (keep her face, soft brown eyes and dark-brown hair exactly; ignore image 3's school uniform, braid and hair clip), dressed as in image 2: pale-blue long-sleeved pajamas with white piping, her long hair piled up in a loose bun on top of her head with a big, soft, puffy pale-blue scrunchie, a few loose strands falling by her face. In both hands she holds up a small white rabbit plushie (a simple round white bunny with long ears) in front of her chest, solemnly, as if presenting evidence in court; her face is perfectly straight and deadpan, but her eyes are laughing. She is petite, 16 years old, natural proportions, modest. Her room behind her: warm lamp light, a bookshelf, a few plushies. Absolutely no text. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/locations/window-night-from-kohei.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/handoff/Nanoha-Pajamas-Bun.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/nanoha_school_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb18/t9BB4IAN-1u-uhqrblfwO_nYY8uo0w.png"
+  ]
+ },
+ {
+  "request_id": "01a1978c-657f-7ec1-8132-84e6b381e79b",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:38:43.099Z",
+  "seed": 811,
+  "prompt": "Image 1 is the exact location of this visual novel CG: keep the enormous old cherry tree in full bloom, its long low branch, the big flat boulder, the small shrine and torii, the stone path, the valley and river below and the spring light exactly as they are. Add one person: the girl in image 2 (Natsuki: keep her long, soft, wavy copper hair tied up in a high ponytail, her navy track top and dark sweatpants and the black camera on its strap exactly). She stands on the stone path in the left foreground, seen from behind and a little to the side (a three-quarter back view, her face mostly turned away toward the tree), her high ponytail hanging down her back. She has stopped dead to stare up at the tree and has just raised her camera to her eye with both hands to photograph it. Cherry petals drift through the air. She is a 5'3\" sixteen-year-old with natural, realistic proportions and looks small next to the vast trunk. Modest. Absolutely no text. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/bg/bg_shrine_tree_day.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/natsuki_track_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb18/Va2dAhMstO4B7Pf-T08-V_q88jvYrI.png"
+  ]
+ },
+ {
+  "request_id": "01a1978c-657d-79d3-aa05-5787bb27ae61",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:38:43.101Z",
+  "seed": 822,
+  "prompt": "A visual novel CG of a happy family lunch, seen from the point of view of a boy kneeling at the near side of the big low table (he is not visible except perhaps his two hands pressed together at the very bottom edge). The room is image 1 (keep its tatami floor, low wooden table, cushions, sliding glass door to the garden, TV, family photos and midday light). The table is crowded with far too much home-cooked food: in the middle a huge mountain of golden fried chicken on a big platter, a tall stack of rice balls wrapped in seaweed, two plates of sliced rolled omelet, a big bowl of braised burdock and carrot strips, and a bowl of miso soup and a bowl of white rice at every place, steam rising. Six people sit around the table on cushions, every one of them with their palms pressed together in front of their chest, saying grace before eating, all faces visible: at the far end on the right, the old grandfather from image 2 (white towel headband, navy work clothes); along the far side, from left to right, the little sister from image 5 (lavender-silver hair, cream cardigan), the 7-year-old girl from image 6 (dark-brown bob with bangs and a side braid, mint star T-shirt) shouting it loudest with a huge grin, and the copper-haired girl from image 7 (high ponytail, navy track top) beaming; on the near left corner, the mother from image 3 (dark hair in a low bun, light-blue shirt, mustard-yellow apron) and beside her the dark-haired girl from image 4 (long hair down, cream cardigan). Keep each person's face, hair, colors and clothes exactly as in their image, with natural proportions and the right ages (the mother and grandfather are adults; the high-school girls are 16; the little sister is 14; the small girl is 7). Warm, bright, crowded, joyful. Absolutely no text. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/bg/bg_tachibana_living.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/genji_shrine_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/emi_home_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/nanoha_home_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/akane_home_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/mio_home_smug.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/natsuki_track_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb18/3uSNpQUsS0viGRD7GU1WW_Uq9EZzoo.png"
+  ]
+ },
+ {
+  "request_id": "01a1978c-6584-7ab0-8520-b6f133bd125b",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:38:43.107Z",
+  "seed": 821,
+  "prompt": "A visual novel CG of a happy family lunch, seen from the point of view of a boy kneeling at the near side of the big low table (he is not visible except perhaps his two hands pressed together at the very bottom edge). The room is image 1 (keep its tatami floor, low wooden table, cushions, sliding glass door to the garden, TV, family photos and midday light). The table is crowded with far too much home-cooked food: in the middle a huge mountain of golden fried chicken on a big platter, a tall stack of rice balls wrapped in seaweed, two plates of sliced rolled omelet, a big bowl of braised burdock and carrot strips, and a bowl of miso soup and a bowl of white rice at every place, steam rising. Six people sit around the table on cushions, every one of them with their palms pressed together in front of their chest, saying grace before eating, all faces visible: at the far end on the right, the old grandfather from image 2 (white towel headband, navy work clothes); along the far side, from left to right, the little sister from image 5 (lavender-silver hair, cream cardigan), the 7-year-old girl from image 6 (dark-brown bob with bangs and a side braid, mint star T-shirt) shouting it loudest with a huge grin, and the copper-haired girl from image 7 (high ponytail, navy track top) beaming; on the near left corner, the mother from image 3 (dark hair in a low bun, light-blue shirt, mustard-yellow apron) and beside her the dark-haired girl from image 4 (long hair down, cream cardigan). Keep each person's face, hair, colors and clothes exactly as in their image, with natural proportions and the right ages (the mother and grandfather are adults; the high-school girls are 16; the little sister is 14; the small girl is 7). Warm, bright, crowded, joyful. Absolutely no text. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/bg/bg_tachibana_living.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/genji_shrine_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/emi_home_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/nanoha_home_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/akane_home_smile.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/mio_home_smug.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/natsuki_track_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb18/M1aQvjqH1RMLdWv7-q_tJ_L6dNzGte.png"
+  ]
+ },
+ {
+  "request_id": "01a1978c-6582-7103-9424-b307d392ca67",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:38:43.140Z",
+  "seed": 802,
+  "prompt": "Image 1 is the exact layout of this visual novel CG: keep its camera position, composition, the boy's dark room and open window frame and curtain in the foreground, the very narrow gap (about three feet) between the two houses, the neighbor's lit window across the gap, the night sky and the colors exactly as they are. Paint Nanoha into that lit window across the gap: her window is slid open and she leans on her own windowsill from inside her warm, lamplit bedroom, forearms on the sill, her upper body framed by the window opening, facing us across the gap. She is the girl in image 3 (keep her face, soft brown eyes and dark-brown hair exactly; ignore image 3's school uniform, braid and hair clip), dressed as in image 2: pale-blue long-sleeved pajamas with white piping, her long hair piled up in a loose bun on top of her head with a big, soft, puffy pale-blue scrunchie, a few loose strands falling by her face. In both hands she holds up a small white rabbit plushie (a simple round white bunny with long ears) in front of her chest, solemnly, as if presenting evidence in court; her face is perfectly straight and deadpan, but her eyes are laughing. She is petite, 16 years old, natural proportions, modest. Her room behind her: warm lamp light, a bookshelf, a few plushies. Absolutely no text. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration, delicate hatching texture on fabric.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/locations/window-night-from-kohei.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/refs/handoff/Nanoha-Pajamas-Bun.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/nanoha_school_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb18/QluWJ6eTCkA3SrX8wF9fy_I0j2WoOc.png"
+  ]
+ },
+ {
+  "request_id": "01a1978c-6585-7a72-99ae-ba001266d939",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:38:43.148Z",
+  "seed": 812,
+  "prompt": "Image 1 is the exact location of this visual novel CG: keep the enormous old cherry tree in full bloom, its long low branch, the big flat boulder, the small shrine and torii, the stone path, the valley and river below and the spring light exactly as they are. Add one person: the girl in image 2 (Natsuki: keep her long, soft, wavy copper hair tied up in a high ponytail, her navy track top and dark sweatpants and the black camera on its strap exactly). She stands on the stone path in the left foreground, seen from behind and a little to the side (a three-quarter back view, her face mostly turned away toward the tree), her high ponytail hanging down her back. She has stopped dead to stare up at the tree and has just raised her camera to her eye with both hands to photograph it. Cherry petals drift through the air. She is a 5'3\" sixteen-year-old with natural, realistic proportions and looks small next to the vast trunk. Modest. Absolutely no text. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/bg/bg_shrine_tree_day.webp",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/natsuki_track_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb18/dHRJq1PXHo_h0qmNOx3E6_ymiR99NK.png"
+  ]
+ },
+ {
+  "request_id": "01a1978d-fedd-75e3-973f-3154847c31d8",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:40:27.920Z",
+  "seed": 832,
+  "prompt": "Edit image 1 and redraw it as a finished, sharp, highly detailed visual novel CG at full resolution, keeping the composition, the camera, the window frames, the night, the warm lamplit room, the pink curtains and every color exactly as they are. Change only these things: (1) The girl now holds the small white rabbit plushie up in front of her chest in both hands, at arm's length toward the viewer, very solemnly, as if presenting evidence in court; her face is perfectly straight and deadpan, but her eyes are laughing. Her forearms rest on her windowsill. Keep her face (it is the girl in image 2: soft brown eyes, dark-brown hair; ignore image 2's uniform and braid), her pale-blue pajamas with white piping and the bun on top of her head with the big, soft, puffy pale-blue scrunchie. (2) The two posters on her wall become simple pastel paintings of flowers with absolutely no letters, words or writing anywhere. Absolutely no text in the image. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0bb20/kOqaaxD3X3KtUUK2CiDUA_win802_crop.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/nanoha_school_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb23/EJLJXoxl5D2n80qqpCP-o_OcetZeq6.png"
+  ]
+ },
+ {
+  "request_id": "01a1978d-fed9-78b1-b611-313eb39b29c0",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:40:27.921Z",
+  "seed": 831,
+  "prompt": "Edit image 1 and redraw it as a finished, sharp, highly detailed visual novel CG at full resolution, keeping the composition, the camera, the window frames, the night, the warm lamplit room, the pink curtains and every color exactly as they are. Change only these things: (1) The girl now holds the small white rabbit plushie up in front of her chest in both hands, at arm's length toward the viewer, very solemnly, as if presenting evidence in court; her face is perfectly straight and deadpan, but her eyes are laughing. Her forearms rest on her windowsill. Keep her face (it is the girl in image 2: soft brown eyes, dark-brown hair; ignore image 2's uniform and braid), her pale-blue pajamas with white piping and the bun on top of her head with the big, soft, puffy pale-blue scrunchie. (2) The two posters on her wall become simple pastel paintings of flowers with absolutely no letters, words or writing anywhere. Absolutely no text in the image. FULL NATURAL COLOR, absolutely not grayscale. Style: detailed expressive ink linework with natural soft painted color, Japanese manga illustration.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0bb20/kOqaaxD3X3KtUUK2CiDUA_win802_crop.png",
+   "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/v2/img/ch/nanoha_school_smile.webp"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb23/nP4wu_8tYQHdpjvkIjJo6_xaRkmAzm.png"
+  ]
+ },
+ {
+  "request_id": "01a1978f-595f-76d3-b732-8290c4bf9fdf",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:41:56.638Z",
+  "seed": 841,
+  "prompt": "Edit image 1: change ONLY the girl's pose and the rabbit's position. She now leans forward on her windowsill with her forearms folded on the sill and her chin resting on her folded arms, looking straight across at the viewer, with a soft, small, private smile, relaxed and sleepy. The small white rabbit plushie now sits on the left corner of her windowsill, turned so that its back is toward the viewer (we see its round little tail and the backs of its ears, not its face). Keep everything else exactly identical: her face, her eyes, her bun and the big pale-blue scrunchie, her pale-blue pajamas, the window frames, the curtains, the lamplit room, the flower paintings, the night, the colors, the line art and the composition. Absolutely no text. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0bb23/EJLJXoxl5D2n80qqpCP-o_OcetZeq6.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb2b/l0YrvOYLL1Y49VxgaxtYx_UoSxArgJ.png"
+  ]
+ },
+ {
+  "request_id": "01a1978f-595f-7682-bb60-410d558f9ce3",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T14:41:56.735Z",
+  "seed": 842,
+  "prompt": "Edit image 1: change ONLY the girl's pose and the rabbit's position. She now leans forward on her windowsill with her forearms folded on the sill and her chin resting on her folded arms, looking straight across at the viewer, with a soft, small, private smile, relaxed and sleepy. The small white rabbit plushie now sits on the left corner of her windowsill, turned so that its back is toward the viewer (we see its round little tail and the backs of its ears, not its face). Keep everything else exactly identical: her face, her eyes, her bun and the big pale-blue scrunchie, her pale-blue pajamas, the window frames, the curtains, the lamplit room, the flower paintings, the night, the colors, the line art and the composition. Absolutely no text. FULL NATURAL COLOR.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0bb23/EJLJXoxl5D2n80qqpCP-o_OcetZeq6.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb2b/ok0Eu15mcj-a0fK4T_4jz_6Z3IWU4z.png"
+  ]
+ },
+ {
+  "request_id": "01a19793-0125-7992-bbda-55bbbd68a222",
+  "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+  "started": "2026-11-01T14:45:56.168Z",
+  "seed": null,
+  "prompt": "Locked-off static camera, no camera movement at all. A cool night breeze through the open window: the pink curtains on both sides stir and sway gently. The girl leaning on the windowsill with her chin on her folded arms stays in her pose, with only tiny natural breathing. The white rabbit plushie on the corner of the sill stays perfectly still with its back to us. The warm lamplight in the room is steady. The wall, the window frames and the room stay perfectly still. Seamless loop: the last frame matches the first.",
+  "negative_prompt": "camera movement, zoom, pan, new person, talking, mouth moving, morphing face, face change, rabbit moving, rabbit turning, morphing hands, flickering light, blur, distort, low quality, flicker",
+  "image_urls": "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/masters/cg_window_sill.webp",
+  "resolution": null,
+  "aspect_ratio": null,
+  "duration": "4",
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb5c/ldj-MRzrYY0NdhVwrGW8F_output.mp4"
+  ]
+ },
+ {
+  "request_id": "01a19793-0124-77f3-9d43-aea6f0775898",
+  "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+  "started": "2026-11-01T14:45:56.176Z",
+  "seed": null,
+  "prompt": "Locked-off static camera, no camera movement at all. Soft wisps of steam rise slowly from the bowls of rice and miso soup and from the fried chicken on the table. Everyone at the table stays in their pose with their hands pressed together, with only tiny natural breathing. The curtains by the window stir very slightly. Everything else is still. Warm daylight. Seamless loop: the last frame matches the first.",
+  "negative_prompt": "camera movement, zoom, pan, new person, eating, talking, mouth moving, morphing faces, face change, morphing hands, extra hands, food changing, blur, distort, low quality, flicker",
+  "image_urls": "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/masters/cg_lunch.webp",
+  "resolution": null,
+  "aspect_ratio": null,
+  "duration": "4",
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb5e/vkcNdL5Wd6OuCPCE6i-96_output.mp4"
+  ]
+ },
+ {
+  "request_id": "01a19793-0128-7032-9c67-7e8a486ffbc1",
+  "endpoint": "fal-ai/kling-video/v3/pro/image-to-video",
+  "started": "2026-11-01T14:45:56.212Z",
+  "seed": null,
+  "prompt": "Locked-off static camera, no camera movement at all. A gentle spring breeze off the valley: cherry petals drift slowly down through the frame, the blossoms on the great tree's branches sway very slightly, and the girl's long copper ponytail stirs a little in the wind. She stays in her pose, holding the camera up to her eye. The trunk, the boulder, the shrine, the gate, the lantern, the river and the town below stay still. Soft spring daylight. Seamless loop: the last frame matches the first.",
+  "negative_prompt": "camera movement, zoom, pan, new person, walking, morphing face, morphing hands, camera disappearing, hair changing length, snow, blur, distort, low quality, flicker",
+  "image_urls": "https://raw.githubusercontent.com/thefirstmccabe/ozakura/main/production/pilot-v2/art/masters/cg_tree_natsuki.webp",
+  "resolution": null,
+  "aspect_ratio": null,
+  "duration": "4",
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bb5a/gTrq3-dnOQJMotMprACfV_output.mp4"
+  ]
+ },
+ {
+  "request_id": "01a197b3-139c-74e3-9461-823fd69cd9ab",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T15:20:58.084Z",
+  "seed": 851,
+  "prompt": "Edit image 1: change ONLY the small white rabbit plushie sitting on the left corner of the windowsill. Turn it a quarter turn so that it now sits in left profile, facing the left edge of the window frame, its nose almost touching the frame: we see its side, one long ear, its round side and its little tail at the right. It is the same plushie, same size, same spot on the sill. Keep everything else exactly identical: the girl, her face, her pose with her chin on her folded arms, her hair, bun and scrunchie, her pajamas, the window frames, the curtains, the room, the lamplight, the night, the colors, the line art and the composition. Absolutely no text.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0bb2b/ok0Eu15mcj-a0fK4T_4jz_6Z3IWU4z.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bc16/Z4PQFj_etRHAJM607NAN3_ZedY3NRJ.png"
+  ]
+ },
+ {
+  "request_id": "01a197b3-139e-7c83-bfaf-6b2fad2bad2e",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T15:20:58.096Z",
+  "seed": 852,
+  "prompt": "Edit image 1: change ONLY the small white rabbit plushie sitting on the left corner of the windowsill. Turn it a quarter turn so that it now sits in left profile, facing the left edge of the window frame, its nose almost touching the frame: we see its side, one long ear, its round side and its little tail at the right. It is the same plushie, same size, same spot on the sill. Keep everything else exactly identical: the girl, her face, her pose with her chin on her folded arms, her hair, bun and scrunchie, her pajamas, the window frames, the curtains, the room, the lamplight, the night, the colors, the line art and the composition. Absolutely no text.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0bb2b/ok0Eu15mcj-a0fK4T_4jz_6Z3IWU4z.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bc16/b32kJO5NkGNaBSlemR1OW_cC5sbCXR.png"
+  ]
+ },
+ {
+  "request_id": "01a197b4-c01d-72b1-9f6e-5b9780c97e50",
+  "endpoint": "fal-ai/nano-banana-pro/edit",
+  "started": "2026-11-01T15:22:47.733Z",
+  "seed": 853,
+  "prompt": "Edit image 1: change ONLY the small white rabbit plushie sitting at the left end of the windowsill. Mirror it so that it faces LEFT, toward the dark wooden window frame at the left edge of the window: its face in left profile, its nose pointing at the window frame, its round tail on its right side. Same plushie, same size, same position on the sill. Keep everything else exactly identical: the girl, her face, her pose with her chin on her folded arms, her hair, bun and scrunchie, her pajamas, the window frames, the pink curtains, the room, the lamplight, the night, the colors, the line art and the composition. Absolutely no text.",
+  "negative_prompt": null,
+  "image_urls": [
+   "https://v3b.fal.media/files/b/0ab0bc16/b32kJO5NkGNaBSlemR1OW_cC5sbCXR.png"
+  ],
+  "resolution": "2K",
+  "aspect_ratio": "16:9",
+  "duration": null,
+  "output": [
+   "https://v3b.fal.media/files/b/0ab0bc20/WSoXFccVYsG6d4xXaVKVC_mqqayuNN.png"
+  ]
+ }
+]
