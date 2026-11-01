@@ -20,7 +20,7 @@
 > And Nanoha's sitting on the floor by the low table, in her house clothes with her hair down, reading one of my manga.  #c3_0061
 nanoha: "Welcome home." || おかえり。  #c3_0062
 kohei(surprised): "What happened?" || 何があった。  #c3_0063
-nanoha<dry>: "'Welcome home' is customarily answered with 'I'm home.'" || 「おかえり」には、「ただいま」って返すものです。  #c3_0064
+nanoha<tease>: "'Welcome home' is customarily answered with 'I'm home.'" || 「おかえり」には、「ただいま」って返すものです。  #c3_0064
 kohei(neutral): "I'm home. What happened? Did she eat? Did she take her—" || ただいま。で、何があった。飯は食ったか？ 薬は……  #c3_0065
 nanoha<smile>: "She ate. She took them. We watched three episodes of a medical drama, and she criticized every doctor in it. One of them, she said, should be arrested." || 食べたよ。薬も飲んだ。医療ドラマを三話見て、出てくるお医者さんに全部ダメ出ししてた。一人は逮捕されるべきだって。  #c3_0066
 > I'm already across the room, kneeling by the sofa, the back of my hand on Akane's forehead. Cool. Normal. Her breathing is slow and even.  #c3_0067
@@ -29,7 +29,7 @@ nanoha<smile>: "She ate. She took them. We watched three episodes of a medical d
 akane: "Onii-chan, you're hovering again." || お兄ちゃん、また見張ってるー。  #c3_0070
 > Her eyes are still closed.  #c3_0071
 kohei(deadpan): "I'm kneeling." || しゃがんでるだけだ。  #c3_0072
-akane<pout>: "Your shadow's on my face. That's hovering." || 顔に影がかかってるもん。それ、見張ってるって言うの。  #c3_0073
+akane<sleepy>: "Your shadow's on my face. That's hovering." || 顔に影がかかってるもん。それ、見張ってるって言うの。  #c3_0073
 > She opens her eyes and squints up at me. She looks tired, but it's ten-at-night tired. Normal tired.  #c3_0074
 akane<sleepy>: "I got a little dizzy after school. On the stairs at the station. I sat down for ten minutes, and it went away." || 学校の帰りに、ちょっとふらっとしただけ。駅の階段で。十分くらい座ってたら、治ったよ。  #c3_0075
 kohei(serious): "Why didn't you call me?" || なんで電話しなかった。  #c3_0076
@@ -41,13 +41,13 @@ akane<tease>: "So I texted Nanoha-chan instead, and she came right over. We even
 > The sleeve in the corner of the second photo.  #c3_0311
 @move akane l
 @show nanoha home_smile r
-nanoha<dry>: "It wasn't a thing. We only came over here because your TV is bigger, and the surgeon is handsome." || 大したことじゃないよ。こっちに来たのは、テレビが大きいからと、外科医の先生がかっこいいから。  #c3_0082
+nanoha<tease>: "It wasn't a thing. We only came over here because your TV is bigger, and the surgeon is handsome." || 大したことじゃないよ。こっちに来たのは、テレビが大きいからと、外科医の先生がかっこいいから。  #c3_0082
 akane<tease>: "He's a terrible doctor, though." || お医者さんとしては、最悪だけどね。  #c3_0083
 nanoha<deadpan>: "A terrible doctor. Handsome, though." || 最悪のお医者さん。でも、かっこいい。  #c3_0084
 > Two against one. It's always two against one in this house.  #c3_0085
 @show nanoha home_smile
 kohei(sad): "…Next time, call me anyway." || ……次は、それでも電話しろ。  #c3_0086
-akane<pout>: "Next time, don't make that face." || 次は、そんな顔しないでね。  #c3_0087
+akane<tease>: "Next time, don't make that face." || 次は、そんな顔しないでね。  #c3_0087
 > She pulls the blanket up over her head. Conversation over.  #c3_0088
 @hide akane
 @show nanoha home_smile c
@@ -61,7 +61,7 @@ kohei(smile): "…Window." || ……窓な。  #c3_0094
 @bg bg_kohei_room_night
 > I take a shower. I put the lunch boxes to soak. I set the rice for tomorrow.  #c3_0095
 > When I come upstairs, her light's on, and her window's open, and she's waiting.  #c3_0096
-> Our rooms face each other across the gap between the houses, a gap so narrow that when we were eight we ran a string between our windows with two paper cups, and were disappointed when it didn't work. We've passed a lot of books across it since.  #c3_0097
+> Our rooms face each other across the gap between the houses, a gap so narrow that when we were little we ran a string between our windows with two paper cups, and were disappointed when it didn't work. We've passed a lot of books across it since.  #c3_0097
 > I open my window. The night air is cool and smells like wet earth from the hill behind the houses.  #c3_0099
 @cg cg_window slow
 > Nanoha's leaning on her windowsill in her pajamas, her hair piled up in a bun on top of her head with the enormous soft scrunchie she's had since middle school.  #c3_0100
@@ -102,9 +102,6 @@ kohei(neutral): "…Thank you. For tonight. Really." || ……ありがとな。
 nanoha: "His sentence has been reduced. For good behavior." || 減刑です。模範囚なので。  #c3_0315
 kohei(smile): "His behavior or mine?" || あいつの？ 俺の？  #c3_0316
 nanoha: "We don't discuss it." || それは、言えません。  #c3_0317
-nanoha: "Practice Saturday?" || 土曜、部活？  #c3_0318
-kohei(neutral): "In the morning. Then the shrine." || 朝な。そのあと、神社。  #c3_0319
-nanoha: "Grandpa's counting on you. There are a lot of petals this year." || おじいちゃん、あてにしてるよ。今年は花びら、すごいから。  #c3_0320
 > I think about mentioning that Mizuno might come up to photograph the tree. Then the cat down the lane starts up again, and she laughs, and it doesn't come up.  #c3_0321
 nanoha: "Good night, Kō-chan." || おやすみ、こうちゃん。  #c3_0162
 kohei(smile): "Night, {Chibi|shorty}." || おやすみ、チビ。  #c3_0322
@@ -118,7 +115,7 @@ kohei(smile): "Night, {Chibi|shorty}." || おやすみ、チビ。  #c3_0322
 @bg bg_dojo
 @wear kohei kendo
 @bgm practice
-> Saturday practice is three hours, and most of it is like any Saturday: warm-ups, practice swings, drills until my forearms burn.  #c3_0169
+> Saturday practice is like any Saturday: warm-ups, practice swings, drills until my forearms burn.  #c3_0169
 > Takatsuki was on the floor before anyone, doing his practice swings alone at the far end. Saturday doesn't change that either.  #c3_0324
 @show kirishima kendo_calm c
 kirishima: "Last half hour, free sparring. Fujisawa. Mizuno." || 最後の三十分は地稽古。ふじさわ。みずの。  #c3_0325
@@ -130,10 +127,10 @@ kirishima: "Last half hour, free sparring. Fujisawa. Mizuno." || 最後の三十
 > Kirishima-senpai calls time. We bow.  #c3_0172
 @show natsuki kendo_grin r
 > Afterward, kneeling against the wall with her helmet off, Mizuno looks as pleased with herself as if she'd won.  #c3_0173
-kohei(annoyed): "You lost that." || 負けてただろ。  #c3_0330
-natsuki<smile>: "I know. I'm working on it." || 知ってる。研究中なの。  #c3_0331
+kohei(deadpan): "You didn't get much." || 大して取れてなかったな。  #c3_0330
+natsuki<smile>: "Not yet. I'm working on it." || まだね。研究中なの。  #c3_0331
 @show takatsuki kendo_calm l
-takatsuki: "Fujisawa. Your left hand drops before you step in. Mizuno has noticed. I am telling you so that it is fair." || ふじさわ。踏み込む前に、左手が下がる。みずのは気づいている。公平のために言っておく。  #c3_0332
+takatsuki: "Fujisawa. Mizuno still drops her left shoulder before {men|head strikes}. You did not see it once. I am telling you so that it is fair." || ふじさわ。みずのは、めんを打つ前に、まだ左肩が下がる。一度も気づいていなかった。公平のために言っておく。  #c3_0332
 natsuki<surprised>: "Takatsuki-kun! Whose side are you on?" || たかつきくん！ どっちの味方なの？  #c3_0333
 takatsuki: "Kendo's." || 剣道の、だ。  #c3_0334
 @hide takatsuki
@@ -212,12 +209,12 @@ genji: "And you're the young lady with the camera. Take as many as you like. The
 natsuki(smile): "Thank you!" || ありがとうございます！  #c3_0381
 genji: "Nanoha. The tea's in the office. Bring cups for everyone." || なのは。茶は事務所じゃ。みんなの分、湯のみも持ってきておくれ。  #c3_0382
 @hide genji
-> We sweep. Mizuno sweeps the way she does everything, fast and pleased with herself, and stops every few minutes to take a picture: moss on a lantern, Nanoha's neat drifts, a crow on the {torii|shrine gate} that looks offended.  #c3_0383
+> We sweep. Mizuno sweeps the way she does everything, fast and pleased with herself, and stops every few minutes to take a picture: moss on a lantern, Nanoha's neat drifts, a crow on the {torii|shrine gate} that refuses to move.  #c3_0383
 > The wind comes up off the valley, and the tree lets go of another few thousand petals and undoes half our work. Nanoha says "Rude" to it, politely, on her way to the office.  #c3_0196
 > When the bags are full, I carry them past the low branch.  #c3_0384
 @bgm memory
 > Under it, for a second, the air smells like snow.  #c3_0385
-> In April. Cold and clean, like the morning after it's snowed all night. And the branch is lower than it should be, low enough that I almost duck.  #c3_0386
+> In April. Cold and clean. And the branch is lower than it should be, low enough that I almost duck.  #c3_0386
 > Then it's gone. The branch is where it always is. It's warm. The bags are heavy.  #c3_0387
 > Mizuno's a few steps off with the camera up, pointed at the branch, at me. She lowers it. She doesn't take the shot.  #c3_0388
 @bgm -
@@ -236,7 +233,7 @@ nanoha<smile>: "Mm? A petal. A big one went right past me." || ん？ 花びら�
 @bgm nanoha
 @show natsuki track_smile r
 @show genji shrine_smile l
-> Grandpa's tea is as bitter as promised. Mizuno drinks the whole cup anyway, and holds it out for more.  #c3_0268
+> Grandpa's tea is bitter, the way it always is. Mizuno drinks the whole cup anyway, and holds it out for more.  #c3_0268
 natsuki<laugh>: "That's horrible. Can I have more?" || ひどい味。おかわり、いいですか？  #c3_0390
 genji<grin>: "Ha! This one'll do." || はっはっ！ この子は見込みがある。  #c3_0391
 kohei(neutral): "Back there. You didn't take the picture." || さっき。写真、撮らなかったな。  #c3_0392
@@ -266,7 +263,7 @@ natsuki: "Okay! I've intruded enough. Thanks for the tea. And the tree. I'll get
 nanoha: "Natsuki-san. Have you eaten lunch?" || なつきさん。お昼、もう食べた？  #c3_0271
 natsuki<surprised>: "Eh? Not yet. I was going to grab something at the convenience store by the—" || え？ まだだけど。駅前のコンビニで何か買おうかなって……  #c3_0272
 nanoha<smile>: "Come eat at our house. Mom always makes too much." || うちで食べていきなよ。お母さん、いつも作りすぎるから。  #c3_0273
-nanoha<dry>: "It's a sickness." || もう病気だね。  #c3_0274
+nanoha<tease>: "It's a sickness." || もう病気だね。  #c3_0274
 @show nanoha home_smile
 > I look at Nanoha. She doesn't look at me.  #c3_0275
 > Mizuno stands there with her bag half on her shoulder. For a second she looks younger than she did in front of the class on Monday, like a kid who's been picked first in gym and doesn't know what to do about it.  #c3_0276
@@ -291,7 +288,7 @@ mio: "Kō-nii. Sit there." || こうにい。そこ、すわって。  #c3_0406
 kohei(smile): "Yes, ma'am." || はいはい。  #c3_0407
 mio<surprised>: "Who's that?" || その人、だれ？  #c3_0408
 natsuki(grin): "Mizuno Natsuki. I hear you play Street Brawlers." || みずのなつき。ストリートブロウラーズ、やるんだって？  #c3_0409
-mio<smug>: "Mio is the best in this house." || ミオが、この家で一番つよいんだから。  #c3_0410
+mio<smug>: "Mio is the best in this house." || みおが、この家で一番つよいんだから。  #c3_0410
 natsuki(smile): "I main Kagero." || 私、カゲロウ使いなんだ。  #c3_0289
 mio<pout>: "Kagero is for cowards." || カゲロウは、ひきょうなキャラだもん。  #c3_0290
 natsuki(grin): "Kagero is for winners, kid. After lunch. You and me." || カゲロウは勝つ人のキャラだよ。お昼のあと、勝負ね。  #c3_0291
@@ -299,7 +296,7 @@ mio<grin>: "You're ON." || のぞむところ！  #c3_0292
 @hideall
 @cg cg_lunch
 > Auntie Emi has made enough for twelve.  #c3_0411
-> {Karaage|fried chicken} piled up like a small mountain. A stack of {onigiri|rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|braised burdock}, which explains Monday morning. Miso soup for everyone.  #c3_0412
+> {Karaage|fried chicken} piled up like a small mountain. A stack of {onigiri|rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|braised burdock}, which explains a lot of Monday mornings. Miso soup for everyone.  #c3_0412
 > Grandpa at the head of the table. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work, so his place has the extra soup bowls.  #c3_0413
 emi: "Everyone, hands together!" || はい、みんな、手を合わせて！  #c3_0414
 mio: "{Itadakimasu|let's eat}!" || いただきまーす！  #c3_0415
@@ -307,16 +304,16 @@ mio: "{Itadakimasu|let's eat}!" || いただきまーす！  #c3_0415
 @cg -
 @show akane home_smile l
 @show natsuki track_smile r
-akane: "So you're Mizuno-san. Onii-chan said you took a point off him." || あなたが、みずのさん？ お兄ちゃんから一本取ったって聞いたよ。  #c3_0417
+akane: "So you're Natsuki-san. I heard you took a point off Onii-chan." || なつきさん、だよね？ お兄ちゃんから一本取ったって聞いたよ。  #c3_0417
 natsuki<surprised>: "He told you that?" || それ、本人が言ってたの？  #c3_0418
-akane<tease>: "No. He said he had 'a bad Wednesday.' I asked Nanoha-chan." || ううん。「水曜はいまいちだった」って。なのはちゃんに聞いたの。  #c3_0419
+akane<tease>: "No. He said he had 'a bad Wednesday.' Nanoha-chan says the whole class knows." || ううん。お兄ちゃんは「水曜はいまいちだった」って。でも、クラスのみんな知ってるって、なのはちゃんが。  #c3_0419
 kohei(annoyed): "Traitors. Both of you." || 裏切り者だな。二人とも。  #c3_0420
 akane<happy>: "Have some {karaage|fried chicken}, Onii-chan." || からあげ食べて、お兄ちゃん。  #c3_0421
 @hideall
 > After lunch, the TV.  #c3_0422
 @show mio home_grin l
 @show natsuki track_grin r
-> Mio plays the way she does everything, at full volume. Mizuno plays the way she does kendo. She's always already there.  #c3_0423
+> Mio plays at full volume. Mizuno plays the way she does kendo. She's always already there.  #c3_0423
 > She wins three in a row.  #c3_0424
 natsuki<smirk>: "Kagero says thanks for playing." || カゲロウが、「対戦ありがとう」だって。  #c3_0425
 mio<pout>: "Natsuki-nee, again!" || なつきねえ、もういっかい！  #c3_0426
@@ -325,7 +322,7 @@ mio<pout>: "Natsuki-nee, again!" || なつきねえ、もういっかい！  #c3
 @bg bg_houses_day
 > At three, Mizuno has to go. She thanks Auntie Emi twice, promises Mio a rematch, and thanks Auntie Emi a third time at the gate.  #c3_0428
 @show natsuki track_smile c
-natsuki<laugh>: "See you Monday, Fujisawa! Progress reports!" || また月曜ね、ふじさわ！ 進捗報告、忘れないでよ！  #c3_0429
+natsuki<laugh>: "See you, Fujisawa! Progress reports!" || またね、ふじさわ！ 進捗報告、忘れないでよ！  #c3_0429
 @hide natsuki
 > At the corner she waves her whole arm over her head, the way she did on the bridge, and then she's gone toward the station.  #c3_0430
 > I cross the ten feet home.  #c3_0431
