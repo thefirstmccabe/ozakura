@@ -10,6 +10,9 @@ can be handed JPG copies.
 Translator's notes (notes.txt next to the first source): a reader in the game can tap a noted term, so the first
 time a noted term appears, its note follows the line in brackets.
 
+Staging notes: a source line `#[On screen: …]` goes into the packet as written (the compiler treats it as a comment);
+for what a reader sees but the narration never says (Ch3's light under the branch, Nov 1).
+
 Split points: by default one part per scene. Pass --split scene_a,scene_b,... to start a new part at those scenes
 (the Oct 17 Ch1 cold read split at prologue | c1_morning | c1_intro | c1_interlude).
 
@@ -43,6 +46,11 @@ BG_LABELS = {
     "bg_houses_night_lit": "the two houses at night; an upstairs window across the gap lights up",
     "bg_river_morning": "riverside path under cherry trees, morning",
     "bg_school_entrance": "school entrance hall",
+    "bg_fujisawa_living_night": "the Fujisawas' living room, night",   # Ch3 (Nov 1)
+    "bg_tachibana_living": "the Tachibanas' living room, day",
+    "bg_houses_day": "two houses side by side, day",
+    "bg_shrine_steps": "stone steps up through the cedars",
+    "bg_shrine_tree_day": "a huge cherry tree in full bloom on a hilltop, by a small shrine, day",
 }
 
 
@@ -57,6 +65,8 @@ def convert(paths, split):
     for path in paths:
         for raw in open(path, encoding="utf-8"):
             s = split_id(raw.rstrip("\n"))[0]   # drop the stable line ID tag
+            if s.lstrip().startswith("#["):   # a staging note for the cold-read packet only (the compiler skips it as a comment)
+                cur.append(s.strip()[1:]); continue
             if not s.strip() or s.lstrip().startswith("#"):
                 continue
             out = None

@@ -16,16 +16,26 @@ VOICE.update({
  "takatsuki": ("Fenrir", "A 16-year-old Japanese high-school boy in the kendo club. Precise, reserved and dry; speaks in complete, correct sentences; serious and formal, never sneering."),
  "manager": ("Enceladus", "The manager of a family restaurant, in his forties: harried and rushed but upbeat and kind, calling out to his part-time staff."),
  "classmate": ("Callirrhoe", "A 16-year-old Japanese high-school girl out with friends after school: friendly, bright and chatty, teasing a little. Must sound like a teenager."),   # [P] Oct 25, Production; for the Audio thread to confirm
+ # Ch3 (Nov 1): the §7 picks, directions from the Oct 10 audition spec and the §7 table
+ "genji": ("Algenib", "An elderly Japanese man in his late 70s, the caretaker of a small hilltop shrine and the girl's grandfather. Warm, a little creaky, with a twinkly sense of humor; unhurried old-man speech."),
+ "emi": ("Achernar", "A Japanese mother in her early 40s. Warm and bubbly, delighted to have guests, always feeding people."),
+ "mio": ("Kore", "A 7-year-old Japanese girl, the bossy little sister. Tiny-princess orders, cheeky, a sore loser. Must sound like a small child."),   # +4 semitones in voice_pack.py
 })
 PLACE.update({"c2_tuesday": "a busy family restaurant at night", "c2_dojo": "a school kendo dojo before practice",
               "c2_lesson": "a school kendo dojo during a water break", "c2_match": "a kendo practice match",
               "c2_debrief": "a school kendo dojo right after a practice match", "c2_mop": "an empty kendo dojo in the evening, wiping the floor",
-              "c2_bridge": "a bridge over a river at dusk", "c2_morning": "a family kitchen early on a school morning", "c2_interlude": "a quiet apartment at night"})
+              "c2_bridge": "a bridge over a river at dusk", "c2_morning": "a family kitchen early on a school morning", "c2_interlude": "a quiet apartment at night",
+              "c3_home": "a quiet living room late at night, with a girl asleep on the sofa nearby",
+              "c3_window": "two facing bedroom windows across a narrow gap between houses, late at night, speaking softly",
+              "c3_saturday": "a school kendo dojo after Saturday practice", "c3_steps": "a long stone stairway up to a hilltop shrine, climbing",
+              "c3_tree": "a hilltop shrine under a huge blossoming cherry tree, outdoors", "c3_tea": "a hilltop shrine and its stone steps, outdoors",
+              "c3_lunch": "a busy, cheerful family home at lunchtime"})
 MOOD = {"smile": "smiling", "grin": "grinning, cheeky", "laugh": "laughing", "smirk": "smug, teasing", "surprised": "surprised",
         "blush": "embarrassed, flustered", "curious": "curious", "wistful": "soft and a little wistful", "tears": "flustered and embarrassed, laughing it off",
         "point": "explaining brightly, like a teacher", "calm": "calm", "stern": "stern and level", "neutral": "even, neutral", "deadpan": "deadpan, dry",
         "annoyed": "mildly annoyed", "flustered": "flustered", "serious": "serious", "grin_": "", "scheme": "scheming, eager", "frown": "displeased",
-        "sad": "sad", "stillness": "very quiet and still"}
+        "sad": "sad", "stillness": "very quiet and still",
+        "tease": "teasing", "happy": "happy, beaming", "pout": "pouting", "smug": "smug and bossy", "sleepy": "sleepy, drowsy, eyes half closed"}   # Ch3 additions
 EXTRA = {"c2_0259": " She says it aloud to herself, alone, trying out a practiced joke about always moving schools: bright on the surface, a little hollow underneath.",
          "c2_0185": " She is slipping on a wet floor: a short, startled gasp.",
          "c2_0133": " Sheepish, caught out by the captain.", "c2_0135": " A small, dismayed echo of what the captain just said.",
