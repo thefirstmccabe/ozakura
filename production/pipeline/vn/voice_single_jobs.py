@@ -25,7 +25,7 @@ PLACE.update({"c2_tuesday": "a busy family restaurant at night", "c2_dojo": "a s
               "c2_lesson": "a school kendo dojo during a water break", "c2_match": "a kendo practice match",
               "c2_debrief": "a school kendo dojo right after a practice match", "c2_mop": "an empty kendo dojo in the evening, wiping the floor",
               "c2_bridge": "a bridge over a river at dusk", "c2_morning": "a family kitchen early on a school morning", "c2_interlude": "a quiet apartment at night",
-              "c3_home": "a quiet living room late at night, with a girl asleep on the sofa nearby",
+              "c3_home": "a quiet living room late at night, speaking softly",
               "c3_window": "two facing bedroom windows across a narrow gap between houses, late at night, speaking softly",
               "c3_saturday": "a school kendo dojo after Saturday practice", "c3_steps": "a long stone stairway up to a hilltop shrine, climbing",
               "c3_tree": "a hilltop shrine under a huge blossoming cherry tree, outdoors", "c3_tea": "a hilltop shrine and its stone steps, outdoors",
@@ -42,7 +42,18 @@ EXTRA = {"c2_0259": " She says it aloud to herself, alone, trying out a practice
          "c2_0226": " Brushing it off quickly and lightly: a quick smile covering a little disappointment.",
          "c2_0307": " His voice is a little hoarse this morning from talking a lot last night.",
          "c2_0316": " She has just noticed something new in his face; quiet, matter-of-fact.",
-         "c2_0322": " Gentle and matter-of-fact, setting a throat lozenge down for him."}
+         "c2_0322": " Gentle and matter-of-fact, setting a throat lozenge down for him.",
+         # Ch3 (Nov 1)
+         "c3_0070": " Half asleep under a blanket, eyes still closed, mumbling.", "c3_0073": " Half asleep, a sleepy little grumble.",
+         "c3_0130": " Quiet and sincere, the one serious thing she says tonight.", "c3_0162": " Softly, across the gap between the windows.",
+         "c3_0322": " Softly and fondly, across the gap between the windows.", "c3_0315": " Mock-official and solemn, about the toy rabbit.",
+         "c3_0263": " Barely above a whisper, to something only she can see: wonder and recognition.",
+         "c3_0266": " Lightly, brushing it off with a smile.", "c3_0396": " He has just stumbled on a stone step; covering it lightly, cheerfully.",
+         "c3_0397": " Automatically, in the same breath as her grandfather, without looking up; a familiar family saying.",
+         "c3_0401": " Changing the subject, mild and unbothered.", "c3_0415": " A small child shouting it happily before a big meal.",
+         "c3_0426": " A sore loser demanding a rematch at once.", "c3_0346": " Fast and quiet, a little shy, to the step in front of her.",
+         "c3_0363": " Flustered, embarrassed by a photo of himself.", "c3_0356": " Caught out, grudgingly correcting.",
+         "c3_0325": " Calling it out across the dojo.", "c3_0332": " Stating a fact, formally, for fairness."}
 REF = " He is refereeing the match: a loud, clear, crisp call that carries across the dojo."
 KIAI = {"めぇぇんっ！", "こてぇぇっ！", "どぉぉっ！"}
 lines_path, src_path, prefix, out = sys.argv[1:5]
