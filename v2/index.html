@@ -318,7 +318,7 @@ input{-webkit-user-select:text;user-select:text}
   .cb{position:relative}
   .cb::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-6px}
   /* the bottom fifth is under the text box here, so CGs crop a little higher (their living stills too, so they stay aligned) */
-  #cg .bgimg,#cg .live,#animV{object-position:50% 35%}
+  #cg .bgimg,#cg .live,#animV{object-position:50% var(--cgy,35%)}   /* --cgy: CG_PHONE_Y, for CGs whose subject sits low (Ch3 window) */
   /* menus: the text box no longer shows through, and three save slots fit across */
   .panel{background:rgba(10,12,20,.97)}
   .slots{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
@@ -436,6 +436,7 @@ const CHAR = {
   teacher:{h:72,v:.71,c:'#c9c2b0',t:'#f1ebe0'}, manager:{c:'#c9c2b0',t:'#f1ebe0'}, classmate:{c:'#c9c2b0',t:'#f1ebe0'}, past_natsuki:{c:'#d4b472',t:'#f3ead3'}
 };
 /* sprite sets framed differently from the character's other sets (v measured the same way, by head size; Ch3, Nov 1) */
+const CG_PHONE_Y = {cg_window:'100%', cg_window_sill:'100%', cg_window_sill_turn:'100%'};   // phones only: vertical crop for CGs whose subject sits low (the rabbit would be under the text box at 35%); Nov 1
 const VSET = {nanoha_home:.82, emi_home:.66};
 /* every on-stage character shares one floor F inches below the bottom of the screen */
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
@@ -606,6 +607,7 @@ function setBg(name, tr){
 const cgLive=$('#cgLive');
 function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
 function liveOn(name, delay, cut){
+  cgLive.style.setProperty('--cgy', CG_PHONE_Y[name]||'35%');
   if(cut){ cgLive.style.transition='none'; } liveOff(); void cgLive.offsetWidth; cgLive.style.transition='';   // a cut drops the old living still at once (Safari kept its last frame through the fade)
   if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
   cgLive.src=LIVE[name]; cgLive.muted=true;
@@ -626,7 +628,7 @@ function setCg(name, tr){
   if(next.classList.contains('on')){ next.style.transition=nextF.style.transition='none'; next.classList.remove('on'); nextF.classList.remove('on'); void next.offsetWidth; }
   nextF.style.zIndex=1; curF.style.zIndex=0; next.style.zIndex=3; cur.style.zIndex=2; cgLive.style.zIndex=4;
   next.style.transition=nextF.style.transition=`opacity ${dur}s ease`; cur.style.transition=curF.style.transition= over ? 'none' : `opacity ${dur}s ease`;
-  nextF.style.backgroundImage=`url(img/bg/${name}.webp)`;
+  nextF.style.backgroundImage=`url(img/bg/${name}.webp)`; next.style.setProperty('--cgy', CG_PHONE_Y[name]||'35%');
   const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); nextF.classList.add('on');
     if(over) setTimeout(()=>{ if(tok===setCg.tok){ cur.classList.remove('on'); curF.classList.remove('on'); } }, dur*1000+60); else { cur.classList.remove('on'); curF.classList.remove('on'); } };
   next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload(); cgFront=1-cgFront;
