@@ -20,3 +20,6 @@
 | 5 | 4–5 | cg_lunch | 821–822 | 01a1978c-6584-7ab0-8520-b6f133bd125b, 01a1978c-657d-79d3-aa05-5787bb27ae61 |
 | 6 | 0–1 | cg_window redraw from the seed-802 crop | 831–832 | 01a1978d-fed9…, 01a1978d-fedd… |
 | 7 | 0–1 | cg_window_sill (chin on arms, rabbit's back to us) from 832 | 841–842 | 01a1978f-595f-76d3-b732-8290c4bf9fdf, 01a1978f-595f-7682-bb60-410d558f9ce3 |
+| 8 | 0 | live cg_window_sill (Kling v3 Pro, 4 s) | — | 01a19793-0125-7992-bbda-55bbbd68a222 |
+| 8 | 1 | live cg_tree_natsuki (Kling v3 Pro, 4 s) | — | 01a19793-0128-7032-9c67-7e8a486ffbc1 |
+| 8 | 2 | live cg_lunch (Kling v3 Pro, 4 s) | — | 01a19793-0124-77f3-9d43-aea6f0775898 |
