@@ -1,0 +1,114 @@
+[
+ {
+  "key": "c3_home.akane.c3_0087",
+  "ids": [
+   "c3_0087"
+  ],
+  "texts": [
+   "見張るの、やめてくれたらね。"
+  ],
+  "input": {
+   "prompt": "見張るの、やめてくれたらね。",
+   "voice": "Aoede",
+   "style_instructions": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman. This line is said in a quiet living room late at night, speaking softly, teasing. It means: \"Only if you stop hovering.\""
+  }
+ },
+ {
+  "key": "c3_window.kohei.c3_0313",
+  "ids": [
+   "c3_0313"
+  ],
+  "texts": [
+   "……ありがとな。今日のこと。"
+  ],
+  "input": {
+   "prompt": "……ありがとな。今日のこと。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in two facing bedroom windows across a narrow gap between houses, late at night, speaking softly, even, neutral. It means: \"…Thanks. For tonight.\""
+  }
+ },
+ {
+  "key": "c3_window.nanoha.c3_0315",
+  "ids": [
+   "c3_0315"
+  ],
+  "texts": [
+   "げんけいです。模範囚なので。"
+  ],
+  "input": {
+   "prompt": "げんけいです。模範囚なので。",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in two facing bedroom windows across a narrow gap between houses, late at night, speaking softly, smiling. It means: \"His sentence has been reduced. For good behavior.\" Mock-official and solemn, about the toy rabbit. Pronounce げんけい clearly."
+  }
+ },
+ {
+  "key": "c3_steps.natsuki.c3_0357",
+  "ids": [
+   "c3_0357"
+  ],
+  "texts": [
+   "あと、左手。じゅうだんごとくらいに、ぶらぶらさせてる。授業中もやってるよ。三時間目。"
+  ],
+  "input": {
+   "prompt": "あと、左手。じゅうだんごとくらいに、ぶらぶらさせてる。授業中もやってるよ。三時間目。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said in a long stone stairway up to a hilltop shrine, climbing, curious. It means: \"And you keep shaking out your left hand. Every ten steps or so. You do it in class too. Third period.\""
+  }
+ },
+ {
+  "key": "c3_tree.natsuki.c3_0372",
+  "ids": [
+   "c3_0372"
+  ],
+  "texts": [
+   "木曜にね、きみがバイトに行ったあと、なのはに聞いたの。写真撮りに来てもいいかって。"
+  ],
+  "input": {
+   "prompt": "木曜にね、きみがバイトに行ったあと、なのはに聞いたの。写真撮りに来てもいいかって。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said in a hilltop shrine under a huge blossoming cherry tree, outdoors, smiling. It means: \"I asked Nanoha on Thursday, after you'd gone to work, if I could come up and take pictures.\""
+  }
+ },
+ {
+  "key": "c3_tree.genji.c3_0377",
+  "ids": [
+   "c3_0377"
+  ],
+  "texts": [
+   "おお、こうへい。よう来た、よう来た。今年は花びらがひどくてのう。腰もひどいんじゃ。"
+  ],
+  "input": {
+   "prompt": "おお、こうへい。よう来た、よう来た。今年は花びらがひどくてのう。腰もひどいんじゃ。",
+   "voice": "Algenib",
+   "style_instructions": "An elderly Japanese man in his late 70s, the caretaker of a small hilltop shrine and the girl's grandfather. Warm, a little creaky, with a twinkly sense of humor; unhurried old-man speech. This line is said in a hilltop shrine under a huge blossoming cherry tree, outdoors, smiling. It means: \"Kōhei. Good, good. The petals are terrible this year. So is my back.\" Say the name Kōhei (こうへい) clearly."
+  }
+ },
+ {
+  "key": "c3_tea.natsuki.c3_0270",
+  "ids": [
+   "c3_0270"
+  ],
+  "texts": [
+   "よし！ お茶、ごちそうさまでした。あと、木も。ほうきも。"
+  ],
+  "input": {
+   "prompt": "よし！ お茶、ごちそうさまでした。あと、木も。ほうきも。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said in a hilltop shrine and its stone steps, outdoors, smiling. It means: \"Okay! Thanks for the tea. And the tree. And the broom.\""
+  }
+ },
+ {
+  "key": "c3_lunch.emi.c3_0285",
+  "ids": [
+   "c3_0285"
+  ],
+  "texts": [
+   "お邪魔だなんて！ 助かるわ。さあ、上がって、上がって。からあげ、食べてもらわなきゃ。あかねちゃんも、もう来てるから。"
+  ],
+  "input": {
+   "prompt": "お邪魔だなんて！ 助かるわ。さあ、上がって、上がって。からあげ、食べてもらわなきゃ。あかねちゃんも、もう来てるから。",
+   "voice": "Achernar",
+   "style_instructions": "A Japanese mother in her early 40s. Warm and bubbly, delighted to have guests, always feeding people. This line is said in a busy, cheerful family home at lunchtime, laughing. It means: \"Barging? You're saving me. Come in, come in, there's karaage that needs eating. Akane-chan's already here.\""
+  }
+ }
+]
