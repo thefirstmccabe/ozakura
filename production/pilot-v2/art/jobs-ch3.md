@@ -15,3 +15,8 @@
 | 4 | 0–3 | akane_home head edits sleepy/pout/tease/happy (1K; crop 531,43,1231,743 of seed 711) | 761–764 | 01a1977c-f4ac…, -f4eb…, -f4e5…, -f4ed… |
 | 4 | 4–5 | bg_shrine_steps | 771–772 | 01a1977c-f4ef…, -f4e9… |
 | 4 | 6–7 | bg_tachibana_living | 781–782 | 01a1977c-f4e7…, -f4e6… |
+| 5 | 0–1 | cg_window | 801–802 | 01a1978c-6522-7e52-8e9b-46aa6d785323, 01a1978c-6582-7103-9424-b307d392ca67 |
+| 5 | 2–3 | cg_tree_natsuki | 811–812 | 01a1978c-657f-7ec1-8132-84e6b381e79b, 01a1978c-6585-7a72-99ae-ba001266d939 |
+| 5 | 4–5 | cg_lunch | 821–822 | 01a1978c-6584-7ab0-8520-b6f133bd125b, 01a1978c-657d-79d3-aa05-5787bb27ae61 |
+| 6 | 0–1 | cg_window redraw from the seed-802 crop | 831–832 | 01a1978d-fed9…, 01a1978d-fedd… |
+| 7 | 0–1 | cg_window_sill (chin on arms, rabbit's back to us) from 832 | 841–842 | 01a1978f-595f-76d3-b732-8290c4bf9fdf, 01a1978f-595f-7682-bb60-410d558f9ce3 |
