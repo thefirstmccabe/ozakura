@@ -372,7 +372,7 @@ input{-webkit-user-select:text;user-select:text}
       <div class="tate" aria-hidden="true">大桜</div>
       <div class="stack">
         <h1>Ōzakura</h1>
-        <div class="sub">Pilot v2 · Chapters 1–2</div>
+        <div class="sub">Pilot v2 · Chapters 1–3</div>
         <nav class="menu">
           <button class="mi" id="mStart" type="button">Begin</button>
           <button class="mi" id="mCont" type="button">Continue</button>
@@ -432,21 +432,27 @@ const CHAR = {
   kohei:{h:69,v:.70,c:'#d4a97e',t:'#f4e8db'}, nanoha:{h:59,v:.733,c:'#8db6e6',t:'#e4eefb'}, natsuki:{h:63,v:.669,c:'#eb9660',t:'#fbe7d8'},
   akane:{h:60,v:.733,c:'#b9a5e8',t:'#ede6fa'}, ryosuke:{h:67,v:.714,c:'#62c1b8',t:'#daf2ef'}, rika:{h:61,v:.669,c:'#f38ba3',t:'#fde2e9'},
   yuzu:{h:61,v:.67,c:'#ec6067',t:'#fcdedf'}, kirishima:{h:71,v:.70,c:'#8a92e0',t:'#e3e5f9'}, takatsuki:{h:68,v:.70,c:'#93a6c2',t:'#e4eaf2'},
-  emi:{h:62,v:.70,c:'#e4b745',t:'#f8eed2'}, mio:{h:48,v:.75,c:'#86c983',t:'#e3f3e2'},
+  emi:{h:62,v:.70,c:'#e4b745',t:'#f8eed2'}, mio:{h:48,v:.62,c:'#86c983',t:'#e3f3e2'}, genji:{h:58,v:1.0,c:'#c9c2b0',t:'#f1ebe0'},
   teacher:{h:72,v:.71,c:'#c9c2b0',t:'#f1ebe0'}, manager:{c:'#c9c2b0',t:'#f1ebe0'}, classmate:{c:'#c9c2b0',t:'#f1ebe0'}, past_natsuki:{c:'#d4b472',t:'#f3ead3'}
 };
+/* sprite sets framed differently from the character's other sets (v measured the same way, by head size; Ch3, Nov 1) */
+const VSET = {nanoha_home:.82, emi_home:.66};
 /* every on-stage character shares one floor F inches below the bottom of the screen */
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
 /* sprites with empty space above the head (a shinai held up past it), as a fraction of the usual sprite height
    (outfit_sprite.py --headroom); they draw that much taller so the figure keeps its size and floor */
 const HEADROOM = {natsuki_teach_smile:.16, natsuki_teach_point:.16,
-  natsuki_kendo_smile:.035, natsuki_kendo_grin:.035, natsuki_kendo_laugh:.035, natsuki_kendo_smirk:.035, natsuki_kendo_surprised:.035, natsuki_kendo_blush:.035, natsuki_kendo_curious:.035, natsuki_kendo_wistful:.035, natsuki_kendo_tears:.035};
+  natsuki_kendo_smile:.035, natsuki_kendo_grin:.035, natsuki_kendo_laugh:.035, natsuki_kendo_smirk:.035, natsuki_kendo_surprised:.035, natsuki_kendo_blush:.035, natsuki_kendo_curious:.035, natsuki_kendo_wistful:.035, natsuki_kendo_tears:.035,
+  natsuki_track_smile:.035, natsuki_track_curious:.035, natsuki_track_wistful:.035, natsuki_track_laugh:.035, natsuki_track_grin:.035, natsuki_track_surprised:.035, natsuki_track_blush:.035, natsuki_track_smirk:.035};
 const NOWIN = new Set(['manager','classmate','past_natsuki']);       // no face window: no sprite, or a hidden face
-const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki'], cg_catch:['natsuki','kohei']};
+const CG_CAST = {cg_natsuki_intro:['natsuki'], cg_natsuki_intro_falter:['natsuki'], cg_collar:['nanoha','kohei'], cg_dream:['past_natsuki'], cg_title:['kohei','nanoha','natsuki'], cg_catch:['natsuki','kohei'],
+  cg_window:['nanoha'], cg_window_sill:['nanoha'], cg_window_sill_turn:['nanoha'], cg_tree_natsuki:['natsuki'], cg_lunch:['emi','nanoha','akane','mio','natsuki','genji']};
 /* sprites take on the light of the scene: night and evening backgrounds tint them */
 const BG_LIGHT = {bg_houses_night:'brightness(.8) saturate(.82) hue-rotate(-6deg)', bg_houses_night_lit:'brightness(.82) saturate(.84) hue-rotate(-6deg)', bg_classroom_evening:'sepia(.18) saturate(1.08) brightness(.97)',
-  bg_dojo_evening:'sepia(.2) saturate(1.1) brightness(.96)', bg_bridge_dusk:'sepia(.16) saturate(1.04) brightness(.9) hue-rotate(-4deg)'};
-const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4', cg_cold_mist:'img/live/cg_cold_mist.mp4'};   // living stills (2–4 s loops)
+  bg_dojo_evening:'sepia(.2) saturate(1.1) brightness(.96)', bg_bridge_dusk:'sepia(.16) saturate(1.04) brightness(.9) hue-rotate(-4deg)',
+  bg_fujisawa_living_night:'sepia(.14) saturate(1.04) brightness(.93)'};   // lamplit room at night [P] Nov 1
+const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4', cg_cold_mist:'img/live/cg_cold_mist.mp4',
+  cg_window_sill:'img/live/cg_window_sill.mp4', cg_window_sill_turn:'img/live/cg_window_sill_turn.mp4', cg_tree_natsuki:'img/live/cg_tree_natsuki.mp4', cg_lunch:'img/live/cg_lunch.mp4'};   // living stills (2–4 s loops)
 const POSX_W = {l:20, lc:34, c:50, rc:66, r:80}, POSX_N = {l:27, lc:38, c:50, rc:62, r:73};
 const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?POSX_N:POSX_W)[k]});
 const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
@@ -581,8 +587,8 @@ function sprImg(who){
   return el;
 }
 function stageH(){ const w=app.clientWidth,h=app.clientHeight; return Math.min(h, w*0.92); }
-function sizeSpr(el, who, spr){ const H=stageH(), c=CHAR[who]||{h:64,v:.7}, p=HEADROOM[spr||el.dataset.spr]||0;
-  el.style.height=Math.round(H*SCALE*c.h*c.v*(1+p))+'px'; el.style.bottom=Math.round(H*SCALE*(c.h*(1-c.v)-FLOOR))+'px'; }
+function sizeSpr(el, who, spr){ const H=stageH(), c=CHAR[who]||{h:64,v:.7}, k=spr||el.dataset.spr||'', p=HEADROOM[k]||0, v=VSET[k.split('_').slice(0,2).join('_')]||c.v;
+  el.style.height=Math.round(H*SCALE*c.h*v*(1+p))+'px'; el.style.bottom=Math.round(H*SCALE*(c.h*(1-v)-FLOOR))+'px'; }
 function layoutSprites(){ document.querySelectorAll('.spr').forEach(el=>sizeSpr(el, el.dataset.who)); }
 setBg.tok=0; setCg.tok=0;
 function setBg(name, tr){

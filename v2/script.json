@@ -14,7 +14,8 @@
 "emi": "Emi",
 "mio": "Mio",
 "past_natsuki": "???",
-"classmate": "Classmate"
+"classmate": "Classmate",
+"genji": "Genji"
 },
 "speakers_full": {
 "kohei": "Fujisawa Kōhei",
@@ -27,7 +28,8 @@
 "takatsuki": "Takatsuki Shō",
 "yuzu": "Shiina Yuzu",
 "emi": "Tachibana Emi",
-"mio": "Tachibana Mio"
+"mio": "Tachibana Mio",
+"genji": "Tachibana Genji"
 },
 "script": [
 {
@@ -5380,6 +5382,2136 @@
 {
 "t": "endchapter",
 "n": 2
+},
+{
+"t": "scene",
+"id": "c3_home",
+"title": "Home after ten"
+},
+{
+"t": "chapter",
+"n": 3,
+"title": "Windows"
+},
+{
+"t": "card",
+"text": "Thursday, April 10"
+},
+{
+"t": "bg",
+"name": "bg_houses_night",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "night"
+},
+{
+"t": "nar",
+"id": "c3_0309",
+"text": "Thursday is a shift. The manager says \"Lifesaver\" eleven times, which I think is a record."
+},
+{
+"t": "nar",
+"id": "c3_0310",
+"text": "At seven, Akane's photo of the empty container comes in right on schedule. A minute later, the close-up. There's the edge of somebody's sleeve in the corner of the second one."
+},
+{
+"t": "nar",
+"id": "c3_0058",
+"text": "It's after ten by the time I get home."
+},
+{
+"t": "nar",
+"id": "c3_0059",
+"text": "The light's on in our living room. Across the gap, Nanoha's upstairs window is dark, which isn't like her at ten o'clock."
+},
+{
+"t": "bg",
+"name": "bg_fujisawa_living_night",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0060",
+"text": "Akane's asleep on the sofa under a fleece blanket, curled up small, one sock half off. The TV's paused on a hospital drama, a surgeon frozen in the middle of a dramatic sentence."
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c3_0061",
+"text": "And Nanoha's sitting on the floor by the low table, in her house clothes with her hair down, reading one of my manga."
+},
+{
+"t": "say",
+"id": "c3_0062",
+"who": "nanoha",
+"text": "\"Welcome home.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0063",
+"who": "kohei",
+"text": "\"What happened?\"",
+"face": "surprised",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_tease"
+},
+{
+"t": "say",
+"id": "c3_0064",
+"who": "nanoha",
+"text": "\"'Welcome home' is customarily answered with 'I'm home.'\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0065",
+"who": "kohei",
+"text": "\"I'm home. What happened? Did she eat? Did she take her—\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0066",
+"who": "nanoha",
+"text": "\"She ate. She took them. We watched three episodes of a medical drama, and she criticized every doctor in it. One of them, she said, should be arrested.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0067",
+"text": "I'm already across the room, kneeling by the sofa, the back of my hand on Akane's forehead. Cool. Normal. Her breathing is slow and even."
+},
+{
+"t": "hide",
+"who": "nanoha"
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_sleepy",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c3_0070",
+"who": "akane",
+"text": "\"Onii-chan, you're hovering again.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0071",
+"text": "Her eyes are still closed."
+},
+{
+"t": "say",
+"id": "c3_0072",
+"who": "kohei",
+"text": "\"I'm kneeling.\"",
+"face": "deadpan",
+"full": true
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_sleepy"
+},
+{
+"t": "say",
+"id": "c3_0073",
+"who": "akane",
+"text": "\"Then kneel somewhere else. I'm asleep.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0074",
+"text": "She opens her eyes and squints up at me. She looks tired, but it's ten-at-night tired. Normal tired."
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_sleepy"
+},
+{
+"t": "say",
+"id": "c3_0075",
+"who": "akane",
+"text": "\"I got a little dizzy after school. On the stairs at the station. I sat down for ten minutes, and it went away.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0076",
+"who": "kohei",
+"text": "\"Why didn't you call me?\"",
+"face": "serious",
+"full": true
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0077",
+"who": "akane",
+"text": "\"You were at work.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0078",
+"who": "kohei",
+"text": "\"So? I'd have come.\"",
+"face": "serious",
+"full": true
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0079",
+"who": "akane",
+"text": "\"I know. That's why I didn't call.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0080",
+"text": "It lands somewhere I wasn't guarding."
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_tease"
+},
+{
+"t": "say",
+"id": "c3_0081",
+"who": "akane",
+"text": "\"So I texted Nanoha-chan instead, and she came right over. We even sent you the photos. Both of them.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0311",
+"text": "The sleeve in the corner of the second photo."
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_tease",
+"pos": "l"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile",
+"pos": "r"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_tease"
+},
+{
+"t": "say",
+"id": "c3_0082",
+"who": "nanoha",
+"text": "\"It wasn't a thing. We only came over here because your TV is bigger, and the surgeon is handsome.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_tease"
+},
+{
+"t": "say",
+"id": "c3_0083",
+"who": "akane",
+"text": "\"He's a terrible doctor, though.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_deadpan"
+},
+{
+"t": "say",
+"id": "c3_0084",
+"who": "nanoha",
+"text": "\"A terrible doctor. Handsome, though.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0085",
+"text": "It's always two against one in this house."
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0086",
+"who": "kohei",
+"text": "\"…Next time, call me anyway.\"",
+"face": "sad",
+"full": true
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_tease"
+},
+{
+"t": "say",
+"id": "c3_0087",
+"who": "akane",
+"text": "\"Only if you stop hovering.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0088",
+"text": "She pulls the blanket up over her head. Conversation over."
+},
+{
+"t": "hide",
+"who": "akane"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c3_0089",
+"text": "Nanoha gets up, closes my manga and puts it back on the shelf, exactly between volumes five and seven."
+},
+{
+"t": "say",
+"id": "c3_0090",
+"who": "kohei",
+"text": "\"Hey—\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0093",
+"who": "nanoha",
+"text": "\"Window?\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0094",
+"who": "kohei",
+"text": "\"…Window.\"",
+"face": "smile",
+"full": true
+},
+{
+"t": "hide",
+"who": "nanoha"
+},
+{
+"t": "scene",
+"id": "c3_window",
+"title": "The window"
+},
+{
+"t": "bg",
+"name": "bg_kohei_room_night",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0095",
+"text": "I take a shower. I put the lunch boxes to soak. I set the rice for tomorrow."
+},
+{
+"t": "nar",
+"id": "c3_0096",
+"text": "When I come upstairs, her light's on, and her window's open, and she's waiting."
+},
+{
+"t": "nar",
+"id": "c3_0097",
+"text": "Our rooms face each other across the gap between the houses, a gap so narrow that when we were little we ran a string between our windows with two paper cups, and were disappointed when it didn't work. We've passed a lot of books across it since."
+},
+{
+"t": "nar",
+"id": "c3_0099",
+"text": "I open my window. The night air is cool and smells like wet earth from the hill behind the houses."
+},
+{
+"t": "cg",
+"name": "cg_window",
+"tr": "slow"
+},
+{
+"t": "nar",
+"id": "c3_0100",
+"text": "Nanoha's leaning on her windowsill in her pajamas, her hair piled up in a bun on top of her head with the enormous soft scrunchie she's had since middle school."
+},
+{
+"t": "nar",
+"id": "c3_0101",
+"text": "She's holding up a white rabbit plushie in both hands, solemnly, just under her chin."
+},
+{
+"t": "say",
+"id": "c3_0102",
+"who": "kohei",
+"text": "\"…Who's that.\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0103",
+"who": "nanoha",
+"text": "\"{Usagi-san|Mr. Rabbit}.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0104",
+"who": "kohei",
+"text": "\"I know it's {Usagi-san|~Mr. Rabbit}. I bought you {Usagi-san|~Mr. Rabbit}.\"",
+"face": "deadpan",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0105",
+"who": "nanoha",
+"text": "\"He's in time-out.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0106",
+"text": "She sets him on the corner of the sill with his back to me. His little tail points straight at my window."
+},
+{
+"t": "say",
+"id": "c3_0107",
+"who": "kohei",
+"text": "\"What did he do?\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0108",
+"who": "nanoha",
+"text": "\"We don't discuss it.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0111",
+"who": "kohei",
+"text": "\"He's been in time-out on and off since you were ten.\"",
+"face": "smile",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0112",
+"who": "nanoha",
+"text": "\"He's a repeat offender.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0113",
+"text": "I lean out and reach across the gap. My fingertips just make it to his ear, and I turn him around to face the window."
+},
+{
+"t": "say",
+"id": "c3_0114",
+"who": "nanoha",
+"text": "\"Kōhei.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0115",
+"who": "kohei",
+"text": "\"He looked lonely.\"",
+"face": "smile",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0116",
+"who": "nanoha",
+"text": "\"You are undermining my authority.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0117",
+"who": "kohei",
+"text": "\"Your authority is a plushie.\"",
+"face": "grin",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0118",
+"who": "nanoha",
+"text": "\"My authority is absolute.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0119",
+"text": "She turns him back around without looking away from me. Her face is perfectly straight. Her eyes are laughing."
+},
+{
+"t": "nar",
+"id": "c3_0120",
+"text": "This is the version of her nobody else gets. Not Hoshikawa, not the first-years who bow to her in the hallway. Just me, across three feet of night."
+},
+{
+"t": "cg",
+"name": "cg_window_sill",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0312",
+"text": "She props her chin on her folded arms on the sill."
+},
+{
+"t": "say",
+"id": "c3_0122",
+"who": "nanoha",
+"text": "\"…Don't be mad at her.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0123",
+"who": "kohei",
+"text": "\"I'm not. I'd have come, that's all.\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0124",
+"who": "nanoha",
+"text": "\"I know. That's why.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0125",
+"who": "kohei",
+"text": "\"That's what Akane said.\"",
+"face": "deadpan",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0126",
+"who": "nanoha",
+"text": "\"Akane-chan's smart.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0127",
+"text": "The wind moves the trees on the hill. Somewhere down the lane, a cat yells at another cat."
+},
+{
+"t": "say",
+"id": "c3_0128",
+"who": "kohei",
+"text": "\"If something happened, and I wasn't there—\"",
+"face": "serious",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0129",
+"who": "nanoha",
+"text": "\"Then I'd be there. Or Mom. Or Dad. Or Grandpa.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0130",
+"who": "nanoha",
+"text": "\"You're not the only person who loves her, Kōhei.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0131",
+"text": "I don't say anything. Anything I could say to that is either an argument or something worse."
+},
+{
+"t": "say",
+"id": "c3_0313",
+"who": "kohei",
+"text": "\"…Thanks. For tonight.\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "cg",
+"name": "cg_window_sill_turn",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0314",
+"text": "She looks at me for a second. Then she reaches over and turns {Usagi-san|~Mr. Rabbit} a quarter turn, so he's facing the curtain instead."
+},
+{
+"t": "say",
+"id": "c3_0315",
+"who": "nanoha",
+"text": "\"His sentence has been reduced. For good behavior.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0321",
+"text": "I think about mentioning that Mizuno might come up to photograph the tree. Then the cat down the lane starts up again, and she laughs, and it doesn't come up."
+},
+{
+"t": "say",
+"id": "c3_0162",
+"who": "nanoha",
+"text": "\"Good night, Kō-chan.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0322",
+"who": "kohei",
+"text": "\"Night, {Chibi|~shorty}.\"",
+"face": "smile",
+"full": true
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0163",
+"text": "She slides her window shut, and her light goes out."
+},
+{
+"t": "nar",
+"id": "c3_0164",
+"text": "On her side of the glass, the rabbit is still facing the curtain."
+},
+{
+"t": "nar",
+"id": "c3_0323",
+"text": "I leave my window open a while longer."
+},
+{
+"t": "scene",
+"id": "c3_saturday",
+"title": "Saturday practice"
+},
+{
+"t": "card",
+"text": "Saturday, April 12"
+},
+{
+"t": "bg",
+"name": "bg_dojo",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "practice"
+},
+{
+"t": "nar",
+"id": "c3_0169",
+"text": "Saturday practice is like any Saturday: warm-ups, practice swings, drills until my forearms burn."
+},
+{
+"t": "nar",
+"id": "c3_0324",
+"text": "Takatsuki was on the floor before anyone, doing his practice swings alone at the far end. Saturday doesn't change that either."
+},
+{
+"t": "show",
+"who": "kirishima",
+"spr": "kirishima_kendo_calm",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c3_0325",
+"who": "kirishima",
+"text": "\"Last half hour, free sparring. Fujisawa. Mizuno.\"",
+"full": true
+},
+{
+"t": "hide",
+"who": "kirishima"
+},
+{
+"t": "nar",
+"id": "c3_0326",
+"text": "She's good. I knew that on Wednesday."
+},
+{
+"t": "nar",
+"id": "c3_0327",
+"text": "I still take most of what there is to take. Her strikes are fast and clean, but I've got the reach, and when I come in hard she gives ground."
+},
+{
+"t": "nar",
+"id": "c3_0328",
+"text": "But she's always already there. Every feint I throw, she waits out. Every time I start to move, her sword tip is already where I'm going."
+},
+{
+"t": "nar",
+"id": "c3_0329",
+"text": "And I can't read her at all. I watch her shoulders, her hands, the tip of her sword. Nothing tells me anything until she's moving."
+},
+{
+"t": "nar",
+"id": "c3_0172",
+"text": "Kirishima-senpai calls time. We bow."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_grin",
+"pos": "r"
+},
+{
+"t": "nar",
+"id": "c3_0173",
+"text": "Afterward, kneeling against the wall with her helmet off, Mizuno looks as pleased with herself as if she'd won."
+},
+{
+"t": "say",
+"id": "c3_0330",
+"who": "kohei",
+"text": "\"You didn't get much.\"",
+"face": "kendo_smile",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_smile"
+},
+{
+"t": "say",
+"id": "c3_0331",
+"who": "natsuki",
+"text": "\"You lift your right heel before you feint. Every time.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "takatsuki",
+"spr": "takatsuki_kendo_calm",
+"pos": "l"
+},
+{
+"t": "say",
+"id": "c3_0332",
+"who": "takatsuki",
+"text": "\"Fujisawa. Mizuno still drops her left shoulder before {men|~head strikes}. You did not see it once. I am telling you so that it is fair.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_surprised"
+},
+{
+"t": "say",
+"id": "c3_0333",
+"who": "natsuki",
+"text": "\"Takatsuki-kun! Whose side are you on?\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0334",
+"text": "He bows to both of us and goes back to his practice swings."
+},
+{
+"t": "hide",
+"who": "takatsuki"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_curious"
+},
+{
+"t": "say",
+"id": "c3_0335",
+"who": "natsuki",
+"text": "\"Are you going up to the shrine after this?\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0336",
+"who": "kohei",
+"text": "\"Trash bags.\"",
+"face": "kendo_neutral",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_smile"
+},
+{
+"t": "say",
+"id": "c3_0337",
+"who": "natsuki",
+"text": "\"I'm going that way anyway.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0339",
+"who": "kohei",
+"text": "\"The station's the other way.\"",
+"face": "kendo_neutral",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_kendo_grin"
+},
+{
+"t": "say",
+"id": "c3_0340",
+"who": "natsuki",
+"text": "\"Then I'm taking the long way.\"",
+"full": true
+},
+{
+"t": "hideall"
+},
+{
+"t": "scene",
+"id": "c3_steps",
+"title": "The shrine steps"
+},
+{
+"t": "bg",
+"name": "bg_shrine_steps",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "natsuki"
+},
+{
+"t": "nar",
+"id": "c3_0341",
+"text": "The way up to the shrine starts a little past our houses: a stone stairway through the cedars, steep enough that the old people in the neighborhood count the landings out loud."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c3_0342",
+"text": "Mizuno has changed into a navy track shirt and dark sweats, her hair still up from practice. A camera hangs from a strap around her neck. A real one this time, black and heavy, with a lens that probably cost more than my bike."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_curious"
+},
+{
+"t": "say",
+"id": "c3_0343",
+"who": "natsuki",
+"text": "\"On the bridge, you asked me something.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0344",
+"who": "kohei",
+"text": "\"Did I?\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile"
+},
+{
+"t": "say",
+"id": "c3_0345",
+"who": "natsuki",
+"text": "\"'What is?' And I didn't answer.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_wistful"
+},
+{
+"t": "say",
+"id": "c3_0346",
+"who": "natsuki",
+"text": "\"My project. It's you, doing one thing just because it's fun.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0347",
+"text": "She says it fast and quiet, to the step in front of her."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_grin"
+},
+{
+"t": "say",
+"id": "c3_0348",
+"who": "natsuki",
+"text": "\"With progress reports.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0349",
+"who": "kohei",
+"text": "\"It's trash bags.\"",
+"face": "deadpan",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_laugh"
+},
+{
+"t": "say",
+"id": "c3_0350",
+"who": "natsuki",
+"text": "\"Trash bags count. In Niigata I signed up for a rice-planting day because they said there'd be free {onigiri|rice balls}. I lost both boots in the mud and walked home in my socks.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0351",
+"text": "I laugh before I can decide not to."
+},
+{
+"t": "nar",
+"id": "c3_0352",
+"text": "Two landings up, she gives me the same look she gave me at lunch on Monday."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_curious"
+},
+{
+"t": "say",
+"id": "c3_0353",
+"who": "natsuki",
+"text": "\"How much did you sleep?\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0354",
+"who": "kohei",
+"text": "\"Enough.\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile"
+},
+{
+"t": "say",
+"id": "c3_0355",
+"who": "natsuki",
+"text": "\"Four hours.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0356",
+"who": "kohei",
+"text": "\"…Four and a half.\"",
+"face": "surprised",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_curious"
+},
+{
+"t": "say",
+"id": "c3_0357",
+"who": "natsuki",
+"text": "\"And you keep shaking out your left hand. Every ten steps or so. You do it in class too. Third period.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0358",
+"text": "I hadn't noticed. I stop doing it. A few steps later I catch myself doing it again. She sees me catch it, and this time I can't stop laughing."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_grin"
+},
+{
+"t": "nar",
+"id": "c3_0359",
+"text": "She turns on the landing and lifts the camera before I can get a hand up."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_grin"
+},
+{
+"t": "say",
+"id": "c3_0360",
+"who": "natsuki",
+"text": "\"For the progress report.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0361",
+"text": "She checks the screen, then holds it out to me."
+},
+{
+"t": "nar",
+"id": "c3_0362",
+"text": "It's me on the steps below her, laughing. Not the polite kind. My eyes are half shut and my mouth is open. I look like somebody's little brother."
+},
+{
+"t": "say",
+"id": "c3_0363",
+"who": "kohei",
+"text": "\"Delete that.\"",
+"face": "flustered",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_grin"
+},
+{
+"t": "say",
+"id": "c3_0364",
+"who": "natsuki",
+"text": "\"Nope. It's a good one.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile"
+},
+{
+"t": "nar",
+"id": "c3_0365",
+"text": "I don't look at the picture for long. I look at her instead. She's pulled the camera back against her chest with both hands, a strand of hair stuck to her neck from practice, waiting to see what I'll say."
+},
+{
+"t": "nar",
+"id": "c3_0366",
+"text": "I look a second longer than I mean to. Then I look at the steps."
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c3_0367",
+"text": "I don't notice I've stopped being tired until we reach the top."
+},
+{
+"t": "scene",
+"id": "c3_tree",
+"title": "The Great Cherry"
+},
+{
+"t": "bg",
+"name": "bg_shrine_tree_day",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "nanoha"
+},
+{
+"t": "nar",
+"id": "c3_0179",
+"text": "The steps come out of the cedars under a weathered {torii|shrine gate}, and then the trees open up and you're standing in front of the Ōzakura."
+},
+{
+"t": "nar",
+"id": "c3_0181",
+"text": "People who see it for the first time always stop walking."
+},
+{
+"t": "nar",
+"id": "c3_0182",
+"text": "It's that big. The trunk's so wide three adults couldn't link arms around it, gnarled and mossy and split in places like old stone. The branches spread out over the whole hilltop like a roof. One of them reaches out low and long, almost level, as if it's offering you its arm."
+},
+{
+"t": "nar",
+"id": "c3_0183",
+"text": "And in April, every inch of it is in bloom."
+},
+{
+"t": "nar",
+"id": "c3_0184",
+"text": "Below it, the big flat boulder we used to climb on as kids. Below that, the whole valley: the river, the rooftops of Shirasawa, the mountains folded blue behind."
+},
+{
+"t": "cg",
+"name": "cg_tree_natsuki",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0368",
+"text": "Mizuno stops dead, like everyone does."
+},
+{
+"t": "nar",
+"id": "c3_0369",
+"text": "For about two seconds. Then the camera's up and she's working: crouching for an angle, stepping back, crouching again, the shutter going like she's afraid the tree will leave."
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile",
+"pos": "l"
+},
+{
+"t": "nar",
+"id": "c3_0185",
+"text": "Nanoha's on the stone path in her weekend clothes, sweeping petals into neat pink drifts. A second broom is leaning against the stone lantern beside her."
+},
+{
+"t": "nar",
+"id": "c3_0370",
+"text": "She sees us and doesn't look surprised. She picks up the second broom, walks over and hands it to Mizuno without a word, smiling."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_laugh",
+"pos": "r"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_laugh"
+},
+{
+"t": "say",
+"id": "c3_0371",
+"who": "natsuki",
+"text": "\"Ha. I guess I'm working.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile"
+},
+{
+"t": "say",
+"id": "c3_0372",
+"who": "natsuki",
+"text": "\"I asked Nanoha on Thursday, after you'd gone to work, if I could come up and take pictures.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0373",
+"text": "Thursday. After school. Before the window."
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0374",
+"who": "nanoha",
+"text": "\"Grandpa said yes before I'd finished asking.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0375",
+"text": "I take the trash bags."
+},
+{
+"t": "hideall"
+},
+{
+"t": "show",
+"who": "genji",
+"spr": "genji_shrine_smile",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c3_0376",
+"text": "Nanoha's grandfather is sitting on the step of the shrine office with one hand pressed to the small of his back."
+},
+{
+"t": "say",
+"id": "c3_0377",
+"who": "genji",
+"text": "\"Kōhei. Good, good. The petals are terrible this year. So is my back.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0378",
+"who": "kohei",
+"text": "\"Only on days with petals, I heard.\"",
+"face": "smile",
+"full": true
+},
+{
+"t": "show",
+"who": "genji",
+"spr": "genji_shrine_grin"
+},
+{
+"t": "say",
+"id": "c3_0379",
+"who": "genji",
+"text": "\"It's a very convenient back.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0380",
+"who": "genji",
+"text": "\"And you're the young lady with the camera. Take as many as you like. The tree doesn't mind.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0381",
+"who": "natsuki",
+"text": "\"Thank you!\"",
+"face": "track_smile",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0382",
+"who": "genji",
+"text": "\"Nanoha. The tea's in the office. Bring cups for everyone.\"",
+"full": true
+},
+{
+"t": "hide",
+"who": "genji"
+},
+{
+"t": "nar",
+"id": "c3_0383",
+"text": "We sweep. Mizuno sweeps fast and badly, and stops every few minutes to take a picture: moss on a lantern, Nanoha's neat drifts, her own sneakers half buried in petals."
+},
+{
+"t": "nar",
+"id": "c3_0196",
+"text": "The wind comes up off the valley, and the tree lets go of another few thousand petals and undoes half our work. Nanoha says \"Rude\" to it, politely, on her way to the office."
+},
+{
+"t": "nar",
+"id": "c3_0384",
+"text": "When the bags are full, I carry them past the low branch."
+},
+{
+"t": "bgm",
+"name": "memory"
+},
+{
+"t": "nar",
+"id": "c3_0385",
+"text": "Under it, for a second, the air smells like snow."
+},
+{
+"t": "nar",
+"id": "c3_0386",
+"text": "In April. Cold and clean. And the branch is lower than it should be, low enough that I almost duck."
+},
+{
+"t": "nar",
+"id": "c3_0387",
+"text": "Then it's gone. The branch is where it always is. It's warm. The bags are heavy."
+},
+{
+"t": "nar",
+"id": "c3_0388",
+"text": "Mizuno's a few steps off with the camera up, pointed at the branch, at me. She lowers it. She doesn't take the shot."
+},
+{
+"t": "bgm",
+"name": null
+},
+{
+"t": "nar",
+"id": "c3_0259",
+"text": "Nanoha has stopped on the path halfway back from the office, Grandpa's thermos held against her chest with both arms."
+},
+{
+"t": "nar",
+"id": "c3_0260",
+"text": "She isn't looking at us. She's looking at the low branch, at a spot just under it."
+},
+{
+"t": "cg",
+"name": "cg_tree_light",
+"tr": "fade"
+},
+{
+"t": "say",
+"id": "c3_0263",
+"who": "nanoha",
+"text": "\"…You came back.\"",
+"face": "home_surprised",
+"full": true
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_surprised",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c3_0389",
+"who": "kohei",
+"text": "\"What did you say?\"",
+"face": "surprised",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0266",
+"who": "nanoha",
+"text": "\"Mm? A petal. A big one went right past me.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0267",
+"text": "She smiles. It's a perfectly good smile. I've known her for sixteen years, and I'm almost sure it's real."
+},
+{
+"t": "hide",
+"who": "nanoha"
+},
+{
+"t": "scene",
+"id": "c3_tea",
+"title": "Tea, and the steps"
+},
+{
+"t": "bgm",
+"name": "nanoha"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile",
+"pos": "r"
+},
+{
+"t": "show",
+"who": "genji",
+"spr": "genji_shrine_smile",
+"pos": "l"
+},
+{
+"t": "nar",
+"id": "c3_0268",
+"text": "Grandpa's tea is as bitter as ever. Mizuno drinks the whole cup anyway."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_laugh"
+},
+{
+"t": "say",
+"id": "c3_0390",
+"who": "natsuki",
+"text": "\"That's horrible. Can I have more?\"",
+"full": true
+},
+{
+"t": "show",
+"who": "genji",
+"spr": "genji_shrine_grin"
+},
+{
+"t": "say",
+"id": "c3_0391",
+"who": "genji",
+"text": "\"Ha! This one'll do.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0392",
+"who": "kohei",
+"text": "\"Back there. You didn't take the picture.\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_laugh"
+},
+{
+"t": "say",
+"id": "c3_0393",
+"who": "natsuki",
+"text": "\"It wasn't a good one! Too many petals.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0394",
+"text": "She holds her cup out to Grandpa for a third."
+},
+{
+"t": "hideall"
+},
+{
+"t": "bg",
+"name": "bg_shrine_steps",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0269",
+"text": "When the bags are tied off, we all go down together, Grandpa in front with one hand on the old rope rail."
+},
+{
+"t": "show",
+"who": "genji",
+"spr": "genji_shrine_surprised",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c3_0395",
+"text": "Halfway down, his foot catches the lip of a step and he lurches."
+},
+{
+"t": "say",
+"id": "c3_0396",
+"who": "genji",
+"text": "\"Oop— just stopping for a rest. Just stopping for a rest.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0397",
+"who": "nanoha",
+"text": "\"Just stopping for a rest.\"",
+"face": "home_smile",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0398",
+"text": "Nanoha says it right behind him, without looking up. He sits down on the step for a moment, as if that had been the plan all along, then gets up and keeps going."
+},
+{
+"t": "show",
+"who": "genji",
+"spr": "genji_shrine_smile",
+"pos": "l"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_curious",
+"pos": "r"
+},
+{
+"t": "say",
+"id": "c3_0399",
+"who": "natsuki",
+"text": "\"Wait. What was that? Is that a ghost thing?\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0400",
+"text": "She sounds delighted."
+},
+{
+"t": "say",
+"id": "c3_0401",
+"who": "genji",
+"text": "\"Looks like rain tomorrow.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0402",
+"text": "I've heard them say it on these steps my whole life. I've never once asked."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_curious"
+},
+{
+"t": "say",
+"id": "c3_0403",
+"who": "natsuki",
+"text": "\"Nanoha?\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0404",
+"who": "nanoha",
+"text": "\"Grandpa's right. It does look like rain.\"",
+"face": "home_smile",
+"full": true
+},
+{
+"t": "hideall"
+},
+{
+"t": "nar",
+"id": "c3_0405",
+"text": "At the bottom of the steps, Mizuno shoulders her practice bag."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile",
+"pos": "r"
+},
+{
+"t": "say",
+"id": "c3_0270",
+"who": "natsuki",
+"text": "\"Okay! Thanks for the tea. And the tree. And the broom.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile",
+"pos": "l"
+},
+{
+"t": "say",
+"id": "c3_0271",
+"who": "nanoha",
+"text": "\"Natsuki-san. Have you eaten lunch?\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_surprised"
+},
+{
+"t": "say",
+"id": "c3_0272",
+"who": "natsuki",
+"text": "\"Eh? Not yet. I was going to grab something at the convenience store by the—\"",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0273",
+"who": "nanoha",
+"text": "\"Come eat at our house. Mom always makes too much.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_tease"
+},
+{
+"t": "say",
+"id": "c3_0274",
+"who": "nanoha",
+"text": "\"It's a sickness.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "nar",
+"id": "c3_0275",
+"text": "I look at Nanoha. She doesn't look at me."
+},
+{
+"t": "nar",
+"id": "c3_0276",
+"text": "Mizuno stands there with her bag half on her shoulder. For a second she looks younger than she did in front of the class on Monday, like a kid who's been picked first in gym and doesn't know what to do about it."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_blush"
+},
+{
+"t": "say",
+"id": "c3_0277",
+"who": "natsuki",
+"text": "\"…Really? I can come?\"",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_happy"
+},
+{
+"t": "say",
+"id": "c3_0278",
+"who": "nanoha",
+"text": "\"You're already invited. It's decided.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_laugh"
+},
+{
+"t": "say",
+"id": "c3_0279",
+"who": "natsuki",
+"text": "\"Okay. Yes! But I smell like a kendo glove.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "nanoha",
+"spr": "nanoha_home_smile"
+},
+{
+"t": "say",
+"id": "c3_0280",
+"who": "nanoha",
+"text": "\"Mom won't mind. Mio will, but only because she'll want to fight you at Street Brawlers.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_curious"
+},
+{
+"t": "say",
+"id": "c3_0281",
+"who": "natsuki",
+"text": "\"Who's Mio? Is she good?\"",
+"full": true
+},
+{
+"t": "hideall"
+},
+{
+"t": "scene",
+"id": "c3_lunch",
+"title": "Lunch at the Tachibanas'"
+},
+{
+"t": "bg",
+"name": "bg_houses_day",
+"tr": "fade"
+},
+{
+"t": "bgm",
+"name": "daily"
+},
+{
+"t": "show",
+"who": "emi",
+"spr": "emi_home_smile",
+"pos": "c"
+},
+{
+"t": "nar",
+"id": "c3_0282",
+"text": "The Tachibanas' front door is already open when we get down the hill. Auntie Emi is standing in it in her yellow apron, as if she'd been expecting exactly this many people."
+},
+{
+"t": "say",
+"id": "c3_0283",
+"who": "emi",
+"text": "\"Kōhei-kun, welcome home! And— oh! A new friend!\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0284",
+"who": "natsuki",
+"text": "\"Mizuno Natsuki! Sorry for barging in—\"",
+"face": "track_smile",
+"full": true
+},
+{
+"t": "show",
+"who": "emi",
+"spr": "emi_home_laugh"
+},
+{
+"t": "say",
+"id": "c3_0285",
+"who": "emi",
+"text": "\"Barging? You're saving me. Come in, come in, there's {karaage|~fried chicken} that needs eating. Akane-chan's already here.\"",
+"full": true
+},
+{
+"t": "bg",
+"name": "bg_tachibana_living",
+"tr": "fade"
+},
+{
+"t": "show",
+"who": "mio",
+"spr": "mio_home_smug",
+"pos": "c"
+},
+{
+"t": "say",
+"id": "c3_0406",
+"who": "mio",
+"text": "\"Kō-nii. Sit there.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0407",
+"who": "kohei",
+"text": "\"Yes, ma'am.\"",
+"face": "smile",
+"full": true
+},
+{
+"t": "show",
+"who": "mio",
+"spr": "mio_home_surprised"
+},
+{
+"t": "say",
+"id": "c3_0408",
+"who": "mio",
+"text": "\"Who's that?\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0409",
+"who": "natsuki",
+"text": "\"Mizuno Natsuki. I hear you play Street Brawlers.\"",
+"face": "track_grin",
+"full": true
+},
+{
+"t": "show",
+"who": "mio",
+"spr": "mio_home_smug"
+},
+{
+"t": "say",
+"id": "c3_0410",
+"who": "mio",
+"text": "\"Mio is the best in this house.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0289",
+"who": "natsuki",
+"text": "\"I main Kagero.\"",
+"face": "track_smile",
+"full": true
+},
+{
+"t": "show",
+"who": "mio",
+"spr": "mio_home_pout"
+},
+{
+"t": "say",
+"id": "c3_0290",
+"who": "mio",
+"text": "\"Kagero is for cowards.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0291",
+"who": "natsuki",
+"text": "\"Kagero is for winners, Mio-chan. After lunch. You and me.\"",
+"face": "track_grin",
+"full": true
+},
+{
+"t": "show",
+"who": "mio",
+"spr": "mio_home_grin"
+},
+{
+"t": "say",
+"id": "c3_0292",
+"who": "mio",
+"text": "\"You're ON.\"",
+"full": true
+},
+{
+"t": "hideall"
+},
+{
+"t": "cg",
+"name": "cg_lunch",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0411",
+"text": "Auntie Emi has made enough for twelve."
+},
+{
+"t": "nar",
+"id": "c3_0412",
+"text": "{Karaage|~fried chicken} piled up like a small mountain. A stack of {onigiri|~rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|~braised burdock}, which explains a lot of Monday mornings. Miso soup for everyone."
+},
+{
+"t": "nar",
+"id": "c3_0413",
+"text": "Grandpa on my right. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work, so his place has the extra soup bowls."
+},
+{
+"t": "say",
+"id": "c3_0414",
+"who": "emi",
+"text": "\"Everyone, hands together!\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0415",
+"who": "mio",
+"text": "\"{Itadakimasu|let's eat}!\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0416",
+"text": "Everybody says it a beat behind her. Mizuno says it loudest of all."
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_smile",
+"pos": "l"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile",
+"pos": "r"
+},
+{
+"t": "say",
+"id": "c3_0417",
+"who": "akane",
+"text": "\"So you're Natsuki-san. I heard you took a point off Onii-chan.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_surprised"
+},
+{
+"t": "say",
+"id": "c3_0418",
+"who": "natsuki",
+"text": "\"He told you that?\"",
+"full": true
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_tease"
+},
+{
+"t": "say",
+"id": "c3_0419",
+"who": "akane",
+"text": "\"No. He said he had 'a bad Wednesday.' Nanoha-chan says the whole class knows.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0420",
+"who": "kohei",
+"text": "\"Traitors. Both of you.\"",
+"face": "annoyed",
+"full": true
+},
+{
+"t": "show",
+"who": "akane",
+"spr": "akane_home_happy"
+},
+{
+"t": "say",
+"id": "c3_0421",
+"who": "akane",
+"text": "\"Have some {karaage|~fried chicken}, Onii-chan.\"",
+"full": true
+},
+{
+"t": "hideall"
+},
+{
+"t": "nar",
+"id": "c3_0422",
+"text": "After lunch, the TV."
+},
+{
+"t": "show",
+"who": "mio",
+"spr": "mio_home_grin",
+"pos": "l"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_grin",
+"pos": "r"
+},
+{
+"t": "nar",
+"id": "c3_0423",
+"text": "Mio plays at full volume and narrates every combo. Mizuno doesn't say a word. She just waits, and every time Mio jumps in, Kagero is already standing where she lands."
+},
+{
+"t": "nar",
+"id": "c3_0424",
+"text": "She wins three in a row."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smirk"
+},
+{
+"t": "say",
+"id": "c3_0425",
+"who": "natsuki",
+"text": "\"Kagero says thanks for playing.\"",
+"full": true
+},
+{
+"t": "show",
+"who": "mio",
+"spr": "mio_home_pout"
+},
+{
+"t": "say",
+"id": "c3_0426",
+"who": "mio",
+"text": "\"Natsuki-nee, again!\"",
+"full": true
+},
+{
+"t": "hideall"
+},
+{
+"t": "bg",
+"name": "bg_houses_day",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0428",
+"text": "At three, Mizuno has to go. She thanks Auntie Emi twice, promises Mio a rematch, and thanks Auntie Emi a third time at the gate."
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_smile",
+"pos": "c"
+},
+{
+"t": "show",
+"who": "natsuki",
+"spr": "natsuki_track_laugh"
+},
+{
+"t": "say",
+"id": "c3_0429",
+"who": "natsuki",
+"text": "\"See you, Fujisawa! Progress reports!\"",
+"full": true
+},
+{
+"t": "hide",
+"who": "natsuki"
+},
+{
+"t": "nar",
+"id": "c3_0430",
+"text": "At the corner she waves her whole arm over her head, the way she did on the bridge, and then she's gone toward the station."
+},
+{
+"t": "nar",
+"id": "c3_0431",
+"text": "I cross the ten feet home."
+},
+{
+"t": "bgm",
+"name": "title"
+},
+{
+"t": "nar",
+"id": "c3_0306",
+"text": "Above us, up on the hill, the Ōzakura is in full bloom, the way it is every April. Pink against blue. Perfectly ordinary."
+},
+{
+"t": "nar",
+"id": "c3_0308",
+"text": "I tell myself that all the way to the door."
+},
+{
+"t": "bgm",
+"name": null
+},
+{
+"t": "bg",
+"name": "black",
+"tr": "slow"
+},
+{
+"t": "wait",
+"s": 1.0
+},
+{
+"t": "endchapter",
+"n": 3
 }
 ],
 "notes": {
@@ -5397,6 +7529,11 @@
 "kote": "The padded kendo gloves, and the strike to the wrist they protect (usually the right wrist). As a call, \"Kote!\" names the target as the strike lands.",
 "debana": "Striking at the very moment the opponent starts an attack, before it lands. Debana-kote is that strike to the wrist.",
 "dō": "The kendo chest protector, and the strike to the side of the body it protects. As a call, \"Dō!\" names the target as the strike lands.",
-"zunda mochi": "Rice cakes covered in a sweet, bright-green paste of mashed edamame; a specialty of Sendai."
+"zunda mochi": "Rice cakes covered in a sweet, bright-green paste of mashed edamame; a specialty of Sendai.",
+"usagi-san": "Usagi means rabbit. Adding -san, the polite suffix for people, is how small children name a stuffed animal, like \"Mr. Rabbit.\"",
+"onigiri": "Rice balls: a handful of rice pressed into a triangle or round, often with a filling (pickled plum, salmon, tuna) and wrapped in a strip of dried seaweed.",
+"torii": "The gate at the entrance to a Shinto shrine: two upright posts and two crossbeams, often painted vermilion. Walking through it marks the step from the ordinary world onto the shrine's grounds.",
+"tamagoyaki": "A rolled omelet, made by cooking thin layers of seasoned egg one on top of another and rolling them up, then cut into slices. Usually a little sweet.",
+"itadakimasu": "Said before eating, often with hands pressed together: literally \"I humbly receive.\" It thanks everyone and everything that went into the meal."
 }
 }

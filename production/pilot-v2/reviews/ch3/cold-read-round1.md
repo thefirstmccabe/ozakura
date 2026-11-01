@@ -26,7 +26,7 @@ Ends up with / wants / dream woman (leading answer, %).
 ## Shared flags and what was done
 1. **image_13 read as the sun on the horizon (all three).** The light was redrawn in code: now a small cool-white point just under the low branch where it leaves the trunk, against dark bark (`art/ch3/tree_light.py`).
 2. **The branch "at shoulder height" is drawn well above head height (all three).** Text: c3_0182 drops "at shoulder height"; the "lower than it should be, low enough that I almost duck" moment stays.
-3. **image_14 (all three):** "Grandpa at the head of the table" → "Grandpa at the far end." Akane's lilac hair and Nanoha's loose hair surprised them; in the game both are on screen as sprites earlier in Ch3, so this is a packet effect (noted for Story: the text never describes Akane).
+3. **image_14 (all three):** "Grandpa at the head of the table" → "Grandpa at the far end," then "Grandpa on my right." at the build check (the CG seats him beside Kōhei, not across from him). Akane's lilac hair and Nanoha's loose hair surprised them; in the game both are on screen as sprites earlier in Ch3, so this is a packet effect (noted for Story: the text never describes Akane).
 4. **image_11 never shows the quarter turn (two readers).** New CG `cg_window_sill_turn` (rabbit turned, seed 852, pasted back over 842 inside the rabbit's box) from c3_0314; the edit model would only turn him toward the curtain, so c3_0314/c3_0164 now say "facing the curtain" [P].
 5. **image_10 "at arm's length" vs held under her chin (one reader):** c3_0101 now matches the art.
 6. **Emi's line is stock (all three):** c3_0285 rewritten so she feeds people instead of describing herself.
