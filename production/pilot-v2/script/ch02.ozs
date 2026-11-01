@@ -11,7 +11,7 @@
 #                               and spoken ones are voiced when the panel opens.
 # Dialogue pass (Oct 24): diagnosis, rewrite and overcorrection check in production/pilot-v2/reviews/ch2/.
 
-== c2_tuesday | Tuesday night at Hoshino Kitchen
+== c2_tuesday | Tuesday night at Kitchen Komugi
 @chapter 2 | Kendo
 @card Tuesday, April 8
 @bg bg_classroom_day
@@ -21,7 +21,7 @@
 > When I turn around, she's always looking at the board.  #c2_0003
 @bg bg_restaurant_night
 @wear kohei work
-> Tuesday is also a shift. Five-thirty to close at Hoshino Kitchen, the family restaurant by the station: the dish pit, the drink bar, and the register whenever the register needs a body.  #c2_0004
+> Tuesday is also a shift. Five-thirty to close at Kitchen Komugi, the family restaurant by the station: the dish pit, the drink bar, and the register whenever the register needs a body.  #c2_0004
 manager: "Fujisawa-kun! Table four wants the check, table nine wants water, and the dishwasher's making the noise again!" || ふじさわくん！ 四番さんお会計、九番さんお水、あと食洗機がまたあの音出してる！  #c2_0005
 kohei(neutral): "On it." || 今、行きます。  #c2_0006
 manager: "Lifesaver!" || 助かるー！  #c2_0007
@@ -33,7 +33,7 @@ manager: "Lifesaver!" || 助かるー！  #c2_0007
 > At eight, the automatic door slides open on five girls from Two-B, still in uniform and still loud from karaoke. Mizuno's in the middle of them.  #c2_0010
 classmate: "Nacchan, you have to get the strawberry parfait. Everybody gets the parfait." || なっちゃん、いちごパフェは絶対だよ。みんな頼むんだから。  #c2_0012
 natsuki<surprised>: "…Fujisawa?" || ……ふじさわ？  #c2_0014
-> I'm holding a tray of empty glasses and wearing the Hoshino Kitchen apron, the one with a cartoon chef on the pocket.  #c2_0015
+> I'm holding a tray of empty glasses and wearing the Kitchen Komugi apron, the one with a cartoon chef on the pocket.  #c2_0015
 natsuki<grin>: "You work here." || ここでバイトしてるんだ。  #c2_0016
 kohei(neutral): "Three nights a week." || 週に三日な。  #c2_0017
 natsuki<curious>: "And you tie your apron like a {hakama|pleated kendo trousers}." || しかも、エプロンを袴みたいに結んでる。  #c2_0018

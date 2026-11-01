@@ -178,7 +178,7 @@
   "id": "c1_0046",
   "who": "akane",
   "ja": "なのはちゃんが、きんぴら持ってきてくれたんだもん！",
-  "en": "\"Nanoha-chan brought kinpira!\"",
+  "en": "\"Nanoha-chan brought {kinpira|braised burdock}!\"",
   "scene": "c1_morning"
  },
  {
@@ -471,8 +471,8 @@
  {
   "id": "c1_0110",
   "who": "kohei",
-  "ja": "おはよう、ときわ。",
-  "en": "\"Good morning, Tokiwa.\"",
+  "ja": "おはよう、いしだ。",
+  "en": "\"Good morning, Ishida.\"",
   "scene": "c1_entrance"
  },
  {
@@ -1123,7 +1123,7 @@
   "id": "c1_0256",
   "who": "kohei",
   "ja": "おやすみ、チビ。",
-  "en": "\"Night, Chibi.\"",
+  "en": "\"Night, {Chibi|shorty}.\"",
   "scene": "c1_night"
  },
  {

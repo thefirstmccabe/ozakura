@@ -22,7 +22,7 @@
 "natsuki": "Mizuno Natsuki",
 "akane": "Fujisawa Akane",
 "rika": "Hoshikawa Rika",
-"ryosuke": "Tokiwa Ryōsuke",
+"ryosuke": "Ishida Ryōsuke",
 "kirishima": "Kirishima Aoi",
 "takatsuki": "Takatsuki Shō",
 "yuzu": "Shiina Yuzu",
@@ -172,7 +172,7 @@
 {
 "t": "nar",
 "id": "c1_0008",
-"text": "Kendo: Monday, Wednesday, Friday and Saturday morning. Hoshino Kitchen: Tuesday, Thursday and Sunday. A red circle around the 18, Akane's clinic day. All of it in my handwriting."
+"text": "Kendo: Monday, Wednesday, Friday and Saturday morning. Kitchen Komugi: Tuesday, Thursday and Sunday. A red circle around the 18, Akane's clinic day. All of it in my handwriting."
 },
 {
 "t": "nar",
@@ -223,14 +223,16 @@
 "t": "say",
 "id": "c1_0014",
 "who": "akane",
-"text": "\"Geez, Onii-chan! Every single morning!\""
+"text": "\"Geez, Onii-chan! Every single morning!\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0015",
 "who": "kohei",
 "text": "\"And?\"",
-"face": "deadpan"
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -241,7 +243,8 @@
 "t": "say",
 "id": "c1_0016",
 "who": "akane",
-"text": "\"And I slept! Super well! I didn't wake up once!\""
+"text": "\"And I slept! Super well! I didn't wake up once!\"",
+"full": true
 },
 {
 "t": "nar",
@@ -257,14 +260,16 @@
 "t": "say",
 "id": "c1_0018",
 "who": "akane",
-"text": "\"Onii-chan, you're hovering again.\""
+"text": "\"Onii-chan, you're hovering again.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0019",
 "who": "kohei",
 "text": "\"I'm standing in my own kitchen.\"",
-"face": "deadpan"
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -275,14 +280,16 @@
 "t": "say",
 "id": "c1_0020",
 "who": "akane",
-"text": "\"Then go hover over the eggs!\""
+"text": "\"Then go hover over the eggs!\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0021",
 "who": "kohei",
 "text": "\"There's an egg with your name on it.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -293,14 +300,16 @@
 "t": "say",
 "id": "c1_0022",
 "who": "akane",
-"text": "\"Yaaay. …I could make my own lunch, you know.\""
+"text": "\"Yaaay. …I could make my own lunch, you know.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0023",
 "who": "kohei",
 "text": "\"I'm already making two.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -311,7 +320,8 @@
 "t": "say",
 "id": "c1_0024",
 "who": "akane",
-"text": "\"…You always are.\""
+"text": "\"…You always are.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -351,7 +361,8 @@
 "id": "c1_0028",
 "who": "kohei",
 "text": "\"You're already in.\"",
-"face": "deadpan"
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -362,7 +373,8 @@
 "t": "say",
 "id": "c1_0029",
 "who": "nanoha",
-"text": "\"Then I've arrived. Good morning, Akane-chan.\""
+"text": "\"Then I've arrived. Good morning, Akane-chan.\"",
+"full": true
 },
 {
 "t": "show",
@@ -373,7 +385,8 @@
 "t": "say",
 "id": "c1_0030",
 "who": "akane",
-"text": "\"Morning, Nanoha-chan!\""
+"text": "\"Morning, Nanoha-chan!\"",
+"full": true
 },
 {
 "t": "nar",
@@ -389,14 +402,16 @@
 "t": "say",
 "id": "c1_0032",
 "who": "nanoha",
-"text": "\"{Kinpira|braised burdock}. Mom made too much again.\""
+"text": "\"{Kinpira|braised burdock}. Mom made too much again.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0033",
 "who": "kohei",
 "text": "\"Again.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -407,7 +422,8 @@
 "t": "say",
 "id": "c1_0034",
 "who": "nanoha",
-"text": "\"Again. She can't measure burdock. It's a sickness.\""
+"text": "\"Again. She can't measure burdock. It's a sickness.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -419,7 +435,8 @@
 "id": "c1_0036",
 "who": "kohei",
 "text": "\"Tell her thanks.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "nar",
@@ -445,14 +462,16 @@
 "t": "say",
 "id": "c1_0041",
 "who": "nanoha",
-"text": "\"I heard that.\""
+"text": "\"I heard that.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0042",
 "who": "kohei",
 "text": "\"I didn't say anything.\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -463,7 +482,8 @@
 "t": "say",
 "id": "c1_0043",
 "who": "nanoha",
-"text": "\"You thought it in a short-person direction.\""
+"text": "\"You thought it in a short-person direction.\"",
+"full": true
 },
 {
 "t": "show",
@@ -474,14 +494,16 @@
 "t": "say",
 "id": "c1_0044",
 "who": "akane",
-"text": "\"He totally did.\""
+"text": "\"He totally did.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0045",
 "who": "kohei",
 "text": "\"Traitor.\"",
-"face": "annoyed"
+"face": "annoyed",
+"full": true
 },
 {
 "t": "show",
@@ -492,7 +514,8 @@
 "t": "say",
 "id": "c1_0046",
 "who": "akane",
-"text": "\"Nanoha-chan brought {kinpira|~braised burdock}!\""
+"text": "\"Nanoha-chan brought {kinpira|~braised burdock}!\"",
+"full": true
 },
 {
 "t": "hideall"
@@ -507,7 +530,8 @@
 "id": "c1_0048",
 "who": "kohei",
 "text": "\"Mom, we're heading out. There's rice in the cooker and miso soup on the stove. Just heat it up.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "nar",
@@ -568,14 +592,16 @@
 "t": "say",
 "id": "c1_0055",
 "who": "nanoha",
-"text": "\"Now then. Class assignments.\""
+"text": "\"Now then. Class assignments.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0056",
 "who": "kohei",
 "text": "\"They'll be posted at the entrance.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -586,14 +612,16 @@
 "t": "say",
 "id": "c1_0057",
 "who": "nanoha",
-"text": "\"That's the boring answer. I've prepared a theory.\""
+"text": "\"That's the boring answer. I've prepared a theory.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0058",
 "who": "kohei",
 "text": "\"Of course you have.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -604,7 +632,8 @@
 "t": "say",
 "id": "c1_0059",
 "who": "nanoha",
-"text": "\"There are six second-year classes. On paper, our odds of being in the same one are one in six.\""
+"text": "\"There are six second-year classes. On paper, our odds of being in the same one are one in six.\"",
+"full": true
 },
 {
 "t": "show",
@@ -615,14 +644,16 @@
 "t": "say",
 "id": "c1_0060",
 "who": "nanoha",
-"text": "\"But we've been in the same class four years running. At this point it's not luck. It's paperwork.\""
+"text": "\"But we've been in the same class four years running. At this point it's not luck. It's paperwork.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0061",
 "who": "kohei",
 "text": "\"Paperwork.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -633,14 +664,16 @@
 "t": "say",
 "id": "c1_0062",
 "who": "nanoha",
-"text": "\"A folder in the staff room. Both our names on the front. 'Do not separate,' underlined twice.\""
+"text": "\"A folder in the staff room. Both our names on the front. 'Do not separate,' underlined twice.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0063",
 "who": "kohei",
 "text": "\"Why would the staff room care?\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -651,7 +684,8 @@
 "t": "say",
 "id": "c1_0064",
 "who": "nanoha",
-"text": "\"Safety. If they split us up, I'd have to make new friends. Nobody wants that.\""
+"text": "\"Safety. If they split us up, I'd have to make new friends. Nobody wants that.\"",
+"full": true
 },
 {
 "t": "show",
@@ -662,14 +696,16 @@
 "t": "say",
 "id": "c1_0065",
 "who": "nanoha",
-"text": "\"Least of all the new friends.\""
+"text": "\"Least of all the new friends.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0265",
 "who": "kohei",
 "text": "\"You have friends.\"",
-"face": "grin"
+"face": "grin",
+"full": true
 },
 {
 "t": "show",
@@ -680,7 +716,8 @@
 "t": "say",
 "id": "c1_0266",
 "who": "nanoha",
-"text": "\"I have Rika-chan. Rika-chan counts as several.\""
+"text": "\"I have Rika-chan. Rika-chan counts as several.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -696,14 +733,16 @@
 "t": "say",
 "id": "c1_0068",
 "who": "nanoha",
-"text": "\"You laughed. That's two points for me this morning.\""
+"text": "\"You laughed. That's two points for me this morning.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0069",
 "who": "kohei",
 "text": "\"We're keeping score now?\"",
-"face": "grin"
+"face": "grin",
+"full": true
 },
 {
 "t": "show",
@@ -714,7 +753,8 @@
 "t": "say",
 "id": "c1_0070",
 "who": "nanoha",
-"text": "\"We've always been keeping score. You're losing.\""
+"text": "\"We've always been keeping score. You're losing.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -735,7 +775,8 @@
 "t": "say",
 "id": "c1_0073",
 "who": "nanoha",
-"text": "\"Kō-chan. Your collar.\""
+"text": "\"Kō-chan. Your collar.\"",
+"full": true
 },
 {
 "t": "cg",
@@ -761,7 +802,8 @@
 "t": "say",
 "id": "c1_0078",
 "who": "nanoha",
-"text": "\"There. Now you look like someone who has his life together.\""
+"text": "\"There. Now you look like someone who has his life together.\"",
+"full": true
 },
 {
 "t": "cg",
@@ -773,7 +815,8 @@
 "id": "c1_0079",
 "who": "kohei",
 "text": "\"…Thanks.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "nar",
@@ -789,14 +832,16 @@
 "t": "say",
 "id": "c1_0082",
 "who": "nanoha",
-"text": "\"Practice today?\""
+"text": "\"Practice today?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0083",
 "who": "kohei",
 "text": "\"Club doesn't start until Wednesday. First week.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -807,14 +852,16 @@
 "t": "say",
 "id": "c1_0084",
 "who": "nanoha",
-"text": "\"And after that?\""
+"text": "\"And after that?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0085",
 "who": "kohei",
 "text": "\"Monday, Wednesday, Friday, Saturday morning. Shifts Tuesday, Thursday, Sunday.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -825,14 +872,16 @@
 "t": "say",
 "id": "c1_0086",
 "who": "nanoha",
-"text": "\"I know.\""
+"text": "\"I know.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0087",
 "who": "kohei",
 "text": "\"Then why'd you ask?\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -843,14 +892,16 @@
 "t": "say",
 "id": "c1_0088",
 "who": "nanoha",
-"text": "\"So you'd hear yourself say it.\""
+"text": "\"So you'd hear yourself say it.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0090",
 "who": "kohei",
 "text": "\"It's fine. Saturday afternoons are free.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -861,7 +912,8 @@
 "t": "say",
 "id": "c1_0091",
 "who": "nanoha",
-"text": "\"Mm.\""
+"text": "\"Mm.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -877,14 +929,16 @@
 "t": "say",
 "id": "c1_0093",
 "who": "nanoha",
-"text": "\"Oh. Grandpa says the shrine's cherries are the best they've been in years. I'm helping him sweep up there Saturday.\""
+"text": "\"Oh. Grandpa says the shrine's cherries are the best they've been in years. I'm helping him sweep up there Saturday.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0094",
 "who": "kohei",
 "text": "\"His back again?\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -895,14 +949,16 @@
 "t": "say",
 "id": "c1_0095",
 "who": "nanoha",
-"text": "\"His back is a very convenient back. It only hurts on days with a lot of petals.\""
+"text": "\"His back is a very convenient back. It only hurts on days with a lot of petals.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0096",
 "who": "kohei",
 "text": "\"I'll come after practice. Somebody has to carry the trash bags while you supervise.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -913,7 +969,8 @@
 "t": "say",
 "id": "c1_0097",
 "who": "nanoha",
-"text": "\"I do supervise beautifully.\""
+"text": "\"I do supervise beautifully.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -971,7 +1028,8 @@
 "t": "say",
 "id": "c1_0102",
 "who": "rika",
-"text": "\"Two-B! You're in Two-B! I'm in Two-B! It's destiny! It's in the stars! I'm making us matching keychains!\""
+"text": "\"Two-B! You're in Two-B! I'm in Two-B! It's destiny! It's in the stars! I'm making us matching keychains!\"",
+"full": true
 },
 {
 "t": "show",
@@ -982,7 +1040,8 @@
 "t": "say",
 "id": "c1_0103",
 "who": "nanoha",
-"text": "\"Good morning, Rika-chan.\""
+"text": "\"Good morning, Rika-chan.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -998,14 +1057,16 @@
 "t": "say",
 "id": "c1_0105",
 "who": "rika",
-"text": "\"And you walked in with Fujisawa-kun. Hm. Hmmm.\""
+"text": "\"And you walked in with Fujisawa-kun. Hm. Hmmm.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0106",
 "who": "kohei",
 "text": "\"What's 'hmmm'?\"",
-"face": "deadpan"
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -1016,7 +1077,8 @@
 "t": "say",
 "id": "c1_0107",
 "who": "rika",
-"text": "\"Nothing! Nothing! I'm just humming! Hmm-hmm-hmmm!\""
+"text": "\"Nothing! Nothing! I'm just humming! Hmm-hmm-hmmm!\"",
+"full": true
 },
 {
 "t": "show",
@@ -1034,14 +1096,15 @@
 {
 "t": "nar",
 "id": "c1_0109",
-"text": "Tokiwa has arrived the way he usually does, in the middle of an argument nobody else knew had started."
+"text": "Ishida has arrived the way he usually does, in the middle of an argument nobody else knew had started."
 },
 {
 "t": "say",
 "id": "c1_0110",
 "who": "kohei",
-"text": "\"Good morning, Tokiwa.\"",
-"face": "deadpan"
+"text": "\"Good morning, Ishida.\"",
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -1052,14 +1115,16 @@
 "t": "say",
 "id": "c1_0111",
 "who": "ryosuke",
-"text": "\"The head has the most bean paste. You eat the best part while it's still hot, and the tail cleans your palate. That isn't an opinion. It's thermodynamics.\""
+"text": "\"The head has the most bean paste. You eat the best part while it's still hot, and the tail cleans your palate. That isn't an opinion. It's thermodynamics.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0112",
 "who": "kohei",
 "text": "\"It's seven-fifty in the morning.\"",
-"face": "deadpan"
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -1070,7 +1135,8 @@
 "t": "say",
 "id": "c1_0114",
 "who": "rika",
-"text": "\"Tail first! You save the best part for last! Everybody knows that!\""
+"text": "\"Tail first! You save the best part for last! Everybody knows that!\"",
+"full": true
 },
 {
 "t": "show",
@@ -1081,7 +1147,8 @@
 "t": "say",
 "id": "c1_0115",
 "who": "ryosuke",
-"text": "\"Then by the time you get there, it's cold.\""
+"text": "\"Then by the time you get there, it's cold.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1092,7 +1159,8 @@
 "t": "say",
 "id": "c1_0116",
 "who": "rika",
-"text": "\"…Oh no.\""
+"text": "\"…Oh no.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1103,14 +1171,16 @@
 "t": "say",
 "id": "c1_0117",
 "who": "ryosuke",
-"text": "\"We'll resume this at lunch. I'll need a diagram.\""
+"text": "\"We'll resume this at lunch. I'll need a diagram.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0118",
 "who": "kohei",
 "text": "\"Please don't.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -1121,7 +1191,8 @@
 "t": "say",
 "id": "c1_0122",
 "who": "rika",
-"text": "\"Oh! Oh oh oh, but have you heard? Two-B is getting a transfer student!\""
+"text": "\"Oh! Oh oh oh, but have you heard? Two-B is getting a transfer student!\"",
+"full": true
 },
 {
 "t": "show",
@@ -1132,7 +1203,8 @@
 "t": "say",
 "id": "c1_0123",
 "who": "nanoha",
-"text": "\"A transfer student?\""
+"text": "\"A transfer student?\"",
+"full": true
 },
 {
 "t": "show",
@@ -1143,7 +1215,8 @@
 "t": "say",
 "id": "c1_0124",
 "who": "rika",
-"text": "\"A girl! From somewhere! Far!\""
+"text": "\"A girl! From somewhere! Far!\"",
+"full": true
 },
 {
 "t": "show",
@@ -1154,7 +1227,8 @@
 "t": "say",
 "id": "c1_0125",
 "who": "ryosuke",
-"text": "\"'Somewhere far' covers most of the planet.\""
+"text": "\"'Somewhere far' covers most of the planet.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1165,7 +1239,8 @@
 "t": "say",
 "id": "c1_0126",
 "who": "rika",
-"text": "\"Then we've already narrowed it down!\""
+"text": "\"Then we've already narrowed it down!\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1196,14 +1271,16 @@
 "t": "say",
 "id": "c1_0128",
 "who": "nanoha",
-"text": "\"Fujisawa Kōhei. Two-B. About halfway down.\""
+"text": "\"Fujisawa Kōhei. Two-B. About halfway down.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0129",
 "who": "kohei",
 "text": "\"You found mine before yours?\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -1214,7 +1291,8 @@
 "t": "say",
 "id": "c1_0130",
 "who": "nanoha",
-"text": "\"Yours was easier. It's always right under Fukuda-kun's. Fukuda-kun is easy to find.\""
+"text": "\"Yours was easier. It's always right under Fukuda-kun's. Fukuda-kun is easy to find.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1247,7 +1325,7 @@
 {
 "t": "nar",
 "id": "c1_0133",
-"text": "I end up in the second-to-last row by the window. Nanoha's two rows over, which apparently satisfies the folder. Tokiwa's near the front, already drawing his diagram."
+"text": "I end up in the second-to-last row by the window. Nanoha's two rows over, which apparently satisfies the folder. Ishida's near the front, already drawing his diagram."
 },
 {
 "t": "nar",
@@ -1320,13 +1398,15 @@
 "t": "say",
 "id": "c1_0141",
 "who": "natsuki",
-"text": "\"My dad's job moves us around a lot, so I've been the new girl…\""
+"text": "\"My dad's job moves us around a lot, so I've been the new girl…\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0143",
 "who": "natsuki",
-"text": "\"…six times now? So please don't go easy on me.\""
+"text": "\"…six times now? So please don't go easy on me.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1337,7 +1417,8 @@
 "t": "say",
 "id": "c1_0145",
 "who": "natsuki",
-"text": "\"I do kendo, and I'm looking for a dojo that'll put up with me. I also love horror movies, the cheesier the better, so if anyone wants to watch a bad one with me, come find me.\""
+"text": "\"I do kendo, and I'm looking for a dojo that'll put up with me. I also love horror movies, the cheesier the better, so if anyone wants to watch a bad one with me, come find me.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1371,7 +1452,8 @@
 "t": "say",
 "id": "c1_0148",
 "who": "natsuki",
-"text": "\"Looking forward to this year.\""
+"text": "\"Looking forward to this year.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1423,14 +1505,16 @@
 "t": "say",
 "id": "c1_0154",
 "who": "natsuki",
-"text": "\"Hey. Kendo, right?\""
+"text": "\"Hey. Kendo, right?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0155",
 "who": "kohei",
 "text": "\"…How did you—\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -1441,7 +1525,8 @@
 "t": "say",
 "id": "c1_0156",
 "who": "natsuki",
-"text": "\"Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick.\""
+"text": "\"Left palm. You've got the callus right where the {tsuka|hilt} sits. It takes years to get it that thick.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1457,7 +1542,8 @@
 "t": "say",
 "id": "c1_0158",
 "who": "natsuki",
-"text": "\"Takes one to know one.\""
+"text": "\"Takes one to know one.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1507,14 +1593,16 @@
 "t": "say",
 "id": "c1_0165",
 "who": "natsuki",
-"text": "\"So. You're Fujisawa.\""
+"text": "\"So. You're Fujisawa.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0166",
 "who": "kohei",
 "text": "\"That's what the attendance sheet says.\"",
-"face": "deadpan"
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -1525,14 +1613,16 @@
 "t": "say",
 "id": "c1_0268",
 "who": "natsuki",
-"text": "\"How long have you been doing kendo?\""
+"text": "\"How long have you been doing kendo?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0269",
 "who": "kohei",
 "text": "\"Since I was little.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -1543,7 +1633,8 @@
 "t": "say",
 "id": "c1_0270",
 "who": "natsuki",
-"text": "\"And you stuck with it. What's the best part?\""
+"text": "\"And you stuck with it. What's the best part?\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1555,7 +1646,8 @@
 "id": "c1_0272",
 "who": "kohei",
 "text": "\"Having a sword in my hand.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -1566,14 +1658,16 @@
 "t": "say",
 "id": "c1_0273",
 "who": "natsuki",
-"text": "\"Just that?\""
+"text": "\"Just that?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0274",
 "who": "kohei",
 "text": "\"I've always been comfortable holding one. Since the first time I picked one up.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "nar",
@@ -1589,14 +1683,16 @@
 "t": "say",
 "id": "c1_0276",
 "who": "natsuki",
-"text": "\"Mine's the bow at the start.\""
+"text": "\"Mine's the bow at the start.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0277",
 "who": "kohei",
 "text": "\"The bow?\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -1607,7 +1703,8 @@
 "t": "say",
 "id": "c1_0278",
 "who": "natsuki",
-"text": "\"Six new schools. Every dojo bows the same way.\""
+"text": "\"Six new schools. Every dojo bows the same way.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1618,7 +1715,8 @@
 "t": "say",
 "id": "c1_0279",
 "who": "natsuki",
-"text": "\"Also, you get to yell in a room full of people and nobody calls your parents.\""
+"text": "\"Also, you get to yell in a room full of people and nobody calls your parents.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1639,14 +1737,16 @@
 "t": "say",
 "id": "c1_0261",
 "who": "natsuki",
-"text": "\"Do you always sit this straight?\""
+"text": "\"Do you always sit this straight?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0262",
 "who": "kohei",
 "text": "\"I—\"",
-"face": "flustered"
+"face": "flustered",
+"full": true
 },
 {
 "t": "show",
@@ -1657,14 +1757,16 @@
 "t": "say",
 "id": "c1_0180",
 "who": "natsuki",
-"text": "\"What are you, {shodan|first dan}?\""
+"text": "\"What are you, {shodan|first dan}?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0181",
 "who": "kohei",
 "text": "\"We'll find out on the floor.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -1675,14 +1777,16 @@
 "t": "say",
 "id": "c1_0182",
 "who": "natsuki",
-"text": "\"Big talk for someone who sits like he's being graded.\""
+"text": "\"Big talk for someone who sits like he's being graded.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0183",
 "who": "kohei",
 "text": "\"Club starts Wednesday.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -1693,7 +1797,8 @@
 "t": "say",
 "id": "c1_0184",
 "who": "natsuki",
-"text": "\"Wednesday.\""
+"text": "\"Wednesday.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1716,7 +1821,8 @@
 "t": "say",
 "id": "c1_0186",
 "who": "nanoha",
-"text": "\"Excuse me. Mizuno-san?\""
+"text": "\"Excuse me. Mizuno-san?\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1732,7 +1838,8 @@
 "t": "say",
 "id": "c1_0188",
 "who": "natsuki",
-"text": "\"Oh—hi. You're…\""
+"text": "\"Oh—hi. You're…\"",
+"full": true
 },
 {
 "t": "show",
@@ -1743,7 +1850,8 @@
 "t": "say",
 "id": "c1_0189",
 "who": "nanoha",
-"text": "\"Tachibana Nanoha. Um— I sit two rows over.\""
+"text": "\"Tachibana Nanoha. Um— I sit two rows over.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1754,7 +1862,8 @@
 "t": "say",
 "id": "c1_0190",
 "who": "nanoha",
-"text": "\"If you'd like… I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing.\""
+"text": "\"If you'd like… I could show you around after school? The library, the music rooms. Which shoe lockers stick. Which vending machine eats coins. That kind of thing.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1770,7 +1879,8 @@
 "t": "say",
 "id": "c1_0192",
 "who": "natsuki",
-"text": "\"…Really?\""
+"text": "\"…Really?\"",
+"full": true
 },
 {
 "t": "show",
@@ -1781,7 +1891,8 @@
 "t": "say",
 "id": "c1_0193",
 "who": "nanoha",
-"text": "\"It's not a big tour. The vending machine part is the most important.\""
+"text": "\"It's not a big tour. The vending machine part is the most important.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1792,7 +1903,8 @@
 "t": "say",
 "id": "c1_0194",
 "who": "natsuki",
-"text": "\"I'd love that. Which one eats coins?\""
+"text": "\"I'd love that. Which one eats coins?\"",
+"full": true
 },
 {
 "t": "show",
@@ -1803,7 +1915,8 @@
 "t": "say",
 "id": "c1_0195",
 "who": "natsuki",
-"text": "\"Oh, and call me Natsuki.\""
+"text": "\"Oh, and call me Natsuki.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1814,7 +1927,8 @@
 "t": "say",
 "id": "c1_0196",
 "who": "nanoha",
-"text": "\"…Natsuki-san.\""
+"text": "\"…Natsuki-san.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1825,7 +1939,8 @@
 "t": "say",
 "id": "c1_0197",
 "who": "natsuki",
-"text": "\"Eh, 'san'? We're the same age!\""
+"text": "\"Eh, 'san'? We're the same age!\"",
+"full": true
 },
 {
 "t": "show",
@@ -1836,7 +1951,8 @@
 "t": "say",
 "id": "c1_0198",
 "who": "nanoha",
-"text": "\"I'm working up to it.\""
+"text": "\"I'm working up to it.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1847,7 +1963,8 @@
 "t": "say",
 "id": "c1_0199",
 "who": "natsuki",
-"text": "\"Okay, okay. Then I'll call you Nanoha. All right? I'm doing it anyway.\""
+"text": "\"Okay, okay. Then I'll call you Nanoha. All right? I'm doing it anyway.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1858,7 +1975,8 @@
 "t": "say",
 "id": "c1_0200",
 "who": "nanoha",
-"text": "\"That's—yes. That's fine.\""
+"text": "\"That's—yes. That's fine.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -1917,14 +2035,16 @@
 "t": "say",
 "id": "c1_0206",
 "who": "natsuki",
-"text": "\"Serious question. Is this building haunted? Something in the music room was knocking.\""
+"text": "\"Serious question. Is this building haunted? Something in the music room was knocking.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0207",
 "who": "nanoha",
 "text": "\"It's old. The pipes sound like a ghost.\"",
-"face": "school_smile"
+"face": "school_smile",
+"full": true
 },
 {
 "t": "show",
@@ -1935,7 +2055,8 @@
 "t": "say",
 "id": "c1_0208",
 "who": "natsuki",
-"text": "\"Perfect.\""
+"text": "\"Perfect.\"",
+"full": true
 },
 {
 "t": "show",
@@ -1946,14 +2067,16 @@
 "t": "say",
 "id": "c1_0209",
 "who": "natsuki",
-"text": "\"So. What about you and Fujisawa?\""
+"text": "\"So. What about you and Fujisawa?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0210",
 "who": "nanoha",
 "text": "\"Me and Kōhei?\"",
-"face": "school_surprised"
+"face": "school_surprised",
+"full": true
 },
 {
 "t": "show",
@@ -1964,14 +2087,16 @@
 "t": "say",
 "id": "c1_0211",
 "who": "natsuki",
-"text": "\"You live next door, right? Somebody said.\""
+"text": "\"You live next door, right? Somebody said.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0212",
 "who": "nanoha",
 "text": "\"Since we were born.\"",
-"face": "school_smile"
+"face": "school_smile",
+"full": true
 },
 {
 "t": "show",
@@ -1982,14 +2107,16 @@
 "t": "say",
 "id": "c1_0213",
 "who": "natsuki",
-"text": "\"No way. Real childhood friends? Baby pictures and everything?\""
+"text": "\"No way. Real childhood friends? Baby pictures and everything?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0214",
 "who": "nanoha",
 "text": "\"Real childhood friends.\"",
-"face": "school_smile"
+"face": "school_smile",
+"full": true
 },
 {
 "t": "nar",
@@ -2005,7 +2132,8 @@
 "t": "say",
 "id": "c1_0217",
 "who": "natsuki",
-"text": "\"I've never stayed anywhere long enough to have one of those. You know? Someone who knows which drawer sticks in your kitchen.\""
+"text": "\"I've never stayed anywhere long enough to have one of those. You know? Someone who knows which drawer sticks in your kitchen.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2021,14 +2149,16 @@
 "t": "say",
 "id": "c1_0219",
 "who": "natsuki",
-"text": "\"Hey. Does Fujisawa ever compete up north? Around Sendai?\""
+"text": "\"Hey. Does Fujisawa ever compete up north? Around Sendai?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0220",
 "who": "nanoha",
 "text": "\"Not that I know of. Why?\"",
-"face": "school_surprised"
+"face": "school_surprised",
+"full": true
 },
 {
 "t": "show",
@@ -2039,21 +2169,24 @@
 "t": "say",
 "id": "c1_0221",
 "who": "natsuki",
-"text": "\"I feel like I've met him somewhere before. I just can't place it.\""
+"text": "\"I feel like I've met him somewhere before. I just can't place it.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0222",
 "who": "nanoha",
 "text": "\"…\"",
-"face": "school_surprised"
+"face": "school_surprised",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0223",
 "who": "nanoha",
 "text": "\"I have met him before. Every day. For sixteen years.\"",
-"face": "school_tease"
+"face": "school_tease",
+"full": true
 },
 {
 "t": "show",
@@ -2064,7 +2197,8 @@
 "t": "say",
 "id": "c1_0224",
 "who": "natsuki",
-"text": "\"Ha— okay. Then it's his face. He's got kind of a normal one, right? Don't tell him I said that.\""
+"text": "\"Ha— okay. Then it's his face. He's got kind of a normal one, right? Don't tell him I said that.\"",
+"full": true
 },
 {
 "t": "show",
@@ -2075,7 +2209,8 @@
 "t": "say",
 "id": "c1_0229",
 "who": "natsuki",
-"text": "\"Thanks for today, Nanoha. Seriously. First days are usually…\""
+"text": "\"Thanks for today, Nanoha. Seriously. First days are usually…\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2091,7 +2226,8 @@
 "t": "say",
 "id": "c1_0231",
 "who": "natsuki",
-"text": "\"Anyway. Thanks.\""
+"text": "\"Anyway. Thanks.\"",
+"full": true
 },
 {
 "t": "hide",
@@ -2150,14 +2286,16 @@
 "t": "say",
 "id": "c1_0237",
 "who": "nanoha",
-"text": "\"You're taking out the trash on the wrong day.\""
+"text": "\"You're taking out the trash on the wrong day.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0238",
 "who": "kohei",
 "text": "\"I'm moving it closer to the right day. How was the tour?\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -2168,14 +2306,16 @@
 "t": "say",
 "id": "c1_0239",
 "who": "nanoha",
-"text": "\"Good. She noticed the squeaky stairs. Both of them.\""
+"text": "\"Good. She noticed the squeaky stairs. Both of them.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0240",
 "who": "kohei",
 "text": "\"Nobody notices the eleventh step.\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -2186,7 +2326,8 @@
 "t": "say",
 "id": "c1_0241",
 "who": "nanoha",
-"text": "\"She did.\""
+"text": "\"She did.\"",
+"full": true
 },
 {
 "t": "show",
@@ -2197,7 +2338,8 @@
 "t": "say",
 "id": "c1_0242",
 "who": "nanoha",
-"text": "\"She's nice, Kōhei. I like her.\""
+"text": "\"She's nice, Kōhei. I like her.\"",
+"full": true
 },
 {
 "t": "show",
@@ -2208,14 +2350,16 @@
 "t": "say",
 "id": "c1_0244",
 "who": "nanoha",
-"text": "\"What did you think of her?\""
+"text": "\"What did you think of her?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0245",
 "who": "kohei",
 "text": "\"She seems fine.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -2226,14 +2370,16 @@
 "t": "say",
 "id": "c1_0246",
 "who": "nanoha",
-"text": "\"You smiled.\""
+"text": "\"You smiled.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0247",
 "who": "kohei",
 "text": "\"When?\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -2244,7 +2390,8 @@
 "t": "say",
 "id": "c1_0248",
 "who": "nanoha",
-"text": "\"When she said she was looking for a dojo that would put up with her. You did your—\""
+"text": "\"When she said she was looking for a dojo that would put up with her. You did your—\"",
+"full": true
 },
 {
 "t": "show",
@@ -2261,7 +2408,8 @@
 "id": "c1_0250",
 "who": "kohei",
 "text": "\"I don't have a face.\"",
-"face": "annoyed"
+"face": "annoyed",
+"full": true
 },
 {
 "t": "show",
@@ -2272,14 +2420,16 @@
 "t": "say",
 "id": "c1_0251",
 "who": "nanoha",
-"text": "\"You have several. I've catalogued them. That one's number four. 'Somebody wants to fight me.'\""
+"text": "\"You have several. I've catalogued them. That one's number four. 'Somebody wants to fight me.'\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0252",
 "who": "kohei",
 "text": "\"What's number one?\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -2290,7 +2440,8 @@
 "t": "say",
 "id": "c1_0253",
 "who": "nanoha",
-"text": "\"Secret.\""
+"text": "\"Secret.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2306,14 +2457,16 @@
 "t": "say",
 "id": "c1_0255",
 "who": "nanoha",
-"text": "\"Good night, Kō-chan.\""
+"text": "\"Good night, Kō-chan.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c1_0256",
 "who": "kohei",
-"text": "\"Night, Chibi.\"",
-"face": "smile"
+"text": "\"Night, {Chibi|shorty}.\"",
+"face": "smile",
+"full": true
 },
 {
 "t": "hide",
@@ -2478,7 +2631,7 @@
 {
 "t": "scene",
 "id": "c2_tuesday",
-"title": "Tuesday night at Hoshino Kitchen"
+"title": "Tuesday night at Kitchen Komugi"
 },
 {
 "t": "chapter",
@@ -2521,7 +2674,7 @@
 {
 "t": "nar",
 "id": "c2_0004",
-"text": "Tuesday is also a shift. Five-thirty to close at Hoshino Kitchen, the family restaurant by the station: the dish pit, the drink bar, and the register whenever the register needs a body."
+"text": "Tuesday is also a shift. Five-thirty to close at Kitchen Komugi, the family restaurant by the station: the dish pit, the drink bar, and the register whenever the register needs a body."
 },
 {
 "t": "say",
@@ -2593,7 +2746,7 @@
 {
 "t": "nar",
 "id": "c2_0015",
-"text": "I'm holding a tray of empty glasses and wearing the Hoshino Kitchen apron, the one with a cartoon chef on the pocket."
+"text": "I'm holding a tray of empty glasses and wearing the Kitchen Komugi apron, the one with a cartoon chef on the pocket."
 },
 {
 "t": "show",
@@ -2604,14 +2757,16 @@
 "t": "say",
 "id": "c2_0016",
 "who": "natsuki",
-"text": "\"You work here.\""
+"text": "\"You work here.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0017",
 "who": "kohei",
 "text": "\"Three nights a week.\"",
-"face": "work_neutral"
+"face": "work_neutral",
+"full": true
 },
 {
 "t": "show",
@@ -2622,7 +2777,8 @@
 "t": "say",
 "id": "c2_0018",
 "who": "natsuki",
-"text": "\"And you tie your apron like a {hakama|pleated kendo trousers}.\""
+"text": "\"And you tie your apron like a {hakama|pleated kendo trousers}.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2634,7 +2790,8 @@
 "id": "c2_0020",
 "who": "kohei",
 "text": "\"It stays tied.\"",
-"face": "work_deadpan"
+"face": "work_deadpan",
+"full": true
 },
 {
 "t": "hide",
@@ -2660,14 +2817,16 @@
 "t": "say",
 "id": "c2_0023",
 "who": "natsuki",
-"text": "\"Do you check ID for the kids' plate?\""
+"text": "\"Do you check ID for the kids' plate?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0024",
 "who": "kohei",
 "text": "\"…No.\"",
-"face": "work_surprised"
+"face": "work_surprised",
+"full": true
 },
 {
 "t": "show",
@@ -2678,7 +2837,8 @@
 "t": "say",
 "id": "c2_0025",
 "who": "natsuki",
-"text": "\"Then one kids' plate, please. With the flag.\""
+"text": "\"Then one kids' plate, please. With the flag.\"",
+"full": true
 },
 {
 "t": "say",
@@ -2695,7 +2855,8 @@
 "t": "say",
 "id": "c2_0027",
 "who": "natsuki",
-"text": "\"He said they don't check.\""
+"text": "\"He said they don't check.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2747,7 +2908,8 @@
 "t": "say",
 "id": "c2_0035",
 "who": "natsuki",
-"text": "\"I live right by the station. I'm not done with my flag.\""
+"text": "\"I live right by the station. I'm not done with my flag.\"",
+"full": true
 },
 {
 "t": "hide",
@@ -2778,14 +2940,16 @@
 "t": "say",
 "id": "c2_0038",
 "who": "natsuki",
-"text": "\"Is the mountain always that close? From the station it looks like you could walk there.\""
+"text": "\"Is the mountain always that close? From the station it looks like you could walk there.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0039",
 "who": "kohei",
 "text": "\"It's farther than it looks.\"",
-"face": "work_neutral"
+"face": "work_neutral",
+"full": true
 },
 {
 "t": "show",
@@ -2796,14 +2960,16 @@
 "t": "say",
 "id": "c2_0040",
 "who": "natsuki",
-"text": "\"What about the {taiyaki|~fish-shaped cake} stand by the north exit?\""
+"text": "\"What about the {taiyaki|~fish-shaped cake} stand by the north exit?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0041",
 "who": "kohei",
 "text": "\"Red bean's good. Don't get the custard. They burn it.\"",
-"face": "work_neutral"
+"face": "work_neutral",
+"full": true
 },
 {
 "t": "show",
@@ -2814,14 +2980,16 @@
 "t": "say",
 "id": "c2_0042",
 "who": "natsuki",
-"text": "\"Head first or tail first?\""
+"text": "\"Head first or tail first?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0043",
 "who": "kohei",
 "text": "\"Don't start.\"",
-"face": "work_deadpan"
+"face": "work_deadpan",
+"full": true
 },
 {
 "t": "nar",
@@ -2864,7 +3032,8 @@
 "t": "say",
 "id": "c2_0050",
 "who": "natsuki",
-"text": "\"I'm new.\""
+"text": "\"I'm new.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2885,7 +3054,8 @@
 "t": "say",
 "id": "c2_0054",
 "who": "natsuki",
-"text": "\"See you tomorrow, Fujisawa. Wednesday.\""
+"text": "\"See you tomorrow, Fujisawa. Wednesday.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -2969,14 +3139,16 @@
 "t": "say",
 "id": "c2_0306",
 "who": "nanoha",
-"text": "\"Again.\""
+"text": "\"Again.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0307",
 "who": "kohei",
 "text": "\"Morning. Tell your mom thanks.\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "nar",
@@ -2992,14 +3164,16 @@
 "t": "say",
 "id": "c2_0309",
 "who": "nanoha",
-"text": "\"You sound like you've been talking.\""
+"text": "\"You sound like you've been talking.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0310",
 "who": "kohei",
 "text": "\"I work at a restaurant.\"",
-"face": "deadpan"
+"face": "deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -3010,7 +3184,8 @@
 "t": "say",
 "id": "c2_0311",
 "who": "nanoha",
-"text": "\"You work in the dish pit.\""
+"text": "\"You work in the dish pit.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3022,7 +3197,8 @@
 "id": "c2_0313",
 "who": "kohei",
 "text": "\"Mizuno came in after karaoke, with some girls from class. She stayed till close.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -3033,7 +3209,8 @@
 "t": "say",
 "id": "c2_0314",
 "who": "nanoha",
-"text": "\"Mm.\""
+"text": "\"Mm.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3049,14 +3226,16 @@
 "t": "say",
 "id": "c2_0316",
 "who": "nanoha",
-"text": "\"That one's new.\""
+"text": "\"That one's new.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0317",
 "who": "kohei",
 "text": "\"A new what?\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -3067,14 +3246,16 @@
 "t": "say",
 "id": "c2_0318",
 "who": "nanoha",
-"text": "\"Face. I'll have to give it a number.\""
+"text": "\"Face. I'll have to give it a number.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0319",
 "who": "kohei",
 "text": "\"What number?\"",
-"face": "smile"
+"face": "smile",
+"full": true
 },
 {
 "t": "show",
@@ -3085,7 +3266,8 @@
 "t": "say",
 "id": "c2_0320",
 "who": "nanoha",
-"text": "\"I'll tell you when I've decided.\""
+"text": "\"I'll tell you when I've decided.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3101,7 +3283,8 @@
 "t": "say",
 "id": "c2_0322",
 "who": "nanoha",
-"text": "\"For the talking.\""
+"text": "\"For the talking.\"",
+"full": true
 },
 {
 "t": "hideall"
@@ -3168,26 +3351,30 @@
 "id": "c2_0063",
 "who": "kohei",
 "text": "\"Takatsuki.\"",
-"face": "kendo_neutral"
+"face": "kendo_neutral",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0064",
 "who": "takatsuki",
-"text": "\"Your {hakama|~pleated kendo trousers} is tied off center.\""
+"text": "\"Your {hakama|~pleated kendo trousers} is tied off center.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0065",
 "who": "kohei",
 "text": "\"It's the same knot as always.\"",
-"face": "kendo_deadpan"
+"face": "kendo_deadpan",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0066",
 "who": "takatsuki",
-"text": "\"Yes. It has been off center for a year.\""
+"text": "\"Yes. It has been off center for a year.\"",
+"full": true
 },
 {
 "t": "hide",
@@ -3215,7 +3402,8 @@
 "t": "say",
 "id": "c2_0070",
 "who": "kirishima",
-"text": "\"Welcome back. One new member, ahead of the first-years: a second-year transfer. Mizuno.\""
+"text": "\"Welcome back. One new member, ahead of the first-years: a second-year transfer. Mizuno.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3227,7 +3415,8 @@
 "t": "say",
 "id": "c2_0071",
 "who": "natsuki",
-"text": "\"Mizuno Natsuki, second year. Kendo since I was seven. Who do I get to fight first?\""
+"text": "\"Mizuno Natsuki, second year. Kendo since I was seven. Who do I get to fight first?\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3238,7 +3427,8 @@
 "t": "say",
 "id": "c2_0073",
 "who": "kirishima",
-"text": "\"Good.\""
+"text": "\"Good.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3249,13 +3439,15 @@
 "t": "say",
 "id": "c2_0076",
 "who": "kirishima",
-"text": "\"Warm-ups and swings. Armor after the break.\""
+"text": "\"Warm-ups and swings. Armor after the break.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0077",
 "who": "kirishima",
-"text": "\"Fujisawa. You'll take Mizuno. Find out what she has.\""
+"text": "\"Fujisawa. You'll take Mizuno. Find out what she has.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3267,25 +3459,29 @@
 "t": "say",
 "id": "c2_0078",
 "who": "takatsuki",
-"text": "\"Captain, I could take her, if—\""
+"text": "\"Captain, I could take her, if—\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0079",
 "who": "kirishima",
-"text": "\"You'll take the first-years when they come, Takatsuki. They'll need someone with patience.\""
+"text": "\"You'll take the first-years when they come, Takatsuki. They'll need someone with patience.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0080",
 "who": "takatsuki",
-"text": "\"…\""
+"text": "\"…\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0081",
 "who": "kirishima",
-"text": "\"That was a joke.\""
+"text": "\"That was a joke.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3327,7 +3523,8 @@
 "id": "c2_0085",
 "who": "kirishima",
 "text": "\"Shoes off.\"",
-"face": "kendo_calm"
+"face": "kendo_calm",
+"full": true
 },
 {
 "t": "show",
@@ -3338,7 +3535,8 @@
 "t": "say",
 "id": "c2_0086",
 "who": "rika",
-"text": "\"Yes, sir!\""
+"text": "\"Yes, sir!\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3354,7 +3552,8 @@
 "t": "say",
 "id": "c2_0088",
 "who": "rika",
-"text": "\"Okay. Explain everything. All I know is you guys yell.\""
+"text": "\"Okay. Explain everything. All I know is you guys yell.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3372,20 +3571,23 @@
 "id": "c2_0091",
 "who": "kohei",
 "text": "\"Whose glasses are those?\"",
-"face": "kendo_deadpan"
+"face": "kendo_deadpan",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0092",
 "who": "natsuki",
-"text": "\"Lost and found. How do I look?\""
+"text": "\"Lost and found. How do I look?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0293",
 "who": "kohei",
 "text": "\"Like a teacher.\"",
-"face": "kendo_neutral"
+"face": "kendo_neutral",
+"full": true
 },
 {
 "t": "show",
@@ -3396,7 +3598,8 @@
 "t": "say",
 "id": "c2_0093",
 "who": "natsuki",
-"text": "\"Kendo, lesson one. There are four places you're allowed to hit.\""
+"text": "\"Kendo, lesson one. There are four places you're allowed to hit.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3412,7 +3615,8 @@
 "t": "say",
 "id": "c2_0095",
 "who": "natsuki",
-"text": "\"Men. The head.\""
+"text": "\"Men. The head.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3423,7 +3627,8 @@
 "t": "say",
 "id": "c2_0096",
 "who": "natsuki",
-"text": "\"Kote. The wrist. Usually the right one.\""
+"text": "\"Kote. The wrist. Usually the right one.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3434,7 +3639,8 @@
 "t": "say",
 "id": "c2_0097",
 "who": "natsuki",
-"text": "\"Dō. The side of the body.\""
+"text": "\"Dō. The side of the body.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3445,7 +3651,8 @@
 "t": "say",
 "id": "c2_0098",
 "who": "natsuki",
-"text": "\"And tsuki, the throat. Thrusts only. You're not allowed to use it until high school.\""
+"text": "\"And tsuki, the throat. Thrusts only. You're not allowed to use it until high school.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3456,7 +3663,8 @@
 "t": "say",
 "id": "c2_0099",
 "who": "rika",
-"text": "\"We're in high school!\""
+"text": "\"We're in high school!\"",
+"full": true
 },
 {
 "t": "show",
@@ -3467,7 +3675,8 @@
 "t": "say",
 "id": "c2_0100",
 "who": "natsuki",
-"text": "\"So be afraid.\""
+"text": "\"So be afraid.\"",
+"full": true
 },
 {
 "t": "cg",
@@ -3493,7 +3702,8 @@
 "t": "say",
 "id": "c2_0101",
 "who": "rika",
-"text": "\"How do you get a point? Do you just hit them really hard?\""
+"text": "\"How do you get a point? Do you just hit them really hard?\"",
+"full": true
 },
 {
 "t": "show",
@@ -3504,7 +3714,8 @@
 "t": "say",
 "id": "c2_0294",
 "who": "natsuki",
-"text": "\"{Me-e-en!|Head!|men}\""
+"text": "\"{Me-e-en!|Head!|men}\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3520,7 +3731,8 @@
 "t": "say",
 "id": "c2_0102",
 "who": "natsuki",
-"text": "\"Hitting isn't enough. Voice, sword and feet, all at once. {Ki-ken-tai-itchi|spirit, sword and body as one}.\""
+"text": "\"Hitting isn't enough. Voice, sword and feet, all at once. {Ki-ken-tai-itchi|spirit, sword and body as one}.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3531,14 +3743,16 @@
 "t": "say",
 "id": "c2_0103",
 "who": "rika",
-"text": "\"So the yelling is you telling them where.\""
+"text": "\"So the yelling is you telling them where.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0105",
 "who": "kohei",
 "text": "\"That's not why you—\"",
-"face": "kendo_annoyed"
+"face": "kendo_annoyed",
+"full": true
 },
 {
 "t": "show",
@@ -3549,7 +3763,8 @@
 "t": "say",
 "id": "c2_0106",
 "who": "natsuki",
-"text": "\"And afterward, you stay ready. {Zanshin|remaining mind}. No celebrating. You're still in the fight until somebody tells you you're not.\""
+"text": "\"And afterward, you stay ready. {Zanshin|remaining mind}. No celebrating. You're still in the fight until somebody tells you you're not.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3560,7 +3775,8 @@
 "t": "say",
 "id": "c2_0107",
 "who": "rika",
-"text": "\"Who tells you?\""
+"text": "\"Who tells you?\"",
+"full": true
 },
 {
 "t": "show",
@@ -3571,7 +3787,8 @@
 "t": "say",
 "id": "c2_0108",
 "who": "natsuki",
-"text": "\"The referee. Pop quiz, Rika. I hit Fujisawa on the head. What does the referee say?\""
+"text": "\"The referee. Pop quiz, Rika. I hit Fujisawa on the head. What does the referee say?\"",
+"full": true
 },
 {
 "t": "show",
@@ -3582,7 +3799,8 @@
 "t": "say",
 "id": "c2_0296",
 "who": "rika",
-"text": "\"'Ow!'\""
+"text": "\"'Ow!'\"",
+"full": true
 },
 {
 "t": "show",
@@ -3593,7 +3811,8 @@
 "t": "say",
 "id": "c2_0297",
 "who": "natsuki",
-"text": "\"'Men ari.' There was a head.\""
+"text": "\"'Men ari.' There was a head.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3604,7 +3823,8 @@
 "t": "say",
 "id": "c2_0109",
 "who": "rika",
-"text": "\"Somebody hits you in the head, and the referee goes, 'There was a head.'\""
+"text": "\"Somebody hits you in the head, and the referee goes, 'There was a head.'\"",
+"full": true
 },
 {
 "t": "show",
@@ -3615,7 +3835,8 @@
 "t": "say",
 "id": "c2_0111",
 "who": "rika",
-"text": "\"What's the hardest one?\""
+"text": "\"What's the hardest one?\"",
+"full": true
 },
 {
 "t": "show",
@@ -3626,7 +3847,8 @@
 "t": "say",
 "id": "c2_0112",
 "who": "natsuki",
-"text": "\"Debana. You hit them right as they start to attack. It's my favorite.\""
+"text": "\"Debana. You hit them right as they start to attack. It's my favorite.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3637,7 +3859,8 @@
 "t": "say",
 "id": "c2_0113",
 "who": "rika",
-"text": "\"How do you know when they're starting?\""
+"text": "\"How do you know when they're starting?\"",
+"full": true
 },
 {
 "t": "show",
@@ -3648,7 +3871,8 @@
 "t": "say",
 "id": "c2_0114",
 "who": "natsuki",
-"text": "\"Mostly you don't. That's why it's hard.\""
+"text": "\"Mostly you don't. That's why it's hard.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3660,7 +3884,8 @@
 "t": "say",
 "id": "c2_0115",
 "who": "takatsuki",
-"text": "\"It is the hardest thing in kendo to do on purpose.\""
+"text": "\"It is the hardest thing in kendo to do on purpose.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3671,13 +3896,15 @@
 "t": "say",
 "id": "c2_0116",
 "who": "natsuki",
-"text": "\"Thank you, Takatsuki-kun. Which brings us to the correct stance. Takatsuki-kun, would you be our model?\""
+"text": "\"Thank you, Takatsuki-kun. Which brings us to the correct stance. Takatsuki-kun, would you be our model?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0117",
 "who": "takatsuki",
-"text": "\"…If it's educational.\""
+"text": "\"…If it's educational.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3693,14 +3920,16 @@
 "t": "say",
 "id": "c2_0119",
 "who": "natsuki",
-"text": "\"Beautiful. Look at that left heel. And now, for comparison: Fujisawa.\""
+"text": "\"Beautiful. Look at that left heel. And now, for comparison: Fujisawa.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0120",
 "who": "kohei",
 "text": "\"No.\"",
-"face": "kendo_annoyed"
+"face": "kendo_annoyed",
+"full": true
 },
 {
 "t": "show",
@@ -3711,7 +3940,8 @@
 "t": "say",
 "id": "c2_0121",
 "who": "natsuki",
-"text": "\"The class is waiting.\""
+"text": "\"The class is waiting.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3722,7 +3952,8 @@
 "t": "say",
 "id": "c2_0122",
 "who": "rika",
-"text": "\"Fu-ji-sa-wa! Fu-ji-sa-wa!\""
+"text": "\"Fu-ji-sa-wa! Fu-ji-sa-wa!\"",
+"full": true
 },
 {
 "t": "nar",
@@ -3743,7 +3974,8 @@
 "t": "say",
 "id": "c2_0125",
 "who": "natsuki",
-"text": "\"Left heel, a little low. The tip wanders. He hits {men|~head strikes} from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\""
+"text": "\"Left heel, a little low. The tip wanders. He hits {men|~head strikes} from the wrong distance and gets away with it, which is the worst possible thing for a first-year to see.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3754,14 +3986,16 @@
 "t": "say",
 "id": "c2_0126",
 "who": "rika",
-"text": "\"He's the 'before' picture!\""
+"text": "\"He's the 'before' picture!\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0127",
 "who": "kohei",
 "text": "\"Hoshikawa. Don't draw that.\"",
-"face": "kendo_annoyed"
+"face": "kendo_annoyed",
+"full": true
 },
 {
 "t": "show",
@@ -3772,13 +4006,15 @@
 "t": "say",
 "id": "c2_0128",
 "who": "natsuki",
-"text": "\"You're doing great, visual aid.\""
+"text": "\"You're doing great, visual aid.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0130",
 "who": "takatsuki",
-"text": "\"Mizuno. For the record, your explanation of {zanshin|~staying alert after the strike} was incomplete.\""
+"text": "\"Mizuno. For the record, your explanation of {zanshin|~staying alert after the strike} was incomplete.\"",
+"full": true
 },
 {
 "t": "show",
@@ -3789,14 +4025,16 @@
 "t": "say",
 "id": "c2_0131",
 "who": "natsuki",
-"text": "\"Incomplete how?\""
+"text": "\"Incomplete how?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0132",
 "who": "kirishima",
 "text": "\"Mizuno. The practice schedule was on that board.\"",
-"face": "kendo_calm"
+"face": "kendo_calm",
+"full": true
 },
 {
 "t": "show",
@@ -3807,14 +4045,16 @@
 "t": "say",
 "id": "c2_0133",
 "who": "natsuki",
-"text": "\"…I'll put it back.\""
+"text": "\"…I'll put it back.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0134",
 "who": "kirishima",
 "text": "\"From memory.\"",
-"face": "kendo_calm"
+"face": "kendo_calm",
+"full": true
 },
 {
 "t": "show",
@@ -3825,7 +4065,8 @@
 "t": "say",
 "id": "c2_0135",
 "who": "natsuki",
-"text": "\"From memory.\""
+"text": "\"From memory.\"",
+"full": true
 },
 {
 "t": "hideall"
@@ -4017,7 +4258,8 @@
 "t": "say",
 "id": "c2_0153",
 "who": "kirishima",
-"text": "\"Mizuno. Good {kote|~wrist strike}. You drop your left shoulder before {men|~head strikes}. Fix it.\""
+"text": "\"Mizuno. Good {kote|~wrist strike}. You drop your left shoulder before {men|~head strikes}. Fix it.\"",
+"full": true
 },
 {
 "t": "show",
@@ -4029,20 +4271,23 @@
 "t": "say",
 "id": "c2_0154",
 "who": "natsuki",
-"text": "\"Yes, Captain.\""
+"text": "\"Yes, Captain.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0155",
 "who": "kirishima",
-"text": "\"Fujisawa.\""
+"text": "\"Fujisawa.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0156",
 "who": "kohei",
 "text": "\"Captain.\"",
-"face": "kendo_neutral"
+"face": "kendo_neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4053,14 +4298,16 @@
 "t": "say",
 "id": "c2_0157",
 "who": "kirishima",
-"text": "\"You stopped for half a second. Don't.\""
+"text": "\"You stopped for half a second. Don't.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0158",
 "who": "kohei",
 "text": "\"…Yes, Captain.\"",
-"face": "kendo_serious"
+"face": "kendo_serious",
+"full": true
 },
 {
 "t": "hide",
@@ -4085,14 +4332,16 @@
 "t": "say",
 "id": "c2_0160",
 "who": "natsuki",
-"text": "\"You didn't let me have that point, did you?\""
+"text": "\"You didn't let me have that point, did you?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0161",
 "who": "kohei",
 "text": "\"No.\"",
-"face": "kendo_neutral"
+"face": "kendo_neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4103,7 +4352,8 @@
 "t": "say",
 "id": "c2_0162",
 "who": "natsuki",
-"text": "\"I know. That's why I'm so happy.\""
+"text": "\"I know. That's why I'm so happy.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4120,13 +4370,15 @@
 "t": "say",
 "id": "c2_0164",
 "who": "takatsuki",
-"text": "\"That was {debana-kote|a wrist strike as the attack starts|debana}.\""
+"text": "\"That was {debana-kote|a wrist strike as the attack starts|debana}.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0166",
 "who": "takatsuki",
-"text": "\"You did not take his feint, and you were on his wrist the moment he lifted. I have faced Fujisawa for a year. I have never once been there first.\""
+"text": "\"You did not take his feint, and you were on his wrist the moment he lifted. I have faced Fujisawa for a year. I have never once been there first.\"",
+"full": true
 },
 {
 "t": "show",
@@ -4137,13 +4389,15 @@
 "t": "say",
 "id": "c2_0167",
 "who": "natsuki",
-"text": "\"New-girl luck. It wears off by Friday.\""
+"text": "\"New-girl luck. It wears off by Friday.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0168",
 "who": "takatsuki",
-"text": "\"Luck is not a technique.\""
+"text": "\"Luck is not a technique.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4154,26 +4408,30 @@
 "t": "say",
 "id": "c2_0300",
 "who": "takatsuki",
-"text": "\"Also, you laughed inside your helmet after the point. That was the part of {zanshin|~staying alert after the strike} you left out.\""
+"text": "\"Also, you laughed inside your helmet after the point. That was the part of {zanshin|~staying alert after the strike} you left out.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0170",
 "who": "takatsuki",
-"text": "\"And Fujisawa. Your left foot was forward on that {dō|~body strike}.\""
+"text": "\"And Fujisawa. Your left foot was forward on that {dō|~body strike}.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0171",
 "who": "kohei",
 "text": "\"It scored.\"",
-"face": "kendo_neutral"
+"face": "kendo_neutral",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0172",
 "who": "takatsuki",
-"text": "\"Yes.\""
+"text": "\"Yes.\"",
+"full": true
 },
 {
 "t": "hideall"
@@ -4208,14 +4466,16 @@
 "t": "say",
 "id": "c2_0176",
 "who": "natsuki",
-"text": "\"New member. I'm supposed to do the grunt work, right?\""
+"text": "\"New member. I'm supposed to do the grunt work, right?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0177",
 "who": "kohei",
 "text": "\"First-years are supposed to do the grunt work.\"",
-"face": "kendo_neutral"
+"face": "kendo_neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4226,7 +4486,8 @@
 "t": "say",
 "id": "c2_0178",
 "who": "natsuki",
-"text": "\"Then I'm a spiritual first-year. Hand me a rag.\""
+"text": "\"Then I'm a spiritual first-year. Hand me a rag.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4242,14 +4503,16 @@
 "t": "say",
 "id": "c2_0180",
 "who": "natsuki",
-"text": "\"Fujisawa! Race you!\""
+"text": "\"Fujisawa! Race you!\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0181",
 "who": "kohei",
 "text": "\"It's not a race.\"",
-"face": "kendo_deadpan"
+"face": "kendo_deadpan",
+"full": true
 },
 {
 "t": "hide",
@@ -4284,7 +4547,8 @@
 "t": "say",
 "id": "c2_0185",
 "who": "natsuki",
-"text": "\"Ah—!\""
+"text": "\"Ah—!\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4339,13 +4603,15 @@
 "id": "c2_0195",
 "who": "kohei",
 "text": "\"…Mizuno?\"",
-"face": "kendo_surprised"
+"face": "kendo_surprised",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0196",
 "who": "natsuki",
-"text": "\"Ah—\""
+"text": "\"Ah—\"",
+"full": true
 },
 {
 "t": "cg",
@@ -4367,7 +4633,8 @@
 "t": "say",
 "id": "c2_0198",
 "who": "natsuki",
-"text": "\"What— ugh, sorry. Sorry. That's so weird.\""
+"text": "\"What— ugh, sorry. Sorry. That's so weird.\"",
+"full": true
 },
 {
 "t": "show",
@@ -4378,14 +4645,16 @@
 "t": "say",
 "id": "c2_0199",
 "who": "natsuki",
-"text": "\"Allergies. It's allergies. Cedar pollen. Kanagawa's full of cedar, right?\""
+"text": "\"Allergies. It's allergies. Cedar pollen. Kanagawa's full of cedar, right?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0200",
 "who": "kohei",
 "text": "\"…It's April.\"",
-"face": "kendo_deadpan"
+"face": "kendo_deadpan",
+"full": true
 },
 {
 "t": "show",
@@ -4396,7 +4665,8 @@
 "t": "say",
 "id": "c2_0201",
 "who": "natsuki",
-"text": "\"Late bloomers. They're real. Look it up.\""
+"text": "\"Late bloomers. They're real. Look it up.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4422,14 +4692,16 @@
 "t": "say",
 "id": "c2_0205",
 "who": "natsuki",
-"text": "\"…Thanks for catching me, by the way.\""
+"text": "\"…Thanks for catching me, by the way.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0206",
 "who": "kohei",
 "text": "\"Yeah. You too. I mean— you're welcome.\"",
-"face": "kendo_flustered"
+"face": "kendo_flustered",
+"full": true
 },
 {
 "t": "show",
@@ -4440,14 +4712,16 @@
 "t": "say",
 "id": "c2_0207",
 "who": "natsuki",
-"text": "\"Are your ears always that red?\""
+"text": "\"Are your ears always that red?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0298",
 "who": "kohei",
 "text": "\"…No.\"",
-"face": "kendo_flustered"
+"face": "kendo_flustered",
+"full": true
 },
 {
 "t": "nar",
@@ -4507,14 +4781,16 @@
 "t": "say",
 "id": "c2_0214",
 "who": "natsuki",
-"text": "\"I take pictures of every town I live in.\""
+"text": "\"I take pictures of every town I live in.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0215",
 "who": "kohei",
 "text": "\"Why?\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4525,7 +4801,8 @@
 "t": "say",
 "id": "c2_0216",
 "who": "natsuki",
-"text": "\"So I have proof I was there.\""
+"text": "\"So I have proof I was there.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4541,7 +4818,8 @@
 "t": "say",
 "id": "c2_0218",
 "who": "natsuki",
-"text": "\"Sapporo is four hundred pictures of snow.\""
+"text": "\"Sapporo is four hundred pictures of snow.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4557,14 +4835,16 @@
 "t": "say",
 "id": "c2_0220",
 "who": "natsuki",
-"text": "\"Hey. Fujisawa.\""
+"text": "\"Hey. Fujisawa.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0221",
 "who": "kohei",
 "text": "\"Mm.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4575,7 +4855,8 @@
 "t": "say",
 "id": "c2_0222",
 "who": "natsuki",
-"text": "\"If you ever want extra practice. Mornings, weekends, whenever. I'm around.\""
+"text": "\"If you ever want extra practice. Mornings, weekends, whenever. I'm around.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4591,14 +4872,16 @@
 "t": "say",
 "id": "c2_0224",
 "who": "natsuki",
-"text": "\"I just mean it was a good match. I haven't had one like that in a long time.\""
+"text": "\"I just mean it was a good match. I haven't had one like that in a long time.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0225",
 "who": "kohei",
 "text": "\"I work Tuesdays and Thursdays. And Sundays.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4609,7 +4892,8 @@
 "t": "say",
 "id": "c2_0226",
 "who": "natsuki",
-"text": "\"Right. You told me. Forget it, it was a random thought.\""
+"text": "\"Right. You told me. Forget it, it was a random thought.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4626,7 +4910,8 @@
 "id": "c2_0229",
 "who": "kohei",
 "text": "\"Saturday mornings. Club practice. You'll be there?\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4637,7 +4922,8 @@
 "t": "say",
 "id": "c2_0230",
 "who": "natsuki",
-"text": "\"…\""
+"text": "\"…\"",
+"full": true
 },
 {
 "t": "show",
@@ -4648,14 +4934,16 @@
 "t": "say",
 "id": "c2_0231",
 "who": "natsuki",
-"text": "\"Depends.\""
+"text": "\"Depends.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0232",
 "who": "kohei",
 "text": "\"On what?\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "show",
@@ -4666,7 +4954,8 @@
 "t": "say",
 "id": "c2_0233",
 "who": "natsuki",
-"text": "\"Tell me one thing you do for fun.\""
+"text": "\"Tell me one thing you do for fun.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4678,7 +4967,8 @@
 "id": "c2_0235",
 "who": "kohei",
 "text": "\"…Saturday afternoons are free.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4689,14 +4979,16 @@
 "t": "say",
 "id": "c2_0236",
 "who": "natsuki",
-"text": "\"Doing what?\""
+"text": "\"Doing what?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0237",
 "who": "kohei",
 "text": "\"Carrying trash bags up at a shrine.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "nar",
@@ -4712,14 +5004,16 @@
 "t": "say",
 "id": "c2_0239",
 "who": "natsuki",
-"text": "\"That's what you do for fun?\""
+"text": "\"That's what you do for fun?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0240",
 "who": "kohei",
 "text": "\"It's what I do on Saturday afternoons.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4730,14 +5024,16 @@
 "t": "say",
 "id": "c2_0241",
 "who": "natsuki",
-"text": "\"Okay. That's my project, then.\""
+"text": "\"Okay. That's my project, then.\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0242",
 "who": "kohei",
 "text": "\"What is?\"",
-"face": "surprised"
+"face": "surprised",
+"full": true
 },
 {
 "t": "nar",
@@ -4753,14 +5049,16 @@
 "t": "say",
 "id": "c2_0244",
 "who": "natsuki",
-"text": "\"Is that the shrine? With the big tree?\""
+"text": "\"Is that the shrine? With the big tree?\"",
+"full": true
 },
 {
 "t": "say",
 "id": "c2_0245",
 "who": "kohei",
 "text": "\"That's the Ōzakura.\"",
-"face": "neutral"
+"face": "neutral",
+"full": true
 },
 {
 "t": "show",
@@ -4771,7 +5069,8 @@
 "t": "say",
 "id": "c2_0246",
 "who": "natsuki",
-"text": "\"I've been wanting to photograph that thing since Monday.\""
+"text": "\"I've been wanting to photograph that thing since Monday.\"",
+"full": true
 },
 {
 "t": "nar",
@@ -4787,7 +5086,8 @@
 "t": "say",
 "id": "c2_0248",
 "who": "natsuki",
-"text": "\"See you tomorrow, Fujisawa!\""
+"text": "\"See you tomorrow, Fujisawa!\"",
+"full": true
 },
 {
 "t": "hide",
@@ -4877,7 +5177,8 @@
 "id": "c2_0259",
 "who": "natsuki",
 "text": "\"I'm amazing at first days. It's the second semesters I never get to.\"",
-"face": "school_smile"
+"face": "school_smile",
+"full": true
 },
 {
 "t": "nar",
@@ -5087,6 +5388,7 @@
 "kinpira": "Kinpira gobō: thin strips of burdock root and carrot, stir-fried, then cooked down in soy sauce, sugar and mirin (sweet rice wine). A classic make-ahead side dish that keeps for several days.",
 "taiyaki": "A fish-shaped griddle cake (the name means \"baked sea bream\"), usually filled with sweet red-bean paste and sold hot from street stalls. Whether to start with the head or the tail is an old argument in Japan.",
 "shodan": "First dan, the first rank above the beginner grades in kendo, earned at a formal grading exam (kendo has no belts; the rank comes as a certificate). Serious high-school players usually hold first or second dan.",
+"chibi": "Japanese for a small child, or anyone small. As a nickname it's teasing and fond at the same time, something like \"shorty.\"",
 "hakama": "Wide, pleated trousers worn over the practice jacket in kendo and other traditional martial arts. They're tied with long cords that wrap around the waist and knot at the front.",
 "shinai": "The bamboo practice sword used in kendo: four slats of bamboo bound with leather and cord, about the length of a real sword.",
 "men": "Two things in kendo: the strike to the top of the head, and the helmet that protects it (a steel grille over the face, padded flaps over the shoulders). As a shout, it names the target as the strike lands.",

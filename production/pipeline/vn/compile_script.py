@@ -25,21 +25,24 @@ SPEAKERS = {"kohei": "Kōhei", "nanoha": "Nanoha", "natsuki": "Natsuki", "akane"
             "ryosuke": "Ryōsuke", "teacher": "Ōno-sensei", "kirishima": "Kirishima", "takatsuki": "Takatsuki",
             "manager": "Manager", "yuzu": "Yuzu", "emi": "Emi", "mio": "Mio", "past_natsuki": "???",
             "classmate": "Classmate"}
-# A character's first spoken line in each chapter shows the full name, family name first (author, Oct 25; style guide
-# §3a). Anyone not listed keeps the short tag.
+# Name tags (style guide §3a): through spring (Ch1–8) every spoken line shows the full name, family name first (author,
+# Nov 1); from Ch9 only a character's first spoken line in each chapter does (the Oct 25 rule). Anyone not listed keeps
+# the short tag (no decided given name: Ōno-sensei, Manager, Classmate, "???").
+FULL_EVERY_LINE_THROUGH = 8
 SPEAKERS_FULL = {"kohei": "Fujisawa Kōhei", "nanoha": "Tachibana Nanoha", "natsuki": "Mizuno Natsuki",
-                 "akane": "Fujisawa Akane", "rika": "Hoshikawa Rika", "ryosuke": "Tokiwa Ryōsuke",
+                 "akane": "Fujisawa Akane", "rika": "Hoshikawa Rika", "ryosuke": "Ishida Ryōsuke",
                  "kirishima": "Kirishima Aoi", "takatsuki": "Takatsuki Shō", "yuzu": "Shiina Yuzu",
                  "emi": "Tachibana Emi", "mio": "Tachibana Mio"}
 
 
 def mark_full_names(cmds):
-    """Mark each speaker's first spoken line per chapter (`@chapter`) with "full": true."""
-    seen = set()
+    """Mark the spoken lines that show the full name with "full": true: every line through Ch8 (lines before the first
+    `@chapter` count as Ch1), then each speaker's first line per chapter."""
+    seen, chapter = set(), 1
     for c in cmds:
         if c["t"] == "chapter":
-            seen = set()
-        if c["t"] == "say" and c["who"] in SPEAKERS_FULL and c["who"] not in seen:
+            seen, chapter = set(), c["n"]
+        if c["t"] == "say" and c["who"] in SPEAKERS_FULL and (chapter <= FULL_EVERY_LINE_THROUGH or c["who"] not in seen):
             c["full"] = True; seen.add(c["who"])
 FACES = {"smile", "neutral", "grin", "deadpan", "surprised", "flustered", "annoyed", "serious", "stillness", "sad"}
 ID_TAG = re.compile(r'\s+#((?:p|c\d+)_\d{4,})\s*$')

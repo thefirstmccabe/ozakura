@@ -40,5 +40,6 @@ Rates checked Oct 17: NB2 edit $0.08/image, NB Pro edit $0.15/image, bria cutout
 | 10-24 | Ch2 on-model fixes: catch hair (4), ponytail outpaints (4), catch start frame (2), insert p1-1/p2-1/p2-4 (12) (NB Pro 2K), the animated catch again (Kling v3 Pro, 3 s ×2) | 24 | $4.14 |
 | 10-25 | Ch2 punch list, art: the whiteboard CG (2) and two clean-up edits (glasses, shinai), catch start frames (4) (NB Pro 2K); the slip-and-catch shot (Kling v3 Pro, 3 s ×4); one bria cutout (unused) | 13 | $2.90 |
 | 10-25 | Ch2 punch list, voices: 15 single-line takes (Gemini TTS, ~6,300 characters with directions), 1 transcript (Wizper, ~1 min); Natsuki's Ch2 lines re-pitched to +0.5 from the kept takes (no cost) | 16 | $0.29 |
+| 11-01 | Nov 1 renames: c1_0110 re-voiced ("Good morning, Ishida"; 2 single-line Gemini TTS takes, 1 kept) and its transcript (Wizper) | 3 | $0.02 |
 
 **Total after Ch1: about $8.50 of $40.** Ch1 revision (Oct 18): about $4.80; running total about $13.30. Natsuki's new look (Oct 20, design pass and Ch1 art): about $3.70; running total about $17.00. Oct 24 batch (Natsuki's face A and new voice, the Ch1 punch list): about $4.70; running total about $21.70. Ch2 (Oct 24, art, voices and the first on-model fixes): about $15.30; running total about $37.00 (going over $40 is approved, Oct 24). Ch2 punch list (Oct 25): about $3.20; running total about $40.20.

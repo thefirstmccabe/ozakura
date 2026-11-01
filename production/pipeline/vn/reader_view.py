@@ -19,7 +19,7 @@ Usage: python3 reader_view.py OUT_DIR src1.ozs [src2.ozs ...] [--split ids] [--c
 import argparse, json, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from compile_script import SPEAKERS, SPEAKERS_FULL, split_id, read_notes, gloss_once  # display names and the gloss rule, kept in one place
+from compile_script import SPEAKERS, SPEAKERS_FULL, FULL_EVERY_LINE_THROUGH, split_id, read_notes, gloss_once  # display names and the gloss rule, kept in one place
 
 SAY = re.compile(r'^(\w+)(?:<(\w+)>)?(?:\((\w+)\))?:\s*"(.*?)"\s*(?:\|\|.*)?$')
 GLOSS = re.compile(r'\{([^|}]+)\|([^|}]+)(?:\|([^}]+))?\}')
@@ -52,6 +52,7 @@ def convert(paths, split):
     notes = read_notes(notes_path)[0] if os.path.exists(notes_path) else {}
     noted = set()
     named = set()  # speakers already shown with their full name in this chapter (style guide §3a, Oct 25)
+    chapter = 1    # through Ch8 every spoken line shows the full name (author, Nov 1)
     seen = set()   # glossed meanings so far in the story: later uses show the bare term (style guide §5, Oct 28)
     for path in paths:
         for raw in open(path, encoding="utf-8"):
@@ -82,6 +83,7 @@ def convert(paths, split):
                     out = f"[Caption: {s[5:].strip()}]"
                 elif c == "@chapter":
                     named = set()
+                    chapter = int(s[8:].split("|")[0])
                     out = f"[Chapter title card: Chapter {s[8:].strip()}]"
                 elif c == "@mode" and len(w) > 2:
                     out = f"[{' '.join(w[2:])}, told in third person]"
@@ -106,7 +108,7 @@ def convert(paths, split):
                 m = SAY.match(s)
                 if m:
                     w0 = m.group(1)
-                    nm = SPEAKERS_FULL[w0] if (w0 in SPEAKERS_FULL and w0 not in named) else SPEAKERS.get(w0, w0.capitalize())
+                    nm = SPEAKERS_FULL[w0] if (w0 in SPEAKERS_FULL and (chapter <= FULL_EVERY_LINE_THROUGH or w0 not in named)) else SPEAKERS.get(w0, w0.capitalize())
                     named.add(w0)
                     out = f'{nm}: "{m.group(4)}"'
                 else:

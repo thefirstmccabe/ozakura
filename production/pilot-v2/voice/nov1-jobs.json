@@ -1,0 +1,19 @@
+[
+ {
+  "key": "retake.c1_0110",
+  "ids": [
+   "c1_0110"
+  ],
+  "texts": [
+   "おはよう、いしだ。"
+  ],
+  "note": "Nov 1 rename (Tokiwa -> Ishida); single-line take, Puck, deadpan; wizper: おはよう石田",
+  "input": {
+   "prompt": "おはよう、いしだ。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a busy school entrance, deadpan, dry. It means: \"Good morning, Ishida.\""
+  },
+  "url": "https://v3b.fal.media/files/b/0ab0b9ce/aJWWz31_XQ0FWnWWD-z3d_gemini_tts_output.wav",
+  "take": 291
+ }
+]

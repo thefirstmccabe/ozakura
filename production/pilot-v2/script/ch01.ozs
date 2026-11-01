@@ -50,7 +50,7 @@
 @bg bg_fujisawa_kitchen
 > The rice was on the timer last night, so the kitchen already smells like steam. Eggs, the leftover spinach, the last of the frozen {karaage|fried chicken}. Two lunch boxes, side by side on the counter.  #c1_0006
 > I've gotten fast at this. Fast enough to do it while reading the whiteboard on the fridge.  #c1_0007
-> Kendo: Monday, Wednesday, Friday and Saturday morning. Hoshino Kitchen: Tuesday, Thursday and Sunday. A red circle around the 18, Akane's clinic day. All of it in my handwriting.  #c1_0008
+> Kendo: Monday, Wednesday, Friday and Saturday morning. Kitchen Komugi: Tuesday, Thursday and Sunday. A red circle around the 18, Akane's clinic day. All of it in my handwriting.  #c1_0008
 > All of it except the bottom line, which still says "Garbage: burnables, Mon/Thu" in Dad's. He wrote it last spring. I've never written over it.  #c1_0009
 > The {fusuma|sliding door} to Mom's room is closed. It usually is.  #c1_0010
 @wait 0.6
@@ -169,8 +169,8 @@ kohei(deadpan): "What's 'hmmm'?" || なんだよ、その「ふーん」。  #c1
 rika<grin>: "Nothing! Nothing! I'm just humming! Hmm-hmm-hmmm!" || なんでもない！ なんでもない！ ただの鼻歌だから！ ふんふふーん！  #c1_0107
 @show ryosuke school_smug c
 ryosuke: "—which is why the correct way to eat a {taiyaki|fish-shaped cake} is head first." || ……だから、たい焼きは頭から食べるのが正しいんだよ。  #c1_0108
-> Tokiwa has arrived the way he usually does, in the middle of an argument nobody else knew had started.  #c1_0109
-kohei(deadpan): "Good morning, Tokiwa." || おはよう、ときわ。  #c1_0110
+> Ishida has arrived the way he usually does, in the middle of an argument nobody else knew had started.  #c1_0109
+kohei(deadpan): "Good morning, Ishida." || おはよう、いしだ。  #c1_0110
 ryosuke<neutral>: "The head has the most bean paste. You eat the best part while it's still hot, and the tail cleans your palate. That isn't an opinion. It's thermodynamics." || 頭が一番あんこが多い。熱いうちに一番おいしいところを食べて、しっぽで口直しをする。これは意見じゃない。熱力学だ。  #c1_0111
 kohei(deadpan): "It's seven-fifty in the morning." || 朝の七時五十分だぞ。  #c1_0112
 rika<surprised>: "Tail first! You save the best part for last! Everybody knows that!" || しっぽからでしょ！ 一番おいしいとこは最後に取っとくの！ 常識じゃん！  #c1_0114
@@ -198,7 +198,7 @@ nanoha<smile>: "Yours was easier. It's always right under Fukuda-kun's. Fukuda-k
 == c1_intro | The transfer student
 @bg bg_classroom_day
 @bgm -
-> I end up in the second-to-last row by the window. Nanoha's two rows over, which apparently satisfies the folder. Tokiwa's near the front, already drawing his diagram.  #c1_0133
+> I end up in the second-to-last row by the window. Nanoha's two rows over, which apparently satisfies the folder. Ishida's near the front, already drawing his diagram.  #c1_0133
 > Ōno-sensei, our homeroom teacher, shuffles in with the attendance sheet and the expression of a man who was born in a cardigan.  #c1_0134
 @show teacher school_neutral c
 teacher: "All right. Settle down. Before we start—as some of you have apparently already heard, through channels I'd like to know more about—we have a new student joining us this year." || はい、静かに。始める前に……どうも一部はもう知っているようだな。どこから漏れたのか、先生はぜひ知りたいところだが。今日から、新しい仲間が一人加わる。  #c1_0135
@@ -351,7 +351,7 @@ kohei(smile): "What's number one?" || 一番は？  #c1_0252
 nanoha<smile>: "Secret." || ひみつ。  #c1_0253
 > She walks the ten feet to her own front door. Pauses with her hand on the latch.  #c1_0254
 nanoha<smile>: "Good night, Kō-chan." || おやすみ、こうちゃん。  #c1_0255
-kohei(smile): "Night, Chibi." || おやすみ、チビ。  #c1_0256
+kohei(smile): "Night, {Chibi|shorty}." || おやすみ、チビ。  #c1_0256
 @hide nanoha
 > The door closes.  #c1_0257
 @bg bg_houses_night_lit slow
