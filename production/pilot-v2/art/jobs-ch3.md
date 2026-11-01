@@ -23,3 +23,4 @@
 | 8 | 0 | live cg_window_sill (Kling v3 Pro, 4 s) | — | 01a19793-0125-7992-bbda-55bbbd68a222 |
 | 8 | 1 | live cg_tree_natsuki (Kling v3 Pro, 4 s) | — | 01a19793-0128-7032-9c67-7e8a486ffbc1 |
 | 8 | 2 | live cg_lunch (Kling v3 Pro, 4 s) | — | 01a19793-0124-77f3-9d43-aea6f0775898 |
+| 9 | 0–1 | cg_window_sill_turn (rabbit a quarter turn, facing the frame corner) from 842 | 851–852 | 01a197b3-139c-74e3-9461-823fd69cd9ab, 01a197b3-139e-7c83-bfaf-6b2fad2bad2e |

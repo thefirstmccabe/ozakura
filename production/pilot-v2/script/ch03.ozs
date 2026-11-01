@@ -47,7 +47,7 @@ nanoha<deadpan>: "A terrible doctor. Handsome, though." || 最悪のお医者さ
 > It's always two against one in this house.  #c3_0085
 @show nanoha home_smile
 kohei(sad): "…Next time, call me anyway." || ……次は、それでも電話しろ。  #c3_0086
-akane<tease>: "Next time, don't make that face." || 次は、そんな顔しないでね。  #c3_0087
+akane<tease>: "Only if you stop hovering." || 見張るの、やめてくれたらね。  #c3_0087
 > She pulls the blanket up over her head. Conversation over.  #c3_0088
 @hide akane
 @show nanoha home_smile c
@@ -65,7 +65,7 @@ kohei(smile): "…Window." || ……窓な。  #c3_0094
 > I open my window. The night air is cool and smells like wet earth from the hill behind the houses.  #c3_0099
 @cg cg_window slow
 > Nanoha's leaning on her windowsill in her pajamas, her hair piled up in a bun on top of her head with the enormous soft scrunchie she's had since middle school.  #c3_0100
-> She's holding up a white rabbit plushie in both hands, solemnly, at arm's length.  #c3_0101
+> She's holding up a white rabbit plushie in both hands, solemnly, just under her chin.  #c3_0101
 kohei(neutral): "…Who's that." || ……誰だ、それ。  #c3_0102
 nanoha: "{Usagi-san|Mr. Rabbit}." || うさぎさん。  #c3_0103
 kohei(deadpan): "I know it's {Usagi-san|Mr. Rabbit}. I bought you {Usagi-san|Mr. Rabbit}." || うさぎさんだってことは知ってる。買ってやったの、俺だろ。  #c3_0104
@@ -95,15 +95,16 @@ kohei(serious): "If something happened, and I wasn't there—" || もし何か�
 nanoha: "Then I'd be there. Or Mom. Or Dad. Or Grandpa." || そしたら、私がいる。お母さんも。お父さんも。おじいちゃんも。  #c3_0129
 nanoha: "You're not the only person who loves her, Kōhei." || あかねちゃんを大事に思ってるのは、こうへいだけじゃないんだよ。  #c3_0130
 > I don't say anything. Anything I could say to that is either an argument or something worse.  #c3_0131
-kohei(neutral): "…Thank you. For tonight. Really." || ……ありがとな。今日のこと。ほんとに。  #c3_0313
-> She looks at me for a second. Then she reaches over and turns {Usagi-san|Mr. Rabbit} a quarter turn, so he faces the corner of the window frame instead.  #c3_0314
-nanoha: "His sentence has been reduced. For good behavior." || 減刑です。模範囚なので。  #c3_0315
+kohei(neutral): "…Thanks. For tonight." || ……ありがとな。今日のこと。  #c3_0313
+@cg cg_window_sill_turn
+> She looks at me for a second. Then she reaches over and turns {Usagi-san|Mr. Rabbit} a quarter turn, so he's facing the curtain instead.  #c3_0314
+nanoha: "His sentence has been reduced. For good behavior." || げんけいです。模範囚なので。  #c3_0315
 > I think about mentioning that Mizuno might come up to photograph the tree. Then the cat down the lane starts up again, and she laughs, and it doesn't come up.  #c3_0321
 nanoha: "Good night, Kō-chan." || おやすみ、こうちゃん。  #c3_0162
 kohei(smile): "Night, {Chibi|shorty}." || おやすみ、チビ。  #c3_0322
 @cg -
 > She slides her window shut, and her light goes out.  #c3_0163
-> On her side of the glass, the rabbit is still facing the corner.  #c3_0164
+> On her side of the glass, the rabbit is still facing the curtain.  #c3_0164
 > I leave my window open a while longer.  #c3_0323
 
 == c3_saturday | Saturday practice
@@ -158,7 +159,7 @@ natsuki<curious>: "How much did you sleep?" || 昨日、何時間寝た？  #c3_
 kohei(neutral): "Enough." || 足りてる。  #c3_0354
 natsuki<smile>: "Four hours." || 四時間。  #c3_0355
 kohei(surprised): "…Four and a half." || ……四時間半。  #c3_0356
-natsuki<curious>: "And you keep shaking out your left hand. Every ten steps or so. You do it in class too. Third period." || あと、左手。十段ごとくらいに、ぶらぶらさせてる。授業中もやってるよ。三時間目。  #c3_0357
+natsuki<curious>: "And you keep shaking out your left hand. Every ten steps or so. You do it in class too. Third period." || あと、左手。じゅうだんごとくらいに、ぶらぶらさせてる。授業中もやってるよ。三時間目。  #c3_0357
 > I hadn't noticed. I stop doing it. A few steps later I catch myself doing it again. She sees me catch it, and this time I can't stop laughing.  #c3_0358
 @show natsuki track_grin
 > She turns on the landing and lifts the camera before I can get a hand up.  #c3_0359
@@ -178,7 +179,7 @@ natsuki<grin>: "Nope. It's a good one." || やだ。いい写真だもん。  #c
 @bgm nanoha
 > The steps come out of the cedars under a weathered {torii|shrine gate}, and then the trees open up and you're standing in front of the Ōzakura.  #c3_0179
 > People who see it for the first time always stop walking.  #c3_0181
-> It's that big. The trunk's so wide three adults couldn't link arms around it, gnarled and mossy and split in places like old stone. The branches spread out over the whole hilltop like a roof. One of them reaches out low and long, almost level, at shoulder height, as if it's offering you its arm.  #c3_0182
+> It's that big. The trunk's so wide three adults couldn't link arms around it, gnarled and mossy and split in places like old stone. The branches spread out over the whole hilltop like a roof. One of them reaches out low and long, almost level, as if it's offering you its arm.  #c3_0182
 > And in April, every inch of it is in bloom.  #c3_0183
 > Below it, the big flat boulder we used to climb on as kids. Below that, the whole valley: the river, the rooftops of Shirasawa, the mountains folded blue behind.  #c3_0184
 @cg cg_tree_natsuki
@@ -190,7 +191,7 @@ natsuki<grin>: "Nope. It's a good one." || やだ。いい写真だもん。  #c
 > She sees us and doesn't look surprised. She picks up the second broom, walks over and hands it to Mizuno without a word, smiling.  #c3_0370
 @show natsuki track_laugh r
 natsuki<laugh>: "Ha. I guess I'm working." || あはは。働くことになっちゃった。  #c3_0371
-natsuki<smile>: "I asked Nanoha on Thursday, after you'd gone to work. Rika said it was her grandpa's tree, so I asked if I could come up and take pictures." || 木曜にね、きみがバイトに行ったあと、なのはに聞いたの。りかが、なのはのおじいちゃんの木だって言ってたから。写真撮りに来てもいいかって。  #c3_0372
+natsuki<smile>: "I asked Nanoha on Thursday, after you'd gone to work, if I could come up and take pictures." || 木曜にね、きみがバイトに行ったあと、なのはに聞いたの。写真撮りに来てもいいかって。  #c3_0372
 > Thursday. After school. Before the window.  #c3_0373
 nanoha<smile>: "Grandpa said yes before I'd finished asking." || おじいちゃん、私が聞き終わる前に「いいよ」って。  #c3_0374
 > I take the trash bags.  #c3_0375
@@ -254,7 +255,7 @@ nanoha(smile): "Grandpa's right. It does look like rain." || おじいちゃん�
 @hideall
 > At the bottom of the steps, Mizuno shoulders her practice bag.  #c3_0405
 @show natsuki track_smile r
-natsuki: "Okay! I've intruded enough. Thanks for the tea. And the tree. I'll get out of your hair." || よし！ すっかりお邪魔しちゃいました。お茶、ごちそうさまでした。あと、木も。じゃあ、私はこれで。  #c3_0270
+natsuki: "Okay! Thanks for the tea. And the tree. And the broom." || よし！ お茶、ごちそうさまでした。あと、木も。ほうきも。  #c3_0270
 @show nanoha home_smile l
 nanoha: "Natsuki-san. Have you eaten lunch?" || なつきさん。お昼、もう食べた？  #c3_0271
 natsuki<surprised>: "Eh? Not yet. I was going to grab something at the convenience store by the—" || え？ まだだけど。駅前のコンビニで何か買おうかなって……  #c3_0272
@@ -277,7 +278,7 @@ natsuki<curious>: "Who's Mio? Is she good?" || みおって誰？ 強いの？  
 > The Tachibanas' front door is already open when we get down the hill. Auntie Emi is standing in it in her yellow apron, as if she'd been expecting exactly this many people.  #c3_0282
 emi: "Kōhei-kun, welcome home! And— oh! A new friend!" || こうへいくん、おかえり！ あら……まあ！ 新しいお友だち？  #c3_0283
 natsuki(smile): "Mizuno Natsuki! Sorry for barging in—" || みずのなつきです！ 急にお邪魔して、すみません……  #c3_0284
-emi<laugh>: "Barging? Nonsense! Come in, come in, before everything gets cold. Akane-chan's already here." || お邪魔だなんて、とんでもない！ さあ、上がって、上がって。冷めちゃうわよ。あかねちゃんも、もう来てるから。  #c3_0285
+emi<laugh>: "Barging? You're saving me. Come in, come in, there's {karaage|fried chicken} that needs eating. Akane-chan's already here." || お邪魔だなんて！ 助かるわ。さあ、上がって、上がって。からあげ、食べてもらわなきゃ。あかねちゃんも、もう来てるから。  #c3_0285
 @bg bg_tachibana_living
 @show mio home_smug c
 mio: "Kō-nii. Sit there." || こうにい。そこ、すわって。  #c3_0406
@@ -293,7 +294,7 @@ mio<grin>: "You're ON." || ぜったい負けないもん！  #c3_0292
 @cg cg_lunch
 > Auntie Emi has made enough for twelve.  #c3_0411
 > {Karaage|fried chicken} piled up like a small mountain. A stack of {onigiri|rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|braised burdock}, which explains a lot of Monday mornings. Miso soup for everyone.  #c3_0412
-> Grandpa at the head of the table. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work, so his place has the extra soup bowls.  #c3_0413
+> Grandpa at the far end. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work, so his place has the extra soup bowls.  #c3_0413
 emi: "Everyone, hands together!" || はい、みんな、手を合わせて！  #c3_0414
 mio: "{Itadakimasu|let's eat}!" || いただきまーす！  #c3_0415
 > Everybody says it a beat behind her. Mizuno says it loudest of all.  #c3_0416
