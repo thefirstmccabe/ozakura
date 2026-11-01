@@ -31,7 +31,8 @@
   color-scheme:dark;
 }
 html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow:hidden;
-  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;}
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;
+  -webkit-text-size-adjust:100%;text-size-adjust:100%;}   /* iPhone Safari enlarges some text blocks in landscape on its own ("text autosizing"); the likely cause of the Oct 31 lines in 1.3 and the kendo lesson showing at the old size (Nov 1) */
 #app{position:fixed;inset:0;overflow:hidden;font-family:var(--f-body);touch-action:manipulation}
 .layer{position:absolute;inset:0}
 .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s ease}
@@ -313,6 +314,14 @@ input{-webkit-user-select:text;user-select:text}
   #ctrl{top:0;bottom:auto;right:12px;transform:translateY(-58%);gap:0;background:var(--ink-2);border:1px solid rgba(201,164,106,.35);border-radius:3px}
   .cb{font-size:10px;padding:.65em .62em;letter-spacing:.1em}
   #ilabel{left:calc(16px + env(safe-area-inset-left,0px));transform:none}
+  /* Nov 1: the 10-point controls are about 23 points tall; an invisible strip above and below makes each one about 39 */
+  .cb{position:relative}
+  .cb::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-6px}
+  /* the bottom fifth is under the text box here, so CGs crop a little higher (their living stills too, so they stay aligned) */
+  #cg .bgimg,#cg .live,#animV{object-position:50% 35%}
+  /* menus: the text box no longer shows through, and three save slots fit across */
+  .panel{background:rgba(10,12,20,.97)}
+  .slots{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
 }
 @media (prefers-reduced-motion: reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
 @media (max-aspect-ratio: 1/1){ #box{min-height:22vh} .spr{max-width:none} #face,#box{--fw:clamp(96px,15vh,150px)} }
