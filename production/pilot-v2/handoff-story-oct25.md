@@ -1,5 +1,7 @@
 # From Production (Ch2) to the Story and Audio threads (Oct 25)
 
+**Status (Oct 31): the Story items are done (production log 10-31). The Audio items and the Planning line under "the no reader sure rule" are still open for those threads.**
+
 ## Story
 - **[P] details to fold into canon:** `story/pilot-notes.md` §3, "v2 Ch2 'Kendo', Oct 24" (line IDs in `production/pilot-v2/reviews/ch2/continuity.md`).
 - **Wording changed in production:** c2_0194 now reads "One tear, sliding from the corner of her eye down her cheek" (the CG's tear runs down her cheek, not toward her ear); c2_0289 now reads "The street outside ran along the river under a row of cherry trees…" (the apartment art has the street level with the river, not running down to it).
