@@ -24,7 +24,7 @@ import json, os, re, sys
 SPEAKERS = {"kohei": "Kōhei", "nanoha": "Nanoha", "natsuki": "Natsuki", "akane": "Akane", "rika": "Rika",
             "ryosuke": "Ryōsuke", "teacher": "Ōno-sensei", "kirishima": "Kirishima", "takatsuki": "Takatsuki",
             "manager": "Manager", "yuzu": "Yuzu", "emi": "Emi", "mio": "Mio", "past_natsuki": "???",
-            "classmate": "Classmate"}
+            "classmate": "Classmate", "genji": "Genji"}
 # Name tags (style guide §3a): through spring (Ch1–8) every spoken line shows the full name, family name first (author,
 # Nov 1); from Ch9 only a character's first spoken line in each chapter does (the Oct 25 rule). Anyone not listed keeps
 # the short tag (no decided given name: Ōno-sensei, Manager, Classmate, "???").
@@ -32,7 +32,7 @@ FULL_EVERY_LINE_THROUGH = 8
 SPEAKERS_FULL = {"kohei": "Fujisawa Kōhei", "nanoha": "Tachibana Nanoha", "natsuki": "Mizuno Natsuki",
                  "akane": "Fujisawa Akane", "rika": "Hoshikawa Rika", "ryosuke": "Ishida Ryōsuke",
                  "kirishima": "Kirishima Aoi", "takatsuki": "Takatsuki Shō", "yuzu": "Shiina Yuzu",
-                 "emi": "Tachibana Emi", "mio": "Tachibana Mio"}
+                 "emi": "Tachibana Emi", "mio": "Tachibana Mio", "genji": "Tachibana Genji"}
 
 
 def mark_full_names(cmds):
