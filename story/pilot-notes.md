@@ -297,7 +297,7 @@ Production thread; continuity in `production/pilot-v2/reviews/ch3/continuity.md`
 
 ## 7. Running bits worth keeping
 - Nanoha's catalogue of Kōhei's faces.
-- **Usagi-san,** the white rabbit plushie Kōhei bought Nanoha, in recurring time-out ("He knows what he did"; facing the corner means a reduced sentence).
+- **Usagi-san,** the white rabbit plushie Kōhei bought Nanoha, in recurring time-out ("He knows what he did"; a reduced sentence was planned as facing the corner; in the Ch3 build it's a quarter turn to face her, "halfway out of trouble" [P]).
 - Emi's kinpira: "She's very bad at measuring burdock. It's a sickness."
 - "Cedar pollen" / "It's April."
 - Nanoha's score-keeping ("That's two points for me").
