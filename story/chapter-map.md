@@ -35,7 +35,7 @@
 | 5 | Late April–Golden Week | Golden Week | Kōhei works most of the holiday. On his one day off the five go into the city; Natsuki plans it and then waits to be invited. A too-intense practice (first anger warning sign). **[P]** On the outing, Rika tells Nanoha about the three first-years he turned down last year ("no time") and points out that Natsuki is a more formidable rival than any of them (moved from Ch1, author Oct 24). On the day off he notices she's waiting to be invited, and invites her himself [P]. | Introduce Kazuo's backyard training with Kōhei. **Dream [P]:** that night, the first eyes dream. |
 | 6 | May | Double Shifts | Kōhei works double shifts for Akane's birthday present, gives it, then collapses sick: both girls bring porridge, Akane referees, he loses the fight to stay up (13b). **Dream [P]:** in the fever, the wrist dream, while both girls tend him. | Mom still behind the fusuma. |
 | 7 | May | Usagi-san's Lawyer | Natsuki in Nanoha's room: plushie time-out (1) and the plushie lawyer (2). **FB2: Usagi-san.** **[P] B-plot:** the guys' game night at Ryōsuke's: Takatsuki plays the fighting game like he does kendo, flawless and by the book, and Kōhei can't beat him and gets ridiculously angry. A plushie has moved on its own; Nanoha blames Kōhei. | Fairy displacement. |
-| 8 | Late May–June | Point to Shiina | Yuzu's introduction at Hoshino Kitchen (the pilot scene, moved); Kōhei trains her; Nanoha and Natsuki briefly united in annoyance. | |
+| 8 | Late May–June | Point to Shiina | Yuzu's introduction at Kitchen Komugi (the pilot scene, moved); Kōhei trains her; Nanoha and Natsuki briefly united in annoyance. | |
 
 ## Part 2 — Rain and summer (June–August)
 

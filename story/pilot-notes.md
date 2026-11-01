@@ -102,8 +102,8 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 
 ### Still needs an author decision
 1. **Pilot names.** All are [P] and need approval or replacement:
-   - Places: the town (Shirasawa), the school (Shirasawa High), the shrine (Hanaoka) and the restaurant (Hoshino Kitchen).
-   - Cast: Ryōsuke, Rika, Yuzu, Kirishima, Takatsuki, Sōta, Kazuo, Emi, Genji, Chie and Ōno-sensei.
+   - Places: the town (Shirasawa), the school (Shirasawa High), the shrine (Hanaoka) and the restaurant (**Kitchen Komugi**, renamed from Hoshino Kitchen by the author Nov 1, so it doesn't blur with Hoshikawa).
+   - Cast: Ryōsuke, Rika, Yuzu, Kirishima, Takatsuki, Sōta, Kazuo, Emi, Genji, Chie and Ōno-sensei. **Nov 1 (author):** Ryōsuke's surname is **Ishida** (was Tokiwa, which readers confused with Takatsuki).
    - Details: Natsuki's father's job and Akane's clinic day.
 2. ~~The address guide (§4), including "Kō-chan."~~ **Decided Oct 17** (style guide §3c; delegated by the author): Nanoha keeps "Kō-chan" in private; the nickname that hurts (scene bank 6) is Kōhei's "Chibi" for her.
 3. **POV** (canon: Open).
@@ -139,7 +139,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 **Kōhei:**
 - Class 2-B. Up at 5:40, makes two lunches, knocks on his mother's door.
 - A thick tsuka callus on his left palm.
-- Works at Hoshino Kitchen [P] Tue/Thu/Sun.
+- Works at Kitchen Komugi [P] Tue/Thu/Sun.
 - Nanoha's catalogue of his faces: No. 1 is "Secret"; No. 4 is "Somebody wants to fight me."
 
 **Nanoha:**
@@ -180,7 +180,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - **Genji (grandfather, shrine caretaker):** his "very convenient back" only hurts on petal days. Mentioned only.
 
 **School [P]:**
-- **Tokiwa Ryōsuke:** the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes (v2: the topic becomes taiyaki, head or tail first; style guide §3b). Calls Kōhei "Fujisawa."
+- **Ishida Ryōsuke** (was Tokiwa until Nov 1): the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes (v2: the topic becomes taiyaki, head or tail first; style guide §3b). Calls Kōhei "Fujisawa."
 - **Hoshikawa Rika:** Nanoha's best friend. Art club, no indoor voice, novelty clips (strawberry, star, a frog wearing a crown). Calls Nanoha "Nano-chan."
 - **Ōno-sensei:** 2-B homeroom, classical Japanese. Tall, tired, "born in a cardigan." On screen from v2 (sprite from `inventory/full-ono.png`).
 - **v2 [P]:** there's no Fukuda in 2-B this year, which is how Kōhei knows Nanoha looked for his name before her own (names sort in kana order, so ふくだ sits right above ふじさわ).
@@ -189,7 +189,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - **Kirishima Aoi:** third-year captain. **Becoming male (fix 28).** Quiet authority, deadpan jokes no one gets. "You stopped for half a second. Don't."
 - **Takatsuki Shō:** the Rival, fast "like a whip." Being rewritten per fix 7. Look and voice approved Oct 8.
 
-**Hoshino Kitchen [P]:**
+**Kitchen Komugi [P]** (was Hoshino Kitchen until Nov 1):
 - **Shiina Yuzu:** the work kōhai, a first-year at Shirasawa Commercial. Cheeky ("Point to Shiina"), flustered by sincerity, a brilliant customer handler. Honey-brown hair with a red clip. Look and dialogue approved Oct 8; **her introduction moves to around May–June** (§1b).
 - **The manager:** harried and balding. "You're a lifesaver," about nine times a shift.
 
@@ -217,7 +217,7 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
   - Same class four years running. ~~Kōhei spent five days in 1-C during last year's exchange program ("a scheduling error," per the minutes).~~ Cut Oct 24 with the rest of the old bit; Nanoha's theory is now a staff-room folder (see Oct 24 below).
   - About 200 second-years; the class lists go up at the entrance; they arrive at 7:50.
   - Fukuda is in 2-E this year.
-  - The seating: Kōhei in the second-to-last row by the window, Natsuki behind him, Nanoha two rows over, Tokiwa near the front.
+  - The seating: Kōhei in the second-to-last row by the window, Natsuki behind him, Nanoha two rows over, Ishida near the front.
   - The full timetable is handed out on day one.
 - **Natsuki:**
   - Loves horror movies, "the cheesier the better."
@@ -245,7 +245,7 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
 
 ### v2 Ch2 "Kendo", Oct 24: new provisional details [P]
 Production thread; the line-by-line list is in `production/pilot-v2/reviews/ch2/continuity.md` ("New [P] details"), the handover in `reviews/ch2/handover-oct25.md`.
-- **Hoshino Kitchen:** closes at 9; Tuesday shift 5:30 to close; Kōhei on dish pit, drink bar and register; numbered tables, a window booth, a noisy dishwasher, an automatic door; the brown apron with a cartoon chef on the pocket, tied like a hakama. The manager mistakes Natsuki for staff ("Lifesaver" ×9). Kōhei's work clothes are drawn as a T-shirt and bib apron (style guide §2 says white shirt and waist apron; the author picks).
+- **Kitchen Komugi** (was Hoshino Kitchen): closes at 9; Tuesday shift 5:30 to close; Kōhei on dish pit, drink bar and register; numbered tables, a window booth, a noisy dishwasher, an automatic door; the brown apron with a cartoon chef on the pocket, tied like a hakama. The manager mistakes Natsuki for staff ("Lifesaver" ×9). Kōhei's work clothes are drawn as a T-shirt and bib apron (style guide §2 says white shirt and waist apron; the author picks).
 - **Home:** on shift nights Akane's dinner waits in the fridge with a note, and she texts a photo of the empty container at seven.
 - **Natsuki at the restaurant:** with five 2-B girls after karaoke ("everybody gets the strawberry parfait"); the kids' plate isn't ID-checked; she photographs it from three angles and keeps the paper flag (later in her pen cup).
 - **Town:** the mountain looks walkable from the station; a taiyaki stand at the north exit (good red bean, burnt custard); the convenience-store drink fridge that freezes everything; the lower river path floods in June, herons on the bike racks; the bridge lies between the station and his hill, with streetlights along the railing and trains toward the station; the Ōzakura shows at dusk as a small pale tree on the hill.
@@ -271,7 +271,7 @@ Production thread; the line-by-line list is in `production/pilot-v2/reviews/ch2/
 - **Hanaoka Shrine:** locals call it "Ōzakura-sama." Stone stairs through cedars to a weathered torii.
   - **The Ōzakura:** a trunk wider than three adults can circle; a low branch at shoulder height "as if offering you its arm"; a flat boulder; a view of the whole valley.
   - **Its age:** the shrine records go back about 300 years and only call it "the great tree."
-- **Hoshino Kitchen:** a family restaurant by the station.
+- **Kitchen Komugi:** a family restaurant by the station.
 - **Street Brawlers:** a fictional fighting game. Natsuki mains Kagero, "a coward's character" (Sōta).
 
 ## 6. Seeds planted

@@ -118,3 +118,6 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **The supporting cast** (§8): they appear across the year with an interest, a running bit and a moment each; Kirishima stays just the captain.
   - **From Production's Oct 25 and Oct 28 handoffs:** the "no reader sure" rule loosened (§5; author, Oct 25): one reader may pass 70% at a single checkpoint if it evens out, read as covering all three numbers (Working; the dream woman's line is with the author). The animated-moment example (§2) no longer names the Ch2 catch, which became a still on Oct 28.
   - **Folded from the approved Ch1–2 builds** (§8): Kōhei's built week and his Saturday afternoons at the shrine; Nanoha's running bits; Natsuki photographing every town, Chie in Sendai, her moves and her parents; Akane's seven o'clock photo. Also a stale fix: Kōhei plays fighting games with Mio (was "her little brother").
+- **Nov 1:**
+  - **The loosened 70% rule covers the dream woman** (§5; author): a single reader's spike is fine if it doesn't stick (still 70%+ at the next checkpoint, or a stretch's average above its band, fails).
+  - **Pilot names** (author): Ryōsuke's surname is Ishida (was Tokiwa); the restaurant is Kitchen Komugi (was Hoshino Kitchen). Canon names neither; recorded in `pilot-notes.md` and the style guide.

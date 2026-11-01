@@ -50,7 +50,7 @@
 
 **Revised Oct 24 (Story thread)** for the author's Oct 18–24 decisions and the Ch1 cold reads (the wanting leaned Nanoha about 65 for structural reasons: Nanoha had the first third, the interlude and the night scene). **Ch2 is Natsuki's chapter.** What she offers him (canon §6, Oct 21): he puts the load down with her, she's direct, and she isn't careful with him.
 
-**2.1 Tuesday night, Hoshino Kitchen.** **[P]** The manager's "Lifesaver!" count (moved here from the old 3.1). Natsuki comes in with the karaoke girls from Ch1, who are already calling her "Nacchan" on screen, and finds him in an apron. She teases, orders badly on purpose, and stays until close, talking while he wipes tables: about the town, never about him, never handling him carefully. She gets him to laugh twice. He talks more than he has in months and only notices after she's gone. Short.
+**2.1 Tuesday night, Kitchen Komugi** (Hoshino Kitchen until Nov 1). **[P]** The manager's "Lifesaver!" count (moved here from the old 3.1). Natsuki comes in with the karaoke girls from Ch1, who are already calling her "Nacchan" on screen, and finds him in an apron. She teases, orders badly on purpose, and stays until close, talking while he wipes tables: about the town, never about him, never handling him carefully. She gets him to laugh twice. He talks more than he has in months and only notices after she's gone. Short.
 
 **2.1b Wednesday morning, his kitchen (added by Production Oct 25; the author asked for a little Nanoha in Ch2 and left the shape to Production).** Nanoha's "Again." with her mom's food; she hears at once that his voice is rough from talking; he tells her Mizuno came in and stayed till close; "That one's new… I'll have to give it a number"; a honey throat lozenge, "For the talking"; on the walk she's quiet a little longer than usual, then asks about the club's first-years. In the built script it's `c2_morning`, with its [P] details in `story/pilot-notes.md`.
 
@@ -71,7 +71,7 @@
 **Needs**
 - **Manga insert:** the match, 2 pages, about 9 panels, panel by panel (style guide §4a). Built from the Oct 12 test script where its panels pass review. It replaces `cg_jigeiko`.
 - **CG:** the catch, in her Oct 20 look. ~~**Animated moment:** the fall and catch, 2–3 seconds~~; the living still (her hair settling, the tear, dust in the light) is what shipped (Oct 28).
-- **Backgrounds:** Hoshino Kitchen at night; classroom, dojo, bridge at dusk, river evening; Natsuki's apartment at night (**new**).
+- **Backgrounds:** Kitchen Komugi at night; classroom, dojo, bridge at dusk, river evening; Natsuki's apartment at night (**new**).
 - **Sprites:** Natsuki in kendo gear plus a teacher-mode pair (glasses, shinai pointer); male Kirishima; Takatsuki. Kōhei's apron face windows if needed. Rika reused.
 - **Music:** daily, natsuki (2.1 and the bridge), practice, memory (fading in from practice at the catch), night (2.8).
 
@@ -137,7 +137,7 @@ Ch4 ends the pilot. **Paired interludes** on the same night (one for each girl) 
 
 ## Totals and cost (updated Oct 24)
 - **Ch1 is done and approved** (cold open, dream, arrival, collar, title).
-- **Ch2–4 new art:** CGs for the catch (plus its 2–3 s animated moment), the window, the shrine meeting and FB1; the Ch2 manga insert (about 9 panels); about 8 new or finished backgrounds (Hoshino Kitchen at night, Natsuki's apartment, the window view, the Tachibana living room, the shrine path, the Fujisawa living room by day, Nanoha's room at night, the houses at dusk with both windows lit); sprites for Natsuki (kendo gear, teacher pair, casual), Kirishima, Takatsuki, Mio, Genji and child Kōhei, plus child Nanoha's face windows.
+- **Ch2–4 new art:** CGs for the catch (plus its 2–3 s animated moment), the window, the shrine meeting and FB1; the Ch2 manga insert (about 9 panels); about 8 new or finished backgrounds (Kitchen Komugi at night, Natsuki's apartment, the window view, the Tachibana living room, the shrine path, the Fujisawa living room by day, Nanoha's room at night, the houses at dusk with both windows lit); sprites for Natsuki (kendo gear, teacher pair, casual), Kirishima, Takatsuki, Mio, Genji and child Kōhei, plus child Nanoha's face windows.
 - **Kōhei on stage:** present-day Kōhei never is (face windows only). Child Kōhei is on stage in FB1, because FB1 is Nanoha's interlude (style guide §3a rule 3).
 - **Voice and music:** every line voiced with the final cast; the finished loops.
 - **Budget:** about $21.70 of the $40 cap is spent (ledger). **Rough estimate for Ch2–4: $15–22**, and **the author approved going over the $40 cap** (Oct 24; no new cap set). Ch2 alone (the insert, the catch and its animation, several sprite sets) is likely the most expensive at about $8–10.
