@@ -112,3 +112,7 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Kōhei's three recurring dreams** (§6): her, it, and the trap; anger flashes awake.
 - **Oct 25:**
   - **Imagined scenes** (§2): mostly Nanoha's; the slap at the telling (§6) that Natsuki still feels; the funeral embrace (FB6); a comic one early; at the festival her imagined line comes true.
+- **Oct 31:**
+  - **The street fight's trigger** (§6): a man harasses Nanoha on the way home (details Open); before it, a tournament Kōhei lost ground in for lack of practice, and his anger at the world.
+  - **Two October chapters** added before the choice (§4; the spine is 44); no change to the timeline.
+  - **The supporting cast** (§8): they appear across the year with an interest, a running bit and a moment each; Kirishima stays just the captain.

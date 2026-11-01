@@ -5,7 +5,7 @@
 ---
 
 ## Cold open (added Oct 18; canon §2; independent check applied)
-**P.0** (**Decided Oct 18:** the cold open opens the game and goes straight to Ch1's morning; the dream moves to the end of Ch1, scene 1.8, because cold open plus dream back to back was too much at once.) A flash-forward to the present-day walk into the distortion (Ch40, a misty morning). Two or three images, one figure only: a male hand in a modern sleeve on a sword grip; a modern landmark, such as a convex curve mirror at a bend [P], passing a second time; the mist moving as if something huge is in it. No face, no eyes, no mask or wolf shape, never the tree or the boulder, and nothing that reads as the past (no kimono, no petals, no visible breath). No voices and no narration. Cut to black, then the 5:40 alarm (1.1).
+**P.0** (**Decided Oct 18:** the cold open opens the game and goes straight to Ch1's morning; the dream moves to the end of Ch1, scene 1.8, because cold open plus dream back to back was too much at once.) A flash-forward to the present-day walk into the distortion (Ch42, a misty morning). Two or three images, one figure only: a male hand in a modern sleeve on a sword grip; a modern landmark, such as a convex curve mirror at a bend [P], passing a second time; the mist moving as if something huge is in it. No face, no eyes, no mask or wolf shape, never the tree or the boulder, and nothing that reads as the past (no kimono, no petals, no visible breath). No voices and no narration. Cut to black, then the 5:40 alarm (1.1).
 
 **Parked Oct 19 (author):** the cold open needs improvement but waits until most of the story is written, when the author decides what goes there and whether it's animated or music over CGs. The Ch1 build keeps this version until then.
 - **CGs (new):** two or three, in misty early-morning light, a treatment distinct from both era palettes [P]. **Living still:** the mist moving. About $1–3. The cold-read packet includes them.
@@ -82,7 +82,7 @@
 
 **3.4 The Great Cherry.** Sweeping with Nanoha; her grandfather Genji's "very convenient back." Under the low branch Kōhei gets a fragment only: for a second the air smells like snow, in April, and the branch sits lower than it should; then it's gone [P]. In the same moment Natsuki lowers her camera and doesn't take the shot; asked later, she says the light changed [P]. A point of light drifts past, and only Nanoha sees it: "…You came back." (1, 2)
 
-**3.5 Tea at the shrine.** The bitter tea; Natsuki drinks the whole cup. **[P, spring dread]** Leaving down the steps, someone stumbles, and Genji says without thinking, "Just stopping for a rest, just stopping for a rest"; Nanoha says it too, out of habit. Nobody explains (an okuri-ōkami rule, paid off in Ch36).
+**3.5 Tea at the shrine.** The bitter tea; Natsuki drinks the whole cup. **[P, spring dread]** Leaving down the steps, someone stumbles, and Genji says without thinking, "Just stopping for a rest, just stopping for a rest"; Nanoha says it too, out of habit. Nobody explains (an okuri-ōkami rule, paid off in Ch38).
 
 **3.6 Lunch at the Tachibanas'.** Emi; Mio orders Kōhei around as her retainer and trash-talks Natsuki at Street Brawlers. **[P]** Natsuki wins and trash-talks right back, and Mio demands a rematch ("Natsuki-nee, again!"), which is how Mio decides she likes someone. The walk home past the two houses ends Ch3.
 
