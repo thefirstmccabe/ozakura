@@ -46,9 +46,13 @@
 ---
 
 ## Ch2 — Kendo (Tue Apr 8 – Wed Apr 9)
+**Built Oct 24–31; the script (`script/ch02.ozs`) is now the record,** and the lines below are kept as the outline it was built from. Since Oct 28, kendo terms follow style guide §5 (practice swings, armor, helmet, stance, drills and practice matches in English; men, kote, dō, shinai, hakama, zanshin and named techniques in Japanese), and a term is glossed on its first use in the whole story only.
+
 **Revised Oct 24 (Story thread)** for the author's Oct 18–24 decisions and the Ch1 cold reads (the wanting leaned Nanoha about 65 for structural reasons: Nanoha had the first third, the interlude and the night scene). **Ch2 is Natsuki's chapter.** What she offers him (canon §6, Oct 21): he puts the load down with her, she's direct, and she isn't careful with him.
 
 **2.1 Tuesday night, Hoshino Kitchen.** **[P]** The manager's "Lifesaver!" count (moved here from the old 3.1). Natsuki comes in with the karaoke girls from Ch1, who are already calling her "Nacchan" on screen, and finds him in an apron. She teases, orders badly on purpose, and stays until close, talking while he wipes tables: about the town, never about him, never handling him carefully. She gets him to laugh twice. He talks more than he has in months and only notices after she's gone. Short.
+
+**2.1b Wednesday morning, his kitchen (added by Production Oct 25; the author asked for a little Nanoha in Ch2 and left the shape to Production).** Nanoha's "Again." with her mom's food; she hears at once that his voice is rough from talking; he tells her Mizuno came in and stayed till close; "That one's new… I'll have to give it a number"; a honey throat lozenge, "For the talking"; on the walk she's quiet a little longer than usual, then asks about the club's first-years. In the built script it's `c2_morning`, with its [P] details in `story/pilot-notes.md`.
 
 **2.2 Wednesday: first practice.** Kirishima (male, deadpan) runs warm-ups. Takatsuki arrives through his clean, exact form; no needling about missed practices. Natsuki joins. (7, 28)
 
@@ -58,7 +62,7 @@
 
 **2.5 Debrief.** Kirishima: "You stopped for half a second. Don't." Takatsuki notices she read Kōhei better than he ever has. (P1)
 
-**2.6 The mop race and the catch.** He stays late without explaining why (P4). She slips; he catches her (a **very short animated moment**, canon §2); a tear she can't account for: "Cedar pollen." / "It's April." No flash. (2, 29)
+**2.6 The mop race and the catch.** He stays late without explaining why (P4). She slips; he catches her (a still CG since Oct 28; the author found the animation didn't work); a tear she can't account for: "Cedar pollen." / "It's April." No flash. (2, 29)
 
 **2.7 The bridge at dusk.** Their first walk alone. "Saturday mornings. Club practice. You'll be there?" **[P]** She counters: only if he tells her one thing he does for fun. He thinks. "…Saturday afternoons are free." / "Doing what?" / "Carrying trash bags up at a shrine." / "Okay. That's my project, then." She says she's been wanting to photograph the big tree anyway. Half a date, unnamed. (2, 5)
 
@@ -66,7 +70,7 @@
 
 **Needs**
 - **Manga insert:** the match, 2 pages, about 9 panels, panel by panel (style guide §4a). Built from the Oct 12 test script where its panels pass review. It replaces `cg_jigeiko`.
-- **CG:** the catch, in her Oct 20 look. **Animated moment:** the fall and catch, 2–3 seconds; the living still (her hair settling, the tear, dust in the light) is the fallback.
+- **CG:** the catch, in her Oct 20 look. ~~**Animated moment:** the fall and catch, 2–3 seconds~~; the living still (her hair settling, the tear, dust in the light) is what shipped (Oct 28).
 - **Backgrounds:** Hoshino Kitchen at night; classroom, dojo, bridge at dusk, river evening; Natsuki's apartment at night (**new**).
 - **Sprites:** Natsuki in kendo gear plus a teacher-mode pair (glasses, shinai pointer); male Kirishima; Takatsuki. Kōhei's apron face windows if needed. Rika reused.
 - **Music:** daily, natsuki (2.1 and the bridge), practice, memory (fading in from practice at the catch), night (2.8).
@@ -74,25 +78,33 @@
 ---
 
 ## Ch3 — Windows (Thu Apr 10 – Sat Apr 12)
-**3.1 Home after ten (Thursday).** Walking back from his shift he checks his phone: nothing from Akane, which he takes as good news [P]. Nanoha is there. Akane had a dizzy spell and texted Nanoha instead of him [P]; Nanoha came and stayed. Akane: "I know. That's why I didn't call." Sweet and teasing: "Onii-chan, you're hovering again." (9)
+**Revised Oct 31 (Story thread)** for Ch2 as built (the Wednesday-morning kitchen scene, Akane's photo at seven, Natsuki's unexplained "project"), Production's Oct 25 and Oct 28 handoffs, and canon through Oct 31. **Ch3 is Nanoha's first half and a shared second half.** Ch2 ended with the ending at Natsuki 58, the wanting even and the dream woman at Natsuki 55 (cold read round 3), so Ch3 brings the ending back toward even without tipping the wanting.
 
-**3.2 The window talk,** new layout: from his room into hers across the three-foot gap, so she's visibly in her own window. Usagi-san in time-out. She asks lightly about the new girl and steers off it. Her reserve: she hides inside a bit rather than say anything real. (3, 10, 31)
+**Built from the shipped Ch3** (the author liked the home-from-work scene, the tea and the lunch), **minus:** Yuzu (later), Nanoha's "You're late" (fix 2), the past-life girl at the branch (a fragment only now), Natsuki hearing a voice, the fairy conversation and "I'll keep asking" (FB1 explains the childhood friend in Ch4, where Nanoha hasn't let herself think about the light since Saturday), and the three confessions (Ch5). Kendo terms follow style guide §5. **Ch3's face-reader is Natsuki:** Nanoha's catalogue of his faces stays out of it (§3b).
 
-**3.3 Saturday practice, and the walk up.** Casual sparring: Kōhei usually has the edge; she reads him, and he can't read her. **[P]** Afterward Natsuki walks up to the shrine with him, camera out ("I was going that way"), as she said she would at the bridge. They talk kendo, and she reads things off him she can see: the way he favors his grip, how little he's slept. At the top, Nanoha hands her a broom without a word, smiling (Nanoha's beat). (5, 6)
+**3.1 Home after ten (Thursday).** At seven the two empty-container photos came as usual (Ch2's routine), so he didn't worry [P]. At home Nanoha is on the floor with one of his manga and Akane is half asleep on the sofa: she got dizzy on the station stairs after school and texted Nanoha instead of him [P]; Nanoha came and stayed, and the photos went out on time with Nanoha sitting next to her. Akane: "I know. That's why I didn't call." Sweet and teasing: "Onii-chan, you're hovering again." The shipped scene is the base. (9)
 
-**3.4 The Great Cherry.** Sweeping with Nanoha; her grandfather Genji's "very convenient back." Under the low branch Kōhei gets a fragment only: for a second the air smells like snow, in April, and the branch sits lower than it should; then it's gone [P]. In the same moment Natsuki lowers her camera and doesn't take the shot; asked later, she says the light changed [P]. A point of light drifts past, and only Nanoha sees it: "…You came back." (1, 2)
+**3.2 The window talk,** new layout: from his room into hers across the three-foot gap, so she's visibly in her own window. **Different in shape from Ch2's morning** (Production, Oct 25), where she heard about Natsuki, went quiet and changed the subject: here Natsuki isn't discussed at all, and what goes unsaid is the point.
+- **Usagi-san in time-out,** her bit, which he plays along with (shipped).
+- **Akane:** Nanoha knows why Akane didn't call, and she wants him to let other people carry some of it (her kind of closeness: sharing the load).
+- **Her reserve:** she edges toward something real, a what-if about someone who wouldn't need much of his time, and drops it into "Anyway" before she finishes. He answers without hearing himself: "Then they'd be you, I guess." **[P] Restored from the shipped pilot** with a new setup, since its old one (the three confessions) moved to Ch5: the talk about Akane gets to how little time he has for anything. She goes still, then pink; "…Idiot." / "Good night, Kō-chan." His "Night, Chibi," right after the thing he didn't hear himself say, is Ch3's "Chibi" (the map plants it in Ch1–3; it hurts in Ch11). The curtain closes; Usagi-san faces the wall again. In bed he hears what it sounded like.
+- **Neither mentions Saturday.** Natsuki asked Nanoha at school that day whether she could come up and photograph the tree [P]. Nanoha knows and doesn't say; he thinks of telling her that Mizuno might come, and doesn't ("It didn't come up"). (3, 10, 31)
 
-**3.5 Tea at the shrine.** The bitter tea; Natsuki drinks the whole cup. **[P, spring dread]** Leaving down the steps, someone stumbles, and Genji says without thinking, "Just stopping for a rest, just stopping for a rest"; Nanoha says it too, out of habit. Nobody explains (an okuri-ōkami rule, paid off in Ch38).
+**3.3 Saturday practice, and the walk up.** Kirishima runs it; Takatsuki is already there doing his practice swings alone (his running bit since Ch2). Natsuki's best of five against Kōhei [P]: he takes it 3–2, barely. He has the edge; she reads him and he can't read her. It goes like a conversation, and he doesn't think about that. She points her shinai at him: "Next Saturday." "Next Saturday." Then she walks up to the shrine with him ("I was going that way," from the station side of town), a real camera on a strap this time [P]. On the steps she answers Ch2's "What is?": the project is him doing one thing just because it's fun, and she'll want progress reports [P]. She's direct, she notices ordinary things about him (how little he slept; the way she found the squeaky stairs), and he forgets to be tired until the top. **This is Ch3's present-day closeness** (map, running threads), and it has to weigh as much as the window. At the top Nanoha is sweeping with a second broom ready, and she hands it to Natsuki without a word, smiling. So she knew on Thursday night; he notices, and nobody says anything about it. (5, 6)
 
-**3.6 Lunch at the Tachibanas'.** Emi; Mio orders Kōhei around as her retainer and trash-talks Natsuki at Street Brawlers. **[P]** Natsuki wins and trash-talks right back, and Mio demands a rematch ("Natsuki-nee, again!"), which is how Mio decides she likes someone. The walk home past the two houses ends Ch3.
+**3.4 The Great Cherry.** Natsuki stops dead at her first sight of it (the shrine CG). Sweeping; Genji's "very convenient back." Under the low branch Kōhei gets a fragment only: for a second the air smells like snow, in April, and the branch sits lower than it should; then it's gone [P]. In the same moment Natsuki lowers her camera and doesn't take the shot; asked later, she says the light changed [P]. Nanoha, coming back with Genji's thermos, stops on the path and looks at a spot under the branch: "…You came back." "Nanoha?" A petal, she says. (1, 2)
+
+**3.5 Tea, and the steps.** The bitter tea; Natsuki drinks the whole cup. **[P, spring dread]** Going down the steps with the trash bags, Kōhei stumbles, and Genji says without thinking, "Just stopping for a rest, just stopping for a rest"; Nanoha says it too, out of habit. Natsuki, the horror fan, is delighted and asks if it's a ghost thing; Genji talks about the weather, and Kōhei has never asked. Nobody explains (an okuri-ōkami rule, paid off in Ch38). At the bottom Nanoha asks Natsuki to lunch [P, from the shipped pilot]: her mom always makes too much. "It's a sickness" (Ch1's line about her mom, now shared with Natsuki). Kōhei looks at her; she doesn't look at him.
+
+**3.6 Lunch at the Tachibanas'.** Emi in the doorway, "Kōhei-kun, welcome home," feeding everyone; Akane is already there. Mio orders Kōhei around as her retainer and trash-talks Natsuki at Street Brawlers. **[P]** Natsuki wins and trash-talks right back, and Mio demands a rematch ("Natsuki-nee, again!"), which is how Mio decides she likes someone. Natsuki heads for the station; Kōhei crosses the ten feet home. Up on the hill the Ōzakura is in bloom, pink against blue, perfectly ordinary, and he tells himself so all the way to the door (the shipped ending). End of Ch3.
 
 **Needs**
 - **CG:** the window scene, new layout. **Living still:** the curtain, her hair, the lit room.
-- **CG:** the shrine meeting, in Natsuki's Oct 20 look. **Living still** on the Great Cherry background (petals, the branch).
+- **CG:** the shrine, Natsuki's first sight of the tree with the camera, in her Oct 20 look (they arrive together now, so it's her and the tree, not a meeting). **Living still** on the Great Cherry background (petals, the branch).
 - **Retired:** `cg_pastlife` and `cg_yuzu_counter` (moves to Ch8).
-- **Backgrounds:** the window view from his room (Nanoha in her own window); the houses plate; **new:** the Tachibana living room; the shrine path. Reused: restaurant, street at night, Fujisawa living room at night, Kōhei's room at night, dojo, shrine tree.
-- **Sprites:** Mio; Natsuki casual; Genji.
-- **Music:** daily, night, practice, memory (under Kōhei's fragment at the branch, with Nanoha there), nanoha (then silence at the light), daily → title.
+- **Backgrounds:** the window view from his room (Nanoha in her own window); the houses plate; **new:** the Tachibana living room; the shrine path and steps. Reused: street at night, Fujisawa living room at night, Kōhei's room at night, dojo, shrine tree.
+- **Sprites:** Mio; Natsuki after practice, with the camera; Genji. Reused: Nanoha in pajamas and at the shrine, Akane, Emi.
+- **Music:** daily, night, practice (the finished cue, not the shipped `kendo` track the author disliked), memory (under Kōhei's fragment at the branch, with Nanoha there), nanoha (then silence at the light), daily → title.
 
 ---
 
@@ -170,10 +182,11 @@ Replaces the Story thread's Oct 17 targets, which the author overruled. Cold rea
 - **Check:** no reader concludes Natsuki wins. **Ch2's job for the window:** pull the wanting back from Ch1's Nanoha lean (about 65) toward even.
 
 ### Ch3
-- **Know:** Nanoha's place in his life: Akane didn't call him about the dizzy spell; she texted Nanoha [P, staged in 3.1], who came and stayed. They talk across the windows at night. Nanoha is uneasy about Natsuki and hides it inside a bit (her reserve). Kōhei usually has the edge in sparring, but Natsuki reads him and he can't read her; she comes up to the shrine as she said she would at the bridge. Under the Ōzakura's low branch Kōhei gets a moment that's wrong (snow on the air in April, the branch too low), and in the same moment Natsuki lowers her camera without taking the shot [P]. Nanoha sees something the others don't and speaks to it ("…You came back"). The Tachibanas are his second family.
+- **Know:** Nanoha's place in his life: Akane texted her, not him, about the dizzy spell, and Nanoha came and stayed. At the window she shares the load, nearly says something real and doesn't; he says "Then they'd be you, I guess" without hearing himself, and then calls her Chibi. Each of them kept Saturday from the other; Nanoha's unease about Natsuki shows only in what she does (she knew, said nothing, had a broom ready, asked Natsuki to lunch). Kōhei has the edge in sparring, barely; Natsuki reads him and he can't read her. With Natsuki he forgets to be tired, and her "project" is him having fun. Under the Ōzakura's low branch Kōhei gets a moment that's wrong (snow on the air in April, the branch too low), and in the same moment Natsuki lowers her camera without taking the shot [P]. Nanoha sees something the others don't and speaks to it ("…You came back"). People up here say an odd thing when someone stumbles, and nobody explains it. The Tachibanas are his second family, and they take Natsuki in.
 - **Suspect:** the Ōzakura is the dream's tree, and that life happened here. Nanoha has her own line to something uncanny, older than Natsuki's arrival. The dream-woman question swings back toward even, but not past 60% Nanoha.
-- **Not yet:** what Nanoha saw, or any link to the past life; that the past life ended in winter.
+- **Not yet:** what Nanoha saw, or any link to the past life; that the past life ended in winter; the childhood fairy (Ch4's FB1).
 - **Staging:** the light is on screen but deniable (a sunlit petal, maybe); Kōhei's narration never mentions it; the cold-read packet gets a bracketed staging line. No "You're late" from Nanoha (fix 2).
+- **Check (Oct 31; not a gate, since the window is Ch1–4):** the ending comes back toward even from Ch2's Natsuki 58 (landing slightly toward Nanoha is fine); the wanting stays within about 40–60 (watch "Then they'd be you": the walk up and the lunch carry Natsuki's side, and if readers tip past 60 Nanoha, strengthen those rather than cut the window); the dream woman not past 60% Nanoha; no new "met him before" signals for Natsuki beyond the camera (round 3 found they pile up). Since Oct 25 one reader passing 70% at a single checkpoint isn't a failure on its own, as long as it evens out.
 
 ### Ch4
 - **Know:** as a child, Nanoha's friend was a light that vanished; only Kōhei believed her and searched with her; so at the tree she was speaking to that friend. That's what they've been to each other all along. Kōhei's "We're not" comes too fast and hurts her (Usagi-san faces the wall). Natsuki now knows he isn't taken, and she saw something wrong at his house and didn't ask; she's the one who makes him sit down. The same night, each girl alone: Natsuki photographing the two lit windows, relieved and guilty; Nanoha remembering, regretting that she'd never have said it, and not opening the window. Kōhei fights on instinct in a way Takatsuki can't account for.
