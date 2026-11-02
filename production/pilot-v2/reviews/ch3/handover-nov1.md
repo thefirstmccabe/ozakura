@@ -49,3 +49,12 @@ Ch3 about $9.10 (art $4.42; CGs and living stills $2.43; voices $2.25); running 
 - **Worth a look:** c3_0082, Nanoha's "your TV is bigger," plays over the Fujisawas' small old TV, and the Tachibanas' room at lunch has a big flat screen. It reads as her fib (they came over so Akane could be home), which may be a nice accident; Story's call.
 - **For you and Story** (reader flags outside Production's lane, from the cold read): the prologue (fog, mirror, katana) gets no echo in three chapters; Dad, Mom and Akane's illness stay unnamed ("too coy," all three readers); the paired symmetry (two interludes, two "decided," two inexplicable moments, two cover stories) is starting to show; Kōhei reads as passive; the text never describes Akane (her lilac hair surprised readers in the lunch CG; in the game her sprite shows it earlier); two readers asked why the first-years bow to Nanoha (c3_0120; nobody explains). Ch1–2 lines flagged again (approved, so only listed): the drawer line in Natsuki's mouth, the kendo lesson's glossing, "Race you!", the collar CG's river side and collar-vs-tie.
 - **Kept against one reader:** c3_0308, "I tell myself that all the way to the door" (another reader called it the turn from cozy to uncanny).
+
+---
+
+# Addition, Nov 2
+**Play:** the same link (Ch3, the window talk).
+- **Akane and Dad said plainly** (your Nov 1–2 decisions): after "Akane-chan's smart," Nanoha tells him she called the clinic from his kitchen ("the usual": sit down, drink water, wait for it to pass), that they've checked everything twice and couldn't find anything wrong, that it isn't dangerous, and, when he says they still don't know what it is, "No. But they know what it isn't." His narration answers: "Dad's was cancer. In his pancreas. By the time anyone found it, we were counting in months." Then the wind, the cat, and "If something happened, and I wasn't there—" (c3_0432–c3_0437; five new voiced lines, transcript-checked).
+- c3_0129 now reads "Or my mom. Or my dad. Or Grandpa." so her dad can't be mistaken for his (English only).
+- **Checks:** lint, iPad and phone runs through the scene, and an independent check of the lines (it cut a closing sentence that pointed at Akane being "next," and made "cancer" explicit). About $0.09; running total about $49.40.
+

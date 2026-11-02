@@ -5973,7 +5973,7 @@
 "t": "say",
 "id": "c3_0434",
 "who": "nanoha",
-"text": "\"They've checked everything, Kōhei. Twice. Nothing's broken. It isn't dangerous.\"",
+"text": "\"They've checked everything. Twice. They couldn't find anything wrong. It isn't dangerous.\"",
 "full": true
 },
 {
@@ -5994,7 +5994,7 @@
 {
 "t": "nar",
 "id": "c3_0437",
-"text": "Dad's was in his pancreas. By the time anyone found it, we were counting in months. Nobody had been worried about him, either."
+"text": "Dad's was cancer. In his pancreas. By the time anyone found it, we were counting in months."
 },
 {
 "t": "nar",
@@ -6013,7 +6013,7 @@
 "t": "say",
 "id": "c3_0129",
 "who": "nanoha",
-"text": "\"Then I'd be there. Or Mom. Or Dad. Or Grandpa.\"",
+"text": "\"Then I'd be there. Or my mom. Or my dad. Or Grandpa.\"",
 "full": true
 },
 {
