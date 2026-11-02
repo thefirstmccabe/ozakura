@@ -5955,6 +5955,48 @@
 "full": true
 },
 {
+"t": "say",
+"id": "c3_0432",
+"who": "nanoha",
+"text": "\"I called the clinic from your kitchen. They said it's the usual. Sit down, drink some water, wait for it to pass.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0433",
+"who": "kohei",
+"text": "\"The usual.\"",
+"face": "neutral",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0434",
+"who": "nanoha",
+"text": "\"They've checked everything, Kōhei. Twice. Nothing's broken. It isn't dangerous.\"",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0435",
+"who": "kohei",
+"text": "\"And they still don't know what it is.\"",
+"face": "serious",
+"full": true
+},
+{
+"t": "say",
+"id": "c3_0436",
+"who": "nanoha",
+"text": "\"No. But they know what it isn't.\"",
+"full": true
+},
+{
+"t": "nar",
+"id": "c3_0437",
+"text": "Dad's was in his pancreas. By the time anyone found it, we were counting in months. Nobody had been worried about him, either."
+},
+{
 "t": "nar",
 "id": "c3_0127",
 "text": "The wind moves the trees on the hill. Somewhere down the lane, a cat yells at another cat."

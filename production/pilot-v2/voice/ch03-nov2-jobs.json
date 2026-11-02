@@ -1,0 +1,62 @@
+[
+ {
+  "key": "c3_window.nanoha.c3_0432",
+  "ids": [
+   "c3_0432"
+  ],
+  "texts": [
+   "こうへいの家から、クリニックに電話したよ。いつものだって。座って、お水飲んで、治まるのを待てばいいって。"
+  ],
+  "take": 426,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in two facing bedroom windows across a narrow gap between houses, late at night, speaking softly. It means: \"I called the clinic from your kitchen. They said it's the usual. Sit down, drink some water, wait for it to pass.\" Softly, matter-of-fact and reassuring, reporting what the clinic said."
+ },
+ {
+  "key": "c3_window.kohei.c3_0433",
+  "ids": [
+   "c3_0433"
+  ],
+  "texts": [
+   "いつもの、か。"
+  ],
+  "take": 427,
+  "voice": "Puck",
+  "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in two facing bedroom windows across a narrow gap between houses, late at night, speaking softly, even, neutral. It means: \"The usual.\" Quiet and flat, not convinced."
+ },
+ {
+  "key": "c3_window.nanoha.c3_0434",
+  "ids": [
+   "c3_0434"
+  ],
+  "texts": [
+   "こうへい、検査は全部したでしょ。二回も。どこも悪くないって。危ないものじゃないって。"
+  ],
+  "take": 428,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in two facing bedroom windows across a narrow gap between houses, late at night, speaking softly. It means: \"They've checked everything, Kōhei. Twice. Nothing's broken. It isn't dangerous.\" Gently but firmly reassuring him, not smiling."
+ },
+ {
+  "key": "c3_window.kohei.c3_0435",
+  "ids": [
+   "c3_0435"
+  ],
+  "texts": [
+   "それで、何なのかは、まだ分からないんだろ。"
+  ],
+  "take": 429,
+  "voice": "Puck",
+  "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in two facing bedroom windows across a narrow gap between houses, late at night, speaking softly, serious. It means: \"And they still don't know what it is.\" Quiet, worried, a little stubborn."
+ },
+ {
+  "key": "c3_window.nanoha.c3_0436",
+  "ids": [
+   "c3_0436"
+  ],
+  "texts": [
+   "うん。でも、悪いものじゃないってことは、分かってる。"
+  ],
+  "take": 430,
+  "voice": "Erinome",
+  "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said in two facing bedroom windows across a narrow gap between houses, late at night, speaking softly. It means: \"No. But they know what it isn't.\" Soft and steady, kind."
+ }
+]

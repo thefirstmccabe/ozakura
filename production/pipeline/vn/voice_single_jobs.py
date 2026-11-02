@@ -53,7 +53,11 @@ EXTRA = {"c2_0259": " She says it aloud to herself, alone, trying out a practice
          "c3_0401": " Changing the subject, mild and unbothered.", "c3_0415": " A small child shouting it happily before a big meal.",
          "c3_0426": " A sore loser demanding a rematch at once.", "c3_0346": " Fast and quiet, a little shy, to the step in front of her.",
          "c3_0363": " Flustered, embarrassed by a photo of himself.", "c3_0356": " Caught out, grudgingly correcting.",
-         "c3_0325": " Calling it out across the dojo.", "c3_0332": " Stating a fact, formally, for fairness."}
+         "c3_0325": " Calling it out across the dojo.", "c3_0332": " Stating a fact, formally, for fairness.",
+         # Nov 2: Akane's illness and Dad, at the window
+         "c3_0432": " Softly, matter-of-fact and reassuring, reporting what the clinic said.", "c3_0433": " Quiet and flat, not convinced.",
+         "c3_0434": " Gently but firmly reassuring him, not smiling.", "c3_0435": " Quiet, worried, a little stubborn.",
+         "c3_0436": " Soft and steady, kind."}
 REF = " He is refereeing the match: a loud, clear, crisp call that carries across the dojo."
 KIAI = {"めぇぇんっ！", "こてぇぇっ！", "どぉぉっ！"}
 lines_path, src_path, prefix, out = sys.argv[1:5]

@@ -89,6 +89,12 @@ kohei(neutral): "I'm not. I'd have come, that's all." || 怒ってない。行�
 nanoha: "I know. That's why." || 知ってる。だからだよ。  #c3_0124
 kohei(deadpan): "That's what Akane said." || あかねも、同じこと言ってた。  #c3_0125
 nanoha: "Akane-chan's smart." || あかねちゃんは、賢いから。  #c3_0126
+nanoha: "I called the clinic from your kitchen. They said it's the usual. Sit down, drink some water, wait for it to pass." || こうへいの家から、クリニックに電話したよ。いつものだって。座って、お水飲んで、治まるのを待てばいいって。  #c3_0432
+kohei(neutral): "The usual." || いつもの、か。  #c3_0433
+nanoha: "They've checked everything, Kōhei. Twice. Nothing's broken. It isn't dangerous." || こうへい、検査は全部したでしょ。二回も。どこも悪くないって。危ないものじゃないって。  #c3_0434
+kohei(serious): "And they still don't know what it is." || それで、何なのかは、まだ分からないんだろ。  #c3_0435
+nanoha: "No. But they know what it isn't." || うん。でも、悪いものじゃないってことは、分かってる。  #c3_0436
+> Dad's was in his pancreas. By the time anyone found it, we were counting in months. Nobody had been worried about him, either.  #c3_0437
 > The wind moves the trees on the hill. Somewhere down the lane, a cat yells at another cat.  #c3_0127
 kohei(serious): "If something happened, and I wasn't there—" || もし何かあって、俺がいなかったら……  #c3_0128
 nanoha: "Then I'd be there. Or Mom. Or Dad. Or Grandpa." || そしたら、私がいる。お母さんも。お父さんも。おじいちゃんも。  #c3_0129
