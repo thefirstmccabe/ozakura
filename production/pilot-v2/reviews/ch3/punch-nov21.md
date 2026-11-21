@@ -14,4 +14,4 @@ Items are added as the author reviews; nothing is applied until he says the batc
 | 8 | Ch3 c3_0351 | "I laugh before I can decide not to." is too edgy (author): it plays him as a brooder who rations laughs. Make it plain: "I laugh." Narration only. (The other "before I can…" lines in Ch1–3 are timing, not attitude, so they stay.) | To do |
 | 9 | Ch3 c3_0359 | "…lifts the camera before I can get a hand up" is unclear (author asked what it meant: before he can block his face). Proposed: "She turns on the landing and snaps a picture before I can get a hand in front of my face." Narration only | Kept as is (author: "probably ok") |
 
-**Liked (author), keep as is:** 3.4, the steps ("really nicely done").
+**Liked (author), keep as is:** 3.4, the steps ("really nicely done"); c3_0380, Genji's "The tree doesn't mind" (Production had wondered if it hinted too hard that the tree is alive; the author likes it).
