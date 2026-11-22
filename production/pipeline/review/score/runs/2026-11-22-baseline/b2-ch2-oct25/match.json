@@ -1299,16 +1299,16 @@
   },
   {
    "id": "A45",
-   "verdict": "hit",
+   "verdict": "partial",
    "by": [
     {
      "check": "diagnosis",
-     "verdict": "hit",
+     "verdict": "partial",
      "quote": "S7. A missing gloss (Production). \"Bogu\" first appears unglossed in Kirishima's line #c2_0076."
     },
     {
      "check": "reader2",
-     "verdict": "hit",
+     "verdict": "partial",
      "quote": "\"I show her men\" is kendo jargon for a feint; I only understood it after Takatsuki said \"You did not take his feint.\" A reader could stumble."
     },
     {
@@ -1322,7 +1322,7 @@
      "quote": "Translator's-note pileup. This part has twelve notes ... Six of them hit back-to-back in the two paragraphs before the match"
     }
    ],
-   "why": "Diagnosis and reader 2 each name an untranslated term in a kendo scene; readers 1 and 3 touch the same terms but complain of the opposite (too many notes)."
+   "why": "Diagnosis and reader 2 each name an untranslated term in a kendo scene; readers 1 and 3 touch the same terms but complain of the opposite (too many notes). [Changed hit→partial by the independent check: the author's problem is volume; the findings name single terms, and the readers' main gloss complaint was the opposite.]"
   },
   {
    "id": "A48",

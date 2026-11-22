@@ -1294,7 +1294,7 @@
  "liked": [
   {
    "id": "L01",
-   "flagged": true,
+   "flagged": false,
    "by": [
     {
      "check": "diagnosis",
@@ -1316,7 +1316,8 @@
      "check": "reader2",
      "quote": "Slightly obvious: the \"a second longer\" device is used for Nanoha's hands (part 1) and then Kōhei's look at Natsuki (part 10). Effective once, noticeable twice."
     }
-   ]
+   ],
+   "note": "Unflagged by the independent check: each quote is a line-level note inside the scene (two of them are lines the author flagged himself); none says the scene doesn't work."
   },
   {
    "id": "L02",

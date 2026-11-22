@@ -6,8 +6,8 @@ Run: `runs`. Ground truth: 46 scored items (67 in all). Strict = hit; lenient = 
 
 | | Items | Caught (strict) | Caught (lenient) |
 |---|---|---|---|
-| All scored items | 46 | 13 (28%) | 31 (67%) |
-| Catchable from the text | 32 | 11 (34%) | 23 (71%) |
+| All scored items | 46 | 12 (26%) | 31 (67%) |
+| Catchable from the text | 32 | 10 (31%) | 23 (71%) |
 | Catchable from the screen | 13 | 2 (15%) | 8 (61%) |
 | Catchable from the script | 1 | 0 (0%) | 0 (0%) |
 
@@ -17,7 +17,7 @@ Run: `runs`. Ground truth: 46 scored items (67 in all). Strict = hit; lenient = 
 |---|---|---|---|
 | b0-ch1-oct17 | 6 | 1 (16%) | 4 (66%) |
 | b1-ch1-oct18 | 7 | 2 (28%) | 5 (71%) |
-| b2-ch2-oct25 | 22 | 7 (31%) | 14 (63%) |
+| b2-ch2-oct25 | 22 | 6 (27%) | 14 (63%) |
 | b3-ch3-nov2 | 11 | 3 (27%) | 8 (72%) |
 
 ## By kind
@@ -28,7 +28,7 @@ Run: `runs`. Ground truth: 46 scored items (67 in all). Strict = hit; lenient = 
 | unclear (unclear referent or meaning) | 8 | 2 (25%) | 7 (87%) |
 | explains (explains itself, on the nose, clue-heavy) | 6 | 4 (66%) | 6 (100%) |
 | engine (engine or layout) | 6 | 1 (16%) | 3 (50%) |
-| term (untranslated term) | 4 | 3 (75%) | 4 (100%) |
+| term (untranslated term) | 4 | 2 (50%) | 4 (100%) |
 | flat (flat, or doesn't land) | 3 | 0 (0%) | 1 (33%) |
 | tone (tone: edgy, brooding, quippy, trying too hard) | 2 | 0 (0%) | 2 (100%) |
 | overplayed (overplayed or repeated beat) | 2 | 0 (0%) | 1 (50%) |
@@ -44,10 +44,10 @@ Items each check raised (strict / lenient), and how many findings it made.
 | Check | Strict | Lenient | Findings | Matched an item |
 |---|---|---|---|---|
 | continuity | 1 | 6 | 71 | 7 |
-| diagnosis | 5 | 14 | 176 | 16 |
+| diagnosis | 4 | 14 | 176 | 16 |
 | lint | 1 | 2 | 15 | 6 |
 | reader1 | 4 | 11 | 101 | 11 |
-| reader2 | 3 | 9 | 110 | 11 |
+| reader2 | 2 | 9 | 110 | 11 |
 | reader3 | 4 | 10 | 119 | 9 |
 | onmodel | 0 | 1 | 38 | 1 |
 | build | 2 | 9 | 59 | 11 |
@@ -87,7 +87,7 @@ Items each check raised (strict / lenient), and how many findings it made.
 | A38 A little Nanoha in Ch2 | b2 | story | text | hit | reader3 (hit), continuity (partial), diagnosis (partial) |
 | A40 Texts: the girls use more emoji and stickers, each in her own style | b2 | look-voice | text | miss | — |
 | A42 Full name on a character's first line in each chapter | b2 | unclear | text | hit | reader1 (hit), reader3 (hit) |
-| A45 Too many things untranslated in the kendo scenes | b2 | term | text | hit | diagnosis (hit), reader2 (hit), reader1 (partial), reader3 (partial) |
+| A45 Too many things untranslated in the kendo scenes | b2 | term | text | partial | diagnosis (partial), reader2 (partial), reader1 (partial), reader3 (partial) |
 | A48 Is c2_0278 too on the nose? (c2_0279 cut) | b2 | explains | text | hit | reader1 (hit) |
 | A49 The interlude re-explains what the chat just showed ('The fall, probab | b2 | explains | text | hit | reader1 (hit) |
 | A51 'Six schools' is the third use of the number | b2 | overplayed | text | miss | — |
@@ -105,6 +105,5 @@ Items each check raised (strict / lenient), and how many findings it made.
 | A65 Three cream cardigans (Akane's too much like Nanoha's) | b3 | look-voice | screen | partial | reader2 (partial) |
 | A66 Grandpa at the head of the table | b3 | staging | screen | miss | — |
 
-**Liked items flagged as problems:** 2 of 2
-- L01 (b3-ch3-nov2): diagnosis: "c3_0367 "I don't notice I've stopped being tired until we reach the top." FLAT (states the feeling). It tells the reader"; continuity: "The shrine stairway reads steeper than canon's "slightly uphill" (LOW)"; build: "c3_0359 and c3_0365: "She lifts the camera" and "pulled the camera back against her chest with both hands". The sprite h"; reader1: "Kōhei only laughs out loud with Natsuki (the chair at the restaurant, "I laugh before I can decide not to," "this time I"; reader2: "Slightly obvious: the "a second longer" device is used for Nanoha's hands (part 1) and then Kōhei's look at Natsuki (par"
+**Liked items flagged as problems:** 1 of 2
 - L02 (b3-ch3-nov2): reader1: "Genji: "And you're the young lady with the camera. Take as many as you like. The tree doesn't mind." A stock wise grandp"
