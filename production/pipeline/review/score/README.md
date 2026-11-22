@@ -28,6 +28,12 @@ Handoff: `production/pilot-v2/handoff-planning-nov22.md` §3.
    notes in `$SCRATCH/readers/<build>/rN/`.
 3. One matcher per build (`matcher.md`), writing `$SCRATCH/runs/<build>/match.json`.
 4. `python3 score.py $SCRATCH/runs`; copy reports, matches and results into `runs/<date>-<name>/`.
+5. **Run every candidate at least twice** (the checks are noisy: two identical baseline runs caught 12 and 10 strictly,
+   only 6 items both times; the matcher itself is steady). `python3 compare.py RUN_A RUN_B` gives both counts, the
+   items caught in both, and the verdicts that moved. A gain under about 3 items is within the baseline's swing.
+
+**Metric of record:** the strict count (mean over runs, plus the count caught in every run), reported with the total
+findings and the share that matched an item. The lenient count is shown but not used for decisions.
 
 ## Rules
 - **Hindsight:** a few of today's checks were built from these very items (lint check 6 from A23, held
