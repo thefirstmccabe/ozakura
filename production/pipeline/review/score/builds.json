@@ -1,0 +1,17 @@
+{
+  "_about": "The builds the author reacted to (as handed over), for scoring the review harness against his punch lists. Verified Nov 22: b1 is 54bf849 plus the engine-only fix rounds 2-3 (7d71810), the build he played before the Oct 19 punch list; b0 is the Oct 17 build after the first independent review (8b4b334), before his Oct 17 round; b3 is unchanged in v2/ and the scripts from 3b6f495 to his Nov 21 punch list.",
+  "builds": [
+    {"id": "b0-ch1-oct17", "sha": "8b4b334cd6b27e6e4199818c7ef0e19a639f567d", "chapter": 1,
+     "scripts": ["ch01.ozs"], "split": "c1_morning,c1_intro,c1_interlude",
+     "reader_view_from": "b1-ch1-oct18", "brief": null, "speech_sheets_from": "b1-ch1-oct18", "port": 8150},
+    {"id": "b1-ch1-oct18", "sha": "7d71810048364ed3d498e512ac27924c8cbc54ba", "chapter": 1,
+     "scripts": ["ch01.ozs"], "split": "c1_entrance,c1_lunch,c1_night",
+     "brief": "production/pilot-v2/reviews/ch1/brief.md", "port": 8151},
+    {"id": "b2-ch2-oct25", "sha": "c2d2f5ddafc5c551807fb11e27dbcc7635cecec1", "chapter": 2,
+     "scripts": ["ch01.ozs", "ch02.ozs"], "split": "c1_entrance,c1_lunch,c1_night,c2_tuesday,c2_dojo,c2_mop,c2_bridge",
+     "brief": "production/pilot-v2/reviews/ch2/dialogue-brief.md", "port": 8152},
+    {"id": "b3-ch3-nov2", "sha": "3b6f495ee170369244d530b5443505979ed819b6", "chapter": 3,
+     "scripts": ["ch01.ozs", "ch02.ozs", "ch03.ozs"], "split": "c1_entrance,c1_lunch,c1_night,c2_tuesday,c2_morning,c2_mop,c2_bridge,c3_home,c3_saturday,c3_tree,c3_tea",
+     "brief": "production/pilot-v2/reviews/ch3/dialogue-brief.md", "port": 8153}
+  ]
+}
