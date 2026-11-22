@@ -1,0 +1,1332 @@
+{
+ "build": "b3-ch3-nov2",
+ "missing_reports": [],
+ "findings": [
+  {
+   "check": "diagnosis",
+   "where": "c3_0073",
+   "summary": "FLAT off-voice: Akane's 'I'm asleep' is Nanoha-style deadpan (also fails blind voice test)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0074",
+   "summary": "FLAT repeats: second all-clear after 0067; 'tired' x3; 'Normal tired.' emphasis fragment",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0080",
+   "summary": "FLAT vouches: tells us 0079 hit; a physical beat would do more (also listed under S2 feelings stated, S4 vouches)",
+   "matches": [
+    "A56"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0311",
+   "summary": "FLAT explains itself: second pointer at the 0310 sleeve plant after Akane's 'Both of them.'",
+   "matches": [
+    "A54"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0082",
+   "summary": "FLAT off-voice: 'It wasn't a thing' is casual American slang, not Nanoha (also blind voice test)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0083-c3_0084",
+   "summary": "CUT 0084 punchline-every-line: chiasmus button on 4th surgeon beat; 0083/0084 swappable, bit has no owner (top fix 3)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0085",
+   "summary": "CUT sitcom quip: narration tag on top of the button (top fix 3)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0088",
+   "summary": "FLAT explains itself: 'Conversation over.' narration tag (top fix 3)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0112",
+   "summary": "FLAT punchline-every-line: one legal joke too many",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0120",
+   "summary": "FLAT explains itself/too tidy: explains the private Nanoha; 'Just me' possessive button (top fix 5)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0125",
+   "summary": "CUT explains itself: points at the echo the reader just heard",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0126",
+   "summary": "CUT too tidy/generic: buttons 0125; could be anyone (also blind voice test)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0434",
+   "summary": "FLAT exposition: as-you-know clinic facts; English lost the JP reminder framing",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0324",
+   "summary": "FLAT repeats: 'Saturday' x3; closing clause restates 0169",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0172",
+   "summary": "FLAT off-sheet (§3c): on the floor it should be 'the captain'",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0333",
+   "summary": "FLAT generic: stock Natsuki reaction (also blind voice test)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0364",
+   "summary": "Blind voice test: Natsuki's 'Nope. It's a good one.' is generic, could be Akane or Rika",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0371",
+   "summary": "Blind voice test: Natsuki's 'Ha. I guess I'm working.' could be anyone",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0378",
+   "summary": "Blind voice test: Kōhei's line sounds like Nanoha (judged acceptable as setup)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0367",
+   "summary": "FLAT states the feeling: tells the takeaway after 0351-0366 showed it; neat scene button (top fix 5)",
+   "matches": [
+    "L01"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0368",
+   "summary": "FLAT repeats: 'like everyone does' restates 0181",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0373",
+   "summary": "CUT explains itself, brief risk: narrator remarks on Nanoha's silence (top fix 1)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0390",
+   "summary": "FLAT sitcom quip: textbook reversal, not Natsuki-specific (also blind voice test)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0392",
+   "summary": "CUT explains itself: 0388 already landed the untaken shot; pointing at it flags a mystery; not in beat list (top fix 4)",
+   "matches": [
+    "A55"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0393",
+   "summary": "CUT with 0392: cover story invites reader to ask what she saw; new 'met him before' signal (top fix 4)",
+   "matches": [
+    "A55"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0400",
+   "summary": "FLAT vouches: 'She sounds delighted.' is a tone tag",
+   "matches": [
+    "A64"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0273",
+   "summary": "FLAT off-voice: public Nanoha too confident/imperative, no hesitation (also blind voice test; top fix 2)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0276",
+   "summary": "FLAT minor: 'picked first in gym' is an American-school image",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0278",
+   "summary": "FLAT off-voice/too tidy: private mock-official register used on Natsuki; extra dry button; sounds like Emi (top fix 2)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0292",
+   "summary": "FLAT generic: Mio's 'You're ON.' sounds like any teen (also blind voice test)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0308",
+   "summary": "FLAT explains itself: explains the irony of 'Perfectly ordinary.'; final button (top fix 5)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "S1 (all scenes)",
+   "summary": "Buttons: five of seven scenes end on crafted lines; topper exchanges stacked in home and window scenes",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "S3 (c3_0273, c3_0278, shrine)",
+   "summary": "Public Nanoha is the main voice failure: never a hesitation, brisk and bossy at shrine and invitation",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "S5 (c3_0332, c3_0329)",
+   "summary": "Takatsuki's tip hands Kōhei Natsuki's tell, undercutting the one-sided read",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "S6 (c3_0119, c3_0267, c3_0306)",
+   "summary": "Tic: 'perfectly' x3 uses up the closer's word; 'Above us' in 0306 unclear after Natsuki leaves",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "S7 (c3_0332)",
+   "summary": "Takatsuki's English says 'you' twice though §3c has him avoid it",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0289, c3_0292, c3_0407",
+   "summary": "Americanisms together ('I main', 'You're ON', 'Yes, ma'am') pull away from the translated feel",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c3_0398; c3_0430/c3_0306",
+   "summary": "Tic watch: near-second 'She says it…'; 'the way…' twice three lines apart",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0065-0066, c3_0432-0436",
+   "summary": "Akane's diagnosis: lines rule things out while canon marks it Open; medication vs 'couldn't find anything wrong' wrinkle (HIGH)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0437",
+   "summary": "Dad's pancreatic cancer is a new family fact canon doesn't have (HIGH, procedural)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0388",
+   "summary": "Natsuki's camera aimed at the branch just before the light appears; reader may conclude she saw it too; aim at Kōhei only (MEDIUM)",
+   "matches": [
+    "A55"
+   ]
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0120",
+   "summary": "First-years bowing to Nanoha in the hallway impossible on Thursday of week one (MEDIUM)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_window (after c3_0095 shower)",
+   "summary": "Kōhei's face windows still in school uniform after his shower (MEDIUM-LOW)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0185 onward (shrine)",
+   "summary": "Nanoha at the shrine in her home sprite (hair down) instead of outing/shrine state (MEDIUM-LOW)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "Genji height (pilot-notes)",
+   "summary": "Genji drawn at '58 inches' may put him shorter than Nanoha; also breaks feet-and-inches rule (LOW-MEDIUM)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0372-0374",
+   "summary": "How Natsuki knew to ask Nanoha: draft drops Rika as the source (LOW)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0413",
+   "summary": "Kazuo at work on a Saturday pulls against his [P] water-bureau job (LOW)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0341",
+   "summary": "Shrine stairway reads steeper than canon's 'slightly uphill'; landing-counting may read as a folk rule (LOW)",
+   "matches": [
+    "L01"
+   ]
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0111, c3_0097",
+   "summary": "Lines narrow canon's flashback ages for FB2 and FB3 (LOW)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "pilot-notes Ch3",
+   "summary": "pilot-notes lists 'hot-springs visitors who get lost', not in the draft (LOW, doc mismatch)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3 lines 98, 107",
+   "summary": "'Down the lane' can call up the alley canon rules out (nit)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0088-c3_0095",
+   "summary": "Akane is left asleep on the sofa; nothing moves her (LOW, staging)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0434",
+   "summary": "Japanese-only name: こうへい in the JP but not in the English (nit)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_0263 (tree)",
+   "summary": "Watch item: light appearing right after Kōhei's fragment under the same branch invites a past-life link the target withholds",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c3_window (Nov 2 lines)",
+   "summary": "More than intended: Akane's test history and Dad's cancer are told backstory and shift the window's weight off Nanoha",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_window_sill (c3_0119)",
+   "summary": "P1: Nanoha's mouth smile contradicts 'face perfectly straight'; smile holds through the cancer lines",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_window_sill_turn (c3_0314, c3_0164)",
+   "summary": "P2: rabbit turned only ~20-30 degrees, not a quarter turn; change easy to miss",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_window_sill, cg_window_sill_turn (c3_0164)",
+   "summary": "P3: rabbit sits outside the glass but text says 'On her side of the glass'",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "all three window CGs (c3_0100)",
+   "summary": "P4: scrunchie not puffier than ref against 'enormous'",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "all three window CGs",
+   "summary": "P5: her window drawn closed though she leans through it",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "window CGs vs bg_kohei_room_night",
+   "summary": "P6: CG curtains pink and open; plate has cream curtains drawn",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_tree_natsuki",
+   "summary": "P7: content rule: form-fitting sweats with seat contours, frame lands on her seat",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_tree_natsuki",
+   "summary": "P8: ponytail about twice as wide (drift); camera strap missing",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_tree_natsuki (c3_0185)",
+   "summary": "P9: path and lantern shown empty and unswept though next line puts Nanoha sweeping there",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_tree_natsuki living still",
+   "summary": "P10: loop doesn't close; ponytail and canopy snap; 84 frames vs recorded 96",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_lunch",
+   "summary": "P11: Kōhei's sleeves sage gray-green, not school uniform",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_lunch (c3_0412)",
+   "summary": "P12: six miso bowls for seven; Kōhei's place bare",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "living stills",
+   "summary": "Advisory: all four living stills ~4 levels darker than masters; could pop on swap",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "window CGs",
+   "summary": "Advisory: ref rabbit wears a pink bow, CG rabbit has none",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_lunch",
+   "summary": "Advisory: six identical closed-eye smiles read a little stock",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "plates (shrine, Tachibana living)",
+   "summary": "Advisory: inherited pseudo-text on plates (illegible at play size)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "cg_window, cg_window_sill, cg_window_sill_turn (c3_0106-c3_0322), iPad",
+   "summary": "Must-fix: on iPad the text box and Kōhei's face window cover the bottom of the window CGs (rabbit, tail, Nanoha's folded arms); recompose/move composition up",
+   "matches": [
+    "A57"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "c3_0313 -> c3_0314",
+   "summary": "Sill-to-turn living still change snaps, ghosts the old pose, then settles",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0113-c3_0118",
+   "summary": "Text says the rabbit faces Kōhei but the CG still shows its back",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0082",
+   "summary": "'Your TV is bigger' contradicts the art (small CRT vs Tachibanas' flat-screen)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0060-c3_0088",
+   "summary": "Akane 'asleep on the sofa' but art shows empty sofa and standing Akane, still up at 0088",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0285",
+   "summary": "Emi's previous line stays on screen through the move indoors",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_window, c3_steps-c3_lunch",
+   "summary": "Kōhei's face window shows the school blazer after his shower and on Saturday",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0185-c3_0375",
+   "summary": "Nanoha 'sweeping petals' but her sprite has no broom",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0359, c3_0365",
+   "summary": "'She lifts the camera' / camera against chest with both hands, but sprite holds it at waist one-handed",
+   "matches": [
+    "A62",
+    "L01"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "c3_0405",
+   "summary": "'Shoulders her practice bag' but there is no bag",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0099",
+   "summary": "'I open my window' but the background has shown it open since c3_0095",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0282",
+   "summary": "'Front door is already open' but doors closed in bg_houses_day",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0184",
+   "summary": "Boulder mostly under the text box at iPad size",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0122-c3_0313",
+   "summary": "Window CG smile loops through the serious part; can read as her not listening",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0268-c3_0404",
+   "summary": "Genji reads ~20% large next to Natsuki in two-shots; clipped at left edge",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0072->0073, c3_0407->0408",
+   "summary": "Backlog: name tag briefly overlaps the fading face window",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c3_0105->c3_0106",
+   "summary": "Backlog: CG-to-CG change removes old CG on a fixed timer; bedroom can show through under load",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "image_04 (Ch1 collar CG)",
+   "summary": "Nanoha straightening tie, not folding collar; on the side away from the river",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "image_05/06 (Ch1)",
+   "summary": "Natsuki's red hair and green eyes never acknowledged in the text",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "水 gloss (Ch1)",
+   "summary": "'水 (Wednesday)' gloss reads as 'water'; needs 'short for Wednesday'",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "translator's notes (Ch1 kinpira; Ch2 dojo)",
+   "summary": "Notes long and redundant: debana explained three times, zanshin and ki-ken-tai-itchi glossed inline and again",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0200 + Chie texts",
+   "summary": "'…It's April' pollen rebuttal shaky: cedar season runs into April in Kanagawa",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0277 (Natsuki interlude)",
+   "summary": "Natsuki's tear and 'knowing' over-explained after already being shown",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Chie texts (Ch2)",
+   "summary": "Emoji density high",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "[Background: natsuki apartment, night]",
+   "summary": "Lowercase label looks like an internal asset name leaking",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "image_12 (c3_0314, c3_0164)",
+   "summary": "Rabbit's quarter turn not visible; near-duplicate of image_11",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_0324",
+   "summary": "Tense slip: 'Takatsuki was on the floor before anyone' in present-tense narration",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_0351, c3_0358 (and Ch2)",
+   "summary": "Kōhei laughing out loud only with Natsuki is placed so regularly it feels mechanical",
+   "matches": [
+    "A61",
+    "L01"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "image_13",
+   "summary": "Torii placement vs text; bare wood vs 'often painted vermilion' note",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "image_14 (c3_0263)",
+   "summary": "Characters vanish from the frame; point of light easy to miss without caption",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "image_15 (cg_lunch)",
+   "summary": "Nanoha hard to recognize (no braid/clip, looks older); Akane's lavender hair never described",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_home / c3_window",
+   "summary": "Mom absent with no acknowledgment on Akane's dizzy-spell night",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "prologue image_01-03",
+   "summary": "Fog prologue never referenced again; relation to 'the dream' unclear (too coy)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_0396-c3_0402",
+   "summary": "Steps ritual ('Just stopping for a rest' / 'Looks like rain tomorrow') fully opaque; borders on too coy",
+   "matches": [
+    "A64"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "c1_0145",
+   "summary": "Natsuki's self-intro is a character-sheet dump; horror trait never used",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c1_0085, c2_0224",
+   "summary": "Schedule recited three times",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c1_0274",
+   "summary": "'Since the first time I picked one up' is an on-the-nose past-life seed",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_0073, c3_0087",
+   "summary": "Akane's voice blurs with Nanoha's without names",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_0282 (Emi)",
+   "summary": "Emi flat: 'Barging? You're saving me…' is a stock TV mom; no voice of her own",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_0380 (Genji)",
+   "summary": "Genji flat: 'And you're the young lady with the camera… The tree doesn't mind.' is a stock wise grandpa",
+   "matches": [
+    "L02"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "Kirishima Aoi (Ch2)",
+   "summary": "Momentary gender misread from the name",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Nanoha and Natsuki (all)",
+   "summary": "Both girls duplicate the 'reads Kōhei perfectly' function",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c3_0434",
+   "summary": "Flat: 'They've checked everything. Twice…' is exposition to someone who already knows",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0224 area (bridge)",
+   "summary": "Flat: Natsuki's 'I just mean it was a good match…' generic",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "dream-woman thread (Ch1-3)",
+   "summary": "Can't name even a 50% favorite after three chapters; 'may be more fog than the author wants'",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "supernatural thread / pacing",
+   "summary": "Supernatural too coy; three chapters cover six days and the plot starts on the last page",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Nanoha (Ch3)",
+   "summary": "Risk: Nanoha becoming a self-sacrificing doormat (tour, broom, lunch while hiding feelings)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Natsuki (c3_saturday)",
+   "summary": "Risk: Natsuki's uncanniness explained away piece by piece",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "translator's notes (Ch1-3)",
+   "summary": "Inline glosses doubled by translator's notes (karaage, fusuma, kinpira, taiyaki, shodan, onigiri, tamagoyaki, Usagi-san); kinpira note long",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch2 kendo scene notes",
+   "summary": "Seven notes in one scene, most repeating the dialogue, two interrupting the match",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "水 gloss (Ch1)",
+   "summary": "'水 (Wednesday)' confusing without saying it's an abbreviation",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c1_0217",
+   "summary": "Heavy-handed: Natsuki's 'which drawer sticks in your kitchen' echo reads as author winking",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0277",
+   "summary": "Heavy-handed: interlude states the mystery outright",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c3_0366 (and Ch1)",
+   "summary": "'A second longer' device used twice; noticeable",
+   "matches": [
+    "L01"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "prologue image_01-03 / supernatural pace",
+   "summary": "Prologue never referenced; supernatural side too slow",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "wrist motif",
+   "summary": "Which wrist is ambiguous; unclear which rhymes are meant",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_04",
+   "summary": "Tie vs collar gesture; Kōhei nearer the river",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_04 (Ch1)",
+   "summary": "Nanoha not gag-short in the CG against the short jokes",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_05/06",
+   "summary": "Narration never mentions Natsuki's red hair / green eyes",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_05 (Ch1)",
+   "summary": "Shown during 'She bows' but depicts a wave",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_11 (c3_0119)",
+   "summary": "Openly smiling and blushing vs 'Her face is perfectly straight'",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_12",
+   "summary": "Same smiling expression reused for the serious beat after 'You're not the only person who loves her'",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_13",
+   "summary": "Torii placement vs text",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_14 (c3_0263)",
+   "summary": "Point of light too small to see reliably; Nanoha's line depends on it",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_15 (cg_lunch)",
+   "summary": "Nanoha unrecognizable (hair loose, no braid, cream sweater, looks older); Akane's lavender hair unprepared",
+   "matches": [
+    "A65"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0200",
+   "summary": "'…It's April' cedar-pollen rebuttal factually shaky",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0229",
+   "summary": "Logic wobble: 'Saturday mornings. Club practice. You'll be there?' (she's in the club)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Chie texts",
+   "summary": "Emoji density high",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c3_0351 (and Ch2)",
+   "summary": "Kōhei-laughs-before-he-can-decide beat repeated in nearly every Natsuki scene; turning into a tic",
+   "matches": [
+    "A61",
+    "L01"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "c1_0085, c2_0224",
+   "summary": "Schedule recited three times",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c3_0120",
+   "summary": "First-years bowing to her on day four of term is odd; implies an unmentioned role",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c3_0164 (window CGs)",
+   "summary": "Rabbit sits where the sliding pane closes, yet ends up 'on her side of the glass'",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Akane (c1_0014; Ch3)",
+   "summary": "Akane's voice thin: generic little-sister in Ch1, converges with Nanoha in Ch3",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Nanoha/Natsuki banter",
+   "summary": "Same comic rhythm; hard to tell apart in banter",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c3_0434",
+   "summary": "As-you-know clinic exposition",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c1_0145",
+   "summary": "Natsuki's self-intro is a trait dump; horror trait barely surfaces",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c3_0412",
+   "summary": "'Which explains a lot of Monday mornings' ambiguous about what Kōhei has realized",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c3_0282 (Emi); Genji",
+   "summary": "Emi and Genji stock voices; Emi's 'Barging?…' line generic warm-sitcom-mom",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c1_0158",
+   "summary": "Flat: 'Takes one to know one.' cliché deflates the callus read",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c1_0213",
+   "summary": "Flat: 'No way. Real childhood friends?…' generic",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0313",
+   "summary": "Flat: Kōhei's karaoke recap repeats a scene just watched",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_10; cg_lunch apron",
+   "summary": "Minor: scrunchie normal-size not 'enormous'; Emi's yellow apron is mustard",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Kōhei's dialogue",
+   "summary": "Kōhei distinct as straight man but rarely funny on his own",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Nanoha (Ch3)",
+   "summary": "Risk: Nanoha becoming a pure sacrificial friend with no stake of her own",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_04",
+   "summary": "River side swapped; collar vs tie",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "translator's notes",
+   "summary": "Too long in places (karaage, kinpira, shodan); some duplicate the line they gloss (Ki-ken-tai-itchi, Zanshin)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_07",
+   "summary": "'Inside of the wrist' not readable in the CG",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "prologue image_01-03",
+   "summary": "Never tied to anything; visually inconsistent with the dream; unclear what 'the dream' is",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0200 + Chie",
+   "summary": "'…It's April' rebuttal isn't real in Japan; Natsuki's cover accidentally plausible",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "[Background: natsuki apartment, night]",
+   "summary": "Lowercase placeholder-looking name",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Takatsuki / Kirishima",
+   "summary": "Close in voice (both stoic swordsmen)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c3_0120",
+   "summary": "First-years bowing to Nanoha in week one unclear and jarring",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_12 (c3_0314)",
+   "summary": "Rabbit's quarter turn not visible",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c3_0327",
+   "summary": "'I still take most of what there is to take' conflicts with 'she's always already there'",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c3_0324",
+   "summary": "Tense slip: 'Takatsuki was on the floor before anyone'",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_13",
+   "summary": "Torii placement vs text; no shrine office visible",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_14",
+   "summary": "No characters; light too small to find unprompted",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_15 (cg_lunch)",
+   "summary": "Akane's lilac hair unexplained on first sight; Nanoha hard to identify without her braid",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Mom (Ch2-3)",
+   "summary": "Mom absent from Chapters 2-3 after a strong setup",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0277 + texts",
+   "summary": "Heavy-handed: interlude and texts restate the mystery the scenes showed",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2 manga insert + c2_0170",
+   "summary": "Heavy-handed: wrong-foot dō flagged twice",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1 parts 2-3",
+   "summary": "Heavy-handed: Natsuki's déjà-vu stack arrives too fast",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Nanoha/Natsuki tells",
+   "summary": "'Catalogue his tells' lines interchangeable with names covered",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c3_0263",
+   "summary": "'…You came back.' too ambiguous to move any guess (coy)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "dream thread (end Ch3)",
+   "summary": "No firm foothold on the dream: two equally weighted clue sets plus an unexplained prologue",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c1_0145",
+   "summary": "Flat: Natsuki's self-intro reads like a character sheet",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c1_0102",
+   "summary": "Flat: Rika's entrance is a stock genki-friend line",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2 kendo lesson (c2_0096)",
+   "summary": "Flat: 'Men. The head.' / 'Kote. The wrist.' textbook exposition",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c3_0434",
+   "summary": "Flat: clinic line sounds like it's for the reader",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0199",
+   "summary": "Flat: 'Kanagawa's full of cedar, right?' is a geography tag for the reader",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0224 area (bridge)",
+   "summary": "Flat: 'I just mean it was a good match…' on the nose",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c3_0282 (Emi)",
+   "summary": "Flat: Emi's 'Barging?…' generic warm-mom; Emi generic voice",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0225",
+   "summary": "Flat: third recital of Kōhei's schedule",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0105",
+   "summary": "'That's not why you—' interrupted and never paid off",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Akane (c1_0014)",
+   "summary": "Akane's Part 1 lines in Rika's genki register",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Kōhei's dialogue",
+   "summary": "Kōhei's dialogue alone could belong to any reserved male lead",
+   "matches": []
+  }
+ ],
+ "items": [
+  {
+   "id": "A54",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "partial",
+     "quote": "c3_0311 \"The sleeve in the corner of the second photo.\" FLAT (explains itself). Akane's \"Both of them.\" has already pointed at the 0310 plant. Two pointers in a row connect the dots for the reader. Keep one."
+    }
+   ],
+   "why": "Only the sleeve-clue pointer on the photo is flagged; no check says the photo routine reads as Kōhei controlling Akane (readers called it cute)."
+  },
+  {
+   "id": "A55",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "hit",
+     "quote": "c3_0392 kohei: \"Back there. You didn't take the picture.\" CUT (explains itself; check the outline). 0388 already landed \"She doesn't take the shot.\" Pointing at it turns a quiet image into a flagged mystery. ... Cut the untaken-photo exchange (0392–0393) unless the outline calls for it. The narration already landed it, and her cover story makes a quiet image into a flagged mystery and a new signal."
+    },
+    {
+     "check": "continuity",
+     "verdict": "partial",
+     "quote": "Natsuki's camera is aimed at the branch the moment before the light appears under it ... With her lens on the branch one beat before the light shows up under it, a reader can conclude that she saw it too. ... Fix: aim the camera at Kōhei only"
+    }
+   ],
+   "why": "Diagnosis cuts the camera exchange as an over-flagged clue; continuity calls the 0388 aim an extra signal but keeps the beat; all three readers praised the untaken shot."
+  },
+  {
+   "id": "A56",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "hit",
+     "quote": "c3_0080 \"It lands somewhere I wasn't guarding.\" FLAT (vouches; low priority). It tells us 0079 hit. The line is strong enough on its own, and a physical beat would do more."
+    }
+   ],
+   "why": "Same line, narration states what the scene already showed (on the nose); readers 1 and 3 praised it."
+  },
+  {
+   "id": "A57",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "build",
+     "verdict": "hit",
+     "quote": "iPad: in the window CGs, the text box and Kōhei's face window hide the rabbit, so the narration describes things the player can't see ... Nanoha's folded arms are also under the box. ... Outpaint wall below the window, or move the composition up and right"
+    }
+   ],
+   "why": "Build finds the iPad text box covering the lower part of all three window CGs (down to her arms under her chin); its fix of moving the composition up is the author's fix, though it never names her face."
+  },
+  {
+   "id": "A58",
+   "verdict": "miss",
+   "by": [],
+   "why": "No check raised recall dependence; diagnosis lists 'It's trash bags.' among the chapter's best lines."
+  },
+  {
+   "id": "A59",
+   "verdict": "miss",
+   "by": [],
+   "why": "Diagnosis keeps 0341-0366; no reader or check flagged the bridge callback needing Ch2 fresh."
+  },
+  {
+   "id": "A61",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "reader1",
+     "verdict": "partial",
+     "quote": "Kōhei only laughs out loud with Natsuki (the chair at the restaurant, \"I laugh before I can decide not to,\" \"this time I can't stop laughing,\" the photo). It's a clear signal, but placed so regularly it starts to feel mechanical."
+    },
+    {
+     "check": "reader2",
+     "verdict": "partial",
+     "quote": "Kōhei laughs \"before I can decide not to\" (or a version of it) in nearly every Natsuki scene. It's turning into a tic."
+    }
+   ],
+   "why": "Readers point at the line only as a repeated laugh beat, not at its edgy tone."
+  },
+  {
+   "id": "A62",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "build",
+     "verdict": "partial",
+     "quote": "c3_0359 and c3_0365: \"She lifts the camera\" and \"pulled the camera back against her chest with both hands\". The sprite holds the camera at her waist with one hand."
+    }
+   ],
+   "why": "Build flags a text/sprite mismatch on the line, not that the wording is unclear."
+  },
+  {
+   "id": "A64",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "partial",
+     "quote": "c3_0400 \"She sounds delighted.\" FLAT (vouches). It's a tone tag. The line and the curious face already show it."
+    },
+    {
+     "check": "reader1",
+     "verdict": "partial",
+     "quote": "\"Just stopping for a rest.\" / \"Looks like rain tomorrow.\" Intriguing, but completely opaque. Readers who don't know the superstition about stumbling on shrine steps get nothing, and Kōhei \"never once asked.\""
+    }
+   ],
+   "why": "Findings touch the exchange but name a tone tag and the ritual's deliberate opacity, not the 'it'-as-rain misreading; readers 2 and 3 praised the ritual."
+  },
+  {
+   "id": "A65",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "reader2",
+     "verdict": "partial",
+     "quote": "Also in image_15, Nanoha (hair long and loose, no braid or clip, cream sweater) doesn't read as the Nanoha from image_04/10. She looks older and taller."
+    }
+   ],
+   "why": "Reader 2 mentions her cream top only as part of Nanoha being unrecognizable; onmodel noted both girls' cream cardigans and passed them; nobody says the outfits are too alike."
+  },
+  {
+   "id": "A66",
+   "verdict": "miss",
+   "by": [],
+   "why": "Onmodel, build and continuity all checked the lunch seating and passed it; continuity #9 shares c3_0413 but is about Kazuo's job."
+  }
+ ],
+ "liked": [
+  {
+   "id": "L01",
+   "flagged": true,
+   "by": [
+    {
+     "check": "diagnosis",
+     "quote": "c3_0367 \"I don't notice I've stopped being tired until we reach the top.\" FLAT (states the feeling). It tells the reader the takeaway, that she's good for him, after 0351–0366 showed it, and it closes the scene on a neat button."
+    },
+    {
+     "check": "continuity",
+     "quote": "The shrine stairway reads steeper than canon's \"slightly uphill\" (LOW)"
+    },
+    {
+     "check": "build",
+     "quote": "c3_0359 and c3_0365: \"She lifts the camera\" and \"pulled the camera back against her chest with both hands\". The sprite holds the camera at her waist with one hand."
+    },
+    {
+     "check": "reader1",
+     "quote": "Kōhei only laughs out loud with Natsuki (the chair at the restaurant, \"I laugh before I can decide not to,\" \"this time I can't stop laughing,\" the photo). It's a clear signal, but placed so regularly it starts to feel mechanical."
+    },
+    {
+     "check": "reader2",
+     "quote": "Slightly obvious: the \"a second longer\" device is used for Nanoha's hands (part 1) and then Kōhei's look at Natsuki (part 10). Effective once, noticeable twice."
+    }
+   ]
+  },
+  {
+   "id": "L02",
+   "flagged": true,
+   "by": [
+    {
+     "check": "reader1",
+     "quote": "Genji: \"And you're the young lady with the camera. Take as many as you like. The tree doesn't mind.\" A stock wise grandpa (though \"The tree doesn't mind\" may be a deliberate wink)."
+    }
+   ]
+  }
+ ]
+}

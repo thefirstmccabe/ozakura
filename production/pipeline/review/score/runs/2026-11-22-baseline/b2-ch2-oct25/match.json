@@ -1,0 +1,1383 @@
+{
+ "build": "b2-ch2-oct25",
+ "missing_reports": [],
+ "findings": [
+  {
+   "check": "continuity",
+   "where": "c2_0125",
+   "summary": "Natsuki critiques how he strikes men ('wrong distance and gets away with it') before she has seen him strike anyone; only explainable by past-life knowledge, breaks the Ch2 'Not yet'",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0112, c2_0114, c2_0115",
+   "summary": "Debana setup has two characters say you can't know when an opponent starts, then she does it: turns 'impressive' into 'impossible', pushing past the reader target; cut c2_0114 and c2_0115",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0009",
+   "summary": "Akane's seven o'clock container-photo routine contradicts Ch3 scene 3.1 as outlined ('nothing from Akane' read as good news)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0280",
+   "summary": "Chie's backstory ('again last year', birthday calls) contradicts pilot-notes (close in 4th and 8th grade, text only)",
+   "matches": [
+    "A52"
+   ]
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0015",
+   "summary": "Kōhei's bib apron with the cartoon chef clashes with Yuzu's approved burgundy waist apron at the same restaurant; pilot-notes:248 is stale",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0299, c2_0301/c2_0251, c2_0284",
+   "summary": "Three Nanoha codas in 'Natsuki's chapter' (not in the outline) work against pulling the wanting toward even; keep at most one, cut the 'Again.' note (c2_0299), which only repeats a Ch1 joke",
+   "matches": [
+    "A24",
+    "A38"
+   ]
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0017",
+   "summary": "'Three nights a week' contradicts the Japanese (三日, days) and the Sunday daytime shift",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0299, c2_0301",
+   "summary": "Background doesn't follow him home: the kitchen-table container plays over bg_restaurant_night, Nanoha's lit window over bg_bridge_dusk",
+   "matches": [
+    "A24"
+   ]
+  },
+  {
+   "check": "continuity",
+   "where": "pilot-notes:252",
+   "summary": "Pilot-notes records the wrong session order (the break comes before kirikaeshi and waza)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0152, c2_0153, c2_debrief title",
+   "summary": "'One sentence each' narration and scene title, but Kirishima's line is four sentences",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0090",
+   "summary": "Ambiguous 'she' reads as Rika wiping the board; use 'Mizuno'",
+   "matches": [
+    "A26"
+   ]
+  },
+  {
+   "check": "continuity",
+   "where": "Rika sprite, c2_lesson",
+   "summary": "Reused Rika sprite will show Monday's hair clips against the 'different novelty clip every day' [P]",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0112",
+   "summary": "Natsuki's favorite technique (debana) settles an item canon marks Open; not logged as [P]",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "c2_0255",
+   "summary": "[P] town name SHIRASAWA on the box labels could get baked into the apartment plate before the name is approved",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "scene-outline:166",
+   "summary": "Outline reader target says 'on the Tuesday walk', but 2.1 is set at the restaurant and the first walk is Wednesday",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "chapter-map:31",
+   "summary": "Chapter map still says 'casual sparring' for Ch2; the outline and fix P3 make it a practice match",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0008",
+   "summary": "L1 FLAT (explains itself): 'The manager says it about nine times a night' announces the payoff in advance",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0042, c2_0043",
+   "summary": "L2 FLAT (sitcom callback): 'Head first or tail first?' is Ryōsuke's taiyaki bit in Natsuki's mouth; 'Don't start.' is a canned button",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0054",
+   "summary": "L3 FLAT (unclear): 'Wednesday.' is redundant since tomorrow is Wednesday; same sign-off reused at c2_0248",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0299",
+   "summary": "L4 FLAT (too tidy, placed badly): the 'Again.' note gives the last beat of Natsuki's best scene to Nanoha, makes a third food-and-note beat, and its meaning depends on a Ch1 setup",
+   "matches": [
+    "A24",
+    "A38"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0064–c2_0066",
+   "summary": "L5 FLAT (rerun): hakama exchange repeats the apron exchange's shape; Takatsuki's topper reads as an intentional burn",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0069",
+   "summary": "L6 FLAT (generic): 'quiet a room by not raising his voice' is a stock phrase",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0082",
+   "summary": "L7 FLAT (explains itself, tidy button): 'Nobody laughs. He seems satisfied anyway.'",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0088",
+   "summary": "L8 FLAT (off-voice): Rika's dry deflation is on her Never list",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0090",
+   "summary": "L9 FLAT (unclear): 'she' reads as Rika; the lost-and-found clause also gives away c2_0091–0092",
+   "matches": [
+    "A26"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0100",
+   "summary": "L10 FLAT (off-voice): 'So be afraid.' is Nanoha's deadpan in Natsuki's mouth",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0109",
+   "summary": "L11 CUT (explains the joke): Rika restates the 'There was a head' punchline",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0123",
+   "summary": "L12 FLAT: 'I get up. I don't know why I get up.' spends the repetition device a second time and explains its own joke",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0128",
+   "summary": "L13 FLAT: 'You're doing great, visual aid.' is the third topper in a row",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0141",
+   "summary": "L14 FLAT: 'Half a second, I stop to think' pre-empts Kirishima's kept line; stiff syntax",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0163",
+   "summary": "L15 FLAT: 'Pure, clean joy… I understand it completely.' vouches for the dialogue and states the feeling",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0206",
+   "summary": "L16 FLAT (sitcom quip, off-voice): Kōhei's 'Yeah. You too. I mean—' flub",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0216",
+   "summary": "L17 FLAT (on-the-nose): 'So I have proof I was there.' states the motive the last beat shows",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0224",
+   "summary": "L18 FLAT (explains itself): she justifies the invitation, then retreats a second time at c2_0226",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0227, c2_0228",
+   "summary": "L19 CUT: narration explains her subtext ('like a cup filled too full') and announces his reply",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0250",
+   "summary": "L20 CUT (too tidy): 'something's been decided' nearly names the half-date; the bridge has three endings",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0260",
+   "summary": "L21 FLAT (too tidy): punchline shape spells out the sad turn",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0302",
+   "summary": "L22 FLAT (tidy qualifier): 'except the last one' walks back 'every time' and blunts the uncanny read",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_tuesday, c2_dojo, c2_lesson, c2_match, c2_bridge",
+   "summary": "Scene level: five of eight scenes close on a neat button (the bridge has three stacked closers)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_lesson",
+   "summary": "Scene level: seven of the lesson's eight exchanges end on a topper",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_bridge, c2_interlude",
+   "summary": "Scene level: feelings stated instead of shown (L15, L17–L21), four of six in the bridge and interlude, which should carry the most subtext",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "Ch2 humor mechanisms",
+   "summary": "Scene level: borrowed humor mechanisms: Natsuki's Nanoha deadpan and Ryōsuke trivia, Kōhei's button and flub, Takatsuki's burn (L5), Rika drifting dry (L8, L11)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "Ch2 narration",
+   "summary": "Scene level: narration repeats or vouches for the dialogue in eight places (L1, L7, L9, L14, L15, L19, L20, L21)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0194, c2_0238",
+   "summary": "S1: narration reads Natsuki through 'like she's…' twice; about ten 'like' similes for a fragment-talking narrator",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0056, c2_0123, c2_0138, c2_0151, c2_0210",
+   "summary": "S2: stacked short sentences in the narration become a rhythm tic (five uses)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0088, c2_0101, c2_0111",
+   "summary": "S3: Rika's 'scheme' expression on plain questions with no scheme in the dialogue",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0040, c2_0042, c2_0071, c2_0160, c2_0176, c2_0239, c2_0231",
+   "summary": "S4: expression rules broken: Natsuki's questions without 'curious'; c2_0160 rule collision; smirk on 'Depends.' isn't a competitive beat",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0122",
+   "summary": "S5: Rika's chant 'Fu-ji-sa-wa!' drops her '-kun'; decide and log it",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0156, c2_0293",
+   "summary": "S6: English and Japanese don't match ('Captain.' vs はい; 'Like a teacher.' drops the hesitation)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0076",
+   "summary": "S7: missing gloss: 'Bogu' first appears unglossed in Kirishima's line; the gloss doesn't come until c2_0292",
+   "matches": [
+    "A25",
+    "A45",
+    "A28"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0221",
+   "summary": "B1: Kōhei's 'Mm.' is Nanoha's listed dodge",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0299, c2_0301/c2_0251",
+   "summary": "Structural note: both of Natsuki's walk-home scenes end by cutting to Nanoha against the 65/35-to-even target; the Tuesday note doesn't earn its place",
+   "matches": [
+    "A24",
+    "A38"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0224, c2_0227–c2_0228, c2_0250",
+   "summary": "Top fix 1: stop narrating the bridge; give Natsuki one retreat instead of two",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0100, c2_0042–c2_0043",
+   "summary": "Top fix 2: give Natsuki's jokes back to her own mechanism (replace 'So be afraid.' and the taiyaki bit with 'Don't start.')",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0299",
+   "summary": "Top fix 3: don't end her Tuesday scene on Nanoha; cut or move the 'Again.' note so the scene closes on his rough throat",
+   "matches": [
+    "A24",
+    "A38"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0206",
+   "summary": "Top fix 4: cut Kōhei's 'You too' flub in the catch aftermath",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "c2_0109, c2_0126–c2_0128, c2_0141, c2_0163",
+   "summary": "Top fix 5: thin the lesson's punchlines and remove narration that pre-states lines",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_catch (CG and clip frames 52–73)",
+   "summary": "C1: a stray mid-air drop beside her face reads as a second tear against 'One tear'",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "ins_match p3-2 (p1-1 borderline)",
+   "summary": "I1: Natsuki drawn too tall (about 0.96 of Kōhei's height vs target 0.913; reads about 5′6″)",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "ins_match p1-1, p1-2, p2-2, p3-2",
+   "summary": "I2: bystanders jump between side and back walls and between men on, off and mixed within one match",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "ins_match p2-2, p3-2",
+   "summary": "I3: two copper-haired bystanders (one in a pale gi) read as Natsuki",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "ins_match p2-1",
+   "summary": "I4: Kōhei's men rim split blue/red at the recolor-box edge; red in every other panel",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "ins_match (all panels) vs sprites and CG",
+   "summary": "I5: Natsuki's hakama is pale in the insert but dark navy in the sprites and the catch CG",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c2_dojo, c2_lesson, c2_debrief",
+   "summary": "1: speaker dimming broken on every untinted background (invalid filter value), so Ch2 never dims anyone",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c2_0186 → cg_catch",
+   "summary": "2: slip → catch: Natsuki and the text box fade out before the video plays, so the bare dojo flashes at the chapter's peak",
+   "matches": [
+    "A32"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "c2_0090",
+   "summary": "3: 'she' reads as Rika; only Rika's sprite is on stage when 'she' wipes the board and borrows the glasses",
+   "matches": [
+    "A26"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "c2_0196 → c2_0197",
+   "summary": "4: after the catch, the standing tears sprite shows at full strength through the fading CG (double exposure)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c2_0044–c2_0049, c2_0154–c2_0158, c2_0078–c2_0082",
+   "summary": "5: expressions held past their line (laughing through quiet narration; surprised held for 4–5 lines)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c2_0056–c2_0299, c2_0301",
+   "summary": "6: narration moves to another place while the old background stays (Nanoha's 'Again.' note, her lit window)",
+   "matches": [
+    "A24"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "c2_0262–c2_0287 at 844×390",
+   "summary": "7: at phone landscape the Chie chat panel covers the interlude label",
+   "matches": [
+    "A53"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "c2_0288",
+   "summary": "8: the chat stays on screen through 'Natsuki put the phone down'",
+   "matches": [
+    "A36"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "cg_catch anim",
+   "summary": "9: tapping during the catch video snaps from mid-motion to the final pose in 0.2 s",
+   "matches": [
+    "A32"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "ins_match p1, p2",
+   "summary": "10: insert art departs from three panel briefs (tip at his waist, arms forward, bystanders' bogu changes)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c2_mop (bg_dojo vs bg_dojo_evening)",
+   "summary": "11: day and evening dojo plates are nearly the same; the time jump to evening barely reads",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1, image_04",
+   "summary": "Collar CG: text says Nanoha walks on the river side, but in the art Kōhei is on the river side",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1, image_06",
+   "summary": "Stutter frame: Natsuki's gaze points to the right of the room, away from Kōhei's window seat",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1, image_06",
+   "summary": "Her hand is frozen mid-wave while her face falls",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Prologue, image_01–03 vs image_07",
+   "summary": "Prologue too coy: modern zip jacket vs the period dream, no woman, never referred back to in two chapters",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1 part 2 self-intro; 'haunted' exchange",
+   "summary": "Natsuki's self-intro reads like a character sheet; the haunted-building exchange that follows is flat",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1 part 2, pen-gripping",
+   "summary": "Kōhei's pen-gripping reaction to Natsuki is never followed up (too coy)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1 part 3, 'which drawer sticks'",
+   "summary": "Natsuki's kitchen-drawer example lands exactly on the part-1 detail; too neat, the author reaching in",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1 Nanoha interlude end; c2_0283",
+   "summary": "Interlude endings over-explain ('She did not let herself think about why…'), and both interludes end on the same 'chose not to think about it' beat, a formula",
+   "matches": [
+    "A37"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1 part 3, 水 (Wednesday)",
+   "summary": "The 水 (Wednesday) gloss is slightly off (水 alone means water)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1, 'Night, Chibi.'",
+   "summary": "'Chibi' isn't glossed",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1 part 2, Ryōsuke/Tokiwa",
+   "summary": "Speaker tag 'Ryōsuke' and narration 'Tokiwa' are never explicitly linked; had to infer who's who",
+   "matches": [
+    "A42"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "Tokiwa and Takatsuki",
+   "summary": "Tokiwa and Takatsuki are too similar (both pedantic correctors, both T-names)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Nanoha vs Natsuki voices (e.g. c2_0178)",
+   "summary": "Natsuki and Nanoha share the tease-by-reading-his-body habit; some lines could be either girl, which blurs them",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1 part 4, Nanoha 'She's nice, Kōhei. I like her.'",
+   "summary": "Flat: repeats what the interlude just told us, so it lands flat instead of sad",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Family thread (Dad, Mom, Akane)",
+   "summary": "Too coy: two chapters of family hints with no plain fact is about at the limit",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0090",
+   "summary": "Confusing pronoun: 'she' reads as Rika until Kōhei asks about the glasses",
+   "matches": [
+    "A26"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0292, c2_0136 (part 6 notes)",
+   "summary": "Translator's-note pile-up: six notes in a row (bogu, men, tenugui, kirikaeshi, waza, shiai-geiko) right before the match, each also glossed inline",
+   "matches": [
+    "A45",
+    "A28"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0040",
+   "summary": "'taiyaki (fish-shaped cake)' glossed again after part 2's full note; redundant",
+   "matches": [
+    "A28"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0012 and other 'Classmate' lines",
+   "summary": "Unnamed 'Classmate' speaks three times; a name would help",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0141",
+   "summary": "'Half a second, I stop to think. Then I go.' is an awkward sentence at a key beat",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "Ch1–Ch2 recognition signals (incl. c2_0144, c2_0193–c2_0194, c2_0267)",
+   "summary": "Heavy-handed: stack of 'Natsuki already knows him' signals (grin stutter, met-him-before, there before I moved, the unexplained tear, the text); five in two chapters",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0267, c2_0278",
+   "summary": "Redundant: the text restates what Takatsuki said in the dojo, then the narration ('you learned to read shoulders and feet… That should have covered it') explains it a third time; one is enough",
+   "matches": [
+    "A48",
+    "A49"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0200, c2_0273",
+   "summary": "'It's April' rebuttal is factually weak (cedar season runs into April), and Chie repeats it",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0199",
+   "summary": "Flat: 'Kanagawa's full of cedar, right?' sounds like it's there to tell the reader the prefecture",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0224",
+   "summary": "Flat: 'I just mean it was a good match…' is generic and tells what the scene showed",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_0012",
+   "summary": "Flat: the parfait line is generic walk-on filler",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c2_interlude background label",
+   "summary": "Background label 'natsuki apartment' is lowercase and placeholder-like",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, image_05/06",
+   "summary": "Natsuki's red hair and green eyes are never acknowledged in the text",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, image_06",
+   "summary": "The stricken-face variant keeps the cheerful mid-wave pose",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, image_04",
+   "summary": "Her hands are at his tie knot; the text says she folds his collar (minor)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, translator's notes (kinpira, shodan)",
+   "summary": "Translator's notes frequent in part 1; the kinpira and shodan notes are longer than needed",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, 'She noticed the squeaky stairs. Both of them.'",
+   "summary": "Garbled (two steps on one staircase) and a weak setup for the eleventh-step line",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1 dream, 'That I kept them waiting'",
+   "summary": "The switch to 'them' after three lines of 'She says it…' feels coy",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1 part 4, Nanoha's address",
+   "summary": "Nanoha switches 'Kōhei' → 'Kō-chan' within one short scene; made the reader pause",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Prologue, image_01–03",
+   "summary": "Prologue (fog, modern sword) has no callback anywhere in two chapters (too coy)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, 'I feel like I've met him somewhere before'",
+   "summary": "Slightly too direct: the theme said out loud in the first chapter",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, callus → dream",
+   "summary": "A bit neat: the callus line ties the dream to Natsuki too tidily",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, 'She'd had practice.'",
+   "summary": "On the nose",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, horror-movies self-intro",
+   "summary": "Flat: reads like a profile-card trait with one payoff, then vanishes",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1, 'Does Fujisawa ever compete up north?'",
+   "summary": "Flat: a mechanical on-ramp to the 'met him before' line",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "'Then + comic reframe' (Akane, Nanoha, Rika, Natsuki incl. c2_0025, c2_0178)",
+   "summary": "Voice bleed: the same comeback rhythm is spread across four characters",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ryōsuke and Takatsuki",
+   "summary": "Both occupy the same pedant niche",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Nanoha vs Natsuki voices (e.g. c2_0201, c2_0027)",
+   "summary": "Nanoha and Natsuki share a dry deadpan one-liner register; about 75% attributable with names covered",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Kōhei vs Kirishima",
+   "summary": "Both speak in short clipped lines; Kōhei's spoken lines alone wouldn't always identify him",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0040",
+   "summary": "'taiyaki' glossed again in-line after a full note in part 2; redundant",
+   "matches": [
+    "A28"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0042",
+   "summary": "'Head first or tail first?': a reader might briefly think she overheard Tokiwa's argument",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Part 5 text, '[Natsuki appears on screen]'",
+   "summary": "Several bare '[Natsuki appears on screen]' lines in a row with no change described; noise",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Part 6 notes (c2_0061–c2_0136)",
+   "summary": "Translator's-note overload: 11 notes in the dojo part, six back to back before the match, many double-glossed inline; kills the pace",
+   "matches": [
+    "A45",
+    "A28"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0090",
+   "summary": "Pronoun confusion: the second 'she' grammatically refers to Rika but is Natsuki",
+   "matches": [
+    "A26"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0140",
+   "summary": "'I show her men' is kendo jargon for a feint, unexplained until Takatsuki's later line; a reader could stumble",
+   "matches": [
+    "A45",
+    "A28"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0193–c2_0194",
+   "summary": "Natsuki's unexplained tear is a near-cliché hint, at the edge of heavy-handed",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0199–c2_0200",
+   "summary": "'Cedar pollen' / 'It's April': the joke's premise may be wrong (cedar season runs into April)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_08, c2_0191",
+   "summary": "Catch CG: faces less close than 'Her face is close'",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_interlude background label",
+   "summary": "Lowercase internal-looking label '[Background: natsuki apartment, night]'",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0038–c2_0039",
+   "summary": "Flat: mountain small talk is filler while the good material is in narrated summary",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0224",
+   "summary": "Flat: explains the subtext of the line before; the narration then explains it again",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0244–c2_0245",
+   "summary": "Flat: 'Is that the shrine?' / 'That's the Ōzakura.' is a title-drop by Q&A",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0199",
+   "summary": "Flat: 'Kanagawa's full of cedar, right?' sounds like it's there to tell the reader the prefecture",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c2_0225",
+   "summary": "Flat: 'I work Tuesdays and Thursdays. And Sundays.' is the third time we've heard the schedule",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Ch1–Ch2 pacing",
+   "summary": "Pace: two chapters in, it's still all setup",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1, image_04",
+   "summary": "Collar CG: Nanoha on the far side from the river, though the text says she walks on the river side",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1, image_04",
+   "summary": "Her height in the art doesn't support the short jokes; her hands are on the tie, not the collar",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1, image_05/06",
+   "summary": "Natsuki's hair and eye color never registered in the text",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1, image_06",
+   "summary": "Stutter gaze aimed away from Kōhei's window seat",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1, image_06",
+   "summary": "Reused waving pose during the stutter",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1, image_07",
+   "summary": "Bandage already wound and stained while the text says she's winding it",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1 part 2, Ryōsuke/Tokiwa",
+   "summary": "The 'Ryōsuke' label and the 'Tokiwa' narration are never said side by side; took a beat to work out who's who",
+   "matches": [
+    "A42"
+   ]
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1 part 3, 'which drawer sticks'",
+   "summary": "The drawer echo is too engineered; the author's hand shows",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1 part 3, 'Since the first time I picked one up'",
+   "summary": "Heavy-handed: a neon 'past life' sign after the katana prologue",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1 part 4, Nanoha's address",
+   "summary": "Address wobble: 'Kōhei' then 'Kō-chan' in one exchange, unclear whether intentional",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Prologue, image_01–03",
+   "summary": "Prologue untethered and coy: no text, no woman, not labeled, never echoed in two chapters",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Dream woman's identity",
+   "summary": "Possibly too coy: if the author intends Nanoha, the quiet clues may lose to the tear for a less genre-trained reader",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ryōsuke and Takatsuki",
+   "summary": "Voices overlap (both pedantic correctors); would misattribute a correction line",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Nanoha vs Natsuki voices (e.g. c2_0201, c2_0128)",
+   "summary": "Nanoha and Natsuki converge in deadpan-tease mode",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Kōhei's dialogue",
+   "summary": "Kōhei is sometimes too terse to have a voice in dialogue",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1 kinpira note; c2_0018 hakama note",
+   "summary": "The kinpira and hakama translator's notes are longer than needed; the inline gloss already does the job",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch1 flat lines",
+   "summary": "Flat: 'Good morning, Tokiwa.' (dead air), 'Looking forward to this year.' (generic recovery), Nanoha's 'She's nice, Kōhei. I like her.' (restates), 'Since I was little.' (reads as nothing)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Part 5 text, '[Natsuki appears on screen]'",
+   "summary": "Six '[Natsuki appears on screen]' repeats; possible sprite churn on screen",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0090",
+   "summary": "Pronoun error: 'she' grammatically is Rika but means Natsuki; fix with 'Mizuno'",
+   "matches": [
+    "A26"
+   ]
+  },
+  {
+   "check": "reader3",
+   "where": "Part 6 notes (c2_0061–c2_0136)",
+   "summary": "Translator-note pileup: twelve notes, six back to back before the match, several duplicating inline glosses",
+   "matches": [
+    "A45",
+    "A28"
+   ]
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0193–c2_0194",
+   "summary": "The unexplained tear is a stock device, well executed but predictable",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0200",
+   "summary": "The '…It's April' rebuttal is shaky (cedar season tails into April)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_08, c2_0191",
+   "summary": "Catch CG: faces an arm's length apart against 'Her face is close'",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_08, c2_0207",
+   "summary": "Catch CG: his ears aren't red, though 'Are your ears always that red?' is the scene's punchline",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "Ch2 structure",
+   "summary": "Nanoha has no scene in Ch2 (one sticky note), so the triangle tilts by absence; for fairness Ch2 needs a Nanoha scene with weight",
+   "matches": [
+    "A38"
+   ]
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0223, c2_0224, c2_0227",
+   "summary": "Over-explained bridge beat: the river look, her line, and the cup narration say it three times",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0244",
+   "summary": "'Is that the shrine? With the big tree?' is reader-facing exposition; she already knows",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0241",
+   "summary": "'Okay. That's my project, then.' is unclear (Kōhei or the photograph); possibly too coy",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0226",
+   "summary": "'Right. You told me.' assumes an off-screen exchange; reads like a continuity slip",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_interlude background label",
+   "summary": "Raw '[Background: natsuki apartment, night]' tag looks like a placeholder or asset ID",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0282–c2_0283 (mirrored interludes)",
+   "summary": "Mirrored interlude endings are close to making the symmetry visible as a device",
+   "matches": [
+    "A37"
+   ]
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0012, Classmate lines",
+   "summary": "Flat: generic mob chatter; the three 'Classmate' lines are interchangeable",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c2_0115",
+   "summary": "Flat: Takatsuki's 'It is the hardest thing in kendo to do on purpose.' is a pure explainer line",
+   "matches": []
+  }
+ ],
+ "items": [
+  {
+   "id": "A24",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "continuity",
+     "verdict": "partial",
+     "quote": "Three Nanoha codas in \"Natsuki's chapter\" ... 84 [c2_0299] \"a sticky note on the lid in Nanoha's handwriting. It says 'Again.'\" ... keep at most one. My pick is to keep 337–338, which is triangle tension, and cut 84, which only repeats a Ch1 joke."
+    },
+    {
+     "check": "diagnosis",
+     "verdict": "partial",
+     "quote": "L4. #c2_0299 (L84) ... FLAT (too tidy, and placed badly). It's a neat closing button, and it gives the last beat of Natsuki's best scene to Nanoha ... (Its meaning also depends on a Ch1 setup I wasn't given.)"
+    },
+    {
+     "check": "build",
+     "verdict": "partial",
+     "quote": "Narration moves to another place while the old background stays (Nanoha's \"Again.\" note, her lit window) ... c2_0056–c2_0299 ... plays over `bg_restaurant_night`"
+    }
+   ],
+   "why": "Three checks touch c2_0299 (cut it, it's placed badly, wrong background) but none says the line is confusing; diagnosis only notes its meaning depends on a Ch1 setup it wasn't given."
+  },
+  {
+   "id": "A25",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "hit",
+     "quote": "S7. A missing gloss (Production). \"Bogu\" first appears unglossed in Kirishima's line #c2_0076. The gloss doesn't come until #c2_0292."
+    }
+   ],
+   "why": "Diagnosis flags the missing gloss on c2_0076 (bogu; suburi not named)."
+  },
+  {
+   "id": "A26",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "continuity",
+     "verdict": "hit",
+     "quote": "Ambiguous \"she\": it reads as Rika wiping the board ... Fix: \"Two minutes later Mizuno has wiped the practice schedule…\""
+    },
+    {
+     "check": "diagnosis",
+     "verdict": "hit",
+     "quote": "L9. #c2_0090 (L129) \"Two minutes later she's wiped the practice schedule…\" FLAT (unclear, and repeats the dialogue). \"She\" reads as Rika, the last person named."
+    },
+    {
+     "check": "build",
+     "verdict": "hit",
+     "quote": "c2_0090 \"she\" reads as Rika: she's the only sprite on stage when \"she\" wipes the board and borrows the glasses"
+    },
+    {
+     "check": "reader1",
+     "verdict": "hit",
+     "quote": "Confusing pronoun (real problem): \"Two minutes later she's wiped the practice schedule off the whiteboard by the door...\" This comes right after Rika's line (\"Okay. Explain everything.\"), so \"she\" reads as Rika."
+    },
+    {
+     "check": "reader2",
+     "verdict": "hit",
+     "quote": "Pronoun confusion. ... The second \"she\" grammatically refers to Rika, but it's Natsuki. I had to reread when Kōhei asks Natsuki about the glasses."
+    },
+    {
+     "check": "reader3",
+     "verdict": "hit",
+     "quote": "Pronoun error (line 38): ... Grammatically \"she\" is Rika (the last person mentioned and speaking). It's actually Natsuki ... Fix it with \"Mizuno.\""
+    }
+   ],
+   "why": "Six checks name the same line and the same misreading."
+  },
+  {
+   "id": "A28",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "partial",
+     "quote": "S7. A missing gloss (Production). \"Bogu\" first appears unglossed in Kirishima's line #c2_0076. The gloss doesn't come until #c2_0292."
+    },
+    {
+     "check": "reader1",
+     "verdict": "partial",
+     "quote": "Minor: \"taiyaki (fish-shaped cake)\" is glossed again even though part 2 already had a full translator's note. Not a problem, just redundant."
+    },
+    {
+     "check": "reader2",
+     "verdict": "partial",
+     "quote": "\"I show her men\" is kendo jargon for a feint; I only understood it after Takatsuki said \"You did not take his feint.\" A reader could stumble."
+    },
+    {
+     "check": "reader3",
+     "verdict": "partial",
+     "quote": "Translator's-note pileup. This part has twelve notes ... Several duplicate an inline gloss (\"kirikaeshi (a drill of nonstop strikes)\" followed by a three-line note)."
+    }
+   ],
+   "why": "Checks touch Ch2 gloss handling but name a first-use gap, one unexplained idiom, or the opposite problem (repeat glosses and notes are redundant); none asks for glosses on repeat uses."
+  },
+  {
+   "id": "A29",
+   "verdict": "miss",
+   "by": [],
+   "why": "No check flags the full page showing before the panels; build found the insert open and panel zooms fine, and the insert findings are about panel art."
+  },
+  {
+   "id": "A30",
+   "verdict": "miss",
+   "by": [],
+   "why": "Nothing flags c2_0174's 'the floor belongs to whoever stays after practice'."
+  },
+  {
+   "id": "A31",
+   "verdict": "miss",
+   "by": [],
+   "why": "No check looks at the practice cue running through the debrief and mop scenes."
+  },
+  {
+   "id": "A32",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "build",
+     "verdict": "partial",
+     "quote": "Slip → catch: Natsuki and the text box fade out before the video is playing, so the bare dojo flashes ... 9. Tapping during the catch video snaps from mid-motion to the final pose in 0.2 s"
+    }
+   ],
+   "why": "Build flags the slip-to-catch handoff and skip behavior, not that the clip fails to show the fall and catch; onmodel passed the clip and noted the frame-1 hand only as 'Neither contradicts the text'."
+  },
+  {
+   "id": "A33",
+   "verdict": "miss",
+   "by": [],
+   "why": "Build checked Kōhei's face windows and found them fine; no cold-cache flash reported at c2_0215."
+  },
+  {
+   "id": "A34",
+   "verdict": "miss",
+   "by": [],
+   "why": "Nothing flags c2_0218; diagnosis L17 targets c2_0216 and says to keep the quiet-then-laugh shape."
+  },
+  {
+   "id": "A35",
+   "verdict": "miss",
+   "by": [],
+   "why": "No face-window flash reported at c2_0259; build lists her interlude POV window as fine."
+  },
+  {
+   "id": "A36",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "build",
+     "verdict": "partial",
+     "quote": "The chat stays on screen through \"Natsuki put the phone down\" ... The engine keeps the phone up one line after the last text."
+    }
+   ],
+   "why": "Build touches the chat UI's advance behavior but not the missing tap-to-continue cue."
+  },
+  {
+   "id": "A37",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "reader1",
+     "verdict": "partial",
+     "quote": "It also means both interludes end on \"she chose not to think about her feelings,\" which is starting to feel like a formula."
+    },
+    {
+     "check": "reader3",
+     "verdict": "partial",
+     "quote": "Mirrored interludes. Nanoha's \"She did not let herself think about why it had needed deciding\" and Natsuki's \"Natsuki liked her. That was its own small problem\" are deliberately parallel. It's effective once. The chapter is close to making the symmetry visible as a device"
+    }
+   ],
+   "why": "Two readers flag c2_0282–c2_0283 as formulaic, not cryptic; all three readers understood the passage."
+  },
+  {
+   "id": "A38",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "reader3",
+     "verdict": "hit",
+     "quote": "Structure: Nanoha has no scene in chapter 2, so the triangle tilts by absence. / If the author wants the triangle to feel fair, chapter 2 needs a Nanoha scene with weight."
+    },
+    {
+     "check": "continuity",
+     "verdict": "partial",
+     "quote": "Three Nanoha codas in \"Natsuki's chapter\" (reader target: wanting; not in the outline) ... they work against this chapter's job. Fix: keep at most one."
+    },
+    {
+     "check": "diagnosis",
+     "verdict": "partial",
+     "quote": "A structural note behind L4. Both of Natsuki's walk-home scenes end by cutting to Nanoha ... twice the last word goes to Nanoha. ... The Tuesday note doesn't earn its place in the same way."
+    }
+   ],
+   "why": "Reader 3 names the balance problem and the author's fix; continuity and diagnosis touch Nanoha's share of Ch2 but argue the opposite way (less Nanoha)."
+  },
+  {
+   "id": "A40",
+   "verdict": "miss",
+   "by": [],
+   "why": "No check comments on emoji or stickers; the readers praise the texts."
+  },
+  {
+   "id": "A42",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "reader1",
+     "verdict": "hit",
+     "quote": "Also, Tokiwa's speaker tag is \"Ryōsuke\" but the narration only ever calls him \"Tokiwa,\" and nothing explicitly links the two names. I had to infer it."
+    },
+    {
+     "check": "reader3",
+     "verdict": "hit",
+     "quote": "Rika calls Kōhei \"Fujisawa-kun\" and Kōhei calls Ryōsuke \"Tokiwa,\" but the speaker labels say \"Ryōsuke.\" It took me a beat to work out that Tokiwa is Ryōsuke. It's fine once you know, but the label and the narration never say both names side by side."
+    }
+   ],
+   "why": "Two readers lose track of who's who between tag and narration names (in Ch1); the obvious fix is the author's full name on the first line."
+  },
+  {
+   "id": "A45",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "hit",
+     "quote": "S7. A missing gloss (Production). \"Bogu\" first appears unglossed in Kirishima's line #c2_0076."
+    },
+    {
+     "check": "reader2",
+     "verdict": "hit",
+     "quote": "\"I show her men\" is kendo jargon for a feint; I only understood it after Takatsuki said \"You did not take his feint.\" A reader could stumble."
+    },
+    {
+     "check": "reader1",
+     "verdict": "partial",
+     "quote": "Translator's-note pile-up (real problem): lines 92–99 hit me with six notes in a row (bogu, men, tenugui, kirikaeshi, waza, shiai-geiko), each also glossed inline."
+    },
+    {
+     "check": "reader3",
+     "verdict": "partial",
+     "quote": "Translator's-note pileup. This part has twelve notes ... Six of them hit back-to-back in the two paragraphs before the match"
+    }
+   ],
+   "why": "Diagnosis and reader 2 each name an untranslated term in a kendo scene; readers 1 and 3 touch the same terms but complain of the opposite (too many notes)."
+  },
+  {
+   "id": "A48",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "reader1",
+     "verdict": "hit",
+     "quote": "Redundant: \"i knew what he was going to do before he did it. every time\" restates what Takatsuki already said in the dojo, and then the narration explains it a third time (\"you learned to read shoulders and feet… That should have covered it\"). One of those three is enough."
+    }
+   ],
+   "why": "Reader 1 calls c2_0278 a redundant third telling."
+  },
+  {
+   "id": "A49",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "reader1",
+     "verdict": "hit",
+     "quote": "Redundant: \"i knew what he was going to do before he did it. every time\" restates what Takatsuki already said in the dojo, and then the narration explains it a third time (\"you learned to read shoulders and feet… That should have covered it\"). One of those three is enough. The text message alone, with \"except the last one. didn't see that one at all,\" would do it."
+    }
+   ],
+   "why": "Reader 1 says the nine-years paragraph re-explains what the chat showed (the 'fall' line isn't covered)."
+  },
+  {
+   "id": "A51",
+   "verdict": "miss",
+   "by": [],
+   "why": "No check counts the repeats of 'six'; continuity lists six schools as checked fine."
+  },
+  {
+   "id": "A52",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "continuity",
+     "verdict": "partial",
+     "quote": "Chie's backstory contradicts pilot-notes. Where: 373 [c2_0280]. \"Chie had been her best friend in fourth grade, and again last year, when her dad's work had swung them back through Sendai.\""
+    }
+   ],
+   "why": "Continuity touches c2_0280 for a fact conflict, not for where the backstory sits."
+  },
+  {
+   "id": "A53",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "build",
+     "verdict": "partial",
+     "quote": "Phone landscape 844×390, interlude: the Chie chat panel covers the \"— Interlude: Natsuki —\" label"
+    }
+   ],
+   "why": "Build's phone spot check found only a chat/label overlap, not the oversized text box or the notch overlap."
+  }
+ ],
+ "liked": []
+}
