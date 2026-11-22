@@ -3,7 +3,7 @@ current harness exactly as written, pointed at the build and the docs as they we
 
 One file per agent: PROMPTS_DIR/<build>/<check>.md. Launch one fresh agent per file with:
   "Your instructions are in <file>. Read it and follow it exactly."
-Checks: continuity, diagnosis, reader1-3, onmodel, build (the Japanese pass is left out: the author can't read
+Checks: continuity, diagnosis, reader1-3, onmodel, build, plus match/<build>.md for the matcher (the Japanese pass is left out: the author can't read
 Japanese, so none of his items can test it; rewrite and overcorrection don't flag problems).
 
 The only change to the standard prompts is where output goes: each agent writes its full report to a file and
@@ -119,6 +119,16 @@ def main():
             .replace("`{QA_REPORT}`", f"(make it yourself: serve the build with `python3 -m http.server {port} --directory {root}/v2` in the background, then run `python3 {root}/production/pipeline/vn/qa_play.py http://localhost:{port}/ {outdir}/qa --every` at the default iPad size; read its report)")
         t += f"\n\nThe build is `{root}/v2/`. Use port {port} only. Voice levels: `python3 {os.path.join(S, 'tools', 'voice_levels.py')}` on `{root}/v2/voice/` if it runs; if it doesn't, say so. Put screenshots under `{outdir}/shots/`."
         write("build", t)
+
+        # Matcher (scoring step 3): run after every check on this build has written its report
+        mq = "\n".join(l[2:] if l.startswith("> ") else l[1:] for l in standard("score/matcher.md").split("\n") if l.startswith(">"))
+        rn = ", ".join(f"`{os.path.join(S, 'readers', bid, f'r{n}', f'notes-reader{n}.md')}`" for n in (1, 2, 3))
+        mq = (mq.replace("{BUILD}", bid).replace("{GROUND_TRUTH}", os.path.join(K, "ground-truth.json")).replace("{RUN_DIR}", outdir)
+              .replace("`{READER_NOTES}`", rn).replace("{LINT}", os.path.join(S, "lint", bid + ".txt"))
+              .replace("{SCRIPTS}", os.path.join(root, "production/pilot-v2/script/")).replace("{OUT}", os.path.join(outdir, "match.json")))
+        os.makedirs(os.path.join(OUT, "match"), exist_ok=True)
+        open(os.path.join(OUT, "match", bid + ".md"), "w", encoding="utf-8").write(
+            "Don't open anything under /home/claude/ozakura except the ground-truth file named below, and don't run git.\n\n" + mq)
     print("prompts in", OUT)
 
 
