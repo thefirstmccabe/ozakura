@@ -16,7 +16,59 @@ Items are added as the author reviews; nothing is applied until he says the batc
 | 10 | Ch3 Natsuki's outfit | Track shirt and sweats stay for this after-practice scene (author: "it looks cute on her"). **Her everyday look is casual A** (author, Nov 21: "a lot more stylish and fits her better"; B has no planned use), made when a scene needs it, with her Oct 20 hair and eyes. Its cream cardigan matches Nanoha's and Akane's (see item 12), so it changes color when built | Kept as is (author) |
 | 11 | Ch3 c3_0399–0404 | **The rain dodge reads oddly** (author: "What's with them saying it would rain tomorrow and ignoring the ghost question?"). It's meant as the family closing ranks with a joke (the stumble custom, "Just stopping for a rest," comes from the okuri-ōkami belief; canon pays it off in Ch36), but c3_0402 ("I've heard them say it on these steps my whole life") sits after the rain line, so "it" reads as the rain. Proposed: move c3_0402 up to follow c3_0398, and after Nanoha's c3_0404 add "Mizuno looks up at the sky, which is perfectly clear, and then at me. I shrug." [P], so the dodge reads as a dodge. Narration only | Done |
 | 12 | Everyday outfits | **Three cream cardigans** (author: Akane's sweater is too much like Nanoha's). Nanoha's home look, Akane's home look and Natsuki's casual A all wear one (lineup shown Nov 21). Proposed: Nanoha keeps hers (it's her home look, and her sleeve is the clue in Akane's photo); Akane's becomes a different color (one body edit, the four expressions pasted back on; her face windows aren't used in Ch3); Natsuki's A changes color when it's built | Done (author agreed Nov 21) |
-| 13 | Ch3 cg_lunch, c3_0413 | **Grandpa at the head of the table** (author). Re-edit the lunch CG with Genji centered at the far end, redo its living still, and set c3_0413 back to "Grandpa at the head of the table." About $0.70–1.00 | Done |
+| 13 | Ch3 cg_lunch, c3_0413 | **Grandpa at the head of the table** (author). Re-edit the lunch CG with Genji centered at the far end, redo its living still, and set c3_0413 back to "Grandpa at the head of the table." About $0.70–1.00 | Done; its living still dropped (the old one barely moved, and a new one is about $0.56 for steam) |
 | 14 | Ch3 c3_0415–0416 | **Everyone says "Itadakimasu!" together** (author). A group line (tag "Everyone," no face window) with all seven voices layered into one clip (Mio a hair early, Natsuki loudest); c3_0416 becomes "Mio's a hair ahead of everyone, and Mizuno's the loudest." [P]. About $0.11 for the takes | Done |
 
 **Liked (author), keep as is:** 3.4, the steps ("really nicely done"); c3_0380, Genji's "The tree doesn't mind" (Production had wondered if it hinted too hard that the tree is alive; the author likes it).
+
+## Record (applied Nov 21)
+- **Script:**
+  - Ch2: c2_0009 (now under the selfie CG).
+  - Ch3:
+    - c3_0080, c3_0336, c3_0343–0345, c3_0351, c3_0413, c3_0415–0416
+    - c3_0402 moved after c3_0398; new c3_0439, the clear sky
+    - cut: c3_0388, c3_0392–0394
+    - c3_0310 is split, and the close-up gets its own line, c3_0438
+  - Lint: 0 flags on Ch2 and Ch3.
+- **The callback sweep (item 7).** Restated so each lands without Ch1–2 fresh:
+  - c3_0309: "a shift at Kitchen Komugi"
+  - c3_0310: "Akane's nightly proof that she ate"
+  - c3_0438: "her usual close-up, in case I had questions"
+  - c3_0120: "Hoshikawa and her sketchbook"
+  - c3_0321: "the big cherry at the shrine," before Ch3 has shown the tree
+  - c3_0326: "since Wednesday, when she took a point off me"
+  - c3_0336: "trash-bag duty"
+  - c3_0342: "A real one, not her phone"
+  - c3_0343–0345: the bridge
+  - c3_0352: "at lunch on her first day: shoulders, hands"
+  - c3_0412: kinpira, "why Nanoha keeps turning up at our door with leftovers"
+  - Checked and left alone, because each already carries its context: c3_0070 "hovering again", c3_0276 "in front of the class on Monday", c3_0419 "a bad Wednesday", c3_0430 "the way she did on the bridge" (the wave is described). c3_0260 now says "at me" (its "us" had lost its referent with the cut).
+  - The rule itself is handed to Story and Planning: `../../handoff-story-nov21-ch3.md`.
+- **Voices:**
+  - Re-voiced: c3_0336, c3_0343–0345.
+  - The group line c3_0415 is seven takes mixed: Mio 0.09 s early, Natsuki +2 dB, Emi −2.5 dB, the rest −3 dB, leveled to −21 dB. Recipe in `production/pipeline/vn/group_line_mix.py`.
+  - The transcript matches all 11 takes (`voice/ch03-nov21-transcript.json`).
+- **Art:**
+  - Akane's home sprites: the cardigan is dusty rose, and her face windows were rebuilt.
+  - `cg_lunch`: Genji at the head of the table.
+  - `cg_akane_selfie` (Ch2): a night kitchen, eyes rolled. It went through four edits; the last gave her a younger face after the check.
+  - `cg_akane_selfie_close` (Ch3): the sleeve comes in from the top right, so it clears the text box and the 4:3 crop.
+  - Jobs and prompts: `art/jobs-ch3.md`, `art/prompts.md`.
+- **Engine:**
+  - `CG_FRAME` lifts the three window CGs and their living stills: 15% on iPad and desktop, 10% on phones, cropped at x 30% so the sill rabbit stays in on 4:3. The uncovered strip under the box is filled with the wall's own colors.
+  - The "Everyone" tag shows with no face window.
+  - Checked with `production/pipeline/vn/qa_frames.py` at 1080×810, 1180×820, 1024×768, 1366×1024, 1440×900, 844×345, 812×375, 844×390 and 932×430.
+- **Independent check** (a fresh agent, scoped to the batch). Applied:
+  - the callbacks above
+  - c2_0009's grammar ("her running joke at my expense since…")
+  - the close-up line matched to the art ("Somebody's sleeve has made it into the corner")
+  - Akane's selfie face made younger
+  - c3_0260 "at me"
+  - two engine fixes: the lift fill is landscape only, and a living still is framed only as it shows, so a fading Safari frame can't jump
+  - the mix recipe committed
+
+  Flagged, not changed:
+  - c3_0328's "always already there" in sparring (writing rule 1). It is explained as skill at c3_0331.
+  - The containers differ between the two photos (different nights).
+  - On ultrawide (21:9) desktop windows the top of her bun touches the edge.
+- **Regression:** full iPad, desktop and phone runs of Ch1–3, compared with the approved baseline. Results are in the handover's Nov 21 addition.
