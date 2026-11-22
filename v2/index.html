@@ -51,8 +51,9 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
    off-center (--cgx). The strip the lift uncovers (under the text box, bare only while a CG first comes up) is filled with the CG's own
    bottom-row colors (CG_FRAME f), and the picture's bottom edge feathers into it */
 #cg .bgimg,#cg .live{object-position:var(--cgx,50%) 50%;transform:translateY(calc(-1 * var(--cgl,0%)))}
-#cg .lifted{-webkit-mask-image:linear-gradient(to bottom,#000 94%,transparent);mask-image:linear-gradient(to bottom,#000 94%,transparent)}
-.cgfill.lift{display:block;inset:0;filter:none}
+@media (orientation:landscape){
+  #cg .lifted{-webkit-mask-image:linear-gradient(to bottom,#000 94%,transparent);mask-image:linear-gradient(to bottom,#000 94%,transparent)}
+  .cgfill.lift{display:block;inset:0;filter:none} }
 @media (orientation:portrait){ #cg .bgimg, #cg .live{object-fit:contain;object-position:50% 36%;transform:none} .cgfill{display:block} }
 /* short animated moments (canon §2): played once over the CG layer, then the still holds */
 #animV{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;z-index:6}
@@ -620,11 +621,10 @@ function setBg(name, tr){
 const cgLive=$('#cgLive');
 function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
 function liveOn(name, delay, cut){
-  frameCg(cgLive, name);
   if(cut){ cgLive.style.transition='none'; } liveOff(); void cgLive.offsetWidth; cgLive.style.transition='';   // a cut drops the old living still at once (Safari kept its last frame through the fade)
   if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
   cgLive.src=LIVE[name]; cgLive.muted=true;
-  cgLive.onplaying=()=>{ if(tok===setCg.tok) setTimeout(()=>{ if(tok===setCg.tok) cgLive.classList.add('on'); }, delay); };
+  cgLive.onplaying=()=>{ if(tok===setCg.tok) setTimeout(()=>{ if(tok===setCg.tok){ frameCg(cgLive, name); cgLive.classList.add('on'); } }, delay); };   // framed only as it shows, so a fading-out still (Safari keeps its last frame) never jumps to the next CG's framing
   const p=cgLive.play(); if(p&&p.catch) p.catch(()=>{});      // if autoplay is refused, the still simply stays
 }
 const cgFills=[...document.querySelectorAll('#cg .cgfill')];   // portrait: each CG image has its own blurred fill and fades with it

@@ -10,10 +10,10 @@
 @bg bg_houses_night
 @wear kohei school
 @bgm night
-> Thursday is a shift. The manager says "Lifesaver" eleven times, which I think is a record.  #c3_0309
-> At seven, Akane's photo of the empty container comes in right on schedule, eye-roll and all.  #c3_0310
+> Thursday is a shift at Kitchen Komugi. The manager says "Lifesaver" eleven times, which I think is a record.  #c3_0309
+> At seven, Akane's nightly proof that she ate comes in right on schedule: the empty container, eye-roll and all.  #c3_0310
 @cg cg_akane_selfie_close
-> A minute later, the close-up. There's the edge of somebody's sleeve in the corner.  #c3_0438
+> A minute later, her usual close-up, in case I had questions. Somebody's sleeve has made it into the corner.  #c3_0438
 @cg -
 > It's after ten by the time I get home.  #c3_0058
 > The light's on in our living room. Across the gap, Nanoha's upstairs window is dark, which isn't like her at ten o'clock.  #c3_0059
@@ -86,7 +86,7 @@ nanoha: "You are undermining my authority." || それは、私の権威を傷つ
 kohei(grin): "Your authority is a plushie." || お前の権威って、ぬいぐるみだろ。  #c3_0117
 nanoha: "My authority is absolute." || 私の権威は、絶対です。  #c3_0118
 > She turns him back around without looking away from me. Her face is perfectly straight. Her eyes are laughing.  #c3_0119
-> This is the version of her nobody else gets. Not Hoshikawa, not the first-years who bow to her in the hallway. Just me, across three feet of night.  #c3_0120
+> This is the version of her nobody else gets. Not Hoshikawa and her sketchbook, not the first-years who bow to her in the hallway. Just me, across three feet of night.  #c3_0120
 nanoha: "…Don't be mad at her." || ……あかねちゃんのこと、怒らないであげてね。  #c3_0122
 kohei(neutral): "I'm not. I'd have come, that's all." || 怒ってない。行ったのに、ってだけだ。  #c3_0123
 nanoha: "I know. That's why." || 知ってる。だからだよ。  #c3_0124
@@ -107,7 +107,7 @@ kohei(neutral): "…Thanks. For tonight." || ……ありがとな。今日の�
 @cg cg_window_sill_turn
 > She looks at me for a second. Then she reaches over and turns {Usagi-san|Mr. Rabbit} a quarter turn, so he's facing her instead.  #c3_0314
 nanoha: "His sentence has been reduced. For good behavior." || げんけいです。模範囚なので。  #c3_0315
-> I think about mentioning that Mizuno might come up to photograph the tree. Then the cat down the lane starts up again, and she laughs, and it doesn't come up.  #c3_0321
+> I think about mentioning that Mizuno might come up to photograph the big cherry at the shrine. Then the cat down the lane starts up again, and she laughs, and it doesn't come up.  #c3_0321
 nanoha: "Good night, Kō-chan." || おやすみ、こうちゃん。  #c3_0162
 kohei(smile): "Night, {Chibi|shorty}." || おやすみ、チビ。  #c3_0322
 @cg -
@@ -153,7 +153,7 @@ natsuki<grin>: "Then I'm taking the long way." || じゃあ、遠回りする。
 @bgm natsuki
 > The way up to the shrine starts a little past our houses: a stone stairway through the cedars, steep enough that the old people in the neighborhood count the landings out loud.  #c3_0341
 @show natsuki track_smile c
-> Mizuno has changed into a navy track shirt and dark sweats, her hair still up from practice. A camera hangs from a strap around her neck. A real one this time, black and heavy, with a lens that probably cost more than my bike.  #c3_0342
+> Mizuno has changed into a navy track shirt and dark sweats, her hair still up from practice. A camera hangs from a strap around her neck. A real one, not her phone: black and heavy, with a lens that probably cost more than my bike.  #c3_0342
 natsuki<curious>: "On the bridge, I told you I had a project." || 橋の上で、私、課題があるって言ったでしょ。  #c3_0343
 kohei(neutral): "And you wouldn't say what." || で、何なのかは言わなかったな。  #c3_0344
 natsuki<smile>: "I'm telling you now." || 今、言うね。  #c3_0345
@@ -223,7 +223,7 @@ genji: "Nanoha. The tea's in the office. Bring cups for everyone." || なのは�
 > Then it's gone. The branch is where it always is. It's warm. The bags are heavy.  #c3_0387
 @bgm -
 > Nanoha has stopped on the path halfway back from the office, Grandpa's thermos held against her chest with both arms.  #c3_0259
-> She isn't looking at us. She's looking at the low branch, at a spot just under it.  #c3_0260
+> She isn't looking at me. She's looking at the low branch, at a spot just under it.  #c3_0260
 @cg cg_tree_light
 #[On screen: a small point of light under the low branch.]
 nanoha(surprised): "…You came back." || ……戻ってきたんだ。  #c3_0263

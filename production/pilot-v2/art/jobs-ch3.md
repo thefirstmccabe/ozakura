@@ -36,3 +36,5 @@
 | 24 | 0 | cg_akane_selfie: night outside the window, edit of 942 | 961 | 01a200a5-43eb-7922-9114-91bb2a3b84e6 |
 | 24 | 1–2 | cg_akane_selfie_close: the arm moved to the top right, edits of 951 (971 kept) | 971–972 | 01a200a5-4425-7192-9b51-803aa071b8f3, 01a200a5-4425-7141-a514-038463bc5461 |
 | 25 | 0 | cg_akane_selfie: the night edit put a long-haired reflection in the window; removed (963 kept) | 963 | 01a200a7-923b-7a90-bd9e-923f01399d6f |
+| 26 | 0 | cg_akane_selfie: a younger, rounder face from her sprite (the independent check: she read older than 14), edit of 963 (kept) | 981 | 01a200bc-c81c-7fc0-9bc2-1574d2dab2fa |
+| 26 | 1 | the same edit, seed 982: declined by the model's content filter, no output, not resubmitted | 982 | 01a200bc-c857-7e12-a966-d23a9d23e1c8 |
