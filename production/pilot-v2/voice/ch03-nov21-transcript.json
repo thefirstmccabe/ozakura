@@ -1,0 +1,7 @@
+{
+ "request_id": "01a200a0-5e3d-7eb2-bf1a-7a221bbecf73",
+ "endpoint": "fal-ai/wizper",
+ "audio": "the 11 Nov 21 takes joined in order (c3_0336, c3_0343-0345, then the seven itadakimasu takes)",
+ "text": "ああゴミ袋がかりだ橋の上で私課題があるって言ったでしょで何なのかは言わなかったな今言うねいただきますいただきますいただきますいただきますいただきますいただきますいただきます",
+ "verdict": "all 11 match the script (がかり = 係 read as kakari)"
+}

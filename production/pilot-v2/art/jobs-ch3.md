@@ -24,3 +24,15 @@
 | 8 | 1 | live cg_tree_natsuki (Kling v3 Pro, 4 s) | — | 01a19793-0128-7032-9c67-7e8a486ffbc1 |
 | 8 | 2 | live cg_lunch (Kling v3 Pro, 4 s) | — | 01a19793-0124-77f3-9d43-aea6f0775898 |
 | 9 | 0–1 | cg_window_sill_turn (rabbit a quarter turn, facing the frame corner) from 842 | 851–852 | 01a197b3-139c-74e3-9461-823fd69cd9ab, 01a197b3-139e-7c83-bfaf-6b2fad2bad2e |
+
+## Nov 21 (the author's Ch3 punch list)
+| Batch | Index | Asset | Seed | Request ID |
+|---|---|---|---|---|
+| 21 | 0–1 | akane_home cardigan to dusty rose, edit of akane711 (911 kept) | 911–912 | 01a20098-6d4d-71b0-9764-d9c612ae934c, 01a20098-6d50-7c63-974f-532e9a04063c |
+| 21 | 2 | bria cutout of 911 | — | 01a2009b-8c28-71a0-8b97-f7297b5df841 |
+| 22 | 0–1 | cg_lunch, Grandpa at the head of the table (932 kept) | 931–932 | 01a2009e-c1d9-79f1-b205-045af84e2648, 01a2009e-c20f-7f51-b581-9e91661fc794 |
+| 23 | 0–1 | cg_akane_selfie (942 kept) | 941–942 | 01a200a2-0057-7651-a3da-adb6785244b8, 01a200a2-008f-7f21-b6f0-7b7dca0a6819 |
+| 23 | 2–3 | cg_akane_selfie_close, sleeve bottom right (951 kept as the base) | 951–952 | 01a200a2-0091-7752-b985-b30570a610d0, 01a200a2-0090-7c30-b62a-dca7d443c3a8 |
+| 24 | 0 | cg_akane_selfie: night outside the window, edit of 942 | 961 | 01a200a5-43eb-7922-9114-91bb2a3b84e6 |
+| 24 | 1–2 | cg_akane_selfie_close: the arm moved to the top right, edits of 951 (971 kept) | 971–972 | 01a200a5-4425-7192-9b51-803aa071b8f3, 01a200a5-4425-7141-a514-038463bc5461 |
+| 25 | 0 | cg_akane_selfie: the night edit put a long-haired reflection in the window; removed (963 kept) | 963 | 01a200a7-923b-7a90-bd9e-923f01399d6f |
