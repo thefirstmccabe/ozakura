@@ -58,3 +58,33 @@ Ch3 about $9.10 (art $4.42; CGs and living stills $2.43; voices $2.25); running 
 - c3_0129 now reads "Or my mom. Or my dad. Or Grandpa." so her dad can't be mistaken for his (English only).
 - **Checks:** lint, iPad and phone runs through the scene, and an independent check of the lines (it cut a closing sentence that pointed at Akane being "next," and made "cancer" explicit). About $0.09; running total about $49.40.
 
+
+---
+
+# Addition, Nov 21: your punch list, applied
+**Play:** the same link. Ch2 opens with the new selfie (Chapter 2, at the restaurant). The Ch3 changes are spread through the chapter: the window, Thursday night, the steps, the tree, the steps down and lunch.
+
+**What changed** (item by item in `punch-nov21.md`, with its record):
+- **Akane's photos are her joke.** Ch2 shows her selfie: eyes rolled, holding up the empty container. The narration explains it: "her running joke at my expense since the week I texted 'Did you eat?' three nights running." In Ch3 the close-up shows somebody's cream sleeve in the corner.
+- **Every Ch3 callback to Ch1–2 now carries its own context.** The bridge, trash-bag duty, Kitchen Komugi, the point she took off him, lunch on her first day, Hoshikawa's sketchbook, the kinpira, her real camera, the big cherry.
+- **The tree:** Natsuki's camera beat is cut, as a trial. Kōhei's fragment and Nanoha's light stay.
+- **Lines:** "I sit back on my heels." / "I laugh." / "Yeah. Trash-bag duty."
+- **The rain dodge:** "I've heard them say it on these steps my whole life" now follows the stumble, and Mizuno looks up at a perfectly clear sky and then at him.
+- **Lunch:** Grandpa sits at the head of the table in a new CG. Everyone says "Itadakimasu!" together: seven voices, Mio a hair early, Mizuno loudest.
+- **Akane's home cardigan is dusty rose,** so it no longer matches Nanoha's.
+- **The window CGs sit higher on every screen,** so Nanoha's face and the rabbit clear the text box and name tag. This includes your iPad at 1080×810, the other iPad sizes, desktop and phones.
+
+**Calls I made [P]:**
+- The selfie is set at night in the Fujisawa kitchen.
+- The sleeve comes in from the top right. The bottom corner would sit under the text box and be cropped on iPads.
+- The close-up's line now matches the art: "Somebody's sleeve has made it into the corner."
+- The lunch CG's living still is dropped instead of redone. The old one barely moved, and a new one is about $0.56.
+
+**Checks:**
+- Lint is clean.
+- The re-voiced lines' transcripts match.
+- Framing screenshots at nine screen sizes.
+- A fresh-agent check of the whole batch. Its fixes are in: callbacks it caught, a grammar fix in c2_0009, a younger face for Akane in the selfie, two small engine fixes and the mix recipe.
+- Full regression runs of Ch1–3 (below).
+
+**Spend:** about $2.15, so the running total is about $51.55.
