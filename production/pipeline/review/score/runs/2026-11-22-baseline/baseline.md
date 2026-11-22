@@ -55,6 +55,13 @@ From the reports that existed when he got each build (`*/history.json`; Ch1 Oct 
 4. **Metric of record: the strict count [P].** The handoff's test for one handover per arc ("about two-thirds of his
    Ch1–3 items") is met already on the lenient count by vague neighbors, so it has to be strict. Report findings
    and the matched share alongside it.
-5. **Noise isn't measured yet.** One run per check; the same check flipped between runs (A56 was praised by readers
-   at the time and flagged FLAT today). Step 3 starts by running this baseline once more, so a new reader's gain
-   can be told from chance [P].
+5. **Noise, measured the same evening** (`../2026-11-22-run2/`, `rematch/`). A second identical run of all 28
+   checks: strict 10 (vs 12), lenient 24 (vs 31); **only 6 items were caught both times, 16 at least once, and 20
+   of the 46 verdicts changed.** A56 flipped again: flagged FLAT in run 1, praised in run 2. A second matcher on run
+   1's reports gave the same counts (12 and 31) with 4 verdicts different, all borderline (A45 and A57 among them),
+   so the matcher is steady and **the swing comes from the checks.**
+   - **Scoring rule from now on [P]:** a candidate gets at least two runs; report the mean strict count and the
+     count caught in both runs; a gain smaller than about 3 items is within the baseline's own swing.
+   - **What the author gets is partly luck:** which of his problems reach a punch list depends on the draw. Running
+     each check twice and keeping the union lifts strict catches from about 11 to 16, but doubles the findings too;
+     a judge that filters them is what would make that usable (step 3).
