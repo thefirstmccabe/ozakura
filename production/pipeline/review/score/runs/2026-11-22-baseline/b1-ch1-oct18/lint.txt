@@ -1,0 +1,7 @@
+ch01.ozs:83: nanoha's deadpan is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:91: nanoha's deadpan is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:128: nanoha's deadpan is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:230: natsuki's smirk is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:249: natsuki's smirk is still on screen two lines later (§3: punchline and its answer only; change back)
+chapter: narration "says it like" 2 times (more than 1): ch01.ozs:372, ch01.ozs:373
+6 flag(s)

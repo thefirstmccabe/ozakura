@@ -1,0 +1,156 @@
+[
+ {
+  "id": "A24",
+  "raised": true,
+  "where": "build-review.md",
+  "quote": "Staging taste calls: the restaurant background stays up for the walk home and his kitchen (c2_0056, c2_0057, c2_0299)",
+  "outcome": "no response (partial match): flagged as staging, not as an unclear line. Production fixed other backlog items and wrote 'The rest stays on the backlog (status board carry list)'. No report called the line itself unclear; all three round-2 cold readers (text only) read the 'Again.' container fine."
+ },
+ {
+  "id": "A25",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. Near miss in the opposite direction: cold-read-round1/notes-reader2.md flagged the same line, 'Four glosses in one line is a glossary, not a captain talking.' The round-1 fix (cold-read-round1.md) cut it to 'Warm-ups and suburi. Bogu after the break.' and moved the drill glosses into the match narration. suburi and bogu were never glossed at c2_0076, even in the draft."
+ },
+ {
+  "id": "A26",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. Cause found in the reports: dialogue-diagnosis.md cut c2_0089 ('Mizuno's whole face lights up.' / '0090 already shows it'), the line that gave 'she' in c2_0090 its antecedent after Rika's c2_0087-0088. No later report or cold reader noticed."
+ },
+ {
+  "id": "A28",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. continuity.md asked for one re-gloss under the existing rule ('c2_0040 \"taiyaki\" needs its gloss again (style guide §5: first use per chapter)'), not every use. Readers pushed the other way: cold-read-round1/notes-reader2.md, 'The \"taiyaki\" translator gloss repeating in-line ... the second time is unnecessary' and 'repeated in-line glosses for words already explained'."
+ },
+ {
+  "id": "A29",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. build-review.md checked the insert ('13 steps, right-to-left, framing at all sizes...') and fixed a blank-screen open (must-fix 2). Nothing about showing the full page before the panels."
+ },
+ {
+  "id": "A30",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. The line comes from continuity.md fix 3 ('Until the first-years join, whoever stays does the floor. I usually stay anyway.'), reworded in the draft. dialogue-diagnosis.md marked c2_0174 KEEP, and no cold reader mentioned it."
+ },
+ {
+  "id": "A31",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. No report discusses the practice music cue or where it changes. build-review.md checked only voice levels."
+ },
+ {
+  "id": "A32",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. bg-cg-onmodel-r1.md failed the animation on anatomy ('His arm crosses her chest, then passes through her body; limbs tangle; faces morph'). Its fix re-made the start frame 'with the arms already where they end up', and onmodel-r2.md passed it ('his right arm stays behind her back n0-n72'). No report judged whether the clip shows a fall and a catch. The handover lists only the ponytail swing and face drift."
+ },
+ {
+  "id": "A33",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. build-review.md 'Checked and fine' includes the face-window outfit switch at 'c2_0215 school'. Its round-2 backlog 'blink on a fast same-spot re-show (c2_0020 -> c2_0022 -> c2_0023)' is a different line and cause. The cold-cache face flash wasn't found."
+ },
+ {
+  "id": "A34",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. dialogue-diagnosis.md flagged c2_0218 as FLAT only for the self-commentary and said 'Close on \"It's mostly vending machines.\"'. overcorrection-check.md praised the result: \"'It's mostly vending machines.' (0218) on its own, the Ch1 sincere-then-laugh model done exactly.\" Reader 3 (round 1) listed it as a good line."
+ },
+ {
+  "id": "A35",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. build-review.md checked the 'interlude POV window at c2_0259' and passed it. The cold-cache flash wasn't found."
+ },
+ {
+  "id": "A36",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. build-review.md checked 'text messages at all sizes'. Its backlog note 'No controls during the insert or the text messages (Log, Save, Menu, Auto live in the hidden text box)' is about missing controls, not a tap-to-continue cue."
+ },
+ {
+  "id": "A37",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. Same lines flagged for the opposite problem: cold-read-round1/notes-reader2.md, 'The structural mirroring is a bit too tidy ... The exact rhyme makes me see the template.' Kept by design (cold-read-round1.md: 'the mirrored interlude endings (outline)'). dialogue-diagnosis.md marked 0281-0283 KEEP. Readers quoted them as understood."
+ },
+ {
+  "id": "A38",
+  "raised": true,
+  "where": "cold-read-round1.md",
+  "quote": "Nanoha is offscreen for the whole chapter, so the reader has nothing of hers to weigh against Natsuki's restaurant, dojo, catch, bridge and interlude (\"Nanoha needs one beat in Chapter 2; even a short exchange through the facing windows would do\")",
+  "outcome": "fixed differently, then escalated. Round 1 added two prop beats [P] (the 'Again.' kinpira container c2_0299, her lit window c2_0301). cold-read-round2.md: 'Cause (all six readers): Nanoha has no scene in Ch2. Every reader asked for one.' The beats read as props, so the thread asked the author (handover-oct25.md, Oct 25 8:30 am) to choose: a ~10-line Wednesday-morning scene (recommended), a smaller touch, or leave it. The build shipped with no Nanoha scene, waiting on him."
+ },
+ {
+  "id": "A40",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. dialogue-diagnosis.md: 'The texts 0262-0275 stay as kept'. Readers praised the Chie texts as lively and real. No one asked for emoji, stickers or a distinct texting style for each girl."
+ },
+ {
+  "id": "A42",
+  "raised": true,
+  "where": "cold-read-round1/notes-reader3.md",
+  "quote": "Rika is introduced only as \"Rika\" in Ch1, then appears in Ch2 as \"Hoshikawa's head comes around it\" with no bridge. I only placed her from the sprite tag.",
+  "outcome": "fixed differently. Also cold-read-round1/notes-reader1.md: 'Mizuno/Natsuki, Tokiwa/Ryōsuke and Hoshikawa/Rika each switch between surname (narration) and given name (speaker tag), and each made me double-take once'. Only Rika got a fix, one narration bridge ('Hoshikawa Rika's head comes around it', cold-read-round1.md). Speaker tags and the other surname/given-name switches were untouched. Round 2's name-similarity notes went to Story with no change."
+ },
+ {
+  "id": "A45",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. Readers pushed the opposite way: cold-read-round1/notes-reader2.md, 'Four glosses in one line is a glossary'; notes-reader1.md would stop reading 'If every kendo scene comes with a glossary'. Round 1 removed the glosses from c2_0076. Reader 3's only gap was footwork ('(the wrong foot)'), not untranslated terms."
+ },
+ {
+  "id": "A48",
+  "raised": true,
+  "where": "cold-read-round1/notes-reader1.md",
+  "quote": "Slightly heavy: \"She hadn't read him. She'd just known.\" That spells out the uncanny thing. The tear had already shown it. I'd trust the reader more here.",
+  "outcome": "fixed differently, three times; the flagged wording was never re-read. Earlier versions were flagged by continuity.md ('c2_0278-0279 ... The chapter's loudest \"she's the wife\" line'), by all three round-1 readers, and by round-2 reader 2. Continuity cut the house-in-the-dark simile. Round 1 cut 'She hadn't read him. She'd just known.' Round 2 rewrote c2_0277-0279 (the nine-years paragraph plus 'It didn't feel like it covered it'). On c2_0279: dialogue-diagnosis.md cut it ('0279 FLAT (states what 0278 shows)'); overcorrection-check.md restored it on purpose. The final c2_0278 was written after the last cold read."
+ },
+ {
+  "id": "A49",
+  "raised": true,
+  "where": "cold-read-round1/notes-reader3.md",
+  "quote": "\"She hadn't read him. She'd just known.\" plus \"her body doing something without asking her, the same as on the floor\" plus the Chie text \"i knew what he was going to do before he did it.\" That's three statements of the same point in one interlude, right after the tear showed it. One would do.",
+  "outcome": "fixed differently; the problem came back. cold-read-round1.md: 'The interlude states her uncanny knowing three times (all 3)'. Round 1 cut 'She hadn't read him. She'd just known.' Round 2 rewrote c2_0277-0279 to drop body memory. The rewrite ('The fall, probably. First-week nerves.', the nine-years paragraph) still restates what the chat shows, and no fresh reader saw it (the third read waits on the author)."
+ },
+ {
+  "id": "A51",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised at c2_0257. Same problem, different place: cold-read-round1/notes-reader1.md flagged the dojo intro c2_0071, 'Repeats Sendai and \"six\" from the classroom and the restaurant chatter' (reader 2 too). It was fixed there by cutting 'sixth dojo'. That left c2_0257's 'Six schools' as the third use. dialogue-diagnosis.md trimmed c2_0257 for another reason and said 'The rest of the list is excellent'."
+ },
+ {
+  "id": "A52",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. c2_0280 was touched only for facts (continuity.md fix 10, 'again last year') and wording (dialogue-diagnosis.md, 'every single New Year, without fail'). No report questioned putting the backstory inside the held beat."
+ },
+ {
+  "id": "A53",
+  "raised": false,
+  "where": "",
+  "quote": "",
+  "outcome": "not raised. build-review.md tested the phone at 844x390 and logged only 'the text-message panel covers the \"— Interlude: Natsuki —\" label from c2_0262'. The text box's size and the notch overlap weren't flagged."
+ }
+]

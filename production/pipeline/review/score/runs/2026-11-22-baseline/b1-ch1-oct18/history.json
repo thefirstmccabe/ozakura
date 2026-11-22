@@ -1,0 +1,51 @@
+[
+  {
+    "id": "A10",
+    "raised": false,
+    "where": null,
+    "quote": null,
+    "outcome": "no response: no report flagged the food or household terms (karaage, fusuma, kinpira, taiyaki, shodan, miso) as unclear. The drafts gloss only {shodan|first dan}, {tsuka|hilt} and {水|Wednesday}. The cold readers listed 'The taiyaki thermodynamics' as lively (cold-read-round1.md), and the Japanese pass checked only the Japanese lines."
+  },
+  {
+    "id": "A11",
+    "raised": false,
+    "where": null,
+    "quote": null,
+    "outcome": "no response: no report mentions c1_0227 or c1_0228. Both lines are the same in ch01-oct17-build.ozs and ch01-rewrite.ozs. The dialogue diagnosis cut other narration that explains (c1_0089, c1_0191, c1_0243) and flagged the next-door c1_0224 for scorekeeping, but it passed over these two lines."
+  },
+  {
+    "id": "A12",
+    "raised": false,
+    "where": null,
+    "quote": null,
+    "outcome": "no response; the reports pushed the other way. All six cold readers wanted the stretch visible in the collar CG, so the thread added height to c1_0075: 'She's had to reach up for it since middle school.' (cold-read-round2.md), then 'She's needed the extra inches since middle school.' (round-2 diff check). Near misses at the same line, each a different problem: continuity.md #14 changed 'always had to stretch' because of canon §3c (he grew past her in middle school), and the round-2 diff check flagged c1_0075 only because it 'Repeats the \"since… reach\" frame of c1_0039', which is a repeated wording, not too much height. No report touched c1_0074 or c1_0127 ('elbow height')."
+  },
+  {
+    "id": "A19",
+    "raised": true,
+    "where": "dialogue-diagnosis.md",
+    "quote": "c1_0139: FLAT. Another \"meant it.\" Keep the image and change the wording.",
+    "outcome": "fixed, then reverted; the build shipped the flagged wording. The diagnosis blamed the third 'meant it' in the chapter, not the image failing to land. dialogue-rewrite-log.md changed it to 'Her uniform is ironed sharp, every pleat in line.' Then overcorrection-check.md fix 9 put it back: 'restored: \"ironed by someone who meant it\" (now the chapter's only \"meant it\")'."
+  },
+  {
+    "id": "A20",
+    "raised": false,
+    "where": null,
+    "quote": null,
+    "outcome": "no response: no report asked for the class to react to Natsuki's looks. The nearest notes are about something else. cold-read-round1.md says 'All three see that Kōhei and Natsuki reacted to each other on sight', and the intro CG's classmates were checked only for staging (on-model.md, and the redrawn boy who looked like Kōhei)."
+  },
+  {
+    "id": "A21",
+    "raised": false,
+    "where": null,
+    "quote": null,
+    "outcome": "partial only, counted as not raised. dialogue-diagnosis.md flagged one earlier line in the range: 'c1_0066: FLAT. \"That's what they want you to think\" is a stock conspiracy-meme line'. The rewrite replaced it with 'That's what it says in the minutes.', and the author's item is against that fixed build. The reports judged the banter as a whole the opposite way. The diagnosis says 'The theory and scorekeeping are Nanoha's own humor and they work'. All three round-1 cold readers listed 'Nanoha's class-assignment conspiracy, through \"That's what it says in the minutes.\"' as lively. overcorrection-check.md #8 says '\"the minutes\" makes it land better.'"
+  },
+  {
+    "id": "A23",
+    "raised": false,
+    "where": null,
+    "quote": null,
+    "outcome": "no response: no report flagged overuse of the smirk or deadpan expressions. build-review.md passed 'All 259 lines' staging ... (face-window rules, sprite expressions...)', and its item 7 added another deadpan by moving c1_0249 from tease to the deadpan sprite. Elsewhere 'deadpan' means Nanoha's spoken register, not expression tags (dialogue-diagnosis.md on c1_0113 and on Natsuki's goodbye). Both drafts carry 20 deadpan tags and 5 smirk tags."
+  }
+]

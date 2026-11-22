@@ -1,0 +1,79 @@
+[
+ {
+  "id": "A54",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. Nearest: dialogue-diagnosis.md flagged c3_0310 for a different reason (\"'I don't think anything of it.' winks at the plant\", i.e. the sleeve). The readers took the container photos as affectionate: notes-reader1.md \"Akane's second, closer photo of the empty container is cute.\"; notes-reader2.md \"a cute, efficient sibling beat.\""
+ },
+ {
+  "id": "A55",
+  "raised": true,
+  "where": "dialogue-diagnosis.md; overcorrection.md",
+  "quote": "dialogue-diagnosis.md: \"0392 CUT. It puts into words what 0388 already showed.\" / \"0394 CUT. Filler once 0392–0393 change.\"",
+  "outcome": "kept on purpose: the rewrite cut c3_0392–0394 as the diagnosis advised, but overcorrection.md fix 3 (\"0392–0394 (restore the outline beat; fix only her voice)\") put them back because the approved outline has Natsuki, \"asked later,\" shrug \"that it wasn't a good one\". Only her line changed (\"It wasn't a good one! Too many petals.\"), and the Japanese pass polished c3_0393. The camera-lowering beat itself (c3_0388) was never flagged. The readers praised it (notes-reader2.md: \"The best Natsuki beat in the part\")."
+ },
+ {
+  "id": "A56",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. dialogue-diagnosis.md kept 0074–0084 and cited 0079–0080 as where Akane's reasoning \"landed\". notes-reader2.md and notes-reader3.md both listed \"It lands somewhere I wasn't guarding.\" among the lines that drove their guesses (positively)."
+ },
+ {
+  "id": "A57",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. Nearest: build-review.md (backlog) accepted a different overlap on the same CGs: \"On the sill CGs, Kōhei's face window and Nanoha's name tag cover the rabbit's lower half at every size. His head and ears stay visible ... so I'm calling this fine.\" (repeated in the known compromises in handover-nov1.md). The reviews tested the iPad at 1180×820, not his 1080×810, and no report mentions the box covering Nanoha's face."
+ },
+ {
+  "id": "A58",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. No report flagged c3_0336 or the trash-bags callback. dialogue-diagnosis.md kept 0335–0337, and overcorrection.md leaned on the bit (\"'It's trash bags.' and 'Trash bags count…' then carry the moment\"). The cold readers read Ch1–3 straight through, so the bit was fresh for them."
+ },
+ {
+  "id": "A59",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. Nearest: japanese-pass.md item 3 on c3_0343 raised a different problem, an ambiguity in the Japanese (\"with no object, 聞いたよね can mean 'you heard' as easily as 'you asked.'\"), fixed by adding 私に. No report said the bridge callback needs Ch2 fresh in mind. The readers had just read Ch2."
+ },
+ {
+  "id": "A61",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. Nearest: overcorrection.md flagged a different line in the same laugh beat, c3_0358 (\"'I'm gone' can mean 'I've fallen for her' as easily as 'I cracked up'\"), and it was rewritten. dialogue-diagnosis.md kept c3_0351 (KEEP 0351–0361) and suggested it as the photo moment."
+ },
+ {
+  "id": "A62",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. No report called c3_0359 unclear. dialogue-diagnosis.md mentions it only for photo continuity (\"she takes it on a later landing (0352, 0359)\"), and overcorrection.md confirmed \"The photo continuity is fixed\"."
+ },
+ {
+  "id": "A64",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised; the reports said the opposite. dialogue-diagnosis.md named it among the chapter's best moments (\"The best moments are the unbuttoned ones: ... the rain dodge (0401–0404)\"), and all three cold readers read \"Looks like rain tomorrow\" as a deflection."
+ },
+ {
+  "id": "A65",
+  "raised": false,
+  "where": null,
+  "quote": null,
+  "outcome": "not raised. onmodel-r1.md described Akane's home outfit (\"the cream cardigan with sweater-paw sleeves\") and passed nanoha_home without comparing the two. The cold readers saw no sprites, and no report compares the outfits."
+ },
+ {
+  "id": "A66",
+  "raised": true,
+  "where": "onmodel-r1.md; cold-read-round1/notes-reader1.md, notes-reader2.md, notes-reader3.md; cold-read-round1.md",
+  "quote": "onmodel-r1.md: \"If the Story thread wants Grandpa at the head of the table or the empty place on screen, the alternative is a reroll of 822 that spells out the seating: Grandpa centered at the far end\"; notes-reader1.md: \"Grandpa is supposed to be \\\"at the head of the table.\\\" In the picture, he's on the right side\"",
+  "outcome": "fixed differently: the thread changed the text to match the CG, not the CG to match the text (cold-read-round1.md: \"'Grandpa at the head of the table' → 'Grandpa at the far end,' then 'Grandpa on my right.' at the build check\"). The reroll that would have put him at the head was offered in onmodel-r1.md but not taken, so the build seated him beside Kōhei. The author asked for the other fix. This is an inverse match: the reports caught the seating mismatch, and the thread settled it the opposite way."
+ }
+]

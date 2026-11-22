@@ -1,0 +1,10 @@
+ch01.ozs:86: nanoha's deadpan is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:95: nanoha's deadpan is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:131: nanoha's deadpan is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:259: natsuki's smirk is still on screen two lines later (§3: punchline and its answer only; change back)
+ch01.ozs:327: nanoha's deadpan is still on screen two lines later (§3: punchline and its answer only; change back)
+chapter: "very" in spoken lines 8 times (more than 3): ch01.ozs:71 (akane), ch01.ozs:86 (nanoha), ch01.ozs:153 (nanoha), ch01.ozs:200 (nanoha), ch01.ozs:262 (natsuki), ch01.ozs:270 (natsuki), ch01.ozs:308 (nanoha), ch01.ozs:328 (natsuki)
+chapter: narration "says it like" 3 times (more than 1): ch01.ozs:30, ch01.ozs:31, ch01.ozs:147
+chapter: narration "the way you" 2 times (more than 1): ch01.ozs:336, ch01.ozs:353
+chapter: narration "Something about" 2 times (more than 1): ch01.ozs:271, ch01.ozs:295
+9 flag(s)
