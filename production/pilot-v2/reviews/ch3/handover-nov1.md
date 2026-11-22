@@ -88,3 +88,15 @@ Ch3 about $9.10 (art $4.42; CGs and living stills $2.43; voices $2.25); running 
 - Full regression runs of Ch1–3 (below).
 
 **Spend:** about $2.15, so the running total is about $51.55.
+
+**Regression (Nov 21):**
+- **Coverage:** every line of Ch1–3 played at iPad (1180×820) and desktop (1440×900). There were no script errors, no failed requests and no missed lines, and all 458 voiced lines decode. The same build was also played at phone size (844×345).
+- **Ch1–2 against the approved baseline:** the only real change is c2_0009 (its new CG and wording). The other flagged frames are the dream's drifting petals and the pulsing "tap to continue" in the Ch2 text-message interlude, which differ only in timing.
+- **Spot check against the approved Ch1–2 build** (`approved/v2-ch2`), on phone and iPad, at every Ch1–2 CG and two plain scenes: pixel-identical apart from those same two moving things.
+- **Not covered:** fonts in this sandbox are a local copy (Google Fonts is unreachable), so check text fit on your own devices as usual.
+
+**Waiting on you:**
+- **Play the changes** and approve Ch3, or flag more.
+- **Writing rule 1, one thing to hear plainly:** Ch3 still has Natsuki reading him in sparring, "she's always already there… her sword tip is already where I'm going" (c3_0328). Your rule's own examples count "knowing his moves" as her kind of uncanny. I left it, because the next lines explain it as skill ("You lift your right heel before you feint"). Say if you want "always already there" cut.
+- **Story and Planning** have a handoff (`production/pilot-v2/handoff-story-nov21-ch3.md`): the camera-beat cut in the outline and chapter map, and your callback rule.
+- **Next for Production:** the Story thread's Nov 21 handoff (Takatsuki replaces Ryōsuke in Ch1–3, then the new cold open after Ch4). It's not started; say go.
