@@ -453,7 +453,7 @@ const BG_LIGHT = {bg_houses_night:'brightness(.8) saturate(.82) hue-rotate(-6deg
   bg_dojo_evening:'sepia(.2) saturate(1.1) brightness(.96)', bg_bridge_dusk:'sepia(.16) saturate(1.04) brightness(.9) hue-rotate(-4deg)',
   bg_fujisawa_living_night:'sepia(.14) saturate(1.04) brightness(.93)'};   // lamplit room at night [P] Nov 1
 const LIVE = {cg_dream:'img/live/cg_dream.mp4', cg_title:'img/live/cg_title.mp4', cg_cold_mist:'img/live/cg_cold_mist.mp4',
-  cg_window_sill:'img/live/cg_window_sill.mp4', cg_window_sill_turn:'img/live/cg_window_sill_turn.mp4', cg_tree_natsuki:'img/live/cg_tree_natsuki.mp4', cg_lunch:'img/live/cg_lunch.mp4'};   // living stills (2–4 s loops)
+  cg_window_sill:'img/live/cg_window_sill.mp4', cg_window_sill_turn:'img/live/cg_window_sill_turn.mp4', cg_tree_natsuki:'img/live/cg_tree_natsuki.mp4',};   // living stills (2–4 s loops)
 const POSX_W = {l:20, lc:34, c:50, rc:66, r:80}, POSX_N = {l:27, lc:38, c:50, rc:62, r:73};
 const POSX = new Proxy({}, {get:(_,k)=> (app.clientWidth/app.clientHeight<1.15?POSX_N:POSX_W)[k]});
 const SCALE = .95/(69-FLOOR); // a 5′9″ head top sits at 95% of stage height
