@@ -1,0 +1,1330 @@
+{
+ "build": "b0-ch1-oct17",
+ "missing_reports": [],
+ "findings": [
+  {
+   "check": "continuity",
+   "where": "ch01:366",
+   "summary": "\"Chibi\" plant missing: Kohei's \"Night.\" should be \"Night, Chibi\" (§3c planned shift 1)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:282",
+   "summary": "Natsuki uses kimi with Nanoha; kimi is her signature for Kohei only",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:321-328",
+   "summary": "Natsuki states the past-life hint aloud on day one (\"someone you've met before?\"), against 1.4's physical-only target; touches an Open item",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:174-183",
+   "summary": "Ryosuke's hot-dog/sub-roll entrance conflicts with §3b tic list (taiyaki named instead); Story thread must rule, at least cut \"sub roll\"",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:152-153",
+   "summary": "Genji's \"very convenient back\" used in Ch1 though the outline puts it in Ch3 3.5",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:129",
+   "summary": "Nanoha's hair clip isn't in her design (loose side braid, no clip)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:183",
+   "summary": "Ryosuke's promise to resume at lunch goes nowhere; he isn't in c1_lunch",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:133",
+   "summary": "\"She's always had to stretch to reach\" contradicts the height history (he shot past her in middle school)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:49",
+   "summary": "Mom's room placed down the hall upstairs, but elsewhere reached from the kitchen",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:54-56",
+   "summary": "Dad's line from last spring can't survive on a dated paper wall calendar; make it a whiteboard",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:139",
+   "summary": "Bike bell that \"doesn't pass\" is an unplanned uncanny beat (okuri-inu echo) beyond fix 2's week-one limit",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:284, 287",
+   "summary": "Nanoha drops to plain speech with a stranger before being asked to relax (§3c)",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:342, 369",
+   "summary": "Confirm night backgrounds derive from the corrected houses plate; lit variant missing from needs list/ledger",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:150",
+   "summary": "Names the real Tanzawa range though canon keeps the map Open",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:219-221",
+   "summary": "Natsuki's \"six times\" agrees with pilot-notes' count, but pilot-notes' own list has only five moves",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:32",
+   "summary": "Past-life Natsuki slips into plain speech (じっとして) against §3b polite form",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:151",
+   "summary": "大桜 written in kanji though names stay in kana until chosen",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:272, 289",
+   "summary": "Natsuki self-labels (\"Okay, you're fun.\", \"People tell me I'm pushy.\") on §3b's Never list",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:65, 71",
+   "summary": "Akane in Nanoha's mock-formal deadpan (\"Medical science is baffled\", \"I'm very talented\")",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:71, 200, 270, 328, 297",
+   "summary": "\"very X\" tic overused; keep 86, cut most of the rest",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:147, 353, 277",
+   "summary": "Narration's \"She says it like…\"/\"the way you…\" device overused; trim 147 and 353",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:67-69, 96",
+   "summary": "Two girls reading Kohei's face; trim Akane's face reads",
+   "matches": []
+  },
+  {
+   "check": "continuity",
+   "where": "ch01:283, 287",
+   "summary": "Public Nanoha gets two dry understatements; §3b allows one at most",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "30-31",
+   "summary": "FLAT: triple \"She says it like\" vouches for \"You're late.\", uses up the says-it-like allowance, adds narration \"very\"",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "33",
+   "summary": "FLAT: generic simile \"like the knot matters more than anything else in the world\"",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "36-37",
+   "summary": "FLAT: explains the dream, naming the feeling right after \"can't put a name to\"; repeats \"waiting\"",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "65",
+   "summary": "FLAT: Akane's \"Medical science is baffled\" is mock-formal adult deadpan (off-voice, outline asks for sweet)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "67/69",
+   "summary": "FLAT: Akane's face-reading tic (\"Stop doing the face\" / \"The doctor face\")",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "70",
+   "summary": "FLAT: Kohei tops the bit with a built punchline instead of playing along",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "71",
+   "summary": "FLAT: \"I'm very talented\" — the \"I'm very X\" tic verbatim",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "74 (second sentence)",
+   "summary": "FLAT: \"I decide not to hear that, which I'm also fast at.\" explains a beat already shown and ends on a callback button",
+   "matches": [
+    "A07"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "86",
+   "summary": "FLAT (minor): spoken \"very\" (\"very bad at measuring burdock\")",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "89",
+   "summary": "FLAT: \"I'll tell her you said it like you meant it\" is a reflex button",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "96",
+   "summary": "FLAT: Akane's second face read (\"I saw his face\")",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "113",
+   "summary": "FLAT (minor): \"So. Class assignments.\" uses Natsuki's opener in Nanoha's mouth",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "124",
+   "summary": "FLAT: stock conspiracy button \"That's what they want you to think\"",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "125",
+   "summary": "FLAT: \"I can't help it\" explains; 126 reports the laugh again",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "135",
+   "summary": "FLAT: \"Probably a stubborn crease\" — narrator plays dumb and underlines 134",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "138",
+   "summary": "FLAT: \"That's why I fix them\" states the relationship's theme as a punchline",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "146",
+   "summary": "FLAT: \"So you'd hear yourself say it\" — Nanoha explains her own move (on-the-nose)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "147",
+   "summary": "FLAT: \"says it like\" narration vouches for 146 and ends on a button",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "155",
+   "summary": "FLAT: \"I do supervise beautifully\" — shared self-praise button",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "172",
+   "summary": "FLAT (minor): Rika's \"A completely neutral hmmm\" is dry/self-aware, not her voice",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "174, 177, 180, 181",
+   "summary": "CUT the topic: hot-dog/sub-roll debate is on §3b's tic list; swap to taiyaki",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "185-187 (+208)",
+   "summary": "FLAT: Ryosuke's seat theory is a second bit beyond the outline and borrows Nanoha's theory shape",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "200",
+   "summary": "FLAT (minor): spoken \"very\" and the Fukuda cover story runs one sentence too cute",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "201 (second sentence)",
+   "summary": "FLAT: \"She went looking for mine before her own\" explains the reveal just delivered",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "244",
+   "summary": "FLAT (minor): \"Takes one to know one\" — stock English idiom as a button on a strong beat",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "262",
+   "summary": "FLAT (minor): spoken \"very\" (\"very passionate\")",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "268",
+   "summary": "FLAT: \"That's either really honest or really sad\" — a verdict on him, Natsuki's Never",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "269",
+   "summary": "FLAT: \"Let me know when you do\" — Kohei matches her flirt with a polished line",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "270",
+   "summary": "CUT: \"I'm very decisive. Usually.\" — very tic, self-label, Nanoha's deadpan in Natsuki's mouth",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "271",
+   "summary": "FLAT: \"Something about the way she says it makes me laugh\" — narration vouches for a line that should be cut",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "272 (first half)",
+   "summary": "FLAT: \"Okay, you're fun.\" — the sheet's own banned verdict",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "273",
+   "summary": "FLAT: \"We'll find out on the floor\" — cool-guy polished flirt-match, her voice not his",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "274",
+   "summary": "FLAT: \"Oh, he's cocky. Good. I hate practicing with polite people.\" — verdict plus self-label",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "285",
+   "summary": "FLAT: narration interprets Natsuki's interior on day one (\"like she isn't used to being the one who gets asked\")",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "287",
+   "summary": "FLAT (minor): public Nanoha's second dry line in four lines (vending machine)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "289 (second half)",
+   "summary": "CUT: \"People tell me I'm pushy.\" — banned self-label",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "292 (second sentence)",
+   "summary": "FLAT: \"I need time to adjust\" explains \"I'm working up to it\"",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "295",
+   "summary": "FLAT: \"Something about\" tic plus the laugh-to-close device",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "308",
+   "summary": "FLAT (minor): spoken \"very\" (\"It's very old\")",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "309",
+   "summary": "FLAT (minor): \"I love it already\" is generic filler",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "317",
+   "summary": "FLAT: \"Nanoha said it as lightly as she knew how\" vouches for the line before it",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "322",
+   "summary": "FLAT (minor): \"I like weird\" is a generic quip",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "327",
+   "summary": "FLAT: \"That's barely three hours by train\" — public Nanoha's deadpan correction of a new acquaintance",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "328",
+   "summary": "CUT: \"Very intense jet lag\" — very deadpan in Natsuki's mouth, button on a button",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "329",
+   "summary": "FLAT: \"They both laughed, and the moment closed up\" repeats 295's laugh-closure",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "337",
+   "summary": "FLAT: explains the window simile the outline wants to stand alone",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "353",
+   "summary": "FLAT: \"says it\"/\"the way you\" tics; decodes 352",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "362-363",
+   "summary": "FLAT: \"What's number one?\" / \"Secret.\" coy button buries the \"You smiled\" ending",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "366",
+   "summary": "FLAT: \"Night.\" — missing §3c \"Night, Chibi\" plant",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "282 (JA)",
+   "summary": "Natsuki's 「きみは」 to Nanoha breaks her kimi-for-Kohei-only signature",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "283-294 (JA)",
+   "summary": "Nanoha's Japanese to a stranger is mostly plain form; §3c wants desu/masu",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "191 (blind voice test)",
+   "summary": "Ryosuke's \"The vice-principal is five feet tall. In shoes.\" is the cast-wide dry two-beat button; could be Nanoha/Kohei",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 1",
+   "summary": "Nearly every exchange ends on a neat button (~15 of 21); Nanoha wins every exchange",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 2",
+   "summary": "Humor mechanisms shared not owned: \"I'm very X\" template across Akane/Natsuki/Nanoha; spoken \"very\" 8 vs 3; Akane deadpan, Natsuki verdicts, Ryosuke borrows Nanoha's theory shape",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 3",
+   "summary": "At the flirt Kohei goes cleverer, not shorter (269, 273)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 4",
+   "summary": "Public Nanoha over budget: six dry understatements with Natsuki",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 5",
+   "summary": "Ryosuke's entrance uses the banned hot-dog topic; seat theory gives him a second borrowed bit",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 6",
+   "summary": "Narration repeats or vouches for dialogue: says it like, the way you, something about, laugh-to-close, explanations of beats just shown (74, 125, 135, 201, 285, 317, 337, 36-37)",
+   "matches": [
+    "A07"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 7",
+   "summary": "Feelings stated instead of shown at key turns (146, 36-37, 337, 285, 353)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 8",
+   "summary": "Three girls read Kohei's face (Akane 67-69, 96; Nanoha 358-361); cut Akane's",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "scene-level 9",
+   "summary": "Outline and §3c beats blunted: \"You smiled\" not the ending, Chibi plant missing, Akane sharp not sweet",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "top fix 1 (268-274, 289)",
+   "summary": "Rebuild the lunch volley: Natsuki asks/notices instead of verdicts and self-labels; Kohei short, ending at \"Club starts Wednesday\"",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "top fix 2",
+   "summary": "Give the deadpan back to private Nanoha alone; strip from Akane, Natsuki, public Nanoha; cut spoken \"very\" to 153",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "top fix 3",
+   "summary": "Cut every narration line that says how a line was said or what it meant (30-31, 36-37, 74b, 125, 135, 147, 201b, 271, 285, 295, 317a, 329, 337, 353)",
+   "matches": [
+    "A07"
+   ]
+  },
+  {
+   "check": "diagnosis",
+   "where": "top fix 4",
+   "summary": "End the trash walk on \"You smiled\" (drop 362-363) and plant \"Night, Chibi\"",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "top fix 5",
+   "summary": "Swap Ryosuke's hot-dog/sub-roll debate for taiyaki and cut the seat theory (185-187, 208)",
+   "matches": []
+  },
+  {
+   "check": "diagnosis",
+   "where": "131 (outside check)",
+   "summary": "nanoha<deadpan> left on the tender \"Kō-chan. Your collar.\" beat",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_dream",
+   "summary": "Blocking: four extra fingertips with nails across the top of the ronin's hand; reads as a third hand or too many fingers",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_dream",
+   "summary": "No winter cues (snow, frost) though the past era is winter and the bloom plate shows snow",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_dream",
+   "summary": "Ronin's hand heavily lined, reads middle-aged against ronin-B's young hands",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_dream.mp4",
+   "summary": "Branch doesn't move despite \"a branch moving in the wind\" (line 27); 0.30% of pixels change",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_dream.mp4",
+   "summary": "Only motion is one petal blinking in place twice per loop instead of falling",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_natsuki_intro / line 220",
+   "summary": "CG shows a raised open-palm wave while narration says \"She counts on her fingers\"",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_natsuki_intro",
+   "summary": "Clock hand points at the 8 while the flanking plate reads 10:10",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_natsuki_intro",
+   "summary": "Three foreground classmates are the same cloned long-black-haired girl",
+   "matches": []
+  },
+  {
+   "check": "onmodel",
+   "where": "cg_natsuki_intro",
+   "summary": "Skirt 1.33 H against the lock's 1.65 H (about 2¾ in shorter)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "engine showSpr() (e.g. c1_0238, c1_0134)",
+   "summary": "HIGH: hidden sprites return as ghosts and stale expressions stick when taps/Skip outrun image loading",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "prologue p_0011-p_0014",
+   "summary": "@flash white doesn't flash; CG fades to plain white and holds three lines; compiler emits bg not flash",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "all @bg crossfades (c1_0006, c1_0257)",
+   "summary": "Every background crossfade dips ~25% toward black halfway",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "restore() / #bgSolid",
+   "summary": "Loading a save from the white prologue leaves #bgSolid white, so crossfades flash brighter",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c1_intro, after c1_0145 (@cg - cut)",
+   "summary": "CG-to-classroom hard cut shows an empty room, then Natsuki's sprite fades back in",
+   "matches": [
+    "A04"
+   ]
+  },
+  {
+   "check": "build",
+   "where": "c1_lunch c1_0185 vs interlude c1_0205; morning, entrance",
+   "summary": "Non-speaker dimming works only in the interlude (invalid 'none brightness()' filter on day backgrounds)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "p_0007, p_0010",
+   "summary": "Two dream voice lines ~6 dB quieter than every other line",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c1_0011 akane_school_sleepy",
+   "summary": "Akane's sleepy sprite has wide-open eyes, reads surprised",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c1_0137 / p_0002",
+   "summary": "Quick second tap skips the CG hold, so CG-describing text starts before the CG is visible",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "playBgm / natsuki.mp3",
+   "summary": "Music loops have hard seams; natsuki.mp3 likely clicks every loop (bgmIter never called)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "night, daily, memory loops",
+   "summary": "Loops are 34-52 s against §7's 2-3 minute finishing rule",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "natsuki.mp3",
+   "summary": "natsuki cue measures -17.1 LUFS against the -19 target",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "Akane sprite",
+   "summary": "Akane's skirt ends mid-thigh vs §2 'below the knee' (modesty rule)",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "Rika sprite / c1_0104",
+   "summary": "Rika's frog clip has no crown though narration and §2 say 'frog wearing a crown'",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c1_intro -> c1_lunch (c1_0160)",
+   "summary": "Scene change has no visible change; same classroom crossfade",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "Chapters menu / CHAPTERS[1].start",
+   "summary": "Starting Ch1 from the Chapters menu skips the chapter card",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "qa_play.py",
+   "summary": "QA tool silently skips ~13 lines per run and has no line-count check; voice check only decodes",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c1_0030-c1_0044",
+   "summary": "Akane holds her closed-eye laugh for ~12 lines while others talk",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "c1_0127",
+   "summary": "Ryosuke and Rika leave the stage just before \"While they argue…\"",
+   "matches": []
+  },
+  {
+   "check": "build",
+   "where": "Rika sprite (c1_0113, c1_0126)",
+   "summary": "Rika's V-sign pose is part of every expression, including surprised",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "ch01:86",
+   "summary": "Nanoha's deadpan still on screen two lines later",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "ch01:95",
+   "summary": "Nanoha's deadpan still on screen two lines later",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "ch01:131",
+   "summary": "Nanoha's deadpan still on screen two lines later",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "ch01:259",
+   "summary": "Natsuki's smirk still on screen two lines later",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "ch01:327",
+   "summary": "Nanoha's deadpan still on screen two lines later",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "chapter (71, 86, 153, 200, 262, 270, 308, 328)",
+   "summary": "\"very\" in spoken lines 8 times (more than 3)",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "chapter (30, 31, 147)",
+   "summary": "Narration \"says it like\" 3 times (more than 1)",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "chapter (336, 353)",
+   "summary": "Narration \"the way you\" 2 times (more than 1)",
+   "matches": []
+  },
+  {
+   "check": "lint",
+   "where": "chapter (271, 295)",
+   "summary": "Narration \"Something about\" 2 times (more than 1)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "c1_entrance 170-201",
+   "summary": "Class-list logic wobble: Rika/Ryosuke already announce his class, so Nanoha's find and \"before her own\" don't hold",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "134-135, 170, 200-201, 317, 353, 371",
+   "summary": "Nanoha's feelings over-signalled (~six times); Kohei looks wilfully oblivious",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "191",
+   "summary": "\"five feet tall\" from a Japanese high schooler reads as visible localisation",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "190 (Rika's rumor) / image_02",
+   "summary": "\"Super tall\" setup dropped: nothing in her entrance mentions height and she looks average; left wondering whether the rumour was wrong",
+   "matches": [
+    "A05"
+   ]
+  },
+  {
+   "check": "reader1",
+   "where": "217 / image_02",
+   "summary": "Hair \"cut neat at her shoulders and tucked behind one ear\" vs loose layered hair past the shoulders in the CG",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "216",
+   "summary": "\"walking onto a court\" is a basketball/tennis image for a kendoka",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "270, 287, 328",
+   "summary": "Natsuki and Nanoha banter registers overlap; Natsuki's deadpan drifts into Nanoha's voice",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "image_02",
+   "summary": "Very short skirt and pin-up framing feel more fan-service than the restrained prose",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "image_02",
+   "summary": "Three foreground students have identical long straight black hair (clone-stamped)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "54-56",
+   "summary": "Calendar logic: a dated monthly calendar can't carry Dad's writing from last spring",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "344-348",
+   "summary": "Garbage-day joke doesn't add up: Monday night is the night before Tuesday pickup",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "319",
+   "summary": "Natsuki's \"which drawer sticks in your kitchen\" too neat a coincidence",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "67-69, 361",
+   "summary": "Nanoha and Akane share the same \"your face\" bit; their teasing voices converge",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "139",
+   "summary": "Bike bell that \"doesn't pass\" is never explained; reads as a forgotten clue",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "220 / image_02",
+   "summary": "Text has her counting on her fingers while the CG on screen shows an open-handed wave",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "275",
+   "summary": "\"Club starts Wednesday.\" — kendo schedule repeated a fourth time (flat line)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "244",
+   "summary": "\"Takes one to know one.\" — playground comeback misused as a friendly line (flat)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "323",
+   "summary": "Natsuki's \"someone you've met before?\" is very direct for a first-day conversation (heavy-ish)",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "189",
+   "summary": "Flat: Nanoha's \"A transfer student?\" is an echo line that only cues Rika",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "231",
+   "summary": "Flat: \"Please take care of me.\" literal yoroshiku, stiff, deflates the charged beat",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "288",
+   "summary": "Flat: \"I would love that. Really. Thank you.\" generic gratitude",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "318",
+   "summary": "Flat: \"That's really nice.\" filler",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "306",
+   "summary": "Flat: \"This school's nice. It feels… lived in.\" slightly greeting-card",
+   "matches": []
+  },
+  {
+   "check": "reader1",
+   "where": "263",
+   "summary": "Flat: Kohei's \"Great.\" could be sharper",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "image_01",
+   "summary": "Hands hard to parse; the patient's hand reads like a third hand gripping hers",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c1_entrance 167-201",
+   "summary": "Class-list payoff muddled: both classes already announced before Nanoha \"went looking for mine before her own\"",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "122",
+   "summary": "\"1-C for five days\" gag convoluted and contradicts \"four years running\"",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "122 vs Two-B",
+   "summary": "Class naming inconsistent: \"Two-B\" spelled out, \"1-C\" in numerals",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "c1_entrance",
+   "summary": "Name load: \"Ryosuke\" tag vs \"Tokiwa\" in narration; unclear whether Hoshino Kitchen connects to anyone",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "61-74",
+   "summary": "Akane's scarf in April unexplained (minor)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "217 / image_02",
+   "summary": "Hair length and style in the CG contradict \"cut neat at her shoulders and tucked behind one ear\"",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "190 (Rika's rumor) / image_02",
+   "summary": "\"Super tall\" never pays off: art and narration don't confirm it, she looks average; wants narration to register it or art to sell it",
+   "matches": [
+    "A05"
+   ]
+  },
+  {
+   "check": "reader2",
+   "where": "216",
+   "summary": "\"court\" metaphor off for a kendoka (minor)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "242, 272",
+   "summary": "Inline glosses \"tsuka (hilt)\", \"shodan (first dan)\" clunky in dialogue (minor)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "231",
+   "summary": "\"Please take care of me\" literal yoroshiku, stiff after her natural intro (also a flat line)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "344-348",
+   "summary": "Garbage-day logistics confuse the beat (Monday night is the eve of Tuesday pickup)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "139",
+   "summary": "Bike bell setup dangles",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "323",
+   "summary": "\"Does he ever seem like… someone you've met before?\" heavy-handed; spells out what the grin stutter told us",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "319",
+   "summary": "\"which drawer sticks in your kitchen\" too-neat coincidence",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "230-234, 242, 277",
+   "summary": "Wrist motif clusters too tightly around Natsuki; \"inside of her wrist\" reads as a plant",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "135",
+   "summary": "\"Probably a stubborn crease\" is a coy, generic dense-hero beat",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Kohei's dialogue",
+   "summary": "Kohei's spoken lines are mostly straight-man reactions; voice thin compared with narration",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "Akane vs Nanoha (67-69, 361)",
+   "summary": "Akane and Nanoha share a register and the same \"your face\" joke; hard to tell apart",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "115-124 vs 185-187",
+   "summary": "Nanoha's conspiracy-theory routine overlaps Ryosuke's \"theory\" pedantry in the same scene",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "174-177",
+   "summary": "Ryosuke's hot-dog/sub-roll bit is American internet-coded and generic (also flat line)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "167 / Rika",
+   "summary": "Rika is one-note genki; \"It's destiny!… matching keychains!\" generic (flat line)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "220 / image_02",
+   "summary": "CG shows her waving rather than counting on her fingers as the text says (minor)",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "137",
+   "summary": "Flat: Kohei's \"Looks can be deceiving.\" a cliché",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "116",
+   "summary": "Flat: Kohei's \"Of course you have.\" stock straight-man line",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "148",
+   "summary": "Flat: \"It's fine. I like being busy.\" the line anyone would write",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "218",
+   "summary": "Flat: \"I'm Mizuno Natsuki. It's nice to meet you all.\" filler",
+   "matches": []
+  },
+  {
+   "check": "reader2",
+   "where": "318",
+   "summary": "Flat: \"That's really nice.\" filler before her better line",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_01 / 25",
+   "summary": "Text leads with \"The sound of a river\" but no water is in frame (minor)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_01",
+   "summary": "Bandaged forearm reads weathered, veiny, middle-aged; probably not intended",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "c1_morning (65, 86, 155)",
+   "summary": "Akane and Nanoha share the same deadpan-exaggeration register; would mix them up without tags",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "134-135, 156, 170, 201, 317, 337, 353, 361",
+   "summary": "Nanoha's crush signalled ~eight ways; \"stubborn crease\" the most worn",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "118",
+   "summary": "\"Same class four years running\" made me count (spans middle school)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "217 / image_02",
+   "summary": "Hair \"cut neat at her shoulders\" vs CG hair to mid-chest, layered",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "190 (Rika's rumor) / image_02",
+   "summary": "\"Super tall… taller than the vice-principal\" gets no visual payoff; she reads as ordinary height; the CG undercuts it",
+   "matches": [
+    "A05"
+   ]
+  },
+  {
+   "check": "reader3",
+   "where": "220 / image_02",
+   "summary": "Big open-palm wave against the text's counting on her fingers",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "image_02 / 208",
+   "summary": "CG framed from the center of the room, not from Kohei's second-to-last-row window seat",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "242, 272",
+   "summary": "Inline glosses \"tsuka (hilt)\", \"shodan (first dan)\" clunky in spoken dialogue",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "225-232 (hitch)",
+   "summary": "\"[Natsuki appears on screen]\" three times in a row around \"Please take care of me\" reads like a staging error/redundancy",
+   "matches": [
+    "A04"
+   ]
+  },
+  {
+   "check": "reader3",
+   "where": "216",
+   "summary": "\"walking onto a court\" odd metaphor for a kendo girl",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "328",
+   "summary": "\"Very intense jet lag\" is Nanoha's/Akane's kind of joke in Natsuki's mouth",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "344-348",
+   "summary": "Garbage beat took a reread; first pass felt like a continuity slip",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "349",
+   "summary": "\"She noticed the squeaky stairs. Both of them.\" ambiguous (two steps vs two staircases)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "139",
+   "summary": "Bike bell never pays off; reads like a clue",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "323",
+   "summary": "\"Does he ever seem like… someone you've met before?\" too direct for chapter 1; hands the reader the premise",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "cast-wide",
+   "summary": "Whole cast shares one writerly quip rhythm (setup, deadpan literal reversal)",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "137",
+   "summary": "Flat: \"Looks can be deceiving.\" stock idiom",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "148",
+   "summary": "Flat: \"It's fine. I like being busy.\" generic overworked deflection",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "244",
+   "summary": "Flat: \"Takes one to know one.\" cliché capping a sharp observation",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "288",
+   "summary": "Flat: \"I would love that. Really. Thank you.\" bland",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "318",
+   "summary": "Flat: \"That's really nice.\" filler",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "331",
+   "summary": "Flat: \"Thanks for today… First days are usually…\" stock trailing-off vulnerability line",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "167 / Rika",
+   "summary": "Flat: Rika's \"It's destiny!… matching keychains!\" stock genki, no angle of her own",
+   "matches": []
+  },
+  {
+   "check": "reader3",
+   "where": "210",
+   "summary": "Flat: Ono's \"All right. Settle down.\" stock teacher opener",
+   "matches": []
+  }
+ ],
+ "items": [
+  {
+   "id": "A02",
+   "verdict": "miss",
+   "by": [],
+   "why": "No check flagged Nanoha standing on stage as a sprite in her own interlude; build confirmed face windows for Kohei only and passed the interlude's tints, label and vignette."
+  },
+  {
+   "id": "A03",
+   "verdict": "miss",
+   "by": [],
+   "why": "Build listed \"no window for Ono-sensei\" under found-fine; no check said he should be shown on screen (reader3's flat-line note on his dialogue is about wording, not staging)."
+  },
+  {
+   "id": "A04",
+   "verdict": "partial",
+   "by": [
+    {
+     "check": "build",
+     "verdict": "partial",
+     "quote": "4. MEDIUM: The CG-to-classroom hard cut shows an empty room, then Natsuki fades back in ... Fix: swap the two lines so the sprite is already on stage under the CG. Then use @cg - fade, or a short dissolve, so the CG resolves onto her."
+    },
+    {
+     "check": "reader3",
+     "verdict": "partial",
+     "quote": "\"[Natsuki appears on screen]\" appears three times in a row around the \"Please take care of me\" beat. I assume those are expression changes, but as text it reads like a staging error."
+    }
+   ],
+   "why": "Both touch the CG-to-sprite handoff and the hitch staging, but neither says the beat should stay on the CG through the hitch until she walks to his seat or that the hitch should be a face-only CG variant."
+  },
+  {
+   "id": "A05",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "reader1",
+     "verdict": "hit",
+     "quote": "The \"super tall\" setup is dropped. Part 2 spends a whole exchange on the rumour that she's \"Taller than the vice-principal!\", and then nothing in her entrance mentions her height: no \"she really is tall\" and no \"she isn't actually tall\". image_02 doesn't read as especially tall either; she looks average against the blackboard. Either pay it off in one line of narration or I'm left wondering whether the rumour was wrong."
+    },
+    {
+     "check": "reader2",
+     "verdict": "partial",
+     "quote": "\"Super tall\" never pays off. Rika's whole setup is \"she's super tall, taller than the vice-principal.\" Neither the illustration nor the narration confirms it ... in the picture she looks average ... Either the narration should register it (\"Rika was right about the height\") or the art should sell it."
+    },
+    {
+     "check": "reader3",
+     "verdict": "partial",
+     "quote": "Height: Rika's whole bit is that she's \"super tall. Taller than the vice-principal!\" Nothing in the CG sells unusual height. With no adult or classmate standing beside her for scale, she reads as an ordinary-height girl. If height matters later, this CG undercuts it."
+    }
+   ],
+   "why": "Reader1 flags the rumor line as clashing with her plainly average height and raises that the rumor may be wrong, which cutting it resolves; reader2 and reader3 flag the same line but want the art or narration to make her tall, the opposite direction. Continuity explicitly passed the joke."
+  },
+  {
+   "id": "A06",
+   "verdict": "miss",
+   "by": [],
+   "why": "Onmodel passed \"a cut across the back of it\" as matching the CG, all three readers called it a match, and continuity logged it as a [P] detail; nobody raised the inside-of-wrist mismatch."
+  },
+  {
+   "id": "A07",
+   "verdict": "hit",
+   "by": [
+    {
+     "check": "diagnosis",
+     "verdict": "hit",
+     "quote": "74, second sentence: \"I decide not to hear that, which I'm also fast at.\" FLAT. It explains a beat that 73 and the scarf already showed, and it ends on a callback button."
+    }
+   ],
+   "why": "Diagnosis flags the exact narration quip as a callback button (and again in scene-level 6 and top fix 3 as 74b); no other check raised it."
+  }
+ ],
+ "liked": []
+}
