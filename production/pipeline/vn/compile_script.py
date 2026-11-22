@@ -24,7 +24,7 @@ import json, os, re, sys
 SPEAKERS = {"kohei": "Kōhei", "nanoha": "Nanoha", "natsuki": "Natsuki", "akane": "Akane", "rika": "Rika",
             "ryosuke": "Ryōsuke", "teacher": "Ōno-sensei", "kirishima": "Kirishima", "takatsuki": "Takatsuki",
             "manager": "Manager", "yuzu": "Yuzu", "emi": "Emi", "mio": "Mio", "past_natsuki": "???",
-            "classmate": "Classmate", "genji": "Genji"}
+            "classmate": "Classmate", "genji": "Genji", "all": "Everyone"}   # "all": a line everyone says together (Ch3 lunch, Nov 21)
 # Name tags (style guide §3a): through spring (Ch1–8) every spoken line shows the full name, family name first (author,
 # Nov 1); from Ch9 only a character's first spoken line in each chapter does (the Oct 25 rule). Anyone not listed keeps
 # the short tag (no decided given name: Ōno-sensei, Manager, Classmate, "???").

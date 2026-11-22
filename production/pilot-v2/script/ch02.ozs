@@ -26,7 +26,9 @@ manager: "Fujisawa-kun! Table four wants the check, table nine wants water, and 
 kohei(neutral): "On it." || 今、行きます。  #c2_0006
 manager: "Lifesaver!" || 助かるー！  #c2_0007
 > That's one. The manager says it about nine times a night.  #c2_0008
-> Akane's dinner is in the fridge at home with a note on the lid. At seven she sends me a photo of the empty container. A minute later she sends a second one, closer up, in case I had questions.  #c2_0009
+@cg cg_akane_selfie
+> Akane's dinner is in the fridge at home with a note on the lid. At seven she sends me a photo of the empty container, a joke at my expense ever since the week I texted "Did you eat?" three nights running. A minute later, a second one, closer up, in case I had questions.  #c2_0009
+@cg -
 @sfx door_slide
 @bgm natsuki
 @show natsuki school_laugh c

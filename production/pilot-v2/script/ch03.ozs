@@ -11,7 +11,10 @@
 @wear kohei school
 @bgm night
 > Thursday is a shift. The manager says "Lifesaver" eleven times, which I think is a record.  #c3_0309
-> At seven, Akane's photo of the empty container comes in right on schedule. A minute later, the close-up. There's the edge of somebody's sleeve in the corner of the second one.  #c3_0310
+> At seven, Akane's photo of the empty container comes in right on schedule, eye-roll and all.  #c3_0310
+@cg cg_akane_selfie_close
+> A minute later, the close-up. There's the edge of somebody's sleeve in the corner.  #c3_0438
+@cg -
 > It's after ten by the time I get home.  #c3_0058
 > The light's on in our living room. Across the gap, Nanoha's upstairs window is dark, which isn't like her at ten o'clock.  #c3_0059
 @bg bg_fujisawa_living_night
@@ -36,7 +39,7 @@ kohei(serious): "Why didn't you call me?" || なんで電話しなかった。  
 akane<smile>: "You were at work." || お兄ちゃん、バイト中だったもん。  #c3_0077
 kohei(serious): "So? I'd have come." || だから？ すぐ行ったのに。  #c3_0078
 akane<smile>: "I know. That's why I didn't call." || 知ってる。だから、しなかったの。  #c3_0079
-> It lands somewhere I wasn't guarding.  #c3_0080
+> I sit back on my heels.  #c3_0080
 akane<tease>: "So I texted Nanoha-chan instead, and she came right over. We even sent you the photos. Both of them." || で、代わりに、なのはちゃんにメッセージしたの。すぐ来てくれたよ。写真も、ちゃんと送ったでしょ。二枚とも。  #c3_0081
 > The sleeve in the corner of the second photo.  #c3_0311
 @move akane l
@@ -123,7 +126,7 @@ kohei(smile): "Night, {Chibi|shorty}." || おやすみ、チビ。  #c3_0322
 @show kirishima kendo_calm c
 kirishima: "Last half hour, free sparring. Fujisawa. Mizuno." || 最後の三十分は、じげいこ。ふじさわ。みずの。  #c3_0325
 @hide kirishima
-> She's good. I knew that on Wednesday.  #c3_0326
+> She's good. I've known that since Wednesday, when she took a point off me.  #c3_0326
 > I still take most of what there is to take. Her strikes are fast and clean, but I've got the reach, and when I come in hard she gives ground.  #c3_0327
 > But she's always already there. Every feint I throw, she waits out. Every time I start to move, her sword tip is already where I'm going.  #c3_0328
 > And I can't read her at all. I watch her shoulders, her hands, the tip of her sword. Nothing tells me anything until she's moving.  #c3_0329
@@ -138,7 +141,7 @@ natsuki<surprised>: "Takatsuki-kun! Whose side are you on?" || たかつきく�
 > He bows to both of us and goes back to his practice swings.  #c3_0334
 @hide takatsuki
 natsuki<curious>: "Are you going up to the shrine after this?" || このあと、神社行くの？  #c3_0335
-kohei(neutral): "Trash bags." || ゴミ袋な。  #c3_0336
+kohei(neutral): "Yeah. Trash-bag duty." || ああ。ゴミ袋係だ。  #c3_0336
 natsuki<smile>: "I'm going that way anyway." || 私も、どうせそっち行くから。  #c3_0337
 kohei(neutral): "The station's the other way." || 駅は反対だぞ。  #c3_0339
 natsuki<grin>: "Then I'm taking the long way." || じゃあ、遠回りする。  #c3_0340
@@ -151,16 +154,16 @@ natsuki<grin>: "Then I'm taking the long way." || じゃあ、遠回りする。
 > The way up to the shrine starts a little past our houses: a stone stairway through the cedars, steep enough that the old people in the neighborhood count the landings out loud.  #c3_0341
 @show natsuki track_smile c
 > Mizuno has changed into a navy track shirt and dark sweats, her hair still up from practice. A camera hangs from a strap around her neck. A real one this time, black and heavy, with a lens that probably cost more than my bike.  #c3_0342
-natsuki<curious>: "On the bridge, you asked me something." || 橋の上で、きみ、私に聞いたよね。  #c3_0343
-kohei(neutral): "Did I?" || そうだったか？  #c3_0344
-natsuki<smile>: "'What is?' And I didn't answer." || 「何が」って。私、答えなかったでしょ。  #c3_0345
+natsuki<curious>: "On the bridge, I told you I had a project." || 橋の上で、私、課題があるって言ったでしょ。  #c3_0343
+kohei(neutral): "And you wouldn't say what." || で、何なのかは言わなかったな。  #c3_0344
+natsuki<smile>: "I'm telling you now." || 今、言うね。  #c3_0345
 natsuki<wistful>: "My project. It's you, doing one thing just because it's fun." || 私の課題。きみが、楽しいってだけで、何かひとつすること。  #c3_0346
 > She says it fast and quiet, to the step in front of her.  #c3_0347
 natsuki<grin>: "With progress reports." || 進捗報告つきでね。  #c3_0348
 kohei(deadpan): "It's trash bags." || ゴミ袋だぞ。  #c3_0349
 natsuki<laugh>: "Trash bags count. In Niigata I signed up for a rice-planting day because they said there'd be free {onigiri|rice balls}. I lost both boots in the mud and walked home in my socks." || ゴミ袋も入るよ。私なんか新潟で、おにぎりタダって聞いて田植え体験に申し込んで、田んぼで長靴を両方なくして、靴下で帰ったんだから。  #c3_0350
-> I laugh before I can decide not to.  #c3_0351
-> Two landings up, she gives me the same look she gave me at lunch on Monday.  #c3_0352
+> I laugh.  #c3_0351
+> Two landings up, she looks me over the way she did at lunch on her first day: shoulders, hands, like she's working something out.  #c3_0352
 natsuki<curious>: "How much did you sleep?" || 昨日、何時間寝た？  #c3_0353
 kohei(neutral): "Enough." || 足りてる。  #c3_0354
 natsuki<smile>: "Four hours." || 四時間。  #c3_0355
@@ -218,7 +221,6 @@ genji: "Nanoha. The tea's in the office. Bring cups for everyone." || なのは�
 > Under it, for a second, the air smells like snow.  #c3_0385
 > In April. Cold and clean. And the branch is lower than it should be, low enough that I almost duck.  #c3_0386
 > Then it's gone. The branch is where it always is. It's warm. The bags are heavy.  #c3_0387
-> Mizuno's a few steps off with the camera up, pointed at the branch, at me. She lowers it. She doesn't take the shot.  #c3_0388
 @bgm -
 > Nanoha has stopped on the path halfway back from the office, Grandpa's thermos held against her chest with both arms.  #c3_0259
 > She isn't looking at us. She's looking at the low branch, at a spot just under it.  #c3_0260
@@ -239,9 +241,6 @@ nanoha<smile>: "Mm? A petal. A big one went right past me." || ん？ 花びら�
 > Grandpa's tea is as bitter as ever. Mizuno drinks the whole cup anyway.  #c3_0268
 natsuki<laugh>: "That's horrible. Can I have more?" || ひどい味。おかわり、いいですか？  #c3_0390
 genji<grin>: "Ha! This one'll do." || はっはっ！ この子は見込みがある。  #c3_0391
-kohei(neutral): "Back there. You didn't take the picture." || さっき。写真、撮らなかったな。  #c3_0392
-natsuki<laugh>: "It wasn't a good one! Too many petals." || いい写真にならないもん！ 花びら、多すぎ。  #c3_0393
-> She holds her cup out to Grandpa for a third.  #c3_0394
 @hideall
 @bg bg_shrine_steps
 > When the bags are tied off, we all go down together, Grandpa in front with one hand on the old rope rail.  #c3_0269
@@ -250,14 +249,15 @@ natsuki<laugh>: "It wasn't a good one! Too many petals." || いい写真にな�
 genji: "Oop— just stopping for a rest. Just stopping for a rest." || おっと……ひと休み、ひと休み。  #c3_0396
 nanoha(smile): "Just stopping for a rest." || ひと休み、ひと休み。  #c3_0397
 > Nanoha says it right behind him, without looking up. He sits down on the step for a moment, as if that had been the plan all along, then gets up and keeps going.  #c3_0398
+> I've heard them say it on these steps my whole life. I've never once asked.  #c3_0402
 @show genji shrine_smile l
 @show natsuki track_curious r
 natsuki: "Wait. What was that? Is that a ghost thing?" || 待って。今の、何？ おばけ系のやつ？  #c3_0399
 > She sounds delighted.  #c3_0400
 genji: "Looks like rain tomorrow." || 明日は、雨になりそうじゃのう。  #c3_0401
-> I've heard them say it on these steps my whole life. I've never once asked.  #c3_0402
 natsuki<curious>: "Nanoha?" || なのは？  #c3_0403
 nanoha(smile): "Grandpa's right. It does look like rain." || おじいちゃんの言うとおり。雨になりそう。  #c3_0404
+> Mizuno looks up at the sky, which is perfectly clear, and then at me. I shrug.  #c3_0439
 @hideall
 > At the bottom of the steps, Mizuno shoulders her practice bag.  #c3_0405
 @show natsuki track_smile r
@@ -300,11 +300,11 @@ mio<grin>: "You're ON." || ぜったい負けないもん！  #c3_0292
 @hideall
 @cg cg_lunch
 > Auntie Emi has made enough for twelve.  #c3_0411
-> {Karaage|fried chicken} piled up like a small mountain. A stack of {onigiri|rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|braised burdock}, which explains a lot of Monday mornings. Miso soup for everyone.  #c3_0412
-> Grandpa on my right. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work.  #c3_0413
+> {Karaage|fried chicken} piled up like a small mountain. A stack of {onigiri|rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|braised burdock}, which explains why Nanoha keeps turning up at our door with leftovers. Miso soup for everyone.  #c3_0412
+> Grandpa at the head of the table. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work.  #c3_0413
 emi: "Everyone, hands together!" || はい、みんな、手を合わせて！  #c3_0414
-mio: "{Itadakimasu|let's eat}!" || いただきまーす！  #c3_0415
-> Everybody says it a beat behind her. Mizuno says it loudest of all.  #c3_0416
+all: "{Itadakimasu|let's eat}!" || いただきます！  #c3_0415
+> Mio's a hair ahead of everyone, and Mizuno's the loudest.  #c3_0416
 @cg -
 @show akane home_smile l
 @show natsuki track_smile r

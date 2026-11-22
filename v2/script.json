@@ -15,7 +15,8 @@
 "mio": "Mio",
 "past_natsuki": "???",
 "classmate": "Classmate",
-"genji": "Genji"
+"genji": "Genji",
+"all": "Everyone"
 },
 "speakers_full": {
 "kohei": "Fujisawa Kōhei",
@@ -2704,9 +2705,19 @@
 "text": "That's one. The manager says it about nine times a night."
 },
 {
+"t": "cg",
+"name": "cg_akane_selfie",
+"tr": "fade"
+},
+{
 "t": "nar",
 "id": "c2_0009",
-"text": "Akane's dinner is in the fridge at home with a note on the lid. At seven she sends me a photo of the empty container. A minute later she sends a second one, closer up, in case I had questions."
+"text": "Akane's dinner is in the fridge at home with a note on the lid. At seven she sends me a photo of the empty container, a joke at my expense ever since the week I texted \"Did you eat?\" three nights running. A minute later, a second one, closer up, in case I had questions."
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
 },
 {
 "t": "sfx",
@@ -5414,7 +5425,22 @@
 {
 "t": "nar",
 "id": "c3_0310",
-"text": "At seven, Akane's photo of the empty container comes in right on schedule. A minute later, the close-up. There's the edge of somebody's sleeve in the corner of the second one."
+"text": "At seven, Akane's photo of the empty container comes in right on schedule, eye-roll and all."
+},
+{
+"t": "cg",
+"name": "cg_akane_selfie_close",
+"tr": "fade"
+},
+{
+"t": "nar",
+"id": "c3_0438",
+"text": "A minute later, the close-up. There's the edge of somebody's sleeve in the corner."
+},
+{
+"t": "cg",
+"name": null,
+"tr": "fade"
 },
 {
 "t": "nar",
@@ -5601,7 +5627,7 @@
 {
 "t": "nar",
 "id": "c3_0080",
-"text": "It lands somewhere I wasn't guarding."
+"text": "I sit back on my heels."
 },
 {
 "t": "show",
@@ -6146,7 +6172,7 @@
 {
 "t": "nar",
 "id": "c3_0326",
-"text": "She's good. I knew that on Wednesday."
+"text": "She's good. I've known that since Wednesday, when she took a point off me."
 },
 {
 "t": "nar",
@@ -6249,7 +6275,7 @@
 "t": "say",
 "id": "c3_0336",
 "who": "kohei",
-"text": "\"Trash bags.\"",
+"text": "\"Yeah. Trash-bag duty.\"",
 "face": "kendo_neutral",
 "full": true
 },
@@ -6327,14 +6353,14 @@
 "t": "say",
 "id": "c3_0343",
 "who": "natsuki",
-"text": "\"On the bridge, you asked me something.\"",
+"text": "\"On the bridge, I told you I had a project.\"",
 "full": true
 },
 {
 "t": "say",
 "id": "c3_0344",
 "who": "kohei",
-"text": "\"Did I?\"",
+"text": "\"And you wouldn't say what.\"",
 "face": "neutral",
 "full": true
 },
@@ -6347,7 +6373,7 @@
 "t": "say",
 "id": "c3_0345",
 "who": "natsuki",
-"text": "\"'What is?' And I didn't answer.\"",
+"text": "\"I'm telling you now.\"",
 "full": true
 },
 {
@@ -6402,12 +6428,12 @@
 {
 "t": "nar",
 "id": "c3_0351",
-"text": "I laugh before I can decide not to."
+"text": "I laugh."
 },
 {
 "t": "nar",
 "id": "c3_0352",
-"text": "Two landings up, she gives me the same look she gave me at lunch on Monday."
+"text": "Two landings up, she looks me over the way she did at lunch on her first day: shoulders, hands, like she's working something out."
 },
 {
 "t": "show",
@@ -6771,11 +6797,6 @@
 "text": "Then it's gone. The branch is where it always is. It's warm. The bags are heavy."
 },
 {
-"t": "nar",
-"id": "c3_0388",
-"text": "Mizuno's a few steps off with the camera up, pointed at the branch, at me. She lowers it. She doesn't take the shot."
-},
-{
 "t": "bgm",
 "name": null
 },
@@ -6893,31 +6914,6 @@
 "full": true
 },
 {
-"t": "say",
-"id": "c3_0392",
-"who": "kohei",
-"text": "\"Back there. You didn't take the picture.\"",
-"face": "neutral",
-"full": true
-},
-{
-"t": "show",
-"who": "natsuki",
-"spr": "natsuki_track_laugh"
-},
-{
-"t": "say",
-"id": "c3_0393",
-"who": "natsuki",
-"text": "\"It wasn't a good one! Too many petals.\"",
-"full": true
-},
-{
-"t": "nar",
-"id": "c3_0394",
-"text": "She holds her cup out to Grandpa for a third."
-},
-{
 "t": "hideall"
 },
 {
@@ -6962,6 +6958,11 @@
 "text": "Nanoha says it right behind him, without looking up. He sits down on the step for a moment, as if that had been the plan all along, then gets up and keeps going."
 },
 {
+"t": "nar",
+"id": "c3_0402",
+"text": "I've heard them say it on these steps my whole life. I've never once asked."
+},
+{
 "t": "show",
 "who": "genji",
 "spr": "genji_shrine_smile",
@@ -6993,11 +6994,6 @@
 "full": true
 },
 {
-"t": "nar",
-"id": "c3_0402",
-"text": "I've heard them say it on these steps my whole life. I've never once asked."
-},
-{
 "t": "show",
 "who": "natsuki",
 "spr": "natsuki_track_curious"
@@ -7016,6 +7012,11 @@
 "text": "\"Grandpa's right. It does look like rain.\"",
 "face": "home_smile",
 "full": true
+},
+{
+"t": "nar",
+"id": "c3_0439",
+"text": "Mizuno looks up at the sky, which is perfectly clear, and then at me. I shrug."
 },
 {
 "t": "hideall"
@@ -7335,12 +7336,12 @@
 {
 "t": "nar",
 "id": "c3_0412",
-"text": "{Karaage|~fried chicken} piled up like a small mountain. A stack of {onigiri|~rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|~braised burdock}, which explains a lot of Monday mornings. Miso soup for everyone."
+"text": "{Karaage|~fried chicken} piled up like a small mountain. A stack of {onigiri|~rice balls}. Two plates of {tamagoyaki|rolled omelet}. The big bowl of {kinpira|~braised burdock}, which explains why Nanoha keeps turning up at our door with leftovers. Miso soup for everyone."
 },
 {
 "t": "nar",
 "id": "c3_0413",
-"text": "Grandpa on my right. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work."
+"text": "Grandpa at the head of the table. Mio between Akane and Mizuno, already supervising. Nanoha next to her mother. Uncle Kazuo is at work."
 },
 {
 "t": "say",
@@ -7352,14 +7353,13 @@
 {
 "t": "say",
 "id": "c3_0415",
-"who": "mio",
-"text": "\"{Itadakimasu|let's eat}!\"",
-"full": true
+"who": "all",
+"text": "\"{Itadakimasu|let's eat}!\""
 },
 {
 "t": "nar",
 "id": "c3_0416",
-"text": "Everybody says it a beat behind her. Mizuno says it loudest of all."
+"text": "Mio's a hair ahead of everyone, and Mizuno's the loudest."
 },
 {
 "t": "cg",

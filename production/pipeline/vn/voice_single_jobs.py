@@ -57,7 +57,10 @@ EXTRA = {"c2_0259": " She says it aloud to herself, alone, trying out a practice
          # Nov 2: Akane's illness and Dad, at the window
          "c3_0432": " Softly, matter-of-fact and reassuring, reporting what the clinic said.", "c3_0433": " Quiet and flat, not convinced.",
          "c3_0434": " Gently but firmly reassuring him, not smiling.", "c3_0435": " Quiet, worried, a little stubborn.",
-         "c3_0436": " Soft and steady, kind."}
+         "c3_0436": " Soft and steady, kind.",
+         # Nov 21 punch list
+         "c3_0336": " Dry and easy, a matter-of-fact yes.", "c3_0343": " Climbing stone steps beside him, bringing something up she has been saving.",
+         "c3_0344": " Dry, remembering; a small smile.", "c3_0345": " A little shy, then decided: she's about to tell him something."}
 REF = " He is refereeing the match: a loud, clear, crisp call that carries across the dojo."
 KIAI = {"めぇぇんっ！", "こてぇぇっ！", "どぉぉっ！"}
 lines_path, src_path, prefix, out = sys.argv[1:5]

@@ -1,0 +1,163 @@
+[
+ {
+  "key": "c3_saturday.kohei.c3_0336",
+  "ids": [
+   "c3_0336"
+  ],
+  "texts": [
+   "ああ。ゴミ袋係だ。"
+  ],
+  "input": {
+   "prompt": "ああ。ゴミ袋係だ。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a school kendo dojo after Saturday practice, even, neutral. It means: \"Yeah. Trash-bag duty.\" Dry and easy, a matter-of-fact yes."
+  }
+ },
+ {
+  "key": "c3_steps.natsuki.c3_0343",
+  "ids": [
+   "c3_0343"
+  ],
+  "texts": [
+   "橋の上で、私、課題があるって言ったでしょ。"
+  ],
+  "input": {
+   "prompt": "橋の上で、私、課題があるって言ったでしょ。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said in a long stone stairway up to a hilltop shrine, climbing, curious. It means: \"On the bridge, I told you I had a project.\" Climbing stone steps beside him, bringing something up she has been saving."
+  }
+ },
+ {
+  "key": "c3_steps.kohei.c3_0344",
+  "ids": [
+   "c3_0344"
+  ],
+  "texts": [
+   "で、何なのかは言わなかったな。"
+  ],
+  "input": {
+   "prompt": "で、何なのかは言わなかったな。",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said in a long stone stairway up to a hilltop shrine, climbing, even, neutral. It means: \"And you wouldn't say what.\" Dry, remembering; a small smile."
+  }
+ },
+ {
+  "key": "c3_steps.natsuki.c3_0345",
+  "ids": [
+   "c3_0345"
+  ],
+  "texts": [
+   "今、言うね。"
+  ],
+  "input": {
+   "prompt": "今、言うね。",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said in a long stone stairway up to a hilltop shrine, climbing, smiling. It means: \"I'm telling you now.\" A little shy, then decided: she's about to tell him something."
+  }
+ },
+ {
+  "key": "c3_lunch.mio.c3_0415",
+  "ids": [
+   "g_mio"
+  ],
+  "texts": [
+   "いただきます！"
+  ],
+  "who": "mio",
+  "input": {
+   "prompt": "いただきます！",
+   "voice": "Kore",
+   "style_instructions": "A 7-year-old Japanese girl, the bossy little sister. Tiny-princess orders, cheeky, a sore loser. Must sound like a small child. This line is said at a busy, cheerful family lunch table, everyone pressing their hands together before eating. It means: \"Let's eat!\" (the grace said before a meal). She shouts it happily, the loudest child at the table, a tiny bit ahead of everyone."
+  }
+ },
+ {
+  "key": "c3_lunch.natsuki.c3_0415",
+  "ids": [
+   "g_natsuki"
+  ],
+  "texts": [
+   "いただきます！"
+  ],
+  "who": "natsuki",
+  "input": {
+   "prompt": "いただきます！",
+   "voice": "Zephyr",
+   "style_instructions": "A 16-year-old Japanese high-school girl with a young, light, clear anime-heroine voice. Bright, sunny and quietly confident; playful and teasing, a smile in every line, never loud. Must sound like a teenager, never a grown woman. This line is said at a busy, cheerful family lunch table, everyone pressing their hands together before eating. It means: \"Let's eat!\" (the grace said before a meal). Delighted and loud, joining in with a big family for the first time."
+  }
+ },
+ {
+  "key": "c3_lunch.kohei.c3_0415",
+  "ids": [
+   "g_kohei"
+  ],
+  "texts": [
+   "いただきます！"
+  ],
+  "who": "kohei",
+  "input": {
+   "prompt": "いただきます！",
+   "voice": "Puck",
+   "style_instructions": "A 16-year-old Japanese high-school boy. Calm and grounded with dry humor; warm underneath, often with an easy smile in his voice; never gruff. This line is said at a busy, cheerful family lunch table, everyone pressing their hands together before eating. It means: \"Let's eat!\" (the grace said before a meal). Saying it together with everyone, warm and easy."
+  }
+ },
+ {
+  "key": "c3_lunch.nanoha.c3_0415",
+  "ids": [
+   "g_nanoha"
+  ],
+  "texts": [
+   "いただきます！"
+  ],
+  "who": "nanoha",
+  "input": {
+   "prompt": "いただきます！",
+   "voice": "Erinome",
+   "style_instructions": "A 16-year-old Japanese high-school girl. Young, light, clear voice; soft and relaxed, quiet deadpan with a hidden smile; playful. Must sound like a teenager, never a grown woman. This line is said at a busy, cheerful family lunch table, everyone pressing their hands together before eating. It means: \"Let's eat!\" (the grace said before a meal). Saying it together with everyone, softly cheerful."
+  }
+ },
+ {
+  "key": "c3_lunch.akane.c3_0415",
+  "ids": [
+   "g_akane"
+  ],
+  "texts": [
+   "いただきます！"
+  ],
+  "who": "akane",
+  "input": {
+   "prompt": "いただきます！",
+   "voice": "Aoede",
+   "style_instructions": "A 14-year-old Japanese middle-school girl, the sweet little sister. Young, soft, a little higher pitched, playful and teasing, slightly frail. Must sound 14, never a grown woman. This line is said at a busy, cheerful family lunch table, everyone pressing their hands together before eating. It means: \"Let's eat!\" (the grace said before a meal). Saying it together with everyone, bright and sweet."
+  }
+ },
+ {
+  "key": "c3_lunch.emi.c3_0415",
+  "ids": [
+   "g_emi"
+  ],
+  "texts": [
+   "いただきます！"
+  ],
+  "who": "emi",
+  "input": {
+   "prompt": "いただきます！",
+   "voice": "Achernar",
+   "style_instructions": "A Japanese mother in her early 40s. Warm and bubbly, delighted to have guests, always feeding people. This line is said at a busy, cheerful family lunch table, everyone pressing their hands together before eating. It means: \"Let's eat!\" (the grace said before a meal). Saying it together with everyone, beaming at the full table."
+  }
+ },
+ {
+  "key": "c3_lunch.genji.c3_0415",
+  "ids": [
+   "g_genji"
+  ],
+  "texts": [
+   "いただきます！"
+  ],
+  "who": "genji",
+  "input": {
+   "prompt": "いただきます！",
+   "voice": "Algenib",
+   "style_instructions": "An elderly Japanese man in his late 70s, the caretaker of a small hilltop shrine and the girl's grandfather. Warm, a little creaky, with a twinkly sense of humor; unhurried old-man speech. This line is said at a busy, cheerful family lunch table, everyone pressing their hands together before eating. It means: \"Let's eat!\" (the grace said before a meal). Saying it together with everyone, a happy old man at a full table."
+  }
+ }
+]
