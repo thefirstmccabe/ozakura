@@ -121,3 +121,7 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
 - **Nov 1:**
   - **The loosened 70% rule covers the dream woman** (§5; author): a single reader's spike is fine if it doesn't stick (still 70%+ at the next checkpoint, or a stretch's average above its band, fails).
   - **Pilot names** (author): Ryōsuke's surname is Ishida (was Tokiwa); the restaurant is Kitchen Komugi (was Hoshino Kitchen). Canon names neither; recorded in `pilot-notes.md` and the style guide.
+- **Nov 21:**
+  - **The cold open** (§2; author): a flash-forward to Ch37 (Takatsuki and his little brother caught on a looping path, voices and flashlights coming, cut before faces) replaces the Oct 18 images and unparks the Oct 19 deferral; built after Ch4. Proposal: the sword image moves to a vignette before the climax Part.
+  - **Takatsuki replaces Ryōsuke as Kōhei's best friend** (§8; author), reversing Oct 7's "kept alongside the Rival"; Ryōsuke is cut and his jobs move to Takatsuki (the lunch scoring, the summer kaidan, the suspension, game night, the taiyaki entrance; §1's openings example and §5's dueling lunches updated).
+  - **Takatsuki's little brother** (§8; author): the sibling he protects in the cold open; a brother (Working), about eight [P]. Proposal: Kōhei learns in autumn that Takatsuki walks him home every day.

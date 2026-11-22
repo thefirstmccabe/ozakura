@@ -103,7 +103,7 @@ This document replaces the old working bible (`ozakura/story-bible.md`). Last up
 ### Still needs an author decision
 1. **Pilot names.** All are [P] and need approval or replacement:
    - Places: the town (Shirasawa), the school (Shirasawa High), the shrine (Hanaoka) and the restaurant (**Kitchen Komugi**, renamed from Hoshino Kitchen by the author Nov 1, so it doesn't blur with Hoshikawa).
-   - Cast: Ryōsuke, Rika, Yuzu, Kirishima, Takatsuki, Sōta, Kazuo, Emi, Genji, Chie and Ōno-sensei. **Nov 1 (author):** Ryōsuke's surname is **Ishida** (was Tokiwa, which readers confused with Takatsuki).
+   - Cast: Ryōsuke, Rika, Yuzu, Kirishima, Takatsuki, Sōta, Kazuo, Emi, Genji, Chie and Ōno-sensei. **Nov 1 (author):** Ryōsuke's surname is **Ishida** (was Tokiwa, which readers confused with Takatsuki). **Nov 21 (author): Ryōsuke is cut;** Takatsuki becomes Kōhei's best friend and takes over his jobs (canon §8).
    - Details: Natsuki's father's job and Akane's clinic day.
 2. ~~The address guide (§4), including "Kō-chan."~~ **Decided Oct 17** (style guide §3c; delegated by the author): Nanoha keeps "Kō-chan" in private; the nickname that hurts (scene bank 6) is Kōhei's "Chibi" for her.
 3. **POV** (canon: Open).
@@ -180,7 +180,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 - **Genji (grandfather, shrine caretaker):** his "very convenient back" only hurts on petal days. Mentioned only.
 
 **School [P]:**
-- **Ishida Ryōsuke** (was Tokiwa until Nov 1): the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes (v2: the topic becomes taiyaki, head or tail first; style guide §3b). Calls Kōhei "Fujisawa."
+- **Ishida Ryōsuke** (was Tokiwa until Nov 1; **cut Nov 21**, merged into Takatsuki, canon §8): the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes (v2: the topic becomes taiyaki, head or tail first; style guide §3b). Calls Kōhei "Fujisawa."
 - **Hoshikawa Rika:** Nanoha's best friend. Art club, no indoor voice, novelty clips (strawberry, star, a frog wearing a crown). Calls Nanoha "Nano-chan."
 - **Ōno-sensei:** 2-B homeroom, classical Japanese. Tall, tired, "born in a cardigan." On screen from v2 (sprite from `inventory/full-ono.png`).
 - **v2 [P]:** there's no Fukuda in 2-B this year, which is how Kōhei knows Nanoha looked for his name before her own (names sort in kana order, so ふくだ sits right above ふじさわ).
@@ -217,14 +217,14 @@ Production thread; the full record is in `production/pilot-v2/reviews/ch1/` (con
   - Same class four years running. ~~Kōhei spent five days in 1-C during last year's exchange program ("a scheduling error," per the minutes).~~ Cut Oct 24 with the rest of the old bit; Nanoha's theory is now a staff-room folder (see Oct 24 below).
   - About 200 second-years; the class lists go up at the entrance; they arrive at 7:50.
   - Fukuda is in 2-E this year.
-  - The seating: Kōhei in the second-to-last row by the window, Natsuki behind him, Nanoha two rows over, Ishida near the front.
+  - The seating: Kōhei in the second-to-last row by the window, Natsuki behind him, Nanoha two rows over, Ishida near the front (Takatsuki's seat after the Nov 21 merger is Production's [P]).
   - The full timetable is handed out on day one.
 - **Natsuki:**
   - Loves horror movies, "the cheesier the better."
   - Two club invitations and karaoke on her first morning. ~~The gossip about Kōhei's three turned-down confessions came from "the girl by the door."~~ Out of Ch1 since Oct 24 (author): the confessions come up later, between Nanoha and Rika (Story thread).
   - Asks Nanoha whether the building is haunted (something knocking in the music room); "the pipes sound like a ghost."
   - She lives by the station; Nanoha walked her home after the tour.
-- **Ryōsuke:** argues that taiyaki are eaten head first ("thermodynamics").
+- **Ryōsuke:** argues that taiyaki are eaten head first ("thermodynamics"). Since Nov 21 the entrance is Takatsuki's, in his voice (style guide §3b).
 - **Rika:** a different novelty clip every day; matching keychains.
 - **Shrine:** the Saturday sweep; Genji's back.
 - **Engine:** the chapter menu starts Chapter 1 at the cold open (no separate Prologue entry); the developer scene chart labels it "COLD OPEN."

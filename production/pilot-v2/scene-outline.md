@@ -4,13 +4,21 @@
 
 ---
 
-## Cold open (added Oct 18; canon §2; independent check applied)
-**P.0** (**Decided Oct 18:** the cold open opens the game and goes straight to Ch1's morning; the dream moves to the end of Ch1, scene 1.8, because cold open plus dream back to back was too much at once.) A flash-forward to the present-day walk into the distortion (Ch42, a misty morning). Two or three images, one figure only: a male hand in a modern sleeve on a sword grip; a modern landmark, such as a convex curve mirror at a bend [P], passing a second time; the mist moving as if something huge is in it. No face, no eyes, no mask or wolf shape, never the tree or the boulder, and nothing that reads as the past (no kimono, no petals, no visible breath). No voices and no narration. Cut to black, then the 5:40 alarm (1.1).
+## Cold open (rewritten Nov 21; canon §2; built after Ch4)
+**P.0 Takatsuki's loop.** **Decided Nov 21 (author):** a flash-forward to Ch37 replaces the Oct 18 images (a hand on a sword grip, a landmark passing twice, no faces), which readers found confusing. It still opens the game and goes straight to Ch1's morning; the dream stays at 1.8. **Built after Ch4,** when the scenes it calls back to are in place. From Ch4's cold reads on, the packet carries this outline's text in place of the old images. Everything below is **[P]** staging.
+- **Who and when:** a cold January dusk; his modern coat, the traffic mirror and his kendo bag keep it plainly the present. Takatsuki walks his little brother (about eight; name [P]) home along a road at the edge of the woods, his kendo bag on his shoulder. **His point of view:** his face window and his full-name tag ("Takatsuki Shō") from the first line, so nobody takes him for the lead. The brother calls him "Shō-nii." No tree, no boulder, no shrine.
+- **The loop:** a convex traffic mirror at a bend comes around again. He counts it out in his formal way ("The same mirror. That is the third time.") and keeps his voice even for his brother. The mist comes up off the fields; behind them, footsteps that stop when they stop.
+- **The stumble:** his brother trips and falls. The mist moves closer, and something big breathes in it. Takatsuki hauls him onto his back ("Hold on. Do not let go.") and keeps walking, carefully, without running. Readers learn why falling matters later (Ch3's "just stopping for a rest," Ch16's legend, Ch38's folk rules).
+- **The rescue begins:** flashlight beams through the trees and voices calling "Takatsuki!" Two or three voices from the January group, Kōhei's among them, with no name tags and no faces. Cut to black on the light reaching them, before anyone is seen and before how they get him out (Ch37's method is Open).
+- **Never shown:** the beast (no eyes, mask or wolf shape; sound and moving mist only, so Ch5's dream of its eyes keeps the reveal), anything that reads as the past life, and who stands next to whom.
+- **Art:** 2–3 CGs in dusk-and-mist light (Production designs the treatment, distinct from both era palettes): the road and the mirror; the brother on his back; the beams in the mist. Takatsuki's winter face window with his winter marker, such as a scarf (canon §8). **Living still:** the mist moving. **Sound:** wind and footsteps, then voices. **Music:** none until the title.
+- **Callbacks to plant in Ch1–4:**
+  - Takatsuki in Kōhei's class from 1.3, so readers recognize the face at once.
+  - His little brother (4.2: he leaves at five to pick him up).
+  - A convex mirror at a bend on a road the cast walks, if it fits naturally [P].
+- **Ch37** replays it from the group's side and continues past the cut (Proposal).
 
-**Parked Oct 19 (author):** the cold open needs improvement but waits until most of the story is written, when the author decides what goes there and whether it's animated or music over CGs. The Ch1 build keeps this version until then.
-- **CGs (new):** two or three, in misty early-morning light, a treatment distinct from both era palettes [P]. **Living still:** the mist moving. About $1–3. The cold-read packet includes them.
-- **Music [P]:** none, or wind only.
-- **Why so constrained:** coming straight before a sword-and-petals dream, anything period-looking would read as the past life and give away how it ended, and the beast thread stays separate from past-life clues (canon §2).
+*Superseded Oct 18 version (for the record): a male hand in a modern sleeve on a sword grip, a convex mirror passing a second time, mist moving; no faces or voices. Parked Oct 19; unparked and replaced Nov 21.*
 
 ## The dream (moved Oct 18: now scene 1.8, the night of Ch1, its first appearance)
 **1.8 (was P.1)** River sound, a branch overhead, petals. A woman in a simple everyday kimono binds a cut on his wrist after he comes back late and hurt from training, scolding him: "You're late." Her face stays out of frame. He wakes with only the feeling. (12, 22, 23)
@@ -25,7 +33,7 @@
 
 **1.2 River walk.** Just the two of them, easy; she fixes his collar. The list of her private oddities is cut and saved for later scenes. (13, 24)
 
-**1.3 Class lists.** 2-B. Rika's "Nano-chaaan!" tackle. Ryōsuke arrives mid-argument (Oct 17 [P]: taiyaki, head or tail first, not hot dogs; see the targets below), which is his whole introduction; no name tag, no list of facts. (25; canon §2 openings rule)
+**1.3 Class lists.** 2-B. Rika's "Nano-chaaan!" tackle. **Takatsuki** (Kōhei's best friend since Nov 21; Ryōsuke is cut) arrives mid-argument (Oct 17 [P]: taiyaki, head or tail first, and he has the correct answer), which is his whole introduction; no list of facts. Readers of the cold open recognize him here. (25; canon §2 openings rule)
 
 **1.4 Natsuki's introduction.** Physical reaction only: her grin stutters when she sees him, and he grips his pen hard enough to hurt. No flash, no narrated certainty. (2, 8)
 
@@ -116,9 +124,9 @@ At the top Nanoha is sweeping, with a second broom ready, and she hands it to Na
 ## Ch4 — The Light at the Shrine (Sun Apr 13 – Mon Apr 14)
 Ch4 ends the pilot. **Paired interludes** on the same night (one for each girl) keep the window from tipping to Nanoha as FB1 moves to her side.
 
-**4.1 Group study at the Fujisawa house.** **[P]** Sunday, after his lunch shift, at his place because he has to make dinner and Akane is home. Natsuki's first visit. She notices Nanoha knows where his cups go and which window sticks: "Have you been coming here forever?" (3) She notices the closed fusuma and the lowered voices, and doesn't ask. **[P]** When he gets up to start dinner, Natsuki puts him back in his chair: "You worked a shift. Sit." He actually sits, and only then notices nobody has told him to in a year. Ryōsuke eats Kōhei's snacks and ranks them out loud instead of studying. Akane drifts through, openly Team Nanoha while being sweet to Natsuki.
+**4.1 Group study at the Fujisawa house.** **[P]** Sunday, after his lunch shift, at his place because he has to make dinner and Akane is home. Natsuki's first visit. She notices Nanoha knows where his cups go and which window sticks: "Have you been coming here forever?" (3) She notices the closed fusuma and the lowered voices, and doesn't ask. **[P]** When he gets up to start dinner, Natsuki puts him back in his chair: "You worked a shift. Sit." He actually sits, and only then notices nobody has told him to in a year. Takatsuki studies by a timer and grades everyone's method out loud [P]. Akane drifts through, openly Team Nanoha while being sweet to Natsuki.
 
-**4.2 Not dating.** **[P]** Natsuki asks lightly how long they've been going out. Kōhei's "We're not" comes too fast, with a laugh. Ryōsuke confirms without looking up; Rika glances at Nanoha. Nanoha smiles: "He'd have to have time." (15)
+**4.2 Not dating.** **[P]** Natsuki asks lightly how long they've been going out. Kōhei's "We're not" comes too fast, with a laugh. Takatsuki confirms without looking up; Rika glances at Nanoha. Nanoha smiles: "He'd have to have time." (15) **[P, Nov 21]** At exactly five Takatsuki packs up to collect his little brother. Nobody remarks on it; it's the cold open's callback.
 
 **4.3 Interlude: Natsuki** (**[P]**). Leaving at dusk, she looks back from the street: the two upstairs windows face each other across the gap, both lit. She photographs them and doesn't send it to anyone. On the way to the station she texts Chie: "update: not dating." Chie: "AND???" She doesn't answer. Relief first, then something like guilt toward Nanoha, then the strange ease of having told him to sit.
 
@@ -161,9 +169,9 @@ Replaces the Story thread's Oct 17 targets, which the author overruled. Cold rea
 **Where Ch1 stands:** at the end of the Oct 17 reads it was Nanoha 50/55/35 against Natsuki 40/35/60, an even split already tilted slightly toward Nanoha, and reader 3 hit 65% Nanoha at checkpoint 2. Dropping Natsuki's voice from the dream removes a clue for players too. So Ch1 needs rebalancing toward Natsuki, not only softening.
 
 ### Cold open + Prologue + Ch1
-- **Know:** something dangerous waits in this story. Kōhei carries the house (Dad died last spring, Mom stays behind the fusuma, Akane is unwell) and won't admit he's tired. Nanoha loves him and hides it; she's part of his home; he notices more than he lets himself think about. His recurring dream is of another life: a swordsman, a woman binding his cut wrist, "You're late," a branch and petals overhead, a river. The Ōzakura is a huge old cherry tree on the hill. He and Natsuki reacted to each other on sight, and neither explains it.
+- **Know:** something dangerous waits in this story. **Nov 21:** in some winter to come, Takatsuki and his little brother are caught on a path that keeps looping, and other people come for them. Kōhei carries the house (Dad died last spring, Mom stays behind the fusuma, Akane is unwell) and won't admit he's tired. Nanoha loves him and hides it; she's part of his home; he notices more than he lets himself think about. His recurring dream is of another life: a swordsman, a woman binding his cut wrist, "You're late," a branch and petals overhead, a river. The Ōzakura is a huge old cherry tree on the hill. He and Natsuki reacted to each other on sight, and neither explains it.
 - **Suspect:** the dream is a past life with a wife or lover; one of the two girls is tied to it, and it could be either. The Ōzakura may be the dream's tree.
-- **Not yet:** what's in the mist; whether either girl remembers anything; how that life ended; that it ended in winter.
+- **Not yet:** what's in the mist; who came for Takatsuki, or whether they got him out; whether either girl remembers anything; how that life ended; that it ended in winter.
 - **Direction for Ch1 (not a gate; the window is Ch1–4):** don't leave Ch1 tilted toward Nanoha as the dream woman, since Ch3–4 tilt that way on their own. Every reader expects danger beyond the romance; all read the dream as a past life with a wife or lover; none says the premise was stated outright.
 
 **Decisions for the Ch1 revision:**
@@ -177,7 +185,7 @@ Replaces the Story thread's Oct 17 targets, which the author overruled. Cold rea
 8. **Natsuki has to be as likable as Nanoha.** The Oct 17 readers loved Nanoha's lines and found Natsuki's padded. The dialogue pass spends its effort on her charm (§3b: she asks, pokes, notices; no verdicts or self-labels). Protect her smaller, "cost her something" smile and "never stayed anywhere long enough" line.
 9. **Cut "Probably a stubborn crease."** He notices her hands and lets it go without a joke.
 10. **Cut the river walk's snow simile** so Ch3's snow is the first and feels wrong.
-11. **Ryōsuke's argument is about taiyaki [P]** (head or tail first), not hot dogs.
+11. **Ryōsuke's argument is about taiyaki [P]** (head or tail first), not hot dogs. (Takatsuki's since Nov 21.)
 
 ### Ch2
 - **Know:** with Natsuki he lets the load down: on the Tuesday walk he talks and laughs more than he has in months, and she never handles him carefully. Kendo's basics, enough to follow the match insert. In the match Natsuki is already there when he moves; Takatsuki sees she read him better than he ever has. The catch brings a tear she can't explain. Under the cheer she's lonely (six schools; Chie) and unsettled by how well she read him; the reader gets her inner life at the same depth as Nanoha's. The romantic pull between Kōhei and Natsuki is visible (the catch; the bridge invitation, half a date), though neither names it.
