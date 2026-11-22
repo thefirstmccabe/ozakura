@@ -106,8 +106,8 @@ The author asked on Nov 22 whether the percentage and balance rules are still ne
 
 **Leave alone:** stable line IDs, regression runs against approved builds, fresh-agent checks, the two-round stop rule, the ledger.
 
-## 8. Thread names (the author renames them; Claude can't)
-| Now | Suggested | State |
+## 8. Thread names (renamed Nov 22, at the author's request)
+| Was | Now | State |
 |---|---|---|
 | Story bible length and pacing | Ōzakura · Story | Active |
 | Visual novel project organization | Ōzakura · Planning | Active |
@@ -121,7 +121,7 @@ The author asked on Nov 22 whether the percentage and balance rules are still ne
 | Love triangle promise reveal mechanics | Done · triangle discussion Oct 18 | Finished |
 | visual novel production test | Done · shipped pilot | Finished |
 | Manga adaptation test | Hold · Manga Vol. 1 | On hold |
-| (this review) | Done · process review Nov 22 | Finished once Planning picks this up |
+| Production process improvement (this review) | Done · process review Nov 22 | Finished once Planning picks this up |
 
 ## 9. Order of work
 1. Story folds in the Nov 1 and Nov 21 handoffs (§7).
