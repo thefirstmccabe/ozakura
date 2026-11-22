@@ -124,7 +124,9 @@ The author asked on Nov 22 whether the percentage and balance rules are still ne
 | Production process improvement (this review) | Done · process review Nov 22 | Finished once Planning picks this up |
 
 ## 9. Order of work
-1. Story folds in the Nov 1 and Nov 21 handoffs (§7).
+**Story is on hold until Ch3 is done** (author, Nov 21, in the Story thread: nothing more gets committed there until then). Step 1 waits for that; steps 2–3 don't depend on it, so Planning starts now. The Story thread also holds a pending list of the author's Nov 21 changes that aren't in the repo yet (the cold open's staging, Kōhei's resentment of Takatsuki dropped, the summer legend told as a story he doesn't believe, the style guide §3c duplicate rows, corrections to `handoff-production-nov21.md` and to the 11-21 log row). Until Story commits them, treat canon §2, the scene outline's P.0 and that handoff as not final.
+
+1. Story folds in the Nov 1 and Nov 21 handoffs (§7) and its pending list, once Ch3 is done.
 2. Planning builds the §3 score and reports the baseline.
 3. Planning rebuilds the readers and the judge (§4.1–§4.3), scored against the baseline.
 4. The author's first A/B, including the model comparison (§4.4–§4.5).
