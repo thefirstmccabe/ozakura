@@ -47,7 +47,13 @@ html,body{height:100%;margin:0;background:var(--ink);color:var(--paper);overflow
 #cg .bgimg{transition:opacity 1s ease}
 .cgfill{position:absolute;inset:-48px;background:center/cover no-repeat;filter:blur(28px) brightness(.5) saturate(1.1);opacity:0;transition:opacity 1s ease;display:none}
 .cgfill.on{opacity:1}
-@media (orientation:portrait){ #cg .bgimg, #cg .live{object-fit:contain;object-position:50% 36%} .cgfill{display:block} }
+/* CG_FRAME (Nov 21): a CG whose subject sits low is lifted (--cgl, a share of the screen height; the empty top is cropped) and can crop
+   off-center (--cgx). The strip the lift uncovers (under the text box, bare only while a CG first comes up) is filled with the CG's own
+   bottom-row colors (CG_FRAME f), and the picture's bottom edge feathers into it */
+#cg .bgimg,#cg .live{object-position:var(--cgx,50%) 50%;transform:translateY(calc(-1 * var(--cgl,0%)))}
+#cg .lifted{-webkit-mask-image:linear-gradient(to bottom,#000 94%,transparent);mask-image:linear-gradient(to bottom,#000 94%,transparent)}
+.cgfill.lift{display:block;inset:0;filter:none}
+@media (orientation:portrait){ #cg .bgimg, #cg .live{object-fit:contain;object-position:50% 36%;transform:none} .cgfill{display:block} }
 /* short animated moments (canon §2): played once over the CG layer, then the still holds */
 #animV{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;z-index:6}
 #animV.on{opacity:1}
@@ -318,7 +324,8 @@ input{-webkit-user-select:text;user-select:text}
   .cb{position:relative}
   .cb::after{content:"";position:absolute;left:0;right:0;top:-10px;bottom:-6px}
   /* the bottom fifth is under the text box here, so CGs crop a little higher (their living stills too, so they stay aligned) */
-  #cg .bgimg,#cg .live,#animV{object-position:50% var(--cgy,35%)}   /* --cgy: CG_PHONE_Y, for CGs whose subject sits low (Ch3 window) */
+  #cg .bgimg,#cg .live,#animV{object-position:var(--cgx,50%) var(--cgy,35%)}   /* --cgy: CG_PHONE_Y, for CGs whose subject sits low (Ch3 window) */
+  #cg .bgimg,#cg .live{transform:translateY(calc(-1 * var(--cglp,0%)))}   /* phones lift less (CG_FRAME p): the crop above already raises them */
   /* menus: the text box no longer shows through, and three save slots fit across */
   .panel{background:rgba(10,12,20,.97)}
   .slots{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
@@ -437,6 +444,11 @@ const CHAR = {
 };
 /* sprite sets framed differently from the character's other sets (v measured the same way, by head size; Ch3, Nov 1) */
 const CG_PHONE_Y = {cg_window:'100%', cg_window_sill:'100%', cg_window_sill_turn:'100%'};   // phones only: vertical crop for CGs whose subject sits low (the rabbit would be under the text box at 35%); Nov 1
+/* every size (Nov 21, author's iPad): Nanoha's face and the rabbit sat under the text box; the top of these CGs is empty wall, so they
+   lift (l: share of the screen height) and, on 4:3 iPads, crop more off the empty right than the left (x), which keeps the sill rabbit */
+const WALL = 'linear-gradient(90deg,#42384a,#513c49,#563f4a,#57404a,#58414b,#54404c,#463a4a,#3f3c54)';   // the window CGs' bottom row (the wall under the sill), sampled
+const CG_FRAME = {cg_window:{x:'30%', l:'15%', p:'10%', f:WALL}, cg_window_sill:{x:'30%', l:'15%', p:'10%', f:WALL}, cg_window_sill_turn:{x:'30%', l:'15%', p:'10%', f:WALL}};   // p: the lift on phones
+function frameCg(el, name){ const f=CG_FRAME[name]||{}; el.style.setProperty('--cgy', CG_PHONE_Y[name]||'35%'); el.style.setProperty('--cgx', f.x||'50%'); el.style.setProperty('--cgl', f.l||'0%'); el.style.setProperty('--cglp', f.p||'0%'); el.classList.toggle('lifted', !!f.l); }
 const VSET = {nanoha_home:.82, emi_home:.665};
 /* every on-stage character shares one floor F inches below the bottom of the screen */
 const FLOOR = Math.max(...['nanoha','natsuki','akane','ryosuke','rika'].map(k=>CHAR[k].h*(1-CHAR[k].v)));
@@ -608,7 +620,7 @@ function setBg(name, tr){
 const cgLive=$('#cgLive');
 function liveOff(){ cgLive.classList.remove('on'); try{cgLive.pause()}catch(e){} cgLive.removeAttribute('src'); try{cgLive.load()}catch(e){} }
 function liveOn(name, delay, cut){
-  cgLive.style.setProperty('--cgy', CG_PHONE_Y[name]||'35%');
+  frameCg(cgLive, name);
   if(cut){ cgLive.style.transition='none'; } liveOff(); void cgLive.offsetWidth; cgLive.style.transition='';   // a cut drops the old living still at once (Safari kept its last frame through the fade)
   if(!LIVE[name] || skipOn) return; const tok=setCg.tok;
   cgLive.src=LIVE[name]; cgLive.muted=true;
@@ -629,7 +641,7 @@ function setCg(name, tr){
   if(next.classList.contains('on')){ next.style.transition=nextF.style.transition='none'; next.classList.remove('on'); nextF.classList.remove('on'); void next.offsetWidth; }
   nextF.style.zIndex=1; curF.style.zIndex=0; next.style.zIndex=3; cur.style.zIndex=2; cgLive.style.zIndex=4;
   next.style.transition=nextF.style.transition=`opacity ${dur}s ease`; cur.style.transition=curF.style.transition= over ? 'none' : `opacity ${dur}s ease`;
-  nextF.style.backgroundImage=`url(img/bg/${name}.webp)`; next.style.setProperty('--cgy', CG_PHONE_Y[name]||'35%');
+  const fr=CG_FRAME[name]||{}; nextF.style.backgroundImage = fr.l&&fr.f ? fr.f : `url(img/bg/${name}.webp)`; frameCg(next, name); nextF.classList.toggle('lift', !!fr.l);
   const tok=++setCg.tok; next.onload=()=>{ if(tok!==setCg.tok) return; next.classList.add('on'); nextF.classList.add('on');
     if(over) setTimeout(()=>{ if(tok===setCg.tok){ cur.classList.remove('on'); curF.classList.remove('on'); } }, dur*1000+60); else { cur.classList.remove('on'); curF.classList.remove('on'); } };
   next.src=`img/bg/${name}.webp`; if(next.complete&&next.naturalWidth) next.onload(); cgFront=1-cgFront;
