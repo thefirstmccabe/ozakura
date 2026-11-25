@@ -80,3 +80,19 @@ The in-game flag button planned for chapters (`handoff-planning-nov22.md` §6) i
 
 ## Hours
 No restrictions during Thanksgiving week (project instructions). Otherwise the usual rule.
+
+## Status (the scene-list thread, Nov 25)
+- **§1 is recorded** in canon, the chapter map, the outline and the speech sheets, with his answers from the thread (production log, 11-25).
+- **Pass 1 is drafted** in `story/scene-list.md` and is with the author. Nothing in it is approved.
+- **His answers to §7 so far:** no best friend is named for Nanoha; the fall rule is out and the legend stays a legend; only Nanoha can get people out (Working); Ch37's motorcycle. **Not answered yet:** how much he wants to originate, whether the January night is the wolf's first appearance, Akane and the walk to school, and where the page may live. All four are on the page as questions.
+
+**The review page [P].** `build_page.py` reads the scene list and writes one HTML file from `page-template.html`:
+
+    python3 production/scene-list/build_page.py story/scene-list.md production/scene-list/build/pass1.html --key pass1 --tables
+
+`--tables` also rewrites the tables at the end of the scene list. The script stops on any line that isn't in shape, a missing field, a duplicate ID or an unknown tag. `ch3-test.md` is the small test input.
+
+- **Where it lives:** a private page in Claude (an artifact), not the public site, because he hasn't said the whole plot's page may go on the site. Pass 1 is "Ōzakura scene list, Pass 1" (slug `bf6df7b9-6b56-4e39-b8ee-b72539360df8`); the Ch3 test is "Ōzakura review page test" (slug `86694154-21f2-48dd-b96e-2358a4446fe9`). Republish with the artifact tools and declare `{"db": {}}`. The same file would work as a plain page on the site if he prefers that.
+- **How his notes come back:** every mark and note is saved in the page's own database as one document per item, `notes/<id>` with `mark` (keep, change, cut or empty), `note` and `at`. IDs are scene IDs (`12.3`, `P.0`, `V1`, `E.1`), `ch12`, `epilogue`, `part2`, `Q1` and `overall`. A thread reads them with the artifact database tools (`db_list` on the collection `notes`). Notes are also kept in his browser, and the page's Copy notes button gives the same list as text if saving fails.
+- **Not yet confirmed on his iPad:** that the page opens for him, that dictation works in the note fields, and that notes reach the database. Style guide §8 records that artifact pages didn't work for him in October.
+- **Next:** take his reactions scene by scene, settle the shape, then Pass 2 (each Part in full, through outline readers, §5).
