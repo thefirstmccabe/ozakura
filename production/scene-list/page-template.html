@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>__TITLE__</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: one reading column of chapter blocks; each scene is a row with its marks and a note field beside it. */
+:root{
+  --paper:#f3f4f7; --card:#ffffff; --ink:#1b2233; --soft:#5b6478; --line:#d8dce5;
+  --accent:#8a2c43; --accent-soft:#f3dfe5;
+  --keep:#2c7a59; --change:#a8670f; --cut:#b03446;
+  --display:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --body:"Source Sans 3", -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#13161d; --card:#1b1f29; --ink:#e7e9ef; --soft:#9aa3b5; --line:#2d3340;
+    --accent:#e391a6; --accent-soft:#3a2530;
+    --keep:#5cc097; --change:#e0a44a; --cut:#ee7f8f; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#13161d; --card:#1b1f29; --ink:#e7e9ef; --soft:#9aa3b5; --line:#2d3340;
+  --accent:#e391a6; --accent-soft:#3a2530;
+  --keep:#5cc097; --change:#e0a44a; --cut:#ee7f8f; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.45}
+button{font:inherit;color:inherit}
+.bar{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;padding:8px 16px}
+.bar .name{font-family:var(--display);font-weight:700;font-size:17px;margin-right:auto}
+.bar .status{font-size:14px;color:var(--soft)}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 12px;min-height:40px;cursor:pointer}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+:root[data-theme="dark"] .btn.primary{color:#1b1f29}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.primary{color:#1b1f29}}
+.btn:focus-visible,.marks button:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+main{max-width:860px;margin:0 auto;padding:16px 16px 96px;display:flex;flex-direction:column;gap:20px}
+h1{font-family:var(--display);font-size:28px;line-height:1.15;margin:8px 0 0;text-wrap:balance}
+.lede{color:var(--soft);margin:0;max-width:65ch}
+.how{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.how p{margin:0;max-width:68ch}
+.jump{display:flex;flex-wrap:wrap;gap:8px}
+.jump .btn{padding:6px 10px;min-height:36px;font-size:15px}
+h2{font-family:var(--display);font-size:23px;margin:12px 0 0;text-wrap:balance}
+.part{display:flex;flex-direction:column;gap:12px}
+.part > p{margin:0;max-width:70ch}
+details.ch{background:var(--card);border:1px solid var(--line);border-radius:10px}
+details.ch > summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px}
+details.ch > summary::-webkit-details-marker{display:none}
+summary .num{font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+summary .ttl{font-family:var(--display);font-weight:700;font-size:19px}
+summary .when{color:var(--soft);font-size:15px}
+summary .tally{margin-left:auto;color:var(--soft);font-size:14px;font-variant-numeric:tabular-nums}
+.chbody{border-top:1px solid var(--line);padding:12px 14px;display:flex;flex-direction:column;gap:12px}
+.changes{margin:0;max-width:70ch}
+.changes b{color:var(--accent)}
+.meta{margin:0;color:var(--soft);font-size:15px}
+.scene{border-top:1px solid var(--line);padding-top:12px;display:grid;grid-template-columns:3.4em 1fr;gap:4px 10px}
+.scene .id{font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.scene .txt{margin:0}
+.scene .txt b{font-weight:700}
+.chips{grid-column:2;display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;line-height:1;padding:4px 7px;border-radius:999px;border:1px solid var(--line);color:var(--soft);white-space:nowrap}
+.chip.who{border-color:var(--accent);color:var(--accent)}
+.chip.new{background:var(--accent-soft);border-color:transparent;color:var(--ink)}
+.call{grid-column:2;margin:0;padding:8px 10px;border-radius:8px;background:var(--accent-soft)}
+.call b{color:var(--accent)}
+.react{grid-column:2;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start}
+.marks{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;flex:none}
+.marks button{border:0;border-right:1px solid var(--line);background:var(--card);padding:8px 12px;min-height:40px;min-width:62px;cursor:pointer;font-size:15px}
+.marks button:last-child{border-right:0}
+.marks button[aria-pressed="true"]{color:#fff;font-weight:700}
+.marks button.keep[aria-pressed="true"]{background:var(--keep)}
+.marks button.change[aria-pressed="true"]{background:var(--change)}
+.marks button.cut[aria-pressed="true"]{background:var(--cut)}
+textarea{font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;
+  padding:8px 10px;min-height:40px;width:100%;resize:none;overflow:hidden;line-height:1.35}
+.react textarea{flex:1 1 240px;min-width:0;width:auto}
+.wide{display:flex;flex-direction:column;gap:6px}
+.wide label{font-size:14px;color:var(--soft)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.q p{margin:0;max-width:70ch}
+.q .id{font-weight:700;color:var(--accent)}
+.tablewrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;font-size:14px;width:100%}
+th,td{padding:5px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:700;color:var(--soft);white-space:nowrap}
+table.grid td,table.grid th{text-align:center;padding:4px 5px}
+table.grid td:first-child,table.grid th:first-child{text-align:left;white-space:nowrap;position:sticky;left:0;background:var(--card)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.dot.side{background:var(--soft)}
+h3{font-size:17px;margin:8px 0 0}
+.note-sm{color:var(--soft);font-size:14px;margin:0}
+.sheet{position:fixed;inset:0;z-index:10;background:rgba(10,12,18,.55);display:none;align-items:center;justify-content:center;padding:16px}
+.sheet.open{display:flex}
+.sheet .box{background:var(--card);color:var(--ink);border-radius:12px;max-width:640px;width:100%;max-height:86%;display:flex;flex-direction:column;gap:10px;padding:16px}
+.sheet textarea{min-height:220px;overflow:auto;flex:1}
+.sheet .row{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap}
+@media (max-width:480px){
+  body{font-size:16px}
+  .scene{grid-template-columns:1fr}
+  .chips,.call,.react{grid-column:1}
+}
+@media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
+</style>
+</head>
+<body>
+<div class="bar">
+  <span class="name" id="barname"></span>
+  <span class="status" id="status" role="status">Ready</span>
+  <button class="btn" id="toggleall" type="button">Collapse all</button>
+  <button class="btn primary" id="copy" type="button">Copy notes</button>
+</div>
+<main id="main"></main>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheettitle">
+  <div class="box">
+    <strong id="sheettitle">Your notes</strong>
+    <p class="note-sm" id="sheetmsg"></p>
+    <textarea id="sheettext" readonly></textarea>
+    <div class="row">
+      <button class="btn" id="sheetselect" type="button">Select all</button>
+      <button class="btn primary" id="sheetclose" type="button">Done</button>
+    </div>
+  </div>
+</div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+"use strict";
+var DATA = JSON.parse(document.getElementById('data').textContent);
+var LSKEY = 'ozakura-scene-notes:' + DATA.key;
+var state = {};          // id -> {mark, note, at}
+var remoteAt = {};       // id -> at, as last known in the store
+var db = null, dbReady = false, localOK = true, writeFailed = false;
+var timers = {}, chains = {}, saving = 0;
+var FIVE = ['Kōhei','Nanoha','Natsuki','Takatsuki','Akane'];
+
+function el(tag, cls, text){ var e = document.createElement(tag); if(cls) e.className = cls; if(text != null) e.textContent = text; return e; }
+function now(){ return new Date().toISOString(); }
+function entry(id){ return state[id] || {mark:'', note:'', at:''}; }
+
+function loadLocal(){ try{ var s = localStorage.getItem(LSKEY); if(s){ var v = JSON.parse(s); if(v && typeof v === 'object') state = v; } }catch(e){ localOK = false; } }
+function saveLocal(){ try{ localStorage.setItem(LSKEY, JSON.stringify(state)); localOK = true; }catch(e){ localOK = false; } }
+
+function setStatus(){
+  var s = document.getElementById('status'), t;
+  if(db && dbReady && !writeFailed) t = saving > 0 ? 'Saving…' : 'Saved';
+  else if(db && !dbReady && !writeFailed) t = 'Connecting…';
+  else if(localOK) t = 'Saved on this device only';
+  else t = 'Not saved. Use Copy notes before you leave';
+  s.textContent = t;
+}
+
+function queueWrite(id, delay){
+  if(!db || !dbReady) return;
+  clearTimeout(timers[id]);
+  timers[id] = setTimeout(function(){ flush(id); }, delay == null ? 900 : delay);
+}
+function flush(id){
+  var prev = chains[id] || Promise.resolve();
+  saving++; setStatus();
+  chains[id] = prev.then(function(){
+    var v = entry(id);
+    if(remoteAt[id] === v.at) return;
+    var body = {id:id, mark:v.mark || '', note:v.note || '', at:v.at || now()};
+    return writeOnce(id, body, true);
+  }).then(function(){ saving--; setStatus(); }, function(){ saving--; writeFailed = true; setStatus(); });
+}
+function writeOnce(id, body, retry){
+  return db.doc('notes/' + id).set(body).then(function(){ remoteAt[id] = body.at; writeFailed = false; }, function(err){
+    if(retry && err && err.code === 'unavailable'){
+      return new Promise(function(res){ setTimeout(res, 800 + Math.random()*800); }).then(function(){ return writeOnce(id, body, false); });
+    }
+    throw err;
+  });
+}
+
+function initStore(){
+  if(!(window.claude && typeof window.claude.use === 'function')){ setStatus(); return; }
+  var slow = setTimeout(function(){ if(!dbReady) setStatus(); }, 10000);
+  window.claude.use('db').then(function(ns){
+    if(!ns){ clearTimeout(slow); setStatus(); return; }
+    db = ns; setStatus();
+    return db.collection('notes').limit(1000).get().then(function(snap){
+      clearTimeout(slow);
+      snap.docs.forEach(function(d){
+        var v = d.data(); if(!v) return;
+        var id = d.id; remoteAt[id] = v.at || '';
+        var cur = state[id];
+        if(!cur || (v.at || '') > (cur.at || '')) state[id] = {mark:v.mark || '', note:v.note || '', at:v.at || ''};
+      });
+      dbReady = true; saveLocal(); paintAll(); setStatus();
+      Object.keys(state).forEach(function(id){ if((state[id].at || '') > (remoteAt[id] || '')) queueWrite(id, 50); });
+    });
+  }).catch(function(){ clearTimeout(slow); db = null; setStatus(); });
+}
+
+var painters = {};   // id -> function to repaint a control from state
+function paintAll(){ Object.keys(painters).forEach(function(id){ painters[id](); }); tally(); }
+function change(id, patch){
+  var v = entry(id); var n = {mark:v.mark, note:v.note, at:now()};
+  for(var k in patch) n[k] = patch[k];
+  state[id] = n; saveLocal(); setStatus(); queueWrite(id); tally();
+}
+function grow(t){ t.style.height = 'auto'; t.style.height = Math.max(40, t.scrollHeight + 2) + 'px'; }
+
+function noteBox(id, placeholder){
+  var t = el('textarea'); t.id = 'note-' + id; t.rows = 1; t.placeholder = placeholder;
+  t.setAttribute('aria-label', 'Note on ' + id);
+  t.addEventListener('input', function(){ change(id, {note:t.value}); grow(t); });
+  var prev = painters[id];
+  painters[id] = function(){ if(prev) prev(); if(document.activeElement !== t){ t.value = entry(id).note || ''; grow(t); } };
+  return t;
+}
+function markButtons(id){
+  var wrap = el('div', 'marks'); wrap.setAttribute('role', 'group'); wrap.setAttribute('aria-label', 'Mark ' + id);
+  var kinds = [['keep','Keep'],['change','Change'],['cut','Cut']], btns = [];
+  kinds.forEach(function(k){
+    var b = el('button', k[0], k[1]); b.type = 'button'; b.setAttribute('aria-pressed', 'false');
+    b.addEventListener('click', function(){ change(id, {mark: entry(id).mark === k[0] ? '' : k[0]}); paint(); });
+    btns.push(b); wrap.appendChild(b);
+  });
+  function paint(){ btns.forEach(function(b, i){ b.setAttribute('aria-pressed', entry(id).mark === kinds[i][0] ? 'true' : 'false'); }); }
+  var prev = painters[id]; painters[id] = function(){ if(prev) prev(); paint(); };
+  return wrap;
+}
+
+var TAGTEXT = {'CG':'CG','insert':'manga insert','gag':'gag insert','still':'living still','anim':'animation attempt','imagined':'imagined scene',
+  'comic':'comic','dread':'dread','A+T':'Akane and Takatsuki','family':'family','kendo':'kendo','uncanny':'uncanny',
+  'Built':'built','D':'decided','Map':'chapter map','P':'new [P]'};
+function chipsFor(tags){
+  var box = el('div', 'chips');
+  tags.forEach(function(t){
+    var cls = 'chip', text = TAGTEXT[t] || t;
+    if(t === 'Nanoha' || t === 'Natsuki'){ cls += ' who'; text = t + '’s scene'; }
+    else if(/^CG×/.test(t)) text = t.replace('CG×', '') + ' CGs';
+    else if(/^SB/.test(t)) text = 'scene bank ' + t.slice(2);
+    else if(t === 'P') cls += ' new';
+    box.appendChild(el('span', cls, text));
+  });
+  return box;
+}
+
+var tallies = [];
+function tally(){ tallies.forEach(function(f){ f(); }); }
+
+function sceneRow(s){
+  var row = el('div', 'scene'); row.id = 's-' + s.id.replace(/\./g, '-');
+  row.appendChild(el('div', 'id', s.id));
+  var p = el('p', 'txt'); p.appendChild(el('b', null, s.title + '. ')); p.appendChild(document.createTextNode(s.line)); row.appendChild(p);
+  if(s.tags && s.tags.length) row.appendChild(chipsFor(s.tags));
+  if(s.call){ var c = el('p', 'call'); c.appendChild(el('b', null, 'Your call: ')); c.appendChild(document.createTextNode(s.call)); row.appendChild(c); }
+  var r = el('div', 'react'); r.appendChild(markButtons(s.id)); r.appendChild(noteBox(s.id, s.call ? 'Your answer or a note' : 'Note'));
+  row.appendChild(r);
+  return row;
+}
+function chapterBlock(ch){
+  var d = el('details', 'ch'); d.open = true; d.id = ch.id;
+  var sum = el('summary');
+  sum.appendChild(el('span', 'num', ch.label));
+  sum.appendChild(el('span', 'ttl', ch.title));
+  if(ch.when) sum.appendChild(el('span', 'when', ch.when));
+  var t = el('span', 'tally', ''); sum.appendChild(t); d.appendChild(sum);
+  tallies.push(function(){
+    var m = 0, n = 0;
+    ch.scenes.forEach(function(s){ var v = entry(s.id); if(v.mark) m++; if(v.note) n++; });
+    t.textContent = m + ' of ' + ch.scenes.length + ' marked' + (n ? ' · ' + n + (n === 1 ? ' note' : ' notes') : '');
+  });
+  var body = el('div', 'chbody');
+  if(ch.changes){ var c = el('p', 'changes'); c.appendChild(el('b', null, 'What it changes: ')); c.appendChild(document.createTextNode(ch.changes)); body.appendChild(c); }
+  var bits = [];
+  if(ch.whose) bits.push(ch.whose === 'shared' ? 'Shared chapter' : ch.whose === 'neither' ? 'Neither girl’s chapter' : ch.whose + '’s chapter');
+  if(ch.closeness) bits.push('Natsuki and Kōhei: ' + ch.closeness);
+  if(ch.uncanny && ch.uncanny !== 'none') bits.push('Uncanny or dread: ' + ch.uncanny);
+  if(bits.length) body.appendChild(el('p', 'meta', bits.join(' · ')));
+  ch.scenes.forEach(function(s){ body.appendChild(sceneRow(s)); });
+  var w = el('div', 'wide'); var lab = el('label', null, 'About ' + ch.label + ' as a whole'); lab.htmlFor = 'note-' + ch.id;
+  w.appendChild(lab); w.appendChild(noteBox(ch.id, 'Note on the whole chapter')); body.appendChild(w);
+  d.appendChild(body);
+  return d;
+}
+
+function td(text, cls){ return el('td', cls, text); }
+function th(text, cls){ return el('th', cls, text); }
+function tableSection(main){
+  var chs = []; DATA.parts.forEach(function(p){ p.chapters.forEach(function(c){ chs.push(c); }); });
+  if(chs.length < 2) return;
+  var h = el('h2', null, 'The shape at a glance'); h.id = 'tables'; main.appendChild(h);
+  // presence
+  var side = DATA.side || [];
+  main.appendChild(el('h3', null, 'Who is in each chapter'));
+  var w1 = el('div', 'tablewrap'), g = el('table', 'grid'), hr = el('tr');
+  hr.appendChild(th('Ch')); FIVE.concat(side).forEach(function(n){ hr.appendChild(th(n)); }); g.appendChild(hr);
+  chs.forEach(function(c){
+    var r = el('tr'); r.appendChild(td(c.label));
+    FIVE.concat(side).forEach(function(n, i){ var cell = td(''); if(c.cast.indexOf(n) >= 0) cell.appendChild(el('span', i < 5 ? 'dot' : 'dot side')); r.appendChild(cell); });
+    g.appendChild(r);
+  });
+  w1.appendChild(g); main.appendChild(w1);
+  // triangle and uncanny
+  main.appendChild(el('h3', null, 'The triangle, and the uncanny and dread beats'));
+  var w2 = el('div', 'tablewrap'), t2 = el('table'), h2 = el('tr');
+  ['Ch','Whose chapter','Natsuki and Kōhei','Uncanny or dread, and whose'].forEach(function(x){ h2.appendChild(th(x)); }); t2.appendChild(h2);
+  chs.forEach(function(c){ var r = el('tr'); r.appendChild(td(c.label)); r.appendChild(td(c.whose || '')); r.appendChild(td(c.closeness || '')); r.appendChild(td(c.uncanny || '')); t2.appendChild(r); });
+  w2.appendChild(t2); main.appendChild(w2);
+  // presentation
+  main.appendChild(el('h3', null, 'On screen: CGs, inserts and the rest'));
+  var kinds = [['CG','CGs'],['insert','Manga inserts'],['gag','Gag inserts'],['still','Living stills'],['anim','Animation attempts'],['imagined','Imagined scenes']];
+  var w3 = el('div', 'tablewrap'), t3 = el('table'), h3 = el('tr'); h3.appendChild(th('Ch'));
+  kinds.forEach(function(k){ h3.appendChild(th(k[1], 'num')); }); t3.appendChild(h3);
+  var tot = kinds.map(function(){ return 0; });
+  chs.forEach(function(c){
+    var r = el('tr'); r.appendChild(td(c.label));
+    kinds.forEach(function(k, i){ var n = c.counts[k[0]] || 0; tot[i] += n; r.appendChild(td(n ? String(n) : '', 'num')); });
+    t3.appendChild(r);
+  });
+  var tr = el('tr'); tr.appendChild(th('Total')); tot.forEach(function(n){ tr.appendChild(th(String(n), 'num')); }); t3.appendChild(tr);
+  w3.appendChild(t3); main.appendChild(w3);
+}
+
+function build(){
+  document.getElementById('barname').textContent = DATA.short;
+  var main = document.getElementById('main');
+  main.appendChild(el('h1', null, DATA.title));
+  if(DATA.lede) main.appendChild(el('p', 'lede', DATA.lede));
+  var how = el('div', 'how');
+  ['Tap Keep, Change or Cut on any scene. Tap a note field and use the mic on your keyboard to dictate.',
+   'Everything saves as you go. When you finish, tell the thread you’re done; Copy notes is the backup if saving fails.',
+   'A pink tag means I invented it in this pass. A pink box is a question only you can answer.'].forEach(function(x){ how.appendChild(el('p', null, x)); });
+  main.appendChild(how);
+  var jump = el('div', 'jump'); main.appendChild(jump);
+  function jumpTo(label, target){ var b = el('button', 'btn', label); b.type = 'button'; b.addEventListener('click', function(){ var t = document.getElementById(target); if(t) t.scrollIntoView(); }); jump.appendChild(b); }
+  DATA.parts.forEach(function(p){
+    var sec = el('section', 'part'); sec.id = p.id;
+    sec.appendChild(el('h2', null, p.title));
+    p.paras.forEach(function(x){ sec.appendChild(el('p', null, x)); });
+    p.chapters.forEach(function(c){ sec.appendChild(chapterBlock(c)); });
+    var w = el('div', 'wide'); var lab = el('label', null, 'About ' + p.short + ' as a whole'); lab.htmlFor = 'note-' + p.id;
+    w.appendChild(lab); w.appendChild(noteBox(p.id, 'Note on the whole Part')); sec.appendChild(w);
+    main.appendChild(sec);
+    if(DATA.parts.length > 1) jumpTo(p.short, p.id);
+  });
+  if(DATA.questions && DATA.questions.length){
+    var h = el('h2', null, 'Whole-story questions'); h.id = 'questions'; main.appendChild(h); jumpTo('Questions', 'questions');
+    DATA.questions.forEach(function(q){
+      var box = el('div', 'q'); var p = el('p'); p.appendChild(el('span', 'id', q.id + '. ')); p.appendChild(document.createTextNode(q.text)); box.appendChild(p);
+      if(q.rec){ box.appendChild(el('p', 'meta', 'What I’d do: ' + q.rec)); }
+      box.appendChild(noteBox(q.id, 'Your answer')); main.appendChild(box);
+    });
+  }
+  var calls = [];
+  DATA.parts.forEach(function(p){ p.chapters.forEach(function(c){ c.scenes.forEach(function(s){ if(s.call) calls.push(s); }); }); });
+  if(calls.length > 1){
+    var hc = el('h2', null, 'Every scene that needs your call'); hc.id = 'calls'; main.appendChild(hc); jumpTo('Your calls', 'calls');
+    var wrap = el('div', 'tablewrap'), t = el('table');
+    calls.forEach(function(s){
+      var r = el('tr'); var a = el('button', 'btn', s.id); a.type = 'button';
+      a.addEventListener('click', function(){ var x = document.getElementById('s-' + s.id.replace(/\./g, '-')); if(x){ var d = x.closest('details'); if(d) d.open = true; x.scrollIntoView(); } });
+      var c1 = el('td'); c1.appendChild(a); r.appendChild(c1); r.appendChild(td(s.call)); t.appendChild(r);
+    });
+    wrap.appendChild(t); main.appendChild(wrap);
+  }
+  tableSection(main);
+  if(document.getElementById('tables')) jumpTo('Tables', 'tables');
+  var w = el('div', 'wide'); var lab = el('label', null, 'Anything else, about the whole story'); lab.htmlFor = 'note-overall';
+  w.appendChild(lab); w.appendChild(noteBox('overall', 'Overall note')); main.appendChild(w);
+  if(!jump.childNodes.length) jump.remove();
+}
+
+function exportText(){
+  var out = [DATA.title + ': notes', ''], kept = [];
+  function line(id, label){
+    var v = entry(id); if(!v.mark && !v.note) return;
+    if(v.mark === 'keep' && !v.note){ kept.push(label); return; }
+    out.push(label + (v.mark ? ' [' + v.mark + ']' : '') + (v.note ? ': ' + v.note.trim() : ''));
+  }
+  DATA.parts.forEach(function(p){
+    line(p.id, p.short);
+    p.chapters.forEach(function(c){ line(c.id, c.label); c.scenes.forEach(function(s){ line(s.id, s.id); }); });
+  });
+  (DATA.questions || []).forEach(function(q){ line(q.id, q.id); });
+  line('overall', 'Overall');
+  if(kept.length) out.push('', 'Keep: ' + kept.join(', '));
+  if(out.length === 2) out.push('(no marks or notes yet)');
+  return out.join('\n');
+}
+function openSheet(msg){
+  var sh = document.getElementById('sheet'), t = document.getElementById('sheettext');
+  t.value = exportText(); document.getElementById('sheetmsg').textContent = msg; sh.classList.add('open');
+}
+document.getElementById('copy').addEventListener('click', function(){
+  var text = exportText(), done = false;
+  try{
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ openSheet('Copied. Paste it into the thread.'); }, function(){ openSheet('Copying was blocked. Tap Select all, then copy, and paste it into the thread.'); });
+      done = true;
+    }
+  }catch(e){}
+  if(!done) openSheet('Tap Select all, then copy, and paste it into the thread.');
+});
+document.getElementById('sheetselect').addEventListener('click', function(){ var t = document.getElementById('sheettext'); t.focus(); t.select(); try{ t.setSelectionRange(0, t.value.length); }catch(e){} });
+document.getElementById('sheetclose').addEventListener('click', function(){ document.getElementById('sheet').classList.remove('open'); });
+var allOpen = true;
+document.getElementById('toggleall').addEventListener('click', function(){
+  allOpen = !allOpen;
+  Array.prototype.forEach.call(document.querySelectorAll('details.ch'), function(d){ d.open = allOpen; });
+  this.textContent = allOpen ? 'Collapse all' : 'Expand all';
+  if(allOpen) paintAll();
+});
+document.addEventListener('toggle', function(e){ if(e.target && e.target.open) Array.prototype.forEach.call(e.target.querySelectorAll('textarea'), grow); }, true);
+
+loadLocal(); build(); paintAll(); setStatus(); initStore();
+})();
+</script>
+</body>
+</html>
