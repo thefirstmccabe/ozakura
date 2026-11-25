@@ -136,3 +136,8 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Under discussion, recorded as such** (§1, §8): Akane a year behind the leads; the cold open with Akane.
   - **Kōhei's activity level** (§8, §11; author, Nov 2): nothing decided; his view recorded; to discuss.
   - **Note on the Nov 21 entries above:** they were committed as Decided while the author was still deciding (the carry on his back, the looping mirror and the brother were Story's). The corrected version is the Nov 25 cold-open entry; see also production log 11-21.
+- **Nov 25 (author's answers to Story, the same afternoon):**
+  - **Takatsuki keeps all the jobs he took from Ryōsuke** (§1, §6, §8): the taiyaki entrance, the lunch scoring, the kaidan, game night, the suspension. Ryōsuke is a background classmate and class president with no lines in Ch1.
+  - **Rika** (§8): a friend, not one of the core five and not Nanoha's best friend; the gossipy, romance-minded friend who brings romance up with Nanoha, so the confessions talk stays hers.
+  - **Akane is a first-year at their school, a year behind them,** and can eat lunch with them (§8; was third year of middle school). Her uniform, apparent age and the five are Working. Closes the Nov 22–25 "under discussion" item.
+  - **Akane is Nanoha's romantic confidante** (§8; was "plausible"); "I want more Akane."

@@ -1,6 +1,6 @@
 # Handoff to Story: parked decisions, Nov 21–25
 
-**Status (Nov 25, afternoon): Parts A and B are applied** (Story; production log 11-25), except the cast shape for Ch1–3, which waits on the author (the "For Story to work out" list; status board). Part C stays undecided and is recorded in canon as under discussion.
+**Status (Nov 25, afternoon): Parts A and B are applied** (Story; production log 11-25), except the cast shape for Ch1–3, which waits on the author (the "For Story to work out" list; status board). Part C stays undecided and is recorded in canon as under discussion, **except Akane's school year, which the author decided the same afternoon** (a first-year at their school; log 11-25, last row). He also settled the cast shape: Takatsuki keeps Ryōsuke's old jobs; Rika is a friend outside the five; Akane is Nanoha's romantic confidante.
 
 Written Nov 25 by the review thread at the author's go ("you can go ahead and commit"). **Nothing here is in canon, the chapter map, the outlines or the style guide yet.** It exists so these decisions no longer live only in chat text. Story applies it; the next Story thread should be a fresh one (the old thread is at 397 turns).
 

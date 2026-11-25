@@ -181,7 +181,7 @@ Manga Vol. 1 = Prologue + Ch1–2. Ch3 has not been adapted.
 
 **School [P]:**
 - **Ishida Ryōsuke** (was Tokiwa until Nov 1; cut Nov 21, then **kept as a side schoolmate Nov 25**: the class president, no longer the best friend, canon §8): was the best friend. Glasses, go club. Precise and smug. His middle-school science project (he did all of it). Will argue whether a hot dog is a sandwich for 40 minutes (v2: the topic becomes taiyaki, head or tail first; style guide §3b). Calls Kōhei "Fujisawa."
-- **Hoshikawa Rika:** Nanoha's best friend. Art club, no indoor voice, novelty clips (strawberry, star, a frog wearing a crown). Calls Nanoha "Nano-chan."
+- **Hoshikawa Rika:** was Nanoha's best friend; since Nov 25 (author) a friend outside the core five, the gossipy, romance-minded one (canon §8). Art club, no indoor voice, novelty clips (strawberry, star, a frog wearing a crown). Calls Nanoha "Nano-chan."
 - **Ōno-sensei:** 2-B homeroom, classical Japanese. Tall, tired, "born in a cardigan." On screen from v2 (sprite from `inventory/full-ono.png`).
 - **v2 [P]:** there's no Fukuda in 2-B this year, which is how Kōhei knows Nanoha looked for his name before her own (names sort in kana order, so ふくだ sits right above ふじさわ).
 

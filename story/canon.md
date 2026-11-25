@@ -71,7 +71,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 
 **Writing guidance:**
 - **Show more and tell less.** The pilot leaned on narrated explanation, and the longer format gives room to let scenes carry it.
-- **In openings, a fact goes in only if the scene shows it happening.** Save backstory for real scenes. Kōhei's friend arrives mid-argument on screen (Ryōsuke in the built Ch1; given to Takatsuki Nov 21; whose entrance it is after the Nov 25 cast change is open, §8); he isn't introduced by a list of facts about him. (Oct 8; Oct 17, Working [P]: the topic is a Japanese one, taiyaki head or tail first, not the hot-dog debate)
+- **In openings, a fact goes in only if the scene shows it happening.** Save backstory for real scenes. Takatsuki arrives mid-argument on screen (Ryōsuke's in the built Ch1; Takatsuki's since Nov 21, confirmed Nov 25, §8); he isn't introduced by a list of facts about him. (Oct 8; Oct 17, Working [P]: the topic is a Japanese one, taiyaki head or tail first, not the hot-dog debate)
 - **No telegraphic name-tag intros or trait lists** ("Name. Role. Club. Glasses."). People arrive through what they do and say. Narration uses complete sentences by default. (Oct 8)
 - **No manga self-reference.** Characters never compare their own situation to manga. Owning and reading manga is fine. (Oct 8)
 - **Keep the strangeness subtle** across the long runtime, and drip-feed the fairy. (Oct 8)
@@ -245,7 +245,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - **Proposal:** the romcom rivalry runs through summer. The festival, the backyard watermelon and outings get a competitive edge, and the girls' friendship stays sincere.
 - **A real triangle (Decided Oct 18; replaces "the triangle isn't symmetrical"):** Kōhei has real feelings for Natsuki, real but smaller than for Nanoha, and he comes to realize it. Choosing Nanoha is a real choice (the model is Muv-Luv *Extra*'s Sumika route), so the festival chapter (Ch27 since Oct 31) is a decision, not only a realization.
   - **Author's concern (Oct 18):** the triangle is hot from Kōhei's side for a fairly short time; as canon stands he's barely aware until the kiss (Ch19–24 in the Oct 12 map, about six weeks) though the girls compete from June. **Decided Oct 18:** he feels the pull from summer (the festival, sparring, moments he notices and doesn't want to look at) and avoids it rather than missing it. **It's obvious to the reader early that both girls are the love interests and that he likely has feelings for both;** he himself doesn't admit it until late September, when Natsuki nearly accepts someone else's confession and it hurts more than he expected (scene bank 16, now Ch22). Then he has about five weeks with feelings for both before he chooses.
-  - **Natsuki's in-world advocate (Oct 18):** Takatsuki (was Ryōsuke until Nov 21; whether it goes back to him is open since Nov 25, §8) backs her in the lunch scoring; Chie gets more room.
+  - **Natsuki's in-world advocate (Oct 18):** Takatsuki (was Ryōsuke until Nov 21; confirmed Nov 25) backs her in the lunch scoring; Chie gets more room.
   - **Counterweight to Nanoha's flashbacks (Decided Oct 21):** plenty of present-day closeness and compatibility between Natsuki and Kōhei, so readers' wanting holds up even as Nanoha's interiority deepens. **Working:** Natsuki's interludes before Ch20 get equal depth.
 - **What each girl offers him (Decided Oct 21):** it has to be more than kendo.
   - **Nanoha wants to help him carry the load; Natsuki wants him to put it down.** Nanoha has known him through his dad's death; her love is tangled with his grief, and she wants to be needed (§8). Natsuki met him a year after all of it: she's the first person who doesn't handle him carefully. With her he isn't the dutiful son or the boy whose dad died, just sixteen; she drags him to karaoke and horror movies and makes him rest. She doesn't want his help with anything; she just wants him.
@@ -540,7 +540,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Feelings:**
   - She wants Kōhei as a boyfriend and is hurt when their childhood familiarity is treated as permanently nonromantic.
   - She's jealous of Natsuki and sincerely enjoys her company. Her kindness and her unfair feelings coexist.
-  - She has a same-sex best friend and attachments beyond Kōhei.
+  - She has attachments beyond Kōhei: **Akane is her romantic confidante** (Decided Nov 25, author), and Rika is a friend who brings up romance with her (§8, Supporting cast).
   - **She wants to be needed (Decided Oct 21):** to support him and have him rely on her. **Working:** it mirrors Natsuki's wish to be chosen, and it meets Kōhei's flaw head-on, since he won't lean on anyone.
 - **Why she and Natsuki click:** Nanoha remembers small details, follows up and initiates contact, so Natsuki feels welcomed without having to perform.
 - **Supernatural:**
@@ -587,7 +587,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Ending:** she keeps her memories, a future and her friendships. Neither departure nor a replacement boyfriend is required.
 
 ### Fujisawa Akane (redesigned Oct 6)
-- **Basics:** **third year of middle school, 14–15.** The cute, frail little sister.
+- **Basics:** **a first-year at Kōhei and Nanoha's high school, a year behind them** (Decided Nov 25, author; was third year of middle school). The cute, frail little sister. She can eat lunch with them (author). **Working [P]:** about 15 at the start of the year, 16 after her May birthday.
 - **Health:** chronically unwell but normally independent. She attends school, has friends, can stay home alone and helps at home. Unpredictable bad days mean occasional collection, company or changed plans.
   - **No diagnosis in the story (Decided Nov 1, author):** the doctors don't think it's life-threatening and can't find anything structurally wrong, but they don't know what it is. The story doesn't promise the reader she won't die, but it points the reader toward "we aren't planning to kill her": the reader should come away thinking it isn't life-threatening, while Kōhei can't calm down about it because of what happened to his dad. Someone says so plainly (Nanoha at the Ch3 window, as built Nov 2: the clinic, tests twice, nothing found, not dangerous, nobody knows what it is). Symptoms stay consistent.
   - The pilot shows dizzy spells (sitting until it passes) and fatigue.
@@ -600,10 +600,10 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Address:** calls him **"Onii-chan."**
 - **Look:**
   - **Hair:** pale **lavender-silver**, soft and wispy, shoulder length, with a small side clip.
-  - **Face and build:** gray-violet eyes; slightly pale skin with a faint blush; small and slight, with a round, soft face. She reads clearly younger than the high-schoolers.
+  - **Face and build:** gray-violet eyes; slightly pale skin with a faint blush; small and slight, with a round, soft face. She reads younger than the second-years (Working since Nov 25, when she became a first-year at their school; was "clearly younger than the high-schoolers"). Her face and hair don't change [P].
   - **References:** `production/refs/akane-v2/`.
 - **Clothes:**
-  - **School days:** a **sailor uniform** (navy collar with white stripes, red scarf, navy pleated skirt).
+  - **School days:** their high school's uniform since Nov 25 (Working [P]: the same blazer and plaid skirt as Nanoha's, perhaps with a first-year's ribbon color). The **sailor uniform** (navy collar with white stripes, red scarf, navy pleated skirt) was her middle school's, so middle-school flashbacks can still use it.
   - **At home:** cute, youthful clothes such as a cozy cardigan or a bunny-ear hoodie.
 - **Her room:** full of plushies.
   - **Proposal:** years of gifts from Kōhei and Nanoha, plus crane-game prizes, which quietly shows how they look after her.
@@ -612,26 +612,26 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - He accompanies her to appointments sometimes, and worries about being unavailable. Much of the burden is the uncertainty.
   - His overprotection adds unnecessary work: monitoring her, cancelling plans, taking over what she or Nanoha already has covered.
   - **Optional scenes:** answering invitations for her, collecting her early against their agreement, asking Nanoha for excessive updates, finishing a gift she wanted to make, "I told you so." A counterexample to use: he collects her, asks whether she had fun, and accepts her answer.
-- **With others:** friends with Nanoha; a plausible romantic confidante and helper, and **understands Kōhei's romantic situation much better than he does** (reconfirmed Oct 10). She has her own pleasures, privacy and flaws.
+- **With others:** **Nanoha's romantic confidante** (Decided Nov 25, author; was "a plausible romantic confidante"), and she **understands Kōhei's romantic situation much better than he does** (reconfirmed Oct 10). **The author, Nov 25: "I want more Akane."** She has her own pleasures, privacy and flaws.
   - **Proposal:** she's quietly but openly Team Nanoha ("Nanoha-chan made you lunch *again*, Onii-chan") while staying kind to Natsuki. Her teasing shows the reader what Kōhei can't see.
   - **Takatsuki (Decided Nov 25, author):** some mutual interest between them; he starts out dense. A small thread, not the main romance (§8, the Rival).
-- **Under discussion, not decided (author, Nov 22–25):** Akane a year behind the leads, at the same school, so she's with them more ("pretty major change"). Costs raised: the river walk as a two-person ritual; her design, uniform and voice are locked at about 14.
+- **Her school year (Decided Nov 25):** see Basics. **What it touches in the built Ch1–3** (her uniform sprites, the river walk staying two people, her voice's age direction): production log, 11-25.
 - **She survives** the main story.
 - **Birthday:** around May (accepted Oct 12). **Open:** independent interests.
 - **Routine (Ch2 build; folded Oct 31):** on his shift nights her dinner waits in the fridge with a note, and at seven she texts him a photo of the empty container, then a closer one.
 
 ### Supporting cast
 - **Fleshing them out (Decided Oct 31):** not major characters or elaborate backstories, but they appear here and there across the year. **Working:** each gets one interest, one running bit and one moment of depth where they matter for a scene. Kirishima stays just the captain. Same-gender slice-of-life scenes (a girls' sleepover, a guys' game night) are where most of this happens; placements in the chapter map are [P].
-  - **Proposals:** Rika, art club, and a sketchbook whose drawings show what she sees (Nanoha watching Kōhei); Akane, Dad's plants on the balcony (nobody asked her to keep them alive), wanting to do things herself, and one scene where she takes care of her brother; Takatsuki, calligraphy, the game-night rivalry, a scoring rubric for the dueling lunches (as Natsuki's champion), and showing up for Kōhei during the suspension he made him report (Ryōsuke's jobs until Nov 21); Chie, one summer visit.
-- **The core five:** Kōhei, his male best friend (Takatsuki since Nov 21), Nanoha, her female best friend, and Natsuki. Natsuki belonging to the whole group matters. **Open since Nov 25 (for the author):** with Rika stepping back (below), whether she's still Nanoha's best friend and the fifth.
+  - **Proposals:** Rika, art club, and a sketchbook whose drawings show what she sees (Nanoha watching Kōhei); Akane, Dad's plants on the balcony (nobody asked her to keep them alive), wanting to do things herself, and one scene where she takes care of her brother; Takatsuki, calligraphy, the game-night rivalry, a scoring rubric for the dueling lunches (as Natsuki's champion), and showing up for Kōhei during the suspension he made him report (Ryōsuke's jobs until Nov 21; his for good since Nov 25); Chie, one summer visit.
+- **The core five:** Kōhei, his male best friend (Takatsuki since Nov 21), Nanoha, Natsuki, and a fifth. Natsuki belonging to the whole group matters. **Rika is not one of them (author, Nov 25).** **Working (Nov 25, Story's reading of the author's answer):** the fifth is Akane, now a first-year at their school who eats lunch with them; easy to correct.
 - **Kōhei's best friend is the Rival (Decided Nov 21, author):** the two male friends weren't working, so Takatsuki became Kōhei's best friend as well as his rival. This reverses Oct 7's "kept alongside the Rival" (merging was thought to overload one character). On Nov 21 Ryōsuke's jobs moved to Takatsuki (§8, the Rival).
-  - **Working (Nov 25, to confirm with the author):** Takatsuki stays Kōhei's classmate, best friend and rival now that Ryōsuke stays. Which of the jobs he took from Ryōsuke (the taiyaki entrance, the lunch scoring, the summer kaidan, hosting game night, showing up during the suspension) go back to Ryōsuke, if any, is open; the docs keep them with Takatsuki until the author says.
+  - **Decided Nov 25 (author):** Takatsuki stays Kōhei's classmate, best friend and rival, and **keeps all the jobs he took from Ryōsuke** (the taiyaki entrance, the lunch scoring, the summer kaidan, hosting game night, showing up during the suspension).
   - **Function:** confidant and comedy, the comedy coming from his literal, formal seriousness against Kōhei's short, plain replies.
 - **Ryōsuke and Rika step back; they are not cut (Decided Nov 25, author; replaces Nov 21's "Ryōsuke is cut"):** "We'll keep them, we just won't introduce them… in Chapter 1 as obviously major characters. They're just side schoolmates who are there when we need them."
-  - **Ryōsuke** (Ishida Ryōsuke, a pilot name): the glasses-wearing friend; **the class president**, and the third roommate (with Kōhei and Takatsuki) on the Kyoto trip. **[P]:** no clash with Nanoha's clipboard, which was last year's job (assistant to the class representative; pilot-notes §3).
-  - **Rika:** still the one who gets the rules of kendo explained to her (Ch2, scene bank 13f), and the girls' third roommate on the Kyoto trip.
-  - **For the built Ch1–3:** their Ch1 entrances shrink to match (the author approves the shape first; the Production handoff waits on it).
-- **Nanoha's best friend:** close to Nanoha independently, and welcomes Natsuki. Cheerful creative enthusiasm is the pilot's version.
+  - **Ryōsuke** (Ishida Ryōsuke, a pilot name): the glasses-wearing friend; **the class president**, a background classmate with no lines in Ch1 (author, Nov 25), and the third roommate (with Kōhei and Takatsuki) on the Kyoto trip. **[P]:** no clash with Nanoha's clipboard, which was last year's job (assistant to the class representative; pilot-notes §3).
+  - **Rika (author, Nov 25):** a friend, but not one of the core five and not Nanoha's best friend. **She's the gossipy, romance-minded friend who brings these things up with Nanoha,** so the talk about the three first-years Kōhei turned down stays hers (Ch5). Still the one who gets the rules of kendo explained to her (Ch2, scene bank 13f), and the girls' third roommate on the Kyoto trip.
+  - **For the built Ch1–3:** their Ch1 entrances shrink to match (the shape is proposed in scene outline 1.1–1.3 and waits for the author's OK; the Production handoff waits on it).
+- **Nanoha's confidante** is Akane (Decided Nov 25; was "Nanoha's best friend," Rika in the pilot). Rika is the friend who brings romance up with her.
 - **The Rival (Takatsuki in the pilot; redesigned Oct 7):**
   - **Also Kōhei's best friend (Decided Nov 21, author):** a classmate in 2-B as well as a clubmate, friends since first year through kendo [P]. The friction is between friends, which makes it sharper. He has a bigger part across the whole story, starting with the cold open.
   - **His younger sibling (Decided Nov 21, author: the child he protects in the cold open; nothing bad happens to him):** a brother (Working), about eight [P], name [P]; he calls him "Shō-nii" [P]. A brother rather than a sister, so his "Onii-chan" can't be confused with Akane's, and the cast has two little sisters already (Story recommendation). He appears a few times before January (placements [P]). Kōhei already knows Takatsuki's situation; there's no autumn reveal (author, Nov 21; the Proposal is withdrawn). **Under discussion, not decided (Nov 22–25):** no younger sibling, with Akane in the cold open instead (§1).
