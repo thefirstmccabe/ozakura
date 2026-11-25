@@ -69,6 +69,20 @@ The author asked on Nov 22 whether the percentage and balance rules are still ne
 - **For Ch4,** whose outline was approved Oct 24 under the old rules: Story checks it against the three rules once, as part of folding in the Nov 1 handoff.
 - **The number to watch:** Natsuki's support near 40% or better (canon §5, Oct 21).
 
+### 4.7 Humor (author, Nov 24; the prompt and harness details are this thread's proposal [P])
+**Author:** the story needs humor: "If the characters don't talk to each other in humorous ways at times all the dialogue will be unnatural." What fails is the execution: the attempts are "flat or too dry, or too much time is spent for them for the level of the joke," sometimes so dry he can't tell a joke was meant. His example: Ch1's extended bit where Nanoha theorizes that the school conspires to keep them in the same class "didn't work at all. It was just flat"; the current "Rika-chan counts as several" is "more natural." Such a bit "might have worked if it went all in with a full-on manga cutscene in a wacky different art style." No comedic voice acting is needed, and it probably can't be achieved; use the visuals more (and CGs far more than a traditional VN would).
+
+**Why it happens (review thread):** §3b prescribes the dry, extended kind (Nanoha: "committed deadpan bits and elaborate straight-faced theories"); the text is English and the voice Japanese, so a deadpan line has no delivery; and nothing weighs a joke's length against its payoff.
+
+**Proposal [P]:**
+- **Prompt:** a joke gets one line and at most one reply; anything longer has to escalate or reveal character. Humor comes mainly from situation and reaction (teasing, a quick comeback, someone flustered, the reader knowing more than a character). Revisit §3b's humor column with Story.
+- **Legibility:** someone on screen reacts (a laugh, a groan, a retort), or the sprite does.
+- **Harness:** the writer tags each line it means as humor. Readers mark what they took as a joke and whether it landed. Report three things: jokes nobody noticed, jokes noticed that fell flat, and lines spent per joke. A joke that misses is cut, not polished.
+- **Score:** add "failed joke" as a kind when tagging his Ch1–3 items; some filed as "on the nose" or flat are probably this (the baseline caught none of the flat lines).
+- **His A/B:** one scene done with one-liners, with situation and reaction, and as an extended bit.
+- **Visual gags (with a design pass):** one simple gag style for comic inserts and reaction panels. The cost rule applies to pictures too: full gag inserts a few times an arc, small reaction panels often.
+- **Positive examples are scarce:** so far only "Rika-chan counts as several." The author has been asked for two or three more.
+
 ## 5. Story decisions (Story)
 - **Fold in the Nov 1 and Nov 21 handoffs first** (§7). Ch4 shouldn't start on the old rules.
 - **A consequence trace before a plot decision is committed:** every chapter-map row, clue-ledger entry, planned address shift and built line the change touches, as a short list the author sees at decision time.
