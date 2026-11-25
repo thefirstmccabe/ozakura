@@ -1,5 +1,7 @@
 # From Production to Story and Planning: the Ch3 punch list (Nov 21)
 
+**Status (Nov 25): the Story items are done** (scene outline 3.4 and the Ch3 reader target, the chapter map's row 3 and clue ledger, the callback rule in style guide §3b; c3_0328 kept as skill; production log 11-25). **Still open for Planning:** the callback rule in the §9 gates and the cold read.
+
 The author's Ch3 punch list (`reviews/ch3/punch-nov21.md`) was applied on Nov 21. Production changed no canon, outline or process doc. Story and Planning should fold in these three items.
 
 ## 1. Natsuki's camera beat at the tree is cut (author, as a trial)

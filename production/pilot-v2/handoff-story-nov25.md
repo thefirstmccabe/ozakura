@@ -1,5 +1,7 @@
 # Handoff to Story: parked decisions, Nov 21–25
 
+**Status (Nov 25, afternoon): Parts A and B are applied** (Story; production log 11-25), except the cast shape for Ch1–3, which waits on the author (the "For Story to work out" list; status board). Part C stays undecided and is recorded in canon as under discussion.
+
 Written Nov 25 by the review thread at the author's go ("you can go ahead and commit"). **Nothing here is in canon, the chapter map, the outlines or the style guide yet.** It exists so these decisions no longer live only in chat text. Story applies it; the next Story thread should be a fresh one (the old thread is at 397 turns).
 
 **The hold is lifted (Nov 25):** the author called Ch3 good enough for now, which ends his Nov 21 hold in the old Story thread ("Don't commit yet, because chapter 3 is still being worked on"). Story can apply Parts A and B; Part C stays undecided.

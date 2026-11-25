@@ -1,5 +1,7 @@
 # Handoff to Planning (with items for Story and Production): process review, Nov 22
 
+**Status (Nov 25):** §9 steps 1 (Story, Nov 25) and 2 (Planning, Nov 22) are done; the §4.6 rules are in canon §6 and the chapter map. Next is Planning's step 3.
+
 From a review thread on Nov 22. The author asked for an analysis of the whole production process, answered ten questions, and approved the plan below ("Let's do it"). This thread changed no canon, outline, script, prompt or process doc. It wrote this file and a log row.
 
 **Marking:** "Decided" means the author said it on Nov 22. Everything else is this thread's proposal, approved as a plan; the details (names, thresholds, file locations) are **[P]** and Planning's to settle.

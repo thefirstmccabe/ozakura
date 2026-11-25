@@ -177,18 +177,22 @@ Speech rules, not personality summaries; personalities are in canon §8. Address
 - **Japanese words** (Oct 19): name foods and things freely; Production glosses them with translator's notes (style guide §5). Nobody explains their own culture to each other.
 - **Nanoha's height** (Oct 19): one light height beat per chapter at most (Ch1's: the kitchen joke, plus "Chibi"), and never a height claim in a beat a CG shows unless the art shows it.
 - **Narration** (Oct 19): don't repeat a sentence as its own line for emphasis.
+- **Every callback carries its own context (author, Nov 21).** Readers don't come to a chapter with perfect memory of the last one, so a callback to an earlier chapter restates what it calls back to in the line itself. Ch3: "On the bridge, I told you I had a project." / "And you wouldn't say what." (the bare version was "'What is?' And I didn't answer.").
+- **A line has to do a job (author, Nov 25).** A hint is only for a real mystery or major foreshadowing; an ordinary fact is said plainly or left out. Observant little details aren't good writing by themselves: his example was Kōhei noticing Nanoha's sleeve in Akane's photo ("What's the point?"). This isn't a rule about being concise.
+- **Humor (author, Nov 24).** The story needs it: characters who never joke with each other sound unnatural. What fails is execution: jokes that are flat, so dry he can't tell a joke was meant, or that spend too many lines for the size of the joke. Ch1's extended theory that the school conspires to keep Nanoha and Kōhei in one class fell flat; "Rika-chan counts as several" reads natural. A longer bit has to go all in, for example as a manga cutscene in a wacky different art style. No comedic voice acting; use the visuals (and CGs far more than a traditional VN would). How the prompts and checks enforce this is Planning's (`production/pipeline/review/`).
 - **Texting (author, Oct 25):** the girls use emoji often (not every message), along with kaomoji and stickers, as Japanese teens do. **Per character (Story thread):** Natsuki lots, playful, stacked (so a text with none stands out); Rika the most, in strings, plus stickers; Akane cute ones and kaomoji; Chie few and pointed ("AND???" 👀); Nanoha rarely and precisely, one well-chosen emoji (her reserve). The boys almost none; Kōhei a thumbs-up at most. Natsuki's unsent drafts to Chie can read differently for the missing emoji.
 - **Tics to avoid** (found in Ch1): the deadpan "I'm very X" joke across characters (keep "very" rare); narration's "She says it like…" and "the way you…" more than once a chapter; two girls reading Kōhei's face in the same chapter (allowed rarely, when the contrast is the point, as in Ch2: Natsuki sees his red ears, Nanoha numbers a new face; Story thread, Oct 31); American-internet bits that break the translated feel (the hot-dog-is-a-sandwich debate, "sub roll").
 
 | Character | Rhythm | Humor | Dodges feelings by | Never |
 |---|---|---|---|---|
 | **Kōhei** | Short; one sentence, often a fragment | The straight man: literal answers, understatement, mock seriousness; plays along with bits rather than topping them | Going practical (schedules, food), "It's fine," changing the subject; sincere flirting makes him go shorter, not cleverer | Matching a flirt with an equally polished line; speeches about himself; admitting he's tired |
-| **Nanoha (private)** | Measured, precise vocabulary | Committed deadpan bits and elaborate straight-faced theories; keeps score | Hiding inside the bit (Ch1: "If they split us up, I'd have to make new friends. Nobody wants that." / "Least of all the new friends."); a quiet "Mm"; a very specific practical detail | Saying what she wants about Kōhei |
+| **Nanoha (private)** | Measured, precise vocabulary | Committed deadpan one-liners; keeps score. A bit stays short unless it goes all in (author, Nov 24: her extended class-conspiracy theory in Ch1 fell flat; "Rika-chan counts as several" works) | Hiding inside the bit (Ch1: "If they split us up, I'd have to make new friends. Nobody wants that." / "Least of all the new friends."); a quiet "Mm"; a very specific practical detail | Saying what she wants about Kōhei |
 | **Nanoha (public)** | Gentle, polite, a little formal; small hesitations ("Um—", "If you'd like…") | At most one dry understatement | Formality (bravery looks like politeness) | Snark; teasing someone she just met; loud enthusiasm |
 | **Natsuki** | Easy and fast; questions, "Hey," "So," uses names early | Outward: pokes, challenges, teasing by noticing physical details (calluses, posture, which stair squeaks). She asks; Nanoha states | Getting *more* entertaining when hurt; making big invitations sound casual; a laugh to close a moment. When sincere, she goes short and quiet (Ch1: "Six new schools. Every dojo bows the same way."), then closes it with a laugh, and the laugh line comes out of her own history ("Sapporo is four hundred pictures of snow," Ch2; author, Oct 25), not a generic joke | Verdicts and self-labels ("you're fun," "I'm pushy"); Nanoha's dry deadpan; practiced-sounding flirting |
 | **Akane** | Sing-song, younger, exaggerates | Sibling teasing; resists being managed with pouting and cheerful defiance ("Onii-chan, you're hovering again") | A quiet sincere line under the teasing; forced brightness on bad days | Nanoha's mock-formal deadpan; adult wit; sniping |
 | **Mio** | Bossy, little-kid bluntness | A tiny princess giving Kōhei orders ("Kō-nii, sit there"); trash talk and sore losing at fighting games | Changing the game | Sounding older than about 7 |
-| **Rika** | Exclamations, run-ons, topic jumps, nicknames | Enthusiasm and non-sequitur; schemes she thinks are subtle | More volume | Dry understatement (and let her have more than volume: specific obsessions, like the hair clips) |
+| **Rika** (a side schoolmate since Nov 25) | Exclamations, run-ons, topic jumps, nicknames | Enthusiasm and non-sequitur; schemes she thinks are subtle | More volume | Dry understatement (and let her have more than volume: specific obsessions, like the hair clips) |
+| **Ryōsuke** (Ishida; a side schoolmate and the class president since Nov 25) | Measured, complete sentences, structured arguments | Pedantry about trivia, argued with total seriousness, on topics a Japanese teen would pick | Retreating into trivia | Emotional speeches; enthusiasm. **[P]:** keep him off Takatsuki's turf (rules and form, the literal straight face); Story reads that overlap as part of why "the two male friends weren't working" (author, Nov 21). Whether the taiyaki entrance is his again is open (canon §8) |
 | **Takatsuki** | Complete, correct sentences; few contractions; exact kendo vocabulary | Unintentional: dead serious and literal about rules and form. Unlike Kōhei's short, plain straight man, he is formal and complete. **Since Nov 21 he's also the best friend:** he argues trivia with the same seriousness and always has the correct answer (his Ch1 entrance, mid-argument: taiyaki are eaten head first) | Citing form and rules; precise criticism instead of feelings; going quiet. When he finally says something personal it's short and blunt ("You scared her. You scared me too.") | Mocking Kōhei's missed practices; slang; sarcasm |
 | **Kirishima** (captain) | Terse; coaching in single sentences ("You stopped for half a second. Don't.") | Deadpan that lands a beat late; nobody laughs, and he doesn't wait for it | Changing the drill | Speeches; shouting |
 | **Emi** (Nanoha's mother) | Warm, brisk, runs on food | Cheerful bluntness; embarrassing teasing ("Competition, is it?") | Feeding people | Wallowing; lecturing Kōhei. When serious she's blunt and loving ("Your kids just want their mom back.") |
@@ -208,12 +212,13 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 **Self and "you" (Japanese):**
 | Character | "I" | "You" / how they address people |
 |---|---|---|
-| Kōhei | ore | *omae* to Nanoha, Akane, Takatsuki; Natsuki by surname only, never *omae*; casual with the Tachibana adults, polite with teachers and strangers |
+| Kōhei | ore | *omae* to Nanoha, Akane, Takatsuki, Ryōsuke; Natsuki by surname only, never *omae*; casual with the Tachibana adults, polite with teachers and strangers |
 | Nanoha | watashi | Names, never *anata* or *anta*; polite *desu/masu* with strangers |
 | Natsuki | watashi | *kimi* to Kōhei (her signature); names for everyone else |
 | Akane | watashi | Names; "Onii-chan" |
 | Mio | refers to herself as "Mio" (third person) | Orders, names, "Kō-nii" |
 | Rika | atashi | Nicknames |
+| Ryōsuke | ore | Surnames |
 | Takatsuki | boku | Surnames, avoids "you"; one register break to *omae* when he confronts Kōhei about going to the adviser together (Ch20) |
 | Kirishima | ore | Bare surnames |
 | Emi | watashi | Affectionate names |
@@ -233,17 +238,18 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Kōhei ↔ Natsuki | "Mizuno" / "Fujisawa" (she adds *kimi*; a bare surname, where she says "-kun" to other boys). Natsuki asks Nanoha to call her Natsuki on day one, with him sitting right there, and never asks him |
 | Nanoha → Natsuki | "Mizuno-san" → "Natsuki-san" on day one ("I'm working up to it") |
 | Natsuki → Nanoha | "Nanoha" from day one, and she never changes it |
-| Natsuki → Takatsuki / Rika / Akane / Mio | "Takatsuki-kun" / "Rika" / "Akane-chan" / "Mio-chan" |
-| Classmates → Natsuki | **"Nacchan"** by her second day (scene outline 2.1), except Kōhei and Takatsuki, who use "Mizuno" |
+| Natsuki → Ryōsuke / Takatsuki / Rika / Akane / Mio | "Ishida-kun" / "Takatsuki-kun" / "Rika" / "Akane-chan" / "Mio-chan" |
+| Classmates → Natsuki | **"Nacchan"** by her second day (scene outline 2.1), except Kōhei, Ryōsuke and Takatsuki, who use "Mizuno" |
 | Akane → Kōhei / Nanoha / Natsuki | "Onii-chan" / "Nanoha-chan" / "Natsuki-san" |
 | Kōhei → Akane / Mio / Rika | "Akane" / "Mio" / "Hoshikawa" |
-| Nanoha → Rika / Akane / Takatsuki | "Rika-chan" / "Akane-chan" / "Takatsuki-kun" |
+| Nanoha → Rika / Akane / Ryōsuke / Takatsuki | "Rika-chan" / "Akane-chan" / "Ishida-kun" / "Takatsuki-kun" |
 | Mio → Kōhei / Nanoha / Akane / Natsuki | "Kō-nii" / "Onee-chan" / "Akane-nee" / "Natsuki-nee" |
-| Rika → Nanoha / Kōhei / Natsuki / Takatsuki | "Nano-chan" / "Fujisawa-kun" / "Nacchan" / "Takatsuki-kun" |
-| Takatsuki → Nanoha / Natsuki / Rika | "Tachibana" / "Mizuno" / "Hoshikawa" (bare, as in Ch2; inherited from Ryōsuke's row, Nov 21) |
+| Rika → Nanoha / Kōhei / Natsuki / Ryōsuke / Takatsuki | "Nano-chan" / "Fujisawa-kun" / "Nacchan" / "Ishida-kun" / "Takatsuki-kun" |
+| Kōhei ↔ Ryōsuke | "Ishida" / "Fujisawa" |
+| Ryōsuke → Nanoha / Natsuki / Rika | "Tachibana" / "Mizuno" / "Hoshikawa" |
 | Takatsuki's little brother → Takatsuki | "Shō-nii" [P] (Nov 21) |
 | Kōhei ↔ Takatsuki | "Takatsuki" / "Fujisawa" (throughout; their change is in tone, not names) |
-| Takatsuki → Nanoha / Natsuki | "Tachibana-san" / "Mizuno" |
+| Takatsuki → Nanoha / Natsuki / Rika | "Tachibana-san" / "Mizuno" / "Hoshikawa-san" [P] |
 | Club → Kirishima | "Captain" (*shushō*) at practice; "Kirishima-senpai" off the floor |
 | Kirishima → members | Bare surnames |
 | Kōhei → Emi / Kazuo / Genji | "Oba-san" / "Oji-san" / "Ojii-san" |
