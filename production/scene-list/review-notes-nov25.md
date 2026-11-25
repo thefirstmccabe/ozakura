@@ -23,5 +23,22 @@ His marks and notes are saved by the review page (how to read them: `README.md`,
 - **On screen:** a CG of Natsuki scoring in 3.3; a Street Brawlers CG in 3.6; 4.4's memory as manga; 5.5's backyard training maybe as manga; 2.6 stays a still.
 - **5.4** stays: he asked whether it's separate from the meet in Ch12, and it is (a small private warning before the public one).
 
+## Reviewed: Ch7–14 (Nov 25, later)
+
+Everything in Ch7–14 not listed here he marked keep. V1 (the first past-life vignette): "for now yes." 12.7 (Takatsuki made captain): OK.
+
+**Decided by the author:**
+- **Ch8: the dinner moves to summer.** He likes the two girls against Shiina but wants it after the triangle heats up. 8.3 and 8.4 (the dinner and "Point to Tachibana") move to Ch13, right after 13.1, where Kōhei is working beside Shiina every day; the girls have a pact by then and are keeping score. Ch8 keeps Yuzu's arrival (8.1), the Kōhei and Takatsuki scene (the new 8.2: Takatsuki walks him to his shift and hears about the new hire [P]) and the eyes dream (8.5), so it's a short chapter about the two boys. Its title and "What it changes" line need rewriting.
+- **11.4: Natsuki really feels it.** When Nanoha imagines upending the bentō over her head, Natsuki feels something, and it's real, not a gag. That's Natsuki's uncanny beat for Ch11 (the chapter's other one is Kōhei's dream, so the one-girl rule holds).
+- **11.7: a path, not a road.** The dream is the old walk. The present-day scenes (the cold open, Ch37) stay a road.
+- **14.2:** all the girls wear yukata.
+- **14.6** stays as written (it confused him on the page; fine once explained: Chie tells Natsuki that he keeps looking at her but his life is with Nanoha). Make the line plain in Pass 2.
+
+**Manga.** He flagged places for manga that weren't marked, and when told the total: "I'm not worried about the expense. Let's just do this right."
+- **7.3** (why that rabbit) becomes manga. With 4.4, childhood memories are manga as a rule.
+- **9.2–9.3** become one insert, in place of the animation attempt: she hides the umbrella, soaks herself and runs up.
+- **Caution agreed in passing, to settle in Pass 2 or a design pass:** the past-life scenes are manga too, and V1 opens Ch9, so childhood and present-day inserts must look plainly different from those.
+- For scale: Pass 1 marks 27 scene lines as manga, about 14 sequences, 21 of the lines in Ch18–19, Ch32–37 and Ch42–43. The built kendo insert (3 pages, 10 panels) cost roughly $5–6 to generate (an estimate; `production/pilot-v2/ledger.md` doesn't break it out).
+
 ## Not reviewed yet
-Ch7 onward, the whole-story questions and the tables.
+Ch15 onward, the whole-story questions and the tables.
