@@ -84,7 +84,7 @@ No restrictions during Thanksgiving week (project instructions). Otherwise the u
 ## Status (the scene-list thread, Nov 25)
 - **§1 is recorded** in canon, the chapter map, the outline and the speech sheets, with his answers from the thread (production log, 11-25).
 - **Pass 1 is drafted** in `story/scene-list.md` and is with the author. Nothing in it is approved.
-- **His answers to §7 so far:** no best friend is named for Nanoha; the fall rule is out and the legend stays a legend; only Nanoha can get people out (Working); Ch37's motorcycle. **Not answered yet:** how much he wants to originate, whether the January night is the wolf's first appearance, Akane and the walk to school, and where the page may live. All four are on the page as questions.
+- **His answers to §7 so far:** no best friend is named for Nanoha; the fall rule is out and the legend stays a legend; only Nanoha can get people out (Working); Ch37's motorcycle. **Not answered yet:** whether the January night is the wolf's first appearance (Q2 on the page) and Akane and the walk to school (the question under 1.1). He didn't say how much he wanted to originate; he said to draft, so Pass 1 is a full draft for him to react to. He didn't say where the page may live either, so it is private (below).
 
 **The review page [P].** `build_page.py` reads the scene list and writes one HTML file from `page-template.html`:
 
