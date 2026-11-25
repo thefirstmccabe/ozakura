@@ -141,3 +141,4 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **Rika** (§8): a friend, not one of the core five and not Nanoha's best friend; the gossipy, romance-minded friend who brings romance up with Nanoha, so the confessions talk stays hers.
   - **Akane is a first-year at their school, a year behind them,** and can eat lunch with them (§8; was third year of middle school). Her uniform, apparent age and the five are Working. Closes the Nov 22–25 "under discussion" item.
   - **Akane is Nanoha's romantic confidante** (§8; was "plausible"); "I want more Akane."
+  - **Corrected the same afternoon (independent check):** who the fifth of the core five is now, and who Nanoha's best friend is, are Open for the author (not Working); Akane is her *romantic* confidante.
