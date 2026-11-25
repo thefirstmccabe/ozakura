@@ -1,6 +1,6 @@
 # From the Story thread to Production (Nov 21; corrected Nov 25)
 
-**Status (Nov 25, afternoon):** the author answered the cast questions. §1 now waits only on his OK of the outline shape (scene outline 1.1, 1.3 and 4.1–4.2, marked "Proposed Nov 25"), then a settling period of a few days [P; the Nov 22 plan's, waivable by the author] before Production edits the approved chapters. §2 (the cold open) is current, but it's built after Ch4, and the brother's design waits on the sibling question below.
+**Status (Nov 25, afternoon):** the author answered the cast questions. §1 now waits only on his OK of the outline shape (scene outline 1.1, 1.3 and 4.1–4.2, marked "Proposed Nov 25"), then a settling period of a few days [P; the Nov 22 plan's, waivable by the author] before Production edits the approved chapters. §2 (the cold open) is current and built after Ch4. **Nov 25, later (author): Akane is in the cold open with Takatsuki and there is no younger sibling,** so there's no brother to design or voice (§2 below is updated).
 
 Corrected from the Nov 21 version with the old Story thread's pending list and the author's Nov 25 decisions (`handoff-story-nov25.md`, Parts A and B).
 
@@ -18,9 +18,10 @@ Corrected from the Nov 21 version with the old Story thread's pending list and t
 - **Cost estimate:** about $1–2 for Ch1 (two small sprite sets and a few re-voiced lines); the cold-open art later, about $4–6.
 
 ## 2. The cold open (current; build after Ch4)
-- **The new cold open** is a flash-forward to Ch37. The author's staging (Nov 21): their ordinary road home turns into woods; Takatsuki tells his brother to get behind him and draws his shinai from the bag on his shoulder; the eyes show in the mist; the brother is scared and falls, and nothing bad happens to him; the others arrive (voices, flashlights); cut before faces. **There's no carry on his back** (dropped Nov 21). Details and [P] staging: scene outline P.0.
+- **The new cold open** is a flash-forward to Ch37. The author's staging (Nov 21, with Akane in the brother's place since Nov 25): their ordinary road home turns into woods; Takatsuki puts Akane behind him and draws his shinai from the bag on his shoulder; the eyes show in the mist; she goes down, and nothing happens to her; the others arrive (voices, flashlights); cut before faces. **There's no carry on his back** (dropped Nov 21). Details and [P] staging: scene outline P.0.
 - **Animated, or music over CGs: Open** (canon §1). Ask the author when it's built.
-- **Before building:** a winter look for Takatsuki (a face window plus one winter marker, such as a scarf). **Hold the brother's design:** the author is weighing Akane in the woods instead of a younger sibling (under discussion, not decided).
-- **Audio (for the Audio thread when it's built):** a child voice for the brother; the rescuers' voices.
+- **Before building:** a winter look for Takatsuki (a face window plus one winter marker, such as a scarf). **No brother to design (author, Nov 25):** Akane needs a winter look instead (her school uniform under a coat [P]; same face and hair).
+- **Audio (for the Audio thread when it's built):** Akane's and the rescuers' voices; no child voice.
+- **Don't build it yet:** no production past Ch4 starts until the author approves the whole-story scene list (`story/scene-list.md`; brief `production/scene-list/README.md`).
 - **Keep the old cold open in the build until the new one replaces it.** On Oct 20 the author put it back because he wants readers to have one, and a tap skips it once seen.
 - **From Ch4's cold reads on,** the reader packet gives the new cold open as reader-facing prose (no chapter references) in place of the old images. Story writes it.

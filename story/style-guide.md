@@ -248,7 +248,6 @@ Canon §2: honorifics and changes in address matter. This sheet supersedes pilot
 | Rika → Nanoha / Kōhei / Natsuki / Ryōsuke / Takatsuki | "Nano-chan" / "Fujisawa-kun" / "Nacchan" / "Ishida-kun" / "Takatsuki-kun" |
 | Kōhei ↔ Ryōsuke | "Ishida" / "Fujisawa" |
 | Ryōsuke → Nanoha / Natsuki / Rika | "Tachibana" / "Mizuno" / "Hoshikawa" |
-| Takatsuki's little brother → Takatsuki | "Shō-nii" [P] (Nov 21) |
 | Kōhei ↔ Takatsuki | "Takatsuki" / "Fujisawa" (throughout; their change is in tone, not names) |
 | Takatsuki → Nanoha / Natsuki / Rika | "Tachibana-san" / "Mizuno" / "Hoshikawa-san" [P] |
 | Club → Kirishima | "Captain" (*shushō*) at practice; "Kirishima-senpai" off the floor |
