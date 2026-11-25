@@ -1,6 +1,6 @@
 # Handoff to Story and Planning: reader targets loosened, and other author decisions (Nov 1, evening)
 
-**Status (Nov 25): the Story items are done** (canon §6 "Reader targets", §6 and §8 for Dad and Akane, §1 for the prologue; the chapter map's windows are arcs; the Ch4 outline checked; production log 11-25). **Still open for Planning:** style guide §9 step 3 and `production/pipeline/review/cold-reader.md`, and the bigger-chunks question.
+**Status (Nov 25): the Story items are done** (canon §6 "Reader targets", §6 and §8 for Dad and Akane, §8 and §11 for Kōhei's activity level as nothing decided, §1 for the prologue; the chapter map's windows are arcs; the Ch4 outline checked, with rule 2 and the paired interludes flagged for the author; production log 11-25). **Still open for Planning:** style guide §9 step 3 and `production/pipeline/review/cold-reader.md`, and the bigger-chunks question.
 
 From the author's talk with the Production thread about the Ch3 cold read (`reviews/ch3/cold-read-round1.md`). Decided by the author unless marked otherwise. Production changed no canon, outline or process doc; these are for Story and Planning to fold in.
 

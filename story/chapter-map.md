@@ -2,7 +2,7 @@
 
 **What this is:** the chapter-by-chapter plan for the whole story, built from canon (§4 calendar and pacing, §6 plot, §10 scene bank). `canon.md` governs; if they disagree, canon wins and this map gets fixed.
 
-**Status:** first draft, Oct 12; **reworked Oct 18** for the author's Oct 18 decisions (rows, running threads, windows and clue ledger below). Everything here is a **Proposal** (Claude) until the author approves it, except beats canon already decides. Chapter titles are working titles.
+**Status:** first draft, Oct 12; **reworked Oct 18** for the author's Oct 18 decisions (rows, running threads, the reader windows, which became arcs on Nov 1, and the clue ledger below). Everything here is a **Proposal** (Claude) until the author approves it, except beats canon already decides. Chapter titles are working titles.
 
 **Shape:** a ~40-chapter spine (**42 since Oct 18; 44 since Oct 31**) on canon's working allocation (Oct 7; updated Oct 18 and Oct 31): 17 chapters April–August, 5 for the fight and September, 10 for October–December, 11 for January–March, 1 for the aftermath, plus the epilogue. Expandable daily-life chapters can be added later, first in the April–August stretch. **Decided Oct 12:** the 40-chapter spine; chapters run about 4,000–5,000 words where they cover a week or more (roughly 12–15 hours in all); slice-of-life and extra development added as needed.
 
@@ -124,10 +124,10 @@
 | W9 | 36–38 | settled | settled | still asked: did Nanoha's win feel earned? | The last place "the wrong girl won" can be caught |
 | W10 | 39–44 | settled, until the eve reopens it in the worst way (24b) | settled | no longer measured | Dread and stakes; readers fear for the cast, and after 24b for Nanoha |
 
-**Wanting (refined Oct 21, author):** about 40% or better for Natsuki over the long run; a single arc can lean further, because readers naturally favor whichever girl a stretch focuses on. That's expected. The tripwire is Natsuki's support well under 40% across two arcs (Nov 1). **Ending** bands follow canon's "about 50-50, or slightly toward Nanoha." In W7 some readers may pass 70% on the dream woman, as long as nothing confirms it.
+**Wanting (refined Oct 21, author):** about 40% or better for Natsuki over the long run; a single arc can lean further, because readers naturally favor whichever girl a stretch focuses on. That's expected. The tripwire is Natsuki's support well under 40% across two arcs (Nov 1). **Ending** bands follow canon's "about 50-50, or slightly toward Nanoha." W9 is only three chapters; its arc outline may merge it with a neighbor.
 
 ## Clue ledger: who the dream woman is
-Every pointer, so the invariant (nothing confirms her before the bloom) and each arc's budget can be checked at a glance. Shared-past flashbacks are evidence that "Nanoha has this life," not dream clues, so they aren't listed, except where one shows the uncanny (FB1's light).
+Every pointer, so the invariant (nothing confirms her before the bloom) and each arc's budget can be checked at a glance. **Rows written before Nov 1 still pair pointers for balance** (Ch14 and Ch17 give both girls one, and row 17 of the map calls Nanoha's "a pointer to balance the memorial"); each arc outline rechecks its chapters against canon's three writing rules before they're built. Shared-past flashbacks are evidence that "Nanoha has this life," not dream clues, so they aren't listed, except where one shows the uncanny (FB1's light).
 
 | Ch | Toward Natsuki | Toward Nanoha | Neutral |
 |---|---|---|---|
