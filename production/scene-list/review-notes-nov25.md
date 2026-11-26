@@ -65,11 +65,13 @@ Everything in Ch15–21 not listed here he marked keep. He asked for critique of
 - **21.6:** no first ask from Kazuo is shown anywhere ("When did he ask the first time?"). It goes at the gate in 19.7 [P].
 - **15.2** needs art to work: it's already a gag insert, which stays.
 
-**Open after this round:**
-- **V2.** He flagged that it repeats the Ch1 dream. Story recommends cutting it (with 19.2 and the gauze it made three pointers at Natsuki in three chapters). Not confirmed yet.
-- **Ch20's dream** (needed for spacing once the gauze goes). Proposed [P]: the same dream, but the woman is crying, not scolding.
-- **The kiss night** proposal above (19.5–19.7).
-- **16.6:** his note is "Not black." Probably: don't play the dream on a black screen. To confirm.
+**Settled later the same evening (the open items from this round):**
+- **The kiss night is approved as proposed.** Nobody speaks in Ch19. She backs away and he goes; he can't go home to the two windows, so he sits by the river until light, and her text reaches him there ("Let me be the one to tell her"). The chapter opens on his text and closes on hers. Kazuo has waited at the gate all night.
+- **Kazuo at the gate (19.7) is pushier this time.** It isn't his first offer of help: there have been others, probably off screen. So 21.6's "asks again" is right, and 19.7 is the offer he won't let slide. Story's suggestion, to decide in Pass 2: put one earlier offer on screen in a line (5.5, the backyard, where Kōhei brushes it off), so the reader can feel the difference [P].
+- **V2 is cut.** Ch20 keeps a dream for spacing: the same dream, but the woman is crying, not scolding [P].
+- **18.3, added:** the man swings first, but Kōhei does nothing to calm it down and basically escalates.
+- **16.6:** his "Not black" note was a mistake. The scene stays as written.
+- Also agreed: his karaoke anger points outward, and Natsuki asks Nanoha up to the roof on the first day.
 
 ## Not reviewed yet
 Ch22 onward, the whole-story questions and the tables.
