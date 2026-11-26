@@ -40,5 +40,36 @@ Everything in Ch7–14 not listed here he marked keep. V1 (the first past-life v
 - **Caution agreed in passing, to settle in Pass 2 or a design pass:** the past-life scenes are manga too, and V1 opens Ch9, so childhood and present-day inserts must look plainly different from those.
 - For scale: Pass 1 marks 27 scene lines as manga, about 14 sequences, 21 of the lines in Ch18–19, Ch32–37 and Ch42–43. The built kendo insert (3 pages, 10 panels) cost roughly $5–6 to generate (an estimate; `production/pilot-v2/ledger.md` doesn't break it out).
 
+## Reviewed: Ch15–21 (Nov 25, evening)
+
+Everything in Ch15–21 not listed here he marked keep. He asked for critique of his own suggestions, so several of these were settled after pushback.
+
+**Decided by the author:**
+- **17.4: the stone is for both of them.** (Settles canon's Open item on whose memorial it is.) How, as a proposal [P]: she outlived him, raised it for him, and her name was added when she died old. Nothing on it a reader could take as proof. At Obon Natsuki doesn't yet know who she was, so she is weeding her own grave without knowing it.
+- **18.1** (the tournament) becomes manga. With V2 gone it pairs with the street fight: the loss by the rules, then the win without them.
+- **18.2:** the girls know how he's doing, he knows they know, and their pity makes him angrier. A plain internal monologue of anger over his life. Story's guard: the anger points outward (work, money, his mother, no practice); he doesn't know he's dangerous until 18.4.
+- **18.3:** the proposed escalation is approved (words, then a hand on her arm). "There's a sense in which he is a little bit too eager to fight… glad he has an excuse." Shown, not narrated: he steps in faster than he needs to and lets the man swing first [P].
+- **18.6:** blood on his hands too; he's a mess.
+- **18.7:** Takatsuki isn't there for the fight. He runs up as it's ending and tells Kōhei to get the hell away from the scene. (That is what sends Kōhei off alone and to Natsuki's door, and it gives Takatsuki his reason to push the report later.)
+- **19.5:** she backs away, distressed, and asks him to go; her feelings are too mixed up to say anything else. "Let me be the one to tell her" comes later, by text. (This changes a Decided line in canon: it was the one line spoken aloud.)
+- **19.6:** she feels out of control.
+- **19.7:** as drafted it fails: if she sends him away, what has he been doing until dawn? Either he's shown somewhere all night or the scene moves. **Proposed, not answered yet:** nobody speaks in Ch19 at all; he can't go home to the two windows, so he sits by the river until light, and her text arrives there; Kazuo has waited at the gate all night.
+- **20.1:** both of them act strangely from the first day, and Nanoha knows something is up without any gift. Natsuki asks her up to the roof that same day, before she is cornered [Story's addition, not objected to].
+- **20.2: the roof.** His additions: Natsuki says it aloud ("Did you just imagine slapping me?"), because Nanoha's ability is waxing; Nanoha: "You could have any boy in the school. Why does it have to be him?"; Natsuki: "I don't want to win by default." **Settled after discussion:** no red cheek, and it frightens Nanoha instead of getting a laugh; Nanoha stays cold on the roof ("We said fairly," "Natsuki-san"), and Natsuki's line gets no answer. What he wanted her to confide (that she's angriest at herself, because Natsuki can act and she can't) goes to the reader that night and to Natsuki's face in Kyoto (26.5).
+  - **Canon consequence:** §6 and §8 have the slap deniable and the only time her power touches anyone before the climax. With 11.4 real and this spoken aloud, it becomes a ladder (11.4, then 20.2), and those lines need rewriting.
+- **Ch20 gets a new scene:** that night Usagi-san is thrown across her room, and she ugly-cries.
+- **20.6:** the adviser says that next time he'll be expelled from school, and that only his family situation and Takatsuki are saving him.
+- **20.7** stays, reworded (it confused him): suspended from the club, Kōhei gets Takatsuki turning up at the house with his gear to train in the yard anyway.
+- **20.8: the gauze goes** (too obvious a hint).
+- **21.3–21.5 become one manga sequence,** Nanoha's counterpart to Ch19: the night Natsuki held him, and the night Nanoha didn't. **Not wordless** (his correction): hers has her words ("I would do anything"), which suits it, since Ch19 is acting without words and this is words without acting.
+- **21.6:** no first ask from Kazuo is shown anywhere ("When did he ask the first time?"). It goes at the gate in 19.7 [P].
+- **15.2** needs art to work: it's already a gag insert, which stays.
+
+**Open after this round:**
+- **V2.** He flagged that it repeats the Ch1 dream. Story recommends cutting it (with 19.2 and the gauze it made three pointers at Natsuki in three chapters). Not confirmed yet.
+- **Ch20's dream** (needed for spacing once the gauze goes). Proposed [P]: the same dream, but the woman is crying, not scolding.
+- **The kiss night** proposal above (19.5–19.7).
+- **16.6:** his note is "Not black." Probably: don't play the dream on a black screen. To confirm.
+
 ## Not reviewed yet
-Ch15 onward, the whole-story questions and the tables.
+Ch22 onward, the whole-story questions and the tables.
