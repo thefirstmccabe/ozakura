@@ -110,5 +110,33 @@ The author's own additions, with Story's sizing. "Let's go with this for now. We
 - **The motorcycle (Ch37): Kazuo never finds out** (the author, later the same morning, replacing his earlier idea of Kazuo furious and Genji phoning to say they needed to). That version "gives adults too much information about what's going on and raises too many questions of why they can't help." So Kazuo isn't home when they take it, and all that's left is a later "was somebody riding my motorcycle?" that nobody answers. 37.8 changes to match; Mio, who saw everything and named her price (37.5), is why it stays secret.
 - **This settles what the adults know going into the wolf fight: nothing.** Consequences for Pass 2: Akane's collapse in the woods is explained at home as one of her spells; Genji (38.2) answers questions about the customs without being told why they're asking.
 
+## Reviewed: Ch33–44, the epilogue and the whole-story questions (Nov 26, evening)
+
+He has now been through the whole page. Everything in Ch33–41 and Ch44 not listed here he marked keep. **Ch42–43 are not approved: "Needs rework, we will discuss."** Being settled one item at a time in the thread; this section grows as items settle.
+
+**Settled so far:**
+- **Whole-story questions Q1–Q6:** all as Story proposed (keep 44 chapters for now; Ch37 is the first time anyone meets the wolf awake; the winter deaths are strangers; Kōhei's first person plus the girls' interludes, Akane's and Takatsuki's side of the woods; the seven gag inserts; try each animation once).
+- **33.2:** the marriage lasted about a year. No children, and she wasn't pregnant.
+- **33.4** stays (explained: she grieves her husband at the spot where he died while the boy who was him sits beside her alive; he neither speaks for the dead man nor pulls away).
+- **34.6: approved.** What choosing Nanoha again costs him: the dream never comes again. (Settles canon's Open item.)
+- **36.5: approved.** Kōhei asks Takatsuki to walk Akane home.
+- **37.5: Kōhei drives the motorcycle,** objecting the whole way (not Nanoha).
+- **37.7: Takatsuki carries Akane out.**
+- **38.5:** roads and paths.
+- **V4 and 43.2 are cut;** the recall shows them.
+- **39.3: Takatsuki asks Kōhei's permission** before saying anything to Akane, and Kōhei says yes [placement P: around Valentine's]. The White Day ending stays (44.3, approved): no confession, and she doesn't know.
+- **44.2, the argument** (approved once explained): he learns she knew holding the road might kill her and told Natsuki, not him; she points out that deciding alone is what he has done all year.
+- **44.5: Natsuki stays** for third year. (Settles canon's Open item.)
+- **The end credits** carry more stills of their later lives.
+- **E.1: her grandson takes old Natsuki to the old grave** (the stone from 17.4), not to the tree. **The fairy does come to her there,** "because as you're about to die, you also see beings like the fairy. But it's not supposed to be a sad death. It's a good death after a full life."
+- **33.1: an earlier dream of the wedding, with no face or hair showing.** In Kyoto [P]: they pass a real shrine wedding, the bride in a white hood, and that night he dreams one. Then the waking flash at Christmas (31.3), then her face in the recall.
+
+**The fairy (his note on 36.2: she won't feel like an important childhood friend returned if she's only in these scenes; he wants more of her, not less).**
+- **Three stages, agreed.** (1) Childhood, in the Ch4 memory manga: a page of the two of them playing at the shrine, the fairy fully drawn and talking, before she vanishes. (2) Before the bloom she is a light that lives in Nanoha's room and window scenes from Ch9 on; it can't speak but it reacts, and Nanoha says to it what she won't say to people. It fills the Ch13–28 gap (Ch20: after she throws Usagi-san, the rabbit is back on her pillow in the morning; Ch25: on the sill when she opens her window first; Ch26: it can't follow her to Kyoto and is waiting when she gets home). (3) After the bloom she is whole and speaking and is in most of Nanoha's scenes, starting with a reunion in Ch34, in the three days Kōhei stays away. She stays small in Part 5.
+- **At the bloom nothing supernatural happens but the bloom itself.** No fugue, and no "You two, again." That night the other two dream, and Nanoha comes home to find her friend back. (Canon §8's New Year bloom line changes.)
+- **Why she "left" when Nanoha was seven (settles an Open item):** she never left. Small children can see beings like her, and as they grow they stop, whether they like it or not. **She is very old and it doesn't make her sad or lonely; it's just the way it is.** No image of a lonely fairy waiting. It is sad for Nanoha, who then gets to see her again as her gift grows ("…You came back" is wrong, and the fairy can't tell her so). At the end, holding the road spends the gift and Nanoha stops seeing her again, knowing this time that she isn't gone. The same rule is why old Natsuki sees her in the epilogue. Support to check in the Japanese pass: the saying that children belong to the gods until seven; Genji could say it.
+
+**Still to discuss (as of this entry):** the wolf's behavior (his notes on 36.1, 37.3, 38.1 and Part 5: it does sometimes just attack; it should be more aggressive in Ch37); the climax rework (40.1 Kōhei has to strike, he has the real weapon; Nanoha may come along, which leaves Akane with no job; 40.5 changes or goes now that the boys are friends; armor undecided; the sword found sooner, with an odd affinity; what each of them pays; 39.6 what holding the road takes; 43.1; a "42.0" animated cutscene of each one preparing, after the rain lead-in to the church scene in *Cowboy Bebop* episode 5); 44.6 what he writes on the form.
+
 ## Not reviewed yet
-Ch33 onward, the whole-story questions and the tables. He stopped for the night after Ch32 (Nov 25) and will pick it up on Nov 26.
+Nothing: he has been through the whole page. Ch42–43 are reviewed but not approved (above).
