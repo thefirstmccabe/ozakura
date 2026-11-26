@@ -97,5 +97,18 @@ Everything in Ch22–32 not listed here he marked keep (V3 included; 23.3 "lol",
   - **The deer scene, approved** ("I really like the deer idea"): Takatsuki bows to the deer by the guidebook and they bow back only to him, while Kōhei gets mugged for his crackers.
   - The sights carry the triangle instead of pausing it: the kimono day, getting lost with Natsuki and the long steps at dusk with Nanoha each get a real place. Ishida's lecturing and Natsuki's camera supply the talking-about-it.
 
+## The night of the fight, reworked (Nov 26, morning)
+
+The author's own additions, with Story's sizing. "Let's go with this for now. We can always test it more when we do the fuller version." He raised that the night is getting crowded; the answer was to keep each addition small and to leave the weight of accepting help in Ch21.
+
+- **Takatsuki at the Tachibanas' door.** He brings Nanoha home. Her parents know something is wrong at once: it's Takatsuki and not Kōhei, and the two of them are acting strangely. Emi presses him. He assures them their daughter is all right, but says it's Kōhei's story to tell. Kazuo accepts that on one condition: Takatsuki tells them if Kōhei doesn't. Takatsuki: they won't even have to ask again. He knows he should tell the adults and he's loyal to his friend; Kazuo can respect that up to a point. They know they'll get nothing out of Nanoha. Kazuo tells his wife he'll wait for Kōhei to come home.
+  - **A rare Kazuo point of view.** Sized as one scene closing Ch18 (not a chapter), ending with him sitting down at the gate, so the reader knows he's out there through all of Ch19.
+- **The gate at dawn (19.7):** "Are you ready to accept my help now?" / "Yes." / "Then first thing, go get some sleep." Those are the only words spoken in Ch19. The yes at dawn is cheap, because he has nothing left; **the acceptance that costs him stays in Ch21**, where he steps aside and lets Emi go through his mother's door [P]. 21.6 changes to match.
+- **Kōhei tells Kazuo and Emi within a day** (Takatsuki's promise requires it). It opens Ch20 [P], and "I'm not sure I'd have stopped" moves there from 21.6. Kazuo offered help before he knew what Kōhei had done to his daughter; hearing it is the test, and the Ch25 talk is his answer.
+- **His face is a mess** at the start of term, so the school can see he fought and nobody needs to state details. By his return to the club in October (23.1) it has healed.
+- **Genji is Kazuo's father** (new, the author). That puts the lamp custom and the tree in Kazuo's own family.
+- **The motorcycle, later (Ch37–38):** a comic scene of Kazuo absolutely furious that they took it, possibly from his point of view again. Then Genji calls and tells him they needed to. (It's the bike he has been rebuilding all year, so the first time it runs is when his daughter steals it. It grows 37.8 and leads into Genji's scene, 38.2.)
+- **Open, for Pass 2:** what Kazuo and Emi know going into the wolf fight.
+
 ## Not reviewed yet
 Ch33 onward, the whole-story questions and the tables. He stopped for the night after Ch32 (Nov 25) and will pick it up on Nov 26.
