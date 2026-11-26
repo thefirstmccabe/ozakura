@@ -67,11 +67,33 @@ Everything in Ch15–21 not listed here he marked keep. He asked for critique of
 
 **Settled later the same evening (the open items from this round):**
 - **The kiss night is approved as proposed.** Nobody speaks in Ch19. She backs away and he goes; he can't go home to the two windows, so he sits by the river until light, and her text reaches him there ("Let me be the one to tell her"). The chapter opens on his text and closes on hers. Kazuo has waited at the gate all night.
-- **Kazuo at the gate (19.7) is pushier this time.** It isn't his first offer of help: there have been others, probably off screen. So 21.6's "asks again" is right, and 19.7 is the offer he won't let slide. Story's suggestion, to decide in Pass 2: put one earlier offer on screen in a line (5.5, the backyard, where Kōhei brushes it off), so the reader can feel the difference [P].
+- **Kazuo at the gate (19.7) is pushier this time.** It isn't his first offer of help: there have been others, probably off screen. So 21.6's "asks again" is right, and 19.7 is the offer he won't let slide. **Approved:** one earlier offer goes on screen in a line (5.5, the backyard, where Kōhei brushes it off), so the reader can feel the difference.
 - **V2 is cut.** Ch20 keeps a dream for spacing: the same dream, but the woman is crying, not scolding [P].
 - **18.3, added:** the man swings first, but Kōhei does nothing to calm it down and basically escalates.
 - **16.6:** his "Not black" note was a mistake. The scene stays as written.
 - Also agreed: his karaoke anger points outward, and Natsuki asks Nanoha up to the roof on the first day.
 
+## Reviewed: Ch22–32 (Nov 25, night)
+
+Everything in Ch22–32 not listed here he marked keep (V3 included; 23.3 "lol", 30.5 "cute", 26.7: Akane is super happy with the charm).
+
+**Decided by the author:**
+- **The big Kazuo talk moves before the choice.** 29.1–29.3 (the shed, Dad's regret, Kazuo's apology) go to Ch25, the night of Kōhei's first dinner back at the Tachibanas'. (This reverses canon's Oct 24 line that kept the regret and apology for Ch29.) Why it matters: he learns his father regretted the burden before he chooses, so choosing Nanoha reads as love, not duty.
+  - **What Kazuo says** (the author): he has to learn to accept help, and also to take responsibility for the people tied to him. If he'd lost that fight, Nanoha was in danger. Not a pushover, not pacifism, not "only as a last resort": fight when it's right, honorable, and doesn't endanger the person you want to protect. "He has to learn control to be worthy of either girl." Kazuo can be explicit.
+  - Story's additions, agreed: told through Kazuo's own story (the karate club at nineteen) with one explicit line; and the harder point is that he won and she still ended up on the ground. Winning wasn't the job; getting her home was.
+  - **Correction from the author, for canon:** the old life did nothing wrong. The trade was a desperation move and the only one left: he might not have killed it; with great luck he might have killed it and lived; fighting on as he was, both of them were sure to die. What's different now is that he isn't alone.
+- **Ch29's new center: he tells her parents properly.** "When they start dating something more explicit with her parents is warranted." Kōhei says it to Kazuo and Emi at the table he's eaten at for sixteen years [staging P]. 28.2 ("nobody is told") changes to match. 29.4–29.6 stay.
+- **27.4: what she says on the stage** (approved: "that's perfect"). She doesn't confess from the stage. She goes off script, deadpan: she has lived next door to someone her whole life and never told him what that's meant, and she's going to, today. Then she walks off by herself (at fourteen he had to get her off it). It's public and she can't take it back, which is why she does it. He goes to Natsuki first (27.5, approved), then reaches Nanoha before she has to come to him.
+- **27.6:** in her imagination she says it composed; in reality she's a mess and runs into his arms. Manga, in place of the animation attempt. (It flips her pattern: all story her imagination is wild and her reality composed.)
+- **The recall is a dream that night,** not a fugue at the shrine. They sleep after the bloom, dream all of it, and wake knowing. Ch32 ends on the bloom and the fairy's "You two, again"; Natsuki breaks on waking.
+  - **Direction set, details for Pass 2:** he wants the death to play in full in the recall, as a long interlude, "a full chapter, probably," in an elaborate *Vagabond*-style manga. (This reverses canon's "the fatal walk is withheld until the climax.") Story's proposals, not yet settled: an unnumbered interlude chapter between Ch32 and Ch33, so nothing renumbers; the old-life scenes inside the wolf fight (42.2, 42.6, 43.2) shrink to flashes of panels already seen; V4 goes; 33.1–33.2 fold into the interlude; one thing may be held back for the ending (his last word to her). The brush-and-ink look also separates the old life from present-day manga; it's an exception to canon's "inserts are full color" and a design-pass job.
+- **The fairy** doesn't talk with Nanoha before the bloom (she can talk to it without an answer). Its first words are at the bloom. Fine as drafted.
+- **A legend of the tree, told early.** Genji tells it at tea in Ch3, to the new girl: the tree has bloomed out of season, when the town needed protection or to seal and grant a promise. Story's version, taken as agreed unless he says otherwise: it happened once before, not on a cycle (canon has exactly two out-of-season blooms); the town remembers protection, the truth was a promise; at Ch32 the crowd cheers and Genji doesn't. (Another change to the built Ch3.)
+- **23.1:** the reason for his suspension stays confidential. He tells Takatsuki "you were right" in front of the club, and only the five know about what.
+- **26.5:** Nanoha can sense that Natsuki is holding something back, and it can be her gift. **The one-girl's-uncanny-per-chapter rule may bend this late in the story** ("I'm not saying we go nuts, but that rule can be broken there").
+- **Ch30:** by now it's clear to the reader that the past-life woman is Natsuki, and that's fine.
+- **26.6** (Akane's interlude at home) is approved; her second one, at the tree in Ch42, waits until he has read Ch42.
+- **The Kyoto trip goes full.** Real sightseeing the way manga do it: the famous sights shown and talked about, and a silly scene feeding the deer. (The deer are in Nara, the usual day trip on a Kyoto school trip, so the trip gets a Nara day.) Ch26 becomes a long chapter, possibly in two halves; new scenes take letter IDs; the split is a Pass 2 decision.
+
 ## Not reviewed yet
-Ch22 onward, the whole-story questions and the tables.
+Ch33 onward, the whole-story questions and the tables.
