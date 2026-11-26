@@ -94,6 +94,8 @@ Everything in Ch22–32 not listed here he marked keep (V3 included; 23.3 "lol",
 - **Ch30:** by now it's clear to the reader that the past-life woman is Natsuki, and that's fine.
 - **26.6** (Akane's interlude at home) is approved; her second one, at the tree in Ch42, waits until he has read Ch42.
 - **The Kyoto trip goes full.** Real sightseeing the way manga do it: the famous sights shown and talked about, and a silly scene feeding the deer. (The deer are in Nara, the usual day trip on a Kyoto school trip, so the trip gets a Nara day.) Ch26 becomes a long chapter, possibly in two halves; new scenes take letter IDs; the split is a Pass 2 decision.
+  - **The deer scene, approved** ("I really like the deer idea"): Takatsuki bows to the deer by the guidebook and they bow back only to him, while Kōhei gets mugged for his crackers.
+  - The sights carry the triangle instead of pausing it: the kimono day, getting lost with Natsuki and the long steps at dusk with Nanoha each get a real place. Ishida's lecturing and Natsuki's camera supply the talking-about-it.
 
 ## Not reviewed yet
-Ch33 onward, the whole-story questions and the tables.
+Ch33 onward, the whole-story questions and the tables. He stopped for the night after Ch32 (Nov 25) and will pick it up on Nov 26.
