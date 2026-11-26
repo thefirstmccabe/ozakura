@@ -107,8 +107,8 @@ The author's own additions, with Story's sizing. "Let's go with this for now. We
 - **Kōhei tells Kazuo and Emi within a day** (Takatsuki's promise requires it). It opens Ch20 [P], and "I'm not sure I'd have stopped" moves there from 21.6. Kazuo offered help before he knew what Kōhei had done to his daughter; hearing it is the test, and the Ch25 talk is his answer.
 - **His face is a mess** at the start of term, so the school can see he fought and nobody needs to state details. By his return to the club in October (23.1) it has healed.
 - **Genji is Kazuo's father** (new, the author). That puts the lamp custom and the tree in Kazuo's own family.
-- **The motorcycle, later (Ch37–38):** a comic scene of Kazuo absolutely furious that they took it, possibly from his point of view again. Then Genji calls and tells him they needed to. (It's the bike he has been rebuilding all year, so the first time it runs is when his daughter steals it. It grows 37.8 and leads into Genji's scene, 38.2.)
-- **Open, for Pass 2:** what Kazuo and Emi know going into the wolf fight.
+- **The motorcycle (Ch37): Kazuo never finds out** (the author, later the same morning, replacing his earlier idea of Kazuo furious and Genji phoning to say they needed to). That version "gives adults too much information about what's going on and raises too many questions of why they can't help." So Kazuo isn't home when they take it, and all that's left is a later "was somebody riding my motorcycle?" that nobody answers. 37.8 changes to match; Mio, who saw everything and named her price (37.5), is why it stays secret.
+- **This settles what the adults know going into the wolf fight: nothing.** Consequences for Pass 2: Akane's collapse in the woods is explained at home as one of her spells; Genji (38.2) answers questions about the customs without being told why they're asking.
 
 ## Not reviewed yet
 Ch33 onward, the whole-story questions and the tables. He stopped for the night after Ch32 (Nov 25) and will pick it up on Nov 26.
