@@ -278,3 +278,14 @@ Answers his notes on 20.0 (tell only Kazuo), 23.4 (he can work a bit less) and C
 - 42.4: Akane's interlude moves up to right after the four walk in, so the fight runs unbroken.
 - Still open by his choice: 44.6, what he writes on the form.
 **The road in Chapter 0 and the loop (his question):** the walk to school runs along the river, so where is a mountain road? The pilot notes already put the bridge "between the station and his hill": the river path is the flat part and the last stretch climbs to the two houses. That last stretch is the one-lane road, wooded, with curve mirrors at the bends. No need for them to be coming from somewhere else (his fallback). It is the same hill as the tree, which fits the old life (they circled the tree) and the fight ending where the road lets out.
+
+### Point of view (rules agreed Nov 27, with the author's two corrections)
+He wants point of view decided on every scene before the long pass, and expects more non-Kōhei scenes than planned, Nanoha's especially ("I think that's fine"). The list's current "whose" tags say whom a scene favors, not whose eyes we are behind, so the next revision marks the real thing on every scene, with a filter on the page.
+1. **Default:** Kōhei, first person, present tense.
+2. **Nanoha and Natsuki:** third-person interludes, when he isn't there or the point is what she thinks.
+3. **Natsuki from summer until the girls' talk:** outside only (what she does, not what she thinks), so that talk isn't a cheat. The transfer is shown the same way (boxes, Chie's question).
+4. **Rare others, each named:** Takatsuki (the loop; the permission scene, 39.3), Akane (the week he is in Kyoto; the wait at the tree), Kazuo (the night of the fight). Nobody else.
+5. **Imagined scenes** are always Nanoha's.
+6. **The dream (corrected by the author):** the wedding has to be through his eyes, "because we want to see the bride." Story had given it to her. The dream is manga, so it has no single point of view: the camera is on the bride at the wedding (his view), on him training (hers), and outside both for the fight and the promise.
+7. **Two marks per scene, not one (from his second point):** how it is shown (sprites and text, CG, manga, animation) and whose head we are in, which can be nobody's. "Maybe there isn't just one perspective, as in a manga": a manga sequence is free to move between people. Words over it can still belong to one person (Nanoha's kitchen table, in her words).
+8. **An audit while marking (his point):** "action or group scenes where something is physically occurring and we want to show it. That's where we need CG or manga." Any scene whose point is something physically happening (a fight, a crowd, physical comedy, a group all doing something) gets CG or manga, or is flagged for him if it has neither.
