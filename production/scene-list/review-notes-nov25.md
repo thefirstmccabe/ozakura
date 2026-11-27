@@ -193,7 +193,7 @@ The author went over the revised list (his notes are in the revised page's datab
 - **Follows from it, to apply in the next revision:** R.7 ends on the promise and the bloom, with nothing held back; 43.6 goes and Ch43 needs a new title; canon §5's two-halves proposal is replaced; Natsuki's third beat is reworded (her full life is her own choice, not his dying wish); the eve-of-battle note loses its "Live" clause; canon's "April transfer = she finds him" is reworded (the finding is his, at the bloom); §11's "whether his last word is held back" closes.
 - **Story's proposals, not yet answered:** her line "I'll wait. Don't be late." [P]; the promise is spent in this life (he found her, late), so Nanoha is never the interim choice; "You're late" gets its last use in the grief chapter (Ch33); the period saying that husband and wife are bound for two lives as the form of the vow.
 
-### Raised by Story on Nov 27, still to discuss
+### Raised by Story on Nov 27 (all since settled, below; the January braid in the first bullet was superseded by the December order)
 - Braid Part 5 (the looping road is how they learn the wolf exists; the girls' talk moves after the body and the fairy's warning; Natsuki isn't at the rescue).
 - The first kiss: an almost-kiss at Christmas broken by the white hood; the real one in Ch34.
 - Kōhei wants the late-summer tournament from Golden Week on.
@@ -289,3 +289,6 @@ He wants point of view decided on every scene before the long pass, and expects 
 6. **The dream (corrected by the author):** the wedding has to be through his eyes, "because we want to see the bride." Story had given it to her. The dream is manga, so it has no single point of view: the camera is on the bride at the wedding (his view), on him training (hers), and outside both for the fight and the promise.
 7. **Two marks per scene, not one (from his second point):** how it is shown (sprites and text, CG, manga, animation) and whose head we are in, which can be nobody's. "Maybe there isn't just one perspective, as in a manga": a manga sequence is free to move between people. Words over it can still belong to one person (Nanoha's kitchen table, in her words).
 8. **An audit while marking (his point):** "action or group scenes where something is physically occurring and we want to show it. That's where we need CG or manga." Any scene whose point is something physically happening (a fight, a crowd, physical comedy, a group all doing something) gets CG or manga, or is flagged for him if it has neither.
+
+### Handover (Nov 27, evening)
+The author asked for a handover so a fresh thread applies this round: `production/scene-list/handover-nov27.md`. Nothing above from Nov 27 is applied to the scene list or canon yet.
