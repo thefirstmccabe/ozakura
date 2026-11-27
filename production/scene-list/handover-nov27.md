@@ -83,13 +83,16 @@ Details, his words and the reasons are in the notes under the same headings.
 
 ## Canon edits this implies
 Read each section in full first; never turn an Open item into a fact; add a line to `canon-revisions.md` for each.
-- **§1:** the cold open is a December evening on the one-lane road up his hill, flashing forward to the new loop chapter.
-- **§2:** the point-of-view line (Decided Nov 26) gains the rules; kendo's "tournament arcs dropped" gains its one exception.
+- **§1:** the cold open is a December evening on the one-lane road up his hill, flashing forward to the new loop chapter; the genre note that says the Ch20 roof "names it aloud"; kendo's "tournament arcs dropped" gains its one exception.
+- **§2:** the point-of-view line (Decided Nov 26) gains the rules.
 - **§5:** the promise (the "two halves" proposal replaced); the optional coda retired; the stone unexplained; "she finds him" in the three beats reworded; the third beat reworded (her full life is her own choice).
-- **§6:** the imagined slap (the Nov 25 "says it aloud" reversed); the recall (ends at the bloom; nothing held back); the eve of the battle (the "Live" clause; Nanoha tells her to stay); Kazuo's first talk (alone; the apology); the first kiss; the tournament; the threat's timeline (the first encounter in December; the body in January stands); "no corpse" gains the moment of the plain wolf.
+- **§6:** the imagined slap (the Nov 25 "says it aloud" reversed); the recall (ends at the bloom; nothing held back); Kazuo's first talk (alone; the apology); the first kiss; the tournament; the threat's timeline (the first encounter in December; the body in January stands); "no corpse" gains the moment of the plain wolf.
 - **§7:** Natsuki's ending (the transfer, the photograph).
-- **§8:** Kōhei ("how active he is": one want in the first half); Natsuki (her mother; the transfer); Nanoha's ability ladder (she finds a road in December, before her friend can talk; the Ch20 rung without the line).
+- **§8:** Kōhei ("how active he is": one want in the first half); Natsuki (her mother; the transfer); Nanoha's ability ladder (she finds a road in December, before her friend can talk; the Ch20 rung without the line); the fairy's stages (a light at the December rescue).
+- **§10 (scene bank):** item 22 (the farewell); the optional coda at item 24 retired; 24a, the night before the battle (the "Live" clause goes); 24b (Nanoha tells her to stay).
 - **§11:** close "whether his last word is held back"; keep the form, the preparing sequence and the recall's length open.
+
+Section numbers were checked against canon's headings on Nov 27; line-level placement is yours to confirm by reading each section.
 
 ## Proposed by Story and not answered: do not treat as decided
 Mark these [P] in the list and ask him on the page.
