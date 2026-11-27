@@ -164,4 +164,4 @@ Moved out of `story/canon.md` on Oct 19 so the bible is shorter to read. **When 
   - **The ending** (§7): **Natsuki stays** (closes the Open item); the epilogue moves to the old grave, with her grandson and the fairy; end credits with stills of their later lives.
   - **Characters** (§8): Kōhei half-knows how Nanoha feels; the future-plans form as the frame for his goal (what he writes stays Open); Mio asks the Ch4 question; Genji is Kazuo's father; Akane's crush predates the story, the manager job is approved, Takatsuki asks Kōhei's permission and there is no confession; the boys go back to middle school [P]; **the fairy never left** (closes why she vanished), with more of her in three stages.
   - **§11:** the Open list is updated to match.
-
+  - **Later on Nov 26 (author):** in winter the whole group can see the fairy; Oct 10's Jan–Mar line is confirmed over Story's "only Nanoha" option (§8).

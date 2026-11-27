@@ -176,5 +176,8 @@ He has now been through the whole page. Everything in Ch33–41 and Ch44 not lis
 - **40.5, the "trust" exchange:** he leans toward cutting it now that the boys are friends. Story's view, given Nov 26: cut it as an exchange, and keep Takatsuki's one line ("let me do my part, keep your head, and not die") said in passing inside 40.2. He didn't object when told this would be done unless he said otherwise (Nov 26).
 - **44.6, what he writes on the form: left open** ("I can't decide"). Story's proposal on the table: university, to teach, with kendo (it grows from 24.2 and 24.5). Until he decides, we see him write and don't see what.
 
+## After the revision (Nov 26, late evening)
+- **In winter they can all see the fairy** (the author: "My head canon was 3, they can all see her"). Canon's Oct 10 line stands: visible to the whole group from January, Takatsuki after his trap. Story had offered "only Nanoha ever sees her" and he chose against it. So with the tree awake after the bloom the group sees and hears her until the wolf is dead, and the rule about small children and the very old is for ordinary times. 36.2 stays as written.
+
 ## Not reviewed yet
 Nothing: he has been through the whole page. Ch42–43 are reviewed but not approved (above).
