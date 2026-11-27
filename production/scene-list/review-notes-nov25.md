@@ -165,10 +165,16 @@ He has now been through the whole page. Everything in Ch33–41 and Ch44 not lis
 - **It puts a clock on the fight:** holding it burns her gift, and when the gift is gone the trap ends. When she falters the lamp dips and the wolf surges, so Akane keeping her upright matters second by second.
 - **39.6, what it takes:** the gift. **And Nanoha knows it could kill her; that's not a guess** (the author). The fairy tells her plainly. No more discussion needed for this pass.
 
+**Simplified by the author later the same evening (this overrides the points above where they differ):**
+- **Principle: "We're not Brandon Sanderson. We don't need perfect mechanics here."** The magic stays loose. All the reader needs is that Nanoha's power weakens the wolf and that using it costs her.
+- **Nanoha goes in and works her magic.** No clock, and nothing about the lamp dipping. "If the wolf seems stronger than them, she's going to use more power. That's going to weaken her or eventually kill her." So every step is her choice: when Takatsuki goes down and Kōhei starts losing, she spends more, past what she can afford. What it costs her in the end is the gift. (The lamp itself, as the thing she carries in, is Story's staging [P]; no rule hangs on it.)
+- **Akane stays out of the fight** ("I think maybe Akane stays out. It's all a little too much"). Story's tender, stopwatch and "makes the call" idea is dropped. Her part [P]: she waits at the tree, where the road lets out (her interlude, 42.4, as first drafted); she is the only one standing when they come out, so she does the first aid, makes the call and has the story ready for the adults, who know nothing; and she gets under Nanoha's arm with "We're just stopping for a rest" (43.8). It reverses Ch37, where Takatsuki carried her out.
+- Natsuki still guards Nanoha until Nanoha sends her after Kōhei; the rest of the reworked fight stands.
+
 **Left for later, by his choice:**
 - **A "42.0" animated sequence of each of them preparing,** before the walk, heavily inspired by the rain lead-in to the church scene in *Cowboy Bebop* episode 5. He'll come back to it; not much is needed now. (It could be built the way the opening credits are: stills and short clips cut to music.)
-- **40.5, the "trust" exchange:** he leans toward cutting it now that the boys are friends. Story's view, given Nov 26: cut it as an exchange, and keep Takatsuki's one line ("let me do my part, keep your head, and not die") said in passing inside 40.2. Awaiting his word.
-- **44.6, what he writes on the form:** he asked what Story thinks. Proposal given Nov 26: show it. In Ch5 he wrote "work"; here he writes university, to teach, with kendo (it grows from 24.2 and 24.5, where he turns out to be good at teaching it). Awaiting his word.
+- **40.5, the "trust" exchange:** he leans toward cutting it now that the boys are friends. Story's view, given Nov 26: cut it as an exchange, and keep Takatsuki's one line ("let me do my part, keep your head, and not die") said in passing inside 40.2. He didn't object when told this would be done unless he said otherwise (Nov 26).
+- **44.6, what he writes on the form: left open** ("I can't decide"). Story's proposal on the table: university, to teach, with kendo (it grows from 24.2 and 24.5). Until he decides, we see him write and don't see what.
 
 ## Not reviewed yet
 Nothing: he has been through the whole page. Ch42–43 are reviewed but not approved (above).
