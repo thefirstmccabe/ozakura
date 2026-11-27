@@ -231,3 +231,4 @@ The author went over the revised list (his notes are in the revised page's datab
 - **Where it lands [P]:** said aloud once at Golden Week (around 5.4); sharpened after "That wasn't kendo" (12.5) into wanting to fight it clean; a shift costs him a practice in early August; 17.6 and 18.1 as written; the ban until April (20.6) and the autumn tournament he watches (Ch24) then cost more.
 - **Story's proposal, not yet answered [P]:** why this one: he missed it last year, the summer after his father died.
 - **Flagged:** the list has three competitions (the summer meet, this one, the autumn tournament) against canon's "one or two at most." Left as is unless he says otherwise.
+- **Later the same exchange (author):** not Story's reason. The late-summer tournament is the qualifier for regionals ("something like that"), and the autumn one Natsuki does well in (Ch24) is regionals.
