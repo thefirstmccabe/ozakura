@@ -74,6 +74,8 @@ summary .tally{margin-left:auto;color:var(--soft);font-size:14px;font-variant-nu
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip.rev{color:#1b1f29}}
 body.only-changed .scene:not(.changed){display:none}
 body.only-changed details.ch:not(.haschanged){display:none}
+.chg{grid-column:2;margin:0;padding:2px 10px;border-left:3px solid var(--accent);font-size:16px;color:var(--soft)}
+.chg b{color:var(--accent)}
 .whatchanged{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
 .whatchanged summary{font-weight:700;cursor:pointer;min-height:32px}
 .whatchanged ul{margin:8px 0 4px;padding-left:20px}
@@ -115,7 +117,7 @@ h3{font-size:17px;margin:8px 0 0}
 @media (max-width:480px){
   body{font-size:16px}
   .scene{grid-template-columns:1fr}
-  .chips,.call,.react{grid-column:1}
+  .chips,.call,.chg,.react{grid-column:1}
 }
 @media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
 </style>
@@ -268,6 +270,7 @@ function sceneRow(s){
   if(s.tags && s.tags.indexOf('Rev') >= 0) row.className += ' changed';
   row.appendChild(el('div', 'id', s.id));
   var p = el('p', 'txt'); p.appendChild(el('b', null, s.title + '. ')); p.appendChild(document.createTextNode(s.line)); row.appendChild(p);
+  if(s.changed){ var g = el('p', 'chg'); g.appendChild(el('b', null, 'What changed: ')); g.appendChild(document.createTextNode(s.changed)); row.appendChild(g); }
   if(s.tags && s.tags.length) row.appendChild(chipsFor(s.tags));
   if(s.call){ var c = el('p', 'call'); c.appendChild(el('b', null, 'Your call: ')); c.appendChild(document.createTextNode(s.call)); row.appendChild(c); }
   var r = el('div', 'react'); r.appendChild(markButtons(s.id)); r.appendChild(noteBox(s.id, s.call ? 'Your answer or a note' : 'Note'));

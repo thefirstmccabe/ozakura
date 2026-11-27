@@ -24,7 +24,8 @@ Scene-list shape (see the top of story/scene-list.md):
 
 A chapter heading is "### Ch N — Title", "### Interlude — Title" or "### Epilogue — Title".
 An optional "## What changed in this revision" section (a bullet list) is shown on the page,
-and scenes tagged Rev get a "changed" mark and a "Changed only" filter.
+and scenes tagged Rev get a "changed" mark and a "Changed only" filter. Under such a scene,
+an indented "- *Changed:* a few words" line says what changed; the page shows it in line.
 """
 import json
 import re
@@ -44,6 +45,7 @@ META = re.compile(r"^\*(When: .+)\*$")
 CHANGES = re.compile(r"^\*\*Changes:\*\* (.+)$")
 SCENE = re.compile(r"^- \*\*(\S+) (.+?)\.\*\* (.+?)(?: \*\(([^()]*)\)\*)?$")
 CALL = re.compile(r"^\s+- \*Your call:\* (.+)$")
+CHANGED = re.compile(r"^\s+- \*Changed:\* (.+)$")
 QUESTION = re.compile(r"^- \*\*(Q\d+)\.\*\* (.+?)(?: \*\(What I'd do: (.+)\)\*)?$")
 
 
@@ -141,12 +143,16 @@ def parse(text):
                 if base in SCREEN:
                     k = int(t[3:]) if t.startswith("CG×") else 1
                     chap["counts"][base] = chap["counts"].get(base, 0) + k
-            scene = {"id": m.group(1), "title": m.group(2), "line": m.group(3), "tags": tags, "call": ""}
+            scene = {"id": m.group(1), "title": m.group(2), "line": m.group(3), "tags": tags, "call": "", "changed": ""}
             chap["scenes"].append(scene)
             continue
         m = CALL.match(raw)
         if m and scene is not None:
             scene["call"] = m.group(1)
+            continue
+        m = CHANGED.match(raw)
+        if m and scene is not None:
+            scene["changed"] = m.group(1)
             continue
         if line.startswith("- ") or line.startswith("  - "):
             problems.append(f"line {n}: list item not in shape: {line[:70]}")

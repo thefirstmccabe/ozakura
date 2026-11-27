@@ -9,6 +9,7 @@
 - **The italic line under each chapter:** when it happens; whose chapter it is (Nanoha's, Natsuki's, shared or neither); how much present-day closeness Natsuki and Kōhei get (none, light, strong); who is in it (K Kōhei, Na Nanoha, Nt Natsuki, T Takatsuki, A Akane, then side cast); and any uncanny or dread beat with its owner.
 - **Tags at the end of a scene,** in this order: whose scene (Nanoha or Natsuki; none means neither); how it's shown if not plain sprites (CG, CG×2, insert = manga, gag = gag manga in a different art style, still = living still, anim = a short animation attempt, imagined = an imagined scene, ink = the old life's brush-and-ink manga, song = a music sequence); threads (comic, dread, A+T = Akane and Takatsuki, family, kendo, uncanny); the source; and Rev on anything changed or added in this revision.
 - **Sources:** Built (in the built Ch1–3), D (decided by the author or in canon as Decided), SB and a number (canon's scene bank), Map (the chapter map's proposal), **P (invented by this thread)**. D and P together means he decided the beat and the staging is this thread's.
+- **"Changed"** under a scene says in a few words what changed in this revision.
 - **"Your call"** under a scene is a question only the author can answer. Open items in canon are proposed here, never settled.
 - **What manga is used for** (from the review): fights and matches; the old life; a few long wordless or near-wordless sequences (the kiss night, Nanoha's kitchen table, her answer at the festival); childhood memories; and silent physical comedy sprites can't do (the umbrella).
 - **The fairy** is in the story at three levels: fully drawn in Nanoha's childhood memories; a light that lives in Nanoha's room and window scenes from Ch9 until the bloom; whole and talking after it.
@@ -21,12 +22,15 @@ It opens in the winter to come (Chapter 0), then the opening credits, then April
 *When: a January dusk to come · Whose: neither · Closeness: none · Cast: T, A · Uncanny: Reader: the road turns to woods, and the eyes*
 **Changes:** The reader sees where winter is going before the story starts, and the credits promise both stories.
 - **P.0 Chapter 0.** A January evening to come: Takatsuki walking Akane home, the two of them talking. Then the same mirror comes round again, the road is woods, his shinai is out and there are eyes in the mist. Her legs give out. Voices, flashlights, cut to black. Most likely a color manga sequence with sound. *(insert · anim · dread · D · P · Rev)*
+  - *Changed:* Now a real scene, Chapter 0, most likely manga, not three CGs.
 - **P.1 Opening credits.** A song over stills and short clips, cut fast: all five, both girls at equal weight, nothing that shows who the woman in the dream is. It ends on new title art (all five, with some dread in it) and holds there with one button to begin. First visit: a bare start screen, Chapter 0, the credits, the title. Later visits open on the title. *(anim · song · D · Rev)*
+  - *Changed:* New: opening credits with a song, then the new title art.
 
 ### Ch 1 — The House Next Door
 *When: Mon Apr 7 · Whose: shared · Closeness: light · Cast: K, Na, Nt, T, A, Rika · Uncanny: Natsuki: her falter and his grip on the pen; Kōhei: the dream of her*
 **Changes:** Natsuki arrives, the two of them react and neither says why, and the reader has already seen where winter is going.
 - **1.1 Morning.** The 5:40 alarm, two lunches, Mom's closed door; Nanoha walks in with her mother's food; Akane, in their school's uniform now, sends the two of them on ahead. Emi goes to Akane's entrance ceremony in Mom's place. *(Nanoha · family · Built · D · Rev)*
+  - *Changed:* Added: Emi goes to Akane's entrance ceremony.
 - **1.2 River walk.** Just the two of them; she fixes his collar. *(Nanoha · CG · Built)*
 - **1.3 Class lists.** 2-B again. Rika's tackle and one line of gossip; Takatsuki arrives mid-argument about which end of a taiyaki you eat first. *(comic · Built · D)*
 - **1.4 Natsuki's introduction.** Her grin stutters when she sees him; he grips his pen until it hurts. *(Natsuki · CG · uncanny · Built)*
@@ -53,18 +57,27 @@ It opens in the winter to come (Chapter 0), then the opening credits, then April
 **Changes:** Nanoha is shown as the person who already shares his load, Natsuki as the one who gets him to put it down, and the tree gets its legend.
 - **3.1 Home after ten.** He gets home from his shift to find Nanoha on the floor with his manga and Akane half asleep: she got dizzy and texted Nanoha, not him. *(Nanoha · family · Built)*
 - **3.2 The window talk.** Across the three-foot gap: Usagi-san's time-out, "You're not the only person who loves her," and Nanoha simply tells him Natsuki is coming on Saturday. *(Nanoha · CG · Built · D · Rev)*
+  - *Changed:* The unspoken Saturday is gone. Nanoha just tells him.
 - **3.3 Saturday practice and the walk up.** She reads him in sparring and he can't read her, and she takes a clean point off him; on the shrine steps she catches him mid-laugh on camera. *(Natsuki · CG · kendo · Built · D · Rev)*
+  - *Changed:* Added a CG of Natsuki taking a point.
 - **3.4 The Great Cherry.** Under the tree, for a split second, it stands in snow. He definitely sees it. It isn't clear whether the girls do, and nobody says anything. *(CG · uncanny · Built · D · Rev)*
+  - *Changed:* Now a flash of the tree in snow. The light moved to Ch4.
 - **3.5 Tea and the steps.** Over tea Genji tells the new girl the tree's legend: it bloomed once in winter, the year something came down from the hills, and the town says it blooms when it needs protecting. On the steps he stumbles and says "Just stopping for a rest," Nanoha says it with him, and nobody explains. She asks Natsuki to lunch. *(dread · Built · D · Rev)*
+  - *Changed:* Added: Genji tells the tree's legend at tea.
 - **3.6 Lunch at the Tachibanas'.** The whole table over Emi's mountain of food; Mio orders Kōhei around and loses to Natsuki at Street Brawlers. *(CG×2 · comic · family · Built · D · Rev)*
+  - *Changed:* Added a Street Brawlers CG.
 
 ### Ch 4 — The Light at Her Window
 *When: Sun Apr 13 – Mon Apr 14 · Whose: Nanoha · Closeness: light · Cast: K, Na, Nt, T, A, Mio, Genji, Chie, Fairy · Uncanny: Nanoha: the light at her window, and who it was; Town: thanking the path home*
 **Changes:** Mio asks the question nobody else will, Nanoha is stung by how fast he answers, and we see when Nanoha fell for him.
 - **4.1 Group study.** Natsuki's first time in his house: Nanoha knows where the cups go; Takatsuki grades everyone's study method. Akane, who has had a crush on him for years, argues her grade like the old friend she is and then loses her words when he praises it. "You worked a shift. Sit." *(Natsuki · comic · A+T · D · Rev)*
+  - *Changed:* Akane's crush predates this. She short-circuits when he praises her.
 - **4.2 Mio asks.** Mio, tagging along: "Kō-nii, when are you marrying Onee-chan?" His "We're not" comes too fast. Natsuki already knew they weren't dating; what she learns is how fast he says it and what it does to Nanoha, which only she sees. *(Nanoha · comic · D · Rev)*
+  - *Changed:* Mio asks, not Natsuki, who already knew.
 - **4.3 Interlude: Natsuki.** Leaving at dusk she photographs the two lit windows. Her text to Chie isn't about whether he's taken. It's about how fast he said it. *(Natsuki · CG · D · Rev)*
+  - *Changed:* The text to Chie changed, since she already knew.
 - **4.4 Interlude: Nanoha, and the light.** Usagi-san faces the wall. A point of light is at her window: "…You came back." Then the memory, as manga: a small Nanoha and her friend playing at the shrine, the friend fully drawn and talking; at seven the friend is gone, and only Kōhei believes her and leaves cookies out with her for weeks. *(Nanoha · insert · CG · uncanny · D · Rev)*
+  - *Changed:* The light comes here now. The memory is manga and shows the fairy.
 - **4.5 Monday practice.** Kōhei lands something no textbook allows. Takatsuki, baffled: "That shouldn't have worked." *(kendo · D)*
 
 ### Ch 5 — Golden Week
@@ -72,12 +85,15 @@ It opens in the winter to come (Chapter 0), then the opening credits, then April
 **Changes:** Akane takes a place in the kendo club over her brother's objections, and the five go out together for the first time.
 - **5.1 The form.** Future-plans forms go round the class. Kōhei writes "work" without thinking; class president Ishida collects them. *(family · D · P)*
 - **5.2 The confessions.** At lunch Rika brings up the three first-years he turned down last year, which Nanoha knows all about, to make her point: Natsuki is a bigger problem than all three. *(Nanoha · comic · Map · D · Rev)*
+  - *Changed:* Nanoha already knows about the confessions.
 - **5.3 The manager.** Akane turns up at practice with a clipboard and a signed form: the kendo club's new manager. Kōhei objects. Takatsuki finds the form in order. Kirishima approves. *(comic · A+T · kendo · family · D · P)*
 - **5.4 Too hard.** A practice where he doesn't stop when he should. Kirishima ends the drill; Natsuki is the one who says something. *(Natsuki · kendo · D)*
 - **5.5 Backyard.** Kazuo holds the mitts for him behind the Tachibana house, an old motorcycle half apart under a tarp; Mio referees. Kazuo says he only has to ask. Kōhei says he's fine. *(family · Map · D · P · Rev)*
+  - *Changed:* Added: Kazuo offers help and Kōhei brushes it off.
   - *Your call:* You said this one might be manga. Yes or no?
 - **5.6 The day off.** Natsuki plans a trip into the city for all five, then waits to be asked along. He notices, and asks her himself. *(Natsuki · CG · Map)*
 - **5.7 The city.** Arcades and crane games. Kōhei and Takatsuki go at each other on a cabinet, loudly. He wins one crane-game prize that both Nanoha and Natsuki had their eye on. Akane asleep on Nanoha's shoulder on the train home. *(CG · comic · D · P · Rev)*
+  - *Changed:* The two boys at the arcade and the crane-game prize replace the Akane and Takatsuki bit.
 
 ### Ch 6 — Double Shifts
 *When: May · Whose: shared · Closeness: light · Cast: K, Na, Nt, T, A, Emi · Uncanny: Kōhei: the dream of her hands, in a fever*
@@ -95,7 +111,9 @@ It opens in the winter to come (Chapter 0), then the opening credits, then April
 - **7.1 Time-out.** In Nanoha's room for the first time, Natsuki finds a rabbit facing the wall. Nanoha won't say what he did. *(Nanoha · comic · SB1)*
 - **7.2 Counsel for the defense.** Natsuki seats a second plushie beside him so he needn't face questioning alone. Nanoha tries not to laugh. *(Nanoha · CG · comic · SB2)*
 - **7.3 Usagi-san.** Why that rabbit, as manga: at seven, after her friend was gone, Kōhei saved up and bought it for her. *(Nanoha · insert · D · Rev)*
+  - *Changed:* Now manga.
 - **7.4 Game night.** All five at Takatsuki's. He plays the fighting game the way he does kendo, flawless and by the book. Kōhei can't beat him and gets ridiculously angry. *(gag · comic · Map · P · Rev)*
+  - *Changed:* All five are there now.
 - **7.5 Moved.** That night the rabbit is facing the room again. Nanoha blames Kōhei across the windows; he's innocent. *(Nanoha · uncanny · comic · Map)*
 
 ### Ch 8 — The New Hire
@@ -103,6 +121,7 @@ It opens in the winter to come (Chapter 0), then the opening credits, then April
 **Changes:** A new hire starts keeping score, his best friend is no help at all, and the first of the bad dreams arrives.
 - **8.1 The new hire.** Shiina Yuzu starts at Kitchen Komugi. He trains her; she flirts out loud and keeps score. *(comic · Map)*
 - **8.2a No help.** Takatsuki walks him to his shift and hears about the new hire. He asks three clarifying questions and has no advice at all. *(comic · D · P · Rev)*
+  - *Changed:* New: replaces the inventory scene.
 - **8.5 The eyes.** That night: mist, and eyes in it, and a fear he doesn't recognize. He tells no one. *(CG · uncanny · dread · Map)*
 
 ## Part 2 — Rain and summer (June–August)
@@ -112,12 +131,16 @@ The rivalry comes into the open and stays friendly: an umbrella each girl cheats
 *When: June · Whose: shared · Closeness: strong · Cast: K, Na, Nt, Fairy · Uncanny: Nanoha: a light on her sill in the storm*
 **Changes:** Each girl now knows the other knows.
 - **V1 She watches him train.** Long ago, in brush and ink: a woman with her hair covered counts a swordsman's habits from the veranda, day after day. She never picks up a blade. *(insert · ink · D · P · Rev)*
+  - *Changed:* Now brush and ink.
 - **9.1 Rain.** The rainy season opens. Both girls say they forgot an umbrella, and Nanoha ends up under his. *(Nanoha · CG · comic · SB13)*
 - **9.2 Interlude: Natsuki.** Walking behind them with her own umbrella, she hides it and soaks herself on purpose, asking herself why the whole way. One manga sequence with 9.3. *(Natsuki · insert · comic · SB13 · D · Rev)*
+  - *Changed:* Now manga, with 9.3, in place of the animation.
 - **9.3 Three under one.** She runs up drenched and laughing and takes the umbrella's edge. He notices her more than he means to. *(Natsuki · insert · Map · D · Rev)*
+  - *Changed:* Now manga, with 9.2.
 - **9.4 The zip.** At her gate Nanoha's own umbrella slips half out of her bag, and she zips it shut before anyone sees. The look the girls trade says the rest. *(Nanoha · comic · SB13)*
 - **9.5 The windows begin.** Thunder that night. Years ago a small Kōhei talked a frightened Nanoha to sleep across the gap; tonight she taps on the glass. *(Nanoha · CG · still · D)*
 - **9.6 On the sill.** After he's asleep, a point of light sits on her windowsill through the storm. She lets it stay. From here it lives in her room and window scenes, and she says to it what she won't say to people. *(Nanoha · uncanny · D · P · Rev)*
+  - *Changed:* Added: the light lives in her room from here on.
 
 ### Ch 10 — Fever
 *When: June · Whose: shared · Closeness: none · Cast: Na, Nt, A, Chie · Uncanny: none*
@@ -136,9 +159,11 @@ The rivalry comes into the open and stays friendly: an umbrella each girl cheats
 - **11.2 Two bentō.** Both land on his desk. He eats both rather than choose. *(CG · comic · SB13c)*
 - **11.3 The judges.** Takatsuki produces a scoring rubric and backs Natsuki. Akane, at their lunch table now, backs Nanoha out of pure loyalty. Their scorecards go to war. *(gag · comic · A+T · Map · P)*
 - **11.4 What she'd like to do.** Nanoha imagines upending Natsuki's bentō over her head. Cut back to her complimenting the rolled omelet, and Natsuki, mid-bite, feels something and looks over her shoulder. It's real. *(Nanoha · imagined · comic · uncanny · D · Rev)*
+  - *Changed:* Added: Natsuki really feels it.
 - **11.5 Improving.** Natsuki's lunches get better every week, and he catches himself looking forward to them. *(Natsuki · Map)*
 - **11.6 It's Chibi.** Teased about the two lunches, he waves it off: "It's Chibi. It's like eating at home." She hears "little kid." *(Nanoha · SB6)*
 - **11.7 The path.** That night he dreams a path that keeps bringing the same bend around. *(uncanny · dread · Map · D · Rev)*
+  - *Changed:* A path, not a road.
 
 ### Ch 12 — That Wasn't Kendo
 *When: July · Whose: neither · Closeness: light · Cast: K, Na, Nt, T, A, Kirishima · Uncanny: Kōhei: a flash of another fight, mid-match*
@@ -156,7 +181,9 @@ The rivalry comes into the open and stays friendly: an umbrella each girl cheats
 **Changes:** With the pact made, the girls can be rivals and friends in one room and allies against a third party, and Nanoha nearly says it by accident.
 - **13.1 Full time.** Summer break means shifts nearly every day, most of them beside Shiina. The girls see him mostly across a counter. *(family · D)*
 - **13.1a Customers.** Nanoha and Natsuki come in for dinner and watch Yuzu work on him. They have a pact; she didn't sign it. For one evening they're allies. *(CG · comic · Map · D · Rev)*
+  - *Changed:* Moved here from Ch8 (it was 8.3).
 - **13.1b Point to Tachibana.** Nanoha orders, very politely, in a way that leaves Yuzu flustered. Natsuki awards the point. *(Nanoha · comic · D · P · Rev)*
+  - *Changed:* Moved here from Ch8 (it was 8.4).
 - **13.2 Sleepover.** Nanoha's room: Natsuki, Rika and Akane. The rivalry is a joke everyone's in on, and Akane admits there's someone she likes and won't say who. *(Nanoha · CG · comic · A+T · Map · P)*
 - **13.3 The cat.** Nanoha dreams she's the pet cat of a married Kōhei and Natsuki, and wakes up furious at the girl asleep beside her. *(Nanoha · gag · comic · SB4)*
 - **13.4 Nine volumes.** He's left out a romcom where the childhood friend loses. She reads all of it and lectures him across the windows. *(Nanoha · gag · comic · SB5)*
@@ -168,10 +195,12 @@ The rivalry comes into the open and stays friendly: an umbrella each girl cheats
 **Changes:** An outsider sees what the reader sees, and he has one moment with Natsuki he refuses to look at.
 - **14.1 Chie.** Natsuki's one kept friend arrives from Sendai and sizes up the whole group in a minute. *(Natsuki · comic · Map)*
 - **14.2 Yukata.** All the girls in yukata. Stalls and goldfish; Takatsuki's by-the-book ring toss, with Akane coaching; Natsuki photographs everything. *(CG×2 · comic · A+T · Map · D · Rev)*
+  - *Changed:* Added: all the girls in yukata.
 - **14.3 You're late.** He comes straight from his shift, Nanoha says it, and he stops dead. He is late; that's all it is. *(Nanoha · uncanny · Map)*
 - **14.4 Still on Mizuno.** Rika points out that the whole class calls her Nacchan and he's still on her surname. Neither of them answers. *(Natsuki · comic · D)*
 - **14.5 Fireworks.** Separated from the others for one burst, he and Natsuki watch it side by side, and he looks at the sky on purpose. *(Natsuki · CG · anim · Map)*
 - **14.6 Chie's verdict.** On the platform Chie tells her what she saw: he can't stop looking at you, and his life is with her. *(Natsuki · P · Rev)*
+  - *Changed:* Chie's line made plainer.
 
 ### Ch 15 — Team Nanoha
 *When: August · Whose: Natsuki · Closeness: none · Cast: K, Na, Nt, A · Uncanny: none*
@@ -198,10 +227,13 @@ The rivalry comes into the open and stays friendly: an umbrella each girl cheats
 - **17.1 Welcome fire.** Obon. Kōhei and Akane light the small fire at the gate for Dad, by themselves, for the second year. *(CG · still · family · P)*
 - **17.2 The lamp.** Genji carries a lit lamp up to the tree at dusk, as his grandmother did. Asked why, he says someone always has. *(P)*
 - **17.2a The storehouse.** Airing out the Tachibana storehouse for the summer, he picks up a long wrapped bundle with his hands already in the right place. A sword, older than anyone can say. Genji tells him to take it home, and he does. *(CG · uncanny · D · P · Rev)*
+  - *Changed:* New: he gets the sword here and takes it home.
 - **17.3 Nowhere to be.** Everyone she knows is with family. Natsuki walks the town with her camera. *(Natsuki · CG · SB12)*
 - **17.4 The stone.** On an old path away from the shrine she finds a weathered marker nobody tends, clears the weeds without knowing why, and can't make herself take the picture. It is a memorial to both of them, and nothing on it says so. *(Natsuki · CG · uncanny · SB12 · D · Rev)*
+  - *Changed:* It's for both of them.
 - **17.5 Asleep at the table.** Nanoha finds him asleep over the household accounts and covers him. Nothing more than that. *(Nanoha · SB9)*
 - **17.6 Last quiet night.** The tournament is Saturday and he hasn't practiced in two weeks. He does his swings alone in the dark yard with the real sword, and his body does things with it that kendo never taught him. He'll keep doing this all autumn. *(kendo · uncanny · D · P · Rev)*
+  - *Changed:* Now with the real sword.
 
 ## Part 3 — The fight and September (late August–September)
 One night undoes the summer. After a tournament he knows he should have done better in, Kōhei beats a man who harassed Nanoha, knocks her down by accident and frightens her; he ends up at Natsuki's door, and the kiss breaks the girls' pact. September is everyone owning their part: Kōhei tells Kazuo and Emi, Natsuki tells Nanoha, Takatsuki walks him to the adviser, Emi goes through the closed door, and the family starts to come back.
@@ -210,13 +242,19 @@ One night undoes the summer. After a tournament he knows he should have done bet
 *When: late August · Whose: Nanoha · Closeness: light · Cast: K, Na, Nt, T, A, Emi, Kazuo · Uncanny: Kōhei: the other fight, as he hits a man who is already down*
 **Changes:** Nanoha sees the frightening version of him and backs away from his hand, and Kazuo sits down at the gate to wait.
 - **18.1 The tournament.** As manga: he loses a match he knows he should have won. Takatsuki places. He says all the right things. *(insert · kendo · D · Rev)*
+  - *Changed:* Now manga.
 - **18.2 Karaoke.** The five celebrate Takatsuki. Kōhei sings and laughs. The girls know how he's really doing, he knows they know, and their pity makes it worse: underneath, in plain words, he is furious at his whole life. Natsuki takes a tired Akane home early. *(CG · comic · D · P · Rev)*
+  - *Changed:* Added the girls' pity and his plain anger.
 - **18.3 The way back.** A man outside a bar starts on Nanoha: words, then a hand on her arm. Kōhei steps in faster than he needs to, does nothing to calm it down, and lets the man swing first. He's a little glad of the excuse. *(D · Rev)*
+  - *Changed:* He's a little glad of the excuse, and the man swings first.
 - **18.4 The fight.** Kōhei takes a hit and then wins it, ugly. With the man down he keeps hold of his collar and draws back again. *(insert · uncanny · D)*
 - **18.5 Knocked down.** Nanoha grabs his arm; he jerks, and she goes over. He lets go of everything. The man runs. *(Nanoha · insert · D)*
 - **18.6 His hand.** Blood on his face, his shirt and his hands, he offers her one. She backs away. *(Nanoha · CG · D · Rev)*
+  - *Changed:* Added: blood on his hands too.
 - **18.7 Go.** Takatsuki runs up as it's ending, takes it in, and tells him to get the hell away from there. Then he takes Nanoha home. Kōhei goes, alone. *(D · Rev)*
+  - *Changed:* Takatsuki arrives as it ends and sends him away.
 - **18.7a Interlude: Kazuo.** At the Tachibanas' door it's Takatsuki, not Kōhei, and Emi presses him. Their daughter is all right, he says, and the rest is Kōhei's to tell; if he doesn't, they won't have to ask twice. Kazuo accepts that, tells his wife he'll wait, and sits down at the gate. *(family · D · Rev)*
+  - *Changed:* New: Takatsuki at the door, from Kazuo's side.
 
 ### Ch 19 — Wound Care
 *When: the same night · Whose: Natsuki · Closeness: strong · Cast: K, Nt, Chie, Kazuo · Uncanny: Natsuki: binding his hands is something she has done before*
@@ -226,32 +264,48 @@ One night undoes the summer. After a tournament he knows he should have done bet
 - **19.3 He breaks.** She's tending his face when he starts to cry, for his father, and she holds him. *(Natsuki · insert · family · D)*
 - **19.4 The kiss.** She kisses him. He stands and kisses her back. *(Natsuki · insert · CG · D)*
 - **19.5 She stops it.** She backs away, shaken, and asks him to go. Nobody has said a word all night. *(Natsuki · D · Rev)*
+  - *Changed:* She asks him to go. Her line moved to a text.
 - **19.6 Unsent.** Later she types to Chie, "I wouldn't have run," and deletes it. None of it feels in her control. *(Natsuki · D · Rev)*
+  - *Changed:* Added: none of it feels in her control.
 - **19.6a The river.** He can't go home to the two windows. He sits by the river until it's light, and her text reaches him there: "Let me be the one to tell her." *(still · D · P · Rev)*
+  - *Changed:* New: where he spends the night, and her text.
 - **19.7 Dawn.** Kazuo is at the gate, where he has been all night. He sees that someone else tied the bandages, and doesn't ask. "Are you ready to accept my help now?" / "Yes." / "Then first thing, go get some sleep." The only words spoken in the chapter. *(CG · family · D · Rev)*
+  - *Changed:* Kazuo is pushier, and Kōhei says yes here.
 
 ### Ch 20 — Second Semester
 *When: late August – early September · Whose: Nanoha · Closeness: none · Cast: K, Na, Nt, T, A, Emi, Kazuo, Fairy · Uncanny: Nanoha: the slap she only imagines, which Natsuki feels and names, and a rabbit put back on her pillow; Kōhei: the dream of her hands, and she is crying*
 **Changes:** He tells Kazuo and Emi, the pact is broken out loud on the roof, Nanoha goes cold, and Kōhei owns his half to her and to the club.
 - **20.0 The next day.** He sleeps until afternoon, goes next door, and tells Kazuo and Emi all of it, including that he isn't sure he'd have stopped. Upstairs, Nanoha's window stays shut. *(family · D · P · Rev)*
+  - *Changed:* New: he tells Kazuo and Emi the next day.
 - **20.1 The first day.** School starts. His face is a mess, so everyone can see he fought and nobody needs the details. He and Natsuki are both acting strangely from the first bell, and Nanoha knows something is up. Natsuki asks her up to the roof that same day, before she's cornered. *(Natsuki · D · Rev)*
+  - *Changed:* The first day, not a week. His face shows the fight.
 - **20.2 Interlude: Nanoha, on the roof.** Natsuki tells her. Nanoha imagines the slap, and "He was mine." She hasn't moved; she's still smiling; and Natsuki's hand goes to her cheek. "Did you just imagine slapping me?" It frightens Nanoha more than anything else that day. *(Nanoha · imagined · CG · uncanny · D · Rev)*
+  - *Changed:* On the roof, and Natsuki names the slap aloud.
 - **20.3 We said fairly.** "You could have any boy in the school. Why does it have to be him?" What hurts is the promise. Natsuki: "I don't want to win by default." Nanoha has no answer, and it's "Natsuki-san" again. *(Nanoha · D · Rev)*
+  - *Changed:* Added both girls' lines.
 - **20.3a Usagi-san.** That night the rabbit goes across her room and she cries the ugly way, angriest at herself: Natsuki can act and she can't. In the morning he's back on her pillow, and she didn't put him there. *(Nanoha · CG · uncanny · D · P · Rev)*
+  - *Changed:* New: Usagi-san thrown, and the ugly crying.
 - **20.4 Fujisawa-kun.** She faces him and calls him that. He says plainly that he kissed Natsuki back. *(Nanoha · D)*
 - **20.5 Together.** Takatsuki, captain now, says it has to be reported and that he'd rather they went together. "You scared her. You scared me too." *(kendo · D)*
 - **20.6 The adviser.** A few weeks' suspension from the club, and no outside matches until April. Next time it's expulsion from the school; only his family situation and Takatsuki's word are saving him. *(kendo · D · Rev)*
+  - *Changed:* Added: next time it's expulsion.
 - **20.7 At the door.** Suspended from the club, he still gets Takatsuki, who turns up at the house with his gear to train in the yard anyway. Akane answers, and thanks him for getting Nanoha home. *(A+T · family · D · P · Rev)*
+  - *Changed:* Reworded so it's clear why Takatsuki comes.
 - **20.8 Crying.** He dreams of her hands again. This time she isn't scolding him. She's crying. *(uncanny · Map · P · Rev)*
+  - *Changed:* She's crying now. The gauze is gone.
 
 ### Ch 21 — The Kitchen Table
 *When: September · Whose: Nanoha · Closeness: none · Cast: K, Na, A, Emi, Kazuo, Mom · Uncanny: none*
 **Changes:** Emi goes through the closed door because he lets her, we see what Dad asked of him, and we see the night Nanoha didn't hold him.
 - **21.1 Emi.** His yes at dawn cost nothing. This does: he steps aside and lets her through his mother's door, the thing he has been hiding. "I know you're hurting, but your son is falling apart." *(family · D · P · Rev)*
+  - *Changed:* He lets Emi through. This is the yes that costs him.
 - **21.2 The hospital.** A year and a half ago: Dad, thin, tells him to help his mother and look after his sister. In the corridor he asks Kazuo for something too. *(CG · family · D)*
 - **21.3 Interlude: Nanoha, at the funeral.** One manga sequence through 21.5, in her words. His mother doesn't come. People murmur. A fifteen-year-old stands as chief mourner, and Nanoha watches from the second row. *(Nanoha · insert · family · D · Rev)*
+  - *Changed:* Now one manga sequence in her words, through 21.5.
 - **21.4 The bills.** That night he sits at the kitchen table working out how many shifts it takes. She walks in without knocking, for the first time, and does her homework across from him. *(Nanoha · insert · family · D · Rev)*
+  - *Changed:* Part of that manga sequence.
 - **21.5 What she didn't do.** She imagines holding him and telling him everything: I would do anything. Cut back to her pencil, not moving. Now she knows who did hold him. *(Nanoha · insert · imagined · D · Rev)*
+  - *Changed:* Part of that manga sequence, with "I would do anything."
 
 ### Ch 22 — Nikujaga
 *When: late September · Whose: Natsuki · Closeness: strong · Cast: K, Na, Nt, A, Rika, Emi, Mom · Uncanny: Natsuki: alone at the tree at dawn*
@@ -270,7 +324,9 @@ The in-between. Banned from matches, Kōhei learns form from Takatsuki, hears fr
 *When: early October · Whose: neither · Closeness: light · Cast: K, Na, Nt, T, A, Mom · Uncanny: Kōhei: the dream of the road again, with something behind him on it*
 **Changes:** He comes back to the club as a beginner at the thing Takatsuki is best at, and lets his mother take one job back.
 - **V3 The arrangement.** Long ago, in brush and ink: a swordsman with no name to offer kneels across from a man with no son. Behind the screen, her sleeve. They already know each other. *(insert · ink · P · Rev)*
+  - *Changed:* Now brush and ink.
 - **23.1 Back.** First practice after the suspension. In front of the whole club he tells Takatsuki he was right. Only the five know about what. *(kendo · D · Rev)*
+  - *Changed:* Only the five know what he was right about.
 - **23.2 Form.** Takatsuki drills him on basics like a first-year while Akane times them. It's the first time kendo has been hard for him. *(kendo · comic · A+T · D)*
 - **23.3 Improvise.** In return Kōhei makes Takatsuki do something wrong on purpose, and it nearly kills him. *(kendo · comic · D)*
 - **23.4 The ledger.** Mom takes on bookkeeping from home and asks for the household accounts back. He hands them over, and checks them at midnight anyway. *(family · D)*
@@ -295,11 +351,16 @@ The in-between. Banned from matches, Kōhei learns form from Takatsuki, hears fr
 - **25.2 Summons.** Mio, who has not been told why Kō-nii stopped coming over, orders him to appear for a rematch. *(comic · family · P)*
 - **25.3 The table.** Dinner at the Tachibanas' for the first time since August. Emi feeds him as if nothing happened, and Nanoha passes him the rice. *(Nanoha · CG · family · P)*
 - **25.3a The shed.** After dinner Kazuo, rebuilding the motorcycle's carburetor, hands him a wrench and starts talking about the karate club he shamed at nineteen. *(family · D · P · Rev)*
+  - *Changed:* Moved here from Ch29 (it was 29.1).
 - **25.3b What he said.** "He told me he was afraid he'd asked too much of you." Then Kazuo apologizes, for all the times he offered and didn't insist. *(CG · family · D · Rev)*
+  - *Changed:* Moved here from Ch29 (it was 29.2).
 - **25.3c The hospital, again.** The same room, the part he wasn't there for: Dad to Kazuo, already sorry. *(CG · family · D · Rev)*
+  - *Changed:* Moved here from Ch29 (it was 29.3).
 - **25.3d Worthy.** Kazuo, plainly: winning wasn't the job, getting her home was; he won, and she still ended up on the ground. Fight when it's right and it doesn't endanger the person you're protecting. He could take the sword back, and doesn't. *(family · D · P · Rev)*
+  - *Changed:* New: what Kazuo says about being worthy, and the sword.
 - **25.4 Homework.** She comes in through his kitchen without knocking and works across the table from him. Neither mentions it. *(Nanoha · CG · P)*
 - **25.5 Her window.** That night she opens hers first, and the light is on her sill. They talk about nothing until one. *(Nanoha · CG · still · D · Rev)*
+  - *Changed:* Added: the light on her sill.
 - **25.6 Packing.** Akane helps him pack for Kyoto and makes him promise not to call home more than once a day. *(comic · family · P)*
 
 ### Ch 26 — School Trip
@@ -307,16 +368,23 @@ The in-between. Banned from matches, Kōhei learns form from Takatsuki, hears fr
 **Changes:** Away from shifts and family he gets the whole trip, an hour with each girl and a dream of a wedding, and goes home knowing he has to choose.
 - **26.1 Rooms.** Ishida lectures the boys' room on temple history. In the girls' room Rika claims the middle futon and falls asleep first. *(comic · D)*
 - **26.1a Sights.** The trip in full, the way manga do it: the famous places shown and talked about, Ishida lecturing, Natsuki's camera on everything. *(CG×2 · comic · D · Rev)*
+  - *Changed:* New: the trip in full.
   - *Your call:* Kyoto is now a long chapter (eleven scenes). Keep it as one, or split it into two halves in Pass 2?
 - **26.1b The deer.** The Nara day. Takatsuki bows to the deer by the guidebook and they bow back only to him. Kōhei gets mugged for his crackers. *(CG · comic · D · Rev)*
+  - *Changed:* New: the Nara day and the deer.
 - **26.2 Kimono day.** In rented kimono they pass a real shrine wedding, the bride in a white hood. Natsuki reties his sash without thinking, quick and right. "My grandma," she says. Nanoha watches her hands. *(Natsuki · CG · uncanny · Map · D · Rev)*
+  - *Changed:* Added: they pass a real shrine wedding.
 - **26.3 With Natsuki.** Lost on purpose in the back streets, the two of them. She photographs him, and doesn't show him this one. *(Natsuki · CG · D)*
 - **26.4 With Nanoha.** The long steps at dusk. She finally says what September did to her, and he listens to all of it. *(Nanoha · CG · still · D)*
 - **26.5 Interlude: Nanoha, lights out.** Two rivals in the dark who each know the other knows. Nanoha finally says it to her face: she's angriest at herself, because Natsuki can act and she can't. Natsuki is kind, and holding something back, and Nanoha can sense it. *(Nanoha · uncanny · D · Rev)*
+  - *Changed:* Added: Nanoha says it to her face, and senses what's held back.
 - **26.5a The hood.** That night he dreams a wedding. The bride wears the white hood, and he can't see her face or her hair. *(CG · uncanny · D · P · Rev)*
+  - *Changed:* New: the earlier wedding dream.
 - **26.6 Interlude: Akane.** The house without him. She waters Dad's plants, and her mother comes out onto the balcony and asks which one is which. *(CG · family · D · P)*
 - **26.7 Souvenir.** Takatsuki brings the club's manager a charm for health from the correct shrine, with his reasoning. She is beside herself, and ties it to her bag. *(comic · A+T · P · Rev)*
+  - *Changed:* Added: she's beside herself.
 - **26.7a Waiting.** The light couldn't follow her to Kyoto. It's on her sill when she gets home. *(Nanoha · D · P · Rev)*
+  - *Changed:* New: the light waiting at home.
 
 ### Ch 27 — Cultural Festival
 *When: early November · Whose: Nanoha · Closeness: light · Cast: K, Na, Nt, T, A, Rika, Ryōsuke · Uncanny: none*
@@ -325,24 +393,29 @@ The in-between. Banned from matches, Kōhei learns form from Takatsuki, hears fr
 - **27.2 The stage.** Nanoha is down to give the class's address in the gym, on the stage where she froze at fourteen. *(Nanoha · P)*
 - **27.3 Then.** Middle school: she stood up there with nothing coming, and he got her off that stage without anyone laughing. *(Nanoha · CG · D)*
 - **27.4 Now.** She freezes again, finds him in the crowd, and goes off script, deadpan: she has lived next door to someone her whole life and never told him what that's meant, and she's going to, today. Then she walks off the stage by herself. *(Nanoha · CG · D · Rev)*
+  - *Changed:* What she says on the stage.
 - **27.5 Natsuki first.** He finds Natsuki on the roof and tells her before anyone. She knew. She says the kind thing, and asks him to go. *(Natsuki · CG · D · P)*
 - **27.6 Nanoha.** That evening he reaches her before she has to come to him, and tells her, using her name for the first time in years. She imagines answering, composed: "This is the happiest moment of my life." What she actually does is fall apart and run into his arms. *(Nanoha · imagined · insert · CG · D · Rev)*
+  - *Changed:* Composed in her head, a mess in his arms. Manga in place of the animation.
 
 ### Ch 28 — Dating
 *When: November · Whose: Nanoha · Closeness: none · Cast: K, Na, Nt, A, Yuzu, Mio, Fairy · Uncanny: Nanoha: her light, upset and turned toward the hills; Town: a hiker lost on a trail he knew; Kōhei: the dream of the eyes, nearer*
 **Changes:** They're a couple in front of everyone, Natsuki finds her feet as their friend, and the first odd news comes down from the hills.
 - **28.1 First date.** He has no idea how to take out someone he's eaten breakfast with for sixteen years. It goes fine once they give up and get taiyaki. *(Nanoha · CG · comic · D)*
 - **28.2 Not an announcement.** Nobody at school is told. Akane knows from how he says "I'm heading out." Mio demands tribute. Her parents are another matter (29.0). *(comic · family · P · Rev)*
+  - *Changed:* Her parents are told properly now, in 29.0.
 - **28.3 Boundaries.** Yuzu tries one "Senpai~" too many, and he tells her, kindly, that he has a girlfriend. *(comic · D)*
 - **28.4 Natsuki-chan.** The two girls alone, printing Natsuki's festival photos. It's "Natsuki-chan" again. *(Natsuki · CG · D · P)*
 - **28.5 The hiker.** A man who has walked the same trail for thirty years is found a day later, a mile off it, unable to say where he was. *(dread · D)*
 - **28.6 At the edge.** On the shrine path her light, easy company for months now, is agitated and turned toward the hills. *(Nanoha · uncanny · dread · D · Rev)*
+  - *Changed:* It's her light now, not a new shape.
 - **28.7 Nearer.** The eyes again that night, close enough to see they're set in something pale. *(uncanny · dread · Map)*
 
 ### Ch 29 — Asking
 *When: November · Whose: neither · Closeness: none · Cast: K, Na, T, A, Emi, Kazuo, Mom · Uncanny: Kōhei: a walk home he keeps counting, and nothing happens*
 **Changes:** He tells her parents properly, starts asking people for things, and stops treating help as a debt.
 - **29.0 Properly.** At the table he has eaten at for sixteen years, he bows and tells Kazuo and Emi he is dating their daughter. Emi has known for a decade. Kazuo lets him sweat for ten seconds. *(comic · family · D · P · Rev)*
+  - *Changed:* New: he tells her parents properly.
 - **29.4 Asking.** He asks Akane what she wants over winter break, and asks Takatsuki to cover a club errand. Both are so surprised they say yes badly. *(comic · family · A+T · SB10)*
 - **29.5 The accounts.** He stops checking his mother's sums. *(family · D)*
 - **29.6 The letter.** School sends a letter home about walking in groups after dark. After his shift that night he catches himself counting the curve mirrors. *(dread · Map)*
@@ -372,8 +445,11 @@ The in-between. Banned from matches, Kōhei learns form from Takatsuki, hears fr
 - **32.1 First New Year.** The Fujisawas see the year out as a family, Mom at the table for all of it, for the first time since Dad. *(CG · family · D)*
 - **32.2 First shrine visit.** Both families and the friends climb to the shrine after midnight, in the snow. *(CG · D)*
 - **32.3 The bloom.** The great cherry opens, all of it at once, in the snow. The crowd cheers. Genji doesn't. Nothing else happens. *(CG×2 · anim · still · uncanny · D · Rev)*
+  - *Changed:* Nothing happens but the bloom. Genji doesn't cheer.
 - **32.6 Back.** Nanoha comes home from the shrine and her friend is on the windowsill, whole and talking, as if ten years were an afternoon. She never left. Nanoha just stopped being able to see her. *(Nanoha · CG · uncanny · D · Rev)*
+  - *Changed:* The fairy comes back to Nanoha at home. No "You two, again."
 - **32.6a Asleep.** Next door Kōhei falls asleep with the snow still coming down. Across town, so does Natsuki. *(D · P · Rev)*
+  - *Changed:* New: they go to sleep. The recall is a dream.
 
 ## Part 5 — Winter (January–March)
 It opens with the old life, whole, dreamed by both of them the night of the bloom. Then the past is settled before the danger arrives: Kōhei and Natsuki grieve that life and say goodbye to it; he goes to Nanoha in real doubt and comes back to her by choice; the girls have it out. Then a body is found, the road closes on Akane and Takatsuki, and the five learn what the wolf is and what Nanoha can do about it. The plan is gone in seconds. They live because nobody fights alone, and every one of them pays.
@@ -382,20 +458,29 @@ It opens with the old life, whole, dreamed by both of them the night of the bloo
 *When: the night of the bloom, and long ago · Whose: shared · Closeness: strong · Cast: K, Nt · Uncanny: The past life, in full, dreamed by both of them*
 **Changes:** The reader gets the whole old life and exactly how it ended, so everything after is dread, not mystery.
 - **R.1 Before.** Brush and ink, for the whole chapter. Two people who have known each other since they were small. He comes back from a lost war with no lord and no name to offer. *(insert · ink · D · P · Rev)*
+  - *Changed:* New: the recall interlude begins.
   - *Your call:* The recall is a full chapter of its own, between Ch32 and Ch33, so nothing renumbers. You set the direction (a dream that night, the death in full, Vagabond style); these eight lines are my first cut of what's in it. Right shape?
 - **R.2 The wedding.** The bride in the white hood, now with her face: a marriage arranged for an heir, between two people already in love. *(Natsuki · insert · ink · D · Rev)*
+  - *Changed:* New here: it was 33.1.
 - **R.3 The year.** About a year of it, and no children: her teasing, his late returns, the cut on his wrist, her counting his habits from the veranda. *(Natsuki · insert · ink · D · Rev)*
+  - *Changed:* New here: it was 33.2. About a year, no children.
 - **R.4 The walk.** A winter morning. She laughs at him for going armed on a walk, and he ties the cord anyway. The same landmark comes round again. *(insert · ink · D · Rev)*
+  - *Changed:* New here: it was the vignette in Ch40 and 42.2.
 - **R.5 The slow fight.** It comes straight at him. He cuts it, again and again, and it doesn't stop. He is losing, and behind him she can't run for help. *(insert · ink · dread · D · Rev)*
+  - *Changed:* New here: it was 42.6.
 - **R.6 The trade.** The only move left: he gives it his throat to get inside its reach, and kills it. *(insert · ink · D · Rev)*
+  - *Changed:* New here: it was 43.2. The death is shown now, not held for the wolf fight.
 - **R.7 The promise.** Her kneeling in the snow with him. The promise. His last word, which we don't hear. The tree blooms over them. *(Natsuki · insert · ink · D · P · Rev)*
+  - *Changed:* New here: it was 43.6. His last word may be held back.
   - *Your call:* Hold back his last word here and give it at the end of the wolf fight (43.6)? It's the one thing I'd keep from the reader.
 - **R.8 After.** Her long life as his widow, with no heir for the house; the stone she raises for him; her own name added to it when she dies old. *(Natsuki · insert · ink · P · Rev)*
+  - *Changed:* New: her life after, and the stone for both.
 
 ### Ch 33 — What We Were
 *When: New Year's morning and early January · Whose: Natsuki · Closeness: strong · Cast: K, Nt · Uncanny: none new: they wake knowing*
 **Changes:** They wake knowing all of it, mourn that life together and let it be over, at her insistence.
 - **33.0 Waking.** They wake knowing all of it. Natsuki has watched him die. She breaks, and she is not surprised. *(Natsuki · CG · D · Rev)*
+  - *Changed:* She breaks on waking, not at the shrine.
 - **33.3 Comparing.** At the boulder they lay out what each of them has. He has all of it now. She has known who she was since summer, and doesn't say so; he doesn't ask. *(Natsuki · CG · D)*
 - **33.4 Grief.** She cries for a man who died on this spot. He lets himself be the one who's still here. *(Natsuki · CG · D)*
 - **33.5 Not because of her.** "I don't want you to love me because of her." It's her decision, and she makes it. *(Natsuki · D)*
@@ -406,6 +491,7 @@ It opens with the old life, whole, dreamed by both of them the night of the bloo
 **Changes:** He tells Nanoha everything, admits he doesn't know what it means, and then chooses her again knowing what he gives up.
 - **34.1 Three days.** He doesn't go to the window. Akane tells him that whatever it is, Nanoha already knows there's an it. *(family · P)*
 - **34.1a The reunion.** Those three days Nanoha has her friend back: ten years of hurt on one side, and on the other someone very old, fond and a little vague about how long it's been. It's funny, and it stings. *(Nanoha · CG · uncanny · D · P · Rev)*
+  - *Changed:* New: Nanoha's reunion with the fairy.
 - **34.2 Telling her.** All of it: a wife, a death, the tree. She listens with her hands flat on the table. *(Nanoha · CG · D)*
 - **34.3 I thought it was you.** All year he had given the dream's tenderness to her. He says so. It's the worst thing he could say, and it's true. *(Nanoha · D)*
 - **34.4 Go and be sure.** She notices he says "Natsuki" now. She doesn't make it easy; she tells him to go and be sure. *(Nanoha · D)*
@@ -426,6 +512,7 @@ It opens with the old life, whole, dreamed by both of them the night of the bloo
 **Changes:** The danger becomes real and local, and Kōhei, of all people, asks someone else to see his sister home.
 - **36.1 Found.** The woman from the posters, in a gully beside a road she drove every day, a week dead of cold. *(dread · D)*
 - **36.2 What the fairy knows.** She tells the three of them what she can: its road is its strength, and on a road that never ends it never tires. Something like it was here long ago. The tree can shelter but not hunt, and she doesn't know how to kill it. *(CG · dread · D · Rev)*
+  - *Changed:* Added: its road is its strength.
 - **36.3 Telling them.** Takatsuki and Akane get the unbelievable part. Takatsuki asks, politely, for evidence. *(comic · A+T · P)*
 - **36.4 In groups.** School ends club early. The station fills with parents. *(dread · Map)*
 - **36.5 The favor.** Kōhei has shifts he can't drop. He asks Takatsuki to walk Akane home on those nights. Takatsuki accepts as if sworn in. *(A+T · family · D · P)*
@@ -437,19 +524,26 @@ It opens with the old life, whole, dreamed by both of them the night of the bloo
 - **37.1 The road.** Takatsuki's side: the walk home, the same mirror coming around a third time, then trees. *(insert · dread · D)*
 - **37.2 Behind me.** He puts Akane behind him and draws his shinai. The eyes. Her legs give out. *(insert · CG · dread · A+T · D)*
 - **37.3 Not like the story.** It doesn't do what the story says. It follows, stops, stares, starts toward them and stops again. His shinai is up and it's coming when the lights arrive. He never has to fight it. *(dread · D · Rev)*
+  - *Changed:* It's erratic, and he never has to fight it.
 - **37.4 Now.** At home Nanoha stops mid-sentence: the fairy is frantic. She tells Kōhei they have to go to them this minute. *(Nanoha · uncanny · D)*
 - **37.5 The motorcycle.** Kazuo isn't home. She takes his keys, and Kōhei drives, objecting to all of it, at length. Mio sees everything and names her price. *(Nanoha · CG · anim · comic · D · Rev)*
+  - *Changed:* Kōhei drives. Kazuo isn't home.
 - **37.6 The meeting.** Where the road goes wrong she gets off and walks into the trees as if there were a path, and there is. Natsuki, called on the way, arrives on foot behind them. *(Nanoha · CG · uncanny · P)*
 - **37.7 Out.** Flashlights, voices. Takatsuki carries Akane himself. The eyes watch them leave, and don't follow. *(CG · dread · A+T · D · Rev)*
+  - *Changed:* Takatsuki carries her.
 - **37.8 After.** Akane, wrapped in every blanket in the house, wants it noted that she was only resting; at home it goes down as one of her spells. Days later Kazuo asks whether somebody's been riding his motorcycle. Nobody answers. *(comic · family · D · Rev)*
+  - *Changed:* Kazuo never finds out about the motorcycle.
 
 ### Ch 38 — Okuri-ōkami
 *When: late January – February · Whose: neither · Closeness: light · Cast: K, Na, Nt, T, A, Genji, Fairy · Uncanny: Town: two more deaths; Nanoha: what her family used to do*
 **Changes:** They learn what they can about the wolf and about the caretaker family's old job, and decide it has to be them.
 - **38.1 Takatsuki's notes.** What he observed, in order: it followed, it stared, it started and stopped. All accurate, and all about a wolf that was only playing. The legend got the following right and the rest wrong. *(dread · D · Rev)*
+  - *Changed:* His notes describe a wolf that was only playing.
 - **38.2 Genji.** Asked about the old customs, and not told why, he has customs, not answers: the saying on the steps, thanking the road, the lamp. In bad winters a woman of this house took the lamp and went out to meet whoever was late. *(dread · D · P · Rev)*
+  - *Changed:* He isn't told why they're asking.
 - **38.3 Two more.** An old man, fifty yards from his own gate. A delivery driver. *(dread · D)*
 - **38.5 Why us.** The police are searching real roads and paths. Only Nanoha can find the other kind, only three of them can hold a sword, and he has had a real one in his room since August. The adults know nothing, and it stays that way. *(D · P · Rev)*
+  - *Changed:* Roads and paths. He already has the sword. The adults know nothing.
 - **38.6 Natsuki and the blade.** She can't look at it for long. She asks him to show her the move that killed him, so she'll know it when she sees it. *(Natsuki · CG · P)*
 
 ### Ch 39 — Valentine's
@@ -458,17 +552,24 @@ It opens with the old life, whole, dreamed by both of them the night of the bloo
 - **39.1 Chocolate.** A girlfriend's first Valentine's: handmade, slightly lopsided, handed across the gap. *(Nanoha · CG · comic · D)*
 - **39.2 For everyone.** Natsuki gives all of them the same friendly chocolate, his included, and means it. *(Natsuki · P)*
 - **39.3 Obligation, obviously.** Akane gives Takatsuki "obligation chocolate, obviously." He takes obligations very seriously: he goes to Kōhei and formally asks his permission before saying a word to her. Kōhei has to be sat down, and says yes. She isn't told. *(gag · comic · A+T · D · P · Rev)*
+  - *Changed:* Added: Takatsuki asks Kōhei's permission.
 - **39.4 Mom, steadier.** She walks to the station shops by herself, in a town where nobody goes anywhere alone, and comes back. *(family · D)*
 - **39.5 Practice.** Nanoha holds its kind of road to one stretch for ten minutes while the others walk it, and can't stand up afterward. Takatsuki walks it in full kendo armor and takes the helmet off himself: in mist he can't see sideways or hear. *(Nanoha · CG · uncanny · D · P · Rev)*
+  - *Changed:* Added: the helmet comes off.
 - **39.6 What she doesn't say.** The fairy tells her plainly: the more of herself she puts in, the weaker it gets, and enough could kill her. Nanoha tells nobody yet. *(Nanoha · D · Rev)*
+  - *Changed:* She knows it could kill her.
 
 ### Ch 40 — The Plan
 *When: late February · Whose: shared · Closeness: light · Cast: K, Na, Nt, T, A, Fairy · Uncanny: none new*
 **Changes:** They make a plan that needs every one of them, built on a wolf nobody has actually fought.
 - **40.1 The plan.** Nanoha goes in with them, carrying the lamp, and holds it to one stretch, which weakens it. Takatsuki meets its charge and holds it. Kōhei, with the real sword, kills it. Natsuki guards Nanoha. *(D · P · Rev)*
+  - *Changed:* New plan: Nanoha goes in, Kōhei kills it, Natsuki guards her.
 - **40.2 Both styles.** Kōhei and Takatsuki drill it until the instinct and the form stop arguing. In passing, Takatsuki: "Let me do my part, keep your head, and don't die." *(CG · kendo · D · Rev)*
+  - *Changed:* Takatsuki's line from the cut trust exchange lands here.
 - **40.3 Akane's part.** She stays out. She'll wait at the tree, where the road lets out, with the first-aid kit, the phone and a story ready for the adults. She points out that sitting still through something awful is the one thing she has trained for. *(family · D · P · Rev)*
+  - *Changed:* She stays out and waits at the tree.
 - **40.4 The cord.** No armor for him: the padded gloves ruin the grip on a real sword. Natsuki ties the sword's cord at his waist, fast and sure. The frame widens: "You guys, I'm right here." *(Natsuki · CG · comic · SB25 · D · Rev)*
+  - *Changed:* No armor. She ties the sword's cord.
 
 ### Ch 41 — Tomorrow
 *When: the night before · Whose: Nanoha · Closeness: none · Cast: K, Na, Nt, A, Mom · Uncanny: none*
@@ -484,23 +585,35 @@ It opens with the old life, whole, dreamed by both of them the night of the bloo
 *When: the morning · Whose: neither · Closeness: none · Cast: K, Na, Nt, T, A, Fairy · Uncanny: The wolf, and the road it makes*
 **Changes:** The plan goes in whole and is gone in seconds.
 - **42.0 Preparing.** A music sequence before the walk: each of them getting ready alone, in the rain before dawn. Your idea, after the rain lead-in to the church scene in Cowboy Bebop; you'll come back to it. *(anim · song · D · Rev)*
+  - *Changed:* New: your preparing sequence.
 - **42.1 Into it.** Dawn mist. Akane stays at the tree. Four walk in: the two boys in front, Nanoha with the lamp, Natsuki beside her. No helmets. *(CG · still · dread · D · P · Rev)*
+  - *Changed:* Four go in, Akane stays out, no helmets.
 - **42.3 Seconds.** It comes at once. Takatsuki meets the charge with perfect form and it doesn't matter: it has him by the leg and throws him. The plan is gone. *(insert · dread · D · Rev)*
+  - *Changed:* Takatsuki is taken out in the first seconds.
 - **42.4 Interlude: Akane.** At the tree, where the road lets out, with the kit and the phone. She can see none of it. She stays where she said she would. *(CG · family · P · Rev)*
+  - *Changed:* She waits alone at the tree now.
   - *Your call:* Akane's second stretch in her own head, now waiting at the tree. You left this open until you'd read Ch42. Keep it?
 - **42.5 The same fight.** Kōhei is alone at the front with the girls behind him, the samurai's situation exactly. He cuts it and it doesn't stop. Nanoha puts more of herself in. *(insert · dread · D · Rev)*
+  - *Changed:* Kōhei alone at the front. Nanoha spends more.
 - **42.6 Go.** Mist takes him and the wolf away from the lamp. Nanoha tells Natsuki to go, and says she'll hold it. Natsuki goes. Nanoha is alone, spending more than she can afford. *(Nanoha · insert · D · Rev)*
+  - *Changed:* Nanoha sends Natsuki after him.
 
 ### Ch 43 — Live
 *When: the same morning · Whose: Natsuki · Closeness: strong · Cast: K, Na, Nt, T, A, Fairy · Uncanny: The old death, starting again; the wolf's end; Nanoha's sight going*
 **Changes:** Natsuki stops the death she once watched, the wolf ends, and every one of them pays.
 - **43.1 The opening.** Alone with it and losing the same slow fight, he starts the old answer: the guard drops, to let it come. The reader has seen exactly this. *(insert · D · Rev)*
+  - *Changed:* The reader has already seen this move, in the recall.
 - **43.3 Interlude: Natsuki.** She has seen exactly this, once. She is already moving. *(Natsuki · insert · D)*
 - **43.4 Inches.** She hits it off its line. The bite takes his shoulder instead of his neck, and it turns on her and opens her face. *(Natsuki · CG · anim · D · Rev)*
+  - *Changed:* Added: it turns on her and scars her face.
 - **43.5 The strike.** It is fixed on him now, as in the trade. Takatsuki, crawling, grabs hold of it, the opposite of form, and Kōhei drives the sword in one-armed. It comes apart into mist. *(insert · CG · D · Rev)*
+  - *Changed:* Takatsuki grabs it from the ground, and Kōhei strikes.
 - **43.6 Live.** A flash of the old snow, and the one thing the recall held back: his last word to her. *(CG · D · P · Rev)*
+  - *Changed:* Now a flash, carrying his last word.
 - **43.7 The goodbye.** Nanoha has spent everything that let her see. The last thing it shows her is her friend, saying goodbye properly this time, and unbothered: she isn't going anywhere. *(Nanoha · CG · uncanny · D · Rev)*
+  - *Changed:* She knows the fairy isn't gone.
 - **43.8 Just resting.** They come out where the road lets out, and Akane is the only one standing. She gets under Nanoha's arm, "We're just stopping for a rest," and makes the call with the story ready. *(family · D · P · Rev)*
+  - *Changed:* Akane is the one standing, with the story ready.
 
 ## Part 6 — Aftermath (March–April)
 Spring. Everyone is alive and nobody is unchanged: a shoulder in a sling, a girl who can no longer see what she used to, a town that will never know. The loose ends are small and human. He asks again. Natsuki asks for something for herself, for the first time. The tree blooms on time.
@@ -509,10 +622,15 @@ Spring. Everyone is alive and nobody is unchanged: a shoulder in a sling, a girl
 *When: March – April · Whose: shared · Closeness: light · Cast: K, Na, Nt, T, A, Rika, Ryōsuke, Kirishima, Mio, Emi, Kazuo, Genji, Mom · Uncanny: none: the tree is only a tree*
 **Changes:** Life goes on, chosen.
 - **44.1 What it cost.** One hospital room with too many visitors. His shoulder: no kendo until summer. Takatsuki's leg, which will never fully heal. Natsuki's face, stitched. His mother signs the forms. *(CG · family · D · P · Rev)*
+  - *Changed:* Everyone pays: his leg, her face, his shoulder.
 - **44.2 What she can't see.** Nanoha sweeping at the shrine; the light under the branch is just light. He finds out she knew it could kill her and told Natsuki, not him, and they have the argument: deciding alone is what he has done all year. *(Nanoha · CG · D · Rev)*
+  - *Changed:* The argument is spelled out.
 - **44.3 White Day.** Takatsuki returns Akane's chocolate threefold, as custom requires, and walks her to her gate at his new pace; she times his rehab with the stopwatch he gave her. She thanks the road for seeing them home. No confession. *(comic · A+T · D · P · Rev)*
+  - *Changed:* At his new pace, and she times his rehab.
 - **44.4 Graduation.** Kirishima and the third-years leave. "Next Saturday?" Takatsuki asks, on crutches, and Kōhei, one-armed, says yes. *(kendo · D · Rev)*
+  - *Changed:* Takatsuki on crutches.
 - **44.5 Natsuki asks.** Her father's transfer comes, as it always does. For the first time she asks to stay, and they let her. The scar is proof she was there, and she doesn't hide it. *(Natsuki · CG · D · P · Rev)*
+  - *Changed:* Added: the scar.
 - **44.6 The form.** The future-plans form comes round again for third year. He writes something he wants. We see him write it, and not what. *(P)*
   - *Your call:* Still open: what he writes. My proposal stands (university, to teach, with kendo) and so does the fallback (we don't see it).
 - **44.7 Again.** Under the tree, in ordinary bloom, he asks her again. She says yes. *(Nanoha · CG×2 · anim · still · D)*
@@ -521,8 +639,10 @@ Spring. Everyone is alive and nobody is unchanged: a shoulder in a sling, a girl
 *When: much later · Whose: Natsuki · Closeness: none · Cast: Nt, Fairy · Uncanny: Natsuki: the fairy comes out to her*
 **Changes:** Both of her lives end the same way: full, and grateful.
 - **E.0 End credits.** A song over stills of their later lives. *(still · song · D · Rev)*
+  - *Changed:* New: end credits with stills of their lives.
   - *Your call:* Credits before the epilogue or after it? I've put them before, so the stills carry us across the years to her.
 - **E.1 Natsuki, old.** Her grandson takes her to the old grave, the stone she weeded at sixteen. The scar is still on her face. She sits down, and the fairy comes out to her, as she does for the very young and for those at the end of a long life. A good death after a full one. *(Natsuki · CG×2 · still · D · Rev)*
+  - *Changed:* At the old grave, with her grandson.
 
 ## Whole-story questions
 - **Q7.** Ch8 is down to three scenes (the new hire, the two boys, the first dream of the eyes). Leave it short, or fold it into Ch7? *(What I'd do: leave it, and decide once Part 1 is written in full.)*
