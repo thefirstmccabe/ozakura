@@ -240,3 +240,12 @@ The author calls her being rudderless after she isn't chosen, and again after th
 - **2. The witness (changed by the author):** not Story's version, where she alone knows how the wolf fights because she watched the old fight from outside. His version: "they mutually agree what it looked like." So 38.6 becomes the two of them working it out together, him from inside it and her from outside, and neither is the expert.
 - **Not doing (Story):** a new boy for her, or more scenes of her being sad about him.
 - All of it is [P] at the level of scenes; placement is for the next revision.
+
+### Kazuo's help (settled Nov 27, author: "Let's go with that")
+Answers his notes on 20.0 (tell only Kazuo), 23.4 (he can work a bit less) and Ch25 (a long gap between the yes and the help; the apology sooner).
+- **20.0: he tells Kazuo alone,** all of it, including that he isn't sure he'd have stopped. Kazuo tells Emi that night, which is what sends her through his mother's door in 21.1.
+- **The apology moves to 20.0.** Kazuo hears it and owns his part: he offered for a year and a half and never insisted.
+- **September shows the help.** Kazuo finds Mom the bookkeeping work [P], which is why Kōhei can drop some shifts (23.4). During the suspension Takatsuki trains him in Kazuo's yard (20.7).
+- **Ch25 gets shorter:** the karate story, his father's regret and "worthy" stay; the apology is already made, so the talk is about what he has to become.
+
+**With this, all five of Story's structural points are settled.** Still to discuss: fold Ch8 / split Kyoto / one clean renumber; what the wolf leaves behind and the story the five tell (43.5, 43.8); his remaining page notes; point of view on every scene.
