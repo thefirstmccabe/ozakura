@@ -202,3 +202,10 @@ The author went over the revised list (his notes are in the revised page's datab
 - Fold Ch8 and split Kyoto, with one clean renumber before the long pass.
 - The wolf leaves a body (an odd, very large animal).
 - Point of view marked on every scene in the next revision.
+
+### Her life after his death stays out of the story (settled Nov 27, author)
+- **R.8 is cut.** The recall interlude ends on the promise and the bloom. "What she does after he dies in the past life should just stay out of the story."
+- **The dream ends at the bloom for both of them.** She doesn't wake up carrying years he doesn't have. Magic stays loose.
+- **The stone stays both of theirs (his Nov 25 decision) and nothing explains it.** Story's [P] explanation (she raised it; her name was added when she died old) is dropped, and canon's "optional coda" (her life afterward; her at the tree after his death) is retired.
+- **The epilogue at the old grave stands.**
+- For the record: in the first Pass 1 the stone was an unmarked marker and canon left open whose it was; R.8 and the explanation were Story's additions in the Nov 26 revision.
