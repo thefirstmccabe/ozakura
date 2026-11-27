@@ -232,3 +232,11 @@ The author went over the revised list (his notes are in the revised page's datab
 - **Story's proposal, not yet answered [P]:** why this one: he missed it last year, the summer after his father died.
 - **Flagged:** the list has three competitions (the summer meet, this one, the autumn tournament) against canon's "one or two at most." Left as is unless he says otherwise.
 - **Later the same exchange (author):** not Story's reason. The late-summer tournament is the qualifier for regionals ("something like that"), and the autumn one Natsuki does well in (Ch24) is regionals.
+
+### Natsuki after the choice (settled Nov 27, author: "I like 1 and 3")
+The author calls her being rudderless after she isn't chosen, and again after the dream, "one of the biggest structural problems in the story." He confirmed she stays for the next school year ("We definitely need that"). Of Story's three suggestions he took two.
+- **1. Her own clock, the transfer (taken):** the news comes in November, right after she isn't chosen: her father's next posting starts in April. She tells only Chie. At first it is almost a relief and makes her grace easier; then the dream, the wolf and the friendship make leaving unbearable. Her question becomes whether she stays, and the answer is hers.
+- **3. The ending is something she does (taken):** the night before the fight, Nanoha asks her to look after him, and her bitter answer cuts twice because she is supposed to be gone by April; Nanoha tells her to stay, so the first person ever to ask her is the rival. In 44.5 she asks her parents; Nanoha lived, so the promise is void and she stays for herself. Last image: she has never been in her own photographs; under the ordinary spring bloom Nanoha takes the camera and puts her in the frame. She gives Nanoha the Kyoto photo of him (26.3).
+- **2. The witness (not taken):** Story's idea that she is the one who knows how the wolf fights, because she watched the old fight from outside. 38.6 stays as written.
+- **Not doing (Story):** a new boy for her, or more scenes of her being sad about him.
+- All of it is [P] at the level of scenes; placement is for the next revision.
