@@ -6,7 +6,7 @@
 
 Every decision through Oct 8, 2026 is folded in. When the author decides something, edit this document in place, add a line to the revision record (`story/canon-revisions.md`), and log it in the production log.
 
-Last updated 2026-11-25 (the Nov 1–25 handoffs folded in, then the scene-list thread's Nov 25 decisions; revision record in `story/canon-revisions.md`). **The scene-level plan for the whole story is `story/scene-list.md`** (from Nov 25; a draft until the author approves it).
+Last updated 2026-11-26 (the Nov 1–25 handoffs folded in, then the scene-list thread's Nov 25 decisions, then the author's review of the whole scene list, Nov 25–26; revision record in `story/canon-revisions.md`). **The scene-level plan for the whole story is `story/scene-list.md`** (from Nov 25; a draft until the author approves it).
 
 **Related docs:**
 - `ozakura/pilot-notes.md`: what the shipped pilot invented (marked [P]), and the agreed fixes waiting on the revision hold.
@@ -36,7 +36,7 @@ A capable but overburdened Japanese high-school boy, Fujisawa Kōhei, falls into
 
 In an earlier life, Kōhei and Natsuki were husband and wife. He died killing a beast that trapped them on a walk. The local cherry-tree deity granted their promise to meet again. That promise is fulfilled, but the reunion does not decide whom they should love now.
 
-A supernatural beast then threatens their town. The tree blooms out of season, its fairy messenger grows more prominent, and the friends find that they have the access and experience to confront it. Kōhei must learn to cooperate, including with a rival who grates on him, rather than repeat his earlier life's solitary sacrifice.
+A supernatural beast then threatens their town. The tree blooms out of season, its fairy messenger grows more prominent, and the friends find that they have the access and experience to confront it. Kōhei must learn to cooperate, including with a rival who grates on him, rather than repeat his earlier life's solitary sacrifice. **(Author, Nov 26: the old sacrifice was not a mistake; it was the only move he had. What's different now is that he isn't alone. And Takatsuki is his best friend since Nov 21, not a rival who grates.)**
 
 **Themes:**
 - Love enduring across time and death.
@@ -52,14 +52,19 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 - A genuinely enjoyable, mostly uplifting school romcom first: a major slow burn with familiar romcom tropes done well. The author's shorthand is "Blue Box with kendo," with a consequential love triangle, a more dangerous male lead and supernatural elements.
 - Ordinary chapters must be worth reading without clues or plot progress.
 - Gradual oddness and past-life fragments add mystery. Later danger is real and lethal but stays personal and local.
-- **The genre is promised from the start (Decided Oct 18):** the reader knows early that this is also a dark supernatural story, with many more threads of dread and horror throughout, in the Muv-Luv *Unlimited*/*Alternative* manner (Kōhei's fight flashbacks, local myths). Individual beats stay deniable, with one exception: the cold open shows the threat outright (since the author's Nov 21 staging shows the eyes). No new supernatural events are added for this; it comes from how the existing ones are told.
-  - **Frame devices the author likes (Oct 18):** a flash-forward cold open, short vignettes between the Parts, and the title screen and music. **The cold open is in the pilot (Decided Oct 18):** it opens the game and goes straight to Ch1's morning; **the dream moves to the end of Ch1** (cold open plus dream back to back was too much at once). Vignette placement is Open.
+- **The genre is promised from the start (Decided Oct 18):** the reader knows early that this is also a dark supernatural story, with many more threads of dread and horror throughout, in the Muv-Luv *Unlimited*/*Alternative* manner (Kōhei's fight flashbacks, local myths). Individual beats stay deniable, with one exception: the cold open shows the threat outright (since the author's Nov 21 staging shows the eyes). No new supernatural events are added for this; it comes from how the existing ones are told. **Nov 25 (author):** two of Nanoha's beats are no longer deniable to the people in them: in Ch11 Natsuki really feels something, and on the Ch20 roof she names it aloud (§6).
+  - **Frame devices the author likes (Oct 18):** a flash-forward cold open, short vignettes between the Parts, and the title screen and music. **The cold open is in the pilot (Decided Oct 18):** it opens the game (since Nov 25 as Chapter 0, followed by opening credits, below); **the dream moves to the end of Ch1** (cold open plus dream back to back was too much at once). Vignette placement is Open.
+    - **Chapter 0 and opening credits (Decided Nov 25, author):** the cold open becomes a real scene, "Chapter 0": Takatsuki and Akane walking and talking first, then the road goes wrong. Then **opening credits with a song** (stills and short clips, cut fast), ending on new title art, then Ch1. He wants the opening good enough to hook people.
+      - **Flow:** first visit, a nearly bare start screen with one tap and no logo or art; Chapter 0, cutting to black on the flashlights; the credits, ending on the title; the title held with one button to begin Ch1. Every later visit opens on that title screen as the menu, with Continue and a way to replay the opening.
+      - **New title art:** all five of the core cast, with a little more dread.
+      - **Cautions:** nothing in the credits may show who the dream woman is, and both girls get equal weight.
+      - Chapter 0 itself: ideally animated; most likely a color manga sequence with sound, with animation tried on one or two moments [P]. The build belongs to a design pass, the Audio thread and Production, after the scene list is approved.
     - **What it shows (Decided Nov 21, author; Akane in the sibling's place since Nov 25; replaces the Oct 18 images and unparks the Oct 19 deferral):** a flash-forward to Ch37. **At dusk in January, Takatsuki is walking Akane home when their ordinary road turns into woods.** He puts her behind him and draws his shinai from the bag on his shoulder. We see the eyes in the mist. She goes down; nothing happens to her. Then the others arrive (voices, flashlights), and it cuts before any rescuer's face and before how they get out. Only the eyes are seen. Nothing reads as the past life. Ch37 replays it and goes on past the cut (Proposal). The rest of the staging is [P] in the scene outline (P.0).
-    - **Akane, with no younger sibling (Decided Nov 25, author: "Yes, we're going with that"):** Takatsuki has no younger sibling anywhere in the story. **Still a maybe (author, Nov 23):** that this night is the first time the wolf shows up.
-    - **The other side of it (Decided Nov 25, author):** when Ch37 shows the rescue, Nanoha absolutely insists to Kōhei that they have to go to them right now, and they take her dad's motorcycle to get there in time, over Kōhei's extremely strenuous objections.
-    - **Animated, or music over CGs: Open.** **It can stay unexplained until late** (author, Nov 1: manga do this all the time); no echoes are required.
+    - **Akane, with no younger sibling (Decided Nov 25, author: "Yes, we're going with that"):** Takatsuki has no younger sibling anywhere in the story. **Decided Nov 26 (author):** this night is the first time anyone meets the wolf awake; before it there are only his dreams and bad news in town.
+    - **The other side of it (Decided Nov 25, author):** when Ch37 shows the rescue, Nanoha absolutely insists to Kōhei that they have to go to them right now, and they take her dad's motorcycle to get there in time, over Kōhei's extremely strenuous objections. **Nov 26 (author):** Kōhei drives. Kazuo isn't home and never finds out; later he asks whether somebody's been riding his motorcycle, and nobody answers.
+    - **Animated, or music over CGs:** see Chapter 0, above (Nov 25). **It can stay unexplained until late** (author, Nov 1: manga do this all the time); no echoes are required.
     - **Why (author, Nov 21):** the Oct 18 images (a hand on a sword grip, a landmark passing twice, no faces) confused readers. The callbacks run through the whole story, so it's settled before the pilot ends, and it's built after Ch4. **Proposal:** the sword image moves to a vignette before the climax Part.
-  - **Dread ramp by season (Decided Oct 18):** spring, local customs; summer, kaidan (Takatsuki tells the okuri-ōkami legend as a story he doesn't believe, half a year before it catches him; Genji keeps the real customs, Ch38; author, Nov 21; since Nov 25 the legend stays a legend and this wolf doesn't follow it, §6); autumn, night walks home from shifts and institutional dread; all year, Kōhei's recurring dreams at night and, awake, flashes of the past-life fight when his anger breaks loose (mist, the mask, the grip; §6, Oct 24). The trade itself is withheld until the climax, and beast threads stay separate from past-life clues.
+  - **Dread ramp by season (Decided Oct 18):** spring, local customs; summer, kaidan (Takatsuki tells the okuri-ōkami legend as a story he doesn't believe, half a year before it catches him; Genji keeps the real customs, Ch38; author, Nov 21; since Nov 25 the legend stays a legend and this wolf doesn't follow it, §6); autumn, night walks home from shifts and institutional dread; all year, Kōhei's recurring dreams at night and, awake, flashes of the past-life fight when his anger breaks loose (mist, the mask, the grip; §6, Oct 24). The trade itself is withheld until the recall on the night of the bloom (Nov 25, author; was "until the climax"), and beast threads stay separate from past-life clues.
 - Readers should want to spend ordinary afternoons with this cast.
 - Keep the cosmology mysterious, and keep actions and consequences clear.
 - **Influences:** Tolkien, Muv-Luv, Baldr Sky and the earlier Fionavar ideas are influences, not structural obligations.
@@ -80,12 +85,13 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 ## 2. Format and presentation
 - **Screens (Decided Oct 20):** landscape only, on every device. The iPad is the primary target; phones and desktop Chrome are supported. No portrait layout: held upright, a phone or tablet shows a "rotate your device" screen.
 - **Format (Working, the author's leaning):** VN-primary, with frequent interludes, CGs and occasional manga pages for scenes that only work as manga. The author thinks the story works best as manga, but full manga production is too costly and inconsistent at his quality bar.
-  - **Inserts are full color** (Decided Oct 10; reconfirmed Oct 12 after a side-by-side B&W test), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone.
+  - **What manga is used for (Nov 25–26, author, from the scene-list review; "I'm not worried about the expense. Let's just do this right."):** fights and matches; the old life; a few long sequences that are wordless or carried by one voice (the kiss night, Nanoha's kitchen table in her words, her answer at the festival); **childhood memories, as a rule** (Ch4, Ch7); and silent physical comedy sprites can't do (the umbrella, Ch9).
+  - **Inserts are full color** (Decided Oct 10; reconfirmed Oct 12 after a side-by-side B&W test), in the VN's art style, so sprites and backgrounds serve directly as references and the reader never sees the style switch. No B&W screentone. **Exception (Nov 25, author):** the old life is brush and ink (the recall and the short glimpses before it; §5), which also keeps it apart from present-day and childhood manga.
   - **No storyboard step (Decided Oct 12).** Claude makes inserts from the script directly, runs a robust self-review, and presents only finished pages (style guide §4a).
   - **Presentation: panel by panel (Decided Oct 13).** Inside the VN, an insert opens on the whole page, then each tap zooms to the next panel while the rest of the page stays visible but dimmed. The author: "don't change a thing." Spec in style guide §4a. **Inserts are designed for this view from the start** (every panel reads alone, one beat per tap, landscape-friendly panel shapes, surprises on a new page), not adapted from print layouts.
-  - **Era treatments (Decided Oct 17, with the pilot v2 outline):** the past life is cool and desaturated with softer edges (still color, never grayscale); childhood flashbacks are warm, sunlit and slightly faded, like an old photo, with a soft vignette. The two never share a palette, so the eras never blur.
-  - **Imagined scenes (Decided Oct 25):** a scene that plays out only in a character's mind, shown as if real, then a hard cut back to what actually happens. Mostly Nanoha's signature (her reserve made visible: the gap between what she feels and what she does), used three or four times; other characters sparingly and comic only; never Natsuki between Ch20 and Ch35. It needs its own look, distinct from both era treatments (Proposal: a soft white bloom at the edges and the music dropping out); Production designs it. **The one exception:** at the festival (Ch27) the imagined line dissolves into reality instead of cutting, because she actually says it.
-  - **No cutscenes or longer animation (Decided Oct 12).** After two rounds of tests, getting them to commercial quality would cost too much in takes and review time; pivotal moments use CGs and manga inserts instead.
+  - **Era treatments (Decided Oct 17, with the pilot v2 outline):** the past life is cool and desaturated with softer edges (still color, never grayscale); childhood flashbacks are warm, sunlit and slightly faded, like an old photo, with a soft vignette. The two never share a palette, so the eras never blur. **Nov 25:** for manga, the old life's brush-and-ink look (§5) overrides this; the color treatment remains for any old-life CG.
+  - **Imagined scenes (Decided Oct 25):** a scene that plays out only in a character's mind, shown as if real, then a hard cut back to what actually happens. Mostly Nanoha's signature (her reserve made visible: the gap between what she feels and what she does), used three or four times; other characters sparingly and comic only; never Natsuki between Ch20 and Ch35. It needs its own look, distinct from both era treatments (Proposal: a soft white bloom at the edges and the music dropping out); Production designs it. **The festival (Ch27) flips it (changed Nov 25, author; was: the imagined line dissolves into reality):** in her imagination she answers him composed; in reality she's a mess and runs into his arms.
+  - **No cutscenes or longer animation (Decided Oct 12).** After two rounds of tests, getting them to commercial quality would cost too much in takes and review time; pivotal moments use CGs and manga inserts instead. **Exceptions (Nov 25–26, author):** music sequences built from stills and short clips cut fast, where jump cuts are normal: the opening credits (§1), the end credits (stills of their later lives), and a sequence of each of them preparing before the last walk (his idea, after the rain lead-in to the church scene in *Cowboy Bebop* episode 5; he'll come back to it).
   - **Kept (Decided Oct 12):** subtle 2–4 s living-still loops on CGs (hair, petals, breathing, water), and **a few very short animated moments** of the kind the models handle well. None is placed yet: the first example, Ch2's fall and catch (tested Oct 10), became a still on Oct 28 when the author found the animation didn't work. Motion is punctuation, not the default.
 - **The feel:** a Japanese manga translated into English. Aim for manga plausibility rather than exhaustive realism.
 - **Language:**
@@ -101,7 +107,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **Oct 10 (Claude's boundary):** no sexual activity is depicted or implied for the school-age cast, however obliquely, and no sexual humor centered on them. Kissing, hand-holding and emotional closeness are fine. The past-life couple were married adults, so their intimacy can be implied non-explicitly.
 - **Keep the romcom fun.** Don't attach moral disclaimers to every trope. Photography, horror movies and friendship keep their ordinary pleasure rather than all becoming supernatural devices.
 - **Expressive close-ups** inspired by *The Fragrant Flower Blooms with Dignity*, especially in nonverbal scenes.
-- **POV: Open.** The pilot uses Kōhei in first-person present tense plus third-person interludes from the girls' side.
+- **POV (Decided Nov 26, author):** Kōhei in first-person present tense plus third-person interludes from the girls' side, as in the pilot; plus Takatsuki's side of the woods (Ch37), a short Akane interlude in Ch26 (a second, in Ch42, waits on his read), and one rare Kazuo interlude on the night of the fight (Ch18).
 - **Kiss-scene song (Decided Oct 10):** an **original song** made for the scene, vocals allowed. The author's reference ("Carolina Lies," All the Damn Vampires; unverified) sets the feel only, and the licensing question is dropped. Vocal language and lyrics are Open.
 
 ## 3. Setting
@@ -165,10 +171,10 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 | Mar–Apr | Aftermath, graduation, the ordinary spring bloom. The main story ends. |
 | Much later | Epilogue: Natsuki, old, at the tree. |
 
-**Available set pieces:** school trip, summer festival, backyard watermelon (replaces the beach, Oct 12), cultural festival, Christmas, New Year, Valentine's, graduation. **The school trip (Decided Oct 18): Kyoto, late October**, in the in-between before the choice. Nanoha and Natsuki room together, with Rika as their third (author, Nov 25); Ryōsuke is the third in Kōhei and Takatsuki's room (Nov 25). The trip's center is their lights-out talk, two rivals who each know the other knows (and Natsuki holding her secret). Kōhei gets one quiet moment with each girl, with no shifts and no family to hide behind. Earlier note: Kanagawa schools have documented trips to Okinawa and Kansai.
+**Available set pieces:** school trip, summer festival, backyard watermelon (replaces the beach, Oct 12), cultural festival, Christmas, New Year, Valentine's, graduation. **The school trip (Decided Oct 18): Kyoto, late October**, in the in-between before the choice. **Nov 25 (author): the trip "goes full":** real sightseeing the way manga do it, the famous sights shown and talked about, with a Nara day and a silly scene feeding the deer. Nanoha and Natsuki room together, with Rika as their third (author, Nov 25); Ryōsuke is the third in Kōhei and Takatsuki's room (Nov 25). The trip's center is their lights-out talk, two rivals who each know the other knows (and Natsuki holding her secret). Kōhei gets one quiet moment with each girl, with no shifts and no family to hide behind. Earlier note: Kanagawa schools have documented trips to Okinawa and Kansai.
 
 ### Length and pacing
-- **Total length (Decided Oct 12):** a 40-chapter spine (`chapter-map.md`); **42 since Oct 18** (the school trip, and the January disclosure split in two); **44 since Oct 31** (two October chapters before the choice). Chapter length floats, about 4,000–5,000 words where a chapter covers a week or more, for roughly 12–15 hours of reading. Slice-of-life chapters and extra development get added as needed. Minor characters stay light; that's fine.
+- **Total length (Decided Oct 12):** a 40-chapter spine (`chapter-map.md`); **42 since Oct 18** (the school trip, and the January disclosure split in two); **44 since Oct 31** (two October chapters before the choice). Chapter length floats, about 4,000–5,000 words where a chapter covers a week or more, for roughly 12–15 hours of reading. Slice-of-life chapters and extra development get added as needed. Minor characters stay light; that's fine. **Nov 25–26:** Chapter 0 and the recall interlude sit outside the 44, unnumbered, so nothing renumbers. The 44 stay for now (author, Nov 26); thin chapters are judged once each Part is written in full.
 - **Earlier discussion (Oct 6):**
   - **Option under discussion:** a fixed spine of about 40 chapters (~120k words, ~10 hours), plus an expandable layer of standalone daily-life chapters.
   - **Growth path:** the spine could grow toward Muv-Luv Extra scale (55–60+ chapters). The author likes that length but considers it ambitious for a first run.
@@ -182,14 +188,15 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 | Jan–Mar: memories, disclosure, deaths, battle | ~11 (Oct 18: the disclosure splits in two) |
 | Aftermath | ~1 |
 
-- **Reader-ahead past-life interludes: Open (parked).** The proposal is to give the reader substantial past-life scenes about once per seasonal arc (5–6 in total) while the characters keep only fragments. That way the final act isn't the first time the past romance becomes substantial. The fatal walk is withheld until the climax either way.
+- **Reader-ahead past-life scenes (Nov 25–26, author; was Open, parked):** two short glimpses stay before the bloom (the scene list's V1 in Ch9, "for now yes," and V3 in Ch23), her face and hair hidden. **The whole old life, the fatal walk and the trade included, is told once, in the recall** (§6, Memories), which reverses "the fatal walk is withheld until the climax." The wolf fight only flashes back to panels the reader has already seen.
 
 ## 5. The past life (rewritten Oct 7)
 - **The couple:** Kōhei and Natsuki grew up in the same area and knew each other as children.
-  - **He** became a **rōnin**, a highly accomplished swordsman without a master.
+  - **He** became a **rōnin**, a highly accomplished swordsman without a master. **Background in the author's head (Nov 26; it needn't be named in the story):** he fought on the losing side at Sekigahara, survived, and was a known terror on the battlefield; his lord died and lost, which is why he's a rōnin.
   - **She** was an ordinary woman in a traditional gender role, the daughter of a **modestly propertied family** that had no male heir.
 - **The marriage:** it was **arranged so that her father would gain a male heir**, with Kōhei marrying into her family. They were nonetheless deeply in love.
-  - **Open:** exact ages, how long they were married, and her family's livelihood.
+  - **The marriage lasted about a year (Decided Nov 26, author):** no children, and she wasn't pregnant.
+  - **Open:** exact ages and her family's livelihood.
 - **Proposal:** a mukoyōshi-style adoption into her household. The rōnin gains a home and a name; her family gains an heir.
 - **The romance** is real, warm and meaningful. It is shown through selected scenes (teasing, domestic familiarity, affection, his prowess), not a complete second romcom. Give the happiness enough room for the loss to matter.
 - **They never sparred together.** **She watched him train** for years.
@@ -200,7 +207,8 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **The trap:** a beast that distorts familiar paths traps them, so she cannot go for help.
   - **The fight:** long. He realizes he is losing a battle of attrition, and that if it goes on they will both die.
   - **The trade:** **he deliberately opens himself to a fatal wound so he can get close enough to kill it**. The beast and Kōhei kill each other.
-  - **Look (Working, Oct 13):** the past-life beast fight gets its own visibly different art style, an homage to *Vagabond*: heavy brush-ink, gritty and painterly, like the kiss sequence's *Fragrant Flower* homage. Homage to the style, never copies of actual pages.
+  - **Not a mistake (author, Nov 26):** the trade was a desperation move and the only one left. He might not have killed it; with great luck he might have killed it and lived; fighting on as he was, both of them were sure to die. Cutting does hurt it, but it dies slower than a human would from the same cuts.
+  - **Look (Working, Oct 13):** the past-life beast fight gets its own visibly different art style, an homage to *Vagabond*: heavy brush-ink, gritty and painterly, like the kiss sequence's *Fragrant Flower* homage. Homage to the style, never copies of actual pages. **Nov 25 (author):** the whole recall is "an elaborate *Vagabond*-style manga" (§6, Memories).
   - **Her role:** she is **helpless throughout**. She survives and stays with him.
 - **After (Decided Oct 10):** once he has killed the beast and they've made the promise, **the tree blooms out of season.** The distortion falls away.
   - **The CG:** her cradling his broken body, blood everywhere, cherry blossoms falling all around her.
@@ -210,14 +218,14 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **Staging preference:** the promise comes before the deity's assurance, so they make it without certainty. **The out-of-season bloom is that assurance** (Oct 10).
   - The tree deity grants a reunion "in some form": reunion only, with no guarantee of recognition, simultaneous memory or a romantic claim.
   - The exact wording is unwritten. "Beyond the western sea" was a tonal reference only.
-- **Optional coda:** her life afterward. Her widowhood leaves the household without an heir again, which is a poignant possibility. This is separate from the modern epilogue.
+- **Optional coda:** her life afterward. Her widowhood leaves the household without an heir again, which is a poignant possibility. This is separate from the modern epilogue. **Nov 25–26 (author):** the old memorial stone Natsuki finds at Obon (Ch17) is for both of them. **[P]:** she raised it for him, and her name was added when she died old. The epilogue is at that stone (§7).
 - **Costume:** she wears **a real kimono, simple and everyday, not elaborate**. Copper hair tied back with a plain cord. Her face is hidden in the manga. **Oct 18: her hair is hidden too until the bloom** (a cord, a hood, shadow, framing on her hands), so nothing settles who she is; at the bloom the copper is the visual confirmation.
 
 ### What the reunion is for (Decided Oct 8)
 **The reunion's payoff is rescue and closure, not getting him back as a husband.** Natsuki's arc across both lives has three beats:
 1. **She finds him:** the April transfer.
 2. **She saves him:** in the climax she stops the same trade she once watched helplessly. **That is the reunion's payoff; the romance never was.**
-3. **She lets him go and lives:** her full life and the old-age epilogue fulfill his dying wish. In the past life she also outlived him and grew old, so both lives end with her full and grateful at the tree.
+3. **She lets him go and lives:** her full life and the old-age epilogue fulfill his dying wish. In the past life she also outlived him and grew old, so both lives end with her full and grateful (since Nov 26 the epilogue is at the old grave, §7).
 
 **She chooses it.** Her wound is wanting to be someone's first choice, loved for who she is. Being loved because she was his wife in another life is exactly what she doesn't want. When the memories come, **she is the one who says, in effect, "I don't want you to love me because of *her*."** Losing the romance is her decision, made from strength, not a punishment.
 
@@ -229,7 +237,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 **What follows from this:**
 - **Her kendo means something.** Natsuki was helpless while he died for her. Now she is a swordswoman, and in the climax she isn't helpless.
 - **Recognition in sparring is one-sided.** She anticipates him because she has watched him a thousand times. He doesn't anticipate her. This also explains how she lands strikes while he generally keeps the edge.
-- **Armor:** helping him into armor was a wife's job, which she knows how to do.
+- **Armor:** helping him into armor was a wife's job, which she knows how to do. (Nov 26: Kōhei wears no armor in the wolf fight; the beat becomes her tying the sword's cord at his waist [P].)
 - **The wrist motif (Decided Oct 8):** she binds a cut on his wrist when he comes home late and hurt from training, scolding him ("You're late"). Patching him up afterward was all she could do in that life, and the climax reverses it. It's echoed when Natsuki treats his wounds in August.
 
 ## 6. Present-day plot
@@ -253,7 +261,7 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   - **Natsuki is direct and demonstrative.** She says what she wants, which Kōhei (who never says what he feels) finds alarming and a relief. He becomes aware of her as a girl through how she acts toward him (sitting too close, teasing, holding his eye); the framing stays on his reactions (§2 content boundaries).
   - **She isn't afraid of his edge** ("a little dangerous, but it doesn't fit him"). After the street fight Nanoha backs away from his hand, and he ends up at Natsuki's door.
   - **Why the ending is earned, and still costs:** Kōhei's arc is learning to let others share the load, which is Nanoha's kind of love. Natsuki's kind is genuinely what he's missing, so losing it costs something.
-- **Nanoha's flaw: reserve (Decided Oct 21).** She hides inside the deadpan and the bits, waits, and never says it, out of fear of changing something precious. Her payoff is the cultural festival (Ch27): on the stage where she froze in middle school (FB5), she stops waiting, and Kōhei's choice answers her finally showing up rather than defaulting to her.
+- **Nanoha's flaw: reserve (Decided Oct 21).** She hides inside the deadpan and the bits, waits, and never says it, out of fear of changing something precious. Her payoff is the cultural festival (Ch27): on the stage where she froze in middle school (FB5), she stops waiting, and Kōhei's choice answers her finally showing up rather than defaulting to her. **What she does on the stage (Decided Nov 25, author: "that's perfect"):** she doesn't confess from it. She goes off script, deadpan: she has lived next door to someone her whole life and never told him what that's meant, and she's going to, today. Then she walks off by herself (at fourteen he had to get her off it). He tells Natsuki first (approved), then reaches Nanoha before she has to come to him.
 
 ### Anger: warning signs
 - **Warning signs** stay sparse: a too-intense practice, and a quiet, threatening confrontation.
@@ -265,24 +273,24 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
 
 ### Street fight → wound care → kiss (locked sequence, dates updated)
 **Late August.**
-1. The group is out at karaoke, possibly in a less safe part of town; Natsuki has left early. A lone, genuinely unpleasant antagonist is the leading staging. The venue is Open. **The trigger (Decided Oct 31):** on the way home, a man catcalls or otherwise harasses Nanoha; exactly what he does and how it escalates are Open.
-   - **Before it (Decided Oct 31):** the karaoke follows a late-summer tournament where Kōhei did worse than he knows he could have, because he has no time to practice. The night carries a lot of his internal monologue: he's angry at the world over his situation before anything happens. **[P]:** Takatsuki did well. (No chip on Kōhei's shoulder about it since Nov 21: a little jealousy at most, not belabored; §8.)
+1. The group is out at karaoke, possibly in a less safe part of town; Natsuki has left early. A lone, genuinely unpleasant antagonist is the leading staging. The venue is Open. **The trigger (Decided Oct 31):** on the way home, a man catcalls or otherwise harasses Nanoha; **what he does (Decided Nov 25, author):** words, then a hand on her arm. Kōhei is "a little bit too eager to fight… glad he has an excuse": he steps in faster than he needs to, does nothing to de-escalate and basically escalates, and the man swings first.
+   - **Before it (Decided Oct 31):** the karaoke follows a late-summer tournament where Kōhei did worse than he knows he could have, because he has no time to practice. The night carries a lot of his internal monologue: he's angry at the world over his situation before anything happens. **Nov 25 (author):** the girls know how he's doing, he knows they know, and their pity makes him angrier; a plain internal monologue of anger over his life, pointed outward (he doesn't know he's dangerous yet). The tournament is shown as manga. **[P]:** Takatsuki did well. (No chip on Kōhei's shoulder about it since Nov 21: a little jealousy at most, not belabored; §8.)
 2. Kōhei takes damage and wins the fight. The other man stays conscious, can leave, and has no permanent injury. He is no justification for continuing.
 3. Kōhei holds the beaten man by his clothes, preparing another blow. Nanoha intervenes before it lands.
 4. In his fixation he jerks as she grabs him and **accidentally knocks her down**. It is a minor fall, uninjured, not a shove. He stops at once and releases the man, who runs.
 5. **He offers his hand, face and shirt and hands bloodied. She backs away and doesn't take it.** Full page, from Nanoha's POV: she sees someone frightening.
-6. The Rival helps her and takes her home. Kōhei lets them go. The Rival witnessing it leads to trouble in the kendo club; there is **no legal subplot**.
+6. **Takatsuki isn't there for the fight (Decided Nov 25, author).** He runs up as it's ending and tells Kōhei to get the hell away from the scene, then takes Nanoha home. **At the Tachibanas' door (author, Nov 26):** her parents know at once that something is wrong; Emi presses him; he says their daughter is all right, that it's Kōhei's story to tell, and that if Kōhei doesn't tell them they won't have to ask again. Kazuo accepts that and tells his wife he'll wait for Kōhei. A rare Kazuo point of view, one scene closing Ch18. Kōhei tells Kazuo and Emi within a day [P: it opens Ch20]. The Rival witnessing it leads to trouble in the kendo club; there is **no legal subplot**.
 7. Nanoha is frightened and repelled, and also feels a small, troubling gratification that she matters this much to him. She is not responsible for his violence.
 8. Hurt, ashamed and shaken, Kōhei can't face home or the Tachibanas, so he goes to Natsuki's.
 9. **Natsuki treats his wounds.** Gentle, necessary contact leads to her initiating a mutual comfort kiss. They begin making out (shown as kissing, non-explicit). **She stops it** even though she wants to continue: she knows Nanoha's feelings, she doesn't want to be an emotional refuge mistaken for a choice, and it breaks the girls' pact.
-10. **She asks Kōhei not to tell Nanoha, because she wants to be the one to tell her.** She is painfully aware Nanoha loves him. Kōhei is only partly aware of that ("kind of unaware," not oblivious).
+10. **She asks Kōhei not to tell Nanoha, because she wants to be the one to tell her.** **Changed Nov 25 (author):** in the moment she only backs away, distressed, and asks him to go; the request comes later, by text ("Let me be the one to tell her"). He can't go home to the two windows, so he sits by the river until light, and it reaches him there. She is painfully aware Nanoha loves him. Kōhei is only partly aware of that ("kind of unaware," not oblivious).
 
 **Rules for this sequence:**
 - Not a cool demonstration of kendo mastery.
 - It has consequences without consuming the romcom's entire tone.
 - No supernatural compulsion; his distress doesn't erase his attraction or his agency.
 - It isn't infidelity, since Kōhei and Nanoha aren't together. The breach is the pact and the trust.
-- **Kiss chapter staging (Working):** almost wordless even where the characters speak, with brief visual echoes of an analogous past-life moment. Only Natsuki's request is voiced aloud.
+- **Kiss chapter staging (Working):** almost wordless even where the characters speak, with brief visual echoes of an analogous past-life moment. **Nov 25–26:** nobody speaks at Natsuki's at all; the only words spoken in the chapter are at the gate at dawn (Mentor, below).
 - **The wound-care and kiss sequence (Decided Oct 13):** told in the style of *The Fragrant Flower Blooms with Dignity*: close-ups of faces and hands, with many half- and full-page images. Beat by beat:
   1. Natsuki gets a text from Kōhei, something like "Are you home?" or "I'm at your door," and is shocked. (Decided Oct 13.) **Proposal:** she checks the apartment intercom's video screen and sees his bloodied face on it.
   2. She opens the door: his face, his bloody hands, blood dripping on the floor.
@@ -293,21 +301,22 @@ A supernatural beast then threatens their town. The tree blooms out of season, i
   7. She cleans his face and dries his tears, then lingers longer than she needs to.
   8. Half or full page: she kisses him.
   9. Full page: he stands up and kisses her back, wrapping his arms around her.
-  - Then she stops it (step 9 above) and asks to be the one to tell Nanoha.
+  - Then she stops it (step 9 above) and asks him to go; her request to be the one who tells Nanoha comes by text (Nov 25).
   - **Framing (Oct 13):** step 5 is a hug, and it's shown: the two of them holding each other. The emphasis stays on their faces; it's grief and comfort.
   - **Look (Decided Oct 13):** a visibly different art style for this one section, an homage to *The Fragrant Flower Blooms with Dignity*: delicate fine linework, large expressive eyes, soft tones, lots of white space. An homage to the style, never a copy of its actual pages.
-- **Afterward (Decided Oct 13):** later, texting Chie, Natsuki types something like "I wish it had been me he fought for" or "I wouldn't have run," then deletes it without sending.
+- **Afterward (Decided Oct 13):** later, texting Chie, Natsuki types something like "I wish it had been me he fought for" or "I wouldn't have run," then deletes it without sending. **Nov 25 (author):** she feels out of control.
 - **Open:** what Natsuki knows about the fight at that moment.
 
 ### Telling Nanoha (Decided Oct 6; sharpened by the pact Oct 7)
-- **Natsuki tells Nanoha within about a week.** Telling her is about honor as much as kindness, because she broke their agreement.
-  - **The imagined slap (Decided Oct 25):** told as Nanoha's interlude. She imagines slapping Natsuki and screaming something like "He was mine"; then the cut back: she hasn't moved, and is even still smiling. But Natsuki's head turns a fraction and her hand drifts to her cheek; she says nothing, or "…Sorry. Go on." Nanoha's latent ability made her feel it. **Working:** this is the only time her power touches someone physically before the climax; Nanoha doesn't understand it, and it frightens her later. It mirrors Kōhei: his anger comes out as violence, hers stays inside and leaks anyway.
+- **Natsuki tells Nanoha on the first day of term (Nov 25, author; was "within about a week").** Both of them act strangely at once, and Nanoha knows something is up without any gift; Natsuki asks her up to the roof before she's cornered. Telling her is about honor as much as kindness, because she broke their agreement.
+  - **The imagined slap (Decided Oct 25):** told as Nanoha's interlude. She imagines slapping Natsuki and screaming something like "He was mine"; then the cut back: she hasn't moved, and is even still smiling. But Natsuki's hand goes to her cheek, **and she says it aloud: "Did you just imagine slapping me?" (Nov 25, author; was: she says nothing).** No red mark, and it frightens Nanoha instead of getting a laugh. Nanoha's ability is waxing: this is the second rung of a ladder (in Ch11 Natsuki really feels it when Nanoha imagines upending the bentō over her head), **which replaces "the only time her power touches someone before the climax."** It still mirrors Kōhei: his anger comes out as violence, hers stays inside and leaks anyway.
+  - **On the roof (Nov 25, author):** Nanoha: "You could have any boy in the school. Why does it have to be him?" Natsuki: "I don't want to win by default." Nanoha stays cold and has no answer. That night Usagi-san goes across her room and she ugly-cries, angriest at herself because Natsuki can act and she can't; she says that to Natsuki's face in Kyoto (Ch26).
 - **Kōhei owns his half:** he has no duty to tell her first, since they aren't dating, and Natsuki is the one who tells her. When Nanoha then faces him, he says plainly that he kissed Natsuki back. He has some inkling she won't be happy; dense, not an idiot. Natsuki *knows* she'll be really unhappy.
 - **Nanoha's hurt** is "we said we'd do this fairly," not just "you kissed him."
 - **Nanoha dates him knowing about the kiss.**
 - **Proposals:**
   - Natsuki's motive is mixed. It's partly for Nanoha, partly distrust that Kōhei would tell it right, and partly not wanting to lose Nanoha or become the villain.
-  - She struggles for a few days before telling; saying "I'll tell her" is easy, and doing it is hard.
+  - She struggles for a few days before telling; saying "I'll tell her" is easy, and doing it is hard. (Superseded Nov 25: she tells her the first day.)
   - **Natsuki is the one who names Nanoha's feelings to Kōhei:** "She's in love with you. You really don't see it?" That ends his avoidance and feeds into the October dating.
   - "Why didn't you tell me yourself?" / "She asked me to let her." True, and still not good enough.
 
@@ -337,7 +346,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Nanoha's father apologizes to Kōhei:** he always offered help but didn't press it the way he should have. He takes his own share of responsibility while still holding Kōhei responsible for the violence; the mentor models what he asks of Kōhei.
 
 **Mom's recovery (Decided Oct 10; supersedes "no substantial recovery arc"):**
-- **Emi confronts her** in the week after the fight: "I know you're hurting, but your son is falling apart."
+- **Emi confronts her** in the week after the fight: "I know you're hurting, but your son is falling apart." [P, Nov 26: Kōhei steps aside and lets her through his mother's door, which is the acceptance that costs him.]
 - **Mom's shame:** she's ashamed of not being a better mother. **Emi:** "Your kids just want their mom back." That matters more than the shame.
 - **Emi helps her cook the family's favorite dish.** Kōhei and Akane come home together to the smell of it, the food she used to make. Happy beat; strong CG.
 - **Mom takes back some of the weight:** part-time bookkeeping she does from home (Decided Oct 10).
@@ -346,13 +355,14 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 
 ### Mentor
 - After the fight, Kōhei finally accepts help from **Nanoha's father** (the accepted working direction), who has offered an ear before.
-- **The first talk comes right after the fight (Decided Oct 24):** walking home at dawn from Natsuki's, Kōhei finds Kazuo waiting at the gate. The first adult to face him is the one who understands anger. Kazuo sees the bandaged hands, which someone other than Nanoha tied, and doesn't ask. Kōhei's actual acceptance of help still comes in September (Ch21); Dad's regret and Kazuo's apology stay later (Ch29).
+- **The first talk comes right after the fight (Decided Oct 24; reworked Nov 25–26, author):** Kōhei gets home at dawn (from the river, not straight from Natsuki's) and Kazuo is at the gate, where he has waited all night. The first adult to face him is the one who understands anger. Kazuo sees the bandaged hands, which someone other than Nanoha tied, and doesn't ask. It isn't his first offer (there have been others, mostly off screen; one is shown in Ch5), and this time he's pushier: "Are you ready to accept my help now?" / "Yes." / "Then first thing, go get some sleep." The yes at dawn is cheap, because he has nothing left; the acceptance that costs him comes in Ch21 [P].
+- **Dad's regret and Kazuo's apology move before the choice (Decided Nov 25, author; was Ch29):** Ch25, the night of his first dinner back at the Tachibanas' [placement P]. **What Kazuo says (author):** he has to learn to accept help, and also to take responsibility for the people tied to him. If he'd lost that fight Nanoha was in danger; as it was he won and she still ended up on the ground. Not a pushover, not pacifism, not "only as a last resort": fight when it's right, honorable, and doesn't endanger the person you want to protect. "He has to learn control to be worthy of either girl." Told through Kazuo's own story, with one explicit line. Kazuo could take the sword back and doesn't [P].
 - **The father:** has relevant experience with anger, violence or combat sports. Former karate club membership and an anger incident that shamed his club are possible details. He has an ordinary job; neither police nor priest.
 - **The mentorship continues** beyond one speech. He understands anger and still holds Kōhei responsible.
 - **Proposal:** Kōhei apologizes and admits he isn't sure he would have stopped without Nanoha.
 - **Decided Oct 10:** he passes on Dad's regret, and apologizes for not pressing his offers of help (see "The Fujisawa family" above).
 - **The tree image:** be more like the tree (steadiness and shelter, not perpetual readiness to fight) while knowing when to ask for help. How explicitly he ties it to Kōhei's late father is Open.
-- **What he knows:** the father needn't know the supernatural truth.
+- **The adults know nothing (Decided Nov 26, author),** before or after. A version where Genji tells Kazuo "they needed to" was dropped because it "gives adults too much information about what's going on and raises too many questions of why they can't help."
 - **Before all this:** Nanoha's father already does informal karate-style exercise with Kōhei for fun and fitness, possibly with a punching bag. There is no dojo and no serious sparring program. The exact discipline is Open.
 
 ### Kōhei and Nanoha: flashbacks to their shared past (Decided Oct 11)
@@ -361,7 +371,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 **Accepted Oct 12 (all six scenes and the rules; Claude's proposals):**
 - **Rules:** short (one scene each), about one per seasonal arc, each triggered by something in the present (the cups, the window latch, the collar, Usagi-san). Every one shows something being *done* for the other, not explained. A visual treatment distinct from the past-life flashbacks so the eras never blur.
 - **Candidate scenes:**
-  1. **The fairy leaves (childhood, about 7):** Nanoha's "imaginary" friend vanishes without a goodbye. The grown-ups humor her and the other kids make fun of her. Kōhei is the one who believes her, searches the shrine grounds with her and leaves cookies out with her for weeks. Sets up the fairy's real goodbye at the end (§8).
+  1. **The fairy leaves (childhood, about 7):** Nanoha's "imaginary" friend vanishes without a goodbye. The grown-ups humor her and the other kids make fun of her. Kōhei is the one who believes her, searches the shrine grounds with her and leaves cookies out with her for weeks. Sets up the fairy's real goodbye at the end (§8). **Nov 26 (author):** she never left; Nanoha stopped being able to see her (§8, the fairy). The memory opens with the two of them playing at the shrine, the fairy fully drawn and talking, and is told as manga.
   2. **Usagi-san (childhood):** Kōhei saves up and buys her the white rabbit plush to cheer her up, maybe after the fairy is gone. Explains why that rabbit, of all her plushies, gets the time-outs.
   3. **The windows begin (childhood or early middle school):** a thunderstorm; she's scared, and he talks to her across the gap until she falls asleep. The origin of the window conversations; pays off in the horror-movie night (scene bank 11) and the night before the battle (24a).
   4. **Akane's first scare (Kōhei about 10–11):** little Akane is rushed to the hospital; Nanoha sits with Kōhei in the waiting room and holds his hand without saying anything. Her being there for him.
@@ -370,14 +380,14 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Nanoha's side (Decided Oct 21):** some of these are told from Nanoha's point of view, as her third-person interludes with her thoughts, especially the heavier ones: FB1, FB4 (the hospital) and FB6 (now including the funeral). Her heart is breaking for him; she wants to support him; she wants him to rely on her and need her.
   - **FB1:** it's implied, never stated, that this is when she fell in love with him: he believed her and left the cookies out while everyone else made fun of her.
   - **FB6 includes the funeral (Decided Oct 21):** Kōhei's mom doesn't go, and people murmur about it. **[P]:** with his mother absent, the 15-year-old stands as chief mourner. It must read as her collapse, not coldness; it becomes her deepest shame, which Emi can name in Ch21 [P].
-  - **Her inner voice in the later ones (Decided Oct 24), above all the funeral:** she urges herself to say something to him, to hold him, to do more, and doesn't. **Oct 25:** at the funeral it plays as an imagined scene: she holds him, tells him she loves him and will do anything to support him; then the cut back to her across the kitchen table, pencil not moving. The early ones (FB1, FB2) stay simple.
+  - **Her inner voice in the later ones (Decided Oct 24), above all the funeral:** she urges herself to say something to him, to hold him, to do more, and doesn't. **Oct 25:** at the funeral it plays as an imagined scene: she holds him, tells him she loves him and will do anything to support him; then the cut back to her across the kitchen table, pencil not moving. The early ones (FB1, FB2) stay simple. **Nov 25 (author):** the funeral, the kitchen table and what she didn't do are one manga sequence in her own words ("I would do anything"), Nanoha's counterpart to the kiss night.
   - **Mostly regret, turned inward (author, Oct 24):** she's jealous of Natsuki's ability to act, but the overwhelming feeling is regret at herself, short of self-loathing. It lives in the present-day Nanoha who is remembering, in the frame around the flashback (at 15, Natsuki wasn't in her life). In Ch21, which comes just after she learns of the kiss, the sharpest version: Natsuki held him the night of the fight; Nanoha, after the funeral, only sat across the table doing homework.
 - **Art needed:** child (about 7–8) and middle-school (about 13–14) versions of both. Proposal: reuse Akane's sailor uniform for middle-school Nanoha and a plain black gakuran for Kōhei (same local middle school). Placement goes in the chapter map.
 
 ### Dating
 - Kōhei sincerely chooses Nanoha, knowing he has real feelings for Natsuki too (Oct 18: a decision, not only a realization).
-- **Their dating life is shown, not announced**, roughly October to December, including Christmas.
-- Nanoha's latent spiritual sense and how well she knows Kōhei make her **aware that something strange, tied to the past life, is happening between Kōhei and Natsuki**, independent of the kiss. How much she perceives, and when, is Open.
+- **Their dating life is shown, not announced**, roughly October to December, including Christmas. **Nov 25 (author):** "something more explicit with her parents is warranted": he tells Kazuo and Emi properly (Ch29 [P]).
+- Nanoha's latent spiritual sense and how well she knows Kōhei make her **aware that something strange, tied to the past life, is happening between Kōhei and Natsuki**, independent of the kiss. How much she perceives, and when, is Open. **Nov 25 (author):** by the Kyoto trip she can sense that Natsuki is holding something back, and it can be her gift.
 
 ### Memories and disclosure
 - **Kōhei's recurring dreams (Decided Oct 24):** three, each about something different, and he tells no one until the bloom:
@@ -386,13 +396,16 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   3. **The trap:** a path that won't end, the same landmark coming around again; it becomes real when Takatsuki is caught in the loop (Ch37).
   - **Asleep versus awake:** these come at night. Awake, he gets flashes of the past-life fight only when his anger breaks loose (the tournament, the street fight).
   - **They grow:** each recurrence adds a little (the eyes come closer; he wakes cold). Roughly one every 3–4 chapters, never two in one chapter; placements in the chapter map are [P].
+  - **A fourth, once (Nov 26, author):** an earlier dream of the wedding, with no face or hair showing (the bride in a white hood; in Kyoto [P]). Then the waking flash at Christmas, then her face in the recall.
+  - **What choosing Nanoha again costs him (Decided Nov 26, author):** the dream of her never comes again.
 - **Fragments accumulate all year** for both Kōhei and Natsuki. Substantial memories return around the New Year bloom, **after Kōhei and Nanoha are together**.
 - **What comes back:** recovery is selective. Vivid pivotal scenes, a few ordinary tender moments, and emotional recognition. No continuous total recall, and no adult identity replacing their modern selves.
+  - **Changed Nov 25 (author): the recall is total, and it comes in a dream the night of the bloom.** They sleep, dream all of it, and wake knowing; nothing supernatural happens at the shrine but the bloom itself. It is told once, in full, the death included, as a long interlude in brush and ink ("a full chapter, probably"); its contents and length are for the scene list's second pass. Still no adult identity replacing their modern selves.
 - **Remembering a past love is not automatically renewing it.**
 - **Structure stays (Decided Oct 18):** the choice comes in October, the reveal at New Year. Rejected: revealing before the choice, retiming the choice after the reveal, a two-year timeline.
 - **Natsuki knows before Kōhei (Decided Oct 18, after discussion; reconfirmed the same day).** In the days after the wound care, not during it, her fragments and the bandaging (an echo of binding his wrist) harden into a conviction: it was her. It's a conviction, not the full memory, and she doesn't know how that life ended; the bloom gives her his death, so it still breaks her. **She stays silent because she won't let the past be the reason** anyone chooses her. The reader doesn't learn that she knew until Ch35, where an interiority sequence replays the autumn from her side, built from the drafts to Chie she never sent (Oct 18). No retcons and no past-life palette for it.
   - **Rule (Working):** from then until Ch35, her interludes stay on what she does (photos, Chie, going to the tree alone), not inside her thoughts, so Ch35 never reads as a cheat. Each should read differently once you know.
-- **The bloom creates real uncertainty (Decided Oct 18):** after the memories return, it's genuinely unclear whether Kōhei stays with Nanoha. His reaffirmation isn't automatic. What it costs him is Open.
+- **The bloom creates real uncertainty (Decided Oct 18):** after the memories return, it's genuinely unclear whether Kōhei stays with Nanoha. His reaffirmation isn't automatic. What it costs him: the dream (Decided Nov 26, above).
 - **The girls' scene, Ch35 (Decided Oct 18):** Nanoha works out for herself that Natsuki has known since summer and could have used it ("since summer," never "all along"). Natsuki's answer, in effect (not these words): she wanted him to pick her for this life.
 - **Disclosure sequence:**
   1. Kōhei and Natsuki compare memories, without a renewed romantic promise. **They grieve together rather than negotiate**: closure for the past life, not rivalry in this one. Natsuki makes clear she wants to be loved for who she is now (§5).
@@ -410,11 +423,11 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
       - **Budgets, set in the arc outline:** which chapters belong to which girl, how many uncanny beats each gets, how much present-day closeness Natsuki gets. The scene writer never sees a percentage.
       - **Measurements, read as direction:** the three numbers, read at arc ends. Three readers are too few for a threshold. The one to watch is Natsuki's support, near 40% or better.
     - **Writing rules (Decided Nov 1, author), checked on the arc outline by Story, not given to the scene writer (Nov 22):**
-      1. Never give both girls an uncanny moment in the same chapter. They get different kinds, on their own schedules: Natsuki's through the body and the past life (the tear, knowing his moves); Nanoha's through the shrine's sight. This is a default: the arc outline names any exception (the bloom involves both by design).
+      1. Never give both girls an uncanny moment in the same chapter. They get different kinds, on their own schedules: Natsuki's through the body and the past life (the tear, knowing his moves); Nanoha's through the shrine's sight. This is a default: the arc outline names any exception (the bloom involves both by design). **Nov 25 (author):** late in the story (from about the Kyoto trip) the rule can be broken, "not saying we go nuts."
       2. Don't answer one girl's hint with the other's in the next chapter. Let it sit.
       3. Motifs are rare. Keep the wrist (the dream about her; Ch19's bandaging echoes the wrist-binding). The decorative ones are dropped from here on: the knots, the apron tied like a hakama, the whiteboard's "(right one!)", the shaking left hand.
     - **Tripwires (Decided Nov 1, author), checked at the end of each arc; the only things that trigger a fix:** most readers treat the ending as settled; something confirms the dream woman before the bloom; readers stop rooting for Natsuki for a long stretch (well under 40% across two arcs); readers say they can see the balancing. Everything else (who leads, by how much, the swings) is information.
-    - **The dream-woman lean drifts up and is never confirmed before the bloom (Decided Oct 18; the bands are direction, not caps, since Nov 1):** the pilot (Ch1–4) swings around 50 (Ch2's catch pushes it up, Ch3's tree and light pull it back); spring and summer (Ch5–17) about 45–60, back and forth; the wound care to the choice (Ch18–27) about 60–65 (the bandaging echoes the dream's wrist-binding); dating to the bloom (Ch28–31) about 65–70; the bloom (Ch32) confirms it, and its shock is what it shows (the wedding, his death), not the name. *Why:* while he's dating Nanoha, the past has to look like it's coming for him, which keeps the ending in doubt.
+    - **The dream-woman lean drifts up and is never confirmed before the bloom (Decided Oct 18; the bands are direction, not caps, since Nov 1):** the pilot (Ch1–4) swings around 50 (Ch2's catch pushes it up, Ch3's tree and light pull it back); spring and summer (Ch5–17) about 45–60, back and forth; the wound care to the choice (Ch18–27) about 60–65 (the bandaging echoes the dream's wrist-binding); dating to the bloom (Ch28–31) about 65–70; the bloom (Ch32) confirms it, and its shock is what it shows (the wedding, his death), not the name. *Why:* while he's dating Nanoha, the past has to look like it's coming for him, which keeps the ending in doubt. **Nov 25 (author):** by Ch30 it will be clear to the reader that the past-life woman is Natsuki, and that's fine.
     - **How (Oct 18):** Nanoha gets red herrings with true explanations (the tree her family tends; the fairy that was at the old bloom). Kōhei half-links the dream's tenderness to Nanoha, which pays off as his real doubt after the bloom ("I thought it was you"). At the bloom Natsuki is devastated but not surprised: it gives her his death, not her identity, a fair clue in hindsight. Her thesis (she wants to be chosen for this life) is stated once, not in both Ch33 and Ch35.
 - **Increased physical affection after disclosure** is possible. Her anxiety that Natsuki shares more with him is her feeling, not an objective scoreboard. Kept non-explicit.
 - **No second deception** when he is confronted.
@@ -435,13 +448,19 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
     - **Why it fits:** walkers on familiar paths, circling (the beast as the thing walking behind you while the path won't end), and a protector turned predator. That mirrors Kōhei, the protector who hits a man who has already fallen.
     - **Folk rules as plot tools (Oct 10; no longer rules since Nov 25, below):** don't fall, "I'm only resting," thanks at the end of the road. Nanoha's grandfather or elderly locals know the customs (canon's elderly help); the methodical Takatsuki notices the pattern.
     - **This wolf doesn't match the legend (Decided Nov 25, author):** "It's just that this wolf doesn't match the legend and it doesn't work." The fall rule "creates this rule that's a problem in all our scenes," so a fall brings no attack and the saying protects no one. **The real legend stays in the story as a legend:** Genji's and Nanoha's "just stopping for a rest" (Ch3, built) and Takatsuki's kaidan (Ch16) are kept ("We can keep that from the real legend"). This supersedes Nov 21's "a fall doesn't necessarily bring an attack."
-      - **Working (Story's proposal; the author said to draft on it, Nov 25):** it doesn't pounce. It stays behind you on a road that won't end and waits until you're spent, as in the past life (a fight of attrition; she couldn't go for help). The story closes the legend on screen once: in Ch37 Takatsuki, who told it in August, registers that it didn't go the way the story says.
-      - **Who can get you out (author, Nov 25; Working):** not just anyone. Nanoha can, through her connection to the tree, and it isn't explored in detail. (He said "Natsuki"; Story read that as Nanoha, said so, and he agreed to draft on it.) Whether anyone else could is left unsaid ("Maybe that part doesn't really matter"). **[P]:** nobody else can find a road the wolf has bent, which is why the police can't help.
+      - **How it behaves (Decided Nov 26, author; replaces the Nov 25 working line that it only wears you down).** His test: the old fight depends on the wolf being aggressive "and maybe not 100% smart… a supernatural being gone a little crazy. It lacks some of the calculation and rationality of a natural wolf."
+        - **The road is the trap.** Your way home becomes its road or path and doesn't end.
+        - **It isn't a careful hunter.** It goes straight at an armed man. Cutting hurts it, but it dies slower than a human would, and it doesn't tire while he does.
+        - **It isn't smart enough to refuse bait,** which is why the trade worked.
+        - **It's erratic.** Sometimes it only follows, sometimes it stops and stares, sometimes it comes. Some victims are walked until they drop and others are torn. No rule protects anyone.
+        - **Ch37:** Takatsuki never has to fight it; the rescue arrives first. He registers that it didn't go the way the story says, and his notes afterward describe a wolf that was only following, so the plan is built on the wrong animal.
+        - **Background, never told in the story (author):** it was like the legend's wolf, "maybe not benevolent, but not really evil. It just kind of was. Something has gone wrong with it. Like people haven't propitiated it properly, or they've insulted the land… sort of like a Princess Mononoke kind of thing."
+      - **Who can get you out (author, Nov 25; Working):** not just anyone. Nanoha can, through her connection to the tree, and it isn't explored in detail. (He said "Natsuki"; Story read that as Nanoha, said so, and he agreed to draft on it.) Whether anyone else could is left unsaid ("Maybe that part doesn't really matter"). **[P]:** nobody else can find a road the wolf has bent, which is why the police can't help. **Nov 26 (author):** her holding it also weakens it. As one idea, not two: its strength is its road, and pinned to one stretch it is only a wolf. The magic stays loose: "We're not Brandon Sanderson. We don't need perfect mechanics here."
     - **No corpse:** it comes apart into mist. The mist on the past-life walk was its presence all along.
     - **Caution:** "okuri-ōkami" is also modern slang for a man who walks a woman home with bad intentions. A Japanese reader may hear it when Takatsuki walks Nanoha home after the fight. Avoid wording that leans on that.
   - **Open:** its exact appearance and rules, its vulnerabilities, and how it relates to the earlier beast.
   - Any larger evil can stay undefined.
-- **Authorities** investigate competently but lack the friends' access. Most adults don't believe or understand. Elderly locals might help the friends understand what to do; the source of that knowledge is Open.
+- **Authorities** investigate competently but lack the friends' access. Most adults don't believe or understand. Elderly locals might help the friends understand what to do; the source of that knowledge is Open. **Nov 26:** Genji answers the kids' questions about the old customs without being told why they're asking.
 - **The tree** shelters the local community, not a country. It helps but can't simply end the threat.
 - **Kōhei's recovered prowess matters** without making the others redundant, and memories don't erase a modern teen's physical limits.
 - **Cooperation is the decisive difference** from his solitary past victory.
@@ -449,44 +468,47 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - The friends make a genuine, non-suicidal cooperative plan.
   - It falls apart under pressure, because they are inexperienced teenagers.
   - Kōhei truly trusts the others; the failure is not a relapse into fighting alone.
+  - **The plan, and what happens to it (Decided Nov 26, author; the working version, to test in the scene list's second pass):** Takatsuki holds it, Kōhei kills it with the real sword, Natsuki guards Nanoha, and Nanoha goes in with them and holds the wolf. **Akane stays out.** "Takatsuki's part of this immediately goes to shit as soon as it starts. The wolf disables him in spectacular and violent fashion right at the start of the fight. So their plan is completely out of the window as soon as it starts." Kōhei is then alone at the front with the girls behind him, the samurai's situation exactly; mist takes him and the wolf out of the light; Nanoha tells Natsuki to go and says she'll hold it.
+  - **Why they have any chance (author, Nov 26):** "This is a desperate fight." The wolf beat a man who had survived Sekigahara; this Kōhei is not that one, and the rest are "just kids with sticks." They have a chance only because Nanoha weakens it.
 - **The lunge (Decided Oct 7):**
   - As the plan breaks down, **his old instinct pulls him toward the same deliberate opening that killed him**. He does not choose it.
-  - **Natsuki recognizes the moment, because she watched it happen once**, and strikes or unbalances the beast by inches, turning a fatal neck strike into a serious shoulder wound. **She saves him.**
+  - **Natsuki recognizes the moment, because she watched it happen once**, and strikes or unbalances the beast by inches, turning a fatal neck strike into a serious shoulder wound. **She saves him.** **Nov 26:** it then turns on her and opens her face. Takatsuki, crawling, grabs hold of it, the opposite of form, and Kōhei drives the sword in one-armed.
   - Never a planned suicidal maneuver, and it never implies his trust was false.
-- **The indispensable task:** someone Kōhei must trust has to make an indispensable contribution. Takatsuki (the Rival) currently fills it, but his functions can move if he doesn't work.
+- **The indispensable task:** someone Kōhei must trust has to make an indispensable contribution. Takatsuki (the Rival) currently fills it, but his functions can move if he doesn't work. **Nov 26:** as planned, it's holding the wolf's charge so nobody has to offer a throat; as it happens, it's grabbing it from the ground at the end.
   - **Proposal:** the plan needs both styles, Takatsuki's precision and Kōhei's instinct.
 - **Nanoha's role (Working):**
   - She protects people near the tree and senses the beast or its location. **Nov 25 (author; Working):** she's the one who can get people out of the wolf's road (above); Ch37 is the first time she does it.
-  - She can exhaust herself holding it within one path so it can't escape, at the risk of losing herself. **Oct 21:** she believes it could kill her; what it actually takes is her spiritual abilities, and she lives.
+  - She can exhaust herself holding it within one path so it can't escape, at the risk of losing herself. **Oct 21:** she believes it could kill her; what it actually takes is her spiritual abilities, and she lives. **Nov 26 (author):** she knows it could kill her; "that's not a guess." She goes in with the others (was: at the tree). "If the wolf seems stronger than them, she's going to use more power. That's going to weaken her or eventually kill her." No clock and no other mechanics.
   - While the others confront it there, they're beyond outside help.
   - Details are unfinalized; guiding or anchoring safe paths through the tree is a proposal.
 - **Don't let the mentor's job solve the threat.** Neither the father's profession nor the authorities settle the beast.
-- **Heirlooms:** Nanoha's household may hold Kōhei's old weapons, and possibly armor (provisional), as poorly understood heirlooms. Their condition and practicality are Open. Establish the objects before their significance is recognized.
+- **The sword (Decided Nov 26, author; was provisional heirlooms):** Nanoha's household has kept his old sword. Kōhei gets it at Obon (Ch17), when the Tachibana storehouse is aired out, and his hands know it before he does [staging P]. He takes it home and takes it out and plays with it fairly often: "After all, he's into swords. Why wouldn't he?"
+  - **No armor for Kōhei, and the old armor leaves the story (Nov 26, author).** For the others, **no helmets:** full kendo gear "is going to look lame," the helmets in particular; in mist they cut side vision and hearing. Takatsuki and Natsuki keep the chest plate, gloves and waist guard [P; "good enough for this walkthrough"].
   - **Proposals:** past Natsuki put them in safekeeping; a real old blade lands the past-life feeling the bamboo shinai can't.
-- **Proposal: Kōhei's own practice.** A solo routine, such as dawn suburi under the tree.
+- **Proposal: Kōhei's own practice.** A solo routine, such as dawn suburi under the tree. (Nov 26: night swings in his yard with the real sword, from Ch17.)
 
 ## 7. Ending
 - **Survival:** the group defeats the beast. **The principal young cast all survive**, and the town deaths keep the danger real.
   - **Reconfirmed Oct 18: no one dies in the final battle.** Nanoha sacrificing her life stays out. **Reversed Oct 21 (author):** the foreshadowing that one of the girls may die is now in: on the eve of the battle Nanoha believes her part could kill her (scene bank 24b). She lives.
-  - **Victory costs a real price (Decided Oct 18):** a serious injury, a loss of power or similar. **Decided Oct 21: Nanoha's cost is her spiritual abilities.** Whether the victory costs anything more is Open.
+  - **Victory costs a real price (Decided Oct 18):** a serious injury, a loss of power or similar. **Decided Oct 21: Nanoha's cost is her spiritual abilities.** **Everyone pays (Decided Nov 26, author: "victory comes at a cost"):** Takatsuki, a leg that never fully heals; Natsuki, a scar across her face, which she still has in old age; Kōhei, a serious shoulder wound (no kendo until summer [P]).
 - **Aftermath:**
-  - The tree grows quiet, extraordinary abilities diminish, and the fairy fades or says farewell. Its last appearance is Open; its death isn't required.
+  - The tree grows quiet, extraordinary abilities diminish, and the fairy says farewell: Nanoha stops being able to see her again, knowing this time that she isn't gone (Nov 26). Her last appearance is the epilogue.
   - The cherry tree remains, and **memories remain.** Don't erase the triangle to solve it.
 - **Kōhei and Nanoha:** he stays committed to her and doesn't dismiss Natsuki or their past as unreal.
   - **Sequence:** his intention is clear before the battle, though her reconciliation can lag. The battle is not an audition for his love.
   - **Nanoha decides for herself** whether to rebuild trust; she is not a prize. Recovery afterward allows ordinary trust-building.
 - **Natsuki** develops a meaningful pursuit of her own and keeps her friendships.
-  - Leaving town is not required. Plant any destination beforehand.
+  - Leaving town is not required. Plant any destination beforehand. **She stays (Decided Nov 26, author):** her father's transfer comes and she asks to stay for third year [P].
   - No instant replacement boyfriend and no implausibly fast recovery.
   - **If she departs:** separate farewells with each lead. No final kiss, and no promise of a later life that would make Nanoha an interim choice. Some small closing contact, or a scene of her starting her next chapter, shows a future without claiming the heartbreak has vanished.
 - **The closing note:** room for post-victory daily life (school, practice, Akane, imperfect but improving friendships), and the ordinary spring bloom closes the main story. The earlier promise is fulfilled, but the new life still requires choices. The exact order of the individual conversations is adjustable.
 
 **Epilogue (accepted):**
-- As an old woman, Natsuki returns to the familiar place by the tree, established in both eras, and sits and dies peacefully after a full, happy life, grateful to both of them.
-- **The fairy appears (Decided Oct 13):** in this last scene with Natsuki, the fairy appears to her. She was there at both blooms; she's there at the end. (Reading: "the final scene with Natsuki" = the epilogue.)
+- **At the old grave (changed Nov 26, author; was: the familiar place by the tree):** as an old woman, Natsuki is taken by her grandson to the old grave, the stone for both of them that she weeded at sixteen (Ch17). She sits and dies peacefully after a full, happy life, grateful to both of them. "It's not supposed to be a sad death. It's a good death after a full life."
+- **The fairy appears (Decided Oct 13):** in this last scene with Natsuki, the fairy appears to her. She was there at both blooms; she's there at the end. (Reading: "the final scene with Natsuki" = the epilogue.) **Nov 26 (author):** she comes to her at the grave, "because as you're about to die, you also see beings like the fairy."
 - **What it must not suggest:** that she was waiting to die, will reclaim Kōhei, or expects to be his lover in another life.
-- **Not required:** graves nearby, family, marriage or children.
-- **Whether her death is shown or implied** is Open, as are her final sitting place relative to the formal precinct and the evidence of the life she has led.
+- **Not required:** graves nearby, family, marriage or children. (Since Nov 26 the old grave and a grandson are in.)
+- **Whether her death is shown or implied** is Open. **End credits (Nov 26, author):** stills of their later lives.
 
 ## 8. Characters
 ### Fujisawa Kōhei
@@ -495,7 +517,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Socially:** functional, not a loner. Romantically inexperienced but neither sexless nor hopelessly obtuse. Competitive; likes winning and admiration, including Natsuki's. Comfortable with banter, less so with admitting needs.
 - **Humor:** playful teasing and mock seriousness with the people close to him. Sincere flirtation flusters him.
 - **Likes:** romance manga and fighting games, which he plays with Nanoha and especially her little sister, Mio; Akane sometimes joins.
-- **The sword:** talented, not a national prodigy.
+- **The sword:** talented, not a national prodigy. He loves swords, and from Ch17 he keeps a real one (§6).
   - **His swordsmanship is instinctive and practical** (a rōnin's, from the past life) rather than textbook kendo. He is sometimes technically wrong by kendo standards, but inexplicably as effective as a technically perfect kendoka.
   - **He and Natsuki are experienced, ordinary mixed-gender training partners** who increasingly seek each other out: partner drills, free sparring, footwork, conditioning.
   - **The balance:** no invented gender handicap. He generally has the edge; she can land strikes, exploit his mistakes and contribute observations. She's a strong athlete without needing superhuman physical equality. Particular strengths and ranks are Open.
@@ -512,12 +534,13 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **As built (Ch1–2, approved; folded Oct 31):** shifts Tuesday and Thursday from 5:30 to close at 9, and Sundays; practice after school and on Saturday mornings. Saturday afternoons are his only free time, and he gives them to the shrine sweep. The restaurant's details are [P] in `pilot-notes.md`.
   - Competitions require swapping shifts.
   - **School breaks (Decided Oct 12):** he works full time or close to it during spring, summer and winter breaks.
-- **Three first-year confessions,** all rejected with "no time / family obligations." That discourages Nanoha. Sister-complex gossip is possible background. Girls don't join the club just to watch him.
+- **Three first-year confessions,** all rejected with "no time / family obligations." That discourages Nanoha. (Nov 25: Nanoha already knows about them.) Sister-complex gossip is possible background. Girls don't join the club just to watch him.
 - **Flaws:**
   - Refuses help, conceals strain, overcommits, and assumes he knows what loved ones need.
   - His protection can become controlling: answering for Akane, cancelling plans, taking over things she wanted to do.
   - Occasional frightening anger when loved ones are threatened.
-- **How active he is: nothing decided (author, Nov 2; to discuss).** No rule that he does something active each chapter, and no commitment to a more active direction yet. The author's view: a passive lead is normal in the genre's first half (Muv-Luv's Takeru in *Extra*); what matters is a goal he pursues at some point, more personality, and volition in choosing between the girls later. He's overwhelmed where we meet him. Avoid the opposite failure: an active lead whose choices are idiotic.
+- **He half-knows how Nanoha feels (author, Nov 25):** "With how his life is right now he's really scared to let anything between them change because she's the stabilizing presence and he's worried about their relationship being damaged, so he basically doesn't let himself realize even though he kinda does." It's why his "We're not" (Ch4) comes so fast.
+- **How active he is: nothing decided (author, Nov 2; to discuss).** No rule that he does something active each chapter, and no commitment to a more active direction yet. The author's view: a passive lead is normal in the genre's first half (Muv-Luv's Takeru in *Extra*); what matters is a goal he pursues at some point, more personality, and volition in choosing between the girls later. He's overwhelmed where we meet him. Avoid the opposite failure: an active lead whose choices are idiotic. **Nov 25 (author approved the frame):** the future-plans form is the bookend: "work" in Ch5, something he wants in Ch44. What he writes is Open ("I can't decide").
 - **Growth:** receive care without paying it back instantly; ask for help; respect others' choices; regulate his anger; trust the Rival and his friends with indispensable tasks. He has value beyond being useful. Surviving through cooperation is the payoff, not a failure of courage.
 - **Not adopted:** a restless-schemer personality, or a desire to leave town.
 
@@ -535,9 +558,9 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Costume (Working):** navy blazer, white shirt, burgundy ribbon, **charcoal plaid pleated skirt**, dark socks, brown loafers. Pale-blue pajamas with a small cat detail is a proposal.
 - **Concept refs:** faces and hair are accepted directions; their elongated bodies are not. The initial reference was Nanoha; make the bedtime scrunchie puffier.
 - **Family:** settled and affectionate.
-  - **A much younger sister** (Decided Oct 13; was a brother), early elementary age, about 7. **Personality (Decided Oct 13): a bossy gremlin.** She's decided Kōhei is her personal retainer and gives him orders like a tiny princess ("Kō-nii, sit there"), and she's still a trash-talking, sore-losing fighting-game fiend who calls him "Kō-nii." Kazuo is visibly outnumbered at home. **Name: Mio** (approved Oct 13; replaces Sōta).
+  - **A much younger sister** (Decided Oct 13; was a brother), early elementary age, about 7. **Personality (Decided Oct 13): a bossy gremlin.** She's decided Kōhei is her personal retainer and gives him orders like a tiny princess ("Kō-nii, sit there"), and she's still a trash-talking, sore-losing fighting-game fiend who calls him "Kō-nii." Kazuo is visibly outnumbered at home. **Name: Mio** (approved Oct 13; replaces Sōta). **Nov 25 (author):** Mio is the one who asks, in Ch4, "Kō-nii, when are you marrying Onee-chan?" Natsuki, with her social sense, already knows they aren't dating, so the question can't be hers; what she learns is how fast he says "We're not" and what it does to Nanoha.
   - **Why:** Kazuo has only daughters, so Kōhei becomes the son he never had. It echoes the past life, where her father had no male heir and gained a son through the marriage.
-  - Her grandfather is the shrine caretaker; her father is the mentor.
+  - Her grandfather is the shrine caretaker; her father is the mentor. **Genji is Kazuo's father (Decided Nov 26, author).**
   - The families know each other well, and she has her own friendship with Akane.
   - Her parents' jobs are Open.
 - **Feelings:**
@@ -549,7 +572,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
 - **Supernatural:**
   - A special connection to the tree; she knew the fairy as a childhood imaginary friend.
   - A latent spiritual sense; she perceives that something is happening between Kōhei and Natsuki.
-  - **Oct 25:** in one moment of anger her imagined slap reaches Natsuki physically (§6, Telling Nanoha); deniable, never repeated before the climax.
+  - **Her ability waxes over the year (Nov 25, author; replaces Oct 25's "deniable, never repeated before the climax"):** in Ch11 Natsuki really feels something when Nanoha imagines upending the bentō; on the Ch20 roof the imagined slap reaches her and she names it aloud (§6, Telling Nanoha); in Kyoto Nanoha can sense what Natsuki is holding back. In winter she can find and hold the wolf's road, which weakens it and costs her the gift (§6).
   - Inherited ability is a possibility, not a system.
   - She doesn't read Kōhei's private memories.
 - **Retired:** her dying rather than merging with the tree.
@@ -587,7 +610,7 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - Don't reduce her attachment to destiny.
 - **Confession refusals (Working motive):** being wanted doesn't create love; she wants to know and be known, and distrusts instant declarations. Nearly accepting one just to feel chosen is scene bank 16, placed in late September (Oct 18).
 - **Growth:** honest requests; admitting hurt without demanding the answer she wants; choosing to be loved for herself rather than for a past life (her arc across both lives is in §5).
-- **Ending:** she keeps her memories, a future and her friendships. Neither departure nor a replacement boyfriend is required.
+- **Ending:** she keeps her memories, a future and her friendships. Neither departure nor a replacement boyfriend is required. **Nov 26 (author):** she stays for third year, and she carries a scar across her face from the wolf (§7).
 
 ### Fujisawa Akane (redesigned Oct 6)
 - **Basics:** **a first-year at Kōhei and Nanoha's high school, a year behind them** (Decided Nov 25, author; was third year of middle school). The cute, frail little sister. She can eat lunch with them (author). **Working [P]:** about 15 at the start of the year, 16 after her May birthday.
@@ -619,6 +642,9 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **Proposal:** she's quietly but openly Team Nanoha ("Nanoha-chan made you lunch *again*, Onii-chan") while staying kind to Natsuki. Her teasing shows the reader what Kōhei can't see.
   - **One of the core five (Decided Nov 25, author;** §8, Supporting cast).
   - **Takatsuki (Decided Nov 25, author; replaces the same day's "he starts out dense"):** she's interested in him. He has some shared interest and isn't completely oblivious to hers, but at the start he sees her as completely off limits: his very protective best friend's sick little sister. "That loosens a little as the story goes on but I dunno that we get a confession." A small thread; the main romance is the triangle (§8, the Rival).
+    - **Nov 25–26 (author):** her crush predates the story; she has known him for years (so the two boys go back to middle school [P]). "She can't just be bashful all the time": she's herself with him most of the time and short-circuits when he looks straight at her or praises her (the "senpai noticed me" feel). Fewer of their beats in Part 1. Takatsuki asks Kōhei's permission before saying anything to her and gets it (around Valentine's [P]); there's no confession, and she isn't told.
+  - **The kendo club's manager, from Ch5 (approved Nov 25; "genius"):** it's what she wants for herself, to carry something, and it puts her with the other four every week.
+  - **In the climax (Nov 26, author):** she stays out of the fight. **[P]:** she waits where the road lets out, is the only one standing when they come out, and has the story ready for the adults.
 - **Her school year (Decided Nov 25):** see Basics. **What it touches in the built Ch1–3** (her uniform sprites, the river walk staying two people, her voice's age direction): production log, 11-25.
 - **She survives** the main story.
 - **Birthday:** around May (accepted Oct 12). **Open:** independent interests.
@@ -637,43 +663,44 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **For the built Ch1–3:** their Ch1 entrances shrink to match (the shape is proposed in scene outline 1.1–1.3 and waits for the author's OK; the Production handoff waits on it).
 - **Nanoha's best friend: none is named (Decided Nov 25, author).** Rika was the pilot's version and isn't replaced in that role; the story doesn't spell out whose best friend is whose. **Akane is Nanoha's romantic confidante** (Decided Nov 25), and Nanoha and Natsuki get close (§8, Nanoha).
 - **The Rival (Takatsuki in the pilot; redesigned Oct 7):**
-  - **Also Kōhei's best friend (Decided Nov 21, author):** a classmate in 2-B as well as a clubmate, friends since first year through kendo [P]. The friction is between friends, which makes it sharper. He has a bigger part across the whole story, starting with the cold open.
+  - **Also Kōhei's best friend (Decided Nov 21, author):** a classmate in 2-B as well as a clubmate, friends since middle school [P, Nov 25; was "since first year through kendo"]. Captain from the summer meet (approved Nov 25). The friction is between friends, which makes it sharper. He has a bigger part across the whole story, starting with the cold open.
   - **No younger sibling (Decided Nov 25, author):** Akane is the one with him in the cold open (§1), and the Nov 21 brother ("Shō-nii") is removed everywhere. There's still no autumn reveal and no chip on Kōhei's shoulder (author, Nov 21). **[P]:** with no sibling, Nov 21's "Kōhei knows his situation" has nothing left to point at; Story reads it as "no resentment and no reveal."
   - **Look:** his art already has slate-blue hair for readability; for the cold open's dusk and mist he gets one winter marker he also wears in December and January, such as a scarf [P]. No redesign.
   - A same-club kendoka with **technically perfect, textbook kendo**. He can't explain how Kōhei's less correct, instinctive swordsmanship matches him.
   - **Clashing temperaments:** Takatsuki finds it maddening, and Kōhei finds him rigid. There's genuine competitive pleasure, and respect underneath.
   - **Not a bad guy.** He knows Kōhei's family situation and **never mocks his missed practices.** He isn't Kōhei's moral instructor, and he isn't the street-fight victim.
-  - **His functions:** Kōhei's confidant (Nov 21), witnessing the street fight (which brings the club trouble), taking Nanoha home, and his indispensable contribution in the battle.
+  - **His functions:** Kōhei's confidant (Nov 21), arriving as the street fight ends (Nov 25; it still brings the club trouble), taking Nanoha home, and his indispensable contribution in the battle.
   - **Open:** his past-life participation and memories. (Claude recommends none; it would crowd the reincarnation story.)
   - **His arc with Kōhei (Oct 10):**
     - **Core idea:** they hold the two halves of the sword. Kōhei's is a rōnin's instinct, a killing art tied to his anger. Takatsuki's is form, rules and restraint. Takatsuki embodies the restraint Kōhei must learn; Kōhei has the adaptability Takatsuki will need. Their friction is the masculinity-and-honor theme in miniature.
     - **Apr–Jul, friction:** "That shouldn't have worked." Kōhei finds him rigid. **A real kendo rivalry between friends (author, Nov 21):** Kōhei knows Takatsuki's situation; at most a little jealousy, not belabored, and no reveal. (Replaces Oct 10's chip on Kōhei's shoulder, "Takatsuki has time to be perfect, and Kōhei has shifts.") He notices that Natsuki reads Kōhei better than he does. At the meet where Akane is mocked, he's the one who says it plainly: "That wasn't kendo."
-    - **Late Aug–Sep, the low point:** he witnesses the street fight and takes Nanoha home. **Decided:** he tells Kōhei he has to report it to the club adviser, but would rather they go together, which gives Kōhei the chance to own up instead of being reported. The consequence (for example, a suspension of a few weeks) is a Proposal. **Decided Oct 24:** he's also **banned from outside matches for the rest of the school year** (through March), but allowed back to practice once the suspension ends. It lands the same week Nanoha, having heard about the kiss from Natsuki, faces Kōhei, and he doesn't minimize it. He doesn't initiate either confession; both times he has to own up when it comes to him. **Proposal:** "You scared her. You scared me too."
+    - **Late Aug–Sep, the low point:** he runs up as the street fight ends, tells Kōhei to get away from the scene, and takes Nanoha home, where he tells her parents it's Kōhei's story to tell (Nov 25–26; §6). **Decided:** he tells Kōhei he has to report it to the club adviser, but would rather they go together, which gives Kōhei the chance to own up instead of being reported. The consequence (for example, a suspension of a few weeks) is a Proposal. **Decided Oct 24:** he's also **banned from outside matches for the rest of the school year** (through March), but allowed back to practice once the suspension ends. It lands the same week Nanoha, having heard about the kiss from Natsuki, faces Kōhei, and he doesn't minimize it. He doesn't initiate either confession; both times he has to own up when it comes to him. **Proposal:** "You scared her. You scared me too." **Nov 25 (author):** the adviser says that next time he'll be expelled from school, and that only his family situation and Takatsuki are saving him. His face at the start of term shows he fought, and nobody states the details; back at the club he tells Takatsuki "you were right," and only the five know about what.
     - **Oct–Dec, learning from each other:** Kōhei comes back chastened, admits Takatsuki was right, and starts learning form. Takatsuki starts learning to improvise. They spar as near-equals and enjoy it, and the styles begin to mesh.
-    - **Jan, how he's drawn in (accepted Oct 10):** he's caught in the beast's path distortion himself (a walk home that keeps looping) and is found or freed by the group. **Nov 25:** Akane is with him (no younger sibling), and it's the cold open; Nanoha and Kōhei come for them on her dad's motorcycle (§1). He believes because he lived it; it nearly got him; and he's the methodical one who noticed how the loop works, which feeds the plan.
-    - **The battle (Proposal):** when the distortion throws everyone into chaos, his discipline lets him hold position and execute the planned strike exactly. He's the anchor instinct can't provide. Then the respect exchange (scene bank 26).
+    - **Jan, how he's drawn in (accepted Oct 10):** he's caught in the beast's path distortion himself (a walk home that keeps looping) and is found or freed by the group. **Nov 25:** Akane is with him (no younger sibling), and it's the cold open; Nanoha and Kōhei come for them on her dad's motorcycle (§1). He believes because he lived it; it nearly got him; and he's the methodical one who noticed how the loop works, which feeds the plan. **Nov 26 (author):** he never has to fight it there, and he carries Akane out himself.
+    - **The battle (Decided Nov 26, author; replaces the proposal that he holds position and lands the planned strike):** his part fails in the first seconds: the wolf takes him by the leg and throws him. At the end, crawling, he grabs hold of it so Kōhei can strike. His leg never fully heals. The respect exchange (scene bank 26) goes as an exchange now that they're friends; his one line stays, said in passing ("let me do my part, keep your head, and not die") [P].
     - **After:** friends; "Next Saturday?" as a callback.
     - **Romance (Decided Nov 25, author; revises Oct 10's "none" and the same day's "starts out dense"):** "Akane's interested in Takatsuki. Takatsuki has some level of shared interest and is not completely oblivious to her interest, but he sees her, at least at the start of the story, as completely off limits, as his very protective best friend's sick little sister. That loosens a little as the story goes on but I dunno that we get a confession." "We're not going to spend a huge amount of time on that romance because we already have the main one, but it's there." (On Nov 23 the author described it from her side as a growing infatuation.) He stays out of the main triangle; at most Kōhei briefly suspects something after Takatsuki takes Nanoha home.
 - **The work kōhai:** a cute, troublesome girl at the restaurant with a light, genuine crush who flirts and adds comic pressure.
   - **Not** a serious contender and **not** connected to the past life.
   - Bolder verbally than when she's sincerely noticed; occasionally competent and gets the last word.
   - Kōhei can be friendly or exasperated without promising anything, and keeps clearer boundaries once he's dating Nanoha.
-  - Nanoha and Natsuki may briefly unite in annoyance at her.
+  - Nanoha and Natsuki may briefly unite in annoyance at her. (Nov 25, author: in summer, once the triangle has heated up, not in her first chapter.)
   - **Inspiration:** a comparable role in *Watari-kun*.
 - **The kendo senior:** a minor recurring mentor for club life, not a second supernatural authority. **Male** (Oct 8; the pilot's captain, Kirishima, is being changed to match).
 - **The fairy:** the tree's messenger and companion, with a personality and limited knowledge; not an omniscient guide.
   - **History:** Nanoha's childhood "imaginary" friend. Kōhei knew about it but never clearly saw it.
-  - **Arc:** it disappeared, then started returning in the year before the awakening. It becomes more visible as events intensify.
+  - **Arc (Decided Nov 26, author; was: it disappeared, then started returning):** she never left. "Little kids see imaginary beings, and when you get older you stop seeing them whether you like it or not"; so can someone at the very end of a long life. **She is very old, and it doesn't make her sad or lonely: "it's just the way it is."** No image of a lonely fairy waiting. It is sad for Nanoha, who starts to see her again as her own gift grows ("…You came back" is wrong, and the fairy can't tell her so).
+  - **More of her (author, Nov 26: she won't feel like an important childhood friend returned otherwise):** fully drawn in Nanoha's childhood memories; a light that lives in Nanoha's room and window scenes from Ch9, which can't speak but reacts, and to which Nanoha says what she won't say to people; whole and talking from the night of the bloom, with a reunion scene (Ch34 [P]) and a place in most of Nanoha's scenes after it. She stays small in Part 5.
   - **Role:** provides guidance and exposition, so no separate magical mentor is needed.
   - **Open:** its appearance, name, gender and exact tie to the deity. Limits on its hours, visibility or power have been considered but not decided; a limited companion needn't carry every plot function.
   - It ends with a fade or farewell, not a required death.
   - **Optional detail:** it remembers a childhood biscuit trial.
   - **Timeline and function (Decided Oct 10).** Her visibility tracks the danger, so she doubles as the story's barometer.
-    - **Apr–Aug:** a drifting point of light, rare (about once a month); only Nanoha notices, and she tells no one. Also small displacements in Nanoha's room: a plushie moved, things not where she left them. Same subtlety and rarity.
+    - **Apr–Aug:** a drifting point of light, rare (about once a month); only Nanoha notices, and she tells no one. **Nov 25 (author):** the first light is at Nanoha's window the night of "We're not" (Ch4), with "…You came back," not at the tree in Ch3. In Ch3 the tree instead stands in snow for a split second; Kōhei definitely sees it, and it isn't clear whether the girls do. Also small displacements in Nanoha's room: a plushie moved, things not where she left them. Same subtlety and rarity.
     - **Autumn (low-level beast activity):** more frequent; a small half-form at the edge of Nanoha's vision; fragments of speech at most; agitated near places where people got lost. An alarm only Nanoha registers.
-    - **New Year bloom:** fully visible to Nanoha and speaking. Kōhei and Natsuki can see her as their memories flood in. **She recognizes them ("You two. Again.")**; she was there at the old bloom.
+    - **New Year bloom (changed Nov 26, author):** nothing supernatural happens at the shrine but the bloom. That night Nanoha comes home and her friend is back, whole and talking. There is no "You two. Again." at the tree. She was there at the old bloom. Whether and when Kōhei and Natsuki can see her afterward is for the scene list's second pass.
     - **Jan–Mar:** visible to the whole group, Takatsuki included after his trap. Exposition with limits: the distortion, what the tree can and can't do. She doesn't know everything about the beast, so the friends still have to work it out.
-    - **After:** she fades, with **a real goodbye to Nanoha.** **Proposal (Oct 21):** the goodbye is the last thing Nanoha sees before her sight goes, so the price and the goodbye are one moment. As a child, Nanoha's friend vanished without one; this time she gets to say goodbye.
+    - **After:** she fades, with **a real goodbye to Nanoha.** **Proposal (Oct 21):** the goodbye is the last thing Nanoha sees before her sight goes, so the price and the goodbye are one moment. As a child, Nanoha's friend vanished without one; this time she gets to say goodbye. **Nov 26:** and Nanoha knows she is only out of sight, not gone.
   - **Proposal: Usagi-san.** Sometimes it isn't Kōhei who turns the time-out rabbit back around (scene bank #1). Nanoha blames him; he's innocent; much later she realizes who has been pardoning it.
   - **Personality (Proposal):** old but childlike. Curious, a little vain, food-motivated (cookies; the biscuit trial), mischievous with Nanoha. She remembers what she cared about, not what would be useful, so her limited knowledge reads as character.
   - **Gender (Working, Oct 10):** female (the author refers to her as "her").
@@ -687,14 +714,15 @@ The family's recovery from Dad's death runs alongside the romance all year. The 
   - **It means something different in each era (Oct 10):**
     - **Past:** the bloom comes *after* his death and the promise. It is the tree's answer to the promise.
     - **Present:** the bloom comes as the beast's activity ramps up. It is a warning, and a sign that the reunion has a purpose.
-  - **Decided Oct 10:** the modern bloom triggers the memory flood. The last time either of them saw the tree bloom out of season, he was dying beneath it.
+  - **The town's legend of it (Decided Nov 25, author):** told early (Genji, at tea in Ch3 [P]): the tree has bloomed out of season, when the town needed protection or to seal and grant a promise. **Working (Story's version, taken as agreed):** it happened once before, not on a cycle; the town remembers protection, and the truth was a promise. At the modern bloom the crowd cheers and Genji doesn't.
+  - **Decided Oct 10:** the modern bloom triggers the memory flood. The last time either of them saw the tree bloom out of season, he was dying beneath it. (Nov 25: the flood comes as a dream that night; §6.)
 - **Nanoha and the fairy:** the fairy grows more prominent and Nanoha's connection develops.
   - Power doesn't track moral purity.
   - Negative emotions don't automatically collapse protection.
 - **Memories:** Kōhei and Natsuki recover fragments, then fuller memories. There's no deliberate replay mission and no one-use ritual.
 - **Romance stays free:** the reunion grant doesn't compel romantic choices.
 - **The modern beast:** dangerous enough to kill townspeople. It isn't automatically the resurrected old beast.
-- **Why the friends:** they need a specific supernatural advantage, without making the authorities incompetent. That reason is still to be established. **Working since Nov 25:** only Nanoha can get people out of the wolf's road (§6, the beast).
+- **Why the friends:** they need a specific supernatural advantage, without making the authorities incompetent. **Settled in outline, Nov 26:** only Nanoha can find and hold the wolf's road, and holding it weakens it; three of them can use a sword and one has a real one; the adults know nothing (§6).
 - **Afterward:** memories persist after the powers fade. The afterlife and the ultimate cosmology stay unknown.
 
 ## 10. Scene bank
@@ -788,18 +816,18 @@ Select and adapt; this is not a checklist.
 ## 11. Open questions
 **Story:**
 - Total length and chapter plan.
-- Reader-ahead interludes.
-- POV.
-- The beast (design, folklore, rules) and the concrete reason only the friends can act.
-- Nanoha's exact role and its limits.
-- The fairy (name, look, knowledge).
-- The Rival's battle contribution and any past-life link.
-- The exact memory and disclosure staging.
+- ~~Reader-ahead interludes.~~ Nov 25–26: two glimpses and the recall (§4).
+- ~~POV.~~ Settled Nov 26 (§2).
+- The beast's design. (Its behavior and the reason only the friends can act are settled in outline, Nov 26: §6, §9.)
+- ~~Nanoha's exact role.~~ Settled in outline Nov 26 (§6); the magic stays loose.
+- The fairy (name, look, knowledge). (Why she "left" is settled, Nov 26: §8.) What Kōhei and Natsuki can see of her after the bloom.
+- ~~The Rival's battle contribution~~ (settled Nov 26, §8); any past-life link.
+- The recall interlude's contents and length, and whether his last word is held back (the scene list's second pass).
 
 **Characters:**
 - ~~Akane's diagnosis.~~ Settled Nov 1: none in the story (§8).
-- Kōhei's goal and how active he is (§8; the author wants to discuss it).
-- Natsuki's independent ambition, and whether she leaves.
+- Kōhei's goal: the form frame is approved (§8); what he writes in Ch44 is Open. How active he is.
+- Natsuki's independent ambition. (She stays: Nov 26.)
 
 **Setting and presentation:**
 - Town name, map and shrine architecture.

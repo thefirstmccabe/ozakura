@@ -2,6 +2,12 @@
 
 **Approved by the author Oct 17** (draft Oct 16, revised Oct 17 with the Story thread's changes). Build from this. **[P]** = Claude's staging, provisional. Everything else comes from canon, the chapter map or the pilot-notes fix list (numbers in brackets). Scene numbers match dev mode.
 
+**Pending changes from the author's review of the scene list (Nov 25–26), not yet written into the scenes below.** They wait for his approval of the scene list, and nothing here is built from them until then. Where this outline differs, canon and `story/scene-list.md` (Ch 0 to Ch 4) are current.
+- **Cold open → Chapter 0:** a real scene (the two of them walking and talking first), then opening credits with a song, then new title art; the flow from first tap to title is in canon §1. Most likely a color manga sequence with sound [P].
+- **Ch1:** 1.1 as proposed, with Emi at Akane's entrance ceremony; 1.3 as proposed (both approved).
+- **Ch3:** 3.2 loses the unspoken Saturday (Nanoha just tells him Natsuki is coming); 3.3 gets a CG of Natsuki taking a point; 3.4 becomes a split-second CG of the tree in snow (he definitely sees it; nobody says anything), and the light and "…You came back" leave the scene; 3.5 gains Genji telling the tree's legend at tea; 3.6 gets a Street Brawlers CG. 3.1 stays as built.
+- **Ch4:** 4.1, Akane's crush on Takatsuki predates the story (she short-circuits when he praises her); 4.2, Mio asks "Kō-nii, when are you marrying Onee-chan?" and Natsuki, who already knew they weren't dating, sees what his fast "We're not" does to Nanoha; 4.3 stays here with the text to Chie changed; 4.4, the light comes to her window that night with "…You came back," and the memory is manga, opening on the fairy as her playmate.
+
 ---
 
 ## Cold open (rewritten Nov 21, staging corrected Nov 25, Akane in the sibling's place Nov 25; canon §1; built after Ch4)
