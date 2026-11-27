@@ -218,3 +218,8 @@ The author went over the revised list (his notes are in the revised page's datab
 - **Then:** Christmas, two weeks after a scare. Jan 1: the bloom, the fairy back and talking, the dream, which explains December. Early January: grief; he tells Nanoha all of it; the fairy tells them what she can; he chooses Nanoha. Mid-January: the missing woman is found dead; Takatsuki and Akane are told the rest; the girls' talk. Late January on: Genji, two more deaths, "why us," Valentine's, the plan, the fight, unchanged.
 - **Costs Story named:** a darker December; Nanoha finds a road that isn't there before her friend can talk; they know for about eight weeks before the fight, up from about four.
 - **For the next revision:** Part 4 gains the loop chapter and Part 5 loses one; 30.6, 31.5, Ch36–38 and the Part 5 summary are rewritten to match; Story's earlier "braid" of January (Nov 27, above) is superseded by this.
+
+### The first kiss (settled Nov 27, author: "Let's keep that")
+- **Christmas Eve (31.2–31.3):** they lean in for their first kiss, and that is the moment the bride in the white hood appears beside him. He flinches and it doesn't happen. She doesn't know why. 31.5 ("Snow") follows from it.
+- **Ch34:** the real first kiss, after the dream, when he chooses her again knowing everything.
+- It answers his note on 31.2 (a first kiss is needed somewhere; the night before the battle is the wrong place).
