@@ -259,7 +259,7 @@ Answers his notes on 20.0 (tell only Kazuo), 23.4 (he can work a bit less) and C
 
 ### Fold Ch8, split Kyoto, one renumber (settled Nov 27, author: "Rest I'm fine")
 - **Ch8 (The New Hire) folds.** The first dream of the eyes (8.5) goes to Ch9, on the storm night, while her light sits on the sill. Takatsuki's "no help" scene (8.2a) travels with Yuzu's introduction.
-- **Yuzu's introduction: later (author),** "after the triangle gets off the ground maybe," so not Story's Ch6. Placement still to settle; Story proposes Ch13, as a summer hire.
+- **Yuzu's introduction: later (author),** "after the triangle gets off the ground maybe," so not Story's Ch6. **Settled: Ch13, as a summer hire** ("Sure"): her first day opens the chapter, Takatsuki is no help, and a week later the girls come in for dinner (13.1a, 13.1b). Ch13 grows to nine short scenes; watch it in the long pass.
 - **"Double shifts" in Ch6 (answers his note):** school is in session in May, so it is an early prep shift before school on top of the evening one. [P]
 - **Kyoto splits in two.** First half, the trip as a trip: rooms, sights, the deer (Kōhei is irrationally afraid of them, his note), kimono day with the wedding and the sash, Akane at home; it ends on Nanoha watching Natsuki's hands. Second half, the choice closing in: his hour with Natsuki and the photo, the steps with Nanoha, lights out, the hood dream, the souvenir, her light waiting at home.
 - **The count stays 44:** the fold and the split cancel, and the December loop chapter replaces the one Part 5 loses.
