@@ -69,6 +69,15 @@ summary .tally{margin-left:auto;color:var(--soft);font-size:14px;font-variant-nu
 .chip{font-size:13px;line-height:1;padding:4px 7px;border-radius:999px;border:1px solid var(--line);color:var(--soft);white-space:nowrap}
 .chip.who{border-color:var(--accent);color:var(--accent)}
 .chip.new{background:var(--accent-soft);border-color:transparent;color:var(--ink)}
+.chip.rev{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+:root[data-theme="dark"] .chip.rev{color:#1b1f29}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip.rev{color:#1b1f29}}
+body.only-changed .scene:not(.changed){display:none}
+body.only-changed details.ch:not(.haschanged){display:none}
+.whatchanged{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.whatchanged summary{font-weight:700;cursor:pointer;min-height:32px}
+.whatchanged ul{margin:8px 0 4px;padding-left:20px}
+.whatchanged li{margin:6px 0;max-width:68ch}
 .call{grid-column:2;margin:0;padding:8px 10px;border-radius:8px;background:var(--accent-soft)}
 .call b{color:var(--accent)}
 .react{grid-column:2;display:flex;flex-wrap:wrap;gap:8px;align-items:flex-start}
@@ -115,6 +124,7 @@ h3{font-size:17px;margin:8px 0 0}
 <div class="bar">
   <span class="name" id="barname"></span>
   <span class="status" id="status" role="status">Ready</span>
+  <button class="btn" id="onlychanged" type="button" aria-pressed="false" hidden>Changed only</button>
   <button class="btn" id="toggleall" type="button">Collapse all</button>
   <button class="btn primary" id="copy" type="button">Copy notes</button>
 </div>
@@ -232,7 +242,8 @@ function markButtons(id){
   return wrap;
 }
 
-var TAGTEXT = {'CG':'CG','insert':'manga insert','gag':'gag insert','still':'living still','anim':'animation attempt','imagined':'imagined scene',
+var TAGTEXT = {'CG':'CG','insert':'manga','gag':'gag manga','still':'living still','anim':'animation attempt','imagined':'imagined scene',
+  'ink':'brush and ink','song':'music sequence','Rev':'changed',
   'comic':'comic','dread':'dread','A+T':'Akane and Takatsuki','family':'family','kendo':'kendo','uncanny':'uncanny',
   'Built':'built','D':'decided','Map':'chapter map','P':'new [P]'};
 function chipsFor(tags){
@@ -243,6 +254,7 @@ function chipsFor(tags){
     else if(/^CG×/.test(t)) text = t.replace('CG×', '') + ' CGs';
     else if(/^SB/.test(t)) text = 'scene bank ' + t.slice(2);
     else if(t === 'P') cls += ' new';
+    else if(t === 'Rev') cls += ' rev';
     box.appendChild(el('span', cls, text));
   });
   return box;
@@ -253,6 +265,7 @@ function tally(){ tallies.forEach(function(f){ f(); }); }
 
 function sceneRow(s){
   var row = el('div', 'scene'); row.id = 's-' + s.id.replace(/\./g, '-');
+  if(s.tags && s.tags.indexOf('Rev') >= 0) row.className += ' changed';
   row.appendChild(el('div', 'id', s.id));
   var p = el('p', 'txt'); p.appendChild(el('b', null, s.title + '. ')); p.appendChild(document.createTextNode(s.line)); row.appendChild(p);
   if(s.tags && s.tags.length) row.appendChild(chipsFor(s.tags));
@@ -263,6 +276,7 @@ function sceneRow(s){
 }
 function chapterBlock(ch){
   var d = el('details', 'ch'); d.open = true; d.id = ch.id;
+  if(ch.scenes.some(function(s){ return s.tags && s.tags.indexOf('Rev') >= 0; })) d.className += ' haschanged';
   var sum = el('summary');
   sum.appendChild(el('span', 'num', ch.label));
   sum.appendChild(el('span', 'ttl', ch.title));
@@ -333,8 +347,15 @@ function build(){
   var how = el('div', 'how');
   ['Tap Keep, Change or Cut on any scene. Tap a note field and use the mic on your keyboard to dictate.',
    'Everything saves as you go. When you finish, tell the thread you’re done; Copy notes is the backup if saving fails.',
-   'A pink tag means I invented it in this pass. A pink box is a question only you can answer.'].forEach(function(x){ how.appendChild(el('p', null, x)); });
+   'A pink tag means I invented it. A pink box is a question only you can answer.'].forEach(function(x){ how.appendChild(el('p', null, x)); });
+  if(DATA.changes && DATA.changes.length) how.appendChild(el('p', null, 'A solid “changed” tag marks a scene that changed or is new since your review. “Changed only” in the top bar hides everything else.'));
   main.appendChild(how);
+  if(DATA.changes && DATA.changes.length){
+    var wc = el('details', 'whatchanged'); wc.appendChild(el('summary', null, 'What changed in this revision'));
+    var ul = el('ul');
+    DATA.changes.forEach(function(x){ var li = el('li'); var m = /^([^:]+:)\s*(.*)$/.exec(x); if(m){ li.appendChild(el('b', null, m[1] + ' ')); li.appendChild(document.createTextNode(m[2])); } else li.textContent = x; ul.appendChild(li); });
+    wc.appendChild(ul); main.appendChild(wc);
+  }
   var jump = el('div', 'jump'); main.appendChild(jump);
   function jumpTo(label, target){ var b = el('button', 'btn', label); b.type = 'button'; b.addEventListener('click', function(){ var t = document.getElementById(target); if(t) t.scrollIntoView(); }); jump.appendChild(b); }
   DATA.parts.forEach(function(p){
@@ -407,6 +428,15 @@ document.getElementById('copy').addEventListener('click', function(){
 });
 document.getElementById('sheetselect').addEventListener('click', function(){ var t = document.getElementById('sheettext'); t.focus(); t.select(); try{ t.setSelectionRange(0, t.value.length); }catch(e){} });
 document.getElementById('sheetclose').addEventListener('click', function(){ document.getElementById('sheet').classList.remove('open'); });
+var onlyBtn = document.getElementById('onlychanged');
+if(DATA.parts.some(function(p){ return p.chapters.some(function(c){ return c.scenes.some(function(x){ return x.tags && x.tags.indexOf('Rev') >= 0; }); }); })){
+  onlyBtn.hidden = false;
+  onlyBtn.addEventListener('click', function(){
+    var on = document.body.classList.toggle('only-changed');
+    this.setAttribute('aria-pressed', on ? 'true' : 'false');
+    this.textContent = on ? 'Show all' : 'Changed only';
+  });
+}
 var allOpen = true;
 document.getElementById('toggleall').addEventListener('click', function(){
   allOpen = !allOpen;

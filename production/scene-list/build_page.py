@@ -21,6 +21,10 @@ Scene-list shape (see the top of story/scene-list.md):
 
     ## Whole-story questions
     - **Q1.** The question. *(What I'd do: the recommendation.)*
+
+A chapter heading is "### Ch N — Title", "### Interlude — Title" or "### Epilogue — Title".
+An optional "## What changed in this revision" section (a bullet list) is shown on the page,
+and scenes tagged Rev get a "changed" mark and a "Changed only" filter.
 """
 import json
 import re
@@ -30,11 +34,12 @@ from pathlib import Path
 FIVE = {"K": "Kōhei", "Na": "Nanoha", "Nt": "Natsuki", "T": "Takatsuki", "A": "Akane"}
 SIDE = ["Rika", "Ryōsuke", "Kirishima", "Yuzu", "Chie", "Mio", "Emi", "Kazuo", "Genji", "Mom", "Fairy"]
 SCREEN = ["CG", "insert", "gag", "still", "anim", "imagined"]
-KNOWN_TAGS = set(SCREEN) | {"Nanoha", "Natsuki", "comic", "dread", "A+T", "family", "kendo", "uncanny", "Built", "D", "Map", "P"}
+KNOWN_TAGS = set(SCREEN) | {"Nanoha", "Natsuki", "comic", "dread", "A+T", "family", "kendo", "uncanny", "Built", "D", "Map", "P",
+                            "ink", "song", "Rev"}  # ink: the old life's brush-and-ink manga; song: a music sequence; Rev: changed in the latest revision
 T_START, T_END = "<!-- tables:start -->", "<!-- tables:end -->"
 
 PART = re.compile(r"^## (Part (\d+)) — (.+)$")
-CHAP = re.compile(r"^### (Ch (\d+)|Epilogue) — (.+)$")
+CHAP = re.compile(r"^### (Ch (\d+)|Epilogue|Interlude) — (.+)$")
 META = re.compile(r"^\*(When: .+)\*$")
 CHANGES = re.compile(r"^\*\*Changes:\*\* (.+)$")
 SCENE = re.compile(r"^- \*\*(\S+) (.+?)\.\*\* (.+?)(?: \*\(([^()]*)\)\*)?$")
@@ -43,7 +48,7 @@ QUESTION = re.compile(r"^- \*\*(Q\d+)\.\*\* (.+?)(?: \*\(What I'd do: (.+)\)\*)?
 
 
 def parse(text):
-    data = {"parts": [], "questions": [], "side": SIDE}
+    data = {"parts": [], "questions": [], "changes": [], "side": SIDE}
     problems = []
     part = chap = scene = None
     section = "head"
@@ -69,6 +74,8 @@ def parse(text):
                 section = "part"
             elif line == "## Whole-story questions":
                 section = "questions"
+            elif line == "## What changed in this revision":
+                section = "changes"
             else:
                 section = "other"
             continue
@@ -79,12 +86,16 @@ def parse(text):
             elif line.startswith("- "):
                 problems.append(f"line {n}: question not in shape: {line[:60]}")
             continue
+        if section == "changes":
+            if line.startswith("- "):
+                data["changes"].append(re.sub(r"[*`]", "", line[2:]))
+            continue
         if section != "part":
             continue
         m = CHAP.match(line)
         if m:
             label = m.group(1)
-            cid = "ch" + m.group(2) if m.group(2) else "epilogue"
+            cid = "ch" + m.group(2) if m.group(2) else label.lower()
             chap = {"id": cid, "label": label, "title": m.group(3), "when": "", "whose": "", "closeness": "",
                     "cast": [], "uncanny": "", "changes": "", "scenes": [], "counts": {}}
             part["chapters"].append(chap)
