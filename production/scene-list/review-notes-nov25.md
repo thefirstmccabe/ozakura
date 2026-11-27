@@ -249,3 +249,10 @@ Answers his notes on 20.0 (tell only Kazuo), 23.4 (he can work a bit less) and C
 - **Ch25 gets shorter:** the karate story, his father's regret and "worthy" stay; the apology is already made, so the talk is about what he has to become.
 
 **With this, all five of Story's structural points are settled.** Still to discuss: fold Ch8 / split Kyoto / one clean renumber; what the wolf leaves behind and the story the five tell (43.5, 43.8); his remaining page notes; point of view on every scene.
+
+### What the wolf leaves behind, in both lives (settled Nov 27, author: "That works")
+- **Canon's Oct 10 "no corpse" stands, in both eras.** The author asked what happened in the past life, since the two have to match: it came apart into mist, the distortion ended, and the old town found a dead rōnin, his wife and the tree in bloom, with no beast.
+- **The same thing happens both times:** the strike is to the head; whatever was wrong goes out of it and for a breath it is only a wolf, odd, very large and old (his image, from his 43.5 note); then it is gone like something long dead, and the mist with it. The reader sees it first in the dream, in ink.
+- **Whether it is the same beast stays open,** so "maybe we never really killed it" is a fair thought for Kōhei and Natsuki in January.
+- **The story the five tell (answers his 43.8 note):** a huge stray dog attacked them on an early club run and ran off. Their wounds fit; the police find nothing; the attacks stop. Akane hides the sword before she makes the call. [P]
+- **Dropped:** Story's two earlier versions (a carcass the town finds; a body left on a road that vanishes). A carcass would carry a sword wound and would be national news, and neither matches the old life.
