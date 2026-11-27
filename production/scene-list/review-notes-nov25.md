@@ -223,3 +223,11 @@ The author went over the revised list (his notes are in the revised page's datab
 - **Christmas Eve (31.2–31.3):** they lean in for their first kiss, and that is the moment the bride in the white hood appears beside him. He flinches and it doesn't happen. She doesn't know why. 31.5 ("Snow") follows from it.
 - **Ch34:** the real first kiss, after the dream, when he chooses her again knowing everything.
 - It answers his note on 31.2 (a first kiss is needed somewhere; the night before the battle is the wrong place).
+
+### Kōhei is looking forward to the late-summer tournament (settled Nov 27, author)
+- **The author chose Story's original suggestion** over the smaller fix: the late-summer tournament is something Kōhei has been looking forward to, from Golden Week on. "I think we should go with that."
+- **Why:** the tournament was first mentioned in 17.6, one scene before he loses it in 18.1, and that loss is meant to fuel the night of the fight.
+- **Scope (Story, to hold in the long pass):** one tournament he wants, not rankings or a tournament arc. It is an exception to canon's Oct 6 "tournament arcs and ranking goals dropped," and a first answer to "how active he is" (Open since Nov 2): in the first half he wants one thing. The form still says "work" (5.1).
+- **Where it lands [P]:** said aloud once at Golden Week (around 5.4); sharpened after "That wasn't kendo" (12.5) into wanting to fight it clean; a shift costs him a practice in early August; 17.6 and 18.1 as written; the ban until April (20.6) and the autumn tournament he watches (Ch24) then cost more.
+- **Story's proposal, not yet answered [P]:** why this one: he missed it last year, the summer after his father died.
+- **Flagged:** the list has three competitions (the summer meet, this one, the autumn tournament) against canon's "one or two at most." Left as is unless he says otherwise.
