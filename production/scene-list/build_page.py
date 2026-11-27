@@ -16,7 +16,7 @@ Scene-list shape (see the top of story/scene-list.md):
     ### Ch 5 — Golden Week
     *When: late April · Whose: Natsuki · Closeness: strong · Cast: K, Na, Nt, T, A, Rika · Uncanny: Kōhei: the first eyes dream*
     **Changes:** One sentence.
-    - **5.1 Title.** One line. *(Natsuki · CG · comic · P)*
+    - **5.1 Title.** One line. *(head:K · Natsuki · CG · comic · P)*
       - *Your call:* The question in one line.
 
     ## Whole-story questions
@@ -26,6 +26,14 @@ A chapter heading is "### Ch N — Title", "### Interlude — Title" or "### Epi
 An optional "## What changed in this revision" section (a bullet list) is shown on the page,
 and scenes tagged Rev get a "changed" mark and a "Changed only" filter. Under such a scene,
 an indented "- *Changed:* a few words" line says what changed; the page shows it in line.
+
+Point of view (from Nov 27): every scene carries one head tag, head:K, head:Na, head:Nt,
+head:T, head:A, head:Kz or head:none (nobody's head: the camera is outside, as in most manga).
+How a scene is shown comes from its screen tags (plain sprites if it has none). The page
+shows both on every scene, counts them per chapter and can hide Kōhei's scenes.
+
+A scene tagged flag is one whose point is something physically happening but which has
+neither a CG nor manga; an indented "- *Flag:* ..." line under it says what is suggested.
 """
 import json
 import re
@@ -36,7 +44,9 @@ FIVE = {"K": "Kōhei", "Na": "Nanoha", "Nt": "Natsuki", "T": "Takatsuki", "A": "
 SIDE = ["Rika", "Ryōsuke", "Kirishima", "Yuzu", "Chie", "Mio", "Emi", "Kazuo", "Genji", "Mom", "Fairy"]
 SCREEN = ["CG", "insert", "gag", "still", "anim", "imagined"]
 KNOWN_TAGS = set(SCREEN) | {"Nanoha", "Natsuki", "comic", "dread", "A+T", "family", "kendo", "uncanny", "Built", "D", "Map", "P",
-                            "ink", "song", "Rev"}  # ink: the old life's brush-and-ink manga; song: a music sequence; Rev: changed in the latest revision
+                            "ink", "song", "Rev", "flag"}  # ink: the old life's brush-and-ink manga; song: a music sequence; Rev: changed in the latest revision; flag: needs CG or manga?
+HEADS = {"K": "Kōhei", "Na": "Nanoha", "Nt": "Natsuki", "T": "Takatsuki", "A": "Akane", "Kz": "Kazuo", "none": "nobody"}
+HEAD_ORDER = ["K", "Na", "Nt", "T", "A", "Kz", "none"]
 T_START, T_END = "<!-- tables:start -->", "<!-- tables:end -->"
 
 PART = re.compile(r"^## (Part (\d+)) — (.+)$")
@@ -46,6 +56,7 @@ CHANGES = re.compile(r"^\*\*Changes:\*\* (.+)$")
 SCENE = re.compile(r"^- \*\*(\S+) (.+?)\.\*\* (.+?)(?: \*\(([^()]*)\)\*)?$")
 CALL = re.compile(r"^\s+- \*Your call:\* (.+)$")
 CHANGED = re.compile(r"^\s+- \*Changed:\* (.+)$")
+FLAG = re.compile(r"^\s+- \*Flag:\* (.+)$")
 QUESTION = re.compile(r"^- \*\*(Q\d+)\.\*\* (.+?)(?: \*\(What I'd do: (.+)\)\*)?$")
 
 
@@ -136,14 +147,24 @@ def parse(text):
         m = SCENE.match(line)
         if m:
             tags = [t.strip() for t in (m.group(4) or "").split("·") if t.strip()]
+            head = ""
             for t in tags:
+                if t.startswith("head:"):
+                    if t[5:] not in HEADS:
+                        problems.append(f"line {n}: unknown head {t!r} on {m.group(1)}")
+                    elif head:
+                        problems.append(f"line {n}: two head tags on {m.group(1)}")
+                    else:
+                        head = t[5:]
+                    continue
                 base = "CG" if t.startswith("CG×") else t
                 if base not in KNOWN_TAGS and not re.match(r"^SB\w+$", t):
                     problems.append(f"line {n}: unknown tag {t!r} on {m.group(1)}")
                 if base in SCREEN:
                     k = int(t[3:]) if t.startswith("CG×") else 1
                     chap["counts"][base] = chap["counts"].get(base, 0) + k
-            scene = {"id": m.group(1), "title": m.group(2), "line": m.group(3), "tags": tags, "call": "", "changed": ""}
+            scene = {"id": m.group(1), "title": m.group(2), "line": m.group(3), "tags": [t for t in tags if not t.startswith("head:")],
+                     "head": head, "shown": shown(tags), "call": "", "changed": "", "flag": ""}
             chap["scenes"].append(scene)
             continue
         m = CALL.match(raw)
@@ -154,9 +175,36 @@ def parse(text):
         if m and scene is not None:
             scene["changed"] = m.group(1)
             continue
+        m = FLAG.match(raw)
+        if m and scene is not None:
+            scene["flag"] = m.group(1)
+            continue
         if line.startswith("- ") or line.startswith("  - "):
             problems.append(f"line {n}: list item not in shape: {line[:70]}")
     return data, problems
+
+
+def shown(tags):
+    """How a scene is shown, in words, from its screen tags (plain sprites if none)."""
+    t = set("CG" if x.startswith("CG×") else x for x in tags)
+    bits = []
+    if "ink" in t:
+        bits.append("brush-and-ink manga")
+    elif "gag" in t:
+        bits.append("gag manga")
+    elif "insert" in t:
+        bits.append("manga")
+    if "song" in t:
+        bits.append("music sequence")
+    elif "anim" in t:
+        bits.append("animation attempt")
+    if "CG" in t:
+        bits.append("CG")
+    if "still" in t and "song" not in t and "CG" not in t:
+        bits.append("living still")
+    if "imagined" in t:
+        bits.append("imagined")
+    return " + ".join(bits) if bits else "sprites"
 
 
 def check(data):
@@ -178,6 +226,11 @@ def check(data):
                 seen.add(s["id"])
                 if not any(t in ("Built", "D", "Map", "P") or t.startswith("SB") for t in s["tags"]):
                     problems.append(f"{s['id']}: no source tag")
+                if data.get("need_heads") and not s["head"]:
+                    problems.append(f"{s['id']}: no head tag")
+                if ("flag" in s["tags"]) != bool(s["flag"]):
+                    problems.append(f"{s['id']}: the flag tag and the Flag line must come together")
+            c["heads"] = {h: sum(1 for s in c["scenes"] if s["head"] == h) for h in HEAD_ORDER}
     return problems
 
 
@@ -212,6 +265,38 @@ def md_tables(data):
         out.append(f"| {c['label']} | " + " | ".join(str(c["counts"].get(k, "") or "") for k in SCREEN) + " |")
     out.append("| **Total** | " + " | ".join(f"**{tot[k]}**" for k in SCREEN) + " |")
     out.append("")
+    if any(s["head"] for c in chs for s in c["scenes"]):
+        out.append("### Point of view: whose head we are in, by chapter")
+        out.append("| Ch | Scenes | " + " | ".join(HEADS[h].capitalize() if h == "none" else HEADS[h] for h in HEAD_ORDER) + " |")
+        out.append("|---|---|" + "---|" * len(HEAD_ORDER))
+        tot = {h: 0 for h in HEAD_ORDER}
+        for c in chs:
+            hs = {h: sum(1 for s in c["scenes"] if s["head"] == h) for h in HEAD_ORDER}
+            for h in HEAD_ORDER:
+                tot[h] += hs[h]
+            out.append(f"| {c['label']} | {len(c['scenes'])} | " + " | ".join(str(hs[h] or "") for h in HEAD_ORDER) + " |")
+        out.append(f"| **Total** | **{sum(tot.values())}** | " + " | ".join(f"**{tot[h]}**" for h in HEAD_ORDER) + " |")
+        out.append("")
+        out.append("### How each scene is shown, in total")
+        kinds = {}
+        for c in chs:
+            for s in c["scenes"]:
+                kinds[s["shown"]] = kinds.get(s["shown"], 0) + 1
+        out.append("| Shown as | Scenes |")
+        out.append("|---|---|")
+        for k2, v in sorted(kinds.items(), key=lambda kv: -kv[1]):
+            out.append(f"| {k2} | {v} |")
+        out.append("")
+    flags = [(s["id"], s["flag"]) for c in chs for s in c["scenes"] if s["flag"]]
+    out.append("### Flagged: something physical happens and there is no CG or manga")
+    if flags:
+        out.append("| Scene | What I'd give it |")
+        out.append("|---|---|")
+        for i, q in flags:
+            out.append(f"| {i} | {q} |")
+    else:
+        out.append("None.")
+    out.append("")
     out.append("### Every scene that needs the author's call, in story order")
     calls = [(s["id"], s["call"]) for c in chs for s in c["scenes"] if s["call"]]
     if calls:
@@ -232,6 +317,7 @@ def main(argv):
     key = argv[argv.index("--key") + 1] if "--key" in argv else "pass1"
     text = src.read_text(encoding="utf-8")
     data, problems = parse(text)
+    data["need_heads"] = any(s["head"] for c in chapters(data) for s in c["scenes"])
     problems += check(data)
     if "--tables" in argv:
         if T_START not in text or T_END not in text:
@@ -242,6 +328,8 @@ def main(argv):
             text = head + T_START + "\n" + md_tables(data) + "\n" + T_END + tail
             src.write_text(text, encoding="utf-8")
     data["key"] = key
+    data["heads"] = HEADS
+    data["head_order"] = HEAD_ORDER
     data["short"] = "Ōzakura scenes"
     m = re.search(r"^\*\*Lede:\*\* (.+)$", text, re.M)
     data["lede"] = m.group(1) if m else ""
@@ -251,7 +339,9 @@ def main(argv):
     dst.write_text(html, encoding="utf-8")
     chs = chapters(data)
     print(f"{len(data['parts'])} parts, {len(chs)} chapters, {sum(len(c['scenes']) for c in chs)} scenes, "
-          f"{sum(1 for c in chs for s in c['scenes'] if s['call'])} calls, {len(data['questions'])} questions")
+          f"{sum(1 for c in chs for s in c['scenes'] if s['call'])} calls, {len(data['questions'])} questions, "
+          f"{sum(1 for c in chs for s in c['scenes'] if s['flag'])} flagged, "
+          f"{sum(1 for c in chs for s in c['scenes'] if s['head'] and s['head'] != 'K')} outside Kōhei's head")
     for p in problems:
         print("PROBLEM:", p)
     return 1 if problems else 0

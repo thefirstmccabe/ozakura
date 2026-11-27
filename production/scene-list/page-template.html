@@ -72,8 +72,13 @@ summary .tally{margin-left:auto;color:var(--soft);font-size:14px;font-variant-nu
 .chip.rev{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
 :root[data-theme="dark"] .chip.rev{color:#1b1f29}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .chip.rev{color:#1b1f29}}
-body.only-changed .scene:not(.changed){display:none}
-body.only-changed details.ch:not(.haschanged){display:none}
+.chip.pov{border-color:var(--ink);color:var(--ink)}
+.chip.pov.other{background:var(--ink);color:var(--card);font-weight:600}
+.chip.shown{border-style:dashed}
+.chip.flag{background:var(--change);border-color:var(--change);color:#fff;font-weight:600}
+.scene[hidden],details.ch[hidden]{display:none}
+.flagnote{grid-column:2;margin:0;padding:8px 10px;border-radius:8px;border:1px solid var(--change)}
+.flagnote b{color:var(--change)}
 .chg{grid-column:2;margin:0;padding:2px 10px;border-left:3px solid var(--accent);font-size:16px;color:var(--soft)}
 .chg b{color:var(--accent)}
 .whatchanged{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
@@ -117,7 +122,7 @@ h3{font-size:17px;margin:8px 0 0}
 @media (max-width:480px){
   body{font-size:16px}
   .scene{grid-template-columns:1fr}
-  .chips,.call,.chg,.react{grid-column:1}
+  .chips,.call,.chg,.flagnote,.react{grid-column:1}
 }
 @media (prefers-reduced-motion: no-preference){ html{scroll-behavior:smooth} }
 </style>
@@ -126,7 +131,7 @@ h3{font-size:17px;margin:8px 0 0}
 <div class="bar">
   <span class="name" id="barname"></span>
   <span class="status" id="status" role="status">Ready</span>
-  <button class="btn" id="onlychanged" type="button" aria-pressed="false" hidden>Changed only</button>
+  <button class="btn" id="filter" type="button" hidden>Show: everything</button>
   <button class="btn" id="toggleall" type="button">Collapse all</button>
   <button class="btn primary" id="copy" type="button">Copy notes</button>
 </div>
@@ -248,11 +253,20 @@ var TAGTEXT = {'CG':'CG','insert':'manga','gag':'gag manga','still':'living stil
   'ink':'brush and ink','song':'music sequence','Rev':'changed',
   'comic':'comic','dread':'dread','A+T':'Akane and Takatsuki','family':'family','kendo':'kendo','uncanny':'uncanny',
   'Built':'built','D':'decided','Map':'chapter map','P':'new [P]'};
-function chipsFor(tags){
-  var box = el('div', 'chips');
+var HEADS = DATA.heads || {};
+function headText(h){ return h === 'none' ? 'nobody’s head' : (HEADS[h] || h) + '’s head'; }
+function chipsFor(s){
+  var box = el('div', 'chips'), tags = s.tags || [];
+  if(s.head){
+    box.appendChild(el('span', 'chip pov' + (s.head === 'K' ? '' : ' other'), headText(s.head)));
+    box.appendChild(el('span', 'chip shown', s.shown || 'sprites'));
+  }
+  if(s.flag) box.appendChild(el('span', 'chip flag', 'needs CG or manga?'));
   tags.forEach(function(t){
     var cls = 'chip', text = TAGTEXT[t] || t;
-    if(t === 'Nanoha' || t === 'Natsuki'){ cls += ' who'; text = t + '’s scene'; }
+    if(t === 'flag') return;
+    if(s.head && (t === 'CG' || /^CG×/.test(t) || t === 'insert' || t === 'gag' || t === 'still' || t === 'anim' || t === 'imagined' || t === 'ink' || t === 'song') && !/^CG×/.test(t) && t !== 'still') return;
+    if(t === 'Nanoha' || t === 'Natsuki'){ cls += ' who'; text = 'triangle: ' + t; }
     else if(/^CG×/.test(t)) text = t.replace('CG×', '') + ' CGs';
     else if(/^SB/.test(t)) text = 'scene bank ' + t.slice(2);
     else if(t === 'P') cls += ' new';
@@ -268,18 +282,21 @@ function tally(){ tallies.forEach(function(f){ f(); }); }
 function sceneRow(s){
   var row = el('div', 'scene'); row.id = 's-' + s.id.replace(/\./g, '-');
   if(s.tags && s.tags.indexOf('Rev') >= 0) row.className += ' changed';
+  if(s.head && s.head !== 'K') row.className += ' nonk';
+  if(s.flag) row.className += ' flagged';
   row.appendChild(el('div', 'id', s.id));
   var p = el('p', 'txt'); p.appendChild(el('b', null, s.title + '. ')); p.appendChild(document.createTextNode(s.line)); row.appendChild(p);
   if(s.changed){ var g = el('p', 'chg'); g.appendChild(el('b', null, 'What changed: ')); g.appendChild(document.createTextNode(s.changed)); row.appendChild(g); }
-  if(s.tags && s.tags.length) row.appendChild(chipsFor(s.tags));
+  if((s.tags && s.tags.length) || s.head) row.appendChild(chipsFor(s));
+  if(s.flag){ var f = el('p', 'flagnote'); f.appendChild(el('b', null, 'Nothing shows it yet: ')); f.appendChild(document.createTextNode(s.flag)); row.appendChild(f); }
   if(s.call){ var c = el('p', 'call'); c.appendChild(el('b', null, 'Your call: ')); c.appendChild(document.createTextNode(s.call)); row.appendChild(c); }
-  var r = el('div', 'react'); r.appendChild(markButtons(s.id)); r.appendChild(noteBox(s.id, s.call ? 'Your answer or a note' : 'Note'));
+  var r = el('div', 'react'); r.appendChild(markButtons(s.id)); r.appendChild(noteBox(s.id, s.call ? 'Your answer or a note' : s.flag ? 'Keep = take my suggestion; or say what you want' : 'Note'));
   row.appendChild(r);
   return row;
 }
 function chapterBlock(ch){
   var d = el('details', 'ch'); d.open = true; d.id = ch.id;
-  if(ch.scenes.some(function(s){ return s.tags && s.tags.indexOf('Rev') >= 0; })) d.className += ' haschanged';
+
   var sum = el('summary');
   sum.appendChild(el('span', 'num', ch.label));
   sum.appendChild(el('span', 'ttl', ch.title));
@@ -297,6 +314,12 @@ function chapterBlock(ch){
   if(ch.closeness) bits.push('Natsuki and Kōhei: ' + ch.closeness);
   if(ch.uncanny && ch.uncanny !== 'none') bits.push('Uncanny or dread: ' + ch.uncanny);
   if(bits.length) body.appendChild(el('p', 'meta', bits.join(' · ')));
+  if(ch.heads){
+    var hb = [];
+    (DATA.head_order || []).forEach(function(h){ if(ch.heads[h]) hb.push((h === 'none' ? 'nobody’s' : HEADS[h]) + ' ' + ch.heads[h]); });
+    var out = ch.scenes.length - (ch.heads.K || 0);
+    if(hb.length) body.appendChild(el('p', 'meta', 'Whose head: ' + hb.join(' · ') + (out ? ' (' + out + ' of ' + ch.scenes.length + ' outside Kōhei’s)' : '')));
+  }
   ch.scenes.forEach(function(s){ body.appendChild(sceneRow(s)); });
   var w = el('div', 'wide'); var lab = el('label', null, 'About ' + ch.label + ' as a whole'); lab.htmlFor = 'note-' + ch.id;
   w.appendChild(lab); w.appendChild(noteBox(ch.id, 'Note on the whole chapter')); body.appendChild(w);
@@ -340,6 +363,21 @@ function tableSection(main){
   });
   var tr = el('tr'); tr.appendChild(th('Total')); tot.forEach(function(n){ tr.appendChild(th(String(n), 'num')); }); t3.appendChild(tr);
   w3.appendChild(t3); main.appendChild(w3);
+  // point of view
+  var order = DATA.head_order || [];
+  if(order.length && chs.some(function(c){ return c.heads; })){
+    main.appendChild(el('h3', null, 'Whose head we are in, by chapter'));
+    var w4 = el('div', 'tablewrap'), t4 = el('table'), h4 = el('tr'); h4.appendChild(th('Ch')); h4.appendChild(th('Scenes', 'num'));
+    order.forEach(function(h){ h4.appendChild(th(h === 'none' ? 'Nobody' : HEADS[h], 'num')); }); t4.appendChild(h4);
+    var tot4 = order.map(function(){ return 0; }), all = 0;
+    chs.forEach(function(c){
+      var r = el('tr'); r.appendChild(td(c.label)); r.appendChild(td(String(c.scenes.length), 'num')); all += c.scenes.length;
+      order.forEach(function(h, i){ var n = (c.heads && c.heads[h]) || 0; tot4[i] += n; r.appendChild(td(n ? String(n) : '', 'num')); });
+      t4.appendChild(r);
+    });
+    var tr4 = el('tr'); tr4.appendChild(th('Total')); tr4.appendChild(th(String(all), 'num')); tot4.forEach(function(n){ tr4.appendChild(th(String(n), 'num')); }); t4.appendChild(tr4);
+    w4.appendChild(t4); main.appendChild(w4);
+  }
 }
 
 function build(){
@@ -351,7 +389,9 @@ function build(){
   ['Tap Keep, Change or Cut on any scene. Tap a note field and use the mic on your keyboard to dictate.',
    'Everything saves as you go. When you finish, tell the thread you’re done; Copy notes is the backup if saving fails.',
    'A pink tag means I invented it. A pink box is a question only you can answer.'].forEach(function(x){ how.appendChild(el('p', null, x)); });
-  if(DATA.changes && DATA.changes.length) how.appendChild(el('p', null, 'A solid “changed” tag marks a scene that changed or is new since your review. “Changed only” in the top bar hides everything else.'));
+  if(DATA.changes && DATA.changes.length) how.appendChild(el('p', null, 'A solid “changed” tag marks a scene that changed or is new since your review.'));
+  if(DATA.heads) how.appendChild(el('p', null, 'Every scene starts with two tags: whose head we are in (dark when it isn’t Kōhei’s) and how it is shown. An orange tag means something physical happens and nothing shows it yet; Keep takes my suggestion.'));
+  how.appendChild(el('p', null, 'The Show button in the top bar cycles through everything, changed scenes, scenes outside Kōhei’s head, and flagged scenes.'));
   main.appendChild(how);
   if(DATA.changes && DATA.changes.length){
     var wc = el('details', 'whatchanged'); wc.appendChild(el('summary', null, 'What changed in this revision'));
@@ -386,10 +426,22 @@ function build(){
     var wrap = el('div', 'tablewrap'), t = el('table');
     calls.forEach(function(s){
       var r = el('tr'); var a = el('button', 'btn', s.id); a.type = 'button';
-      a.addEventListener('click', function(){ var x = document.getElementById('s-' + s.id.replace(/\./g, '-')); if(x){ var d = x.closest('details'); if(d) d.open = true; x.scrollIntoView(); } });
+      a.addEventListener('click', function(){ setFilter(0); var x = document.getElementById('s-' + s.id.replace(/\./g, '-')); if(x){ var d = x.closest('details'); if(d) d.open = true; x.scrollIntoView(); } });
       var c1 = el('td'); c1.appendChild(a); r.appendChild(c1); r.appendChild(td(s.call)); t.appendChild(r);
     });
     wrap.appendChild(t); main.appendChild(wrap);
+  }
+  var flags = [];
+  DATA.parts.forEach(function(p){ p.chapters.forEach(function(c){ c.scenes.forEach(function(s){ if(s.flag) flags.push(s); }); }); });
+  if(flags.length){
+    var hf = el('h2', null, 'Flagged: nothing shows it yet'); hf.id = 'flags'; main.appendChild(hf); jumpTo('Flagged', 'flags');
+    var wrapf = el('div', 'tablewrap'), tf = el('table');
+    flags.forEach(function(s){
+      var r = el('tr'); var a = el('button', 'btn', s.id); a.type = 'button';
+      a.addEventListener('click', function(){ setFilter(0); var x = document.getElementById('s-' + s.id.replace(/\./g, '-')); if(x){ var d = x.closest('details'); if(d) d.open = true; x.scrollIntoView(); } });
+      var c1 = el('td'); c1.appendChild(a); r.appendChild(c1); r.appendChild(td(s.title + ': ' + s.flag)); tf.appendChild(r);
+    });
+    wrapf.appendChild(tf); main.appendChild(wrapf);
   }
   tableSection(main);
   if(document.getElementById('tables')) jumpTo('Tables', 'tables');
@@ -431,13 +483,28 @@ document.getElementById('copy').addEventListener('click', function(){
 });
 document.getElementById('sheetselect').addEventListener('click', function(){ var t = document.getElementById('sheettext'); t.focus(); t.select(); try{ t.setSelectionRange(0, t.value.length); }catch(e){} });
 document.getElementById('sheetclose').addEventListener('click', function(){ document.getElementById('sheet').classList.remove('open'); });
-var onlyBtn = document.getElementById('onlychanged');
-if(DATA.parts.some(function(p){ return p.chapters.some(function(c){ return c.scenes.some(function(x){ return x.tags && x.tags.indexOf('Rev') >= 0; }); }); })){
-  onlyBtn.hidden = false;
-  onlyBtn.addEventListener('click', function(){
-    var on = document.body.classList.toggle('only-changed');
-    this.setAttribute('aria-pressed', on ? 'true' : 'false');
-    this.textContent = on ? 'Show all' : 'Changed only';
+var FILTERS = [['Show: everything', null], ['Show: changed', 'changed'], ['Show: not Kōhei’s head', 'nonk'], ['Show: flagged', 'flagged']];
+var filterAt = 0, filterBtn = document.getElementById('filter');
+function available(i){ return !FILTERS[i][1] || !!document.querySelector('.scene.' + FILTERS[i][1]); }
+function setFilter(i){
+  filterAt = i; var cls = FILTERS[i][1];
+  Array.prototype.forEach.call(document.querySelectorAll('details.ch'), function(d){
+    var any = false;
+    Array.prototype.forEach.call(d.querySelectorAll('.scene'), function(r){ var show = !cls || r.classList.contains(cls); r.hidden = !show; if(show) any = true; });
+    d.hidden = !any;
+  });
+  filterBtn.textContent = FILTERS[i][0];
+  filterBtn.setAttribute('aria-pressed', i ? 'true' : 'false');
+  if(!cls) paintAll();
+}
+function initFilter(){   // after build(), since it looks at the scenes on the page
+  if(!(available(1) || available(2) || available(3))) return;
+  filterBtn.hidden = false;
+  filterBtn.addEventListener('click', function(){
+    var i = filterAt;
+    do { i = (i + 1) % FILTERS.length; } while(!available(i));
+    setFilter(i);
+    Array.prototype.forEach.call(document.querySelectorAll('.scene:not([hidden]) textarea'), grow);
   });
 }
 var allOpen = true;
@@ -449,7 +516,7 @@ document.getElementById('toggleall').addEventListener('click', function(){
 });
 document.addEventListener('toggle', function(e){ if(e.target && e.target.open) Array.prototype.forEach.call(e.target.querySelectorAll('textarea'), grow); }, true);
 
-loadLocal(); build(); paintAll(); setStatus(); initStore();
+loadLocal(); build(); initFilter(); paintAll(); setStatus(); initStore();
 })();
 </script>
 </body>
