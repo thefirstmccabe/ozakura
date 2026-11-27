@@ -181,3 +181,24 @@ He has now been through the whole page. Everything in Ch33–41 and Ch44 not lis
 
 ## Not reviewed yet
 Nothing: he has been through the whole page. Ch42–43 are reviewed but not approved (above).
+
+## Second review round (Nov 27)
+
+The author went over the revised list (his notes are in the revised page's database) and asked for a structural critique and a point-of-view decision before the long pass. Recorded as each item settles.
+
+### The last words of the old life (settled Nov 27, author)
+- **"Live" is dropped.** It was Story's proposal and he was "never really that sold" on it. He also pointed out the contradiction: if his last word is "Live," she shouldn't die a widow sixty years later.
+- **The dying moment is the mutual promise,** and it runs the reverse of Beren and Lúthien. She does most of the talking because he is dying. She says she'll wait for him ("find me, basically"). His last words are the promise. Then the tree blooms.
+- **Why this way round (author):** Story's first staging (she finds him, he waits) would lose the "You're late" and her-waiting beats.
+- **Follows from it, to apply in the next revision:** R.7 ends on the promise and the bloom, with nothing held back; 43.6 goes and Ch43 needs a new title; canon §5's two-halves proposal is replaced; Natsuki's third beat is reworded (her full life is her own choice, not his dying wish); the eve-of-battle note loses its "Live" clause; canon's "April transfer = she finds him" is reworded (the finding is his, at the bloom); §11's "whether his last word is held back" closes.
+- **Story's proposals, not yet answered:** her line "I'll wait. Don't be late." [P]; the promise is spent in this life (he found her, late), so Nanoha is never the interim choice; "You're late" gets its last use in the grief chapter (Ch33); the period saying that husband and wife are bound for two lives as the form of the vow.
+
+### Raised by Story on Nov 27, still to discuss
+- Braid Part 5 (the looping road is how they learn the wolf exists; the girls' talk moves after the body and the fairy's warning; Natsuki isn't at the rescue).
+- The first kiss: an almost-kiss at Christmas broken by the white hood; the real one in Ch34.
+- Kōhei wants the late-summer tournament from Golden Week on.
+- Natsuki after the choice: the Kyoto photo she never shows anyone, and a goal for her photography.
+- Kazuo's help: the apology the day after the fight, concrete help in September, Ch25 keeps Dad's regret and the "worthy" talk.
+- Fold Ch8 and split Kyoto, with one clean renumber before the long pass.
+- The wolf leaves a body (an odd, very large animal).
+- Point of view marked on every scene in the next revision.
