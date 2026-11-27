@@ -160,7 +160,15 @@ He has now been through the whole page. Everything in Ch33–41 and Ch44 not lis
 - **What they pay:** Takatsuki, a leg that never fully heals (Akane times his rehab with the stopwatch from 6.2); Natsuki, a scar across her face, which she still has in the epilogue (her thread is proof she was there); Kōhei, the shoulder; Nanoha, the gift. Taken as approved with "This works"; heavier options offered and not taken up (Takatsuki's sword hand, Natsuki's eye).
 - 40.1, 40.3, 42.1–43.5 and 43.8 are rewritten from this in Pass 2. 43.6–43.7 (the promise and his last word; Nanoha's goodbye to the fairy) stand, subject to the recall decisions.
 
-**Still to discuss (as of this entry):** the "42.0" animated sequence of each one preparing (after the rain lead-in to the church scene in *Cowboy Bebop* episode 5); 40.5, which changes or goes now that the boys are friends; 39.6, what holding the trap takes; 44.6, what he writes on the form.
+**Why they have any chance (the author, Nov 26).** "This is a desperate fight." Past-life Kōhei was formidable: he fought on the losing side at Sekigahara, survived, and was a known terror on the battlefield; his lord died and lost, which is why he's a rōnin. (Background in the author's head; the battle needn't be named in the story.) The wolf beat him anyway. Now there are more of them, but this Kōhei is not that one and the rest are "just kids with sticks." So **Nanoha's holding it has to weaken it,** not only trap it.
+- **Settled as one act, not two:** the wolf's strength is its road. On a road that never ends it never tires and wounds barely count. Pinned to one stretch it is only a wolf: cuts tell, and it can be worn down. The fairy can say so in a line. What wrecks Takatsuki in seconds is the weakened wolf.
+- **It puts a clock on the fight:** holding it burns her gift, and when the gift is gone the trap ends. When she falters the lamp dips and the wolf surges, so Akane keeping her upright matters second by second.
+- **39.6, what it takes:** the gift. **And Nanoha knows it could kill her; that's not a guess** (the author). The fairy tells her plainly. No more discussion needed for this pass.
+
+**Left for later, by his choice:**
+- **A "42.0" animated sequence of each of them preparing,** before the walk, heavily inspired by the rain lead-in to the church scene in *Cowboy Bebop* episode 5. He'll come back to it; not much is needed now. (It could be built the way the opening credits are: stills and short clips cut to music.)
+- **40.5, the "trust" exchange:** he leans toward cutting it now that the boys are friends. Story's view, given Nov 26: cut it as an exchange, and keep Takatsuki's one line ("let me do my part, keep your head, and not die") said in passing inside 40.2. Awaiting his word.
+- **44.6, what he writes on the form:** he asked what Story thinks. Proposal given Nov 26: show it. In Ch5 he wrote "work"; here he writes university, to teach, with kendo (it grows from 24.2 and 24.5, where he turns out to be good at teaching it). Awaiting his word.
 
 ## Not reviewed yet
 Nothing: he has been through the whole page. Ch42–43 are reviewed but not approved (above).
