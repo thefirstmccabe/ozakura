@@ -291,4 +291,7 @@ He wants point of view decided on every scene before the long pass, and expects 
 8. **An audit while marking (his point):** "action or group scenes where something is physically occurring and we want to show it. That's where we need CG or manga." Any scene whose point is something physically happening (a fight, a crowd, physical comedy, a group all doing something) gets CG or manga, or is flagged for him if it has neither.
 
 ### Handover (Nov 27, evening)
-The author asked for a handover so a fresh thread applies this round: `production/scene-list/handover-nov27.md`. Nothing above from Nov 27 is applied to the scene list or canon yet.
+The author asked for a handover so a fresh thread applies this round: `production/scene-list/archive/handover-nov27.md` (archived once used).
+
+### Applied (Nov 27, night)
+A fresh Story-role thread applied everything above to `story/scene-list.md` and canon the same night, and renumbered once. **IDs in this file above this line are the old ones;** read them through `production/scene-list/id-map-nov27.md`. What that thread decided itself is listed in the production log (11-27, night) and flagged to the author on the third review page ("Ōzakura scene list, Pass 1 (second revision)" (slug `8b835df8-46c8-4a5c-90e1-757ce18b6c20`, https://claude.ai/artifact/JECusvg6rhumM1RkNdgVE7)): where Natsuki's head closes (the kiss night); the fairy's telling before he chooses (this file's order, where the handover's chapter table differed); Natsuki qualifying for regionals; where the nurse plant, Kazuo's help, the hiker, the transfer news and the photograph land; two chapter titles; and twenty scenes flagged for a CG or manga. His answers on that page get recorded here as a third round.

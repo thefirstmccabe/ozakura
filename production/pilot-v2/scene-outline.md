@@ -7,6 +7,13 @@
 - **Ch1:** 1.1 as proposed, with Emi at Akane's entrance ceremony; 1.3 as proposed (both approved).
 - **Ch3:** 3.2 loses the unspoken Saturday (Nanoha just tells him Natsuki is coming); 3.3 gets a CG of Natsuki taking a point; 3.4 becomes a split-second CG of the tree in snow (he definitely sees it; nobody says anything), and the light and "…You came back" leave the scene; 3.5 gains Genji telling the tree's legend at tea; 3.6 gets a Street Brawlers CG. 3.1 stays as built.
 - **Ch4:** 4.1, Akane's crush on Takatsuki predates the story (she short-circuits when he praises her); 4.2, Mio asks "Kō-nii, when are you marrying Onee-chan?" and Natsuki, who already knew they weren't dating, sees what his fast "We're not" does to Nanoha; 4.3 stays here with the text to Chie changed; 4.4, the light comes to her window that night with "…You came back," and the memory is manga, opening on the fairy as her playmate.
+- **Second round (Nov 27, author; also not yet written into the scenes below):**
+  - **Chapter 0** is a **December** evening (was January), on the one-lane road that climbs the hill to the two houses, wooded, with curve mirrors at the bends: "a one lane forest/mountain road that disappears." It flashes forward to the scene list's new Ch31 (the loop, which moved from late January to mid-December and is a scare: the wolf only follows and stares). P.0 below still says January and Ch37.
+  - **4.2** is played straight, not for laughs ("No comic style bc it's sad"), with a CG of Nanoha's look and Natsuki seeing it.
+  - **4.4:** the memory manga ends on a full page of her hugging Kōhei, and her eyes; the fairy is drawn and talking but her face is held back until the night of the bloom [P, approved]. 4.4 now ends the chapter.
+  - **4.5** (Monday practice) leaves Ch4 and opens Ch5 as 5.1.
+  - **Natsuki's mother is a nurse,** to be planted before the wound care (the scene list puts it in 6.4 and 9.1 [P]); nothing in Ch1–4 has to change for it.
+  - The chapters were renumbered once on Nov 27 (Ch1–4 unchanged): `production/scene-list/id-map-nov27.md`. Later-chapter numbers in this outline's notes are the old ones.
 
 ---
 

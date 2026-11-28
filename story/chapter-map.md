@@ -19,6 +19,35 @@
 - **Ch44 and the epilogue:** Natsuki stays; no confession for Akane and Takatsuki; end credits with stills of their lives; the epilogue is at the old grave.
 - **Running threads touched:** the fairy (never left; in three stages); Nanoha's ability as a ladder (Ch11, Ch20, Ch26, then winter); the dreams (a fourth, the wedding; the last cost is that the dream of her stops); the wolf (aggressive and erratic; the trade shown in the recall, not withheld to the climax); the one-uncanny-per-chapter rule may bend from about Ch26.
 
+**Second round (Nov 27): one renumber, and more changes the rows below don't show yet.** The author approved one renumber of the chapters before the scene list's long pass. **Every row, thread, arc and ledger entry in this map still uses the old numbers** (the ones in the Nov 25–26 list above too); they are renumbered when each Part's rows are rewritten. Until then read them through this table (every scene ID is in `production/scene-list/id-map-nov27.md`):
+
+| Old (this map) | New (canon and the scene list) |
+|---|---|
+| Ch1–Ch7 | the same |
+| Ch8 The New Hire | folded: Yuzu's first day and Takatsuki's "no help" open new Ch12; the first dream of the eyes closes new Ch8 |
+| Ch9–Ch25 | Ch8–Ch24, each one lower (Umbrella is Ch8, Summer Break Ch12, Karaoke Ch17, Wound Care Ch18, Second Semester Ch19, Form Ch22, Autumn Tournament Ch23, The Window Latch Ch24) |
+| Ch26 School Trip | Ch25 (the trip as a trip) and Ch26 (the choice closing in) |
+| Ch27–Ch30 | the same |
+| (new) | Ch31 The Loop, in mid-December |
+| Ch31 Christmas, Ch32 The Bloom | Ch32, Ch33 (Part 4 ends at Ch33) |
+| Ch33 What We Were, Ch34 Doubt | Ch34, Ch35 |
+| Ch36 Found | Ch36 |
+| Ch35 Since Summer | Ch37, now after the body is found |
+| Ch37 The Loop | gone: it is the new Ch31 |
+| Ch38–Ch44 | the same (Ch43 is retitled) |
+
+What he decided on Nov 27, in the new numbers (canon has each; the record is `production/scene-list/review-notes-nov25.md`):
+- **Chapter 0** is a December evening on the one-lane road up the hill, flashing forward to Ch31. **Ch4** ends on Nanoha's memory (a full-page hug); Monday practice opens **Ch5**.
+- **The tournament:** from Golden Week (Ch5) Kōhei wants the late-summer tournament, the qualifier for regionals; he loses it in Ch17, and the autumn tournament (Ch23) is regionals.
+- **Ch12:** Yuzu is a summer hire. **Ch13:** at the fireworks he looks. **Natsuki's mother is a nurse,** planted in spring.
+- **Ch17:** he misses once and punches a brick wall. **Ch19:** he tells Kazuo alone, and Kazuo apologizes then; on the roof the slap is not named aloud. **Ch20–22:** Kazuo's help shows (the yard; the bookkeeping work [P]); **Ch24's** talk is shorter.
+- **The run-up to the wolf:** the hiker in October (Ch24), the school's letter and the escort in November (Ch29), the posters, the cut and the walks (Ch30), and **the loop in mid-December (Ch31), as a scare:** nobody is hurt, Natsuki isn't there and is told the next day, and Kōhei tells the five his dread dreams.
+- **Ch28:** the transfer news (her father's posting starts in April), shown from outside; she tells only Chie.
+- **Ch32:** an almost-kiss on Christmas Eve, broken by the bride in the hood. **The interlude** ends on the promise and the bloom: "Live" is dropped, her life afterward stays out, and when the beast dies it is for a breath only a wolf.
+- **January:** grief (Ch34); he tells Nanoha, the fairy tells them what she can, he chooses, with their first real kiss (Ch35); the body, and Takatsuki and Akane are told the rest, with Mom at the station (Ch36); the girls' talk (Ch37).
+- **Ch38:** Kōhei and Natsuki work out the old fight together. **Ch39:** the permission scene is from Takatsuki's side; Mom's walk left for Ch36. **Ch41:** Nanoha tells Natsuki to stay. **Ch42:** Akane's wait moves up so the fight runs unbroken. **Ch43:** the strike is to the head; "Live" and its scene are gone. **Ch44:** Natsuki asks her parents and stays for herself, and Nanoha puts her in a photograph; the last end-credit still is the wedding day.
+- **Running threads touched:** the dread ramp (first contact in December, not January; the five know for about eight weeks); the dreams (he tells the dread ones in December); Natsuki's silence (outside only from the kiss night to the girls' talk, the transfer included); Nanoha's ability ladder (the roof without the line; a December rung); point of view marked on every scene of the scene list.
+
 **Shape:** a ~40-chapter spine (**42 since Oct 18; 44 since Oct 31**) on canon's working allocation (Oct 7; updated Oct 18 and Oct 31): 17 chapters April–August, 5 for the fight and September, 10 for October–December, 11 for January–March, 1 for the aftermath, plus the epilogue. Expandable daily-life chapters can be added later, first in the April–August stretch. **Decided Oct 12:** the 40-chapter spine; chapters run about 4,000–5,000 words where they cover a week or more (roughly 12–15 hours in all); slice-of-life and extra development added as needed.
 
 **Reader-knowledge targets:** when the Story thread outlines a chapter for production, it adds what the reader should *suspect* and *know* by the chapter's end (style guide §9, step 1). **The three reader numbers** (who he ends up with, who readers want him to end up with, who the dream woman is) **are read at the end of each arc, as direction, not as limits** (author, Nov 1 and Nov 22; canon §6, "Reader targets"). Only the invariants are hard: nothing confirms the dream woman before the bloom (Ch32), and the ending isn't settled before he chooses. Balance is budgeted in each arc outline (whose chapters, how many uncanny beats each girl gets, Natsuki's present-day closeness), checked there against canon's three writing rules, and never handed to the scene writer as a percentage. Outlines don't add "balance beats." Fixes come only from canon's four tripwires, checked at arc ends. The Ch1–4 targets are at the end of `production/pilot-v2/scene-outline.md`.
