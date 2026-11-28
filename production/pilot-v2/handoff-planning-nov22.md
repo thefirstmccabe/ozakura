@@ -147,5 +147,5 @@ The author asked on Nov 22 whether the percentage and balance rules are still ne
 3. Planning rebuilds the readers and the judge (§4.1–§4.3), scored against the baseline.
 4. The author's first A/B, including the model comparison (§4.4–§4.5).
 5. Production adds the flag button and bundles the fonts (§6, §7).
-6. Planning sets up the inbox, the sweep and the doc lint, and rewrites style guide §9 and the reviewer prompts to match.
+6. Planning sets up the inbox, the sweep and the doc lint, and rewrites style guide §9 and the reviewer prompts to match. *(Nov 27: a request to consider moving the inbox and the sweep up is in `handoff-planning-nov27.md`.)*
 7. Ch4 is produced on the new harness. Its punch list is the first live test.
