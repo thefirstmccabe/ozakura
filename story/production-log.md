@@ -6,6 +6,7 @@ The status board, recent decisions (from Oct 15), the open budget, known issues 
 
 ## 0. Status board (updated Nov 27, night)
 **Chapter numbers changed on Nov 27 (one approved renumber; Ch1–4 unchanged).** Canon, the scene list and style guide §3c use the new numbers. The chapter map's rows, this log's rows before the last 11-27 row, the pilot outline's notes and style guide §3a and §7 still use the old ones. Table: `production/scene-list/id-map-nov27.md`.
+**Project mirror (Nov 27, night):** canon, canon-revisions, the chapter map, the scene list and this log are uploaded. **The style guide's Project copy is one small edit behind the repo** (§3c's chapter numbers and a note at its head); the next thread that edits the style guide uploads it.
 
 **No production past Ch4 starts until the author approves the whole-story scene list** (`story/scene-list.md`; brief `production/scene-list/README.md`; author, Nov 24–25).
 
